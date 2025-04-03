@@ -1,0 +1,637 @@
+/**
+ * Enhanced UX Features for College Roadmap
+ * Styles for advanced animations, interactions, and visual effects
+ */
+
+/* ===== 1. SCROLL-DRIVEN ANIMATIONS ===== */
+/* Parallax elements */
+.parallax-element {
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+}
+
+/* Color transition sections */
+.color-transition-section {
+    transition: background-color 0.5s ease;
+}
+
+/* 3D Card perspective effects */
+.highlight-card, 
+.timeline-content {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform;
+}
+
+/* ===== 2. MICRO-INTERACTIONS ===== */
+/* Magnetic button effect */
+.btn-primary, 
+.btn-secondary {
+    will-change: transform;
+    transition: transform 0.3s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+}
+
+/* ===== 3. CONTENT PRESENTATION ===== */
+/* Text scramble animation */
+.scramble-animated {
+    display: inline-block;
+}
+
+/* Image reveal animations */
+.image-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-reveal img {
+    transform: scale(1.1);
+    opacity: 0;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.image-reveal.revealed img {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.image-reveal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+.image-reveal.revealed::before {
+    animation: reveal 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+@keyframes reveal {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Split-screen transitions */
+.split-section {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.split-left,
+.split-right {
+    flex: 1;
+    min-width: 300px;
+    opacity: 0;
+    transition: transform 1.2s ease, opacity 1.2s ease;
+}
+
+.split-left {
+    transform: translateX(-50px);
+}
+
+.split-right {
+    transform: translateX(50px);
+}
+
+.split-left.animated,
+.split-right.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ===== 4. ADVANCED NAVIGATION ===== */
+/* Reading progress indicator */
+.reading-progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.reading-progress-bar {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    transition: width 0.1s ease;
+}
+
+body.dark-mode .reading-progress-container {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .reading-progress-bar {
+    background: linear-gradient(to right, var(--color-primary-dark), var(--color-secondary-dark));
+}
+
+/* Roadmap minimap navigation */
+.roadmap-minimap {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    padding: 15px 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .roadmap-minimap {
+    background-color: rgba(19, 19, 43, 0.9);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.roadmap-minimap-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.minimap-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-border);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.minimap-dot:hover {
+    background-color: var(--color-secondary);
+    transform: scale(1.5);
+}
+
+.minimap-dot.active {
+    background-color: var(--color-primary);
+    transform: scale(1.5);
+}
+
+body.dark-mode .minimap-dot {
+    background-color: var(--color-border-dark);
+}
+
+body.dark-mode .minimap-dot:hover {
+    background-color: var(--color-secondary-dark);
+}
+
+body.dark-mode .minimap-dot.active {
+    background-color: var(--color-primary-dark);
+}
+
+/* ===== 5. VISUAL FEEDBACK ===== */
+/* Confetti animation */
+.confetti-container {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-primary);
+    animation: confetti-fall 1.5s ease-out forwards;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--destX), var(--destY)) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Ensure all elements use system cursor */
+html, body, * {
+    cursor: auto !important;
+}
+
+a, button, .btn, input[type="submit"], [role="button"], .timeline-node {
+    cursor: pointer !important;
+}
+
+/* Background effects */
+.flowing-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.03;
+    z-index: -1;
+    background: linear-gradient(45deg, 
+        var(--color-primary), 
+        var(--color-secondary), 
+        var(--color-accent), 
+        var(--color-primary));
+    background-size: 400% 400%;
+    animation: gradient-flow 15s ease infinite;
+}
+
+body.dark-mode .flowing-gradient {
+    opacity: 0.05;
+    background: linear-gradient(45deg, 
+        var(--color-primary-dark), 
+        var(--color-secondary-dark), 
+        var(--color-accent-dark), 
+        var(--color-primary-dark));
+}
+
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Particle effects */
+.particle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    opacity: 0.2;
+    animation: float-particle 15s linear infinite;
+}
+
+body.dark-mode .particle {
+    background-color: var(--color-primary-dark);
+    opacity: 0.3;
+}
+
+@keyframes float-particle {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-20vh) translateX(20vw);
+    }
+    50% {
+        transform: translateY(0) translateX(40vw);
+    }
+    75% {
+        transform: translateY(20vh) translateX(20vw);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* ===== 6. PERFORMANCE & ACCESSIBILITY ===== */
+/* High contrast mode */
+.high-contrast-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-card-bg);
+    border: 2px solid var(--color-border);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.high-contrast-toggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode .high-contrast-toggle {
+    background-color: var(--color-card-bg-dark);
+    border-color: var(--color-border-dark);
+    color: var(--color-text-dark);
+}
+
+body.high-contrast {
+    --color-primary: #0000ff; /* Blue */
+    --color-secondary: #ff0000; /* Red */
+    --color-accent: #ffcc00; /* Yellow */
+    --color-background: #ffffff; /* White */
+    --color-text: #000000; /* Black */
+    --color-border: #000000; /* Black */
+    --color-hero-bg: #ffffff; /* White */
+    --color-card-bg: #ffffff; /* White */
+    
+    /* Override dark mode colors when both are active */
+    --color-primary-dark: #00ffff; /* Cyan */
+    --color-secondary-dark: #ff00ff; /* Magenta */
+    --color-accent-dark: #ffff00; /* Yellow */
+    --color-background-dark: #000000; /* Black */
+    --color-text-dark: #ffffff; /* White */
+    --color-text-muted-dark: #ffffff; /* White */
+    --color-border-dark: #ffffff; /* White */
+    --color-hero-bg-dark: #000000; /* Black */
+    --color-card-bg-dark: #000000; /* Black */
+}
+
+body.high-contrast * {
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+body.high-contrast a,
+body.high-contrast button,
+body.high-contrast .btn {
+    border-width: 2px;
+}
+
+/* Voice navigation control */
+.voice-control-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 70px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-card-bg);
+    border: 2px solid var(--color-border);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.voice-control-toggle:hover {
+    transform: scale(1.1);
+}
+
+.voice-control-toggle.listening {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    animation: pulse 1.5s infinite;
+}
+
+body.dark-mode .voice-control-toggle {
+    background-color: var(--color-card-bg-dark);
+    border-color: var(--color-border-dark);
+    color: var(--color-text-dark);
+}
+
+body.dark-mode .voice-control-toggle.listening {
+    background-color: var(--color-primary-dark);
+    color: var(--color-background-dark);
+}
+
+/* Voice command feedback */
+.voice-command-feedback {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    color: var(--color-text);
+    box-shadow: var(--shadow-md);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.voice-command-feedback.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.dark-mode .voice-command-feedback {
+    background-color: var(--color-card-bg-dark);
+    border-color: var(--color-border-dark);
+    color: var(--color-text-dark);
+    box-shadow: var(--box-glow-sm);
+}
+
+/* ===== 7. INTERACTIVE ELEMENTS ===== */
+/* Draggable elements */
+[draggable="true"] {
+    cursor: grab;
+}
+
+[draggable="true"].dragging {
+    cursor: grabbing;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.drag-container {
+    border: 2px dashed transparent;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.drag-container.drag-over {
+    border-color: var(--color-primary);
+    background-color: rgba(0, 77, 64, 0.05);
+}
+
+body.dark-mode .drag-container.drag-over {
+    border-color: var(--color-primary-dark);
+    background-color: rgba(0, 242, 255, 0.05);
+}
+
+/* Flip card animations */
+.flip-card {
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* Interactive infographics */
+.interactive-infographic {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.hotspot {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.hotspot::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    opacity: 0.3;
+    animation: pulse 2s infinite;
+}
+
+.hotspot.active {
+    background-color: var(--color-secondary);
+    transform: scale(1.2);
+}
+
+.content-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-card-bg);
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.content-panel.active {
+    transform: translateY(0);
+}
+
+body.dark-mode .interactive-infographic {
+    background-color: var(--color-card-bg-dark);
+    box-shadow: var(--box-glow-sm);
+}
+
+body.dark-mode .hotspot {
+    background-color: var(--color-primary-dark);
+}
+
+body.dark-mode .hotspot::before {
+    background-color: var(--color-primary-dark);
+}
+
+body.dark-mode .hotspot.active {
+    background-color: var(--color-secondary-dark);
+}
+
+body.dark-mode .content-panel {
+    background-color: var(--color-card-bg-dark);
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+    /* Hide roadmap minimap on mobile */
+    .roadmap-minimap {
+        display: none;
+    }
+    
+    /* Adjust reading progress indicator height */
+    .reading-progress-container {
+        height: 3px;
+    }
+    
+    /* Adjust split sections */
+    .split-left,
+    .split-right {
+        flex-basis: 100%;
+    }
+    
+    /* Stack accessibility buttons */
+    .high-contrast-toggle,
+    .voice-control-toggle {
+        bottom: 70px;
+    }
+    
+    .voice-control-toggle {
+        bottom: 20px;
+    }
+}
+
+/* Accommodate users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001s !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .hotspot::before,
+    .voice-control-toggle.listening {
+        animation: none !important;
+    }
+    
+    .flowing-gradient,
+    .particle {
+        display: none !important;
+    }
+} 
