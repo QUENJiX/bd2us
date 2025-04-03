@@ -821,7 +821,8 @@ main > section:not(.hero-section) {
 }
 
 .content-page h2 {
-    margin-bottom: 2rem; 
+    margin-bottom: 1.5rem;
+    text-align: left !important; /* Changed from center to left */
 }
 
 .back-to-roadmap {
@@ -3553,5 +3554,37 @@ body.about-page .team-member img {
 body.about-page #vision h3 {
     text-align: center !important;
     margin-bottom: 1.5rem;
+}
+
+/* Force content page headings to be left-aligned */
+.content-page h1,
+.content-page h2,
+.content-page h3,
+.content-page h4,
+.content-page h5,
+.content-page h6,
+.content-page .content-block h1,
+.content-page .content-block h2,
+.content-page .content-block h3,
+.content-page .content-block h4,
+.content-page .content-block h5,
+.content-page .content-block h6 {
+    text-align: left !important;
+}
+
+/* Force all content headings to be left-aligned */
+.content-page h1,
+.content-page h3,
+.content-page h4,
+.content-page h5,
+.content-page h6,
+.content-block h1,
+.content-block h2,
+.content-block h3,
+.content-block h4,
+.content-block h5,
+.content-block h6,
+.highlight-text {
+    text-align: left !important; 
 }
 
