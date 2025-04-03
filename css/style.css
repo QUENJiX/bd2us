@@ -3308,3 +3308,111 @@ body.dark-mode .chapter-nav-btn:hover {
         padding: 0 10px;
     }
 }
+
+/* Fix logo and hamburger menu alignment on mobile */
+@media (max-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        width: 100%;
+    }
+    
+    .logo {
+        margin-right: auto;
+        text-align: left;
+    }
+    
+    .hamburger-menu {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 20px;
+        width: 25px;
+    }
+    
+    /* Ensure normal links in paragraphs look like inline text */
+    p a:not(.btn) {
+        display: inline;
+        padding: 0;
+        min-height: 0;
+        text-decoration: underline;
+        font-weight: 600;
+        color: var(--color-primary);
+    }
+    
+    /* Center align specific elements in the About page */
+    .about-page h2,
+    .about-page h3,
+    .team-section h2,
+    .team-section h3,
+    .connect-section h2,
+    .connect-section h3,
+    .team-member h3,
+    .team-member .role {
+        text-align: center !important;
+    }
+}
+
+/* Improved Mobile Styling */
+@media (max-width: 768px) {
+    /* 1. Better header alignment */
+    .header-container {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 0 15px !important;
+    }
+    
+    .logo {
+        text-align: left !important;
+        margin-right: auto !important;
+        padding-left: 0 !important;
+    }
+    
+    .hamburger-menu {
+        display: block !important;
+        margin-left: auto !important;
+        position: relative !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 25px !important;
+        height: 20px !important;
+    }
+    
+    /* 2. Resources page links styling */
+    .content-block a,
+    .interactive-list a,
+    p a {
+        display: inline !important;
+        padding: 0 !important;
+        min-height: 0 !important;
+        text-decoration: underline !important;
+        font-weight: 600 !important;
+        color: var(--color-primary) !important;
+    }
+    
+    /* 3. About page center alignment */
+    .social-links h3,
+    .team-section h3,
+    .team-member h4,
+    .team-member p {
+        text-align: center !important;
+    }
+    
+    /* Fix team member layout on mobile */
+    .team-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+    }
+    
+    /* Fix for pulser elements */
+    .pulse-on-hover {
+        display: inline-block !important;
+    }
+}
