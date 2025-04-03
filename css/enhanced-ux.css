@@ -84,17 +84,17 @@
 
 /* Split-screen transitions */
 .split-section {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    overflow: hidden;
 }
 
 .split-left,
 .split-right {
-    flex: 1 1 400px;
-    min-width: 0;
+    flex: 1;
+    min-width: 300px;
+    opacity: 0;
+    transition: transform 1.2s ease, opacity 1.2s ease;
 }
 
 .split-left {
@@ -144,14 +144,14 @@ body.dark-mode .reading-progress-bar {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10;
-    background-color: var(--color-card-bg);
-    padding: 10px 5px;
-    border-radius: 20px;
-    box-shadow: var(--shadow-md);
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 100;
+    padding: 15px 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 body.dark-mode .roadmap-minimap {
@@ -598,86 +598,208 @@ body.dark-mode .content-panel {
     }
     
     /* Adjust split sections */
-    .split-section {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
     .split-left,
     .split-right {
         flex-basis: 100%;
-        width: 100%;
     }
     
     /* Stack accessibility buttons */
     .high-contrast-toggle,
     .voice-control-toggle {
-        width: 44px;
-        height: 44px;
-        bottom: 80px;
-        right: 20px;
+        bottom: 70px;
+    }
+    
+    .voice-control-toggle {
+        bottom: 20px;
+    }
+    
+    /* Fix for button ripple effects on mobile */
+    .btn-ripple {
+        transform: scale(2);
+        opacity: 0.2;
+    }
+    
+    /* Adjust icon sizes for better visibility on small screens */
+    .icon-sm {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .icon-md {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .icon-lg {
+        width: 32px;
+        height: 32px;
+    }
+    
+    /* Better touch targets for interactive elements */
+    .interactive-element {
+        min-height: 44px;
+        min-width: 44px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
-    .voice-control-toggle {
-        bottom: 135px;
-    }
-    
-    /* Enhance voice feedback size */
-    .voice-command-feedback {
-        width: calc(100% - 40px);
-        left: 20px;
-        bottom: 70px;
-        padding: 12px;
-        font-size: 14px;
-    }
-    
-    /* Improve hotspot interaction on mobile */
-    .hotspot {
-        width: 30px;
-        height: 30px;
-    }
-    
-    .content-panel {
+    /* Fix for modal positioning on mobile */
+    .modal-content {
+        width: 95%;
+        max-width: 95%;
+        margin: 20px auto;
         padding: 15px;
     }
     
-    /* Better flip card performance */
-    .flip-card {
-        height: 250px;
+    /* Ensure proper spacing between elements */
+    .section-spacing {
+        padding: 30px 0;
     }
     
-    /* Enhanced interactive infographic responsiveness */
-    .interactive-infographic {
-        height: 400px;
+    .element-spacing {
+        margin: 15px 0;
     }
     
-    @media (max-width: 480px) {
-        .interactive-infographic {
-            height: 350px;
-        }
+    /* Ensure text is properly scaled */
+    .text-scale {
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+        line-height: 1.6;
     }
     
-    /* Improved image reveal animation for mobile */
-    .image-reveal {
+    /* Fix for any flex grid issues */
+    .flex-grid {
+        flex-direction: column;
+    }
+    
+    .flex-grid > * {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    /* Adjust card shadows for better visibility */
+    .card-shadow {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Ensure proper centering of content */
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    /* Fix for floating elements */
+    .float-element {
+        float: none;
+        margin: 10px auto;
+        width: 100%;
+    }
+    
+    /* Adjust animation speeds for better performance */
+    .animate-element {
+        transition-duration: 0.2s;
+    }
+    
+    /* Fix for sticky elements */
+    .sticky-element {
+        position: relative;
+        top: auto;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .container {
+        padding: 0 10px;
+    }
+    
+    /* Simplify animations for performance */
+    .animate-on-scroll,
+    .animate-element {
+        transition: none;
+        animation: none;
+    }
+    
+    /* Ensure buttons are properly sized */
+    .btn {
+        display: block;
+        width: 100%;
+    }
+    
+    /* Fix for any overflow issues */
+    .overflow-container {
+        overflow-x: hidden;
+    }
+    
+    /* Adjust typography for readability */
+    h1, h2, h3, h4, h5, h6 {
+        word-break: break-word;
+    }
+    
+    p, li, dt, dd {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Adjustments for tablet-sized screens */
+    .container {
+        max-width: 95%;
+    }
+    
+    /* Ensure proper grid layout */
+    .grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Adjust spacing for better layout */
+    .section-spacing {
+        padding: 40px 0;
+    }
+    
+    .element-spacing {
         margin: 20px 0;
     }
-    
-    /* Optimize particle container */
-    .particle-container {
-        height: 150px;
+}
+
+/* Fix for any orientation changes */
+@media (orientation: portrait) {
+    /* Adjustments for portrait mode */
+    .orientation-sensitive {
+        flex-direction: column;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    /* Adjustments for landscape mode on small-height devices */
+    .main-nav {
+        max-height: 80vh;
+        overflow-y: auto;
     }
     
-    /* Reduce number of particles on mobile */
-    .particle:nth-child(n+10) {
-        display: none;
+    .main-header {
+        height: 60px;
     }
     
-    /* Better flowing gradient performance on mobile */
-    .flowing-gradient {
-        background-size: 200% 200%;
+    .main-nav {
+        top: 60px;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        padding: 30px 0;
+    }
+}
+
+/* Fix for high pixel density devices */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Ensure images are crisp on retina displays */
+    .image-container img {
+        image-rendering: -webkit-optimize-contrast;
     }
 }
 
@@ -700,34 +822,5 @@ body.dark-mode .content-panel {
     .flowing-gradient,
     .particle {
         display: none !important;
-    }
-}
-
-/* Minimap adjustments */
-@media (max-width: 992px) {
-    .roadmap-minimap {
-        padding: 8px 4px;
-    }
-    
-    .minimap-dot {
-        width: 10px;
-        height: 10px;
-        margin: 6px 0;
-    }
-}
-
-/* Ensure all touch targets are at least 44px for mobile */
-@media (max-width: 768px) {
-    a, button, .btn, [role="button"], .timeline-node {
-        min-height: 44px;
-        min-width: 44px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    a:not(.btn) {
-        display: inline;
-        padding: 2px 0;
     }
 } 

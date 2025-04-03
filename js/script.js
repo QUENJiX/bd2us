@@ -1,47 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Responsive Viewport Handling ---
-    // Detect viewport size and apply appropriate classes
-    const detectViewport = () => {
-        const body = document.body;
-        const width = window.innerWidth;
-        
-        // Remove existing viewport classes
-        body.classList.remove('viewport-xs', 'viewport-sm', 'viewport-md', 'viewport-lg', 'viewport-xl');
-        
-        // Add appropriate viewport class
-        if (width < 480) {
-            body.classList.add('viewport-xs'); // Extra small devices
-        } else if (width < 768) {
-            body.classList.add('viewport-sm'); // Small devices
-        } else if (width < 992) {
-            body.classList.add('viewport-md'); // Medium devices
-        } else if (width < 1200) {
-            body.classList.add('viewport-lg'); // Large devices
-        } else {
-            body.classList.add('viewport-xl'); // Extra large devices
-        }
-        
-        // Adjust touch vs. mouse interaction class
-        if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
-            body.classList.add('touch-device');
-            body.classList.remove('mouse-device');
-        } else {
-            body.classList.add('mouse-device');
-            body.classList.remove('touch-device');
-        }
-    };
-    
-    // Run on page load
-    detectViewport();
-    
-    // Run on window resize with debounce
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(detectViewport, 250);
-    });
-
     // --- Sticky Header --- 
     const header = document.getElementById('main-header');
     const scrollThreshold = 50; // Pixels to scroll before header becomes opaque
