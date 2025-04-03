@@ -1098,24 +1098,6 @@ dd { /* Definition */
     z-index: 1001;
 }
 
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 5px;
-        height: 20px;
-    }
-    
-    .header-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 15px;
-    }
-}
-
 .hamburger-menu span {
     display: block;
     position: absolute;
@@ -1159,6 +1141,53 @@ dd { /* Definition */
 
 body.dark-mode .hamburger-menu span {
     background: var(--color-primary-dark);
+}
+
+/* Fix hamburger menu alignment */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        width: 25px;
+        margin-right: 0;
+        position: relative;
+        top: 0;
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    
+    /* Fix chapter titles alignment */
+    .content-page h1,
+    .content-page h2,
+    .content-page h3,
+    .content-page h4,
+    .content-page h5,
+    .content-page h6,
+    .content-page .content-block h1,
+    .content-page .content-block h2,
+    .content-page .content-block h3,
+    .content-page .content-block h4,
+    .content-page .content-block h5,
+    .content-page .content-block h6 {
+        text-align: left !important;
+    }
+    
+    /* Keep specific elements centered */
+    .hero-section h1,
+    .hero-section h2,
+    .hero-section h3,
+    .hero-section p,
+    .highlights-section h2,
+    .text-center {
+        text-align: center !important;
+    }
 }
 
 /* --- Mobile Theme Toggle Button --- */
@@ -3224,5 +3253,45 @@ body.dark-mode .chapter-nav-btn:hover {
     /* Override general mobile h1-h6 centering */
     h1, h2, h3, h4, h5, h6 {
         text-align: inherit;
+    }
+}
+
+/* Additional fix for chapter page content */
+.content-page h1, 
+.content-page h2, 
+.content-page h3, 
+.content-page h4, 
+.content-page h5, 
+.content-page h6, 
+.content-block h1, 
+.content-block h2, 
+.content-block h3, 
+.content-block h4, 
+.content-block h5, 
+.content-block h6 {
+    text-align: left;
+}
+
+/* Reset any text-align center */
+@media (max-width: 768px) {
+    .content-page h1,
+    .content-page h2,
+    .content-page h3,
+    .content-page h4,
+    .content-page h5,
+    .content-page h6 {
+        text-align: left !important;
+    }
+    
+    /* Fix for Why This Guide section on homepage */
+    .custom-content h3 {
+        text-align: center !important;
+        margin-bottom: 15px;
+    }
+    
+    .custom-content p {
+        text-align: left !important;
+        margin-bottom: 15px;
+        padding: 0 10px;
     }
 }
