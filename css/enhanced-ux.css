@@ -84,17 +84,17 @@
 
 /* Split-screen transitions */
 .split-section {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .split-left,
 .split-right {
-    flex: 1;
-    min-width: 300px;
-    opacity: 0;
-    transition: transform 1.2s ease, opacity 1.2s ease;
+    flex: 1 1 400px;
+    min-width: 0;
 }
 
 .split-left {
@@ -144,14 +144,14 @@ body.dark-mode .reading-progress-bar {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
+    background-color: var(--color-card-bg);
+    padding: 10px 5px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 100;
-    padding: 15px 5px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 30px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 body.dark-mode .roadmap-minimap {
@@ -598,19 +598,86 @@ body.dark-mode .content-panel {
     }
     
     /* Adjust split sections */
+    .split-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
     .split-left,
     .split-right {
         flex-basis: 100%;
+        width: 100%;
     }
     
     /* Stack accessibility buttons */
     .high-contrast-toggle,
     .voice-control-toggle {
-        bottom: 70px;
+        width: 44px;
+        height: 44px;
+        bottom: 80px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .voice-control-toggle {
-        bottom: 20px;
+        bottom: 135px;
+    }
+    
+    /* Enhance voice feedback size */
+    .voice-command-feedback {
+        width: calc(100% - 40px);
+        left: 20px;
+        bottom: 70px;
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    /* Improve hotspot interaction on mobile */
+    .hotspot {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .content-panel {
+        padding: 15px;
+    }
+    
+    /* Better flip card performance */
+    .flip-card {
+        height: 250px;
+    }
+    
+    /* Enhanced interactive infographic responsiveness */
+    .interactive-infographic {
+        height: 400px;
+    }
+    
+    @media (max-width: 480px) {
+        .interactive-infographic {
+            height: 350px;
+        }
+    }
+    
+    /* Improved image reveal animation for mobile */
+    .image-reveal {
+        margin: 20px 0;
+    }
+    
+    /* Optimize particle container */
+    .particle-container {
+        height: 150px;
+    }
+    
+    /* Reduce number of particles on mobile */
+    .particle:nth-child(n+10) {
+        display: none;
+    }
+    
+    /* Better flowing gradient performance on mobile */
+    .flowing-gradient {
+        background-size: 200% 200%;
     }
 }
 
@@ -633,5 +700,34 @@ body.dark-mode .content-panel {
     .flowing-gradient,
     .particle {
         display: none !important;
+    }
+}
+
+/* Minimap adjustments */
+@media (max-width: 992px) {
+    .roadmap-minimap {
+        padding: 8px 4px;
+    }
+    
+    .minimap-dot {
+        width: 10px;
+        height: 10px;
+        margin: 6px 0;
+    }
+}
+
+/* Ensure all touch targets are at least 44px for mobile */
+@media (max-width: 768px) {
+    a, button, .btn, [role="button"], .timeline-node {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    a:not(.btn) {
+        display: inline;
+        padding: 2px 0;
     }
 } 

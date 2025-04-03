@@ -38,6 +38,15 @@
     --shadow-sm: 0 2px 4px var(--color-shadow);
     --shadow-md: 0 4px 15px var(--color-shadow);
     --shadow-lg: 0 8px 30px var(--color-shadow);
+
+    /* --- ENHANCED RESPONSIVE STYLES --- */
+
+    /* Global responsive foundations */
+    --mobile-padding: 16px; 
+    --tablet-padding: 24px;
+    --desktop-padding: 32px;
+    --section-spacing-mobile: 40px;
+    --section-spacing-desktop: 60px;
 }
 
 /* --- Dark Mode Variables & Styles --- */
@@ -2413,3 +2422,401 @@ body.page-transition-active .page-transition-overlay {
         animation: none !important;
     }
 } 
+
+/* --- ENHANCED RESPONSIVE STYLES --- */
+
+/* Global responsive foundations */
+:root {
+    --mobile-padding: 16px; 
+    --tablet-padding: 24px;
+    --desktop-padding: 32px;
+    --section-spacing-mobile: 40px;
+    --section-spacing-desktop: 60px;
+}
+
+/* Better responsive containers */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--mobile-padding);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 var(--tablet-padding);
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        padding: 0 var(--desktop-padding);
+    }
+}
+
+/* Responsive typography */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Improved responsive grid layout */
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .highlight-card {
+        margin-bottom: 0;
+    }
+}
+
+/* Enhanced mobile header and navigation */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 12px var(--mobile-padding);
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+        margin-right: 0;
+    }
+    
+    .main-nav {
+        top: 60px;
+        padding: 20px;
+    }
+    
+    .main-nav ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .main-nav li {
+        margin: 12px 0;
+    }
+    
+    .main-nav a {
+        padding: 8px 12px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Responsive button styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;  /* Improved touch target size */
+    min-width: 120px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .highlight-card .btn {
+        width: 100%;
+    }
+}
+
+/* Better hero section responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .hero-section h1 {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    
+    .hero-section p {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    
+    .hero-section .btn {
+        margin: 0 auto;
+        display: block;
+        max-width: 250px;
+    }
+}
+
+/* Improved timeline responsiveness */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-node {
+        padding-left: 50px;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-node:nth-child(odd),
+    .timeline-node:nth-child(even) {
+        justify-content: flex-start;
+    }
+    
+    .timeline-node::after {
+        left: 12px;
+    }
+    
+    .timeline-content {
+        max-width: 100%;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Better responsive card styles */
+@media (max-width: 768px) {
+    .highlight-card {
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .highlight-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    .highlight-card p {
+        margin-bottom: 15px;
+    }
+}
+
+/* Section spacing for mobile */
+@media (max-width: 768px) {
+    main > section:not(.hero-section) {
+        padding: var(--section-spacing-mobile) 0;
+    }
+}
+
+/* Resource list responsiveness */
+@media (max-width: 768px) {
+    .resource-list li {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .resource-list a {
+        font-size: 1.1rem;
+    }
+}
+
+/* Form elements responsiveness */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
+        padding: 12px;
+        margin-bottom: 15px;
+        font-size: 16px; /* Prevents iOS zoom on focus */
+    }
+    
+    form label {
+        margin-bottom: 6px;
+        display: block;
+    }
+}
+
+/* Better table responsiveness */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    td, th {
+        padding: 12px;
+    }
+}
+
+/* Improved footer for mobile */
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+/* Fix for scroll-to-top button on mobile */
+@media (max-width: 768px) {
+    #scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+/* Content page responsiveness */
+@media (max-width: 768px) {
+    .content-page {
+        padding: 30px 0;
+    }
+    
+    .content-page h2 {
+        margin-bottom: 20px;
+    }
+    
+    .back-to-roadmap {
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+/* ===== VIEWPORT-SPECIFIC STYLING ===== */
+
+/* Extra small devices (phones, less than 480px) */
+.viewport-xs .container {
+    padding: 0 12px;
+}
+
+.viewport-xs h1 {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+}
+
+.viewport-xs h2 {
+    font-size: clamp(1.5rem, 6vw, 1.8rem);
+}
+
+.viewport-xs h3 {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+}
+
+.viewport-xs .btn {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+}
+
+.viewport-xs .main-header {
+    padding: 10px 0;
+}
+
+.viewport-xs .logo {
+    font-size: 1.3rem;
+}
+
+.viewport-xs .hamburger-menu {
+    transform: scale(0.9);
+}
+
+.viewport-xs .highlight-card {
+    padding: 15px;
+}
+
+.viewport-xs .hero-section {
+    padding: 30px 0;
+}
+
+/* Touch-specific optimizations */
+.touch-device a, 
+.touch-device button, 
+.touch-device .btn, 
+.touch-device .timeline-node {
+    cursor: pointer;
+}
+
+.touch-device .highlight-card:hover,
+.touch-device .timeline-content:hover,
+.touch-device .resource-list li:hover {
+    transform: none;
+}
+
+.touch-device .highlight-card:active,
+.touch-device .timeline-content:active,
+.touch-device .resource-list li:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+}
+
+/* High-density screens (retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Orientation-specific adjustments */
+@media (orientation: landscape) and (max-height: 500px) {
+    .hero-section {
+        padding: 20px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: clamp(1.8rem, 5vw, 2.2rem);
+    }
+    
+    .main-nav {
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+}
+
+/* Ensure accessibility on all viewport sizes */
+@media (any-hover: hover) {
+    .btn:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* Fixes for iPhone notch and safe areas */
+@supports (padding: max(0px)) {
+    .main-header, 
+    .container,
+    .hero-section,
+    .footer-container {
+        padding-left: max(var(--mobile-padding), env(safe-area-inset-left));
+        padding-right: max(var(--mobile-padding), env(safe-area-inset-right));
+    }
+    
+    #scroll-to-top {
+        bottom: max(20px, env(safe-area-inset-bottom));
+        right: max(20px, env(safe-area-inset-right));
+    }
+}
