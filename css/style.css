@@ -3416,3 +3416,146 @@ body.dark-mode .chapter-nav-btn:hover {
         display: inline-block !important;
     }
 }
+
+/* Center alignment for About page elements (both desktop and mobile) */
+.social-links h3,
+.team-section h3,
+.team-member h4,
+.team-member p,
+.connect-section h2,
+.connect-section h3 {
+    text-align: center;
+}
+
+.team-grid {
+    margin: 2rem auto;
+}
+
+/* Keep the desktop team grid layout */
+@media (min-width: 769px) {
+    .team-grid {
+        max-width: 1000px;
+        margin: 2rem auto;
+    }
+    
+    .team-member {
+        text-align: center;
+    }
+}
+
+/* Improved About page styling */
+/* For all screen sizes */
+.social-links {
+    text-align: center;
+}
+
+.social-links h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.team-section h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member h4,
+.team-member p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.team-member img {
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+/* Vision section heading */
+#vision h3 {
+    text-align: center !important;
+    margin-bottom: 1.5rem;
+}
+
+/* Connect With Us heading */
+.content-block h3 {
+    text-align: center !important;
+}
+
+/* Replace content-block selector with more specific one */
+.about-page .content-block h3 {
+    text-align: center !important;
+}
+
+/* Add a class to the body in the about page */
+body.about-page {
+    /* This will be a hook to add more specific styles for the about page */
+}
+
+/* Improved About page styling */
+/* Remove duplicate rules and clean up selectors */
+
+/* Only target elements within about-page */
+body.about-page .social-links {
+    text-align: center;
+}
+
+body.about-page .social-links h3 {
+    text-align: center !important;
+    margin-bottom: 1.5rem;
+}
+
+body.about-page .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+body.about-page .team-section h3 {
+    text-align: center !important;
+    margin-bottom: 2rem;
+}
+
+body.about-page .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+body.about-page .team-member {
+    text-align: center;
+}
+
+body.about-page .team-member h4,
+body.about-page .team-member p {
+    text-align: center !important;
+    margin-bottom: 5px;
+}
+
+body.about-page .team-member img {
+    margin: 0 auto 1rem;
+    display: block;
+}
+
+/* Vision section heading */
+body.about-page #vision h3 {
+    text-align: center !important;
+    margin-bottom: 1.5rem;
+}
