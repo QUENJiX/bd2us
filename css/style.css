@@ -2785,3 +2785,395 @@ body.page-transition-active .page-transition-overlay {
         border-radius: 0;
     }
 }
+
+/* --- Mobile Responsiveness Comprehensive Fix --- */
+@media (max-width: 768px) {
+    /* Fix Navigation Layout */
+    .main-nav {
+        position: fixed;
+        top: 0;
+        right: -80%;
+        width: 80%;
+        height: 100vh;
+        background-color: var(--color-card-bg);
+        z-index: 1000;
+        transition: right 0.3s ease;
+        padding: 80px 20px 30px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        overflow-y: auto;
+    }
+    
+    body.dark-mode .main-nav {
+        background-color: var(--color-card-bg-dark);
+    }
+    
+    body.nav-open .main-nav {
+        right: 0;
+    }
+    
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .main-nav li {
+        margin: 0 0 15px 0;
+        width: 100%;
+    }
+    
+    .main-nav a {
+        display: block;
+        width: 100%;
+        padding: 12px 15px;
+        text-align: left;
+        font-size: 1.1rem;
+        border-radius: 8px;
+    }
+    
+    .main-nav a::after {
+        display: none;
+    }
+    
+    /* Fix Roadmap Layout */
+    .roadmap-container {
+        margin: 1rem auto;
+        padding: 1rem 0;
+        width: 100%;
+    }
+    
+    .timeline::before {
+        left: 35px;
+        transform: none;
+    }
+    
+    .timeline-node {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 10px;
+        left: 0 !important;
+        margin-bottom: 30px;
+    }
+    
+    .timeline-node:nth-child(odd),
+    .timeline-node:nth-child(even) {
+        padding-left: 80px;
+        padding-right: 10px;
+        text-align: left;
+    }
+    
+    .timeline-node::after {
+        left: 23px;
+        right: auto;
+        margin-left: 0;
+    }
+    
+    .timeline-content {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    /* Fix Chapter Cards */
+    .highlight-card {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    
+    .highlight-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    .highlight-card p {
+        margin-bottom: 15px;
+    }
+    
+    .highlight-card .btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    /* Improve Button Alignment */
+    .btn {
+        display: inline-block;
+        width: auto;
+        min-height: 44px;
+        padding: 10px 20px;
+        margin: 10px 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    /* General Layout Fixes */
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    
+    main {
+        padding-top: 80px;
+    }
+    
+    main > section {
+        padding: 30px 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+    
+    /* Ensure Interactive Elements Have Proper Touch Targets */
+    a, button, 
+    input[type="submit"], 
+    .timeline-content a,
+    .highlight-card a,
+    .main-nav a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .highlight-card a.btn,
+    .timeline-content a.btn,
+    a.btn {
+        justify-content: center;
+    }
+    
+    /* Better Touch Experience */
+    .main-nav a:active,
+    .btn:active,
+    .highlight-card:active,
+    .timeline-content:active {
+        opacity: 0.7;
+        transition: opacity 0.1s;
+    }
+}
+
+/* Fix for smaller mobile devices */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 0 10px;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+    }
+    
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.3rem; }
+    
+    .highlight-card,
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    .timeline-node::after {
+        width: 16px;
+        height: 16px;
+        left: 27px;
+    }
+    
+    .timeline-node {
+        padding-left: 65px;
+    }
+}
+
+/* --- Link Display Fix --- */
+.main-nav a,
+.highlight-card a,
+.timeline-content a,
+.resource-list a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.highlight-card .btn,
+.timeline-content .btn {
+    margin-top: 10px;
+}
+
+/* --- Roadmap Chapter Cards Fix --- */
+.timeline-content {
+    padding: 25px;
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+
+.timeline-content a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    text-shadow: none;
+    line-height: 1.3;
+    text-align: left;
+    font-weight: 700;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-text);
+    opacity: 0.9;
+    text-align: left;
+}
+
+.timeline-content:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+}
+
+.timeline-content:hover h3 {
+    color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+    .timeline-content {
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+    
+    .timeline-content p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
+
+/* Fix for roadmap node styling */
+.timeline-node {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-node:nth-child(odd) .timeline-content,
+.timeline-node:nth-child(even) .timeline-content {
+    text-align: left;
+}
+
+.timeline-node:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Chapter Navigation --- */
+.chapter-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    gap: 15px;
+}
+
+.chapter-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background-color: var(--color-card-bg);
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.chapter-nav-group {
+    display: flex;
+    gap: 10px;
+}
+
+.chapter-nav-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border-color: var(--color-primary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.chapter-nav-btn i {
+    margin-right: 8px;
+}
+
+.chapter-nav-btn.next i {
+    margin-right: 0;
+    margin-left: 8px;
+}
+
+.chapter-nav-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+body.dark-mode .chapter-nav-btn {
+    background-color: var(--color-card-bg-dark);
+    border-color: var(--color-border-dark);
+    color: var(--color-primary-dark);
+}
+
+body.dark-mode .chapter-nav-btn:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-text-light-dark);
+    border-color: var(--color-primary-dark);
+    box-shadow: var(--box-glow-md);
+}
+
+@media (max-width: 768px) {
+    .chapter-navigation {
+        flex-direction: column;
+        gap: 10px;
+        margin: 1.5rem 0;
+    }
+    
+    .chapter-nav-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
+    }
+    
+    .chapter-nav-group {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .chapter-nav-group .chapter-nav-btn {
+        flex: 1;
+    }
+}
