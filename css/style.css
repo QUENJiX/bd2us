@@ -1,4 +1,4 @@
-/* --- Google Font Import --- */
+﻿/* --- Google Font Import --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap');
 
 /* --- CSS Variables (New Palette: Emerald & Wine) --- */
@@ -3503,11 +3503,6 @@ body.dark-mode .chapter-nav-btn:hover {
     text-align: center !important;
 }
 
-/* Add a class to the body in the about page */
-body.about-page {
-    /* This will be a hook to add more specific styles for the about page */
-}
-
 /* Improved About page styling */
 /* Remove duplicate rules and clean up selectors */
 
@@ -3559,3 +3554,4 @@ body.about-page #vision h3 {
     text-align: center !important;
     margin-bottom: 1.5rem;
 }
+
