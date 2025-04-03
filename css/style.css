@@ -674,17 +674,36 @@ main > section:not(.hero-section) {
 
 /* --- Footer --- */
 .main-footer {
-    background-color: var(--color-text); /* Updated - Dark Grey */
-    color: var(--color-text-light); /* Updated - Cream */
+    background-color: var(--color-text);
+    color: var(--color-text-light);
     padding: 2rem 0;
     text-align: center;
     font-size: 0.9rem;
-    height: 60px; 
-    /* border-top: 1px solid #444; --- REVERTED */
+    position: relative;
+    min-height: 60px;
+    width: 100%;
+    clear: both;
 }
 
 .footer-container {
-    opacity: 0.8; 
+    opacity: 0.8;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 15px 0;
+        min-height: 50px;
+        height: auto;
+    }
+    
+    .footer-container {
+        padding: 5px 10px;
+    }
+    
+    main {
+        padding-bottom: 60px; /* Ensure space for footer */
+    }
 }
 
 /* --- Buttons --- */
@@ -956,21 +975,21 @@ main > section:not(.hero-section) {
     position: absolute;
     width: 24px;
     height: 24px;
-    background-color: var(--color-background); /* Updated */
-    border: 5px solid var(--color-primary); /* Updated - Emerald */
-    top: 15px; 
+    background-color: var(--color-background);
+    border: 5px solid var(--color-primary);
+    top: 15px;
     border-radius: 50%;
     z-index: 1;
-    box-shadow: 0 0 0 4px var(--color-background); 
+    box-shadow: 0 0 0 4px var(--color-background);
     transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease, border-color var(--transition-speed) ease;
 }
 
 .timeline-node:nth-child(odd)::after {
-    right: -12px; 
+    right: -12px;
 }
 
 .timeline-node:nth-child(even)::after {
-    left: -12px; 
+    left: -12px;
 }
 
 .timeline-node:hover::after {
@@ -1089,71 +1108,65 @@ dd { /* Definition */
 
 /* --- Mobile Navigation Menu --- */
 .hamburger-menu {
-    display: none; /* Hidden by default on desktop */
+    display: none;
     cursor: pointer;
-    width: 30px;
-    height: 24px;
+    width: 25px;
+    height: 20px;
     position: relative;
     margin-left: auto;
+    margin-right: 10px;
     z-index: 1001;
 }
 
-.hamburger-menu span {
-    display: block;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: var(--color-primary);
-    border-radius: 3px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-}
-
-.hamburger-menu span:nth-child(1) {
-    top: 0px;
-}
-
-.hamburger-menu span:nth-child(2),
-.hamburger-menu span:nth-child(3) {
-    top: 10px;
-}
-
-.hamburger-menu span:nth-child(4) {
-    top: 20px;
-}
-
-.hamburger-menu.open span:nth-child(1),
-.hamburger-menu.open span:nth-child(4) {
-    top: 10px;
-    width: 0%;
-    left: 50%;
-}
-
-.hamburger-menu.open span:nth-child(2) {
-    transform: rotate(45deg);
-}
-
-.hamburger-menu.open span:nth-child(3) {
-    transform: rotate(-45deg);
-}
-
-body.dark-mode .hamburger-menu span {
-    background: var(--color-primary-dark);
-}
-
-/* Fix hamburger menu alignment */
 @media (max-width: 768px) {
     .hamburger-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 20px;
-        width: 25px;
-        margin-right: 0;
+        display: block;
         position: relative;
+    }
+    
+    .hamburger-menu span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: var(--color-primary);
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    
+    .hamburger-menu span:nth-child(1) {
         top: 0;
+    }
+    
+    .hamburger-menu span:nth-child(2),
+    .hamburger-menu span:nth-child(3) {
+        top: 9px;
+    }
+    
+    .hamburger-menu span:nth-child(4) {
+        top: 18px;
+    }
+    
+    .hamburger-menu.open span:nth-child(1),
+    .hamburger-menu.open span:nth-child(4) {
+        top: 9px;
+        width: 0%;
+        left: 50%;
+    }
+    
+    .hamburger-menu.open span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    
+    .hamburger-menu.open span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+    
+    body.dark-mode .hamburger-menu span {
+        background: var(--color-primary-dark);
     }
     
     .header-container {
