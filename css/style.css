@@ -1098,6 +1098,24 @@ dd { /* Definition */
     z-index: 1001;
 }
 
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5px;
+        height: 20px;
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+}
+
 .hamburger-menu span {
     display: block;
     position: absolute;
@@ -3175,5 +3193,36 @@ body.dark-mode .chapter-nav-btn:hover {
     
     .chapter-nav-group .chapter-nav-btn {
         flex: 1;
+    }
+}
+
+/* Fix heading alignment on mobile */
+@media (max-width: 768px) {
+    .content-page h1,
+    .content-page h2,
+    .content-page h3,
+    .content-page h4,
+    .content-page h5,
+    .content-page h6 {
+        text-align: left !important;
+    }
+    
+    .content-block p,
+    .content-block ul,
+    .content-block ol {
+        text-align: left;
+    }
+    
+    /* Only keep these elements centered */
+    .hero-section h1,
+    .hero-section p,
+    .highlights-section h2,
+    .text-center {
+        text-align: center !important;
+    }
+    
+    /* Override general mobile h1-h6 centering */
+    h1, h2, h3, h4, h5, h6 {
+        text-align: inherit;
     }
 }
