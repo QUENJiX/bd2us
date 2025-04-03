@@ -2773,6 +2773,7 @@ body.page-transition-active .page-transition-overlay {
     .timeline-content a,
     .resource-list a {
         -webkit-appearance: none;
+        appearance: none;
     }
     
     input, 
@@ -2780,6 +2781,7 @@ body.page-transition-active .page-transition-overlay {
     select, 
     button {
         -webkit-appearance: none;
+        appearance: none;
         border-radius: 0;
     }
 }

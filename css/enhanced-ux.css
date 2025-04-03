@@ -823,4 +823,17 @@ body.dark-mode .content-panel {
     .particle {
         display: none !important;
     }
+}
+
+/* Add the standard appearance property wherever -webkit-appearance is used */
+@supports (-webkit-touch-callout: none) {
+    button,
+    input,
+    select,
+    textarea,
+    .btn,
+    a[role="button"] {
+        -webkit-appearance: none;
+        appearance: none;
+    }
 } 
