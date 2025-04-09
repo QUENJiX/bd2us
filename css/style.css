@@ -3588,3 +3588,115 @@ body.about-page #vision h3 {
     text-align: left !important; 
 }
 
+/* Ensure all interactive elements have proper cursor styles */
+a, button, .btn, input[type="submit"], [role="button"], .timeline-node,
+.timeline-content, .highlight-card, #theme-toggle, #mobile-theme-toggle,
+.social-links a, .team-member .social-links a {
+    cursor: pointer !important;
+}
+
+/* Fix for roadmap cards */
+.timeline-content {
+    cursor: pointer !important;
+}
+
+.timeline-content a {
+    cursor: pointer !important;
+}
+
+/* Fix for theme toggle buttons */
+#theme-toggle, #mobile-theme-toggle {
+    cursor: pointer !important;
+}
+
+/* Fix for social media links */
+.social-links a, .team-member .social-links a {
+    cursor: pointer !important;
+}
+
+/* Ensure all interactive elements and their children have proper cursor styles */
+a, button, .btn, input[type="submit"], [role="button"], .timeline-node,
+.timeline-content, .highlight-card, #theme-toggle, #mobile-theme-toggle,
+.social-links a, .team-member .social-links a,
+/* Add styles for all child elements */
+.timeline-content *, .timeline-content a *, .highlight-card *, .highlight-card a *,
+.social-links a *, .team-member .social-links a *,
+#theme-toggle *, #mobile-theme-toggle * {
+    cursor: pointer !important;
+}
+
+/* Fix for roadmap cards and their content */
+.timeline-content {
+    cursor: pointer !important;
+}
+
+.timeline-content a {
+    cursor: pointer !important;
+}
+
+.timeline-content h3,
+.timeline-content p {
+    cursor: pointer !important;
+}
+
+/* Fix for theme toggle buttons and their icons */
+#theme-toggle, #mobile-theme-toggle {
+    cursor: pointer !important;
+}
+
+#theme-toggle i,
+#mobile-theme-toggle i {
+    cursor: pointer !important;
+}
+
+/* Fix for social media links and their icons */
+.social-links a, .team-member .social-links a {
+    cursor: pointer !important;
+}
+
+.social-links a i,
+.team-member .social-links a i {
+    cursor: pointer !important;
+}
+
+/* Fix for social media links and their icons in mentors section */
+.team-member .social-links {
+    cursor: pointer !important;
+}
+
+.team-member .social-links a {
+    cursor: pointer !important;
+}
+
+.team-member .social-links a i,
+.team-member .social-links a i.fa-brands,
+.team-member .social-links a i.fa-solid,
+.team-member .social-links a i.fa-regular {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+}
+
+.team-member .social-links a * {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+}
+
+/* Ensure the entire social links container is clickable */
+.team-member .social-links a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    text-decoration: none !important;
+    pointer-events: auto !important;
+}
+
+/* Fix for Font Awesome icons specifically */
+.fa-brands,
+.fa-solid,
+.fa-regular {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+}
+
