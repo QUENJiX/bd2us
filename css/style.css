@@ -3490,7 +3490,7 @@ body.dark-mode .chapter-nav-btn:hover {
 
 /* Vision section heading */
 #vision h3 {
-    text-align: center !important;
+    text-align: center;
     margin-bottom: 1.5rem;
 }
 
