@@ -9,6 +9,7 @@
     <link rel="icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/enhanced-ux.css">
+    <link rel="stylesheet" href="css/modern-ui.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
@@ -17,6 +18,7 @@
     <!-- Roadmap styles are now in css/style.css -->
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="main-header" id="main-header">
         <div class="container header-container">
             <a href="index.html" class="logo">BD2US Guide</a>
@@ -50,14 +52,24 @@
     <!-- Add overlay for mobile navigation -->
     <div class="nav-overlay" id="nav-overlay"></div>
 
-    <main>
+    <main id="main-content">
         <div class="container">
-            <h2 class="text-center" style="margin-bottom: 1rem;">Your Roadmap to US Colleges</h2>
+            <div class="section-header text-center">
+                <h2>Your Roadmap to US Colleges</h2>
+                <p class="lead">Navigate your college application journey with confidence</p>
+            </div>
             
-             <!-- Visual Roadmap Page Placeholder - For any intro/outro text on this specific page -->
-             <div class="placeholder animate-on-scroll" style="max-width: 800px; margin: 1rem auto 3rem;">
-                 <p>Welcome to the step-by-step guide through the often winding road of U.S. college applications. This timeline highlights the key milestones and considerations, from early planning to final decisions. Click on any chapter title below to dive into the details for that stage. Remember, this is a marathon, not a sprint – use this roadmap to pace yourself and stay organized.</p>
-             </div>
+            <!-- Roadmap Introduction -->
+            <div class="card roadmap-intro animate-on-scroll" style="max-width: 800px; margin: 0 auto var(--space-3xl);">
+                <div class="card-body">
+                    <div class="intro-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="text-primary">Welcome to Your Journey</h3>
+                    <p>Welcome to the step-by-step guide through the often winding road of U.S. college applications. This timeline highlights the key milestones and considerations, from early planning to final decisions. Click on any chapter title below to dive into the details for that stage.</p>
+                    <p class="text-muted"><strong>Remember:</strong> This is a marathon, not a sprint – use this roadmap to pace yourself and stay organized.</p>
+                </div>
+            </div>
 
             <div class="roadmap-container roadmap-section">
                 <div class="timeline" id="roadmap-timeline">
@@ -199,5 +211,6 @@
 
     <script src="js/script.js"></script>
     <script src="js/enhanced-ux.js"></script>
+    <script src="js/modern-ui.js"></script>
 </body>
 </html> 
