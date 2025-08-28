@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, viewport-fit=cover">
+    <title>The College List: A Strategic Guide - BD2US</title>
+    <meta name="description" content="A strategic, no-nonsense guide to building a U.S. college list for Bangladeshi students, focusing on financial aid realities.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced-ux.css">
+    <link rel="stylesheet" href="css/heading-fix.css">
+    <link rel="stylesheet" href="css/college-list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">BD2US Guide</a>
+            <div class="hamburger-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="roadmap.html">The Roadmap</a></li>
+                    <li><a href="college-list.html">College List</a></li>
+                    <li><a href="financial-aid.html">Financial Aid</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <div class="mobile-theme-toggle">
+                    <button id="mobile-theme-toggle-2" title="Toggle theme" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </nav>
+            <button id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <main>
+        <div class="container content-page">
+            <h2>The College List: Your Strategic Battle Plan</h2>
+            <div class="content-block animate-on-scroll">
+                <p>This is not a list of "good schools." This is a strategic breakdown of where you might actually have a chance of getting funded. Forget the rankings you see on Instagram. The only ranking that matters is how generous a school is to a high-need international student from Bangladesh. I've grouped them into tiers of reality. Don't waste your time applying to 20 schools from the "God Tier" unless you have a Nobel Prize waiting for you. Be smart. Be strategic.</p>
+                <p class="important-note"><strong>Disclaimer:</strong> All data (SAT scores, deadlines, aid policies) changes annually. These are estimates from the 2024-2025 cycle. <strong>YOU MUST VERIFY EVERY SINGLE DATA POINT ON THE COLLEGE'S OFFICIAL WEBSITE.</strong> Trusting this list blindly is academic suicide.</p>
+            </div>
+
+            <!-- College Lists -->
+            <div class="lists-container">
+                <div class="list-section">
+                    <div class="section-header">
+                        <div class="filter-group aligned-filter">
+                            <label for="search-input-uni">Search Universities</label>
+                            <input type="text" id="search-input-uni" placeholder="e.g., Harvard">
+                        </div>
+                        <h2 class="list-heading">Universities</h2>
+                    </div>
+                    <div id="university-grid" class="college-grid"></div>
+                </div>
+                
+                <div class="list-section">
+                    <div class="section-header">
+                        <div class="filter-group aligned-filter">
+                            <label for="aid-filter-lac">Filter LACs by Aid Policy</label>
+                            <select id="aid-filter-lac">
+                                <option value="all">All Policies</option>
+                                <option value="Need-Blind">Need-Blind</option>
+                                <option value="Need-Aware">Need-Aware</option>
+                                <option value="Merit-Only">Merit-Only</option>
+                            </select>
+                        </div>
+                        <h2 class="list-heading">Liberal Arts Colleges</h2>
+                    </div>
+                    <div id="lac-grid" class="college-grid"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 BD2US Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/college-data.js"></script>
+    <script src="js/enhanced-ux.js"></script>
+    <script src="js/college-list.js"></script>
+</body>
+</html>

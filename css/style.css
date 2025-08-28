@@ -935,6 +935,24 @@ main > section:not(.hero-section) {
     /* border: 1px solid var(--color-border); -- REVERTED */
 }
 
+/* Roadmap hero */
+.roadmap-hero { text-align: center; margin: 2rem auto 1rem; max-width: 900px; }
+.roadmap-hero h2 { margin: 0 0 .5rem 0; font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.15; text-align: center !important; }
+.roadmap-page .content-page .roadmap-hero h2 { text-align: center !important; }
+.roadmap-hero .subtitle { margin: 0 auto; max-width: 800px; opacity: .9; }
+
+/* Quick nav chips */
+.roadmap-chips { display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center; margin: 0 auto 1.5rem; }
+.roadmap-chips .chip { 
+    display:inline-flex; align-items:center; gap:.4rem; padding:.4rem .7rem; 
+    border:1px solid var(--color-border); border-radius:999px; background: var(--color-card-bg);
+    color: var(--color-primary); text-decoration:none; font-weight:600; font-size:.9rem;
+    transition: transform .2s ease, border-color .2s ease, color .2s ease;
+}
+.roadmap-chips .chip:hover { transform: translateY(-1px); border-color: var(--color-secondary); color: var(--color-secondary); }
+body.dark-mode .roadmap-chips .chip { background: var(--color-card-bg-dark); border-color: var(--color-border-dark); color: var(--color-primary-dark); }
+body.dark-mode .roadmap-chips .chip:hover { border-color: var(--color-secondary-dark); color: var(--color-secondary-dark); }
+
 .timeline {
     position: relative;
     padding: 2rem 0;
@@ -1014,6 +1032,10 @@ main > section:not(.hero-section) {
      border-color: var(--color-secondary);
 }
 
+/* Subtle accent bar on hover */
+.timeline-content::before { content:''; position:absolute; left:0; top:0; height:100%; width:0; background: linear-gradient(to bottom, var(--color-secondary), transparent); border-radius: var(--border-radius) 0 0 var(--border-radius); transition: width .25s ease; }
+.timeline-content:hover::before { width:6px; }
+
 .timeline-content h3 {
     margin-top: 0;
     font-size: 1.4rem;
@@ -1021,6 +1043,7 @@ main > section:not(.hero-section) {
     margin-bottom: 0.5rem;
     transition: color var(--transition-speed) ease;
 }
+.timeline-content h3 i { margin-right: .5rem; color: currentColor; }
 
 .timeline-content p { 
     font-size: 0.95rem;
@@ -1191,6 +1214,21 @@ dd { /* Definition */
     .content-page .content-block h5,
     .content-page .content-block h6 {
         text-align: left !important;
+    }
+    /* Allow About page to opt into centered headings */
+    .about-page .content-page h1,
+    .about-page .content-page h2,
+    .about-page .content-page h3,
+    .about-page .content-page h4,
+    .about-page .content-page h5,
+    .about-page .content-page h6,
+    .about-page .content-page .content-block h1,
+    .about-page .content-page .content-block h2,
+    .about-page .content-page .content-block h3,
+    .about-page .content-page .content-block h4,
+    .about-page .content-page .content-block h5,
+    .about-page .content-page .content-block h6 {
+        text-align: center !important;
     }
     
     /* Keep specific elements centered */
@@ -1451,6 +1489,9 @@ body.dark-mode #mobile-theme-toggle:focus {
         padding: 3rem 0;
     }
     
+    .roadmap-hero { margin-top: 1rem; }
+    .roadmap-hero h2 { font-size: clamp(1.6rem, 5vw, 2rem); }
+    .roadmap-hero .subtitle { font-size: .98rem; }
     .hero-section h1 {
         font-size: clamp(2rem, 8vw, 2.5rem);
     }

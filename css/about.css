@@ -1,0 +1,77 @@
+/* About page specific styles */
+.about-hero {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.about-hero h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.1;
+}
+.about-hero .subtitle {
+  margin: 0 auto;
+  max-width: 760px;
+  color: var(--color-text);
+  opacity: 0.9;
+}
+
+.team-section { padding: 2rem 0; }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.team-member {
+  background-color: var(--color-card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  transition: transform .25s ease, box-shadow .25s ease;
+  position: relative;
+  padding-right: 48px;
+}
+.team-member:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.team-member img {
+  width: 120px; height: 120px; border-radius: 50%; object-fit: cover;
+  margin: 0 auto 1rem auto; border: 3px solid rgba(0,0,0,0.06);
+}
+.team-member h4 { margin: 0 0 .25rem 0; color: var(--color-primary); font-family: var(--font-heading, 'Playfair Display'); }
+.team-member p { font-size: .95rem; margin: 0; color: var(--color-text); }
+
+/* Vertical icon rail */
+.team-social-links { position: absolute; top: 1.25rem; right: .9rem; display: flex; flex-direction: column; gap: .7rem; }
+.team-icon { color: var(--color-primary); text-decoration: none; }
+.team-icon:hover { color: var(--color-secondary); transform: scale(1.12); }
+.team-social-links i { font-size: 1.15rem; }
+
+/* Social section */
+.social-links { text-align: center; margin-top: 2rem; }
+/* Make icon buttons truly blend with page background on About page */
+.icon-btn { 
+  display:inline-flex; align-items:center; justify-content:center; 
+  width:48px; height:48px; border-radius:50%; 
+  border: none; background: transparent; box-shadow: none; 
+  color: var(--color-primary); margin: 0 .75rem; 
+  transition: color .2s ease, transform .2s ease;
+}
+.icon-btn:hover { color: var(--color-secondary); transform: translateY(-2px); }
+.icon-btn:focus { outline: 2px dashed var(--color-border); outline-offset: 3px; }
+.icon-btn i { font-size: 1.25rem; }
+
+/* Dark mode adjustments */
+body.dark-mode .team-member { background-color: var(--color-card-bg-dark); border-color: var(--color-border-dark); }
+body.dark-mode .team-member p { color: var(--color-text-dark); }
+/* Keep icons clean in dark mode too */
+body.dark-mode .icon-btn { background: transparent; border: none; color: var(--color-primary-dark); }
+body.dark-mode .icon-btn:hover { background: transparent; color: var(--color-secondary-dark); }
+
+/* Unified section headings and text widths for alignment harmony */
+.content-block h3 { text-align: center; margin-bottom: .75rem; }
+/* Center paragraphs on About page content blocks */
+.about-page .content-page .content-block p { max-width: 850px; margin: 0 auto 1rem; text-align: center !important; }
+/* Ensure all headings on About page are centered (override globals) */
+.about-page .content-page h2,
+.about-page .content-page h3 { text-align: center !important; }

@@ -11,135 +11,12 @@
     <link rel="icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/enhanced-ux.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Add specific styles if needed -->
-    <style>
-        /* Basic styles for the team section */
-        .team-section {
-            padding: 2rem 0;
-        }
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .team-member {
-            background-color: #fff; /* White background for cards */
-            border-radius: 8px;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative; /* Add relative positioning for absolute child */
-            padding-right: 45px; /* Add padding to prevent overlap with social links */
-        }
-        .team-member:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
-        }
-        .team-member img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-            object-fit: cover;
-            border: 3px solid var(--color-primary-light); /* Accent border */
-            display: block; /* Ensure it's block for margin auto to work */
-            margin-left: auto; /* Center horizontally */
-            margin-right: auto; /* Center horizontally */
-        }
-        .team-member h4 {
-            margin-bottom: 0.25rem;
-            color: var(--color-primary); /* Use primary color */
-            font-family: var(--font-headings);
-        }
-        .team-member p {
-            font-size: 0.9rem;
-            margin-bottom: 0;
-            color: #000000; /* Black color for light mode */
-        }
-        .social-links {
-            margin-top: 2rem;
-            text-align: center; /* Center the social links */
-        }
-        .social-links h3 {
-            margin-bottom: 1rem;
-        }
-        .social-links a {
-            margin: 0 0.75rem;
-            display: inline-block;
-            text-decoration: none;
-            transition: transform 0.2s ease;
-        }
-        /* Style Font Awesome icons */
-        /* Attempt 1: Target <i> tag color */
-        .social-links a i.fa-brands { /* Updated class selector */
-            font-size: 2rem;
-            vertical-align: middle;
-            color: var(--color-primary) !important; /* Keep important for now */
-            transition: color 0.2s ease;
-        }
-         /* Attempt 2: Target potential SVG path fill */
-        .social-links a i.fa-brands svg path {
-            fill: var(--color-primary) !important;
-        }
-
-        /* Hover effect - target both possibilities */
-        .social-links a:hover i.fa-brands {
-            color: var(--color-secondary) !important;
-        }
-         .social-links a:hover i.fa-brands svg path {
-            fill: var(--color-secondary) !important;
-        }
-
-        .team-social-links {
-            position: absolute;
-            top: 1.5rem; /* Align with top padding */
-            right: 1rem; /* Position on the right */
-            display: flex;
-            flex-direction: column; /* Stack vertically */
-            gap: 0.8rem; /* Space between icons */
-        }
-
-        .team-social-links a {
-            color: var(--color-accent); /* Use accent color */
-            text-decoration: none;
-            transition: color 0.2s ease, transform 0.2s ease;
-            display: inline-block; /* Allow transform */
-        }
-
-        .team-social-links a:hover {
-            color: var(--color-primary); /* Change to primary on hover */
-            transform: scale(1.15);
-        }
-
-        .team-social-links a i {
-            font-size: 1.2rem; /* Adjust icon size */
-            vertical-align: middle;
-        }
-
-        /* Adjustments for dark mode if needed */
-        body.dark-mode .team-member {
-            background-color: var(--color-card-bg-dark);
-        }
-        /* Specific color for team member text in dark mode */
-        body.dark-mode .team-member p {
-            color: #FFFFFF; /* White color for dark mode */
-        }
-        /* Styles for team social links (These were removed but keeping dark mode rules in case they are re-added) */
-        /* body.dark-mode .team-social-links a {
-            color: var(--color-accent-dark); 
-        }
-         body.dark-mode .team-social-links a:hover {
-            color: var(--color-primary-dark);
-        } */
-
-    </style>
 </head>
 <body class="about-page">
     <header class="main-header" id="main-header">
@@ -155,6 +32,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="roadmap.html">The Roadmap</a></li>
+                    <li><a href="college-list.html">College List</a></li>
                     <li><a href="financial-aid.html">Financial Aid</a></li>
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -177,21 +55,24 @@
 
     <main>
         <div class="container content-page">
-            <h2 class="animate-on-scroll">About Bangladeshis at Bideshi Universities (BABU)</h2>
+            <section class="about-hero animate-on-scroll">
+                <h2>About Bangladeshis at Bideshi Universities (BABU)</h2>
+                <p class="subtitle">We’re a small, mission-driven team helping Bangladeshi students navigate U.S. admissions with clarity and honesty.</p>
+            </section>
 
             <!-- Vision Section -->
             <section id="vision" class="content-block animate-on-scroll" data-parallax-speed="0.05">
-                <h3 style="text-align: left !important;">Our Vision</h3>
+                <h3>Our Vision</h3>
                 <p>We see a future where every ambitious Bangladeshi student, no matter how big their dreams or how confusing the path seems, feels empowered and equipped to successfully navigate the U.S. college application journey.</p>
                 <p>We aim to be the clear, comprehensive, and supportive guide that turns the "super duper ultra confusing" process into a manageable path towards achieving their higher education goals in the United States.</p>
             </section>
 
             <!-- Social Links Section - Removed Inline Styles -->
-            <section id="social-links" class="social-links content-block animate-on-scroll interactive-section">
+          <section id="social-links" class="social-links content-block animate-on-scroll interactive-section">
                 <h3>Connect With Us</h3>
-                 <a href="https://www.facebook.com/share/g/1ASw2mfDFZ/" target="_blank" title="Facebook" class="pulse-on-hover"><i class="fa-brands fa-facebook" style="color: var(--color-primary);"></i></a>
-                 <a href="#" target="_blank" title="LinkedIn" class="pulse-on-hover"><i class="fa-brands fa-linkedin" style="color: var(--color-primary);"></i></a>
-                 <a href="#" target="_blank" title="Instagram" class="pulse-on-hover"><i class="fa-brands fa-instagram" style="color: var(--color-primary);"></i></a>
+              <a href="https://www.facebook.com/share/g/1ASw2mfDFZ/" target="_blank" rel="noopener" aria-label="Facebook" class="icon-btn"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn" class="icon-btn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" target="_blank" rel="noopener" aria-label="Instagram" class="icon-btn"><i class="fa-brands fa-instagram"></i></a>
             </section>
 
             <!-- Team Section -->
@@ -199,57 +80,57 @@
                 <h3 class="animate-on-scroll">Meet the Team</h3>
                 <div class="team-grid">
                     <div class="team-member animate-on-scroll interactive-card">
-                        <img src="assets/images/team/founder.jpg" alt="Founder Name">
+                        <img src="assets/images/team/founder.jpg" alt="Samin Rahman portrait" loading="lazy" decoding="async">
                         <h4>Samin Rahman</h4>
                         <p>Founder &amp; Lead Mentor</p>
                         <p>The University of Texas at Dallas</p>
                         <div class="team-social-links">
-                            <a href="https://www.facebook.com/saminrahmanbhaiya" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" style="color: var(--color-primary);"></i></a>
-                            <a href="https://linkedin.com/in/Samin-Rahman" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin" style="color: var(--color-primary);"></i></a>
-                            <a href="https://www.instagram.com/littolsamin" title="Instagram" target="_blank"><i class="fa-brands fa-instagram" style="color: var(--color-primary);"></i></a>
+                            <a href="https://www.facebook.com/saminrahmanbhaiya" title="Facebook" target="_blank" rel="noopener" aria-label="Samin Rahman on Facebook" class="team-icon"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://linkedin.com/in/Samin-Rahman" title="LinkedIn" target="_blank" rel="noopener" aria-label="Samin Rahman on LinkedIn" class="team-icon"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/littolsamin" title="Instagram" target="_blank" rel="noopener" aria-label="Samin Rahman on Instagram" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="team-member animate-on-scroll interactive-card">
-                        <img src="assets/images/team/mentor1.png" alt="Mentor Name 1">
+                        <img src="assets/images/team/mentor1.png" alt="Md Hasibul Islam portrait" loading="lazy" decoding="async">
                         <h4>Md Hasibul Islam</h4>
                         <p>Admissions Mentor</p>
                         <div class="team-social-links">
-                            <a href="https://www.facebook.com/HasibTheStrange/" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" style="color: var(--color-primary);"></i></a>
-                            <a href="#" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin" style="color: var(--color-primary);"></i></a>
-                            <a href="#" title="Instagram" target="_blank"><i class="fa-brands fa-instagram" style="color: var(--color-primary);"></i></a>
+                            <a href="https://www.facebook.com/HasibTheStrange/" title="Facebook" target="_blank" rel="noopener" aria-label="Md Hasibul Islam on Facebook" class="team-icon"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" title="LinkedIn" target="_blank" rel="noopener" aria-label="Md Hasibul Islam on LinkedIn" class="team-icon"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" title="Instagram" target="_blank" rel="noopener" aria-label="Md Hasibul Islam on Instagram" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="team-member animate-on-scroll interactive-card">
-                        <img src="assets/images/team/mentor4.jpg" alt="Mentor Name 4">
+                        <img src="assets/images/team/mentor4.jpg" alt="Muaz Bin Anis portrait" loading="lazy" decoding="async">
                         <h4>Muaz Bin Anis</h4>
                         <p>Admissions Mentor</p>
                         <p>Gettysburg College</p>
                         <div class="team-social-links">
-                            <a href="https://www.facebook.com/muaz.binanis.1" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" style="color: var(--color-primary);"></i></a>
-                            <a href="#" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin" style="color: var(--color-primary);"></i></a>
-                            <a href="#" title="Instagram" target="_blank"><i class="fa-brands fa-instagram" style="color: var(--color-primary);"></i></a>
+                            <a href="https://www.facebook.com/muaz.binanis.1" title="Facebook" target="_blank" rel="noopener" aria-label="Muaz Bin Anis on Facebook" class="team-icon"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" title="LinkedIn" target="_blank" rel="noopener" aria-label="Muaz Bin Anis on LinkedIn" class="team-icon"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" title="Instagram" target="_blank" rel="noopener" aria-label="Muaz Bin Anis on Instagram" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="team-member animate-on-scroll interactive-card">
-                        <img src="assets/images/team/mentor3.jpg" alt="Mentor Name 3">
+                        <img src="assets/images/team/mentor3.jpg" alt="Mohtasim Hafiz portrait" loading="lazy" decoding="async">
                         <h4>Mohtasim Hafiz</h4>
                         <p>SAT & Admissions Mentor</p>
                         <p>1540/1600 SAT Score</p>
                         <p>Georgia Institute of Technology</p>
                         <div class="team-social-links">
-                            <a href="https://www.facebook.com/mohafiz17" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" style="color: var(--color-primary);"></i></a>
-                            <a href="#" title="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin" style="color: var(--color-primary);"></i></a>
-                            <a href="#" title="Instagram" target="_blank"><i class="fa-brands fa-instagram" style="color: var(--color-primary);"></i></a>
+                            <a href="https://www.facebook.com/mohafiz17" title="Facebook" target="_blank" rel="noopener" aria-label="Mohtasim Hafiz on Facebook" class="team-icon"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" title="LinkedIn" target="_blank" rel="noopener" aria-label="Mohtasim Hafiz on LinkedIn" class="team-icon"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" title="Instagram" target="_blank" rel="noopener" aria-label="Mohtasim Hafiz on Instagram" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="team-member animate-on-scroll interactive-card">
-                        <img src="assets/images/team/dsatSchool.jpg" alt="Mentor Name 2">
+                        <img src="assets/images/team/dsatSchool.jpg" alt="DSAT School logo" loading="lazy" decoding="async">
                         <h4>DSAT School</h4>
                         <p>SAT Specialist</p>
                         <div class="team-social-links">
-                            <a href="https://www.facebook.com/dsatschool" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" style="color: var(--color-primary);"></i></a>
-                            <a href="https://youtube.com/@DigitalSATwithZidan" title="LinkedIn" target="_blank"><i class="fa-brands fa-youtube" style="color: var(--color-primary);"></i></a>
-                            <a href="#" title="Instagram" target="_blank"><i class="fa-brands fa-instagram" style="color: var(--color-primary);"></i></a>
+                            <a href="https://www.facebook.com/dsatschool" title="Facebook" target="_blank" rel="noopener" aria-label="DSAT School on Facebook" class="team-icon"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://youtube.com/@DigitalSATwithZidan" title="YouTube" target="_blank" rel="noopener" aria-label="DSAT School on YouTube" class="team-icon"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" title="Instagram" target="_blank" rel="noopener" aria-label="DSAT School on Instagram" class="team-icon"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
