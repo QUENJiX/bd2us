@@ -12,11 +12,11 @@ Thumbs.db
 *.sw?
 
 # Dependency directories
-# node_modules/ (if you ever add JS dependencies)
+node_modules/
 
-# Build output (if applicable)
-# dist/
-# build/ 
+# Build output
+dist/
+build/
 
 # Logs
 *.log
@@ -34,3 +34,11 @@ yarn-error.log*
 # Cache directories
 .cache/
 .parcel-cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Development artifacts
+.vscode/settings.json

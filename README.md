@@ -2,24 +2,20 @@
 
 This repository contains the source code for the BD2US Guide website, a comprehensive roadmap designed to help Bangladeshi students navigate the U.S. college application process.
 
-## Project Overview
+## Project Structure
 
-The guide covers various essential topics, including:
+```
+bd2us/
+├── assets/           # Images and static assets
+├── chapters/         # Chapter content pages  
+├── css/             # Stylesheets
+├── docs/            # Documentation
+├── js/              # JavaScript files
+├── .github/         # GitHub configurations
+└── [HTML pages]     # Main site pages
+```
 
-*   Introduction and Mindset
-*   College Research (including Fit and Financial Aid)
-*   Application Plans (ED/EA/REA/RD)
-*   Application Platforms (Common App, Scoir, etc.)
-*   Fee Waivers
-*   Academics (Transcripts, Grades)
-*   Standardized Testing (SAT/ACT)
-*   English Proficiency Tests (TOEFL/IELTS/DET)
-*   Extracurricular Activities
-*   Awards and Honors
-*   Essays (Personal Statement, Supplementals)
-*   Financial Aid Deep Dive
-*   Useful Resources
-*   About Us / Team
+For detailed structure documentation, see [docs/PROJECT-STRUCTURE.md](docs/PROJECT-STRUCTURE.md).
 
 ## Tech Stack
 
@@ -37,11 +33,29 @@ The live, deployed version of this guide can be viewed at:
 
 *(Deployment is handled automatically via GitHub Actions whenever changes are pushed to the `main` branch).*
 
-### Option 2: Locally
+### Option 2: Local Development
 
 1.  Clone this repository: `git clone https://github.com/QuenJix/bd2us.git`
 2.  Navigate into the directory: `cd bd2us`
 3.  Open the `index.html` file directly in your web browser.
+
+For development guidelines, see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md).
+
+## Content Coverage
+
+The guide provides comprehensive coverage of:
+
+*   **Foundation**: Introduction and mindset shifts
+*   **Research**: College selection and fit analysis  
+*   **Strategy**: Application plans (ED/EA/REA/RD)
+*   **Platforms**: Common App, Scoir, and other systems
+*   **Financial**: Fee waivers and aid strategies
+*   **Academic**: Transcripts and grade presentation
+*   **Testing**: SAT/ACT and English proficiency 
+*   **Profile**: Extracurriculars, awards, and honors
+*   **Essays**: Personal statements and supplements
+*   **Aid**: In-depth financial assistance guide
+*   **Resources**: Tools, links, and references
 
 ## Contributing
 
