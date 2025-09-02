@@ -52,36 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
      * Essential accessibility features
      */
     function initAccessibilityFeatures() {
-        // High contrast mode toggle
-        const contrastToggle = document.createElement('button');
-        contrastToggle.className = 'high-contrast-toggle';
-        contrastToggle.setAttribute('aria-label', 'Toggle high contrast mode');
-        contrastToggle.innerHTML = '<span style="font-weight: bold;">Aa</span>';
-        contrastToggle.style.cssText = `
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            z-index: 1000;
-            background: var(--color-primary);
-            color: var(--color-text-light);
-            border: none;
-            padding: 8px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
-        `;
-        
-        document.body.appendChild(contrastToggle);
-        
-        contrastToggle.addEventListener('click', () => {
-            document.body.classList.toggle('high-contrast');
-            localStorage.setItem('highContrast', 
-                document.body.classList.contains('high-contrast') ? 'true' : 'false');
+        // Focus management and keyboard navigation improvements
+        document.addEventListener('keydown', (e) => {
+            // Enhanced keyboard navigation
+            if (e.key === 'Tab') {
+                document.body.classList.add('keyboard-navigation');
+            }
         });
         
-        // Restore saved preference
-        if (localStorage.getItem('highContrast') === 'true') {
-            document.body.classList.add('high-contrast');
-        }
+        document.addEventListener('mousedown', () => {
+            document.body.classList.remove('keyboard-navigation');
+        });
     }
 });

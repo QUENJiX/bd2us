@@ -1340,8 +1340,8 @@ body.dark-mode #mobile-theme-toggle:focus {
 
     /* Rest of mobile styles */
     .hero-section {
-        margin-top: calc(-1 * var(--header-height));
-        padding: calc(var(--header-height) + 2rem) 0 4rem;
+        margin-top: 0;
+        padding: calc(var(--header-height) + 3rem) 0 4rem;
     }
      .hero-section p {
         font-size: 1.05rem;
@@ -1414,8 +1414,8 @@ body.dark-mode #mobile-theme-toggle:focus {
 /* Additional responsive adjustments for very small screens */
 @media (max-width: 480px) {
     .hero-section {
-        margin-top: calc(-1 * var(--header-height));
-        padding: calc(var(--header-height) + 1.5rem) 0 3rem;
+        margin-top: 0;
+        padding: calc(var(--header-height) + 2.5rem) 0 3rem;
     }
     
     .roadmap-hero { margin-top: 1rem; }
