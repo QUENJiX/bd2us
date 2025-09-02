@@ -4,7 +4,6 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Check for user's motion preferences
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     
     // Initialize only essential features
@@ -22,19 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Simple scroll-to-view animations
         const elements = document.querySelectorAll('.animate-on-scroll');
         
-        if (elements.length === 0) return;
-        
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Stop observing once animated
                 }
             });
-        }, { 
-            threshold: 0.1,
-            rootMargin: '50px'
-        });
+        }, { threshold: 0.1 });
         
         elements.forEach(el => observer.observe(el));
     }
@@ -46,24 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Simple button hover effects
         document.querySelectorAll('.btn, button').forEach(btn => {
             btn.addEventListener('mouseenter', () => {
-                if (!btn.disabled) {
-                    btn.style.transform = 'translateY(-2px)';
-                }
+                btn.style.transform = 'translateY(-2px)';
             });
             
             btn.addEventListener('mouseleave', () => {
                 btn.style.transform = 'translateY(0)';
-            });
-        });
-        
-        // Card hover effects
-        document.querySelectorAll('.highlight-card, .timeline-content').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-5px)';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
             });
         });
     }
@@ -72,21 +52,36 @@ document.addEventListener('DOMContentLoaded', () => {
      * Essential accessibility features
      */
     function initAccessibilityFeatures() {
-        // Focus management for keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Tab') {
-                document.body.classList.add('keyboard-navigation');
-            }
+        // High contrast mode toggle
+        const contrastToggle = document.createElement('button');
+        contrastToggle.className = 'high-contrast-toggle';
+        contrastToggle.setAttribute('aria-label', 'Toggle high contrast mode');
+        contrastToggle.innerHTML = '<span style="font-weight: bold;">Aa</span>';
+        contrastToggle.style.cssText = `
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            z-index: 1000;
+            background: var(--color-primary);
+            color: var(--color-text-light);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        `;
+        
+        document.body.appendChild(contrastToggle);
+        
+        contrastToggle.addEventListener('click', () => {
+            document.body.classList.toggle('high-contrast');
+            localStorage.setItem('highContrast', 
+                document.body.classList.contains('high-contrast') ? 'true' : 'false');
         });
         
-        document.addEventListener('mousedown', () => {
-            document.body.classList.remove('keyboard-navigation');
-        });
-        
-        // High contrast media query listener
-        const contrastQuery = window.matchMedia('(prefers-contrast: high)');
-        if (contrastQuery.matches) {
-            document.body.classList.add('high-contrast-mode');
+        // Restore saved preference
+        if (localStorage.getItem('highContrast') === 'true') {
+            document.body.classList.add('high-contrast');
         }
     }
 });

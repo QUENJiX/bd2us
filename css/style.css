@@ -1056,6 +1056,29 @@ dd { /* Definition */
         position: relative;
     }
     
+    /* Hide the desktop theme toggle on mobile */
+    #theme-toggle {
+        display: none !important;
+    }
+    
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+        min-height: var(--header-height);
+        position: relative;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+        flex-grow: 1;
+    }
+    
+    .hamburger-menu {
+        margin-left: auto;
+    }
+    
     .hamburger-menu span {
         display: block;
         position: absolute;
@@ -1099,18 +1122,6 @@ dd { /* Definition */
     
     body.dark-mode .hamburger-menu span {
         background: var(--color-primary);
-    }
-    
-    .header-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 15px;
-        min-height: var(--header-height);
-    }
-    
-    .logo {
-        font-size: 1.4rem;
     }
     
     /* Fix chapter titles alignment */
@@ -1202,7 +1213,7 @@ body.dark-mode #mobile-theme-toggle:focus {
     
     /* Hide the desktop theme toggle on mobile */
     #theme-toggle {
-        display: none;
+        display: none !important;
     }
 }
 
