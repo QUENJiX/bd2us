@@ -1,4 +1,4 @@
-﻿/* --- Google Font Import --- */
+/* --- Google Font Import --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap');
 
 /* --- Import CSS Variables --- */
@@ -6,19 +6,7 @@
 
 /* --- Additional Style Variables --- */
 :root {
-    /* Light Mode Glow Effects */
-    --light-text-glow-sm: 0 0 1px rgba(0, 77, 64, 0.1);
-    --light-text-glow-md: 0 0 4px rgba(0, 77, 64, 0.2);
-    --light-text-glow-lg: 0 0 8px rgba(0, 77, 64, 0.3);
-    --light-box-glow-sm: 0 0 5px rgba(0, 77, 64, 0.1);
-    --light-box-glow-md: 0 0 15px rgba(0, 77, 64, 0.15);
-    --light-box-glow-lg: 0 0 30px rgba(0, 77, 64, 0.2);
-    --light-accent-glow-sm: 0 0 5px rgba(162, 62, 72, 0.1);
-    --light-accent-glow-md: 0 0 15px rgba(162, 62, 72, 0.15);
-    --light-accent-glow-lg: 0 0 30px rgba(162, 62, 72, 0.2);
-    
-    /* Animation Speeds (shared between modes) */
-    --glow-pulse-speed: 3s;
+    /* Animation Speeds */
     --hover-transition: 0.2s;
 
     --font-heading: 'Playfair Display', serif;
@@ -30,253 +18,216 @@
 }
 
 /* --- Dark Mode Variables & Styles --- */
-body.dark-mode {
-    /* Professional Dark Mode Palette */
-    --color-primary-dark: #1B5E20;   /* Dark Green (professional) */
-    --color-secondary-dark: #8E24AA; /* Deep Purple */
-    --color-accent-dark: #FFB74D;    /* Warm Amber */
-    --color-background-dark: #121212; /* True Dark Background */
-    --color-text-dark: #FFFFFF;       /* Pure White for maximum contrast */
-    --color-text-muted-dark: #B0B0B0; /* Light Gray for secondary text */
-    --color-text-light-dark: #121212; /* Dark background for light elements */
-    --color-border-dark: #333333;    /* Dark Gray borders */
-    --color-hero-bg-dark: #1A1A1A;   /* Slightly lighter dark for hero */
-    --color-card-bg-dark: #1E1E1E;   /* Dark Gray for cards */
-    --color-shadow-dark: rgba(0, 0, 0, 0.5); /* Standard dark shadow */
-    
-    /* Remove glow effects for professional look */
-    --text-glow-sm: none;
-    --text-glow-md: none;
-    --text-glow-lg: none;
-    --box-glow-sm: none;
-    --box-glow-md: none;
-    --box-glow-lg: none;
-    --accent-glow-sm: none;
-    --accent-glow-md: none;
-    --accent-glow-lg: none;
-    
-    /* Animation Speeds */
-    --glow-pulse-speed: 3s;
-    --hover-transition: 0.2s;
+/* Note: Main dark mode colors are now defined in variables.css for vintage Dartmouth theme */
 
-    /* Override default colors */
-    --color-primary: var(--color-primary-dark);
-    --color-secondary: var(--color-secondary-dark);
-    --color-accent: var(--color-accent-dark);
-    --color-background: var(--color-background-dark);
-    --color-text: var(--color-text-dark);
-    --color-text-light: var(--color-text-light-dark);
-    --color-border: var(--color-border-dark);
-    --color-hero-bg: var(--color-hero-bg-dark);
-    --color-card-bg: var(--color-card-bg-dark);
-    --color-shadow: var(--color-shadow-dark);
-    
+/* Dark mode global styles */
+body.dark-mode {
     /* Apply smooth transition when switching modes */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Dark mode global styles */
-body.dark-mode {
-    background-color: var(--color-background-dark);
-    color: var(--color-text-dark);
-}
-
-/* Style overrides for specific elements in dark mode */
-body.dark-mode .main-header {
-    background-color: rgba(18, 18, 18, 0.8);
+/* Style overrides for specific elements in dark mode - IMPORTANT: Force navbar color */
+html body.dark-mode .main-header {
+    background-color: rgba(24, 26, 27, 0.95) !important; /* Updated navbar color #181A1B */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color-border-dark);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #404040 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
 }
 
-body.dark-mode .main-header.scrolled {
-    background-color: rgba(18, 18, 18, 0.95);
-    border-bottom-color: var(--color-primary-dark);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+html body.dark-mode .main-header.scrolled {
+    background-color: rgba(24, 26, 27, 0.98) !important; /* More solid navbar when scrolled */
+    border-bottom-color: #7df0c2 !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Additional fallback for header styling */
+body.dark-mode header.main-header,
+body.dark-mode .main-header,
+.dark-mode .main-header {
+    background: rgba(24, 26, 27, 0.95) !important; /* Updated navbar color #181A1B */
+    background-color: rgba(24, 26, 27, 0.95) !important;
 }
 
 body.dark-mode .logo {
-    color: var(--color-primary-dark);
+    color: var(--color-primary);
     transition: color 0.3s;
 }
 
 body.dark-mode .logo:hover {
-    color: var(--color-secondary-dark);
-    text-shadow: var(--text-glow-md);
+    color: var(--color-secondary);
+    text-shadow: var(--vintage-text-shadow);
 }
 
 body.dark-mode .main-nav a {
-    color: var(--color-text-dark);
+    color: var(--color-text);
     transition: color 0.3s, text-shadow 0.3s, background-color 0.3s;
 }
 
 body.dark-mode .main-nav a.active {
-    color: var(--color-primary-dark);
-    text-shadow: var(--text-glow-sm);
+    color: var(--color-primary);
+    text-shadow: var(--vintage-text-shadow);
 }
 
 body.dark-mode .main-nav a:hover, 
 body.dark-mode .main-nav a:focus {
-    color: var(--color-primary-dark);
-    text-shadow: var(--text-glow-md);
-    background-color: rgba(0, 242, 255, 0.05);
+    color: var(--color-primary);
+    text-shadow: var(--vintage-text-shadow);
+    background-color: rgba(144, 238, 144, 0.05); /* Light green tint */
 }
 
 body.dark-mode .main-nav a::after {
-    background-color: var(--color-primary-dark);
-    box-shadow: var(--box-glow-sm);
+    background-color: var(--color-primary);
+    box-shadow: var(--vintage-box-shadow);
 }
 
 body.dark-mode .btn-primary {
-    background-color: var(--color-primary-dark);
-    color: var(--color-text-light-dark);
-    border-color: var(--color-primary-dark);
-    box-shadow: var(--box-glow-sm);
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border-color: var(--color-primary);
+    box-shadow: var(var(--vintage-box-shadow));
     transition: all 0.3s ease;
 }
 
 body.dark-mode .btn-primary:hover,
 body.dark-mode .btn-primary:focus {
     background-color: transparent;
-    color: var(--color-primary-dark);
-    border-color: var(--color-primary-dark);
-    box-shadow: var(--box-glow-md);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: var(var(--vintage-box-shadow));
     transform: translateY(-2px);
 }
 
 body.dark-mode .btn-secondary {
-    background-color: var(--color-secondary-dark);
-    color: var(--color-text-light-dark);
-    border-color: var(--color-secondary-dark);
-    box-shadow: var(--accent-glow-sm);
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+    border-color: var(--color-secondary);
+    box-shadow: var(var(--vintage-box-shadow));
     transition: all 0.3s ease;
 }
 
 body.dark-mode .btn-secondary:hover,
 body.dark-mode .btn-secondary:focus {
     background-color: transparent;
-    color: var(--color-secondary-dark);
-    border-color: var(--color-secondary-dark);
-    box-shadow: var(--accent-glow-md);
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
     transform: translateY(-2px);
 }
 
 body.dark-mode #scroll-to-top {
-    background-color: var(--color-primary-dark);
-    color: var(--color-text-light-dark);
-    box-shadow: var(--box-glow-sm);
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    box-shadow: var(--vintage-box-shadow);
     transition: all 0.3s ease;
 }
 
 body.dark-mode #scroll-to-top:hover,
 body.dark-mode #scroll-to-top:focus {
-    background-color: var(--color-secondary-dark);
-    box-shadow: var(--accent-glow-md);
+    background-color: var(--color-secondary);
+    box-shadow: var(--vintage-box-shadow);
     transform: translateY(-3px);
 }
 
 body.dark-mode #scroll-to-top:active {
-    background-color: var(--color-secondary-dark);
+    background-color: var(--color-secondary);
     transform: translateY(0);
 }
 
 body.dark-mode .placeholder {
-    background-color: rgba(19, 19, 43, 0.5);
-    border-color: var(--color-border-dark);
-    color: var(--color-text-muted-dark);
+    background-color: var(--color-hero-bg);
+    border-color: var(--color-border);
+    color: var(--color-text);
 }
 
 body.dark-mode .timeline::before {
-    background: linear-gradient(to bottom, var(--color-secondary-dark), var(--color-primary-dark));
-    box-shadow: 0 0 15px rgba(0, 242, 255, 0.3), 0 0 5px rgba(255, 0, 195, 0.3);
-    animation: glowPulse var(--glow-pulse-speed) infinite alternate;
+    background: linear-gradient(to bottom, var(--color-secondary), var(--color-primary));
+    box-shadow: var(--vintage-box-shadow);
 }
 
 body.dark-mode .timeline-node::after {
-    background-color: var(--color-background-dark);
-    border: 2px solid var(--color-primary-dark);
-    box-shadow: 0 0 0 4px var(--color-background-dark), var(--box-glow-sm);
+    background-color: var(--color-background);
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 0 0 4px var(--color-background), var(--vintage-box-shadow);
     transition: all 0.3s ease;
 }
 
 body.dark-mode .timeline-node:hover::after {
-    border-color: var(--color-secondary-dark);
-    box-shadow: 0 0 0 4px var(--color-background-dark), var(--accent-glow-md);
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 4px var(--color-background), var(var(--vintage-box-shadow));
     transform: scale(1.1);
 }
 
 body.dark-mode .timeline-content {
-    background-color: var(--color-card-bg-dark);
-    border: 1px solid var(--color-border-dark);
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
 }
 
 body.dark-mode .timeline-content:hover {
-    border-color: var(--color-secondary-dark);
-    box-shadow: var(--accent-glow-md);
+    border-color: var(--color-secondary);
+    box-shadow: var(var(--vintage-box-shadow));
     transform: translateY(-5px);
 }
 
 body.dark-mode .timeline-content h3 {
-    color: var(--color-primary-dark);
-    text-shadow: var(--text-glow-sm);
+    color: var(--color-primary);
+    text-shadow: var(var(--vintage-text-shadow));
 }
 
 body.dark-mode .timeline-content a:hover h3, 
 body.dark-mode .timeline-content a:focus h3 {
-    color: var(--color-secondary-dark);
-    text-shadow: var(--text-glow-md);
+    color: var(--color-secondary);
+    text-shadow: var(var(--vintage-text-shadow));
 }
 
 body.dark-mode .timeline-content p {
-    color: var(--color-text-muted-dark);
+    color: var(--color-text);
 }
 
 body.dark-mode .resource-list li {
-    background-color: var(--color-card-bg-dark);
-    border: 1px solid var(--color-border-dark);
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
 }
 
 body.dark-mode .resource-list li:hover {
-    border-color: var(--color-primary-dark);
-    box-shadow: var(--box-glow-md);
+    border-color: var(--color-primary);
+    box-shadow: var(var(--vintage-box-shadow));
     transform: translateY(-3px);
 }
 
 body.dark-mode .resource-list a {
-    color: var(--color-primary-dark);
-    text-shadow: var(--text-glow-sm);
+    color: var(--color-primary);
+    text-shadow: var(var(--vintage-text-shadow));
     transition: all 0.3s ease;
 }
 
 body.dark-mode .resource-list a:hover {
-    color: var(--color-secondary-dark);
-    text-shadow: var(--text-glow-md);
-    text-decoration-color: var(--color-secondary-dark);
+    color: var(--color-secondary);
+    text-shadow: var(var(--vintage-text-shadow));
+    text-decoration-color: var(--color-secondary);
 }
 
 body.dark-mode .resource-list p {
-    color: var(--color-text-muted-dark);
+    color: var(--color-text);
 }
 
 body.dark-mode dl dt {
-    color: var(--color-primary-dark);
-    text-shadow: var(--text-glow-sm);
+    color: var(--color-primary);
+    text-shadow: var(var(--vintage-text-shadow));
 }
 
 body.dark-mode dl dd {
-    border-left: 3px solid var(--color-secondary-dark);
-    box-shadow: var(--accent-glow-sm);
+    border-left: 3px solid var(--color-secondary);
+    box-shadow: var(var(--vintage-box-shadow));
 }
 
 body.dark-mode .main-footer {
     background-color: rgba(10, 10, 22, 0.9);
-    color: var(--color-text-muted-dark);
-    border-top: 1px solid var(--color-border-dark);
+    color: var(--color-text);
+    border-top: 1px solid var(--color-border);
 }
 
 /* --- Theme Toggle Button Styles --- */
@@ -292,77 +243,45 @@ body.dark-mode .main-footer {
     line-height: 1;
 }
 
-/* Add these animations for dark mode glow effects */
-@keyframes glowPulse {
-    0% {
-        box-shadow: 0 0 5px rgba(0, 242, 255, 0.2);
-    }
-    50% {
-        box-shadow: 0 0 15px rgba(0, 242, 255, 0.4), 0 0 5px rgba(255, 0, 195, 0.3);
-    }
-    100% {
-        box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
-    }
-}
-
-@keyframes textGlowPulse {
-    0% {
-        text-shadow: 0 0 2px rgba(0, 242, 255, 0.2);
-    }
-    50% {
-        text-shadow: 0 0 8px rgba(0, 242, 255, 0.4);
-    }
-    100% {
-        text-shadow: 0 0 4px rgba(0, 242, 255, 0.3);
-    }
-}
-
 /* Additional dark mode enhancements */
 body.dark-mode h1, 
 body.dark-mode h2 {
-    color: var(--color-text-dark);
-    text-shadow: var(--text-glow-sm);
-}
-
-body.dark-mode h1 {
-    animation: textGlowPulse 4s infinite alternate;
+    color: var(--color-text);
+    text-shadow: var(--vintage-text-shadow);
 }
 
 body.dark-mode .hero-section {
-    background-color: var(--color-hero-bg-dark);
-    background-image: 
-        radial-gradient(circle at 50% 35%, rgba(0, 242, 255, 0.05) 0%, transparent 55%),
-        radial-gradient(circle at 50% 65%, rgba(255, 0, 195, 0.05) 0%, transparent 55%);
-    border-bottom: 1px solid var(--color-border-dark);
+    background-color: var(--color-hero-bg);
+    border-bottom: 1px solid var(--color-border);
 }
 
 body.dark-mode .highlight-card {
-    background-color: var(--color-card-bg-dark);
-    border: 1px solid var(--color-border-dark);
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
 }
 
 body.dark-mode .highlight-card:hover {
-    border-color: var(--color-primary-dark);
-    box-shadow: var(--box-glow-md);
+    border-color: var(--color-primary);
+    box-shadow: var(var(--vintage-box-shadow));
     transform: translateY(-5px);
 }
 
 body.dark-mode .highlight-card h3 {
-    color: var(--color-primary-dark);
-    text-shadow: var(--text-glow-sm);
+    color: var(--color-primary);
+    text-shadow: var(var(--vintage-text-shadow));
 }
 
 body.dark-mode a {
-    color: var(--color-primary-dark);
+    color: var(--color-primary);
     transition: all 0.2s ease;
 }
 
 body.dark-mode a:hover,
 body.dark-mode a:focus {
-    color: var(--color-secondary-dark);
-    text-shadow: var(--text-glow-sm);
+    color: var(--color-secondary);
+    text-shadow: var(var(--vintage-text-shadow));
 }
 
 /* Neon border effect for selected elements */
@@ -375,9 +294,9 @@ body.dark-mode .hero-section::after {
     height: 1px;
     background: linear-gradient(90deg, 
         transparent 0%, 
-        rgba(0, 242, 255, 0.3) 20%, 
-        rgba(255, 0, 195, 0.3) 50%,
-        rgba(0, 242, 255, 0.3) 80%,
+        rgba(144, 238, 144, 0.3) 20%, 
+        rgba(222, 184, 135, 0.3) 50%,
+        rgba(144, 238, 144, 0.3) 80%,
         transparent 100%);
 }
 
@@ -392,19 +311,19 @@ body.dark-mode .main-footer::before {
 /* Mobile responsiveness for dark mode */
 @media (max-width: 768px) {
     body.dark-mode .main-nav {
-        background-color: var(--color-card-bg-dark);
-        border-left: 1px solid var(--color-border-dark);
+        background-color: var(--color-card-bg);
+        border-left: 1px solid var(--color-border);
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
     }
     
     body.dark-mode #mobile-theme-toggle {
-        background-color: rgba(0, 242, 255, 0.1);
-        box-shadow: var(--box-glow-sm);
+        background-color: rgba(144, 238, 144, 0.1);
+        box-shadow: var(var(--vintage-box-shadow));
     }
     
     body.dark-mode #mobile-theme-toggle:hover {
-        background-color: rgba(0, 242, 255, 0.2);
-        box-shadow: var(--box-glow-md);
+        background-color: rgba(144, 238, 144, 0.2);
+        box-shadow: var(var(--vintage-box-shadow));
     }
 }
 
@@ -940,8 +859,8 @@ main > section:not(.hero-section) {
     transition: transform .2s ease, border-color .2s ease, color .2s ease;
 }
 .roadmap-chips .chip:hover { transform: translateY(-1px); border-color: var(--color-secondary); color: var(--color-secondary); }
-body.dark-mode .roadmap-chips .chip { background: var(--color-card-bg-dark); border-color: var(--color-border-dark); color: var(--color-primary-dark); }
-body.dark-mode .roadmap-chips .chip:hover { border-color: var(--color-secondary-dark); color: var(--color-secondary-dark); }
+body.dark-mode .roadmap-chips .chip { background: var(--color-card-bg); border-color: var(--color-border); color: var(--color-primary); }
+body.dark-mode .roadmap-chips .chip:hover { border-color: var(--color-secondary); color: var(--color-secondary); }
 
 .timeline {
     position: relative;
@@ -1180,7 +1099,7 @@ dd { /* Definition */
     }
     
     body.dark-mode .hamburger-menu span {
-        background: var(--color-primary-dark);
+        background: var(--color-primary);
     }
     
     .header-container {
@@ -1261,14 +1180,14 @@ dd { /* Definition */
 }
 
 body.dark-mode #mobile-theme-toggle {
-    border-color: var(--color-primary-dark);
-    color: var(--color-primary-dark);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 body.dark-mode #mobile-theme-toggle:hover,
 body.dark-mode #mobile-theme-toggle:focus {
-    background-color: var(--color-primary-dark);
-    color: var(--color-text-light-dark);
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
 }
 
 @media (max-width: 768px) {
@@ -1354,7 +1273,7 @@ body.dark-mode #mobile-theme-toggle:focus {
     }
     
     body.dark-mode .main-nav {
-        background-color: var(--color-card-bg-dark);
+        background-color: var(--color-card-bg);
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     }
 
@@ -1671,27 +1590,27 @@ input, select, textarea {
 } 
 
 /* Additional dark mode animations */
-@keyframes glowPulse {
+@keyframes vintagePulse {
     0% {
-        box-shadow: 0 0 5px rgba(0, 242, 255, 0.2);
+        box-shadow: 0 0 5px rgba(144, 238, 144, 0.2);
     }
     50% {
-        box-shadow: 0 0 15px rgba(0, 242, 255, 0.4), 0 0 5px rgba(255, 0, 195, 0.3);
+        box-shadow: 0 0 15px rgba(144, 238, 144, 0.4), 0 0 5px rgba(222, 184, 135, 0.3);
     }
     100% {
-        box-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+        box-shadow: 0 0 10px rgba(144, 238, 144, 0.3);
     }
 }
 
-@keyframes textGlowPulse {
+@keyframes textvintagePulse {
     0% {
-        text-shadow: 0 0 2px rgba(0, 242, 255, 0.2);
+        text-shadow: 0 0 2px rgba(144, 238, 144, 0.2);
     }
     50% {
-        text-shadow: 0 0 8px rgba(0, 242, 255, 0.4);
+        text-shadow: 0 0 8px rgba(144, 238, 144, 0.4);
     }
     100% {
-        text-shadow: 0 0 4px rgba(0, 242, 255, 0.3);
+        text-shadow: 0 0 4px rgba(144, 238, 144, 0.3);
     }
 }
 
@@ -1703,8 +1622,8 @@ body.dark-mode .timeline-content h3 {
 
 body.dark-mode .highlight-card:hover h3,
 body.dark-mode .timeline-content:hover h3 {
-    color: var(--color-secondary-dark);
-    text-shadow: var(--text-glow-md);
+    color: var(--color-secondary);
+    text-shadow: var(var(--vintage-text-shadow));
 }
 
 /* Neon border animation for cards in dark mode */
@@ -1719,9 +1638,9 @@ body.dark-mode .resource-list li::before {
     bottom: -1px;
     border-radius: inherit;
     background: linear-gradient(135deg, 
-        rgba(0, 242, 255, 0) 0%, 
-        rgba(0, 242, 255, 0.1) 50%, 
-        rgba(255, 0, 195, 0.1) 100%);
+        rgba(144, 238, 144, 0) 0%, 
+        rgba(144, 238, 144, 0.1) 50%, 
+        rgba(222, 184, 135, 0.1) 100%);
     z-index: -1;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -1746,8 +1665,8 @@ body.dark-mode a:not(.btn):not(.logo)::after {
     height: 1px;
     bottom: -2px;
     left: 0;
-    background: linear-gradient(90deg, var(--color-primary-dark), var(--color-secondary-dark));
-    box-shadow: var(--text-glow-sm);
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    box-shadow: var(var(--vintage-text-shadow));
     transition: width 0.3s ease;
 }
 
@@ -1771,8 +1690,8 @@ body.dark-mode .btn::before {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, 
-        rgba(0, 242, 255, 0.2) 0%, 
-        rgba(255, 0, 195, 0.2) 100%);
+        rgba(144, 238, 144, 0.2) 0%, 
+        rgba(222, 184, 135, 0.2) 100%);
     z-index: -1;
     transform: translateY(100%);
     transition: transform 0.3s ease;
@@ -1826,8 +1745,8 @@ body.dark-mode input[type="email"],
 body.dark-mode input[type="password"],
 body.dark-mode textarea {
     background-color: rgba(19, 19, 43, 0.8);
-    border: 1px solid var(--color-border-dark);
-    color: var(--color-text-dark);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
     transition: all 0.3s ease;
 }
 
@@ -1835,16 +1754,16 @@ body.dark-mode input[type="text"]:focus,
 body.dark-mode input[type="email"]:focus,
 body.dark-mode input[type="password"]:focus,
 body.dark-mode textarea:focus {
-    border-color: var(--color-primary-dark);
-    box-shadow: 0 0 0 2px rgba(0, 242, 255, 0.2);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(144, 238, 144, 0.2);
     outline: none;
 }
 
 /* Mobile dark mode enhancements */
 @media (max-width: 768px) {
     body.dark-mode .hamburger-menu span {
-        background-color: var(--color-primary-dark);
-        box-shadow: var(--text-glow-sm);
+        background-color: var(--color-primary);
+        box-shadow: var(var(--vintage-text-shadow));
     }
     
     body.dark-mode .nav-overlay {
@@ -1877,7 +1796,7 @@ body.dark-mode .resource-list li {
 } 
 
 /* --- Light Mode Animation Keyframes --- */
-@keyframes lightGlowPulse {
+@keyframes lightvintagePulse {
     0% {
         box-shadow: 0 0 5px rgba(0, 77, 64, 0.1);
     }
@@ -1889,7 +1808,7 @@ body.dark-mode .resource-list li {
     }
 }
 
-@keyframes lightTextGlowPulse {
+@keyframes lightTextvintagePulse {
     0% {
         text-shadow: 0 0 1px rgba(0, 77, 64, 0.1);
     }
@@ -2024,14 +1943,14 @@ body.dark-mode .resource-list li {
 
 /* --- Light Mode Content Animations --- */
 h1 {
-    animation: lightTextGlowPulse 5s infinite alternate;
+    animation: lightTextvintagePulse 5s infinite alternate;
 }
 
 /* --- Timeline Animations --- */
 .timeline::before {
     background: linear-gradient(to bottom, var(--color-secondary), var(--color-primary));
     box-shadow: 0 0 10px rgba(0, 77, 64, 0.15), 0 0 5px rgba(162, 62, 72, 0.1);
-    animation: lightGlowPulse var(--glow-pulse-speed) infinite alternate;
+    animation: lightvintagePulse var(--glow-pulse-speed) infinite alternate;
 }
 
 .timeline-node::after {
@@ -2340,7 +2259,7 @@ textarea:focus {
 }
 
 body.dark-mode .btn-ripple {
-    background: rgba(0, 242, 255, 0.15);
+    background: rgba(144, 238, 144, 0.15);
 }
 
 @keyframes ripple {
@@ -2386,7 +2305,7 @@ body.dark-mode .timeline-content::after,
 body.dark-mode .resource-list li::after {
     background: radial-gradient(
         circle at var(--mouse-x) var(--mouse-y),
-        rgba(0, 242, 255, 0.1) 0%,
+        rgba(144, 238, 144, 0.1) 0%,
         transparent 40%
     );
 }
@@ -2412,7 +2331,7 @@ body.dark-mode .resource-list li::after {
 }
 
 body.dark-mode .page-transition-overlay {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary);
 }
 
 body.page-transition-active .page-transition-overlay {
@@ -2463,7 +2382,7 @@ body.page-transition-active .page-transition-overlay {
     }
     
     body.dark-mode .tap-highlight {
-        background-color: rgba(0, 242, 255, 0.05);
+        background-color: rgba(144, 238, 144, 0.05);
     }
 }
 
@@ -2889,7 +2808,7 @@ body.page-transition-active .page-transition-overlay {
     }
     
     body.dark-mode .main-nav {
-        background-color: var(--color-card-bg-dark);
+        background-color: var(--color-card-bg);
     }
     
     body.nav-open .main-nav {
@@ -3227,16 +3146,16 @@ body.page-transition-active .page-transition-overlay {
 }
 
 body.dark-mode .chapter-nav-btn {
-    background-color: var(--color-card-bg-dark);
-    border-color: var(--color-border-dark);
-    color: var(--color-primary-dark);
+    background-color: var(--color-card-bg);
+    border-color: var(--color-border);
+    color: var(--color-primary);
 }
 
 body.dark-mode .chapter-nav-btn:hover {
-    background-color: var(--color-primary-dark);
-    color: var(--color-text-light-dark);
-    border-color: var(--color-primary-dark);
-    box-shadow: var(--box-glow-md);
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border-color: var(--color-primary);
+    box-shadow: var(var(--vintage-box-shadow));
 }
 
 @media (max-width: 768px) {

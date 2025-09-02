@@ -55,30 +55,27 @@
 
 /* --- Dark Mode --- */
 body.dark-mode {
-    /* Vintage Evening Library - Like an old Dartmouth library at night */
-    --color-primary: #90EE90;     /* Light Green - vintage lamp glow */
-    --color-secondary: #DEB887;   /* Burlywood - aged brass accents */
-    --color-accent: #F4A460;      /* Sandy Brown - warm lamplight */
-    --color-background: #1C1810;  /* Dark Olive - aged wood/leather */
-    --color-text: #F5F5DC;        /* Beige - warm paper color */
-    --color-text-light: #1C1810;  /* Match dark background */
-    --color-border: #4A4A3A;      /* Dark Olive Drab - aged metal */
-    --color-hero-bg: #2F2B1F;     /* Dark vintage brown - leather bound books */
-    --color-card-bg: #252017;     /* Slightly lighter than background */
-    --color-shadow: rgba(0, 0, 0, 0.4); /* Deep shadow */
+    /* Custom Dark Mode - Clean modern dark with mint green accents */
+    --color-primary: #7df0c2;     /* Mint Green - for titles and important text */
+    --color-secondary: #b0b0b0;   /* Light gray - for secondary elements */
+    --color-accent: #7df0c2;      /* Mint Green - consistent accent */
+    --color-background: #1D1F20;  /* Updated background color */
+    --color-text: #e0e0e0;        /* Light gray - clean readable text */
+    --color-text-light: #1D1F20;  /* Match dark background */
+    --color-border: #404040;      /* Medium gray borders */
+    --color-hero-bg: #1D1F20;     /* Same as background for clean look */
+    --color-card-bg: #2a2a2a;     /* Card background - lighter than main */
+    --color-shadow: rgba(0, 0, 0, 0.5); /* Deep shadow */
     
-    /* Vintage Dark Mode Semantic Colors */
-    --color-success: #98FB98;     /* Pale Green - soft success glow */
-    --color-warning: #F0E68C;     /* Khaki - warm warning glow */
-    --color-error: #FA8072;       /* Salmon - soft error glow */
-    --color-info: #87CEEB;        /* Sky Blue - gentle info glow */
-    --color-success-bg: #2F4F2F;  /* Dark Olive Green */
-    --color-warning-bg: #4B4B1A;  /* Dark Olive */
-    --color-error-bg: #4B2A2A;    /* Dark Maroon */
-    --color-info-bg: #2F3F4F;     /* Dark Slate Gray */
-    --color-warning-bg: #451A03;  /* Dark amber background */
-    --color-error-bg: #450A0A;    /* Dark red background */
-    --color-info-bg: #1E3A8A;     /* Dark blue background */
+    /* Semantic Colors for Dark Mode */
+    --color-success: #7df0c2;     /* Mint Green - success */
+    --color-warning: #F0E68C;     /* Khaki - warm warning */
+    --color-error: #FA8072;       /* Salmon - soft error */
+    --color-info: #87CEEB;        /* Sky Blue - gentle info */
+    --color-success-bg: #1a4a3a;  /* Dark green background */
+    --color-warning-bg: #4a4a1a;  /* Dark yellow background */
+    --color-error-bg: #4a2a2a;    /* Dark red background */
+    --color-info-bg: #2a3a4a;     /* Dark blue background */
     
     background-color: var(--color-background);
     color: var(--color-text);
@@ -94,10 +91,24 @@ body {
     background-size: 50px 50px, 30px 30px;
 }
 
+/* Dark mode texture override */
+body.dark-mode {
+    background-image: none; /* Clean solid background, no texture */
+}
+
 /* Vintage headings */
 h1, h2, h3, h4, h5, h6 {
     text-shadow: var(--vintage-text-shadow);
     letter-spacing: 0.02em;
+}
+
+/* Dark mode headings - use mint green for titles/important text */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .logo,
+body.dark-mode .college-name {
+    color: #7df0c2; /* Mint green for titles and important text */
 }
 
 /* Vintage cards and containers */
@@ -119,12 +130,14 @@ h1, h2, h3, h4, h5, h6 {
 .main-header {
     background-color: rgba(253, 246, 227, 0.95); /* Vintage off-white with transparency */
     border-bottom: 2px solid var(--color-border);
-    box-shadow: 0 2px 10px rgba(47, 79, 47, 0.1);
+    box-shadow: 0 2px 10px var(--color-shadow);
 }
 
+/* Dark mode header override */
 body.dark-mode .main-header {
-    background-color: rgba(28, 24, 16, 0.95); /* Vintage dark with transparency */
-    border-bottom-color: var(--color-border);
+    background-color: rgba(24, 26, 27, 0.95) !important; /* Updated navbar color #181A1B */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) !important;
+    border-bottom: 1px solid #404040 !important;
 }
 
 /* Vintage navigation */

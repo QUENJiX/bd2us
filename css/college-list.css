@@ -261,44 +261,87 @@
 
 /* Dark mode specific card improvements */
 body.dark-mode .college-card {
-    background-color: var(--color-card-bg);
-    border-color: var(--color-border);
-    box-shadow: 0 2px 8px color-mix(in srgb, var(--color-shadow) var(--alpha-light), transparent);
+    background-color: #2a2a2a; /* Lighter gray for better contrast */
+    border-color: #404040;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 body.dark-mode .college-card:hover {
-    box-shadow: 0 4px 15px color-mix(in srgb, var(--color-shadow) var(--alpha-heavy), transparent);
+    background-color: #333333; /* Even lighter on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 body.dark-mode .card-header {
-    background-color: var(--color-hero-bg);
-    border-bottom-color: var(--color-border);
+    background-color: #333333; /* Lighter header background */
+    border-bottom-color: #404040;
 }
 
 body.dark-mode .card-header:hover {
-    background-color: var(--color-accent);
-    color: var(--color-background);
+    background-color: #7df0c2; /* Mint green on hover */
+    color: #1D1F20; /* Dark text on mint background - updated color */
 }
 
 /* Dark mode text color fixes */
 body.dark-mode .card-header .college-name {
-    color: var(--color-text);
+    color: #7df0c2; /* Mint green for college names */
+    font-weight: 700;
 }
 
 body.dark-mode .card-header:hover .college-name {
-    color: var(--color-background);
+    color: #1D1F20; /* Dark text on mint hover - updated color */
 }
 
 body.dark-mode .card-header .college-rank {
-    color: var(--color-text);
+    color: #ffffff; /* White for better contrast */
+    background-color: #404040; /* Darker background for rank badge */
 }
 
 body.dark-mode .card-header:hover .college-rank {
-    color: var(--color-background);
+    color: #1D1F20; /* Dark text on mint hover - updated color */
+    background-color: rgba(29, 31, 32, 0.3); /* Updated background color */
 }
 
 body.dark-mode .card-details {
-    color: var(--color-text);
+    color: #e0e0e0; /* Light gray for details */
+}
+
+/* Better text contrast for readability */
+body.dark-mode .college-details,
+body.dark-mode .acceptance-rate,
+body.dark-mode .location,
+body.dark-mode .college-type {
+    color: #ffffff; /* White for important details */
+    font-weight: 500;
+}
+
+body.dark-mode .note,
+body.dark-mode .data-note,
+body.dark-mode .requirements-preview {
+    color: #b0b0b0; /* Medium gray for notes */
+}
+
+/* Financial aid badges better contrast */
+body.dark-mode .financial-aid-badge {
+    border-width: 2px;
+    font-weight: 600;
+}
+
+body.dark-mode .need-blind {
+    background-color: #1a4a3a;
+    color: #7df0c2;
+    border-color: #7df0c2;
+}
+
+body.dark-mode .need-aware {
+    background-color: #4a3a1a;
+    color: #f0c674;
+    border-color: #f0c674;
+}
+
+body.dark-mode .merit-only {
+    background-color: #1a3a4a;
+    color: #87ceeb;
+    border-color: #87ceeb;
 }
 
 body.dark-mode .college-name {
@@ -311,48 +354,56 @@ body.dark-mode .content-page h2 {
 }
 
 body.dark-mode .content-block p {
-    color: var(--color-text);
+    color: #ffffff; /* White for main content text */
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 body.dark-mode .important-note {
-    color: var(--color-text);
+    background-color: #2a4a3a; /* Dark green background */
+    border: 2px solid #7df0c2; /* Mint green border */
+    color: #ffffff; /* White text for maximum readability */
+    font-weight: 500;
 }
 
 body.dark-mode .list-heading {
-    color: var(--color-primary);
+    color: #7df0c2; /* Mint green for list headings */
+    font-weight: 700;
+}
+
+/* Filter and search dark mode improvements */
+body.dark-mode .aligned-filter input[type="text"],
+body.dark-mode .aligned-filter select {
+    background-color: #333333; /* Darker input background */
+    border: 2px solid #7df0c2; /* Mint green border */
+    color: #ffffff; /* White text */
+}
+
+body.dark-mode .aligned-filter input[type="text"]:focus,
+body.dark-mode .aligned-filter select:focus {
+    background-color: #404040; /* Lighter on focus */
+    border-color: #7df0c2;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(125, 240, 194, 0.3); /* Mint glow */
+}
+
+body.dark-mode .aligned-filter input[type="text"]::placeholder {
+    color: #b0b0b0; /* Gray placeholder text */
 }
 
 body.dark-mode .filter-group label {
-    color: var(--color-text);
+    color: #ffffff; /* White labels for better readability */
+    font-weight: 500;
 }
 
 body.dark-mode .section-header h2 {
-    color: var(--color-primary);
+    color: #7df0c2; /* Mint green for section headers */
+    font-weight: 700;
 }
 
-/* Ensure all text elements use proper variables in dark mode */
-body.dark-mode .college-details,
-body.dark-mode .acceptance-rate,
-body.dark-mode .location,
-body.dark-mode .college-type,
-body.dark-mode .note,
-body.dark-mode .data-note,
-body.dark-mode .college-stats,
-body.dark-mode .requirements-preview {
-    color: var(--color-text);
-}
-
-/* Fix any remaining text color issues */
-body.dark-mode * {
-    color: inherit;
-}
-
-body.dark-mode .college-card * {
-    color: var(--color-text);
-}
-
+/* Clean up redundant styles - specific targeting instead of broad selectors */
 body.dark-mode .college-name {
-    color: var(--color-primary) !important;
+    color: #7df0c2 !important; /* Mint green for college names */
 }
 
 .card-header .college-name {
