@@ -72,4 +72,4 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ---
 
-*Copyright &copy; 2025 Bangladeshis at Bideshi Universities (BABU). All Rights Reserved.* 
+*Copyright &copy; 2025 BD2US Guide. All rights reserved.* 
