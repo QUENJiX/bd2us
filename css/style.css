@@ -1,19 +1,11 @@
 ﻿/* --- Google Font Import --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap');
 
-/* --- CSS Variables (New Palette: Emerald & Wine) --- */
-:root {
-    --color-primary: #004D40;    /* Deep Emerald Green */
-    --color-secondary: #A23E48;   /* Rich Wine */
-    --color-accent: #D8C3A5;    /* Soft Gold/Beige */
-    --color-background: #F8F8F2; /* Cream/Off-White */
-    --color-text: #333333;       /* Dark Grey */
-    --color-text-light: #F8F8F2; /* Cream (for dark backgrounds) */
-    --color-border: #EAE0D6;    /* Tinted Grey/Beige */
-    --color-hero-bg: #E0EAE6;   /* Very Light Green-Grey */
-    --color-card-bg: #FFFFFF;   /* White */
-    --color-shadow: rgba(0, 77, 64, 0.1); /* Emerald-based shadow */
+/* --- Import CSS Variables --- */
+@import 'variables.css';
 
+/* --- Additional Style Variables --- */
+:root {
     /* Light Mode Glow Effects */
     --light-text-glow-sm: 0 0 1px rgba(0, 77, 64, 0.1);
     --light-text-glow-md: 0 0 4px rgba(0, 77, 64, 0.2);
@@ -35,37 +27,33 @@
     --header-height: 70px;
     --transition-speed: 0.3s;
     --border-radius: 8px; 
-    --shadow-sm: 0 2px 4px var(--color-shadow);
-    --shadow-md: 0 4px 15px var(--color-shadow);
-    --shadow-lg: 0 8px 30px var(--color-shadow);
 }
 
 /* --- Dark Mode Variables & Styles --- */
 body.dark-mode {
-    /* Enhanced Dark Mode Palette: Cyberpunk Neon */
-    --color-primary-dark: #00f2ff;   /* Electric Cyan */
-    --color-secondary-dark: #ff00c3; /* Vibrant Magenta */
-    --color-accent-dark: #7d14ff;    /* Rich Purple */
-    --color-background-dark: #0a0a16; /* Deep Space Blue-Black */
-    --color-text-dark: #ffffff;       /* Pure White for maximum contrast */
-    --color-text-muted-dark: #a9a9d0; /* Soft Lavender for secondary text */
-    --color-text-light-dark: #0e0e1a; /* Darker background for light elements */
-    --color-border-dark: #292945;    /* Deep Blue-Purple */
-    --color-hero-bg-dark: #110f2d;   /* Dark Blue-Purple for hero section */
-    --color-card-bg-dark: #13132b;   /* Navy Blue for cards */
-    --color-shadow-dark: rgba(0, 242, 255, 0.25); /* Cyan glow shadow */
-    --color-shadow-accent-dark: rgba(255, 0, 195, 0.25); /* Magenta glow shadow */
+    /* Professional Dark Mode Palette */
+    --color-primary-dark: #1B5E20;   /* Dark Green (professional) */
+    --color-secondary-dark: #8E24AA; /* Deep Purple */
+    --color-accent-dark: #FFB74D;    /* Warm Amber */
+    --color-background-dark: #121212; /* True Dark Background */
+    --color-text-dark: #FFFFFF;       /* Pure White for maximum contrast */
+    --color-text-muted-dark: #B0B0B0; /* Light Gray for secondary text */
+    --color-text-light-dark: #121212; /* Dark background for light elements */
+    --color-border-dark: #333333;    /* Dark Gray borders */
+    --color-hero-bg-dark: #1A1A1A;   /* Slightly lighter dark for hero */
+    --color-card-bg-dark: #1E1E1E;   /* Dark Gray for cards */
+    --color-shadow-dark: rgba(0, 0, 0, 0.5); /* Standard dark shadow */
     
-    /* Glow Effects */
-    --text-glow-sm: 0 0 2px rgba(0, 242, 255, 0.2);
-    --text-glow-md: 0 0 8px rgba(0, 242, 255, 0.4);
-    --text-glow-lg: 0 0 15px rgba(0, 242, 255, 0.6);
-    --box-glow-sm: 0 0 5px rgba(0, 242, 255, 0.2);
-    --box-glow-md: 0 0 15px rgba(0, 242, 255, 0.3);
-    --box-glow-lg: 0 0 30px rgba(0, 242, 255, 0.4);
-    --accent-glow-sm: 0 0 5px rgba(255, 0, 195, 0.2);
-    --accent-glow-md: 0 0 15px rgba(255, 0, 195, 0.3);
-    --accent-glow-lg: 0 0 30px rgba(255, 0, 195, 0.4);
+    /* Remove glow effects for professional look */
+    --text-glow-sm: none;
+    --text-glow-md: none;
+    --text-glow-lg: none;
+    --box-glow-sm: none;
+    --box-glow-md: none;
+    --box-glow-lg: none;
+    --accent-glow-sm: none;
+    --accent-glow-md: none;
+    --accent-glow-lg: none;
     
     /* Animation Speeds */
     --glow-pulse-speed: 3s;
@@ -91,30 +79,26 @@ body.dark-mode {
 body.dark-mode {
     background-color: var(--color-background-dark);
     color: var(--color-text-dark);
-    background-image: 
-        radial-gradient(circle at 15% 50%, rgba(0, 242, 255, 0.03) 0%, transparent 25%),
-        radial-gradient(circle at 85% 30%, rgba(255, 0, 195, 0.03) 0%, transparent 25%);
 }
 
 /* Style overrides for specific elements in dark mode */
 body.dark-mode .main-header {
-    background-color: rgba(10, 10, 22, 0.8); /* More transparent */
+    background-color: rgba(18, 18, 18, 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(41, 41, 69, 0.3);
+    border-bottom: 1px solid var(--color-border-dark);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 body.dark-mode .main-header.scrolled {
-    background-color: rgba(19, 19, 43, 0.95); /* Slightly more opaque when scrolled */
-    border-bottom-color: rgba(0, 242, 255, 0.2);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 242, 255, 0.1);
+    background-color: rgba(18, 18, 18, 0.95);
+    border-bottom-color: var(--color-primary-dark);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 body.dark-mode .logo {
     color: var(--color-primary-dark);
-    text-shadow: var(--text-glow-sm);
-    transition: color 0.3s, text-shadow 0.3s;
+    transition: color 0.3s;
 }
 
 body.dark-mode .logo:hover {
@@ -347,8 +331,8 @@ body.dark-mode h1 {
 body.dark-mode .hero-section {
     background-color: var(--color-hero-bg-dark);
     background-image: 
-        radial-gradient(circle at 30% 30%, rgba(0, 242, 255, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, rgba(255, 0, 195, 0.05) 0%, transparent 50%);
+        radial-gradient(circle at 50% 35%, rgba(0, 242, 255, 0.05) 0%, transparent 55%),
+        radial-gradient(circle at 50% 65%, rgba(255, 0, 195, 0.05) 0%, transparent 55%);
     border-bottom: 1px solid var(--color-border-dark);
 }
 
@@ -857,9 +841,15 @@ main > section:not(.hero-section) {
 
 /* --- Homepage Specific Styles --- */
 .hero-section {
-    padding: 6rem 0;
+    /* Single-layer background: pull section up under the fixed header and
+       add equivalent top padding so layout stays unchanged */
+    margin-top: calc(-1 * (var(--header-height) + 4rem));
+    padding: calc(6rem + var(--header-height) + 4rem) 0 6rem;
     text-align: center;
     background-color: var(--color-hero-bg); /* Updated */
+    background-image:
+        radial-gradient(circle at 50% 35%, rgba(0, 77, 64, 0.03) 0%, transparent 55%),
+        radial-gradient(circle at 50% 65%, rgba(162, 62, 72, 0.03) 0%, transparent 55%);
     border-bottom: 1px solid var(--color-border); /* Updated */
 }
 
@@ -1327,6 +1317,9 @@ body.dark-mode #mobile-theme-toggle:focus {
     .main-header {
         height: var(--header-height);
     }
+
+    /* Hero retains single-layer background on mobile; spacing already handled
+       by margin-top and padding on .hero-section */
 
     .logo {
         font-size: 1.4rem;
@@ -2221,16 +2214,6 @@ dl dd:hover {
 }
 
 /* --- Hero Section Animations --- */
-.hero-section {
-    background-color: var(--color-hero-bg);
-    background-image: 
-        radial-gradient(circle at 30% 30%, rgba(0, 77, 64, 0.03) 0%, transparent 50%),
-        radial-gradient(circle at 70% 70%, rgba(162, 62, 72, 0.03) 0%, transparent 50%);
-    border-bottom: 1px solid var(--color-border);
-    position: relative;
-    overflow: hidden;
-}
-
 .hero-section::after {
     content: '';
     position: absolute;
@@ -3739,5 +3722,60 @@ a, button, .btn, input[type="submit"], [role="button"], .timeline-node,
 .fa-regular {
     cursor: pointer !important;
     pointer-events: auto !important;
+}
+
+/* ===== HEADING FIXES ===== */
+/* Fix for heading spacing and alignment */
+.content-page h1,
+.content-page h2,
+.content-page h3,
+.content-page h4,
+.content-page h5,
+.content-page h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.content-page h1:first-child,
+.content-page h2:first-child {
+    margin-top: 0;
+}
+
+/* Fix for nested heading hierarchy */
+.content-page h1 + h2,
+.content-page h2 + h3,
+.content-page h3 + h4 {
+    margin-top: 1rem;
+}
+
+/* Ensure proper text wrapping for long headings */
+.content-page h1,
+.content-page h2,
+.content-page h3 {
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Fix for heading colors in different themes */
+.content-page h1,
+.content-page h2,
+.content-page h3 {
+    color: var(--color-primary);
+}
+
+/* Responsive heading sizes */
+@media (max-width: 768px) {
+    .content-page h1 {
+        font-size: 2rem;
+    }
+    
+    .content-page h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content-page h3 {
+        font-size: 1.25rem;
+    }
 }
 

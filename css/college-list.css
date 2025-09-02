@@ -1,48 +1,67 @@
 /* College List Specific Styles */
 
 /* Increase canvas width for college list page */
-.content-page {
-    max-width: 1200px !important;
+.college-list-page .content-page,
+.college-list-page main .content-page {
+    max-width: 1200px;
 }
 
 /* Reduce main padding for college list page */
-main {
-    padding-top: calc(var(--header-height) + 1rem) !important;
+.college-list-page main {
+    padding-top: calc(var(--header-height) + 1rem);
 }
 
 /* Override content spacing for college list page */
-.content-page h2 {
+.college-list-page .content-page h2 {
     margin-bottom: 1.5rem;
-    text-align: center !important;
+    text-align: center !important; /* Override the left alignment from style.css */
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    text-shadow: var(--vintage-text-shadow);
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    position: relative;
+    width: 100%;
+    display: block;
 }
 
-.content-block {
+/* Add vintage decorative underline */
+.college-list-page .content-page h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--color-accent), transparent);
+    margin: 0.5rem auto;
+}
+
+.college-list-page .content-block {
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
-.content-block p {
+.college-list-page .content-block p {
     margin-bottom: 0.75rem;
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
 }
 
-.filter-container {
-    background-color: var(--bg-color-alt);
+.college-list-page .filter-container {
+    background-color: var(--color-hero-bg);
     padding: 1.5rem;
     border-radius: 8px;
     margin-bottom: 0.5rem;
-    border: 1px solid var(--border-color);
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+    border: 1px solid var(--color-border);
+    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Override animate-on-scroll for college list elements */
-.content-page .animate-on-scroll {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+.college-list-page .animate-on-scroll {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .filter-grid {
@@ -63,7 +82,7 @@ main {
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: var(--text-color-muted);
+    color: var(--color-text);
 }
 
 .filter-group select,
@@ -72,9 +91,9 @@ main {
     max-width: 250px;
     padding: 0.75rem;
     border-radius: 6px;
-    border: 1px solid var(--border-color);
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-card-bg);
+    color: var(--color-text);
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     margin: 0 auto;
@@ -85,7 +104,7 @@ main {
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 0.25rem;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--color-accent);
     padding-bottom: 0.5rem;
     text-align: center;
 }
@@ -118,7 +137,7 @@ main {
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: var(--text-color-muted);
+    color: var(--color-text);
     text-align: center;
     display: block;
 }
@@ -128,9 +147,9 @@ main {
     width: 100%;
     padding: 0.75rem;
     border-radius: 6px;
-    border: 1px solid var(--border-color);
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    border: 1px solid var(--color-border);
+    background-color: var(--color-card-bg);
+    color: var(--color-text);
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     margin: 0 auto;
@@ -139,27 +158,27 @@ main {
 
 /* Special styling for search input */
 .aligned-filter input[type="text"] {
-    background-color: #f0f8ff;
-    border: 2px solid var(--accent-color);
-    color: #2c3e50;
+    background-color: var(--color-hero-bg);
+    border: 2px solid var(--color-accent);
+    color: var(--color-text);
 }
 
 .aligned-filter input[type="text"]:focus {
-    background-color: #e6f3ff;
-    border-color: var(--accent-color);
+    background-color: var(--color-hero-bg);
+    border-color: var(--color-accent);
     outline: none;
-    box-shadow: 0 0 0 3px var(--accent-color-faded);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) var(--alpha-medium), transparent);
 }
 
 /* Special styling for filter dropdown to match */
 .aligned-filter select {
-    border: 2px solid var(--accent-color);
+    border: 2px solid var(--color-accent);
 }
 
 .aligned-filter select:focus {
-    border-color: var(--accent-color);
+    border-color: var(--color-accent);
     outline: none;
-    box-shadow: 0 0 0 3px var(--accent-color-faded);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) var(--alpha-medium), transparent);
 }
 
 .list-section .list-heading {
@@ -185,24 +204,47 @@ main {
 }
 
 .college-card {
-    background-color: var(--bg-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
     overflow: hidden;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: var(--vintage-box-shadow);
+    position: relative;
+}
+
+/* Vintage paper texture for cards */
+.college-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(47, 79, 47, 0.01) 0%, transparent 20%),
+        radial-gradient(circle at 80% 80%, rgba(139, 69, 19, 0.01) 0%, transparent 20%);
+    background-size: 30px 30px, 20px 20px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.college-card > * {
+    position: relative;
+    z-index: 2;
 }
 
 .college-card:hover {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    box-shadow: 0 4px 15px color-mix(in srgb, var(--color-shadow) var(--alpha-medium), transparent);
 }
 
 .card-header {
-    background-color: var(--bg-color-alt);
+    background-color: var(--color-hero-bg);
     cursor: pointer;
     padding: 1.2rem 1.5rem;
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--color-border);
     text-align: left;
     outline: none;
     display: flex;
@@ -213,8 +255,104 @@ main {
 }
 
 .card-header:hover {
-    background-color: var(--accent-color-faded);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05) inset;
+    background-color: var(--color-accent);
+    box-shadow: 0 2px 10px color-mix(in srgb, var(--color-shadow) var(--alpha-light), transparent) inset;
+}
+
+/* Dark mode specific card improvements */
+body.dark-mode .college-card {
+    background-color: var(--color-card-bg);
+    border-color: var(--color-border);
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--color-shadow) var(--alpha-light), transparent);
+}
+
+body.dark-mode .college-card:hover {
+    box-shadow: 0 4px 15px color-mix(in srgb, var(--color-shadow) var(--alpha-heavy), transparent);
+}
+
+body.dark-mode .card-header {
+    background-color: var(--color-hero-bg);
+    border-bottom-color: var(--color-border);
+}
+
+body.dark-mode .card-header:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+
+/* Dark mode text color fixes */
+body.dark-mode .card-header .college-name {
+    color: var(--color-text);
+}
+
+body.dark-mode .card-header:hover .college-name {
+    color: var(--color-background);
+}
+
+body.dark-mode .card-header .college-rank {
+    color: var(--color-text);
+}
+
+body.dark-mode .card-header:hover .college-rank {
+    color: var(--color-background);
+}
+
+body.dark-mode .card-details {
+    color: var(--color-text);
+}
+
+body.dark-mode .college-name {
+    color: var(--color-text);
+}
+
+/* Fix all text elements in dark mode */
+body.dark-mode .content-page h2 {
+    color: var(--color-primary);
+}
+
+body.dark-mode .content-block p {
+    color: var(--color-text);
+}
+
+body.dark-mode .important-note {
+    color: var(--color-text);
+}
+
+body.dark-mode .list-heading {
+    color: var(--color-primary);
+}
+
+body.dark-mode .filter-group label {
+    color: var(--color-text);
+}
+
+body.dark-mode .section-header h2 {
+    color: var(--color-primary);
+}
+
+/* Ensure all text elements use proper variables in dark mode */
+body.dark-mode .college-details,
+body.dark-mode .acceptance-rate,
+body.dark-mode .location,
+body.dark-mode .college-type,
+body.dark-mode .note,
+body.dark-mode .data-note,
+body.dark-mode .college-stats,
+body.dark-mode .requirements-preview {
+    color: var(--color-text);
+}
+
+/* Fix any remaining text color issues */
+body.dark-mode * {
+    color: inherit;
+}
+
+body.dark-mode .college-card * {
+    color: var(--color-text);
+}
+
+body.dark-mode .college-name {
+    color: var(--color-primary) !important;
 }
 
 .card-header .college-name {
@@ -230,11 +368,11 @@ main {
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 800;
-    color: var(--text-color);
+    color: var(--color-text);
     margin-right: 0.85rem;
     flex-shrink: 0;
-    background: var(--accent-color);
-    color: #1f2937;
+    background: var(--color-accent);
+    color: var(--color-text);
     border-radius: 999px;
     padding: 0.15rem 0.6rem;
 }
@@ -294,24 +432,83 @@ main {
     line-height: 1;
     padding: 0.35rem 0.5rem;
     border-radius: 6px;
-    border: 1px solid var(--border-color);
-    color: #111827;
-    background: #e5e7eb; /* default gray */
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+    background: var(--color-border); /* default gray */
     flex-shrink: 0;
+    transition: all 0.2s ease;
 }
-.aid-badge.need-blind { background: #bbf7d0; border-color: #86efac; }
-.aid-badge.need-aware { background: #fde68a; border-color: #fcd34d; }
-.aid-badge.merit-only { background: #bae6fd; border-color: #7dd3fc; }
+.aid-badge.need-blind { 
+    background: var(--color-success); 
+    border-color: var(--color-success); 
+    color: white;
+    box-shadow: var(--vintage-inset-shadow);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+.aid-badge.need-aware { 
+    background: var(--color-warning); 
+    border-color: var(--color-warning); 
+    color: #2F4F2F;
+    box-shadow: var(--vintage-inset-shadow);
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+}
+.aid-badge.merit-only { 
+    background: var(--color-info); 
+    border-color: var(--color-info); 
+    color: white;
+    box-shadow: var(--vintage-inset-shadow);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+/* Dark mode specific badge adjustments */
+body.dark-mode .aid-badge.need-blind {
+    background: var(--color-success);
+    border-color: var(--color-success);
+    color: var(--color-background);
+    font-weight: 600;
+}
+
+body.dark-mode .aid-badge.need-aware {
+    background: var(--color-warning);
+    border-color: var(--color-warning);
+    color: var(--color-background);
+    font-weight: 600;
+}
+
+body.dark-mode .aid-badge.merit-only {
+    background: var(--color-info);
+    border-color: var(--color-info);
+    color: var(--color-background);
+    font-weight: 600;
+}
+
+body.dark-mode .badge.policy.need-blind {
+    background: var(--color-success-bg);
+    border-color: var(--color-success);
+    color: var(--color-success);
+}
+
+body.dark-mode .badge.policy.need-aware {
+    background: var(--color-warning-bg);
+    border-color: var(--color-warning);
+    color: var(--color-warning);
+}
+
+body.dark-mode .badge.policy.merit-only {
+    background: var(--color-info-bg);
+    border-color: var(--color-info);
+    color: var(--color-info);
+}
 
 /* Active state highlight */
 .card-header.active {
-    background-color: var(--bg-color);
-    box-shadow: inset 0 -1px 0 var(--border-color);
+    background-color: var(--color-card-bg);
+    box-shadow: inset 0 -1px 0 var(--color-border);
 }
 
 .card-details {
     padding: 0 1.5rem;
-    background-color: var(--bg-color);
+    background-color: var(--color-card-bg);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, opacity 0.35s ease, transform 0.35s ease;
@@ -328,8 +525,8 @@ main {
 .card-details .reality-check {
     margin-top: 0;
     margin-bottom: 1rem;
-    color: var(--text-color);
-    border-left: 3px solid var(--accent-color);
+    color: var(--color-text);
+    border-left: 3px solid var(--color-accent);
     padding-left: 1rem;
     font-size: 0.96rem;
 }
@@ -338,7 +535,7 @@ main {
     display: inline-block;
     margin-right: 0.5rem;
     font-weight: 800;
-    color: var(--text-color);
+    color: var(--color-text);
 }
 
 .card-details ul.details-grid {
@@ -351,9 +548,9 @@ main {
 }
 
 /* Guard against global .timeline styles bleeding into details */
-.card-details .timeline::before,
-.card-details .dates::before {
-    content: none !important;
+.college-list-page .card-details .timeline::before,
+.college-list-page .card-details .dates::before {
+    content: none;
 }
 
 .card-details .detail-row {
@@ -365,7 +562,7 @@ main {
 }
 
 .card-details .detail-label {
-    color: var(--accent-color-dark);
+    color: var(--color-accent);
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -376,7 +573,7 @@ main {
     text-align: right;
 }
 
-.card-details i { color: var(--accent-color-dark); width: 18px; text-align: center; }
+.card-details i { color: var(--color-accent); width: 18px; text-align: center; }
 
 .badge.policy {
     display: inline-block;
@@ -384,13 +581,26 @@ main {
     font-size: 0.75rem;
     font-weight: 800;
     border-radius: 999px;
-    border: 1px solid var(--border-color);
-    background: #eef2ff;
-    color: #1f2937;
+    border: 1px solid var(--color-border);
+    background: var(--color-hero-bg);
+    color: var(--color-text);
 }
-.badge.policy.need-blind { background: #dcfce7; border-color: #bbf7d0; }
-.badge.policy.need-aware { background: #fef3c7; border-color: #fde68a; }
-.badge.policy.merit-only { background: #e0f2fe; border-color: #bae6fd; }
+
+.badge.policy.need-blind { 
+    background: var(--color-success-bg); 
+    border-color: var(--color-success); 
+    color: var(--color-success);
+}
+.badge.policy.need-aware { 
+    background: var(--color-warning-bg); 
+    border-color: var(--color-warning); 
+    color: var(--color-warning);
+}
+.badge.policy.merit-only { 
+    background: var(--color-info-bg); 
+    border-color: var(--color-info); 
+    color: var(--color-info);
+}
 
 .chip.meets {
     display: inline-block;
@@ -398,27 +608,27 @@ main {
     padding: 0.15rem 0.45rem;
     font-size: 0.72rem;
     border-radius: 6px;
-    background: #ecfeff;
-    border: 1px solid #a5f3fc;
-    color: #0e7490;
+    background: var(--color-accent);
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
 }
 
 .btn-link {
     display: inline-block;
     padding: 0.4rem 0.65rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--color-border);
     border-radius: 6px;
-    background: var(--bg-color-alt);
+    background: var(--color-hero-bg);
     text-decoration: none;
     color: inherit;
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
-.btn-link:hover { background: var(--accent-color-faded); }
+.btn-link:hover { background: var(--color-accent); }
 .btn-link:active { transform: translateY(1px); }
 
 .important-note {
-    background-color: var(--accent-color-faded);
-    border: 1px solid var(--accent-color);
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-secondary);
     padding: 1rem;
     border-radius: 8px;
     margin: 1.5rem 0;
@@ -430,12 +640,12 @@ main {
 
 .no-results {
     text-align: center;
-    color: var(--text-color-muted);
+    color: var(--color-text);
     font-style: italic;
     padding: 2rem;
-    background-color: var(--bg-color-alt);
+    background-color: var(--color-hero-bg);
     border-radius: 8px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--color-border);
 }
 
 /* Ensure proper spacing and alignment */

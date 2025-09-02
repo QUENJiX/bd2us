@@ -6,17 +6,16 @@
     <title>The College List: A Strategic Guide - BD2US</title>
     <meta name="description" content="A strategic, no-nonsense guide to building a U.S. college list for Bangladeshi students, focusing on financial aid realities.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/enhanced-ux.css">
-    <link rel="stylesheet" href="css/heading-fix.css">
     <link rel="stylesheet" href="css/college-list.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class="college-list-page">
     <header class="main-header" id="main-header">
         <div class="container header-container">
             <a href="index.html" class="logo">BD2US Guide</a>
@@ -36,7 +35,7 @@
                     <li><a href="about.html">About Us</a></li>
                 </ul>
                 <div class="mobile-theme-toggle">
-                    <button id="mobile-theme-toggle-2" title="Toggle theme" aria-label="Toggle theme">
+                    <button id="mobile-theme-toggle" title="Toggle theme" aria-label="Toggle theme">
                         <i class="fas fa-sun"></i>
                     </button>
                 </div>
@@ -95,6 +94,10 @@
         </div>
     </footer>
 
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" title="Go to top">&#8679;</button>
+
+    <script src="js/script.js"></script>
     <script src="js/college-data.js"></script>
     <script src="js/enhanced-ux.js"></script>
     <script src="js/college-list.js"></script>

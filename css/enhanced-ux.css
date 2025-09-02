@@ -3,6 +3,25 @@
  * Styles for advanced animations, interactions, and visual effects
  */
 
+/* ===== ACCESSIBILITY: REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .parallax-element,
+    .highlight-card,
+    .timeline-content {
+        will-change: auto;
+        transform: none !important;
+    }
+}
+
 /* ===== 1. SCROLL-DRIVEN ANIMATIONS ===== */
 /* Parallax elements */
 .parallax-element {
@@ -346,27 +365,7 @@ body.dark-mode .high-contrast-toggle {
     color: var(--color-text-dark);
 }
 
-body.high-contrast {
-    --color-primary: #0000ff; /* Blue */
-    --color-secondary: #ff0000; /* Red */
-    --color-accent: #ffcc00; /* Yellow */
-    --color-background: #ffffff; /* White */
-    --color-text: #000000; /* Black */
-    --color-border: #000000; /* Black */
-    --color-hero-bg: #ffffff; /* White */
-    --color-card-bg: #ffffff; /* White */
-    
-    /* Override dark mode colors when both are active */
-    --color-primary-dark: #00ffff; /* Cyan */
-    --color-secondary-dark: #ff00ff; /* Magenta */
-    --color-accent-dark: #ffff00; /* Yellow */
-    --color-background-dark: #000000; /* Black */
-    --color-text-dark: #ffffff; /* White */
-    --color-text-muted-dark: #ffffff; /* White */
-    --color-border-dark: #ffffff; /* White */
-    --color-hero-bg-dark: #000000; /* Black */
-    --color-card-bg-dark: #000000; /* Black */
-}
+/* High contrast mode removed - accessibility concerns with color choices */
 
 body.high-contrast * {
     text-shadow: none !important;
