@@ -1046,9 +1046,8 @@ dd { /* Definition */
     width: 25px;
     height: 20px;
     position: relative;
-    margin-left: auto;
-    margin-right: 10px;
     z-index: 1001;
+    flex-shrink: 0;
 }
 
 @media (max-width: 768px) {
@@ -1106,7 +1105,12 @@ dd { /* Definition */
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 10px;
+        padding: 0 15px;
+        min-height: var(--header-height);
+    }
+    
+    .logo {
+        font-size: 1.4rem;
     }
     
     /* Fix chapter titles alignment */
@@ -1325,7 +1329,8 @@ body.dark-mode #mobile-theme-toggle:focus {
 
     /* Rest of mobile styles */
     .hero-section {
-        padding: 4rem 0;
+        margin-top: calc(-1 * var(--header-height));
+        padding: calc(var(--header-height) + 2rem) 0 4rem;
     }
      .hero-section p {
         font-size: 1.05rem;
@@ -1398,7 +1403,8 @@ body.dark-mode #mobile-theme-toggle:focus {
 /* Additional responsive adjustments for very small screens */
 @media (max-width: 480px) {
     .hero-section {
-        padding: 3rem 0;
+        margin-top: calc(-1 * var(--header-height));
+        padding: calc(var(--header-height) + 1.5rem) 0 3rem;
     }
     
     .roadmap-hero { margin-top: 1rem; }
