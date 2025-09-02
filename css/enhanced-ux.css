@@ -336,33 +336,9 @@ body.dark-mode .particle {
 }
 
 /* ===== 6. PERFORMANCE & ACCESSIBILITY ===== */
-/* High contrast mode */
+/* High contrast mode - DISABLED */
 .high-contrast-toggle {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--color-card-bg);
-    border: 2px solid var(--color-border);
-    color: var(--color-text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 999;
-    transition: all 0.3s ease;
-}
-
-.high-contrast-toggle:hover {
-    transform: scale(1.1);
-}
-
-body.dark-mode .high-contrast-toggle {
-    background-color: var(--color-card-bg-dark);
-    border-color: var(--color-border-dark);
-    color: var(--color-text-dark);
+    display: none !important;
 }
 
 /* High contrast mode removed - accessibility concerns with color choices */

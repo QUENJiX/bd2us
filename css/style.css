@@ -1052,8 +1052,13 @@ dd { /* Definition */
 
 @media (max-width: 768px) {
     .hamburger-menu {
-        display: block;
+        display: flex !important;
         position: relative;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
     }
     
     /* Hide the desktop theme toggle on mobile */
@@ -1065,18 +1070,16 @@ dd { /* Definition */
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 15px;
+        padding: 0 20px;
         min-height: var(--header-height);
         position: relative;
+        width: 100%;
     }
     
     .logo {
         font-size: 1.4rem;
-        flex-grow: 1;
-    }
-    
-    .hamburger-menu {
-        margin-left: auto;
+        flex: 1;
+        text-align: left;
     }
     
     .hamburger-menu span {
@@ -1340,9 +1343,25 @@ body.dark-mode #mobile-theme-toggle:focus {
 
     /* Rest of mobile styles */
     .hero-section {
-        margin-top: 0;
-        padding: calc(var(--header-height) + 3rem) 0 4rem;
+        margin-top: 0 !important;
+        padding: calc(var(--header-height) + 4rem) 20px 4rem !important;
+        background-attachment: scroll !important;
     }
+    
+    .hero-section h1 {
+        margin-top: 0 !important;
+        margin-bottom: 1rem !important;
+        padding-top: 1rem !important;
+        font-size: clamp(1.8rem, 7vw, 2.5rem) !important;
+        line-height: 1.1 !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .hero-section .container {
+        padding-top: 0 !important;
+    }
+    
      .hero-section p {
         font-size: 1.05rem;
     }
@@ -1414,16 +1433,20 @@ body.dark-mode #mobile-theme-toggle:focus {
 /* Additional responsive adjustments for very small screens */
 @media (max-width: 480px) {
     .hero-section {
-        margin-top: 0;
-        padding: calc(var(--header-height) + 2.5rem) 0 3rem;
+        margin-top: 0 !important;
+        padding: calc(var(--header-height) + 3rem) 15px 3rem !important;
+    }
+    
+    .hero-section h1 {
+        margin-top: 0 !important;
+        padding-top: 0.5rem !important;
+        font-size: clamp(1.6rem, 8vw, 2.2rem) !important;
+        line-height: 1.2 !important;
     }
     
     .roadmap-hero { margin-top: 1rem; }
     .roadmap-hero h2 { font-size: clamp(1.6rem, 5vw, 2rem); }
     .roadmap-hero .subtitle { font-size: .98rem; }
-    .hero-section h1 {
-        font-size: clamp(2rem, 8vw, 2.5rem);
-    }
     
     .btn {
         width: 100%;
