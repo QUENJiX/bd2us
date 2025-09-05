@@ -1061,6 +1061,7 @@ dd { /* Definition */
         justify-content: center;
         width: 30px;
         height: 30px;
+        margin-top: 1px; /* Fine-tune vertical alignment */
     }
     
     /* Hide the desktop theme toggle on mobile */
@@ -1090,14 +1091,15 @@ dd { /* Definition */
     .hamburger-menu span {
         display: block;
         position: absolute;
-        height: 2px;
+        height: 3px; /* Thicker for more premium look */
         width: 100%;
         background: var(--color-primary);
-        border-radius: 3px;
+        border-radius: 6px; /* More rounded for elegance */
         opacity: 1;
         left: 0;
         transform: rotate(0deg);
-        transition: .25s ease-in-out;
+        transition: .35s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smoother vintage transition */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     }
     
     .hamburger-menu span:nth-child(1) {
@@ -1106,16 +1108,16 @@ dd { /* Definition */
     
     .hamburger-menu span:nth-child(2),
     .hamburger-menu span:nth-child(3) {
-        top: 9px;
+        top: 10px; /* Slightly more spacing for elegance */
     }
     
     .hamburger-menu span:nth-child(4) {
-        top: 18px;
+        top: 20px; /* Adjusted for better proportions */
     }
     
     .hamburger-menu.open span:nth-child(1),
     .hamburger-menu.open span:nth-child(4) {
-        top: 9px;
+        top: 10px; /* Adjusted to match new center position */
         width: 0%;
         left: 50%;
     }
@@ -1130,6 +1132,19 @@ dd { /* Definition */
     
     body.dark-mode .hamburger-menu span {
         background: var(--color-primary);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Enhanced shadow for dark mode */
+    }
+    
+    /* Vintage-style hover effect for hamburger menu */
+    .hamburger-menu:hover span {
+        background: var(--color-secondary);
+        transform: scale(1.05);
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    
+    .hamburger-menu:hover {
+        transform: translateY(-50%) scale(1.1);
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     }
     
     /* Fix chapter titles alignment */
@@ -1181,25 +1196,29 @@ dd { /* Definition */
 
 #mobile-theme-toggle {
     background: none;
-    border: 2px solid var(--color-primary);
+    border: 1.5px solid var(--color-primary);
     color: var(--color-primary);
-    font-size: 1.3rem;
+    font-size: 1rem; /* Smaller, more refined */
     cursor: pointer;
-    padding: 0.7rem 1.5rem;
-    border-radius: var(--border-radius);
+    padding: 0.4rem 0.8rem; /* More compact padding */
+    border-radius: calc(var(--border-radius) + 2px); /* Slightly more rounded */
     transition: all var(--transition-speed) ease;
     line-height: 1;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    min-width: 44px; /* Ensure good touch target */
+    min-height: 44px; /* Standard mobile touch target */
+    font-weight: 500; /* Medium weight for better readability */
 }
 
 #mobile-theme-toggle:hover,
 #mobile-theme-toggle:focus {
     background-color: var(--color-primary);
     color: var(--color-text-light);
-    transform: scale(1.05);
+    transform: scale(1.02); /* More subtle scaling */
     outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 body.dark-mode #mobile-theme-toggle {
@@ -1211,6 +1230,7 @@ body.dark-mode #mobile-theme-toggle:hover,
 body.dark-mode #mobile-theme-toggle:focus {
     background-color: var(--color-primary);
     color: var(--color-text-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow for dark mode */
 }
 
 @media (max-width: 768px) {
@@ -1265,6 +1285,11 @@ body.dark-mode #mobile-theme-toggle:focus {
 
     .logo {
         font-size: 1.4rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
     
     /* Mobile navigation */
@@ -1319,8 +1344,9 @@ body.dark-mode #mobile-theme-toggle:focus {
     
     /* Move theme toggle in mobile menu */
     .mobile-theme-toggle {
-        margin-top: 20px;
+        margin-top: 15px; /* Slightly reduced margin */
         text-align: center;
+        padding: 0 12px; /* Add side padding to match nav links */
     }
     
     /* Overlay when mobile nav is open */
@@ -2483,6 +2509,11 @@ body.page-transition-active .page-transition-overlay {
     .logo {
         font-size: 1.5rem;
         padding: 8px 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
     
     .hamburger-menu {
@@ -3012,6 +3043,11 @@ body.page-transition-active .page-transition-overlay {
     
     .logo {
         font-size: 1.4rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
     
     h1 { font-size: 1.8rem; }
@@ -3302,25 +3338,30 @@ body.dark-mode .chapter-nav-btn:hover {
 @media (max-width: 768px) {
     .header-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 0 15px;
         width: 100%;
+        position: relative;
     }
     
     .logo {
-        margin-right: auto;
-        text-align: left;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
     
     .hamburger-menu {
         display: block;
-        position: relative;
-        margin-left: auto;
+        position: absolute;
+        right: 15px;
         top: 50%;
         transform: translateY(-50%);
         height: 20px;
         width: 25px;
+        margin-top: 1px; /* Fine-tune vertical alignment */
     }
     
     /* Ensure normal links in paragraphs look like inline text */
@@ -3351,25 +3392,31 @@ body.dark-mode .chapter-nav-btn:hover {
     /* 1. Better header alignment */
     .header-container {
         display: flex !important;
-        justify-content: space-between !important;
+        justify-content: center !important;
         align-items: center !important;
         padding: 0 15px !important;
+        position: relative !important;
     }
     
     .logo {
-        text-align: left !important;
-        margin-right: auto !important;
+        position: absolute !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        text-align: center !important;
+        margin-right: 0 !important;
         padding-left: 0 !important;
     }
     
     .hamburger-menu {
         display: block !important;
-        margin-left: auto !important;
-        position: relative !important;
+        position: absolute !important;
+        right: 15px !important;
         top: 50% !important;
         transform: translateY(-50%) !important;
         width: 25px !important;
         height: 20px !important;
+        margin-top: 1px !important; /* Fine-tune vertical alignment */
     }
     
     /* 2. Resources page links styling */
