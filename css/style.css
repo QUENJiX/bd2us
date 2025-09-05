@@ -1053,8 +1053,10 @@ dd { /* Definition */
 @media (max-width: 768px) {
     .hamburger-menu {
         display: flex !important;
-        position: relative;
-        margin-left: auto;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
         align-items: center;
         justify-content: center;
         width: 30px;
@@ -1069,7 +1071,7 @@ dd { /* Definition */
     .header-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0 20px;
         min-height: var(--header-height);
         position: relative;
@@ -1078,8 +1080,11 @@ dd { /* Definition */
     
     .logo {
         font-size: 1.4rem;
-        flex: 1;
-        text-align: left;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
     }
     
     .hamburger-menu span {
