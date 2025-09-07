@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/enhanced-ux.css">
     <link rel="stylesheet" href="../css/reading-experience.css">
-    <link rel="stylesheet" href="../css/heading-fix.css">
+    <link rel="stylesheet" href="../css/blog-post.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
@@ -33,6 +33,7 @@
                     <li><a href="../college-list.html">College List</a></li>
                     <li><a href="../financial-aid.html">Financial Aid</a></li>
                     <li><a href="../resources.html">Resources</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
                     <li><a href="../about.html">About Us</a></li>
                 </ul>
                 <!-- Mobile only theme toggle position -->
@@ -50,80 +51,178 @@
 
     <!-- Add overlay for mobile navigation -->
     <div class="nav-overlay" id="nav-overlay"></div>
+    
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="reading-progress" role="progressbar"></div>
 
     <main>
-        <div class="container content-page">
-             <a href="../roadmap.html#node-ch8" class="back-to-roadmap">Back to Roadmap</a>
-
-            <!-- Use Exact H2 Title from Source -->
-            <h2>Chapter 8: English Tests: TOEFL, IELTS, and the Duolingo Lifeline</h2>
-
-            <!-- Content for Chapter 8 Start -->
-            <div class="content-block animate-on-scroll">
-                <p>You've been studying in English your whole life. You think in English. You dream in English. You can probably recite the entire "Shrek" movie from memory. So why do you have to take yet another English test? Because a US university has no idea if your "A" in O-Level English means you're Shakespeare or if your teacher just liked you. They need a standardized, third-party score to prove you can handle a high-level academic environment where the professor talks at 200 words per minute.</p>
-                <p>This is a box you have to check. It's a boring, bureaucratic hoop you have to jump through. Your goal is to clear this hurdle as cheaply and efficiently as possible so you can focus on the parts of your application that actually matter.</p>
+        <!-- Chapter Hero Section -->
+        <section class="blog-post-hero">
+            <div class="container">
+                <nav class="blog-post-breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span class="separator">/</span>
+                    <a href="../roadmap.html">The Roadmap</a>
+                    <span class="separator">/</span>
+                    <span>Chapter 8</span>
+                </nav>
                 
-                <h3>The Three-Headed Dragon: TOEFL vs. IELTS vs. Duolingo</h3>
-                <p>You have three main options. Most schools accept all three now, but you MUST check the admissions website of every single college on your list. No excuses.</p>
+                <div class="blog-post-category-tag" style="background-color: #0ea5e9;">
+                    Chapter 8
+                </div>
                 
-                <h4>1. TOEFL iBT: The Old, Expensive Grandpa</h4>
-                <ul>
-                    <li><strong>What it is:</strong> A long, boring, 2-hour test taken at a center. It's 100% academic. You'll read boring passages about geology and listen to boring lectures about art history. You speak into a microphone, which feels as awkward as it sounds.</li>
-                    <li><strong>The Score:</strong> Out of 120.</li>
-                    <li><strong>The Target:</strong> For any decent university, you need <strong>100+</strong>. For top universities, they want to see <strong>110+</strong>. If your score is below 95, it can be a problem.</li>
-                    <li><strong>The Cost:</strong> Around $200. That's a lot of money for a boring afternoon.</li>
-                </ul>
+                <h1 class="blog-post-title">English Tests: TOEFL, IELTS, and the Duolingo Lifeline</h1>
                 
-                <h4>2. IELTS Academic: The Slightly More British Grandpa</h4>
-                <ul>
-                    <li><strong>What it is:</strong> Similar to TOEFL, but the speaking test is a real conversation with a human being. For some people, this is better. For others, it's more terrifying. It's also very expensive.</li>
-                    <li><strong>The Score:</strong> A "band score" from 1 to 9.</li>
-                    <li><strong>The Target:</strong> You need a <strong>7.0 or 7.5 overall</strong> for most good schools. Top schools want <strong>8.0+</strong>. They also look at your sub-scores, so you can't bomb the writing section.</li>
-                    <li><strong>The Cost:</strong> Often even more than the TOEFL, around $250. Ridiculous.</li>
-                </ul>
-                
-                <h4>3. Duolingo English Test (DET): The Hero We Deserve</h4>
-                <ul>
-                    <li><strong>What it is:</strong> A modern, online test you take from home. It's fast (about 1 hour), cheap, and adaptive (it gets harder as you do well). The questions are weird and creative, not just boring academic stuff. You'll describe a picture, participate in a simulated conversation, and more.</li>
-                    <li><strong>The Score:</strong> Out of 160.</li>
-                    <li><strong>The Target:</strong> For good schools, you need <strong>125+</strong>. For top schools, aim for <strong>135+</strong>.</li>
-                    <li><strong>The Cost:</strong> About $60. Yes, you read that right. SIXTY DOLLARS. You can also send your score to an unlimited number of universities for free. TOEFL and IELTS charge you for every school after the first few. They are robbing you.</li>
-                    <li><strong>The Catch:</strong> You have to be very careful when taking it at home. No noise, no looking away from the screen. They are very strict about the rules and will invalidate your test if you look suspicious.</li>
-                </ul>
-
-                <h3>Verdict: Duolingo is Your Best Friend</h3>
-                <p>Unless a university on your list absolutely FORCES you to take TOEFL or IELTS, you should take the Duolingo English Test. It is a financial and logistical no-brainer. For the price of one IELTS test, you can take the DET four times.</p>
-                <p>The DET is your lifeline. It saves you money that you can use for application fees or CSS Profiles. It saves you time and the stress of going to a test center. 99% of the time, the DET is the right answer.</p>
-                
-                <h3>What if My School Taught in English? Can I Get a Waiver?</h3>
-                <p>Ah, the "waiver" question. Many applications will ask if English was the language of instruction at your school. You can and should say "Yes" if you went to an English Medium school. Will this automatically waive the requirement to submit a test? <strong>Probably not.</strong></p>
-                <p>Most universities will still want to see a test score. It's a simple, standardized data point for them. You can email the admissions office and ask for a waiver, but it's often more work than just taking the Duolingo test. Don't spend weeks emailing 20 different admissions offices to save $60. Your time is more valuable than that. Just take the test.</p>
-
-                <h3>How to Prepare for the DET</h3>
-                <ul>
-                    <li><strong>Take the Free Practice Test:</strong> The Duolingo website has a full-length practice test. Take it. It will give you an estimated score range and show you all the weird question types.</li>
-                    <li><strong>Think Out Loud:</strong> For the speaking questions where you have to describe a picture, just start talking. Describe what you see. Use simple, clear language. They want to hear your fluency, not a perfect analysis.</li>
-                    <li><strong>Write Simply and Clearly:</strong> For the writing prompts, don't try to use big, fancy words. Focus on good grammar and a clear, logical structure. A simple, correct sentence is better than a complex, incorrect one.</li>
-                    <li><strong>Relax:</strong> It's a test of your general English ability, not your knowledge of rocket science. You've been using English for years. You have the skills. Just show them.</li>
-                </ul>
-
-                <p><strong>Final Word:</strong> This test is a gatekeeper, not a measure of your intelligence. Choose Duolingo, spend a weekend preparing, get the score you need, and move on. Don't let this minor task distract you from the real battle: your essays and your activity list.</p>
+                <div class="blog-post-meta-detailed">
+                    <div class="blog-post-read-time-info">
+                        <i class="fas fa-clock"></i>
+                        <span>8 min read</span>
+                    </div>
+                    <div class="blog-post-date-info">
+                        <i class="fas fa-comments"></i>
+                        <span>Clear the English hurdle efficiently</span>
+                    </div>
+                </div>
             </div>
-             <!-- Content for Chapter 8 End -->             <div class="chapter-navigation">
-                <a href="../roadmap.html#node-ch8" class="chapter-nav-btn">
-                    <i class="fas fa-arrow-left"></i> Back to Roadmap
-                </a>
-                <div class="chapter-nav-group">
-                    <a href="chapter-7.html" class="chapter-nav-btn">
-                        <i class="fas fa-arrow-left"></i> Previous
+        </section>
+
+        <!-- Chapter Content -->
+        <section class="blog-post-content">
+            <div class="container">
+                <article class="blog-post-article">
+                    <div class="content-block animate-on-scroll">
+                        <p>You've been studying in English your whole life. You think in English. You dream in English. You can probably recite the entire "Shrek" movie from memory. So why do you have to take yet another English test? Because a US university has no idea if your "A" in O-Level English means you're Shakespeare or if your teacher just liked you. They need a standardized, third-party score to prove you can handle a high-level academic environment where the professor talks at 200 words per minute.</p>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <p><strong>Your goal is simple:</strong> Clear this hurdle as cheaply and efficiently as possible so you can focus on the parts of your application that actually matter.</p>
+                        </div>
+                        
+                        <p>This is a box you have to check. It's a boring, bureaucratic hoop you have to jump through. Your goal is to clear this hurdle as cheaply and efficiently as possible so you can focus on the parts of your application that actually matter.</p>
+                        
+                        <h2>The Three-Headed Dragon: TOEFL vs. IELTS vs. Duolingo</h2>
+                        <p>You have three main options. Most schools accept all three now, but you MUST check the admissions website of every single college on your list. No excuses.</p>
+                        
+                        <h3>1. TOEFL iBT: The Old, Expensive Grandpa</h3>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h4>TOEFL Overview</h4>
+                                <ul>
+                                    <li><strong>What it is:</strong> A long, boring, 2-hour test taken at a center. It's 100% academic. You'll read boring passages about geology and listen to boring lectures about art history. You speak into a microphone, which feels as awkward as it sounds.</li>
+                                    <li><strong>The Score:</strong> Out of 120.</li>
+                                    <li><strong>The Target:</strong> For any decent university, you need <strong>100+</strong>. For top universities, they want to see <strong>110+</strong>. If your score is below 95, it can be a problem.</li>
+                                    <li><strong>The Cost:</strong> Around $200. That's a lot of money for a boring afternoon.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h3>2. IELTS Academic: The Slightly More British Grandpa</h3>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-flag"></i>
+                            <div>
+                                <h4>IELTS Overview</h4>
+                                <ul>
+                                    <li><strong>What it is:</strong> Similar to TOEFL, but the speaking test is a real conversation with a human being. For some people, this is better. For others, it's more terrifying. It's also very expensive.</li>
+                                    <li><strong>The Score:</strong> A "band score" from 1 to 9.</li>
+                                    <li><strong>The Target:</strong> You need a <strong>7.0 or 7.5 overall</strong> for most good schools. Top schools want <strong>8.0+</strong>. They also look at your sub-scores, so you can't bomb the writing section.</li>
+                                    <li><strong>The Cost:</strong> Often even more than the TOEFL, around $250. Ridiculous.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h3>3. Duolingo English Test (DET): The Hero We Deserve</h3>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-star"></i>
+                            <p><strong>Winner Alert!</strong> Unless a university absolutely FORCES you to take TOEFL or IELTS, you should take the Duolingo English Test. It is a financial and logistical no-brainer.</p>
+                        </div>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-home"></i>
+                            <div>
+                                <h4>Duolingo English Test Overview</h4>
+                                <ul>
+                                    <li><strong>What it is:</strong> A modern, online test you take from home. It's fast (about 1 hour), cheap, and adaptive (it gets harder as you do well). The questions are weird and creative, not just boring academic stuff. You'll describe a picture, participate in a simulated conversation, and more.</li>
+                                    <li><strong>The Score:</strong> Out of 160.</li>
+                                    <li><strong>The Target:</strong> For good schools, you need <strong>125+</strong>. For top schools, aim for <strong>135+</strong>.</li>
+                                    <li><strong>The Cost:</strong> About $60. Yes, you read that right. SIXTY DOLLARS. You can also send your score to an unlimited number of universities for free. TOEFL and IELTS charge you for every school after the first few. They are robbing you.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <h4>Important DET Rules</h4>
+                                <p><strong>The Catch:</strong> You have to be very careful when taking it at home. No noise, no looking away from the screen. They are very strict about the rules and will invalidate your test if you look suspicious.</p>
+                            </div>
+                        </div>
+
+                        <h2>Verdict: Duolingo is Your Best Friend</h2>
+                        <p>Unless a university on your list absolutely FORCES you to take TOEFL or IELTS, you should take the Duolingo English Test. It is a financial and logistical no-brainer. For the price of one IELTS test, you can take the DET four times.</p>
+                        <p>The DET is your lifeline. It saves you money that you can use for application fees or CSS Profiles. It saves you time and the stress of going to a test center. 99% of the time, the DET is the right answer.</p>
+                        
+                        <h2>What if My School Taught in English? Can I Get a Waiver?</h2>
+                        <p>Ah, the "waiver" question. Many applications will ask if English was the language of instruction at your school. You can and should say "Yes" if you went to an English Medium school. Will this automatically waive the requirement to submit a test? <strong>Probably not.</strong></p>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Reality Check on Waivers</h4>
+                                <p>Most universities will still want to see a test score. Don't spend weeks emailing 20 different admissions offices to save $60. Your time is more valuable than that. Just take the test.</p>
+                            </div>
+                        </div>
+                        
+                        <p>Most universities will still want to see a test score. It's a simple, standardized data point for them. You can email the admissions office and ask for a waiver, but it's often more work than just taking the Duolingo test. Don't spend weeks emailing 20 different admissions offices to save $60. Your time is more valuable than that. Just take the test.</p>
+
+                        <h2>How to Prepare for the DET</h2>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-clipboard-check"></i>
+                            <div>
+                                <h4>DET Preparation Strategy</h4>
+                                <ul>
+                                    <li><strong>Take the Free Practice Test:</strong> The Duolingo website has a full-length practice test. Take it. It will give you an estimated score range and show you all the weird question types.</li>
+                                    <li><strong>Think Out Loud:</strong> For the speaking questions where you have to describe a picture, just start talking. Describe what you see. Use simple, clear language. They want to hear your fluency, not a perfect analysis.</li>
+                                    <li><strong>Write Simply and Clearly:</strong> For the writing prompts, don't try to use big, fancy words. Focus on good grammar and a clear, logical structure. A simple, correct sentence is better than a complex, incorrect one.</li>
+                                    <li><strong>Relax:</strong> It's a test of your general English ability, not your knowledge of rocket science. You've been using English for years. You have the skills. Just show them.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="highlight-box">
+                            <i class="fas fa-key"></i>
+                            <p><strong>Final Word:</strong> This test is a gatekeeper, not a measure of your intelligence. Choose Duolingo, spend a weekend preparing, get the score you need, and move on. Don't let this minor task distract you from the real battle: your essays and your activity list.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Chapter Navigation -->
+        <section class="blog-post-navigation">
+            <div class="container">
+                <div class="blog-nav-container">
+                    <a href="chapter-7.html" class="blog-nav-link prev">
+                        <i class="fas fa-arrow-left"></i>
+                        <div>
+                            <div class="nav-label">Previous Chapter</div>
+                            <div class="nav-title">Standardized Tests: The SAT/ACT Game and the "Test-Optional" Lie</div>
+                        </div>
                     </a>
-                    <a href="chapter-9.html" class="chapter-nav-btn next">
-                        Next <i class="fas fa-arrow-right"></i>
+                    <a href="chapter-9.html" class="blog-nav-link next">
+                        <i class="fas fa-arrow-right"></i>
+                        <div>
+                            <div class="nav-label">Next Chapter</div>
+                            <div class="nav-title">Extracurriculars: The "What Else Do You Do?" Test</div>
+                        </div>
                     </a>
                 </div>
-             </div>
-
-        </div>
+            </div>
+        </section>
     </main>
 
     <footer class="main-footer">

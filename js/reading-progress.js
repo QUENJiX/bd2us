@@ -1,19 +1,18 @@
 /* ===== READING PROGRESS BAR FUNCTIONALITY ===== */
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Create progress bar element
-    const progressContainer = document.createElement('div');
-    progressContainer.className = 'reading-progress';
+    // Get the existing progress bar
+    const progressBar = document.getElementById('reading-progress-bar');
+    const progressContainer = document.querySelector('.reading-progress');
     
-    const progressBar = document.createElement('div');
-    progressBar.className = 'reading-progress-bar';
-    
-    progressContainer.appendChild(progressBar);
-    document.body.insertBefore(progressContainer, document.body.firstChild);
+    if (!progressBar) return;
     
     // Update progress on scroll
     function updateReadingProgress() {
-        const contentBlock = document.querySelector('.content-block');
+        // Look for content in different page types
+        const contentBlock = document.querySelector('.content-block') || 
+                           document.querySelector('.blog-post-content') ||
+                           document.querySelector('main');
         if (!contentBlock) return;
         
         const contentTop = contentBlock.offsetTop;
@@ -34,13 +33,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         progressBar.style.width = progress + '%';
         
-        // Always show the progress bar (remove hide/show logic for debugging)
-        progressContainer.style.opacity = '1';
+        // Show the progress bar
+        if (progressContainer) {
+            progressContainer.style.opacity = '1';
+        }
     }
     
     // Listen for scroll events
     window.addEventListener('scroll', updateReadingProgress, { passive: true });
     
     // Initial update
-    setTimeout(updateReadingProgress, 100); // Small delay to ensure content is loaded
+    setTimeout(updateReadingProgress, 100);
 });

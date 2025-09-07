@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Stay updated with the latest insights on US college applications, financial aid, and study abroad tips for Bangladeshi students.">
+    <meta name="keywords" content="US college blog, Bangladesh students, college application updates, financial aid news, study abroad tips">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quenjix.github.io/bd2us/blog.html">
+    <meta property="og:title" content="Blog - U.S. College Application Guide">
+    <meta property="og:description" content="Stay updated with the latest insights on US college applications, financial aid, and study abroad tips for Bangladeshi students.">
+    <meta property="og:image" content="https://quenjix.github.io/bd2us/assets/images/social/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://quenjix.github.io/bd2us/blog.html">
+    <meta property="twitter:title" content="Blog - U.S. College Application Guide">
+    <meta property="twitter:description" content="Stay updated with the latest insights on US college applications, financial aid, and study abroad tips for Bangladeshi students.">
+    <meta property="twitter:image" content="https://quenjix.github.io/bd2us/assets/images/social/og-image.png">
+    
+    <title>Blog - U.S. College Application Guide</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced-ux.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+</head>
+<body>
+    <header class="main-header" id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">BD2US Guide</a>
+            <div class="hamburger-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="roadmap.html">The Roadmap</a></li>
+                    <li><a href="college-list.html">College List</a></li>
+                    <li><a href="financial-aid.html">Financial Aid</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+                <!-- Mobile only theme toggle position -->
+                <div class="mobile-theme-toggle">
+                    <button id="mobile-theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+                        <i class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </nav>
+            <button id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Add overlay for mobile navigation -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="blog-hero-section">
+            <div class="container">
+                <h1 class="animate-on-scroll">Latest Updates & Insights</h1>
+                <p class="animate-on-scroll">Stay informed with the newest developments in US college applications, financial aid opportunities, and expert tips for Bangladeshi students.</p>
+            </div>
+        </section>
+
+        <!-- Blog Controls Section -->
+        <section class="blog-controls-section">
+            <div class="container">
+                <div class="blog-controls animate-on-scroll">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="blog-search" placeholder="Search blog posts...">
+                    </div>
+                    
+                    <div class="filter-controls">
+                        <div class="sort-dropdown">
+                            <label for="sort-select">Sort by:</label>
+                            <select id="sort-select">
+                                <option value="newest">Newest First</option>
+                                <option value="oldest">Oldest First</option>
+                                <option value="most-liked">Most Liked</option>
+                                <option value="title-az">Title A-Z</option>
+                                <option value="title-za">Title Z-A</option>
+                            </select>
+                        </div>
+                        
+                        <div class="category-filter">
+                            <label for="category-select">Category:</label>
+                            <select id="category-select">
+                                <option value="all">All Categories</option>
+                                <option value="admissions">Admissions</option>
+                                <option value="financial-aid">Financial Aid</option>
+                                <option value="essays">Essays</option>
+                                <option value="testing">Testing</option>
+                                <option value="scholarships">Scholarships</option>
+                                <option value="deadlines">Deadlines</option>
+                                <option value="tips">Tips & Tricks</option>
+                                <option value="news">News & Updates</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Section -->
+        <section class="blog-posts-section">
+            <div class="container">
+                <div id="blog-posts-grid" class="blog-posts-grid">
+                    <!-- Blog posts will be dynamically loaded here -->
+                </div>
+                
+                <div id="no-results" class="no-results" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>No posts found</h3>
+                    <p>Try adjusting your search or filter criteria.</p>
+                </div>
+                
+                <div class="load-more-section">
+                    <button id="load-more-btn" class="btn btn-secondary">Load More Posts</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p>&copy; 2025 BD2US Guide. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/enhanced-ux.js"></script>
+    <script src="js/blog-data.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

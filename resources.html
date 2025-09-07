@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/enhanced-ux.css">
     <link rel="stylesheet" href="css/reading-experience.css">
-    <link rel="stylesheet" href="css/heading-fix.css">
+    <link rel="stylesheet" href="css/blog-post.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
@@ -35,6 +35,7 @@
                     <li><a href="college-list.html">College List</a></li>
                     <li><a href="financial-aid.html">Financial Aid</a></li>
                     <li><a href="resources.html">Resources</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About Us</a></li>
                 </ul>
                 <!-- Mobile only theme toggle position -->
@@ -52,111 +53,217 @@
 
     <!-- Add overlay for mobile navigation -->
     <div class="nav-overlay" id="nav-overlay"></div>
+    
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="reading-progress" role="progressbar"></div>
 
     <main>
-        <div class="container content-page">
-            <h2>Resources: Your Arsenal for the Application War</h2>
-
-            <div class="content-block animate-on-scroll" data-parallax-speed="0.05">
-                <p>This process is a war, and you don't go to war unarmed. What follows is not a "helpful list of links." This is your arsenal. These are the tools, weapons, and intelligence sources you will use to fight and win a spot at a U.S. university with a fat stack of financial aid. Use them wisely. Don't trust anything blindly. Verify everything.</p>
-
-                <h3 class="highlight-text">The Official Gatekeepers: Know Your Enemy</h3>
-                <p>These are the official websites. You have to use them. There is no way around it. Know them, bookmark them, and understand their purpose.</p>
-                <ul class="interactive-list">
-                    <li><strong>College Board:</strong> <a href="https://www.collegeboard.org/" target="_blank" class="pulse-on-hover">collegeboard.org</a> (The mothership for the SAT, AP Exams, and the dreaded CSS Profile. You will spend a lot of time here.)</li>
-                    <li><strong>ACT:</strong> <a href="https://www.act.org/" target="_blank" class="pulse-on-hover">act.org</a> (The other big test. Pick one, master it.)</li>
-                    <li><strong>The English Tests (TOEFL, IELTS, Duolingo):</strong> <a href="https://www.ets.org/toefl" target="_blank" class="pulse-on-hover">TOEFL</a>, <a href="https://www.ielts.org/" target="_blank" class="pulse-on-hover">IELTS</a>, <a href="https://englishtest.duolingo.com/" target="_blank" class="pulse-on-hover">Duolingo</a>. (Prove you can speak English. The Duolingo test is cheapest and fastest. Do that one unless a college specifically forbids it.)</li>
-                    <li><strong>The Application Portals (Common App, Scoir, etc.):</strong> <a href="https://www.commonapp.org/" target="_blank" class="pulse-on-hover">Common App</a>, <a href="https://www.scoir.com/" target="_blank" class="pulse-on-hover">Scoir</a>. (This is where you'll actually submit your applications. Get familiar with their interfaces early.)</li>
-                </ul>
-
-                <h3 class="highlight-text">College Intel: How to Spy on Schools</h3>
-                <p>Don't rely on marketing bullshit. You need to be a detective and find the real data. Here's how.</p>
-                <ul class="interactive-list">
-                    <li><strong>The #1 Source: The College's Own Website.</strong> This is ground zero. Go to the "Admissions" and "Financial Aid" sections. Look for the "International Students" link. This is where they tell you what they want and what they offer. Read it. Every word.</li>
-                    <li><strong>The Secret Weapon: Common Data Set (CDS).</strong> This is the holy grail of college data. Google "[College Name] Common Data Set". It's a boring-ass spreadsheet, but it contains pure gold. Section H6, "Financial Aid for Non-resident Aliens," tells you exactly how many international students got aid and how much they got. This is the most honest data you will ever find. Use it to see if a college is actually generous or just pretending to be.</li>
-                    <li><strong>The Noise (Niche, US News Rankings, etc.):</strong> <a href="https://www.niche.com/" target="_blank" class="pulse-on-hover">Niche.com</a> and other ranking sites are like movie trailers. They give you a flashy, entertaining overview but often hide the ugly truth. Use them for initial discovery, but NEVER for making final decisions. Student reviews are biased. Rankings are mostly bullshit. The CDS is the truth.</li>
-                </ul>
-
-                <h3 class="highlight-text">The Money Trail: Following the Dollars</h3>
-                <ul class="interactive-list">
-                    <li><strong>The College's Financial Aid Website:</strong> I'm saying it again. This is the primary source. It tells you which forms to use (CSS or ISFAA) and, most importantly, the DEADLINES.</li>
-                    <li><strong>CSS Profile:</strong> <a href="https://cssprofile.collegeboard.org/" target="_blank" class="pulse-on-hover">cssprofile.collegeboard.org</a> (The financial colonoscopy. You know the drill.)</li>
-                    <li><strong>EducationUSA:</strong> <a href="https://educationusa.state.gov/" target="_blank" class="pulse-on-hover">educationusa.state.gov</a> (The official U.S. government advising body. They have centers in Bangladesh. They can be a good, reliable source of basic information and workshops. They won't write your essays for you, but they can point you in the right direction.)</li>
-                </ul>
-
-                <h3 class="highlight-text">The Digital Trenches: Online Forums (A Double-Edged Sword)</h3>
-                <p>Welcome to the jungle. These places can be incredibly helpful or incredibly toxic. Go in with a specific question, find your answer, and get out. Do not live there. Do not compare yourself to the neurotic geniuses you'll find.</p>
-                <ul class="interactive-list">
-                    <li><strong>Reddit:</strong>
-                        <ul>
-                            <li><a href="https://www.reddit.com/r/IntltoUSA" target="_blank" class="pulse-on-hover">r/IntltoUSA</a>: Your main battleground. This is where other international students share their pain, their successes, and their strategies. You can find real, raw experiences here. But remember, it's all anecdotal. One person's miracle is another's rejection.</li>
-                            <li><a href="https://www.reddit.com/r/ApplyingToCollege" target="_blank" class="pulse-on-hover">r/ApplyingToCollege</a>: Mostly for American kids, but good for general advice and seeing what you're up against.</li>
-                        </ul>
-                    </li>
-                    <li><strong>College Confidential:</strong> The original nightmare forum. It's full of hyper-competitive students and their even more competitive parents. Avoid it unless you have a very, very specific question you can't answer anywhere else. It's a factory of anxiety.</li>
-                </ul>
-
-                <h3 class="highlight-text">Sharpening Your Weapons: Test Prep</h3>
-                <ul class="interactive-list">
-                    <li><strong>Khan Academy:</strong> <a href="https://www.khanacademy.org/" target="_blank" class="pulse-on-hover">khanacademy.org</a>. It's the official SAT prep. It's free. It's all you need. If you can't get a high score with this, a $1000 prep course won't save you. Grind it.</li>
-                    <li><strong>Official Practice Tests:</strong> The only practice tests that matter are the official ones from the test-makers themselves (College Board, ACT, ETS). Don't waste your time on third-party tests that are often inaccurate.</li>
-                </ul>
-
-                <h3 class="highlight-text">Home Turf Advantage: Local Resources</h3>
-                <ul class="interactive-list">
-                    <li><strong>Your School Counselors/Teachers:</strong> They write your recommendations and send your transcripts. They are critical. Treat them with respect. Give them your information early. Make their job easy, and they will write better letters for you.</li>
-                    <li><strong>Alumni Networks:</strong> Find people from your school or city who are studying in the U.S. Use LinkedIn. Use Facebook. Find them and ask them for 15 minutes of their time. Their real-world advice is more valuable than any website.</li>
-                    <li><strong>Local Counseling Services:</strong> BEWARE. 95% of them are sharks who will take your parents' money and give you generic, useless advice. A good counselor is rare. A bad one is dangerous. Vet them ruthlessly. Ask for a list of past students they've helped get into top schools *with full financial aid*. If they can't provide it, run.</li>
-                </ul>
-
-                <p class="important-note"><strong>Disclaimer:</strong> This is a warzone. The landscape changes. Links break. Policies shift. Trust no one. Verify everything on the official college website. Your future is your responsibility.</li>
-                </ul>
-
+        <!-- Resources Hero Section -->
+        <section class="blog-post-hero">
+            <div class="container">
+                <nav class="blog-post-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span>Resources</span>
+                </nav>
+                
+                <div class="blog-post-category-tag" style="background-color: #7c3aed;">
+                    <i class="fas fa-tools"></i>
+                    Resources & Tools
+                </div>
+                
+                <h1 class="blog-post-title">Resources: Your Arsenal for the Application War</h1>
+                <p class="blog-post-subtitle">This process is a war, and you don't go to war unarmed. These are the tools, weapons, and intelligence sources you'll use to fight and win.</p>
+                
+                <div class="blog-post-meta-detailed">
+                    <div class="blog-post-read-time-info">
+                        <i class="fas fa-clock"></i>
+                        <span>10 min read</span>
+                    </div>
+                    <div class="blog-post-date-info">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Essential Toolkit</span>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <!-- Glossary Section -->
-            <section id="glossary" class="animate-on-scroll" data-parallax-speed="0.05">
-                <h3 style="margin-top: 4rem;" class="highlight-text">The Dictionary of War: Key Terms</h3>
-                <dl class="interactive-list">
-                    <dt>Need-Blind</dt>
-                    <dd>The college pretends you're not poor when they read your application. Only a handful of God-tier schools do this for internationals.</dd>
-
-                    <dt>Need-Aware</dt>
-                    <dd>The college sees that you're poor and holds it against you. Your application has to be twice as good to make up for it.</dd>
-
-                    <dt>CSS Profile</dt>
-                    <dd>The financial form where you tell a university every single detail about your family's money so they can decide how much you can suffer.</dd>
-
-                    <dt>ISFAA</dt>
-                    <dd>The free, PDF version of the CSS Profile. Same pain, no fee.</dd>
-
-                    <dt>Common App</dt>
-                    <dd>The website where you will spend hundreds of hours of your life filling out forms and writing essays.</dd>
+        <section class="blog-post-content">
+            <div class="container">
+                <article class="blog-post-article">
+                    <div class="content-block animate-on-scroll">
+                        <p class="lead">What follows is not a "helpful list of links." This is your arsenal. These are the tools, weapons, and intelligence sources you will use to fight and win a spot at a U.S. university with a fat stack of financial aid. Use them wisely. Don't trust anything blindly. Verify everything.</p>
+                    </div>
                     
-                    <dt>FAFSA</dt>
-                    <dd>IGNORE THIS. It's for Americans only. It does not apply to you.</dd>
-
-                    <dt>Early Decision (ED)</dt>
-                    <dd>The "financial suicide" option. A binding contract where you promise to attend if accepted, even if the aid they give you is terrible. A tool for the rich.</dd>
-
-                    <dt>Early Action (EA)</dt>
-                    <dd>The smart choice. You apply early, hear back early, but have no obligation to attend. It gives you all the power.</dd>
-
-                    <dt>Regular Decision (RD)</dt>
-                    <dd>The main battle. Everyone applies here. It's crowded and chaotic.</dd>
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-building"></i> The Official Gatekeepers: Know Your Enemy</h2>
+                        
+                        <p>These are the official websites. You have to use them. There is no way around it. Know them, bookmark them, and understand their purpose.</p>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-university"></i>
+                            <h4>Essential Official Sites</h4>
+                            <ul>
+                                <li><strong>College Board:</strong> <a href="https://www.collegeboard.org/" target="_blank" rel="noopener">collegeboard.org</a> (The mothership for the SAT, AP Exams, and the dreaded CSS Profile. You will spend a lot of time here.)</li>
+                                <li><strong>ACT:</strong> <a href="https://www.act.org/" target="_blank" rel="noopener">act.org</a> (The other big test. Pick one, master it.)</li>
+                                <li><strong>The English Tests (TOEFL, IELTS, Duolingo):</strong> <a href="https://www.ets.org/toefl" target="_blank" rel="noopener">TOEFL</a>, <a href="https://www.ielts.org/" target="_blank" rel="noopener">IELTS</a>, <a href="https://englishtest.duolingo.com/" target="_blank" rel="noopener">Duolingo</a>. (Prove you can speak English. The Duolingo test is cheapest and fastest. Do that one unless a college specifically forbids it.)</li>
+                                <li><strong>The Application Portals (Common App, Scoir, etc.):</strong> <a href="https://www.commonapp.org/" target="_blank" rel="noopener">Common App</a>, <a href="https://www.scoir.com/" target="_blank" rel="noopener">Scoir</a>. (This is where you'll actually submit your applications. Get familiar with their interfaces early.)</li>
+                            </ul>
+                        </div>
+                    </div>
                     
-                    <dt>TOEFL / IELTS / DET</dt>
-                    <dd>The "Yes, I can speak English" tests. A box you have to check.</dd>
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-search"></i> College Intel: How to Spy on Schools</h2>
+                        
+                        <p>Don't rely on marketing bullshit. You need to be a detective and find the real data. Here's how.</p>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-bullseye"></i>
+                            <h4>The #1 Source: College's Own Website</h4>
+                            <p>This is ground zero. Go to the "Admissions" and "Financial Aid" sections. Look for the "International Students" link. This is where they tell you what they want and what they offer. Read it. Every word.</p>
+                        </div>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-gem"></i>
+                            <h4>The Secret Weapon: Common Data Set (CDS)</h4>
+                            <p>Google "[College Name] Common Data Set". It's a boring-ass spreadsheet, but it contains pure gold. Section H6, "Financial Aid for Non-resident Aliens," tells you exactly how many international students got aid and how much they got. This is the most honest data you will ever find.</p>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>The Noise (Rankings & Review Sites)</h4>
+                            <p><a href="https://www.niche.com/" target="_blank" rel="noopener">Niche.com</a> and other ranking sites are like movie trailers. They give you a flashy, entertaining overview but often hide the ugly truth. Use them for initial discovery, but NEVER for making final decisions.</p>
+                        </div>
+                    </div>
                     
-                    <dt>Demonstrated Interest</dt>
-                    <dd>Sucking up to a college by opening their emails and attending their boring online info sessions. Some schools track this to see if you're serious. It's a silly game you have to play.</dd>
-
-                    <dt>Waitlist</dt>
-                    <dd>Purgatory. The college doesn't love you, but they don't hate you either. It's a soft rejection. Move on with your life.</dd>
-                </dl>
-            </section>
-
-        </div>
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-dollar-sign"></i> The Money Trail: Following the Dollars</h2>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-money-check-alt"></i>
+                            <h4>Financial Aid Resources</h4>
+                            <ul>
+                                <li><strong>The College's Financial Aid Website:</strong> I'm saying it again. This is the primary source. It tells you which forms to use (CSS or ISFAA) and, most importantly, the DEADLINES.</li>
+                                <li><strong>CSS Profile:</strong> <a href="https://cssprofile.collegeboard.org/" target="_blank" rel="noopener">cssprofile.collegeboard.org</a> (The financial colonoscopy. You know the drill.)</li>
+                                <li><strong>EducationUSA:</strong> <a href="https://educationusa.state.gov/" target="_blank" rel="noopener">educationusa.state.gov</a> (The official U.S. government advising body. They have centers in Bangladesh. They can be a good, reliable source of basic information and workshops. They won't write your essays for you, but they can point you in the right direction.)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-comments"></i> The Digital Trenches: Online Forums</h2>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>A Double-Edged Sword</h4>
+                            <p>These places can be incredibly helpful or incredibly toxic. Go in with a specific question, find your answer, and get out. Do not live there. Do not compare yourself to the neurotic geniuses you'll find.</p>
+                        </div>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-reddit"></i>
+                            <h4>Reddit Communities</h4>
+                            <ul>
+                                <li><a href="https://www.reddit.com/r/IntltoUSA" target="_blank" rel="noopener">r/IntltoUSA</a> - Your main battleground. International students sharing experiences and strategies.</li>
+                                <li><a href="https://www.reddit.com/r/ApplyingToCollege" target="_blank" rel="noopener">r/ApplyingToCollege</a> - Mostly for American kids, but good for general advice.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-skull-crossbones"></i>
+                            <h4>College Confidential</h4>
+                            <p>The original nightmare forum. It's full of hyper-competitive students and their even more competitive parents. Avoid it unless you have a very, very specific question. It's a factory of anxiety.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-sword"></i> Sharpening Your Weapons: Test Prep</h2>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Khan Academy</h4>
+                            <p><a href="https://www.khanacademy.org/" target="_blank" rel="noopener">khanacademy.org</a>. It's the official SAT prep. It's free. It's all you need. If you can't get a high score with this, a $1000 prep course won't save you. Grind it.</p>
+                        </div>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-clipboard-check"></i>
+                            <h4>Official Practice Tests</h4>
+                            <p>The only practice tests that matter are the official ones from the test-makers themselves (College Board, ACT, ETS). Don't waste your time on third-party tests that are often inaccurate.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-home"></i> Home Turf Advantage: Local Resources</h2>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <h4>Your School Network</h4>
+                            <ul>
+                                <li><strong>School Counselors/Teachers:</strong> They write your recommendations and send your transcripts. They are critical. Treat them with respect.</li>
+                                <li><strong>Alumni Networks:</strong> Find people from your school or city studying in the U.S. Use LinkedIn. Use Facebook. Their real-world advice is invaluable.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>Local Counseling Services - BEWARE</h4>
+                            <p>95% of them are sharks who will take your parents' money and give you generic, useless advice. A good counselor is rare. A bad one is dangerous. Vet them ruthlessly. Ask for a list of past students they've helped get into top schools *with full financial aid*. If they can't provide it, run.</p>
+                        </div>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Disclaimer</h4>
+                            <p><strong>This is a warzone.</strong> The landscape changes. Links break. Policies shift. Trust no one. Verify everything on the official college website. Your future is your responsibility.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-book"></i> The Dictionary of War: Key Terms</h2>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-spell-check"></i>
+                            <h4>Essential Terminology</h4>
+                            <dl class="glossary-list">
+                                <dt><strong>Need-Blind</strong></dt>
+                                <dd>The college pretends you're not poor when they read your application. Only a handful of God-tier schools do this for internationals.</dd>
+                                
+                                <dt><strong>Need-Aware</strong></dt>
+                                <dd>The college sees that you're poor and holds it against you. Your application has to be twice as good to make up for it.</dd>
+                                
+                                <dt><strong>CSS Profile</strong></dt>
+                                <dd>The financial form where you tell a university every single detail about your family's money so they can decide how much you can suffer.</dd>
+                                
+                                <dt><strong>ISFAA</strong></dt>
+                                <dd>The free, PDF version of the CSS Profile. Same pain, no fee.</dd>
+                                
+                                <dt><strong>Common App</strong></dt>
+                                <dd>The website where you will spend hundreds of hours filling out forms and writing essays.</dd>
+                                
+                                <dt><strong>FAFSA</strong></dt>
+                                <dd><strong>IGNORE THIS.</strong> It's for Americans only. It does not apply to you.</dd>
+                                
+                                <dt><strong>Early Decision (ED)</strong></dt>
+                                <dd>The "financial suicide" option. A binding contract where you promise to attend if accepted, even if the aid is terrible. A tool for the rich.</dd>
+                                
+                                <dt><strong>Early Action (EA)</strong></dt>
+                                <dd>The smart choice. You apply early, hear back early, but have no obligation to attend. It gives you all the power.</dd>
+                                
+                                <dt><strong>Regular Decision (RD)</strong></dt>
+                                <dd>The main battle. Everyone applies here. It's crowded and chaotic.</dd>
+                                
+                                <dt><strong>TOEFL / IELTS / DET</strong></dt>
+                                <dd>The "Yes, I can speak English" tests. A box you have to check.</dd>
+                                
+                                <dt><strong>Demonstrated Interest</strong></dt>
+                                <dd>Sucking up to a college by opening their emails and attending their boring online info sessions. Some schools track this.</dd>
+                                
+                                <dt><strong>Waitlist</strong></dt>
+                                <dd>Purgatory. The college doesn't love you, but they don't hate you either. It's a soft rejection. Move on with your life.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer class="main-footer">

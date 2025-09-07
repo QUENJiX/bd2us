@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/enhanced-ux.css">
     <link rel="stylesheet" href="css/reading-experience.css">
-    <link rel="stylesheet" href="css/heading-fix.css">
+    <link rel="stylesheet" href="css/blog-post.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
@@ -35,6 +35,7 @@
                     <li><a href="college-list.html">College List</a></li>
                     <li><a href="financial-aid.html">Financial Aid</a></li>
                     <li><a href="resources.html">Resources</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="about.html">About Us</a></li>
                 </ul>
                 <!-- Mobile only theme toggle position -->
@@ -52,74 +53,205 @@
 
     <!-- Add overlay for mobile navigation -->
     <div class="nav-overlay" id="nav-overlay"></div>
+    
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="reading-progress" role="progressbar"></div>
 
     <main>
-        <div class="container content-page">
-            <h2>Financial Aid: The Make-or-Break Factor for Bangladeshi Students</h2>
-
-            <!-- Content for Financial Aid Page Start -->
-            <div class="content-block animate-on-scroll" data-parallax-speed="0.08">
-                <h2>Financial Aid: The Only Thing That Matters</h2>
-                <p>Let's cut the crap. Forget the glossy brochures, the talk of "vibrant campus life," and the pictures of smiling, diverse students on the lawn. For 99% of you, the U.S. college dream lives or dies on one thing and one thing only: <strong>money</strong>. Cold, hard, American dollars.</p>
-                <p>Unless your family has a spare $85,000 (that's over 1 Crore BDT, by the way) to light on fire every year, this isn't just a chapter in a guide. This is the whole damn book. Getting into a U.S. university is easy. Getting someone else to pay for it is the hardest game you will ever play.</p>
-
-                <h3 class="highlight-text">The Money Tree: Where Does Aid Come From?</h3>
-                <p>"Financial aid" is a nice umbrella term. Let's call it what it is. Here's the breakdown:</p>
-                <ul class="interactive-list">
-                    <li><strong>The Holy Grail (Grants & Scholarships):</strong> This is free money. Gift money. Money you do not have to pay back. This is the only thing you should be focused on. It's a gift from the university saying, "We want you, and we'll pay for you." It can be "need-based" (because your family is broke) or "merit-based" (because you're a genius). For you, they are two sides of the same coin.</li>
-                    <li><strong>The Devil's Bargain (Loans):</strong> This is poison. It's borrowed money that you MUST repay with interest. As an international student without a rich American uncle to co-sign, getting a private loan is nearly impossible. And even if you could, starting your life in a new country with a mountain of debt is a recipe for disaster. <strong>Your goal is to get a $0 loan offer.</strong> Avoid these like the plague.</li>
-                    <li><strong>The Pocket Money (Work-Study):</strong> This is a campus job, maybe 10-15 hours a week, shelving books in the library or serving coffee. It's nice for your personal expenses—late-night pizza, a new pair of jeans. It will NOT pay your tuition. It's a small supplement, not a solution.</li>
-                </ul>
+        <!-- Financial Aid Hero Section -->
+        <section class="blog-post-hero">
+            <div class="container">
+                <nav class="blog-post-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span>Financial Aid</span>
+                </nav>
                 
-                <h3 class="highlight-text">The Two Questions They Ask: Are You Poor? Are You Smart?</h3>
-                <p>Universities decide who gets the free money based on two criteria:</p>
-                <ul>
-                    <li><strong>Need-Based Aid:</strong> This is the "Are you poor?" question. You fill out gigantic, invasive financial forms (the CSS Profile or ISFAA) where you confess every detail of your family's finances. The college then uses a secret formula to decide how much your family *should* be able to pay. This is their "Expected Family Contribution" (EFC). The gap between their cost and your EFC is your "need." The best schools promise to meet 100% of this need with free money.</li>
-                    <li><strong>Merit-Based Aid:</strong> This is the "Are you smart?" question. This is a scholarship for your grades, your test scores, your incredible talent in science, art, or music. For international students, this is often less about your family's income and more about the university trying to attract top talent. But here's the secret: for top universities, <strong>all aid is merit-based.</strong> They don't give out millions in aid to average students, no matter how poor they are. You have to be exceptional to be worthy of the investment.</li>
-                </ul>
-
-                <h3 class="highlight-text">The Four Types of Colleges (As Defined by Their Money)</h3>
-                <p>This is a recap from Chapter 2, but it's so important it needs to be tattooed on your brain. You MUST know a college's financial aid policy before you even think about applying.</p>
-                <ul class="interactive-list">
-                    <li><strong>The Gods (Need-Blind & Meets Full Need):</strong> Harvard, Yale, Princeton, MIT, Amherst, Dartmouth, Bowdoin. The list is short and sacred. They do not consider your ability to pay when they decide to admit you. If you get in, they pay for everything you need. This is the dream. It's also harder to get into than Fort Knox. You are competing with the absolute best students on the planet for these spots.</li>
-                    <li><strong>The Demigods (Need-Aware & Meets Full Need):</strong> Most other top private colleges (UChicago, Columbia, Duke, etc.). They ARE looking at your bank account. When it comes down to you and a student who can pay full price, your need for aid is a disadvantage. It's a brutal reality. However, if they DO admit you, they promise to give you all the aid you need. Your job is to be so damn good that they can't say no, even if you are expensive.</li>
-                    <li><strong>The Gamblers (Merit-Only / Limited Aid):</strong> Many public universities and some private ones. They give very little need-based aid to internationals. Instead, they offer competitive merit scholarships to a handful of top applicants. It's a lottery. You might get a full ride, or you might get nothing. It's a risky strategy to rely on these.</li>
-                    <li><strong>The Useless (No Aid for Internationals):</strong> The vast majority of U.S. colleges. Do not waste a second of your time on them.</li>
-                </ul>
-
-                <h3>The Financial Colonoscopy: CSS Profile vs. ISFAA</h3>
-                <p>To beg for money, you have to prove you need it. This means baring your family's entire financial soul.</p>
-                <ul>
-                    <li><strong>The CSS Profile:</strong> This is the main event, run by the College Board. It's a monstrous online form that will ask for everything: your parents' income, their savings, the value of your apartment, any land they own, business revenues, your uncle's shoe size (not really, but it feels like it).
-                        <ul>
-                            <li><strong>Cost:</strong> It costs money ($25 for the first, $16 for more). Get a fee waiver. If you got a Common App waiver, you often get one automatically. If not, email the admissions office and ask politely. Don't pay if you don't have to.</li>
-                            <li><strong>Documents:</strong> Start gathering these NOW. Bank statements, salary slips, property deeds, business records. You will need to translate them into English and convert currency to USD. It's a nightmare. Start early.</li>
-                        </ul>
-                    </li>
-                    <li><strong>The ISFAA (The Free Alternative):</strong> A simple PDF form. It asks the same questions but is less standardized. It's free, which is good. But you have to fill it out and submit it to each school individually. It's just as much work, just without the fee.</li>
-                </ul>
-                <p><strong>A WORD ON DEADLINES:</strong> Financial aid deadlines are NOT suggestions. They are commandments. If the deadline is February 1st, you submit on January 31st. Missing a financial aid deadline is the same as telling the university, "Don't worry, my dad will pay for it." You will get nothing.</p>
-
-                <h3>The Magic Numbers: CoA and EFC</h3>
-                <ul>
-                    <li><strong>Cost of Attendance (CoA):</strong> The sticker price. The big, scary number (e.g., $85,000). This includes everything: tuition, housing, food, health insurance, books.</li>
-                    <li><strong>Expected Family Contribution (EFC):</strong> The number the college's secret algorithm spits out after you submit the CSS Profile. This is what they think your family can pay per year. This number is often higher than what your family *actually* can pay. It is not a negotiation.</li>
-                    <li><strong>Your Need:</strong> CoA - EFC = Your Demonstrated Need.</li>
-                    <li><strong>The Golden Offer:</strong> An aid package where `Your Need` is covered entirely by `Grants/Scholarships`, and the final bill equals your EFC (or less!). That's the win.</li>
-                </ul>
-
-                <h3>The Brutal Reality for a Bangladeshi Applicant</h3>
-                <p>Listen, and listen carefully. You are not just competing with the valedictorian from your school. You are competing with the math Olympiad champion from China, the debate prodigy from India, the future Nobel laureate from Nigeria, and the kid of a Silicon Valley billionaire who happens to have perfect scores. And all of you are fighting for a handful of spots and a limited pool of money.</p>
-                <ul>
-                    <li>A low EFC ($0 to $5,000) makes you extremely expensive for a college. At a need-aware school, this is a huge hurdle. You have to be exponentially better than a student who can pay more.</li>
-                    <li>A "full ride" is a unicorn. It's a beautiful, magical creature that is almost impossible to find. Don't bank your entire future on finding one.</li>
-                    <li>Your application cannot just be "good." It has to be spectacular. It has to make an admissions officer stop, put down their coffee, and say, "Wow. We need this kid on our campus, and I don't care how much it costs."</li>
-                </ul>
-
-                <p><strong>Final Thought:</strong> This is a game of strategy, not just merit. Be a cold, calculating strategist. Research schools like a detective. Gather your documents like an accountant. Write your essays like a poet. And apply to schools that have a history of giving money to students like you. Don't waste your time on fantasies. Focus on the schools that can make your dream a reality.</p>
+                <div class="blog-post-category-tag" style="background-color: #dc2626;">
+                    <i class="fas fa-dollar-sign"></i>
+                    Financial Aid
+                </div>
+                
+                <h1 class="blog-post-title">Financial Aid: The Make-or-Break Factor for Bangladeshi Students</h1>
+                <p class="blog-post-subtitle">Financial Aid: The Only Thing That Matters</p>
+                
+                <div class="blog-post-meta-detailed">
+                    <div class="blog-post-read-time-info">
+                        <i class="fas fa-clock"></i>
+                        <span>12 min read</span>
+                    </div>
+                    <div class="blog-post-date-info">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Essential Strategy Guide</span>
+                    </div>
+                </div>
             </div>
-             <!-- Content for Financial Aid Page End -->
-        </div>
+        </section>
+
+        <section class="blog-post-content">
+            <div class="container">
+                <article class="blog-post-article">
+                    <div class="content-block animate-on-scroll">
+                        <p class="lead">Let's cut the crap. Forget the glossy brochures, the talk of "vibrant campus life," and the pictures of smiling, diverse students on the lawn. For 99% of you, the U.S. college dream lives or dies on one thing and one thing only: money. Cold, hard, American dollars.</p>
+                        
+                        <p>Unless your family has a spare $85,000 (that's over 1 Crore BDT, by the way) to light on fire every year, this isn't just a chapter in a guide. This is the whole damn book. Getting into a U.S. university is easy. Getting someone else to pay for it is the hardest game you will ever play.</p>
+                        
+                        <div class="info-box animate-on-scroll">
+                            <i class="fas fa-chart-line"></i>
+                            <h4>The Brutal Numbers</h4>
+                            <p>The average cost of a U.S. university education for international students is $35,000-$85,000+ per year. That includes tuition, room, board, and living expenses. Multiply by four years, and you're looking at $140,000 to $340,000+ for a bachelor's degree. If you think your middle-class Bangladeshi family can handle that, welcome to reality.</p>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>The Hard Truth</h4>
+                            <p>Universities are businesses. They are selling you a product. And unless you have the cash, you need them to want you more than you want them. This is not a charity. This is capitalism at its finest.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-tree"></i> The Money Tree: Where Does Aid Come From?</h2>
+                        
+                        <p>"Financial aid" is a nice umbrella term. Let's call it what it is. Here's the breakdown:</p>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-gift"></i>
+                            <h4>The Holy Grail (Grants & Scholarships)</h4>
+                            <p>This is free money. Gift money. Money you do not have to pay back. This is the only thing you should be focused on. It's a gift from the university saying, "We want you, and we'll pay for you." It can be "need-based" (because your family is broke) or "merit-based" (because you're a genius).</p>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-skull-crossbones"></i>
+                            <h4>The Devil's Bargain (Loans)</h4>
+                            <p>This is poison. It's borrowed money that you MUST repay with interest. As an international student without a rich American uncle to co-sign, getting a private loan is nearly impossible. <strong>Your goal is to get a $0 loan offer.</strong> Avoid these like the plague.</p>
+                        </div>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-coffee"></i>
+                            <h4>The Pocket Money (Work-Study)</h4>
+                            <p>This is a campus job, maybe 10-15 hours a week, shelving books in the library or serving coffee. It's nice for your personal expenses—late-night pizza, a new pair of jeans. It will NOT pay your tuition. It's a small supplement, not a solution.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-question-circle"></i> The Two Questions They Ask: Are You Poor? Are You Smart?</h2>
+                        
+                        <p>Universities decide who gets the free money based on two criteria:</p>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-search-dollar"></i>
+                            <h4>Need-Based Aid: "Are you poor?"</h4>
+                            <p>You fill out gigantic, invasive financial forms (the CSS Profile or ISFAA) where you confess every detail of your family's finances. The college then uses a secret formula to decide how much your family *should* be able to pay. This is their "Expected Family Contribution" (EFC). The gap between their cost and your EFC is your "need."</p>
+                        </div>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-medal"></i>
+                            <h4>Merit-Based Aid: "Are you smart?"</h4>
+                            <p>This is a scholarship for your grades, your test scores, your incredible talent in science, art, or music. For international students, this is often less about your family's income and more about the university trying to attract top talent. But here's the secret: for top universities, <strong>all aid is merit-based.</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-university"></i> The Four Types of Colleges (As Defined by Their Money)</h2>
+                        
+                        <p>You MUST know a college's financial aid policy before you even think about applying.</p>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-crown"></i>
+                            <h4>The Gods (Need-Blind & Meets Full Need)</h4>
+                            <p><strong>Harvard, Yale, Princeton, MIT, Amherst, Dartmouth, Bowdoin.</strong> The list is short and sacred. They do not consider your ability to pay when they decide to admit you. If you get in, they pay for everything you need. This is the dream. It's also harder to get into than Fort Knox.</p>
+                        </div>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-balance-scale"></i>
+                            <h4>The Demigods (Need-Aware & Meets Full Need)</h4>
+                            <p><strong>Most other top private colleges (UChicago, Columbia, Duke, etc.).</strong> They ARE looking at your bank account. When it comes down to you and a student who can pay full price, your need for aid is a disadvantage. However, if they DO admit you, they promise to give you all the aid you need.</p>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-dice"></i>
+                            <h4>The Gamblers (Merit-Only / Limited Aid)</h4>
+                            <p>Many public universities and some private ones. They give very little need-based aid to internationals. Instead, they offer competitive merit scholarships to a handful of top applicants. It's a lottery. You might get a full ride, or you might get nothing.</p>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-times-circle"></i>
+                            <h4>The Useless (No Aid for Internationals)</h4>
+                            <p>The vast majority of U.S. colleges. Do not waste a second of your time on them.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-file-medical"></i> The Financial Colonoscopy: CSS Profile vs. ISFAA</h2>
+                        
+                        <p>To beg for money, you have to prove you need it. This means baring your family's entire financial soul.</p>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-clipboard-list"></i>
+                            <h4>The CSS Profile: The Main Event</h4>
+                            <p>Run by the College Board. It's a monstrous online form that will ask for everything: your parents' income, their savings, the value of your apartment, any land they own, business revenues.</p>
+                            <ul>
+                                <li><strong>Cost:</strong> $25 for the first, $16 for more. Get a fee waiver if possible.</li>
+                                <li><strong>Documents:</strong> Bank statements, salary slips, property deeds, business records. You will need to translate them into English and convert currency to USD.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-file-pdf"></i>
+                            <h4>The ISFAA: The Free Alternative</h4>
+                            <p>A simple PDF form. It asks the same questions but is less standardized. It's free, which is good. But you have to fill it out and submit it to each school individually.</p>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-calendar-times"></i>
+                            <h4>A WORD ON DEADLINES</h4>
+                            <p>Financial aid deadlines are NOT suggestions. They are commandments. If the deadline is February 1st, you submit on January 31st. Missing a financial aid deadline is the same as telling the university, "Don't worry, my dad will pay for it." You will get nothing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-calculator"></i> The Magic Numbers: CoA and EFC</h2>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-receipt"></i>
+                            <h4>Understanding the Financial Formula</h4>
+                            <ul>
+                                <li><strong>Cost of Attendance (CoA):</strong> The sticker price. The big, scary number (e.g., $85,000). This includes everything: tuition, housing, food, health insurance, books.</li>
+                                <li><strong>Expected Family Contribution (EFC):</strong> The number the college's secret algorithm spits out after you submit the CSS Profile. This is what they think your family can pay per year.</li>
+                                <li><strong>Your Need:</strong> CoA - EFC = Your Demonstrated Need.</li>
+                                <li><strong>The Golden Offer:</strong> An aid package where Your Need is covered entirely by Grants/Scholarships.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="content-block animate-on-scroll">
+                        <h2><i class="fas fa-globe-asia"></i> The Brutal Reality for a Bangladeshi Applicant</h2>
+                        
+                        <div class="warning-box">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h4>The Competition is Fierce</h4>
+                            <p>You are not just competing with the valedictorian from your school. You are competing with the math Olympiad champion from China, the debate prodigy from India, the future Nobel laureate from Nigeria, and the kid of a Silicon Valley billionaire who happens to have perfect scores.</p>
+                        </div>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Key Realities</h4>
+                            <ul>
+                                <li>A low EFC ($0 to $5,000) makes you extremely expensive for a college. At a need-aware school, this is a huge hurdle.</li>
+                                <li>A "full ride" is a unicorn. It's a beautiful, magical creature that is almost impossible to find.</li>
+                                <li>Your application cannot just be "good." It has to be spectacular. It has to make an admissions officer stop, put down their coffee, and say, "Wow. We need this kid on our campus, and I don't care how much it costs."</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-box">
+                            <i class="fas fa-chess"></i>
+                            <h4>Final Strategy</h4>
+                            <p><strong>This is a game of strategy, not just merit.</strong> Be a cold, calculating strategist. Research schools like a detective. Gather your documents like an accountant. Write your essays like a poet. And apply to schools that have a history of giving money to students like you. Don't waste your time on fantasies. Focus on the schools that can make your dream a reality.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer class="main-footer">
