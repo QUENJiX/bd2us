@@ -39,7 +39,8 @@
 4. **Mobile Test**: Test responsive design on mobile devices
 5. **Push to Main**: Commit changes and push to main branch
 6. **GitHub Actions**: Verify deployment workflow completes successfully
-7. **Live Test**: Test the live site at https://quenjix.github.io/bd2us/
+7. **Live Test**: Test the live site at https://www.bd2us.app/
+8. **GitHub Pages Custom Domain**: Ensure the repository has a `CNAME` file with `www.bd2us.app` and that DNS is configured.
 
 ## Post-Deployment
 

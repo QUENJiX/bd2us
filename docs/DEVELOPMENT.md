@@ -67,4 +67,4 @@ Changes to the `main` branch automatically trigger GitHub Pages deployment.
 1. Test locally
 2. Commit changes with descriptive messages
 3. Push to main branch
-4. Verify deployment at https://quenjix.github.io/bd2us/
+4. Verify deployment at https://www.bd2us.app/

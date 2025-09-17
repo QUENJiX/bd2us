@@ -29,7 +29,7 @@ For detailed structure documentation, see [docs/PROJECT-STRUCTURE.md](docs/PROJE
 ### Option 1: Live Site (GitHub Pages)
 
 The live, deployed version of this guide can be viewed at:
-**[https://quenjix.github.io/bd2us/](https://quenjix.github.io/bd2us/)**
+**https://www.bd2us.app/**
 
 *(Deployment is handled automatically via GitHub Actions whenever changes are pushed to the `main` branch).*
 
