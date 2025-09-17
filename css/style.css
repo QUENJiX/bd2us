@@ -4,6 +4,20 @@
 /* --- Import CSS Variables --- */
 @import 'variables.css';
 
+/* --------------------------------------------------
+     Dark Mode Surface Migration (2025-09-17)
+     Unified layered surfaces using tokens defined in variables.css:
+         --surface-1  base canvas & low elevation backgrounds
+         --surface-2  elevated sections (navbar, raised cards, panels)
+         --surface-3  hover / active emphasis layer
+         --surface-border subtle separators for low-contrast delineation
+
+     This stylesheet has begun migration from ad-hoc dark backgrounds
+     (rgba(24,26,27,*), var(--color-card-bg)) to these tokens for
+     consistency, easier theming, and accessibility. Remaining
+     page-specific CSS files will be updated progressively.
+-------------------------------------------------- */
+
 /* --- Additional Style Variables --- */
 :root {
     /* Animation Speeds */
@@ -27,8 +41,9 @@ body.dark-mode {
 }
 
 /* Style overrides for specific elements in dark mode - IMPORTANT: Force navbar color */
+/* Dark mode: use surface tokens for layered depth */
 html body.dark-mode .main-header {
-    background-color: rgba(24, 26, 27, 0.95) !important; /* Updated navbar color #181A1B */
+    background-color: color-mix(in srgb, var(--surface-2) 90%, transparent) !important; /* was rgba(24,26,27,0.95) */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid #404040 !important;
@@ -36,7 +51,7 @@ html body.dark-mode .main-header {
 }
 
 html body.dark-mode .main-header.scrolled {
-    background-color: rgba(24, 26, 27, 0.98) !important; /* More solid navbar when scrolled */
+    background-color: var(--surface-2) !important; /* solid elevation */
     border-bottom-color: #7df0c2 !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7) !important;
 }
@@ -45,8 +60,8 @@ html body.dark-mode .main-header.scrolled {
 body.dark-mode header.main-header,
 body.dark-mode .main-header,
 .dark-mode .main-header {
-    background: rgba(24, 26, 27, 0.95) !important; /* Updated navbar color #181A1B */
-    background-color: rgba(24, 26, 27, 0.95) !important;
+    background: color-mix(in srgb, var(--surface-2) 90%, transparent) !important;
+    background-color: color-mix(in srgb, var(--surface-2) 90%, transparent) !important;
 }
 
 body.dark-mode .logo {
@@ -134,8 +149,8 @@ body.dark-mode #scroll-to-top:active {
 }
 
 body.dark-mode .placeholder {
-    background-color: var(--color-hero-bg);
-    border-color: var(--color-border);
+    background-color: var(--surface-1);
+    border-color: var(--surface-border);
     color: var(--color-text);
 }
 
@@ -158,14 +173,15 @@ body.dark-mode .timeline-node:hover::after {
 }
 
 body.dark-mode .timeline-content {
-    background-color: var(--color-card-bg);
-    border: 1px solid var(--color-border);
+    background-color: var(--surface-1);
+    border: 1px solid var(--surface-border);
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
 }
 
 body.dark-mode .timeline-content:hover {
     border-color: var(--color-secondary);
+    background-color: var(--surface-2);
     box-shadow: var(var(--vintage-box-shadow));
     transform: translateY(-5px);
 }
@@ -186,14 +202,15 @@ body.dark-mode .timeline-content p {
 }
 
 body.dark-mode .resource-list li {
-    background-color: var(--color-card-bg);
-    border: 1px solid var(--color-border);
+    background-color: var(--surface-1);
+    border: 1px solid var(--surface-border);
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
 }
 
 body.dark-mode .resource-list li:hover {
     border-color: var(--color-primary);
+    background-color: var(--surface-2);
     box-shadow: var(var(--vintage-box-shadow));
     transform: translateY(-3px);
 }
@@ -225,9 +242,9 @@ body.dark-mode dl dd {
 }
 
 body.dark-mode .main-footer {
-    background-color: rgba(10, 10, 22, 0.9);
+    background-color: color-mix(in srgb, var(--surface-2) 85%, transparent);
     color: var(--color-text);
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid var(--surface-border);
 }
 
 /* --- Theme Toggle Button Styles --- */
@@ -251,19 +268,20 @@ body.dark-mode h2 {
 }
 
 body.dark-mode .hero-section {
-    background-color: var(--color-hero-bg);
-    border-bottom: 1px solid var(--color-border);
+    background-color: var(--surface-1);
+    border-bottom: 1px solid var(--surface-border);
 }
 
 body.dark-mode .highlight-card {
-    background-color: var(--color-card-bg);
-    border: 1px solid var(--color-border);
+    background-color: var(--surface-1);
+    border: 1px solid var(--surface-border);
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
 }
 
 body.dark-mode .highlight-card:hover {
     border-color: var(--color-primary);
+    background-color: var(--surface-2);
     box-shadow: var(var(--vintage-box-shadow));
     transform: translateY(-5px);
 }

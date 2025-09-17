@@ -540,7 +540,7 @@ body.dark-mode .drag-container.drag-over {
 }
 
 body.dark-mode .interactive-infographic {
-    background-color: var(--color-card-bg-dark);
+    background-color: var(--surface-1);
     box-shadow: var(--box-glow-sm);
 }
 
@@ -557,7 +557,7 @@ body.dark-mode .hotspot.active {
 }
 
 body.dark-mode .content-panel {
-    background-color: var(--color-card-bg-dark);
+    background-color: var(--surface-2);
 }
 
 /* ===== MEDIA QUERIES ===== */

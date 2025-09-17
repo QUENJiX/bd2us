@@ -332,7 +332,7 @@
 
 /* Dark Mode Overrides */
 body.dark-mode .blog-hero-section {
-    background-color: var(--color-background);
+    background-color: var(--surface-1);
     background-image: none;
 }
 
@@ -341,16 +341,16 @@ body.dark-mode .blog-hero-section::before {
 }
 
 body.dark-mode .blog-controls-section {
-    background-color: var(--color-background);
-    border-bottom-color: var(--color-border);
+    background-color: var(--surface-1);
+    border-bottom-color: var(--surface-border);
 }
 
 body.dark-mode .search-box input,
 body.dark-mode .sort-dropdown select,
 body.dark-mode .category-filter select {
-    background-color: var(--color-card-bg);
+    background-color: var(--surface-2);
     color: var(--color-text);
-    border-color: var(--color-border);
+    border-color: var(--surface-border);
 }
 
 body.dark-mode .search-box input:focus,
@@ -361,8 +361,8 @@ body.dark-mode .category-filter select:focus {
 }
 
 body.dark-mode .blog-post-card {
-    background-color: var(--color-card-bg);
-    border-color: var(--color-border);
+    background-color: var(--surface-1);
+    border-color: var(--surface-border);
 }
 
 body.dark-mode .blog-post-category {

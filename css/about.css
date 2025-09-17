@@ -116,8 +116,8 @@ body.dark-mode .team-roles .role-item .role-icon { background: #7df0c2; color: #
 .icon-btn i { font-size: 1.25rem; }
 
 /* Dark mode adjustments */
-body.dark-mode .team-member { background-color: var(--color-card-bg-dark); border-color: var(--color-border-dark); }
-body.dark-mode .team-member p { color: var(--color-text-dark); }
+body.dark-mode .team-member { background-color: var(--surface-1); border: 1px solid var(--surface-border); }
+body.dark-mode .team-member p { color: var(--color-text); }
 /* Keep icons clean in dark mode too */
 body.dark-mode .icon-btn { background: transparent; border: none; color: var(--color-primary-dark); }
 body.dark-mode .icon-btn:hover { background: transparent; color: var(--color-secondary-dark); }

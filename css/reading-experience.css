@@ -208,8 +208,8 @@
 
 /* ===== DARK MODE ADJUSTMENTS ===== */
 body.dark-mode .side-by-side {
-    background: rgba(125, 240, 194, 0.05);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background: var(--surface-1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 body.dark-mode .content-block p:has(strong:first-child) {
@@ -228,10 +228,10 @@ body.dark-mode .content-block p strong:only-child {
 
 body.dark-mode .content-block p strong.highlight-block,
 body.dark-mode .content-block .highlight-text strong {
-    background: var(--color-card-bg);
+    background: var(--surface-2);
     color: #D2B48C;
     border-color: #D2B48C;
-    box-shadow: 0 2px 8px rgba(210, 180, 140, 0.1);
+    box-shadow: 0 2px 8px rgba(210, 180, 140, 0.15);
 }
 
 /* Dark mode for progress bar */

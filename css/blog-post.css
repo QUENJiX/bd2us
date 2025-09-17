@@ -351,7 +351,7 @@
 
 /* Dark Mode Overrides */
 body.dark-mode .blog-post-hero {
-    background-color: var(--color-background);
+    background-color: var(--surface-1);
     background-image: none;
 }
 
@@ -360,8 +360,8 @@ body.dark-mode .blog-post-hero::before {
 }
 
 body.dark-mode .blog-post-meta-detailed {
-    background-color: var(--color-card-bg);
-    border-color: var(--color-border);
+    background-color: var(--surface-2);
+    border-color: var(--surface-border);
 }
 
 body.dark-mode .blog-post-category-tag {
@@ -383,17 +383,17 @@ body.dark-mode .blog-post-article {
 }
 
 body.dark-mode .blog-post-article blockquote {
-    background-color: var(--color-card-bg);
+    background-color: var(--surface-2);
 }
 
 body.dark-mode .blog-post-navigation {
-    background-color: var(--color-background);
-    border-top-color: var(--color-border);
+    background-color: var(--surface-1);
+    border-top-color: var(--surface-border);
 }
 
 body.dark-mode .blog-nav-link {
-    background-color: var(--color-card-bg);
-    border-color: var(--color-border);
+    background-color: var(--surface-1);
+    border-color: var(--surface-border);
 }
 
 /* Responsive Design */
