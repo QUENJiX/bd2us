@@ -51,7 +51,7 @@
     --surface-1: var(--color-card-bg); /* base surface */
     --surface-2: #F2EBD8; /* slightly deeper panel */
     --surface-3: #E8DFC7; /* accent/hover surface */
-    --surface-border: var(--color-border); /* semantic alias for surfaces */
+    --surface-border: #7df0c2; /* semantic alias for surfaces */
 
     /* Shadows */
     --shadow-sm: 0 2px 4px var(--color-shadow);
