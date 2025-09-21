@@ -48,6 +48,18 @@ const blogPosts = [
         readTime: "14 min read",
         slug: "full-scholarship-colleges-financial-aid-data"
     }
+    ,{
+        id: 5,
+        title: "Top 10 Application Mistakes International Students Make",
+        excerpt: "A veteran reviewer of hundreds of applications breaks down the most common strategic errors internationals make—and how to avoid them.",
+        content: "full-content-will-be-in-separate-file",
+        author: "Hasibul Islam",
+        date: "2025-09-21",
+        category: "admissions",
+        likes: 0,
+        readTime: "18 min read",
+        slug: "international-application-top-10-mistakes"
+    }
 ];
 
 // Category mappings for display
