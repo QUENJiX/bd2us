@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Comprehensive U.S. college application guide for Bangladeshi students. Navigate financial aid, essays, testing, and admissions with our no-BS roadmap.">
-    <meta name="keywords" content="US college application, Bangladesh students, financial aid, college admissions, SAT, TOEFL, university guide">
+    <!-- Removed meta keywords (deprecated for modern SEO) -->
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
@@ -45,9 +45,35 @@
     <!-- Font Awesome CDN (Ensure present) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <link rel="alternate" type="application/rss+xml" title="BD2US Blog RSS" href="https://www.bd2us.app/rss.xml" />
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "BD2US Guide",
+            "url": "https://www.bd2us.app/",
+            "description": "Comprehensive U.S. college application guide for Bangladeshi students.",
+            "inLanguage": "en",
+            "publisher": {
+                "@type": "Organization",
+                "name": "BD2US",
+                "url": "https://www.bd2us.app/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.bd2us.app/assets/images/social/og-image.png"
+                }
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.bd2us.app/blog.html?search={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+        </script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="main-header" id="main-header">
         <div class="container header-container">
             <a href="index.html" class="logo">BD2US Guide</a>
@@ -83,7 +109,7 @@
     <!-- Add overlay for mobile navigation -->
     <div class="nav-overlay" id="nav-overlay"></div>
 
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="container">

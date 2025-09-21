@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggle mobile navigation
     const toggleMobileNav = () => {
         const body = document.body;
-        
-        mobileMenuBtn.classList.toggle('open');
+        const isOpen = mobileMenuBtn.classList.toggle('open');
         body.classList.toggle('nav-open');
+        mobileMenuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     };
     
     // Add event listeners for mobile menu

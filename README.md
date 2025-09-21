@@ -73,3 +73,85 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ---
 
 *Copyright &copy; 2025 BD2US Guide. All rights reserved.* 
+
+## SEO Implementation Overview
+
+This site includes a lightweight technical SEO foundation optimized for a static deployment:
+
+Implemented
+1. Clean meta descriptions and canonical URLs on core pages
+2. Open Graph + Twitter Card social sharing tags
+3. JSON-LD Structured Data:
+	 - `WebSite` + `Organization` (homepage) with internal SearchAction
+	 - `Blog` (blog listing)
+	 - `BlogPosting` + `BreadcrumbList` (pattern demonstrated on one post – replicate to others)
+4. XML Sitemap (`/sitemap.xml`) & Robots.txt allowing full crawl
+5. RSS feed (`/rss.xml`) with recent posts (add new items as posts are published)
+6. Removed legacy `<meta name="keywords">` tags (no ranking value and potential noise)
+
+To Replicate BlogPosting Schema
+Add inside `<head>` of each blog post (adjust fields):
+```
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	"mainEntityOfPage": {"@type": "WebPage", "@id": "FULL_URL"},
+	"headline": "VISIBLE PAGE H1",
+	"description": "Concise 1–2 sentence summary",
+	"image": "https://www.bd2us.app/assets/images/social/og-image.png",
+	"author": {"@type": "Organization", "name": "BD2US"},
+	"publisher": {"@type": "Organization", "name": "BD2US", "logo": {"@type": "ImageObject", "url": "https://www.bd2us.app/assets/images/social/og-image.png"}},
+	"datePublished": "YYYY-MM-DD",
+	"dateModified": "YYYY-MM-DD",
+	"articleSection": "Category",
+	"inLanguage": "en",
+	"isFamilyFriendly": true
+}
+</script>
+```
+
+Breadcrumb Pattern
+```
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.bd2us.app/"},
+		{"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.bd2us.app/blog.html"},
+		{"@type": "ListItem", "position": 3, "name": "POST TITLE"}
+	]
+}
+</script>
+```
+
+When Adding a New Post
+1. Create the HTML page under `blog/`
+2. Add proper `<title>`, meta description, canonical, Open Graph & Twitter tags
+3. Insert JSON-LD (BlogPosting + BreadcrumbList). If no individual author identity is maintained, you may set `author` to the organization (as in example above).
+4. Update `blog-data.js` (for dynamic listing/search)
+5. Append new `<item>` to `rss.xml` (copy an existing block, update title/link/guid/date/description) OR run the feed generation script if automation added.
+6. Update `sitemap.xml` with new `<url>` entry (lastmod in `YYYY-MM-DD`) OR regenerate via automation script.
+
+Future Technical SEO Enhancements (Optional)
+* Add `lastmod` automation via a simple build script instead of manual edits
+* Generate RSS & sitemap programmatically from `blog-data.js`
+* Add `Article` image variants (1200x630, 800x418) for richer cards
+* Implement `hreflang` if multi-language versions launch
+* Add `FAQPage` or `HowTo` structured data for suitable long-form guides
+* Deploy simple server-side headers for caching + security (if moving beyond pure static hosting)
+* Add page-level structured data for `College` entities if building a college database section (use `EducationalOrganization`)
+
+Content Strategy Notes
+* Cluster content around core intent: financial aid, essays, testing, application strategy
+* Internal link each new post to at least 2 evergreen pillars (e.g., roadmap, financial aid main page)
+* Maintain a changelog or updated date for long-living guides to justify freshness
+* Avoid thin tag/category pages—keep blog listing strong via filtering already implemented
+
+Monitoring
+* Set up Google Search Console (coverage, enhancements, performance queries)
+* Track impressions & refine titles/meta based on CTR for high-impression / low-CTR pages
+* Use URL Inspection after publishing each new post for faster indexing
+
+This section should be updated as automation or new structured data types are introduced.

@@ -1,0 +1,11 @@
+{
+  "name": "bd2us-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BD2US static site tooling (feed & sitemap generation)",
+  "type": "module",
+  "scripts": {
+    "generate:feeds": "node scripts/generate-feeds.js"
+  },
+  "license": "MIT"
+}
