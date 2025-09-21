@@ -396,6 +396,96 @@ body.dark-mode .blog-nav-link {
     border-color: var(--surface-border);
 }
 
+/* Data-heavy financial aid tables (reusable classes) */
+.responsive-table-wrapper.generic-data-wrapper {
+    position: relative;
+    overflow: auto;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    background: var(--color-card-bg);
+}
+
+table.compact-data-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: max-content;
+    min-width: 100%;
+    font-size: 0.78rem;
+    line-height: 1.25;
+}
+
+table.compact-data-table thead th {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary) 60%, #05492f 100%);
+    color: #fff;
+    z-index: 5;
+    padding: 0.55rem 0.65rem;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 0.65rem;
+    letter-spacing: .05em;
+}
+
+table.compact-data-table tbody td {
+    padding: 0.5rem 0.65rem;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+table.compact-data-table tbody tr:nth-child(even){
+    background: rgba(0,0,0,0.025);
+}
+body.dark-mode table.compact-data-table tbody tr:nth-child(even){
+    background: rgba(255,255,255,0.04);
+}
+table.compact-data-table tbody tr:hover {
+    background: rgba(0,105,62,0.08);
+}
+body.dark-mode table.compact-data-table tbody tr:hover {
+    background: rgba(74,222,128,0.1);
+}
+
+.compact-data-table .column-sticky-left {
+    position: sticky;
+    left: 0;
+    background: var(--color-card-bg);
+    z-index: 6;
+    box-shadow: 2px 0 4px -2px rgba(0,0,0,0.08);
+}
+body.dark-mode .compact-data-table .column-sticky-left {
+    background: var(--surface-1);
+}
+
+.pill {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    background: var(--color-info-bg);
+    color: var(--color-primary);
+}
+.pill.aid-Need {background: var(--color-success-bg); color: var(--color-primary);} 
+.pill.aid-Merit {background: #ffe8d5; color: #b45309;} 
+.pill.aid-Both {background: #e0ecff; color: #1e3a8a;} 
+.pill.aid-NA, .pill.aid-N\A {background:#eee;color:#555;}
+.pill.test-Required {background:#fee2e2;color:#991b1b;} 
+.pill.test-Optional {background:#dcfce7;color:#166534;} 
+.pill.test-None {background:#e0f2fe;color:#075985;} 
+.pill.test-Rec, .pill.test-Recommended {background:#fef9c3;color:#92400e;}
+
+@media (max-width: 900px){
+    table.compact-data-table {font-size: 0.7rem;}
+    table.compact-data-table thead th {font-size: 0.58rem;}
+}
+@media (max-width: 640px){
+    table.compact-data-table {font-size: 0.65rem;}
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .blog-post-hero {
