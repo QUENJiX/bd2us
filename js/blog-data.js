@@ -36,30 +36,6 @@ const blogPosts = [
         readTime: "6 min read",
         slug: "cover-expenses-full-tuition-scholarship"
     }
-    ,{
-        id: 4,
-        title: "Colleges Offering Full Scholarships & Generous Aid ($0–$5K EFC)",
-        excerpt: "Filterable tables of US colleges that are need-blind/full-need or offer full-ride & near full scholarships for low EFC international applicants, plus rankings & testing policies.",
-        content: "full-content-will-be-in-separate-file",
-        author: "Hasibul Islam",
-        date: "2025-09-21",
-        category: "financial-aid",
-        likes: 0,
-        readTime: "14 min read",
-        slug: "full-scholarship-colleges-financial-aid-data"
-    }
-    ,{
-        id: 5,
-        title: "Top 10 Application Mistakes International Students Make",
-        excerpt: "A veteran reviewer of hundreds of applications breaks down the most common strategic errors internationals make—and how to avoid them.",
-        content: "full-content-will-be-in-separate-file",
-        author: "Hasibul Islam",
-        date: "2025-09-21",
-        category: "admissions",
-        likes: 0,
-        readTime: "18 min read",
-        slug: "international-application-top-10-mistakes"
-    }
 ];
 
 // Category mappings for display

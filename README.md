@@ -2,6 +2,32 @@
 
 This repository contains the source code for the BD2US Guide website, a comprehensive roadmap designed to help Bangladeshi students navigate the U.S. college application process.
 
+## Description
+A practical, end‑to‑end website and reference for students in Bangladesh who want to apply to U.S. colleges. It translates the full process into clear steps aligned to local context, timelines, and constraints, and is built as a lightweight, mobile‑first static site for fast browsing on low bandwidth.
+
+What you’ll find
+- Stepwise roadmap from exploration to enrollment, with checklists and timelines
+- Topic pages covering research, strategy (ED/EA/REA/RD), platforms, funding, academics, testing, profile building, essays, and curated resources
+- Bangladesh‑specific guidance (SSC/HSC and GCE nuances, transcript handling, counselor coordination, test centers, fee waiver paths)
+- Templates, examples, and links to tools to accelerate execution
+- Cross‑links between chapters, breadcrumbing, and simple search to keep context
+- Social cards, structured data, sitemap, and RSS to aid discoverability
+
+Who it’s for
+- Applicants (secondary and gap‑year), mentors, counselors, and parents seeking a clear, locally relevant playbook
+
+How to use it
+- Read sequentially for a complete plan or jump to a topic for quick answers
+- Follow the embedded checklists and timelines; save pages for offline reference
+- Track updates via the blog/RSS; propose improvements through issues and PRs
+
+Technical notes
+- Static HTML/CSS/JS with no framework dependency, optimized for speed and maintainability
+- Content organized into modular chapters and assets for easy contribution and review
+
+Outcome
+- Make confident decisions, build an authentic profile, craft stronger applications, and maximize financial aid opportunities while avoiding common pitfalls.
+
 ## Project Structure
 
 ```

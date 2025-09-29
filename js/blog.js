@@ -17,8 +17,14 @@ document.addEventListener('DOMContentLoaded', function() {
     init();
     
     function init() {
-        renderPosts();
+        // Force default selection to 'newest' regardless of any browser autofill/state
+        if (sortSelect) {
+            sortSelect.value = 'newest';
+        }
+        // Ensure the initial view reflects the default sort selection (newest) instead of raw array order
+        applySortAndFilter();
         bindEvents();
+        renderPosts();
         loadStoredLikes();
     }
     
@@ -90,10 +96,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         switch (sortValue) {
             case 'newest':
-                currentPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+                currentPosts.sort((a, b) => safeDate(b.date) - safeDate(a.date));
                 break;
             case 'oldest':
-                currentPosts.sort((a, b) => new Date(a.date) - new Date(b.date));
+                currentPosts.sort((a, b) => safeDate(a.date) - safeDate(b.date));
                 break;
             case 'most-liked':
                 currentPosts.sort((a, b) => (getStoredLikes(b.id) || b.likes) - (getStoredLikes(a.id) || a.likes));
@@ -105,6 +111,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 currentPosts.sort((a, b) => b.title.localeCompare(a.title));
                 break;
         }
+    }
+
+    // Robust date parser with fallback to epoch ordering by ID (so newest IDs appear first if date invalid)
+    function safeDate(dateStr) {
+        if (!dateStr) return 0;
+        // Fast numeric parse for YYYY-MM-DD
+        const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dateStr);
+        if (m) {
+            const y = parseInt(m[1], 10);
+            const mo = parseInt(m[2], 10) - 1;
+            const d = parseInt(m[3], 10);
+            const t = Date.UTC(y, mo, d);
+            if (!isNaN(t)) return t;
+        }
+        const t2 = Date.parse(dateStr);
+        if (!isNaN(t2)) return t2;
+        // Fallback: derive pseudo time from id (higher id = newer) if available
+        const p = blogPosts.find(p => p.date === dateStr);
+        return p ? p.id : 0;
     }
     
     function resetPagination() {
@@ -297,8 +322,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }
+        // If user switches to Most Liked later it's handled, but in case the current selection is already 'most-liked', reapply.
+        if (sortSelect.value === 'most-liked') {
+            applySortAndFilter();
+            resetPagination();
+            renderPosts();
+        }
     }
     
-    // Initial load
-    renderPosts();
+    // Initial load handled in init()
 });

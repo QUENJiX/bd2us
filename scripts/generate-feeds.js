@@ -40,11 +40,26 @@ const staticPages = [
   { url: 'https://www.bd2us.app/financial-aid.html', priority: 0.8, changefreq: 'monthly', file: 'financial-aid.html' },
   { url: 'https://www.bd2us.app/resources.html', priority: 0.8, changefreq: 'monthly', file: 'resources.html' },
   { url: 'https://www.bd2us.app/about.html', priority: 0.7, changefreq: 'monthly', file: 'about.html' },
-  // Chapters directory
-  ...Array.from({ length: 11 }).map((_, i) => i === 0
-    ? { url: 'https://www.bd2us.app/chapters/introduction.html', priority: 0.6, changefreq: 'monthly', file: 'chapters/introduction.html' }
-    : { url: `https://www.bd2us.app/chapters/chapter-${i}.html`, priority: 0.6, changefreq: 'monthly', file: `chapters/chapter-${i}.html` }
-  ),
+  // Chapters directory (slug-based)
+  ...[
+    'introduction',
+    'application-timeline',
+    'college-research',
+    'application-strategy-ea-ed',
+    'application-platforms',
+    'fee-waivers',
+    'academics',
+    'standardized-testing',
+    'english-proficiency-test',
+    'extracurriculars',
+    'awards-honors',
+    'essays'
+  ].map(slug => ({
+    url: `https://www.bd2us.app/chapters/${slug}.html`,
+    priority: 0.6,
+    changefreq: 'monthly',
+    file: `chapters/${slug}.html`
+  })),
   { url: 'https://www.bd2us.app/college-list.html', priority: 0.8, changefreq: 'monthly', file: 'college-list.html' },
   { url: 'https://www.bd2us.app/blog.html', priority: 0.8, changefreq: 'weekly', file: 'blog.html' }
 ];
