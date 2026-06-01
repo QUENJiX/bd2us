@@ -1,11 +1,33 @@
 {
-  "name": "bd2us-site",
-  "version": "1.0.0",
+  "name": "bd2us-platform",
+  "version": "2.0.0",
   "private": true,
-  "description": "BD2US static site tooling (feed & sitemap generation)",
-  "type": "module",
+  "description": "BD2US dynamic guidance platform for Bangladeshi students applying to U.S. colleges",
   "scripts": {
-    "generate:feeds": "node scripts/generate-feeds.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "generate:legacy-content": "node scripts/generate-legacy-content.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.57.4",
+    "next": "^16.2.2",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.14",
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.36.0",
+    "eslint-config-next": "^16.2.2",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.2"
   },
   "license": "MIT"
 }

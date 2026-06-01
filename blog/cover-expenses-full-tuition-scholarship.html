@@ -5,7 +5,7 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJD264744Z"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);} 
+            function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-EJD264744Z');
         </script>    <meta name="google-adsense-account" content="ca-pub-8474888464210373">
@@ -16,14 +16,14 @@
     <meta name="description" content="Comprehensive breakdown of college expenses beyond tuition and whether full tuition scholarships are enough to cover all costs for international students.">
     <!-- meta keywords removed -->
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.bd2us.app/blog/cover-expenses-full-tuition-scholarship.html">
     <meta property="og:title" content="Can You Cover Your Expenses with Full Tuition Scholarship? - BD2US Guide">
     <meta property="og:description" content="Comprehensive breakdown of college expenses beyond tuition and whether full tuition scholarships are enough to cover all costs for international students.">
     <meta property="og:image" content="https://www.bd2us.app/assets/images/social/og-image.png">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.bd2us.app/blog/cover-expenses-full-tuition-scholarship.html">
@@ -31,7 +31,7 @@
     <meta property="twitter:description" content="Comprehensive breakdown of college expenses beyond tuition and whether full tuition scholarships are enough to cover all costs for international students.">
     <meta property="twitter:image" content="https://www.bd2us.app/assets/images/social/og-image.png">
     <link rel="canonical" href="https://www.bd2us.app/blog/cover-expenses-full-tuition-scholarship.html" />
-    
+
     <title>Can You Cover Your Expenses with Full Tuition Scholarship? - BD2US Guide</title>
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -80,41 +80,8 @@
     <div class="reading-progress">
         <div class="reading-progress-bar" id="reading-progress-bar"></div>
     </div>
-    
-    <header class="main-header" id="main-header">
-        <div class="container header-container">
-            <a href="../index.html" class="logo">BD2US Guide</a>
-            <div class="hamburger-menu" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav class="main-nav" id="main-nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../roadmap.html">The Roadmap</a></li>
-                    <li><a href="../college-list.html">College List</a></li>
-                    <li><a href="../financial-aid.html">Financial Aid</a></li>
-                    <li><a href="../resources.html">Resources</a></li>
-                    <li><a href="../blog.html" class="active">Blog</a></li>
-                    <li><a href="../about.html">About Us</a></li>
-                </ul>
-                <!-- Mobile only theme toggle position -->
-                <div class="mobile-theme-toggle">
-                    <button id="mobile-theme-toggle" title="Toggle theme" aria-label="Toggle theme">
-                        <i class="fas fa-sun"></i>
-                    </button>
-                </div>
-            </nav>
-            <button id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
-                <i class="fas fa-sun"></i>
-            </button>
-        </div>
-    </header>
 
-    <!-- Add overlay for mobile navigation -->
-    <div class="nav-overlay" id="nav-overlay"></div>
+    <header-placeholder></header-placeholder>
 
     <main>
         <!-- Blog Post Hero -->
@@ -127,29 +94,29 @@
                     <span class="separator">/</span>
                     <span>Can You Cover Your Expenses with Full Tuition Scholarship?</span>
                 </nav>
-                
+
                 <div class="blog-post-category-tag" style="background-color: #1e7e34;">
                     Financial Planning
                 </div>
-                
+
                 <h1 class="blog-post-title">Can You Cover Your Expenses with Full Tuition Scholarship?</h1>
-                
+
                 <div class="blog-post-meta-detailed">
                     <div class="blog-post-author-info">
                         <i class="fas fa-user"></i>
                         <span>Safwan Bin Rashid</span>
                     </div>
-                    
+
                     <div class="blog-post-date-info">
                         <i class="fas fa-calendar-alt"></i>
                         <span>December 5, 2024</span>
                     </div>
-                    
+
                     <div class="blog-post-read-time-info">
                         <i class="fas fa-clock"></i>
                         <span>8 min read</span>
                     </div>
-                    
+
                     <div class="blog-post-likes-section">
                         <button class="blog-post-like-btn" data-post-id="3">
                             <i class="fas fa-heart"></i>
@@ -487,69 +454,12 @@
     </main>
 
     <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container footer-container">
-            <p>&copy; 2025 BD2US Guide. All rights reserved.</p>
-        </div>
-    </footer>
+    <footer-placeholder></footer-placeholder>
 
+    <script src="../js/layouts.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/enhanced-ux.js"></script>
-    <script>
-        // Individual blog post like functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const likeBtn = document.querySelector('.blog-post-like-btn');
-            if (likeBtn) {
-                const postId = parseInt(likeBtn.dataset.postId);
-                
-                // Load current like state
-                const likedPosts = JSON.parse(localStorage.getItem('bd2us-liked-posts') || '[]');
-                const isLiked = likedPosts.includes(postId);
-                const storedLikes = JSON.parse(localStorage.getItem('bd2us-post-likes') || '{}');
-                const currentLikes = storedLikes[postId] !== undefined ? storedLikes[postId] : 43;
-                
-                // Update UI
-                likeBtn.classList.toggle('liked', isLiked);
-                likeBtn.querySelector('.like-count').textContent = currentLikes;
-                
-                // Add click handler
-                likeBtn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const likedPosts = JSON.parse(localStorage.getItem('bd2us-liked-posts') || '[]');
-                    const storedLikes = JSON.parse(localStorage.getItem('bd2us-post-likes') || '{}');
-                    const currentLikes = storedLikes[postId] !== undefined ? storedLikes[postId] : 43;
-                    const isCurrentlyLiked = likedPosts.includes(postId);
-                    
-                    if (isCurrentlyLiked) {
-                        // Remove like
-                        const index = likedPosts.indexOf(postId);
-                        likedPosts.splice(index, 1);
-                        storedLikes[postId] = Math.max(0, currentLikes - 1);
-                        likeBtn.classList.remove('liked');
-                    } else {
-                        // Add like
-                        likedPosts.push(postId);
-                        storedLikes[postId] = currentLikes + 1;
-                        likeBtn.classList.add('liked');
-                    }
-                    
-                    // Update storage
-                    localStorage.setItem('bd2us-liked-posts', JSON.stringify(likedPosts));
-                    localStorage.setItem('bd2us-post-likes', JSON.stringify(storedLikes));
-                    
-                    // Update UI
-                    likeBtn.querySelector('.like-count').textContent = storedLikes[postId];
-                });
-            }
-        }); 
-    </script>
-    
-    <!-- Scroll-to-Top Button -->
-    <button id="scroll-to-top" title="Go to top">&#8679;</button>
-
-    <!-- Scripts -->
-    <script src="../js/enhanced-ux.js"></script>
+    <script src="../js/search.js"></script>
     <script src="../js/reading-progress.js"></script>
 </body>
 </html>

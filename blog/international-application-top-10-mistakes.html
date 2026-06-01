@@ -58,26 +58,7 @@
 </head>
 <body>
     <div class="reading-progress"><div class="reading-progress-bar" id="reading-progress-bar"></div></div>
-    <header class="main-header" id="main-header">
-        <div class="container header-container">
-            <a href="../index.html" class="logo">BD2US Guide</a>
-            <div class="hamburger-menu" id="mobile-menu"><span></span><span></span><span></span><span></span></div>
-            <nav class="main-nav" id="main-nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../roadmap.html">The Roadmap</a></li>
-                    <li><a href="../college-list.html">College List</a></li>
-                    <li><a href="../financial-aid.html">Financial Aid</a></li>
-                    <li><a href="../resources.html">Resources</a></li>
-                    <li><a href="../blog.html" class="active">Blog</a></li>
-                    <li><a href="../about.html">About Us</a></li>
-                </ul>
-                <div class="mobile-theme-toggle"><button id="mobile-theme-toggle" title="Toggle theme" aria-label="Toggle theme"><i class="fas fa-sun"></i></button></div>
-            </nav>
-            <button id="theme-toggle" title="Toggle theme" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
-        </div>
-    </header>
-    <div class="nav-overlay" id="nav-overlay"></div>
+    <header-placeholder></header-placeholder>
     <main>
         <section class="blog-post-hero">
             <div class="container">
@@ -143,12 +124,12 @@
         </section>
     <section class="blog-post-navigation"><div class="container"><div class="blog-nav-container"><a href="full-scholarship-colleges-financial-aid-data.html" class="blog-nav-link prev"><i class="fas fa-chevron-left"></i><div><div class="nav-label">Previous Post</div><div class="nav-title">Full Scholarships & Aid</div></div></a><a href="../blog.html" class="blog-nav-link"><i class="fas fa-th-large"></i><div><div class="nav-label">View All</div><div class="nav-title">Back to Blog</div></div></a></div></div></section>
     </main>
-    <footer class="main-footer"><div class="container footer-container"><p>&copy; 2025 BD2US Guide. All rights reserved.</p></div></footer>
+    <footer-placeholder></footer-placeholder>
+    <script src="../js/layouts.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/enhanced-ux.js"></script>
-    <script>document.addEventListener('DOMContentLoaded',function(){const likeBtn=document.querySelector('.blog-post-like-btn');if(likeBtn){const postId=parseInt(likeBtn.dataset.postId);const likedPosts=JSON.parse(localStorage.getItem('bd2us-liked-posts')||'[]');const storedLikes=JSON.parse(localStorage.getItem('bd2us-post-likes')||'{}');const baseLikes=0;const currentLikes=storedLikes[postId]!==undefined?storedLikes[postId]:baseLikes;likeBtn.classList.toggle('liked',likedPosts.includes(postId));likeBtn.querySelector('.like-count').textContent=currentLikes;likeBtn.addEventListener('click',e=>{e.preventDefault();const liked=JSON.parse(localStorage.getItem('bd2us-liked-posts')||'[]');const stored=JSON.parse(localStorage.getItem('bd2us-post-likes')||'{}');const cur=stored[postId]!==undefined?stored[postId]:baseLikes;if(liked.includes(postId)){liked.splice(liked.indexOf(postId),1);stored[postId]=Math.max(0,cur-1);likeBtn.classList.remove('liked');}else{liked.push(postId);stored[postId]=cur+1;likeBtn.classList.add('liked');}localStorage.setItem('bd2us-liked-posts',JSON.stringify(liked));localStorage.setItem('bd2us-post-likes',JSON.stringify(stored));likeBtn.querySelector('.like-count').textContent=stored[postId];});}});
-    </script>
+    <script src="../js/search.js"></script>
     <script src="../js/reading-progress.js"></script>
-    <button id="scroll-to-top" title="Go to top">&#8679;</button>
+
 </body>
 </html>

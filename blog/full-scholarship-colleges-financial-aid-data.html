@@ -5,7 +5,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJD264744Z"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);} 
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-EJD264744Z');
     </script>
@@ -62,22 +62,22 @@
         body.dark-mode table.data-table tbody tr:nth-child(even){background:rgba(255,255,255,0.04);}
         table.data-table tbody tr:hover {background:rgba(0,105,62,0.08);}
         body.dark-mode table.data-table tbody tr:hover {background:rgba(74,222,128,0.1);}
-    .column-sticky-left {position:sticky;left:0;background:var(--color-card-bg);z-index:6;box-shadow:2px 0 4px -2px rgba(0,0,0,0.08);} 
+    .column-sticky-left {position:sticky;left:0;background:var(--color-card-bg);z-index:6;box-shadow:2px 0 4px -2px rgba(0,0,0,0.08);}
     /* Emphasize institution names */
     tbody .column-sticky-left {font-weight:600;color:var(--color-primary);letter-spacing:.02em;}
     tbody .column-sticky-left:hover {text-decoration:underline;text-decoration-color:var(--color-primary);}
-    body.dark-mode tbody .column-sticky-left {color:var(--color-accent,#4ade80);}        
-        body.dark-mode .column-sticky-left {background:var(--surface-1);}        
+    body.dark-mode tbody .column-sticky-left {color:var(--color-accent,#4ade80);}
+        body.dark-mode .column-sticky-left {background:var(--surface-1);}
         .table-caption {font-size:0.9rem;font-weight:600;margin:0.5rem 0 0.25rem;color:var(--color-secondary);}
-        .pill {display:inline-block;padding:0.2rem 0.5rem;border-radius:12px;font-size:0.65rem;font-weight:600;letter-spacing:.05em;background:var(--color-info-bg);color:var(--color-primary);} 
-        .aid-Need {background:var(--color-success-bg);color:var(--color-primary);} 
-        .aid-Merit {background:#ffe8d5;color:#b45309;} 
-        .aid-Both {background:#e0ecff;color:#1e3a8a;} 
-        .aid-NA, .aid-N\u002FA {background:#eee;color:#555;}        
+        .pill {display:inline-block;padding:0.2rem 0.5rem;border-radius:12px;font-size:0.65rem;font-weight:600;letter-spacing:.05em;background:var(--color-info-bg);color:var(--color-primary);}
+        .aid-Need {background:var(--color-success-bg);color:var(--color-primary);}
+        .aid-Merit {background:#ffe8d5;color:#b45309;}
+        .aid-Both {background:#e0ecff;color:#1e3a8a;}
+        .aid-NA, .aid-N\u002FA {background:#eee;color:#555;}
         .test-Required {background:#fee2e2;color:#991b1b;} .test-Optional {background:#dcfce7;color:#166534;} .test-None {background:#e0f2fe;color:#075985;} .test-Rec {background:#fef9c3;color:#92400e;} .test-Recommended {background:#fef9c3;color:#92400e;}
         .table-note {margin-top:0.75rem;font-size:0.7rem;opacity:0.75;}
-        .empty-filter {padding:2rem;text-align:center;font-weight:600;color:var(--color-secondary);}        
-        .freeze-shadow-right {box-shadow:inset -6px 0 6px -6px rgba(0,0,0,0.15);}        
+        .empty-filter {padding:2rem;text-align:center;font-weight:600;color:var(--color-secondary);}
+        .freeze-shadow-right {box-shadow:inset -6px 0 6px -6px rgba(0,0,0,0.15);}
         .dataset-toggle {display:flex;gap:0.75rem;margin:1rem 0;flex-wrap:wrap;}
         .dataset-toggle button {border:1px solid var(--color-border);background:var(--color-card-bg);color:var(--color-text);padding:0.55rem 1rem;border-radius:20px;font-size:0.8rem;font-weight:600;cursor:pointer;transition:.25s;display:flex;align-items:center;gap:0.4rem;}
         .dataset-toggle button.active {background:var(--color-primary);color:#fff;box-shadow:0 4px 10px -2px rgba(0,105,62,0.4);}
@@ -85,8 +85,8 @@
         .small-badge {font-size:0.55rem;padding:0.1rem 0.4rem;border-radius:8px;background:#333;color:#fff;opacity:.8;}
     .export-btn {background:var(--color-primary);color:#fff;border:none;padding:0.6rem 1rem;border-radius:6px;font-size:0.7rem;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:0.45rem;box-shadow:0 2px 4px rgba(0,0,0,0.15);transition:.25s;letter-spacing:.05em;text-transform:uppercase;}
         .export-btn i {font-size:0.8rem;}
-        .export-btn:hover {background:#055a36;transform:translateY(-2px);}        
-        .export-btn:active {transform:translateY(0);}       
+        .export-btn:hover {background:#055a36;transform:translateY(-2px);}
+        .export-btn:active {transform:translateY(0);}
     /* Align export button with the row of select inputs (skip label heading height) */
     .data-tools .export-btn {align-self:flex-start;margin-top:1.3rem;}
         @media (max-width:900px){table.data-table{font-size:0.7rem;} table.data-table thead th{font-size:0.6rem;} .responsive-table-wrapper{max-height:520px;}}
@@ -123,26 +123,7 @@
 </head>
 <body>
     <div class="reading-progress"><div class="reading-progress-bar" id="reading-progress-bar"></div></div>
-    <header class="main-header" id="main-header">
-        <div class="container header-container">
-            <a href="../index.html" class="logo">BD2US Guide</a>
-            <div class="hamburger-menu" id="mobile-menu"><span></span><span></span><span></span><span></span></div>
-            <nav class="main-nav" id="main-nav">
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../roadmap.html">The Roadmap</a></li>
-                    <li><a href="../college-list.html">College List</a></li>
-                    <li><a href="../financial-aid.html">Financial Aid</a></li>
-                    <li><a href="../resources.html">Resources</a></li>
-                    <li><a href="../blog.html" class="active">Blog</a></li>
-                    <li><a href="../about.html">About Us</a></li>
-                </ul>
-                <div class="mobile-theme-toggle"><button id="mobile-theme-toggle" title="Toggle theme" aria-label="Toggle theme"><i class="fas fa-sun"></i></button></div>
-            </nav>
-            <button id="theme-toggle" title="Toggle theme" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
-        </div>
-    </header>
-    <div class="nav-overlay" id="nav-overlay"></div>
+    <header-placeholder></header-placeholder>
     <main>
         <section class="blog-post-hero">
             <div class="container">
@@ -371,125 +352,12 @@
             </div>
         </section>
     </main>
-    <footer class="main-footer"><div class="container footer-container"><p>&copy; 2025 BD2US Guide. All rights reserved.</p></div></footer>
+    <footer-placeholder></footer-placeholder>
+    <script src="../js/layouts.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/enhanced-ux.js"></script>
-    <script>
-    // Like button logic
-    document.addEventListener('DOMContentLoaded', function(){
-        const likeBtn = document.querySelector('.blog-post-like-btn');
-        if(likeBtn){
-            const postId = parseInt(likeBtn.dataset.postId);
-            const likedPosts = JSON.parse(localStorage.getItem('bd2us-liked-posts')||'[]');
-            const storedLikes = JSON.parse(localStorage.getItem('bd2us-post-likes')||'{}');
-            const baseLikes = 0;
-            const currentLikes = storedLikes[postId] !== undefined ? storedLikes[postId] : baseLikes;
-            likeBtn.classList.toggle('liked', likedPosts.includes(postId));
-            likeBtn.querySelector('.like-count').textContent = currentLikes;
-            likeBtn.addEventListener('click', e=>{e.preventDefault();
-                const liked = JSON.parse(localStorage.getItem('bd2us-liked-posts')||'[]');
-                const stored = JSON.parse(localStorage.getItem('bd2us-post-likes')||'{}');
-                const cur = stored[postId]!==undefined?stored[postId]:baseLikes;
-                if(liked.includes(postId)){
-                    liked.splice(liked.indexOf(postId),1); stored[postId]=Math.max(0,cur-1); likeBtn.classList.remove('liked');
-                } else {liked.push(postId); stored[postId]=cur+1; likeBtn.classList.add('liked');}
-                localStorage.setItem('bd2us-liked-posts',JSON.stringify(liked));
-                localStorage.setItem('bd2us-post-likes',JSON.stringify(stored));
-                likeBtn.querySelector('.like-count').textContent = stored[postId];
-            });
-        }
-    });
-
-    // Filtering & dataset toggles (lightweight client-side)
-    const tableConfigs = {
-        'table-zero': {stemKeywords:['Engineering','MIT','Cornell','Harvard','Duke','CS','Computer','Tech']},
-        'table-five': {stemKeywords:['Caltech','Stanford','Rice','Case Western','Tech','Engineering']}
-    };
-
-    // CSV export utility (exports only currently visible rows respecting filters)
-    function exportTableToCSV(tableId){
-        const table = document.getElementById(tableId); if(!table) return;
-        const rows = Array.from(table.querySelectorAll('tr'));
-        const visibleRows = rows.filter(r=>{
-            if(r.closest('thead')) return true; // always include header
-            return r.style.display !== 'none';
-        });
-        const escapeCell = val => {
-            if(val==null) return '';
-            const s = val.replace(/\s+/g,' ').trim();
-            if(/[",\n]/.test(s)) return '"'+s.replace(/"/g,'""')+'"';
-            return s;
-        };
-        const csv = visibleRows.map(r=>Array.from(r.cells).map(c=>escapeCell(c.textContent)).join(',')).join('\n');
-        const blob = new Blob([csv], {type:'text/csv;charset=utf-8;'});
-        const stamp = new Date().toISOString().split('T')[0];
-        const filename = tableId+"-export-"+stamp+".csv";
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(blob);
-        link.download = filename;
-        document.body.appendChild(link); link.click(); document.body.removeChild(link);
-        setTimeout(()=>URL.revokeObjectURL(link.href), 5000);
-    }
-    // Generalized filter engine
-    function filterTable(tableId){
-        const table = document.getElementById(tableId); if(!table) return; const datasetTools = document.querySelector('.data-tools[data-target="'+tableId+'"]');
-        const searchVal = datasetTools.querySelector('.filter-search').value.trim().toLowerCase();
-        const testVal = datasetTools.querySelector('.filter-test').value;
-        const aidVal = datasetTools.querySelector('.filter-aid').value;
-        const sectorVal = datasetTools.querySelector('.filter-sector').value;
-        const modeBtn = document.querySelector('.dataset-toggle[data-target="'+tableId+'"] button.active');
-        const mode = modeBtn ? modeBtn.dataset.mode : 'all';
-        const cfg = tableConfigs[tableId];
-        let visibleCount=0;
-        Array.from(table.tBodies[0].rows).forEach(row=>{
-            const text = row.textContent.toLowerCase();
-            const cells = row.cells;
-            const sector = cells[8]?cells[8].textContent.trim():cells[6]?cells[6].textContent.trim():'';
-            const aidCell = Array.from(row.querySelectorAll('.pill')).find(p=>p.className.includes('aid-'));
-            const aidType = aidCell?aidCell.textContent.trim():'';
-            const testCell = Array.from(row.querySelectorAll('.pill')).find(p=>p.className.includes('test-'));
-            const testPolicy = testCell?testCell.textContent.replace('Rec.','Recommended').trim():'';
-            // Mode filters
-            let modePass = true;
-            if(mode==='need') modePass = aidType==='Need';
-            else if(mode==='merit') modePass = aidType==='Merit';
-            else if(mode==='both') modePass = aidType==='Both';
-            else if(mode==='stem') modePass = cfg && cfg.stemKeywords.some(k=>text.includes(k.toLowerCase()));
-            else if(mode==='women') modePass = /(Women|Women's)/i.test(text);
-            // Form filters
-            const passSearch = !searchVal || text.includes(searchVal);
-            const passTest = !testVal || testPolicy.toLowerCase().includes(testVal.toLowerCase());
-            const passAid = !aidVal || aidType===aidVal;
-            const passSector = !sectorVal || sector===sectorVal;
-            const show = modePass && passSearch && passTest && passAid && passSector;
-            row.style.display = show?'' : 'none'; if(show) visibleCount++;
-        });
-        // Empty state
-        let emptyRow = table.parentElement.querySelector('.empty-filter');
-        if(visibleCount===0){
-            if(!emptyRow){emptyRow=document.createElement('div');emptyRow.className='empty-filter';emptyRow.textContent='No rows match current filters.';table.parentElement.appendChild(emptyRow);} }
-        else if(emptyRow){emptyRow.remove();}
-    }
-
-    document.addEventListener('input', e=>{
-        if(e.target.matches('.filter-search, .filter-test, .filter-aid, .filter-sector')){
-            const tools = e.target.closest('.data-tools'); const targetId = tools.getAttribute('data-target'); filterTable(targetId);
-        }
-    });
-    document.addEventListener('click', e=>{
-        if(e.target.closest('.dataset-toggle button')){
-            const btn = e.target.closest('button'); const group = btn.parentElement; group.querySelectorAll('button').forEach(b=>b.classList.remove('active')); btn.classList.add('active');
-            const targetId = group.getAttribute('data-target'); filterTable(targetId);
-        }
-        if(e.target.closest('.export-btn')){
-            const btn = e.target.closest('.export-btn');
-            const tableId = btn.getAttribute('data-export');
-            exportTableToCSV(tableId);
-        }
-    });
-    window.addEventListener('load', ()=>{filterTable('table-zero'); filterTable('table-five');});
-    </script>
+    <script src="../js/search.js"></script>
     <script src="../js/reading-progress.js"></script>
-    <button id="scroll-to-top" title="Go to top">&#8679;</button>
+
 </body>
 </html>
