@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState, type FormEvent } from "react";
+import { AccountPanel } from "@/components/account-panel";
 import { AuthPanel } from "@/components/auth-panel";
 import { ActionButton, Surface, Tag } from "@/components/ui";
 import { colleges, defaultProfile, roadmapTasks } from "@/lib/content";
@@ -128,7 +129,7 @@ export function DashboardWorkspace() {
           <p className="mt-2 text-sm leading-6 text-slate-600">{syncMessage}</p>
           {account ? <p className="mt-3 text-xs font-bold text-emerald-900">{account}</p> : null}
         </Surface>
-        {!account ? <AuthPanel /> : null}
+        {account ? <AccountPanel email={account} onSignedOut={() => { setAccount(null); setSyncMessage("Guest plan stored on this device."); }} /> : <AuthPanel />}
         <Surface className="p-5">
           <h2 className="font-display text-2xl text-emerald-950">Planning profile</h2>
           <div className="mt-4 grid gap-3">

@@ -134,6 +134,19 @@ a {
     transform 180ms ease, box-shadow 180ms ease;
 }
 
+button:not(:disabled),
+a[href],
+select:not(:disabled),
+summary,
+label[for] {
+  cursor: pointer;
+}
+
+button:disabled,
+select:disabled {
+  cursor: not-allowed;
+}
+
 button:focus-visible,
 a:focus-visible {
   outline: 3px solid #f2b560;
