@@ -45,8 +45,6 @@ npm run build
 
 Start with a Vercel preview. The public experience works before Supabase is configured, so accounts can be connected afterward without blocking the first deployment.
 
-Follow the beginner-friendly [deployment guide](docs/DEPLOYMENT.md) for the exact order, environment-variable explanations, Supabase migration steps, domain cutover, and troubleshooting notes.
-
 ## Content Ownership
 
 The original static pages remain the migration source for existing BD2US writing. The team controls content review, publishing decisions, and updates.

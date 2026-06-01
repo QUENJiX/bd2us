@@ -43,6 +43,7 @@ yarn-error.log*
 *.temp
 *.bak
 scratch/
+docs/
 __pycache__/
 *.pyc
 
