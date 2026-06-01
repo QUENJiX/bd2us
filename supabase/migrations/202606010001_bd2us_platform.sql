@@ -186,12 +186,8 @@ create index profiles_id_idx on public.profiles(id);
 create index user_task_progress_user_idx on public.user_task_progress(user_id);
 create index user_deadlines_user_idx on public.user_deadlines(user_id);
 create index saved_colleges_user_idx on public.saved_colleges(user_id);
-create index content_entries_search_idx on public.content_entries using gin (
-  (setweight(to_tsvector('english', coalesce(title, '')), 'A') ||
-   setweight(to_tsvector('english', coalesce(array_to_string(aliases, ' '), '')), 'A') ||
-   setweight(to_tsvector('english', coalesce(summary, '')), 'B') ||
-   setweight(to_tsvector('english', coalesce(body::text, '')), 'C'))
-);
+-- The initial curated corpus is small enough for RPC-time full-text ranking.
+-- Keep immutable trigram indexes here; add a stored search vector if scale requires it.
 create index content_entries_title_trgm_idx on public.content_entries using gin (title gin_trgm_ops);
 create index colleges_name_trgm_idx on public.colleges using gin (name gin_trgm_ops);
 
