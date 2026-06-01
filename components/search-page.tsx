@@ -84,7 +84,7 @@ export function SearchPage() {
         {query.trim().length >= 2 && !visible.length ? (
           <div className="card p-7">
             <h2 className="font-display text-3xl text-emerald-950">No public result yet.</h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">The miss is recorded anonymously when Supabase is configured, helping editors spot gaps in the guide.</p>
+            <p className="mt-2 text-sm leading-6 text-slate-600">Try a broader phrase, a college name, or a related term such as financial aid, essays, or visa.</p>
           </div>
         ) : null}
       </div>

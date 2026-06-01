@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   description:
     "A clear, Bangladesh-specific guide and planning workspace for applying to U.S. colleges with confidence.",
   applicationName: "BD2US",
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg"
+  },
   manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
@@ -23,13 +27,13 @@ export const metadata: Metadata = {
     siteName: "BD2US",
     title: "BD2US | Your U.S. College Application Compass",
     description:
-      "Guidance, roadmap planning, and a curated college explorer for Bangladeshi students."
+      "A practical guide, interactive roadmap, and college explorer for Bangladeshi students."
   },
   twitter: {
     card: "summary_large_image",
     title: "BD2US | Your U.S. College Application Compass",
     description:
-      "Guidance, roadmap planning, and a curated college explorer for Bangladeshi students."
+      "A practical guide, interactive roadmap, and college explorer for Bangladeshi students."
   }
 };
 

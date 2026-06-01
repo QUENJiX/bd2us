@@ -1,5 +1,8 @@
-<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
-  <rect width="192" height="192" rx="42" fill="#064e3b"/>
-  <circle cx="145" cy="48" r="18" fill="#d97706"/>
-  <text x="96" y="123" font-family="Georgia, serif" font-size="74" font-weight="700" text-anchor="middle" fill="#fffdf8">BD</text>
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" rx="44" fill="#052E2B"/>
+  <rect x="10" y="10" width="172" height="172" rx="36" stroke="#D1FAE5" stroke-opacity=".16" stroke-width="2"/>
+  <circle cx="146" cy="46" r="14" fill="#F59E0B"/>
+  <path d="M46 43V112M46 43H68C83 43 89 50 89 60C89 70 82 77 68 77H46M46 77H71C87 77 95 84 95 95C95 106 87 112 71 112H46" stroke="#FFFDF8" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M104 65C106 51 116 43 129 43C143 43 151 51 151 63C151 74 144 80 134 88L107 111H153" stroke="#FBBF24" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M43 139H150" stroke="#D1FAE5" stroke-opacity=".5" stroke-width="6" stroke-linecap="round"/>
 </svg>

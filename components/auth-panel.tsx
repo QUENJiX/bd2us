@@ -12,7 +12,7 @@ export function AuthPanel() {
     event.preventDefault();
     const supabase = getBrowserSupabase();
     if (!supabase) {
-      setMessage("Add Supabase environment variables to enable sign-in.");
+      setMessage("Sign-in is temporarily unavailable. Please try again later.");
       return;
     }
     setLoading(true);
@@ -29,7 +29,7 @@ export function AuthPanel() {
   async function signInWithGoogle() {
     const supabase = getBrowserSupabase();
     if (!supabase) {
-      setMessage("Add Supabase environment variables to enable sign-in.");
+      setMessage("Sign-in is temporarily unavailable. Please try again later.");
       return;
     }
     await supabase.auth.signInWithOAuth({

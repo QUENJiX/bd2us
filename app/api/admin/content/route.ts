@@ -10,7 +10,7 @@ export async function POST(request: Request) {
   let body: unknown = [];
   try { body = JSON.parse(payload.body ?? "[]"); } catch { return NextResponse.json({ error: "Body blocks must be valid JSON." }, { status: 400 }); }
   const supabase = getServiceSupabase();
-  if (!supabase) return NextResponse.json({ error: "Supabase service credentials are required to save editorial content." }, { status: 503 });
+  if (!supabase) return NextResponse.json({ error: "The editorial workspace is temporarily unavailable." }, { status: 503 });
   const now = new Date().toISOString();
   const { data: entry, error } = await supabase.from("content_entries").upsert({
     slug: payload.slug,

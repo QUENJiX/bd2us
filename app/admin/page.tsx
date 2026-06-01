@@ -14,7 +14,7 @@ export default async function AdminPage() {
       <h1 className="font-display mt-5 text-6xl leading-[.94] text-emerald-950 sm:text-7xl">Editorial control room.</h1>
       <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">Draft, review, source, and publish guidance without mixing unverified work into the public platform.</p>
       <div className="mt-9">
-        {allowed ? <AdminEditor role={role} /> : <Surface className="max-w-xl p-6"><h2 className="font-display text-3xl text-emerald-950">{user ? "Your account does not have an editorial role." : "Sign in with an editorial account."}</h2><p className="mt-3 text-sm leading-7 text-slate-600">Roles live in protected Supabase app metadata. Public accounts cannot open the publishing workspace.</p>{!user ? <div className="mt-5"><AuthPanel /></div> : null}</Surface>}
+        {allowed ? <AdminEditor role={role} /> : <Surface className="max-w-xl p-6"><h2 className="font-display text-3xl text-emerald-950">{user ? "Your account does not have editorial access." : "Sign in with an editorial account."}</h2><p className="mt-3 text-sm leading-7 text-slate-600">The publishing workspace is restricted to the BD2US editorial team.</p>{!user ? <div className="mt-5"><AuthPanel /></div> : null}</Surface>}
       </div>
     </main>
   );
