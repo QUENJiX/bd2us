@@ -7,6 +7,8 @@ const workbookPath = resolve(root, "docs/data/college_data.xlsx");
 const descriptionsPath = resolve(root, "docs/data/college_data.json");
 const enrichmentPath = resolve(root, "docs/data/college_enrichment.official.json");
 const rankingsPath = resolve(root, "docs/data/college_rankings.official.json");
+const researchLeadsPath = resolve(root, "data/college-research-leads.json");
+const governmentFactsPath = resolve(root, "data/college-government-facts.json");
 const outputPath = resolve(root, "lib/college-catalog.generated.json");
 const reviewedAt = "2026-08-01";
 
@@ -25,6 +27,8 @@ const descriptions = JSON.parse(readFileSync(descriptionsPath, "utf8"));
 const descriptionByName = new Map(descriptions.map((row) => [clean(row["University Name"]), clean(row.Description)]));
 const enrichment = JSON.parse(readFileSync(enrichmentPath, "utf8")).records ?? {};
 const rankingData = JSON.parse(readFileSync(rankingsPath, "utf8"));
+const researchLeadByName = new Map(JSON.parse(readFileSync(researchLeadsPath, "utf8")).records.map((record) => [record.name, record]));
+const governmentFactById = new Map(JSON.parse(readFileSync(governmentFactsPath, "utf8")).records.map((record) => [record.ipedsId, record]));
 const rankingByName = buildRankingMap(rankingData);
 const lacNames = new Set(rankingData.usNews2026.categoryNames);
 const seenNames = new Set();
@@ -88,6 +92,8 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
   const aliases = aliasesFor(name);
   const slug = uniqueSlug(slugify(name));
   const ranking = rankingByName.get(name);
+  const researchLead = researchLeadByName.get(name);
+  const governmentFact = governmentFactById.get(String(researchLead?.ipedsId ?? ""));
   const rankingCategory = lacNames.has(name) ? "liberal-arts-college" : ranking?.system === "QS World University Rankings" || /\bUniversity\b/i.test(name) ? "university" : "other";
   const scholarships = buildScholarships({ scholarshipInfo, scholarshipAmount, scholarshipMethod, scholarshipNotes });
   const testing = buildTestingProfile({
@@ -119,6 +125,7 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
     ed2: nullableText(get("ED2 offered?"))
   });
   const base = {
+    ipedsId: researchLead?.ipedsId ?? null,
     slug,
     name,
     shortName: shortNameFor(name, aliases),
@@ -135,15 +142,17 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
     aidPolicy: aidPolicyFor(needPolicyRaw, get("Types of Aid for international students")),
     meetsFullNeed: yesNo(needPolicyRaw),
     meritAid: scholarshipInfo || scholarshipAmount ? true : null,
-    testingPolicy: testing.policy.value ?? "Not listed in the workbook; verify the current-cycle policy on the official admission site.",
+    testingPolicy: testing.policy.value ?? "The current testing policy has not been confirmed here; check the official admission site.",
     englishTests: [],
     applicationPlans: applicationPlans(get("Early plan offered?"), get("ED2 offered?")),
     feeWaiver: "Verify the current application fee and waiver process on the official admission site.",
     themes: [control, setting, nullableText(get("Primary Focus")), nullableText(get("Types of Aid for international students"))].filter(Boolean),
     budgetFit: budgetFitFor(needPolicyRaw, scholarshipInfo, internationalAidPercent),
+    strongLowContributionResearchSignal: researchLead?.strongLowContributionResearchSignal ?? false,
     summary: summaryFor({ name, location, control, costOfAttendance, acceptanceRate, internationalAidPercent }),
-    source: { label: "BD2US college workbook baseline", url: "", lastVerifiedAt: reviewedAt },
-    sourceScope: "Workbook baseline. Raw notes are preserved as notes; cycle-sensitive facts require official review.",
+    source: { label: "U.S. Department of Education College Navigator", url: governmentFact?.identity?.sourceUrl ?? "", lastVerifiedAt: reviewedAt },
+    officialLinks: governmentFact?.officialLinks ?? {},
+    sourceScope: "Identity, overall admission counts, and available score ranges are checked against U.S. Department of Education information. Confirm changing application policies on the college's official pages.",
     originalDescription: description,
     costOfAttendance,
     acceptanceRate,
@@ -188,7 +197,7 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
     reviewStatus: "published"
   };
 
-  const merged = mergeEnrichment(base, enrichment[slug]);
+  const merged = mergeEnrichment(mergeGovernmentFacts(base, governmentFact), enrichment[slug]);
   merged.researchHighlights = researchHighlightsFor(merged);
   colleges.push(merged);
 }
@@ -205,6 +214,7 @@ writeFileSync(outputPath, `${JSON.stringify({
   source: "docs/data/college_data.xlsx",
   editorialTraceabilitySource: "docs/data/college_data.json",
   officialEnrichmentSource: "docs/data/college_enrichment.official.json",
+  governmentSource: "data/college-government-facts.json",
   skippedBlankRows,
   count: colleges.length,
   colleges
@@ -318,7 +328,7 @@ function buildAdmissions(values) {
   if (values.rdRate != null) earlyPlans.push({ plan: "RD", acceptanceRate: sourced(values.rdRate, { dataYear: values.rdYear, source: values.overallSource }) });
   if (values.edRate != null) earlyPlans.push({ plan: "ED", acceptanceRate: sourced(values.edRate, { dataYear: values.edYear, source: values.overallSource }) });
   if (values.eaRate != null) earlyPlans.push({ plan: "EA", acceptanceRate: sourced(values.eaRate, { dataYear: values.edYear, source: values.overallSource }) });
-  if (/yes/i.test(values.ed2 ?? "")) earlyPlans.push({ plan: "ED2", note: "Workbook lists ED2 as offered; verify the current cycle." });
+  if (/yes/i.test(values.ed2 ?? "")) earlyPlans.push({ plan: "ED2", note: "ED2 is listed as a planning reference; verify the current cycle on the official admissions page." });
   return {
     overallAcceptanceRate: rateFact(values.acceptanceRate, "overall", { source: values.overallSource, dataYear: values.classYear }),
     internationalAcceptanceRate: rateFact(values.internationalAcceptanceRate, "international", { source: values.internationalSource, dataYear: values.classYear, applicants: values.internationalApplicants, admitted: values.internationalAdmitted }),
@@ -347,7 +357,7 @@ function buildTestingProfile(values) {
     satEbrwRange: sourced(hasEbrw ? { low: values.satEbrwLow, high: values.satEbrwHigh } : null),
     satSubmissionPercent: sourced(values.satSubmissionPercent),
     actSubmissionPercent: sourced(values.actSubmissionPercent),
-    context: values.testingRequirement ? "Workbook value; confirm the Fall 2027 testing policy before applying." : null
+    context: values.testingRequirement ? "Planning reference; confirm the Fall 2027 testing policy on the official admissions page before applying." : null
   };
 }
 
@@ -367,15 +377,8 @@ function buildScholarships({ scholarshipInfo, scholarshipAmount, scholarshipMeth
 
 function buildRankingMap(data) {
   const map = new Map();
-  const qsEntries = [...data.qs2027.entries].sort((a, b) => a.globalRank - b.globalRank || a.name.localeCompare(b.name));
-  let previousRank = null;
-  let countryPosition = 0;
-  qsEntries.forEach((entry, index) => {
-    if (entry.globalRank !== previousRank) countryPosition = index + 1;
-    previousRank = entry.globalRank;
-    map.set(entry.name, { system: "QS World University Rankings", edition: data.qs2027.edition, globalRank: entry.globalRank, countryPosition, nationalRank: null, tied: entry.tied, sourceUrl: data.qs2027.sourceUrl, reviewedAt: data.reviewedAt, countryPositionMethod: "BD2US competition ranking" });
-  });
-  for (const entry of data.usNews2026.entries) map.set(entry.name, { system: "U.S. News National Liberal Arts Colleges", edition: data.usNews2026.edition, globalRank: null, countryPosition: null, nationalRank: entry.nationalRank, tied: entry.tied, sourceUrl: data.usNews2026.sourceUrl, reviewedAt: data.reviewedAt });
+  for (const entry of data.qs2027.entries) map.set(entry.name, { system: "QS World University Rankings", edition: data.qs2027.edition, globalRank: entry.globalRank, nationalRank: null, tied: entry.tied, sourceUrl: data.qs2027.sourceUrl, reviewedAt: data.reviewedAt });
+  for (const entry of data.usNews2026.entries) map.set(entry.name, { system: "U.S. News National Liberal Arts Colleges", edition: data.usNews2026.edition, globalRank: null, nationalRank: entry.nationalRank, tied: entry.tied, sourceUrl: data.usNews2026.sourceUrl, reviewedAt: data.reviewedAt });
   return map;
 }
 
@@ -388,7 +391,7 @@ function mergeEnrichment(base, record) {
     admissions: { ...base.admissions, ...(record.admissions ?? {}) },
     testing: { ...base.testing, ...(record.testing ?? {}) },
     scholarships: record.scholarships ?? base.scholarships,
-    rankings: record.rankings ?? base.rankings,
+    rankings: (record.rankings ?? base.rankings).map(publicRanking),
     englishProficiency: record.englishProficiency ?? base.englishProficiency,
     officialReview: record.officialReview ?? base.officialReview,
     workbookFacts: base.workbookFacts,
@@ -396,20 +399,55 @@ function mergeEnrichment(base, record) {
   };
 }
 
+function mergeGovernmentFacts(base, record) {
+  if (!record) return base;
+  const overall = record.admissions?.overallAcceptanceRate;
+  const testing = record.admissions ?? {};
+  return {
+    ...base,
+    acceptanceRate: overall?.value ?? base.acceptanceRate,
+    source: { label: "U.S. Department of Education College Navigator", url: record.identity.sourceUrl, lastVerifiedAt: reviewedAt },
+    officialLinks: record.officialLinks,
+    admissions: {
+      ...base.admissions,
+      overallAcceptanceRate: {
+        ...overall,
+        audience: "overall",
+        sourceLabel: "U.S. Department of Education NCES/IPEDS"
+      }
+    },
+    testing: {
+      ...base.testing,
+      satMathRange: { ...testing.satMathRange, sourceLabel: "U.S. Department of Education NCES/IPEDS" },
+      satEbrwRange: { ...testing.satEbrwRange, sourceLabel: "U.S. Department of Education NCES/IPEDS" },
+      satSubmissionPercent: { ...testing.satSubmissionPercent, sourceLabel: "U.S. Department of Education NCES/IPEDS" },
+      actSubmissionPercent: { ...testing.actSubmissionPercent, sourceLabel: "U.S. Department of Education NCES/IPEDS" }
+    }
+  };
+}
+
+function publicRanking(value) {
+  const ranking = { ...value };
+  delete ranking.countryPosition;
+  delete ranking.countryPositionMethod;
+  return ranking;
+}
+
 function researchHighlightsFor(college) {
   if (college.researchHighlightOverride) return [college.researchHighlightOverride];
   const highlights = [];
+  if (college.strongLowContributionResearchSignal) highlights.push("A strong funding option to research for families who can contribute very little; confirm current international eligibility and the full four-year cost.");
   const scholarship = college.scholarships?.find((item) => item.name && !/largest listed/i.test(item.name));
   if (scholarship) highlights.push(`${scholarship.name}${scholarship.amount ? ` is listed at ${scholarship.amount}` : " is a named scholarship to verify"}.`);
   if (college.meetsFullNeed) highlights.push(`${college.name} is marked as meeting full demonstrated need; confirm how that policy applies to international applicants.`);
-  if (college.internationalAidPercent != null) highlights.push(`The workbook reports aid for ${formatPercent(college.internationalAidPercent)} of international students${college.averageInternationalAid != null ? `, averaging ${usd(college.averageInternationalAid)}` : ""}.`);
+  if (college.internationalAidPercent != null) highlights.push(`Published information reports aid for ${formatPercent(college.internationalAidPercent)} of international students${college.averageInternationalAid != null ? `, averaging ${usd(college.averageInternationalAid)}` : ""}.`);
   if (college.testing?.satMathRange?.value) highlights.push(`Its listed SAT Math middle range is ${rangeLabel(college.testing.satMathRange.value)}, useful context if you plan to submit scores.`);
   if (college.rankings?.[0]) {
     const ranking = college.rankings[0];
     const rank = ranking.globalRank ?? ranking.nationalRank;
     highlights.push(`${ranking.tied ? "Tied at" : "Ranked"} #${rank} in the ${ranking.system} ${ranking.edition} snapshot.`);
   }
-  if (!highlights.length && college.costOfAttendance != null) highlights.push(`The workbook lists ${usd(college.costOfAttendance)} before aid, so an official net-price and aid-policy check should come first.`);
+  if (!highlights.length && college.costOfAttendance != null) highlights.push(`The listed cost is ${usd(college.costOfAttendance)} before aid, so an official cost and aid-policy check should come first.`);
   if (!highlights.length && college.setting) highlights.push(`${college.setting} setting; compare transport, housing, and nearby support before shortlisting.`);
   return highlights.slice(0, 2);
 }
@@ -419,7 +457,7 @@ function summaryFor({ name, location, control, costOfAttendance, acceptanceRate,
   if (control !== "Unknown") facts.push(`${control.toLowerCase()} institution`);
   if (location !== "Location not listed") facts.push(`in ${location}`);
   let text = `${name} is ${facts.length ? `a ${facts.join(" ")}` : "included in the BD2US research catalog"}.`;
-  if (costOfAttendance != null) text += ` The workbook lists annual cost before aid at about ${usd(costOfAttendance)}.`;
+  if (costOfAttendance != null) text += ` The listed annual cost before aid is about ${usd(costOfAttendance)}.`;
   if (internationalAidPercent != null) text += ` It reports aid for ${formatPercent(internationalAidPercent)} of international students.`;
   else if (acceptanceRate != null) text += ` Its overall acceptance rate is ${formatPercent(acceptanceRate)}, which is context rather than a personal probability.`;
   return text;

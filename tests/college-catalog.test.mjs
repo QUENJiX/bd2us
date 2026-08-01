@@ -39,15 +39,19 @@ test("parser extracts cost, aid, acceptance, and special scholarship notes", () 
       aidPercent: adelphi.internationalAidPercent,
       averageAid: adelphi.averageInternationalAid
     },
-    { cost: 71675, acceptance: 78, aidPercent: 40.9, averageAid: 25053 }
+    { cost: 71675, acceptance: 77.512, aidPercent: 40.9, averageAid: 25053 }
   );
+  assert.equal(adelphi.admissions.overallAcceptanceRate.status, "calculated");
+  assert.equal(adelphi.admissions.overallAcceptanceRate.applicants, 17111);
+  assert.equal(adelphi.admissions.overallAcceptanceRate.admitted, 13263);
+  assert.match(adelphi.admissions.overallAcceptanceRate.sourceUrl, /nces\.ed\.gov/);
   assert.match(adelphi.specialNote, /YouAreWelcomeHere/);
 });
 
 test("Excel percentage decimals and SAT ranges are converted without changing their meaning", () => {
   const mit = catalog.colleges.find((college) => college.name === "Massachusetts Institute of Technology (MIT)");
   assert.equal(mit.internationalAidPercent, 74.2);
-  assert.equal(mit.acceptanceRate, 4.5);
+  assert.equal(mit.acceptanceRate, 4.735);
   assert.equal(mit.shortName, "MIT");
   assert.deepEqual(mit.aliases, ["MIT"]);
   assert.deepEqual(mit.testing.satMathRange.value, { low: 780, high: 800 });
