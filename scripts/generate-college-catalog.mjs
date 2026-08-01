@@ -24,10 +24,10 @@ sheet.getRow(1).eachCell((cell, column) => {
 });
 
 const descriptions = JSON.parse(readFileSync(descriptionsPath, "utf8"));
-const descriptionByName = new Map(descriptions.map((row) => [clean(row["University Name"]), clean(row.Description)]));
+const descriptionByName = new Map(descriptions.map((row) => [normalizeTypography(clean(row["University Name"])), clean(row.Description)]));
 const enrichment = JSON.parse(readFileSync(enrichmentPath, "utf8")).records ?? {};
 const rankingData = JSON.parse(readFileSync(rankingsPath, "utf8"));
-const researchLeadByName = new Map(JSON.parse(readFileSync(researchLeadsPath, "utf8")).records.map((record) => [record.name, record]));
+const researchLeadByName = new Map(JSON.parse(readFileSync(researchLeadsPath, "utf8")).records.map((record) => [normalizeTypography(record.name), record]));
 const governmentFactById = new Map(JSON.parse(readFileSync(governmentFactsPath, "utf8")).records.map((record) => [record.ipedsId, record]));
 const rankingByName = buildRankingMap(rankingData);
 const lacNames = new Set(rankingData.usNews2026.categoryNames);
@@ -58,11 +58,12 @@ const aliasOverrides = {
 
 for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
   const row = sheet.getRow(rowNumber);
-  const name = clean(cellValue(row.getCell(2).value));
-  if (!name) {
+  const rawName = clean(cellValue(row.getCell(2).value));
+  if (!rawName) {
     skippedBlankRows += 1;
     continue;
   }
+  const name = normalizeTypography(rawName);
   if (seenNames.has(name)) throw new Error(`Duplicate workbook college name: ${name}`);
   seenNames.add(name);
 
@@ -90,6 +91,7 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
   const internationalSource = nullableText(get("International admission rate/yield data source"));
   const classYear = nullableText(get("Admission rate data from class year"));
   const aliases = aliasesFor(name);
+  const legacySlug = slugify(rawName);
   const slug = uniqueSlug(slugify(name));
   const ranking = rankingByName.get(name);
   const researchLead = researchLeadByName.get(name);
@@ -127,6 +129,7 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
   const base = {
     ipedsId: researchLead?.ipedsId ?? null,
     slug,
+    slugAliases: legacySlug === slug ? [] : [legacySlug],
     name,
     shortName: shortNameFor(name, aliases),
     aliases,
@@ -238,6 +241,7 @@ function cellValue(value) {
 }
 
 function clean(value) { return String(value ?? "").replace(/\s+/g, " ").trim(); }
+function normalizeTypography(value) { return value.replace(/â€™|â€˜/g, "’").replace(/â€œ|â€/g, "\"").replace(/â€“/g, "–").replace(/â€”/g, "—"); }
 function nullableText(value) {
   const result = clean(value);
   return !result || result === "-" || /^n\/?a$/i.test(result) ? null : result;

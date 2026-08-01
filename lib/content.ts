@@ -718,5 +718,5 @@ export function getGuide(slug: string) {
 }
 
 export function getCollege(slug: string) {
-  return colleges.find((college) => college.slug === slug);
+  return colleges.find((college) => college.slug === slug || college.slugAliases?.includes(slug));
 }

@@ -34,7 +34,7 @@ export async function getPublishedCollege(slug: string): Promise<College | undef
   const baseline = getCollege(slug);
   if (!baseline) return undefined;
   const overrides = await getCollegeOverrides();
-  return mergeCollegeOverride(baseline, overrides.get(slug));
+  return mergeCollegeOverride(baseline, overrides.get(baseline.slug));
 }
 
 export async function getPublishedColleges(): Promise<College[]> {

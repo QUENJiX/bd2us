@@ -10,6 +10,7 @@
     {
       "ipedsId": "188429",
       "slug": "adelphi-university",
+      "slugAliases": [],
       "name": "Adelphi University",
       "shortName": "Adelphi",
       "aliases": [],
@@ -228,6 +229,7 @@
     {
       "ipedsId": "138600",
       "slug": "agnes-scott-college",
+      "slugAliases": [],
       "name": "Agnes Scott College",
       "shortName": "Agnes Scott",
       "aliases": [],
@@ -446,6 +448,7 @@
     {
       "ipedsId": "100654",
       "slug": "alabama-a-and-m-university",
+      "slugAliases": [],
       "name": "Alabama A&M University",
       "shortName": "Alabama A&M",
       "aliases": [],
@@ -664,6 +667,7 @@
     {
       "ipedsId": "168546",
       "slug": "albion-college",
+      "slugAliases": [],
       "name": "Albion College",
       "shortName": "Albion",
       "aliases": [],
@@ -882,6 +886,7 @@
     {
       "ipedsId": "188641",
       "slug": "alfred-university",
+      "slugAliases": [],
       "name": "Alfred University",
       "shortName": "Alfred",
       "aliases": [],
@@ -1100,6 +1105,7 @@
     {
       "ipedsId": "210669",
       "slug": "allegheny-college",
+      "slugAliases": [],
       "name": "Allegheny College",
       "shortName": "Allegheny",
       "aliases": [],
@@ -1318,6 +1324,7 @@
     {
       "ipedsId": "168591",
       "slug": "alma-college",
+      "slugAliases": [],
       "name": "Alma College",
       "shortName": "Alma",
       "aliases": [],
@@ -1536,6 +1543,7 @@
     {
       "ipedsId": "164447",
       "slug": "american-international-college",
+      "slugAliases": [],
       "name": "American International College",
       "shortName": "American International",
       "aliases": [],
@@ -1734,6 +1742,7 @@
     {
       "ipedsId": "131159",
       "slug": "american-university",
+      "slugAliases": [],
       "name": "American University",
       "shortName": "American",
       "aliases": [],
@@ -1952,6 +1961,7 @@
     {
       "ipedsId": "164465",
       "slug": "amherst-college",
+      "slugAliases": [],
       "name": "Amherst College",
       "shortName": "Amherst",
       "aliases": [],
@@ -2190,6 +2200,7 @@
     {
       "ipedsId": "168740",
       "slug": "andrews-university",
+      "slugAliases": [],
       "name": "Andrews University",
       "shortName": "Andrews",
       "aliases": [],
@@ -2389,6 +2400,7 @@
     {
       "ipedsId": "483018",
       "slug": "antioch-college",
+      "slugAliases": [],
       "name": "Antioch College",
       "shortName": "Antioch",
       "aliases": [],
@@ -2606,6 +2618,7 @@
     {
       "ipedsId": "197869",
       "slug": "appalachian-state-university",
+      "slugAliases": [],
       "name": "Appalachian State University",
       "shortName": "Appalachian State",
       "aliases": [],
@@ -2824,6 +2837,7 @@
     {
       "ipedsId": "168786",
       "slug": "aquinas-college",
+      "slugAliases": [],
       "name": "Aquinas College",
       "shortName": "Aquinas",
       "aliases": [],
@@ -3042,6 +3056,7 @@
     {
       "ipedsId": "211088",
       "slug": "arcadia-university",
+      "slugAliases": [],
       "name": "Arcadia University",
       "shortName": "Arcadia",
       "aliases": [],
@@ -3260,6 +3275,7 @@
     {
       "ipedsId": "104151",
       "slug": "arizona-state-university-tempe",
+      "slugAliases": [],
       "name": "Arizona State University-Tempe",
       "shortName": "ASUT",
       "aliases": [],
@@ -3488,6 +3504,7 @@
     {
       "ipedsId": "106458",
       "slug": "arkansas-state-university",
+      "slugAliases": [],
       "name": "Arkansas State University",
       "shortName": "Arkansas State",
       "aliases": [],
@@ -3706,6 +3723,7 @@
     {
       "ipedsId": "100858",
       "slug": "auburn-university",
+      "slugAliases": [],
       "name": "Auburn University",
       "shortName": "Auburn",
       "aliases": [],
@@ -3924,6 +3942,7 @@
     {
       "ipedsId": "100830",
       "slug": "auburn-university-at-montgomery",
+      "slugAliases": [],
       "name": "Auburn University at Montgomery",
       "shortName": "AUM",
       "aliases": [],
@@ -4142,6 +4161,7 @@
     {
       "ipedsId": "143084",
       "slug": "augustana-college",
+      "slugAliases": [],
       "name": "Augustana College",
       "shortName": "Augustana",
       "aliases": [],
@@ -4360,6 +4380,7 @@
     {
       "ipedsId": "222983",
       "slug": "austin-college",
+      "slugAliases": [],
       "name": "Austin College",
       "shortName": "Austin",
       "aliases": [],
@@ -4578,6 +4599,7 @@
     {
       "ipedsId": "164580",
       "slug": "babson-college",
+      "slugAliases": [],
       "name": "Babson College",
       "shortName": "Babson",
       "aliases": [],
@@ -4840,6 +4862,7 @@
     {
       "ipedsId": "154688",
       "slug": "baker-university",
+      "slugAliases": [],
       "name": "Baker University",
       "shortName": "Baker",
       "aliases": [],
@@ -5039,6 +5062,7 @@
     {
       "ipedsId": "201195",
       "slug": "baldwin-wallace-university",
+      "slugAliases": [],
       "name": "Baldwin Wallace University",
       "shortName": "Baldwin Wallace",
       "aliases": [],
@@ -5257,6 +5281,7 @@
     {
       "ipedsId": "150136",
       "slug": "ball-state-university",
+      "slugAliases": [],
       "name": "Ball State University",
       "shortName": "Ball State",
       "aliases": [],
@@ -5475,6 +5500,7 @@
     {
       "ipedsId": "189088",
       "slug": "bard-college",
+      "slugAliases": [],
       "name": "Bard College",
       "shortName": "Bard",
       "aliases": [],
@@ -5674,6 +5700,7 @@
     {
       "ipedsId": "189097",
       "slug": "barnard-college",
+      "slugAliases": [],
       "name": "Barnard College",
       "shortName": "Barnard",
       "aliases": [],
@@ -5873,6 +5900,7 @@
     {
       "ipedsId": "197911",
       "slug": "barton-college",
+      "slugAliases": [],
       "name": "Barton College",
       "shortName": "Barton",
       "aliases": [],
@@ -6091,6 +6119,7 @@
     {
       "ipedsId": "160977",
       "slug": "bates-college",
+      "slugAliases": [],
       "name": "Bates College",
       "shortName": "Bates",
       "aliases": [],
@@ -6290,6 +6319,7 @@
     {
       "ipedsId": "223232",
       "slug": "baylor-university",
+      "slugAliases": [],
       "name": "Baylor University",
       "shortName": "Baylor",
       "aliases": [],
@@ -6508,6 +6538,7 @@
     {
       "ipedsId": "219709",
       "slug": "belmont-university",
+      "slugAliases": [],
       "name": "Belmont University",
       "shortName": "Belmont",
       "aliases": [],
@@ -6726,6 +6757,7 @@
     {
       "ipedsId": "238333",
       "slug": "beloit-college",
+      "slugAliases": [],
       "name": "Beloit College",
       "shortName": "Beloit",
       "aliases": [],
@@ -6944,6 +6976,7 @@
     {
       "ipedsId": "217721",
       "slug": "benedict-college",
+      "slugAliases": [],
       "name": "Benedict College",
       "shortName": "Benedict",
       "aliases": [],
@@ -7142,6 +7175,7 @@
     {
       "ipedsId": "230816",
       "slug": "bennington-college",
+      "slugAliases": [],
       "name": "Bennington College",
       "shortName": "Bennington",
       "aliases": [],
@@ -7360,6 +7394,7 @@
     {
       "ipedsId": "164739",
       "slug": "bentley-university",
+      "slugAliases": [],
       "name": "Bentley University",
       "shortName": "Bentley",
       "aliases": [],
@@ -7578,6 +7613,7 @@
     {
       "ipedsId": "156295",
       "slug": "berea-college",
+      "slugAliases": [],
       "name": "Berea College",
       "shortName": "Berea",
       "aliases": [],
@@ -7812,6 +7848,7 @@
     {
       "ipedsId": "139144",
       "slug": "berry-college",
+      "slugAliases": [],
       "name": "Berry College",
       "shortName": "Berry",
       "aliases": [],
@@ -8030,6 +8067,7 @@
     {
       "ipedsId": "154749",
       "slug": "bethel-college",
+      "slugAliases": [],
       "name": "Bethel College",
       "shortName": "Bethel",
       "aliases": [],
@@ -8248,6 +8286,7 @@
     {
       "ipedsId": "132602",
       "slug": "bethune-cookman-university",
+      "slugAliases": [],
       "name": "Bethune-Cookman University",
       "shortName": "Bethune-Cookman",
       "aliases": [],
@@ -8466,6 +8505,7 @@
     {
       "ipedsId": "110097",
       "slug": "biola-university",
+      "slugAliases": [],
       "name": "Biola University",
       "shortName": "Biola",
       "aliases": [],
@@ -8684,6 +8724,7 @@
     {
       "ipedsId": "142115",
       "slug": "boise-state-university",
+      "slugAliases": [],
       "name": "Boise State University",
       "shortName": "Boise State",
       "aliases": [],
@@ -8902,6 +8943,7 @@
     {
       "ipedsId": "164924",
       "slug": "boston-college",
+      "slugAliases": [],
       "name": "Boston College",
       "shortName": "Boston",
       "aliases": [],
@@ -9120,6 +9162,7 @@
     {
       "ipedsId": "164988",
       "slug": "boston-university",
+      "slugAliases": [],
       "name": "Boston University",
       "shortName": "Boston",
       "aliases": [],
@@ -9348,6 +9391,7 @@
     {
       "ipedsId": "161004",
       "slug": "bowdoin-college",
+      "slugAliases": [],
       "name": "Bowdoin College",
       "shortName": "Bowdoin",
       "aliases": [],
@@ -9590,6 +9634,7 @@
     {
       "ipedsId": "201441",
       "slug": "bowling-green-state-university",
+      "slugAliases": [],
       "name": "Bowling Green State University",
       "shortName": "Bowling Green State",
       "aliases": [],
@@ -9808,6 +9853,7 @@
     {
       "ipedsId": "143358",
       "slug": "bradley-university",
+      "slugAliases": [],
       "name": "Bradley University",
       "shortName": "Bradley",
       "aliases": [],
@@ -10026,6 +10072,7 @@
     {
       "ipedsId": "165015",
       "slug": "brandeis-university",
+      "slugAliases": [],
       "name": "Brandeis University",
       "shortName": "Brandeis",
       "aliases": [],
@@ -10277,6 +10324,7 @@
     {
       "ipedsId": "231581",
       "slug": "bridgewater-college",
+      "slugAliases": [],
       "name": "Bridgewater College",
       "shortName": "Bridgewater",
       "aliases": [],
@@ -10476,6 +10524,7 @@
     {
       "ipedsId": "230038",
       "slug": "brigham-young-university-provo",
+      "slugAliases": [],
       "name": "Brigham Young University-Provo",
       "shortName": "BYUP",
       "aliases": [],
@@ -10694,6 +10743,7 @@
     {
       "ipedsId": "217156",
       "slug": "brown-university",
+      "slugAliases": [],
       "name": "Brown University",
       "shortName": "Brown",
       "aliases": [],
@@ -10932,6 +10982,7 @@
     {
       "ipedsId": "217165",
       "slug": "bryant-university",
+      "slugAliases": [],
       "name": "Bryant University",
       "shortName": "Bryant",
       "aliases": [],
@@ -11150,6 +11201,7 @@
     {
       "ipedsId": "211273",
       "slug": "bryn-mawr-college",
+      "slugAliases": [],
       "name": "Bryn Mawr College",
       "shortName": "Bryn Mawr",
       "aliases": [],
@@ -11368,6 +11420,7 @@
     {
       "ipedsId": "211291",
       "slug": "bucknell-university",
+      "slugAliases": [],
       "name": "Bucknell University",
       "shortName": "Bucknell",
       "aliases": [],
@@ -11586,6 +11639,7 @@
     {
       "ipedsId": "150163",
       "slug": "butler-university",
+      "slugAliases": [],
       "name": "Butler University",
       "shortName": "Butler",
       "aliases": [],
@@ -11804,6 +11858,7 @@
     {
       "ipedsId": "110529",
       "slug": "cal-poly-pomona-california-state-polytech-u",
+      "slugAliases": [],
       "name": "Cal Poly-Pomona (California State Polytech. U.)",
       "shortName": "Cal Poly-Pomona",
       "aliases": [],
@@ -12002,6 +12057,7 @@
     {
       "ipedsId": "110422",
       "slug": "cal-poly-san-luis-obispo-cal-polytech-state-u",
+      "slugAliases": [],
       "name": "Cal Poly-San Luis Obispo (Cal. Polytech. State U.)",
       "shortName": "Cal Poly-San Luis Obispo",
       "aliases": [],
@@ -12220,6 +12276,7 @@
     {
       "ipedsId": "183910",
       "slug": "caldwell-university",
+      "slugAliases": [],
       "name": "Caldwell University",
       "shortName": "Caldwell",
       "aliases": [],
@@ -12419,6 +12476,7 @@
     {
       "ipedsId": "110361",
       "slug": "california-baptist-university",
+      "slugAliases": [],
       "name": "California Baptist University",
       "shortName": "California Baptist",
       "aliases": [],
@@ -12637,6 +12695,7 @@
     {
       "ipedsId": "110370",
       "slug": "california-college-of-the-arts",
+      "slugAliases": [],
       "name": "California College of the Arts",
       "shortName": "CCA",
       "aliases": [],
@@ -12835,6 +12894,7 @@
     {
       "ipedsId": "110404",
       "slug": "california-institute-of-technology-caltech",
+      "slugAliases": [],
       "name": "California Institute of Technology (Caltech)",
       "shortName": "Caltech",
       "aliases": [
@@ -13046,6 +13106,7 @@
     {
       "ipedsId": "110574",
       "slug": "california-state-university-east-bay",
+      "slugAliases": [],
       "name": "California State University-East Bay",
       "shortName": "CSUEB",
       "aliases": [],
@@ -13244,6 +13305,7 @@
     {
       "ipedsId": "110556",
       "slug": "california-state-university-fresno",
+      "slugAliases": [],
       "name": "California State University-Fresno",
       "shortName": "CSUF",
       "aliases": [],
@@ -13462,6 +13524,7 @@
     {
       "ipedsId": "110565",
       "slug": "california-state-university-fullerton",
+      "slugAliases": [],
       "name": "California State University-Fullerton",
       "shortName": "CSUF",
       "aliases": [],
@@ -13680,6 +13743,7 @@
     {
       "ipedsId": "110583",
       "slug": "california-state-university-long-beach",
+      "slugAliases": [],
       "name": "California State University-Long Beach",
       "shortName": "CSULB",
       "aliases": [],
@@ -13898,6 +13962,7 @@
     {
       "ipedsId": "110592",
       "slug": "california-state-university-los-angeles",
+      "slugAliases": [],
       "name": "California State University-Los Angeles",
       "shortName": "CSULA",
       "aliases": [],
@@ -14116,6 +14181,7 @@
     {
       "ipedsId": "110608",
       "slug": "california-state-university-northridge",
+      "slugAliases": [],
       "name": "California State University-Northridge",
       "shortName": "CSUN",
       "aliases": [],
@@ -14314,6 +14380,7 @@
     {
       "ipedsId": "110617",
       "slug": "california-state-university-sacramento",
+      "slugAliases": [],
       "name": "California State University-Sacramento",
       "shortName": "CSUS",
       "aliases": [],
@@ -14512,6 +14579,7 @@
     {
       "ipedsId": "110510",
       "slug": "california-state-university-san-bernardino",
+      "slugAliases": [],
       "name": "California State University-San Bernardino",
       "shortName": "CSUSB",
       "aliases": [],
@@ -14711,6 +14779,7 @@
     {
       "ipedsId": "169080",
       "slug": "calvin-university",
+      "slugAliases": [],
       "name": "Calvin University",
       "shortName": "Calvin",
       "aliases": [],
@@ -14929,6 +14998,7 @@
     {
       "ipedsId": "206914",
       "slug": "cameron-university",
+      "slugAliases": [],
       "name": "Cameron University",
       "shortName": "Cameron",
       "aliases": [],
@@ -15128,6 +15198,7 @@
     {
       "ipedsId": "198136",
       "slug": "campbell-university",
+      "slugAliases": [],
       "name": "Campbell University",
       "shortName": "Campbell",
       "aliases": [],
@@ -15326,6 +15397,7 @@
     {
       "ipedsId": "189705",
       "slug": "canisius-college",
+      "slugAliases": [],
       "name": "Canisius College",
       "shortName": "Canisius",
       "aliases": [],
@@ -15544,6 +15616,7 @@
     {
       "ipedsId": "173258",
       "slug": "carleton-college",
+      "slugAliases": [],
       "name": "Carleton College",
       "shortName": "Carleton",
       "aliases": [],
@@ -15801,6 +15874,7 @@
     {
       "ipedsId": "211440",
       "slug": "carnegie-mellon-university",
+      "slugAliases": [],
       "name": "Carnegie Mellon University",
       "shortName": "CMU",
       "aliases": [
@@ -16012,6 +16086,7 @@
     {
       "ipedsId": "180106",
       "slug": "carroll-college",
+      "slugAliases": [],
       "name": "Carroll College",
       "shortName": "Carroll",
       "aliases": [],
@@ -16210,6 +16285,7 @@
     {
       "ipedsId": "238458",
       "slug": "carroll-university",
+      "slugAliases": [],
       "name": "Carroll University",
       "shortName": "Carroll",
       "aliases": [],
@@ -16428,6 +16504,7 @@
     {
       "ipedsId": "201645",
       "slug": "case-western-reserve-university",
+      "slugAliases": [],
       "name": "Case Western Reserve University",
       "shortName": "Case Western Reserve",
       "aliases": [],
@@ -16646,6 +16723,7 @@
     {
       "ipedsId": "198215",
       "slug": "catawba-college",
+      "slugAliases": [],
       "name": "Catawba College",
       "shortName": "Catawba",
       "aliases": [],
@@ -16864,6 +16942,7 @@
     {
       "ipedsId": "169248",
       "slug": "central-michigan-university",
+      "slugAliases": [],
       "name": "Central Michigan University",
       "shortName": "Central Michigan",
       "aliases": [],
@@ -17082,6 +17161,7 @@
     {
       "ipedsId": "234827",
       "slug": "central-washington-university",
+      "slugAliases": [],
       "name": "Central Washington University",
       "shortName": "Central Washington",
       "aliases": [],
@@ -17300,6 +17380,7 @@
     {
       "ipedsId": "156408",
       "slug": "centre-college",
+      "slugAliases": [],
       "name": "Centre College",
       "shortName": "Centre",
       "aliases": [],
@@ -17562,6 +17643,7 @@
     {
       "ipedsId": "111948",
       "slug": "chapman-university",
+      "slugAliases": [],
       "name": "Chapman University",
       "shortName": "Chapman",
       "aliases": [],
@@ -17780,6 +17862,7 @@
     {
       "ipedsId": "211556",
       "slug": "chatham-university",
+      "slugAliases": [],
       "name": "Chatham University",
       "shortName": "Chatham",
       "aliases": [],
@@ -17998,6 +18081,7 @@
     {
       "ipedsId": "219833",
       "slug": "christian-brothers-university",
+      "slugAliases": [],
       "name": "Christian Brothers University",
       "shortName": "Christian Brothers",
       "aliases": [],
@@ -18197,6 +18281,7 @@
     {
       "ipedsId": "112260",
       "slug": "claremont-mckenna-college",
+      "slugAliases": [],
       "name": "Claremont McKenna College",
       "shortName": "Claremont McKenna",
       "aliases": [],
@@ -18425,6 +18510,7 @@
     {
       "ipedsId": "165334",
       "slug": "clark-university",
+      "slugAliases": [],
       "name": "Clark University",
       "shortName": "Clark",
       "aliases": [],
@@ -18643,6 +18729,7 @@
     {
       "ipedsId": "190044",
       "slug": "clarkson-university",
+      "slugAliases": [],
       "name": "Clarkson University",
       "shortName": "Clarkson",
       "aliases": [],
@@ -18861,6 +18948,7 @@
     {
       "ipedsId": "217882",
       "slug": "clemson-university",
+      "slugAliases": [],
       "name": "Clemson University",
       "shortName": "Clemson",
       "aliases": [],
@@ -19059,6 +19147,7 @@
     {
       "ipedsId": "218724",
       "slug": "coastal-carolina-university",
+      "slugAliases": [],
       "name": "Coastal Carolina University",
       "shortName": "Coastal Carolina",
       "aliases": [],
@@ -19277,6 +19366,7 @@
     {
       "ipedsId": "153144",
       "slug": "coe-college",
+      "slugAliases": [],
       "name": "Coe College",
       "shortName": "Coe",
       "aliases": [],
@@ -19495,6 +19585,7 @@
     {
       "ipedsId": "217907",
       "slug": "coker-college",
+      "slugAliases": [],
       "name": "Coker College",
       "shortName": "Coker",
       "aliases": [],
@@ -19693,6 +19784,7 @@
     {
       "ipedsId": "161086",
       "slug": "colby-college",
+      "slugAliases": [],
       "name": "Colby College",
       "shortName": "Colby",
       "aliases": [],
@@ -19892,6 +19984,7 @@
     {
       "ipedsId": "182634",
       "slug": "colby-sawyer-college",
+      "slugAliases": [],
       "name": "Colby-Sawyer College",
       "shortName": "Colby-Sawyer",
       "aliases": [],
@@ -20110,6 +20203,7 @@
     {
       "ipedsId": "190099",
       "slug": "colgate-university",
+      "slugAliases": [],
       "name": "Colgate University",
       "shortName": "Colgate",
       "aliases": [],
@@ -20309,6 +20403,7 @@
     {
       "ipedsId": "217819",
       "slug": "college-of-charleston",
+      "slugAliases": [],
       "name": "College of Charleston",
       "shortName": "College of Charleston",
       "aliases": [],
@@ -20527,6 +20622,7 @@
     {
       "ipedsId": "181604",
       "slug": "college-of-saint-mary",
+      "slugAliases": [],
       "name": "College Of Saint Mary",
       "shortName": "College Of Saint Mary",
       "aliases": [],
@@ -20726,6 +20822,7 @@
     {
       "ipedsId": "174747",
       "slug": "college-of-st-benedict",
+      "slugAliases": [],
       "name": "College of St. Benedict",
       "shortName": "College of St. Benedict",
       "aliases": [],
@@ -20944,6 +21041,7 @@
     {
       "ipedsId": "174899",
       "slug": "college-of-st-scholastica",
+      "slugAliases": [],
       "name": "College of St. Scholastica",
       "shortName": "CSS",
       "aliases": [],
@@ -21143,6 +21241,7 @@
     {
       "ipedsId": "160959",
       "slug": "college-of-the-atlantic",
+      "slugAliases": [],
       "name": "College of the Atlantic",
       "shortName": "College of the Atlantic",
       "aliases": [],
@@ -21361,6 +21460,7 @@
     {
       "ipedsId": "166124",
       "slug": "college-of-the-holy-cross",
+      "slugAliases": [],
       "name": "College of the Holy Cross",
       "shortName": "CHC",
       "aliases": [],
@@ -21593,6 +21693,7 @@
     {
       "ipedsId": "231624",
       "slug": "college-of-william-and-mary",
+      "slugAliases": [],
       "name": "College of William and Mary",
       "shortName": "CWM",
       "aliases": [],
@@ -21811,6 +21912,7 @@
     {
       "ipedsId": "126678",
       "slug": "colorado-college",
+      "slugAliases": [],
       "name": "Colorado College",
       "shortName": "Colorado",
       "aliases": [],
@@ -22010,6 +22112,7 @@
     {
       "ipedsId": "126775",
       "slug": "colorado-school-of-mines",
+      "slugAliases": [],
       "name": "Colorado School of Mines",
       "shortName": "Colorado School of Mines",
       "aliases": [],
@@ -22228,6 +22331,7 @@
     {
       "ipedsId": "126818",
       "slug": "colorado-state-university-fort-collins",
+      "slugAliases": [],
       "name": "Colorado State University-Fort Collins",
       "shortName": "CSUFC",
       "aliases": [],
@@ -22446,6 +22550,7 @@
     {
       "ipedsId": "128106",
       "slug": "colorado-state-university-pueblo",
+      "slugAliases": [],
       "name": "Colorado State University-Pueblo",
       "shortName": "CSUP",
       "aliases": [],
@@ -22644,6 +22749,7 @@
     {
       "ipedsId": "177065",
       "slug": "columbia-college",
+      "slugAliases": [],
       "name": "Columbia College",
       "shortName": "Columbia",
       "aliases": [],
@@ -22862,6 +22968,7 @@
     {
       "ipedsId": "190150",
       "slug": "columbia-university-college-and-seas",
+      "slugAliases": [],
       "name": "Columbia University (College and SEAS)",
       "shortName": "Columbia University",
       "aliases": [],
@@ -23071,6 +23178,7 @@
     {
       "ipedsId": "173300",
       "slug": "concordia-college-at-moorhead",
+      "slugAliases": [],
       "name": "Concordia College at Moorhead",
       "shortName": "CCM",
       "aliases": [],
@@ -23269,6 +23377,7 @@
     {
       "ipedsId": "128902",
       "slug": "connecticut-college",
+      "slugAliases": [],
       "name": "Connecticut College",
       "shortName": "Connecticut",
       "aliases": [],
@@ -23487,6 +23596,7 @@
     {
       "ipedsId": "190372",
       "slug": "cooper-union-for-adv-of-sci-and-art",
+      "slugAliases": [],
       "name": "Cooper Union for Adv. of Sci. & Art",
       "shortName": "CUFASA",
       "aliases": [],
@@ -23734,6 +23844,7 @@
     {
       "ipedsId": "153162",
       "slug": "cornell-college",
+      "slugAliases": [],
       "name": "Cornell College",
       "shortName": "Cornell",
       "aliases": [],
@@ -23952,6 +24063,7 @@
     {
       "ipedsId": "190415",
       "slug": "cornell-university",
+      "slugAliases": [],
       "name": "Cornell University",
       "shortName": "Cornell",
       "aliases": [],
@@ -24209,6 +24321,7 @@
     {
       "ipedsId": "177117",
       "slug": "cottey-college",
+      "slugAliases": [],
       "name": "Cottey College",
       "shortName": "Cottey",
       "aliases": [],
@@ -24408,6 +24521,7 @@
     {
       "ipedsId": "181002",
       "slug": "creighton-university",
+      "slugAliases": [],
       "name": "Creighton University",
       "shortName": "Creighton",
       "aliases": [],
@@ -24626,6 +24740,7 @@
     {
       "ipedsId": "190512",
       "slug": "cuny-bernard-m-baruch-college",
+      "slugAliases": [],
       "name": "CUNY - Bernard M. Baruch College",
       "shortName": "CUNY - Bernard M. Baruch",
       "aliases": [],
@@ -24843,6 +24958,7 @@
     {
       "ipedsId": "190549",
       "slug": "cuny-brooklyn-college",
+      "slugAliases": [],
       "name": "CUNY - Brooklyn College",
       "shortName": "CUNY - Brooklyn",
       "aliases": [],
@@ -25041,6 +25157,7 @@
     {
       "ipedsId": "190567",
       "slug": "cuny-city-college",
+      "slugAliases": [],
       "name": "CUNY - City College",
       "shortName": "CUNY - City",
       "aliases": [],
@@ -25239,6 +25356,7 @@
     {
       "ipedsId": "190594",
       "slug": "cuny-hunter-college",
+      "slugAliases": [],
       "name": "CUNY - Hunter College",
       "shortName": "CUNY - Hunter",
       "aliases": [],
@@ -25437,6 +25555,7 @@
     {
       "ipedsId": "190637",
       "slug": "cuny-lehman-college",
+      "slugAliases": [],
       "name": "CUNY - Lehman College",
       "shortName": "CUNY - Lehman",
       "aliases": [],
@@ -25635,6 +25754,7 @@
     {
       "ipedsId": "190664",
       "slug": "cuny-queens-college",
+      "slugAliases": [],
       "name": "CUNY - Queens College",
       "shortName": "CUNY - Queens",
       "aliases": [],
@@ -25834,6 +25954,7 @@
     {
       "ipedsId": "182670",
       "slug": "dartmouth-college",
+      "slugAliases": [],
       "name": "Dartmouth College",
       "shortName": "Dartmouth",
       "aliases": [],
@@ -26062,6 +26183,7 @@
     {
       "ipedsId": "198385",
       "slug": "davidson-college",
+      "slugAliases": [],
       "name": "Davidson College",
       "shortName": "Davidson",
       "aliases": [],
@@ -26313,6 +26435,7 @@
     {
       "ipedsId": "175616",
       "slug": "delta-state-university",
+      "slugAliases": [],
       "name": "Delta State University",
       "shortName": "Delta State",
       "aliases": [],
@@ -26512,6 +26635,7 @@
     {
       "ipedsId": "202523",
       "slug": "denison-university",
+      "slugAliases": [],
       "name": "Denison University",
       "shortName": "Denison",
       "aliases": [],
@@ -26730,6 +26854,7 @@
     {
       "ipedsId": "144740",
       "slug": "depaul-university",
+      "slugAliases": [],
       "name": "DePaul University",
       "shortName": "DePaul",
       "aliases": [],
@@ -26948,6 +27073,7 @@
     {
       "ipedsId": "150400",
       "slug": "depauw-university",
+      "slugAliases": [],
       "name": "DePauw University",
       "shortName": "DePauw",
       "aliases": [],
@@ -27166,6 +27292,7 @@
     {
       "ipedsId": "210739",
       "slug": "desales-university",
+      "slugAliases": [],
       "name": "DeSales University",
       "shortName": "DeSales",
       "aliases": [],
@@ -27384,6 +27511,7 @@
     {
       "ipedsId": "212009",
       "slug": "dickinson-college",
+      "slugAliases": [],
       "name": "Dickinson College",
       "shortName": "Dickinson",
       "aliases": [],
@@ -27602,6 +27730,7 @@
     {
       "ipedsId": "153269",
       "slug": "drake-university",
+      "slugAliases": [],
       "name": "Drake University",
       "shortName": "Drake",
       "aliases": [],
@@ -27820,6 +27949,7 @@
     {
       "ipedsId": "184348",
       "slug": "drew-university",
+      "slugAliases": [],
       "name": "Drew University",
       "shortName": "Drew",
       "aliases": [],
@@ -28038,6 +28168,7 @@
     {
       "ipedsId": "212054",
       "slug": "drexel-university",
+      "slugAliases": [],
       "name": "Drexel University",
       "shortName": "Drexel",
       "aliases": [],
@@ -28256,6 +28387,7 @@
     {
       "ipedsId": "177214",
       "slug": "drury-university",
+      "slugAliases": [],
       "name": "Drury University",
       "shortName": "Drury",
       "aliases": [],
@@ -28474,6 +28606,7 @@
     {
       "ipedsId": "198419",
       "slug": "duke-university",
+      "slugAliases": [],
       "name": "Duke University",
       "shortName": "Duke",
       "aliases": [],
@@ -28731,6 +28864,7 @@
     {
       "ipedsId": "212106",
       "slug": "duquesne-university",
+      "slugAliases": [],
       "name": "Duquesne University",
       "shortName": "Duquesne",
       "aliases": [],
@@ -28949,6 +29083,7 @@
     {
       "ipedsId": "150455",
       "slug": "earlham-college",
+      "slugAliases": [],
       "name": "Earlham College",
       "shortName": "Earlham",
       "aliases": [],
@@ -29167,6 +29302,7 @@
     {
       "ipedsId": "198464",
       "slug": "east-carolina-university",
+      "slugAliases": [],
       "name": "East Carolina University",
       "shortName": "East Carolina",
       "aliases": [],
@@ -29385,6 +29521,7 @@
     {
       "ipedsId": "220075",
       "slug": "east-tennessee-state-university",
+      "slugAliases": [],
       "name": "East Tennessee State University",
       "shortName": "East Tennessee State",
       "aliases": [],
@@ -29603,6 +29740,7 @@
     {
       "ipedsId": "144892",
       "slug": "eastern-illinois-university",
+      "slugAliases": [],
       "name": "Eastern Illinois University",
       "shortName": "Eastern Illinois",
       "aliases": [],
@@ -29821,6 +29959,7 @@
     {
       "ipedsId": "156620",
       "slug": "eastern-kentucky-university",
+      "slugAliases": [],
       "name": "Eastern Kentucky University",
       "shortName": "Eastern Kentucky",
       "aliases": [],
@@ -30020,6 +30159,7 @@
     {
       "ipedsId": "169798",
       "slug": "eastern-michigan-university",
+      "slugAliases": [],
       "name": "Eastern Michigan University",
       "shortName": "Eastern Michigan",
       "aliases": [],
@@ -30238,6 +30378,7 @@
     {
       "ipedsId": "235097",
       "slug": "eastern-washington-university",
+      "slugAliases": [],
       "name": "Eastern Washington University",
       "shortName": "Eastern Washington",
       "aliases": [],
@@ -30436,6 +30577,7 @@
     {
       "ipedsId": "133492",
       "slug": "eckerd-college",
+      "slugAliases": [],
       "name": "Eckerd College",
       "shortName": "Eckerd",
       "aliases": [],
@@ -30654,6 +30796,7 @@
     {
       "ipedsId": "198507",
       "slug": "elizabeth-city-state-university",
+      "slugAliases": [],
       "name": "Elizabeth City State University",
       "shortName": "Elizabeth City State",
       "aliases": [],
@@ -30872,6 +31015,7 @@
     {
       "ipedsId": "212197",
       "slug": "elizabethtown-college",
+      "slugAliases": [],
       "name": "Elizabethtown College",
       "shortName": "Elizabethtown",
       "aliases": [],
@@ -31090,6 +31234,7 @@
     {
       "ipedsId": "144962",
       "slug": "elmhurst-university",
+      "slugAliases": [],
       "name": "Elmhurst University",
       "shortName": "Elmhurst",
       "aliases": [],
@@ -31308,6 +31453,7 @@
     {
       "ipedsId": "190983",
       "slug": "elmira-college",
+      "slugAliases": [],
       "name": "Elmira College",
       "shortName": "Elmira",
       "aliases": [],
@@ -31507,6 +31653,7 @@
     {
       "ipedsId": "198516",
       "slug": "elon-university",
+      "slugAliases": [],
       "name": "Elon University",
       "shortName": "Elon",
       "aliases": [],
@@ -31725,6 +31872,7 @@
     {
       "ipedsId": "133553",
       "slug": "embry-riddle-aeronautical-u-daytona",
+      "slugAliases": [],
       "name": "Embry-Riddle Aeronautical U.- Daytona",
       "shortName": "ERAUD",
       "aliases": [],
@@ -31943,6 +32091,7 @@
     {
       "ipedsId": "104586",
       "slug": "embry-riddle-aeronautical-u-prescott",
+      "slugAliases": [],
       "name": "Embry-Riddle Aeronautical U.-Prescott",
       "shortName": "ERAUP",
       "aliases": [],
@@ -32160,6 +32309,7 @@
     {
       "ipedsId": "139630",
       "slug": "emmanuel-university-ga",
+      "slugAliases": [],
       "name": "Emmanuel University (GA)",
       "shortName": "GA",
       "aliases": [
@@ -32361,6 +32511,7 @@
     {
       "ipedsId": "232025",
       "slug": "emory-and-henry-college",
+      "slugAliases": [],
       "name": "Emory & Henry College",
       "shortName": "Emory & Henry",
       "aliases": [],
@@ -32559,6 +32710,7 @@
     {
       "ipedsId": "139658",
       "slug": "emory-university",
+      "slugAliases": [],
       "name": "Emory University",
       "shortName": "Emory",
       "aliases": [],
@@ -32787,6 +32939,7 @@
     {
       "ipedsId": "155025",
       "slug": "emporia-state-university",
+      "slugAliases": [],
       "name": "Emporia State University",
       "shortName": "Emporia State",
       "aliases": [],
@@ -33004,6 +33157,7 @@
     {
       "ipedsId": "129242",
       "slug": "fairfield-university",
+      "slugAliases": [],
       "name": "Fairfield University",
       "shortName": "Fairfield",
       "aliases": [],
@@ -33222,6 +33376,7 @@
     {
       "ipedsId": "184694",
       "slug": "fairleigh-dickinson-university",
+      "slugAliases": [],
       "name": "Fairleigh Dickinson University",
       "shortName": "Fairleigh Dickinson",
       "aliases": [],
@@ -33440,6 +33595,7 @@
     {
       "ipedsId": "198543",
       "slug": "fayetteville-state-university",
+      "slugAliases": [],
       "name": "Fayetteville State University",
       "shortName": "Fayetteville State",
       "aliases": [],
@@ -33658,6 +33814,7 @@
     {
       "ipedsId": "169910",
       "slug": "ferris-state-university",
+      "slugAliases": [],
       "name": "Ferris State University",
       "shortName": "Ferris State",
       "aliases": [],
@@ -33876,6 +34033,7 @@
     {
       "ipedsId": "133711",
       "slug": "flagler-college",
+      "slugAliases": [],
       "name": "Flagler College",
       "shortName": "Flagler",
       "aliases": [],
@@ -34094,6 +34252,7 @@
     {
       "ipedsId": "133650",
       "slug": "florida-a-and-m-university",
+      "slugAliases": [],
       "name": "Florida A&M University",
       "shortName": "Florida A&M",
       "aliases": [],
@@ -34312,6 +34471,7 @@
     {
       "ipedsId": "133669",
       "slug": "florida-atlantic-university",
+      "slugAliases": [],
       "name": "Florida Atlantic University",
       "shortName": "Florida Atlantic",
       "aliases": [],
@@ -34530,6 +34690,7 @@
     {
       "ipedsId": "433660",
       "slug": "florida-gulf-coast-university",
+      "slugAliases": [],
       "name": "Florida Gulf Coast University",
       "shortName": "Florida Gulf Coast",
       "aliases": [],
@@ -34748,6 +34909,7 @@
     {
       "ipedsId": "133881",
       "slug": "florida-institute-of-technology",
+      "slugAliases": [],
       "name": "Florida Institute of Technology",
       "shortName": "FIT",
       "aliases": [],
@@ -34966,6 +35128,7 @@
     {
       "ipedsId": "133951",
       "slug": "florida-international-university",
+      "slugAliases": [],
       "name": "Florida International University",
       "shortName": "Florida International",
       "aliases": [],
@@ -35184,6 +35347,7 @@
     {
       "ipedsId": "134079",
       "slug": "florida-southern-college",
+      "slugAliases": [],
       "name": "Florida Southern College",
       "shortName": "Florida Southern",
       "aliases": [],
@@ -35383,6 +35547,7 @@
     {
       "ipedsId": "134097",
       "slug": "florida-state-university",
+      "slugAliases": [],
       "name": "Florida State University",
       "shortName": "Florida State",
       "aliases": [],
@@ -35601,6 +35766,7 @@
     {
       "ipedsId": "191241",
       "slug": "fordham-university",
+      "slugAliases": [],
       "name": "Fordham University",
       "shortName": "Fordham",
       "aliases": [],
@@ -35819,6 +35985,7 @@
     {
       "ipedsId": "212577",
       "slug": "franklin-and-marshall-college",
+      "slugAliases": [],
       "name": "Franklin & Marshall College",
       "shortName": "Franklin & Marshall",
       "aliases": [],
@@ -36037,6 +36204,7 @@
     {
       "ipedsId": "150604",
       "slug": "franklin-college",
+      "slugAliases": [],
       "name": "Franklin College",
       "shortName": "Franklin",
       "aliases": [],
@@ -36236,6 +36404,7 @@
     {
       "ipedsId": "441982",
       "slug": "franklin-w-olin-college-of-engineering",
+      "slugAliases": [],
       "name": "Franklin W. Olin College of Engineering",
       "shortName": "FWOCE",
       "aliases": [],
@@ -36454,6 +36623,7 @@
     {
       "ipedsId": "218070",
       "slug": "furman-university",
+      "slugAliases": [],
       "name": "Furman University",
       "shortName": "Furman",
       "aliases": [],
@@ -36672,6 +36842,7 @@
     {
       "ipedsId": "208822",
       "slug": "george-fox-university",
+      "slugAliases": [],
       "name": "George Fox University",
       "shortName": "George Fox",
       "aliases": [],
@@ -36890,6 +37061,7 @@
     {
       "ipedsId": "232186",
       "slug": "george-mason-university",
+      "slugAliases": [],
       "name": "George Mason University",
       "shortName": "George Mason",
       "aliases": [],
@@ -37108,6 +37280,7 @@
     {
       "ipedsId": "131469",
       "slug": "george-washington-university",
+      "slugAliases": [],
       "name": "George Washington University",
       "shortName": "George Washington",
       "aliases": [],
@@ -37326,6 +37499,7 @@
     {
       "ipedsId": "156745",
       "slug": "georgetown-college",
+      "slugAliases": [],
       "name": "Georgetown College",
       "shortName": "Georgetown",
       "aliases": [],
@@ -37525,6 +37699,7 @@
     {
       "ipedsId": "131496",
       "slug": "georgetown-university",
+      "slugAliases": [],
       "name": "Georgetown University",
       "shortName": "Georgetown",
       "aliases": [],
@@ -37724,6 +37899,7 @@
     {
       "ipedsId": "139755",
       "slug": "georgia-institute-of-technology-georgia-tech",
+      "slugAliases": [],
       "name": "Georgia Institute of Technology (Georgia Tech)",
       "shortName": "Georgia Tech",
       "aliases": [
@@ -37954,6 +38130,7 @@
     {
       "ipedsId": "139931",
       "slug": "georgia-southern-university",
+      "slugAliases": [],
       "name": "Georgia Southern University",
       "shortName": "Georgia Southern",
       "aliases": [],
@@ -38172,6 +38349,7 @@
     {
       "ipedsId": "139940",
       "slug": "georgia-state-university",
+      "slugAliases": [],
       "name": "Georgia State University",
       "shortName": "Georgia State",
       "aliases": [],
@@ -38406,6 +38584,7 @@
     {
       "ipedsId": "184773",
       "slug": "georgian-court-university",
+      "slugAliases": [],
       "name": "Georgian Court University",
       "shortName": "Georgian Court",
       "aliases": [],
@@ -38605,6 +38784,7 @@
     {
       "ipedsId": "212674",
       "slug": "gettysburg-college",
+      "slugAliases": [],
       "name": "Gettysburg College",
       "shortName": "Gettysburg",
       "aliases": [],
@@ -38823,6 +39003,7 @@
     {
       "ipedsId": "235316",
       "slug": "gonzaga-university",
+      "slugAliases": [],
       "name": "Gonzaga University",
       "shortName": "Gonzaga",
       "aliases": [],
@@ -39041,6 +39222,7 @@
     {
       "ipedsId": "165936",
       "slug": "gordon-college",
+      "slugAliases": [],
       "name": "Gordon College",
       "shortName": "Gordon",
       "aliases": [],
@@ -39259,6 +39441,7 @@
     {
       "ipedsId": "150668",
       "slug": "goshen-college",
+      "slugAliases": [],
       "name": "Goshen College",
       "shortName": "Goshen",
       "aliases": [],
@@ -39477,6 +39660,7 @@
     {
       "ipedsId": "162654",
       "slug": "goucher-college",
+      "slugAliases": [],
       "name": "Goucher College",
       "shortName": "Goucher",
       "aliases": [],
@@ -39695,6 +39879,7 @@
     {
       "ipedsId": "145336",
       "slug": "governors-state-university",
+      "slugAliases": [],
       "name": "Governors State University",
       "shortName": "Governors State",
       "aliases": [],
@@ -39915,6 +40100,7 @@
     {
       "ipedsId": "170082",
       "slug": "grand-valley-state-university",
+      "slugAliases": [],
       "name": "Grand Valley State University",
       "shortName": "Grand Valley State",
       "aliases": [],
@@ -40133,6 +40319,7 @@
     {
       "ipedsId": "153384",
       "slug": "grinnell-college",
+      "slugAliases": [],
       "name": "Grinnell College",
       "shortName": "Grinnell",
       "aliases": [],
@@ -40351,6 +40538,7 @@
     {
       "ipedsId": "198613",
       "slug": "guilford-college",
+      "slugAliases": [],
       "name": "Guilford College",
       "shortName": "Guilford",
       "aliases": [],
@@ -40569,6 +40757,7 @@
     {
       "ipedsId": "173647",
       "slug": "gustavus-adolphus-college",
+      "slugAliases": [],
       "name": "Gustavus Adolphus College",
       "shortName": "Gustavus Adolphus",
       "aliases": [],
@@ -40787,6 +40976,7 @@
     {
       "ipedsId": "191515",
       "slug": "hamilton-college",
+      "slugAliases": [],
       "name": "Hamilton College",
       "shortName": "Hamilton",
       "aliases": [],
@@ -40986,6 +41176,7 @@
     {
       "ipedsId": "232256",
       "slug": "hampden-sydney-college",
+      "slugAliases": [],
       "name": "Hampden-Sydney College",
       "shortName": "Hampden-Sydney",
       "aliases": [],
@@ -41218,6 +41409,7 @@
     {
       "ipedsId": "232265",
       "slug": "hampton-university",
+      "slugAliases": [],
       "name": "Hampton University",
       "shortName": "Hampton",
       "aliases": [],
@@ -41417,6 +41609,7 @@
     {
       "ipedsId": "150756",
       "slug": "hanover-college",
+      "slugAliases": [],
       "name": "Hanover College",
       "shortName": "Hanover",
       "aliases": [],
@@ -41635,6 +41828,7 @@
     {
       "ipedsId": "107044",
       "slug": "harding-university",
+      "slugAliases": [],
       "name": "Harding University",
       "shortName": "Harding",
       "aliases": [],
@@ -41834,6 +42028,7 @@
     {
       "ipedsId": "191533",
       "slug": "hartwick-college",
+      "slugAliases": [],
       "name": "Hartwick College",
       "shortName": "Hartwick",
       "aliases": [],
@@ -42052,6 +42247,7 @@
     {
       "ipedsId": "166027",
       "slug": "harvard-university",
+      "slugAliases": [],
       "name": "Harvard University",
       "shortName": "Harvard",
       "aliases": [],
@@ -42291,6 +42487,7 @@
     {
       "ipedsId": "115409",
       "slug": "harvey-mudd-college",
+      "slugAliases": [],
       "name": "Harvey Mudd College",
       "shortName": "Harvey Mudd",
       "aliases": [],
@@ -42519,6 +42716,7 @@
     {
       "ipedsId": "212911",
       "slug": "haverford-college",
+      "slugAliases": [],
       "name": "Haverford College",
       "shortName": "Haverford",
       "aliases": [],
@@ -42751,6 +42949,7 @@
     {
       "ipedsId": "141644",
       "slug": "hawaii-pacific-university",
+      "slugAliases": [],
       "name": "Hawaii Pacific University",
       "shortName": "Hawaii Pacific",
       "aliases": [],
@@ -42969,6 +43168,7 @@
     {
       "ipedsId": "107080",
       "slug": "hendrix-college",
+      "slugAliases": [],
       "name": "Hendrix College",
       "shortName": "Hendrix",
       "aliases": [],
@@ -43187,6 +43387,7 @@
     {
       "ipedsId": "198695",
       "slug": "high-point-university",
+      "slugAliases": [],
       "name": "High Point University",
       "shortName": "High Point",
       "aliases": [],
@@ -43405,6 +43606,7 @@
     {
       "ipedsId": "170286",
       "slug": "hillsdale-college",
+      "slugAliases": [],
       "name": "Hillsdale College",
       "shortName": "Hillsdale",
       "aliases": [],
@@ -43623,6 +43825,7 @@
     {
       "ipedsId": "203128",
       "slug": "hiram-college",
+      "slugAliases": [],
       "name": "Hiram College",
       "shortName": "Hiram",
       "aliases": [],
@@ -43841,6 +44044,7 @@
     {
       "ipedsId": "191630",
       "slug": "hobart-and-william-smith-colleges",
+      "slugAliases": [],
       "name": "Hobart & William Smith Colleges",
       "shortName": "HWSC",
       "aliases": [],
@@ -44059,6 +44263,7 @@
     {
       "ipedsId": "191649",
       "slug": "hofstra-university",
+      "slugAliases": [],
       "name": "Hofstra University",
       "shortName": "Hofstra",
       "aliases": [],
@@ -44277,6 +44482,7 @@
     {
       "ipedsId": "232308",
       "slug": "hollins-university",
+      "slugAliases": [],
       "name": "Hollins University",
       "shortName": "Hollins",
       "aliases": [],
@@ -44495,6 +44701,7 @@
     {
       "ipedsId": "162760",
       "slug": "hood-college",
+      "slugAliases": [],
       "name": "Hood College",
       "shortName": "Hood",
       "aliases": [],
@@ -44694,6 +44901,7 @@
     {
       "ipedsId": "170301",
       "slug": "hope-college",
+      "slugAliases": [],
       "name": "Hope College",
       "shortName": "Hope",
       "aliases": [],
@@ -44912,6 +45120,7 @@
     {
       "ipedsId": "131520",
       "slug": "howard-university",
+      "slugAliases": [],
       "name": "Howard University",
       "shortName": "Howard",
       "aliases": [],
@@ -45130,6 +45339,7 @@
     {
       "ipedsId": "164368",
       "slug": "hult-international-business-school",
+      "slugAliases": [],
       "name": "Hult International Business School",
       "shortName": "HIBS",
       "aliases": [],
@@ -45328,6 +45538,7 @@
     {
       "ipedsId": "142276",
       "slug": "idaho-state-university",
+      "slugAliases": [],
       "name": "Idaho State University",
       "shortName": "Idaho State",
       "aliases": [],
@@ -45546,6 +45757,7 @@
     {
       "ipedsId": "145725",
       "slug": "illinois-institute-of-technology",
+      "slugAliases": [],
       "name": "Illinois Institute of Technology",
       "shortName": "IIT",
       "aliases": [],
@@ -45764,6 +45976,7 @@
     {
       "ipedsId": "145813",
       "slug": "illinois-state-university",
+      "slugAliases": [],
       "name": "Illinois State University",
       "shortName": "Illinois State",
       "aliases": [],
@@ -45982,6 +46195,7 @@
     {
       "ipedsId": "145646",
       "slug": "illinois-wesleyan-university",
+      "slugAliases": [],
       "name": "Illinois Wesleyan University",
       "shortName": "Illinois Wesleyan",
       "aliases": [],
@@ -46200,6 +46414,7 @@
     {
       "ipedsId": "151324",
       "slug": "indiana-state-university",
+      "slugAliases": [],
       "name": "Indiana State University",
       "shortName": "Indiana State",
       "aliases": [],
@@ -46418,6 +46633,7 @@
     {
       "ipedsId": "151388",
       "slug": "indiana-university-east",
+      "slugAliases": [],
       "name": "Indiana University East",
       "shortName": "Indiana University East",
       "aliases": [],
@@ -46636,6 +46852,7 @@
     {
       "ipedsId": "151351",
       "slug": "indiana-university-bloomington",
+      "slugAliases": [],
       "name": "Indiana University-Bloomington",
       "shortName": "IUB",
       "aliases": [],
@@ -46854,6 +47071,7 @@
     {
       "ipedsId": "191931",
       "slug": "iona-university",
+      "slugAliases": [],
       "name": "Iona University",
       "shortName": "Iona",
       "aliases": [],
@@ -47072,6 +47290,7 @@
     {
       "ipedsId": "153603",
       "slug": "iowa-state-university",
+      "slugAliases": [],
       "name": "Iowa State University",
       "shortName": "Iowa State",
       "aliases": [],
@@ -47290,6 +47509,7 @@
     {
       "ipedsId": "191968",
       "slug": "ithaca-college",
+      "slugAliases": [],
       "name": "Ithaca College",
       "shortName": "Ithaca",
       "aliases": [],
@@ -47508,6 +47728,7 @@
     {
       "ipedsId": "175856",
       "slug": "jackson-state-university",
+      "slugAliases": [],
       "name": "Jackson State University",
       "shortName": "Jackson State",
       "aliases": [],
@@ -47726,6 +47947,7 @@
     {
       "ipedsId": "134945",
       "slug": "jacksonville-university",
+      "slugAliases": [],
       "name": "Jacksonville University",
       "shortName": "Jacksonville",
       "aliases": [],
@@ -47944,6 +48166,7 @@
     {
       "ipedsId": "232423",
       "slug": "james-madison-university",
+      "slugAliases": [],
       "name": "James Madison University",
       "shortName": "James Madison",
       "aliases": [],
@@ -48162,6 +48385,7 @@
     {
       "ipedsId": "107141",
       "slug": "john-brown-university",
+      "slugAliases": [],
       "name": "John Brown University",
       "shortName": "John Brown",
       "aliases": [],
@@ -48361,6 +48585,7 @@
     {
       "ipedsId": "203368",
       "slug": "john-carroll-university",
+      "slugAliases": [],
       "name": "John Carroll University",
       "shortName": "John Carroll",
       "aliases": [],
@@ -48579,6 +48804,7 @@
     {
       "ipedsId": "162928",
       "slug": "johns-hopkins-university",
+      "slugAliases": [],
       "name": "Johns Hopkins University",
       "shortName": "JHU",
       "aliases": [
@@ -48809,6 +49035,7 @@
     {
       "ipedsId": "213251",
       "slug": "juniata-college",
+      "slugAliases": [],
       "name": "Juniata College",
       "shortName": "Juniata",
       "aliases": [],
@@ -49027,6 +49254,7 @@
     {
       "ipedsId": "170532",
       "slug": "kalamazoo-college",
+      "slugAliases": [],
       "name": "Kalamazoo College",
       "shortName": "Kalamazoo",
       "aliases": [],
@@ -49245,6 +49473,7 @@
     {
       "ipedsId": "155399",
       "slug": "kansas-state-university",
+      "slugAliases": [],
       "name": "Kansas State University",
       "shortName": "Kansas State",
       "aliases": [],
@@ -49463,6 +49692,7 @@
     {
       "ipedsId": "486840",
       "slug": "kennesaw-state-university",
+      "slugAliases": [],
       "name": "Kennesaw State University",
       "shortName": "Kennesaw State",
       "aliases": [],
@@ -49681,6 +49911,7 @@
     {
       "ipedsId": "203517",
       "slug": "kent-state-university",
+      "slugAliases": [],
       "name": "Kent State University",
       "shortName": "Kent State",
       "aliases": [],
@@ -49899,6 +50130,7 @@
     {
       "ipedsId": "157058",
       "slug": "kentucky-state-university",
+      "slugAliases": [],
       "name": "Kentucky State University",
       "shortName": "Kentucky State",
       "aliases": [],
@@ -50098,6 +50330,7 @@
     {
       "ipedsId": "203535",
       "slug": "kenyon-college",
+      "slugAliases": [],
       "name": "Kenyon College",
       "shortName": "Kenyon",
       "aliases": [],
@@ -50316,6 +50549,7 @@
     {
       "ipedsId": "169983",
       "slug": "kettering-university",
+      "slugAliases": [],
       "name": "Kettering University",
       "shortName": "Kettering",
       "aliases": [],
@@ -50534,6 +50768,7 @@
     {
       "ipedsId": "220516",
       "slug": "king-university",
+      "slugAliases": [],
       "name": "King University",
       "shortName": "King",
       "aliases": [],
@@ -50732,6 +50967,7 @@
     {
       "ipedsId": "146427",
       "slug": "knox-college",
+      "slugAliases": [],
       "name": "Knox College",
       "shortName": "Knox",
       "aliases": [],
@@ -50950,6 +51186,7 @@
     {
       "ipedsId": "213349",
       "slug": "kutztown-university-of-pennsylvania",
+      "slugAliases": [],
       "name": "Kutztown University of Pennsylvania",
       "shortName": "KUP",
       "aliases": [],
@@ -51168,6 +51405,7 @@
     {
       "ipedsId": "213358",
       "slug": "la-roche-university",
+      "slugAliases": [],
       "name": "La Roche University",
       "shortName": "La Roche",
       "aliases": [],
@@ -51386,6 +51624,7 @@
     {
       "ipedsId": "213385",
       "slug": "lafayette-college",
+      "slugAliases": [],
       "name": "Lafayette College",
       "shortName": "Lafayette",
       "aliases": [],
@@ -51604,6 +51843,7 @@
     {
       "ipedsId": "146481",
       "slug": "lake-forest-college",
+      "slugAliases": [],
       "name": "Lake Forest College",
       "shortName": "Lake Forest",
       "aliases": [],
@@ -51822,6 +52062,7 @@
     {
       "ipedsId": "170639",
       "slug": "lake-superior-state-university",
+      "slugAliases": [],
       "name": "Lake Superior State University",
       "shortName": "Lake Superior State",
       "aliases": [],
@@ -52040,6 +52281,7 @@
     {
       "ipedsId": "226091",
       "slug": "lamar-university",
+      "slugAliases": [],
       "name": "Lamar University",
       "shortName": "Lamar",
       "aliases": [],
@@ -52258,6 +52500,7 @@
     {
       "ipedsId": "170675",
       "slug": "lawrence-technological-university",
+      "slugAliases": [],
       "name": "Lawrence Technological University",
       "shortName": "Lawrence Technological",
       "aliases": [],
@@ -52476,6 +52719,7 @@
     {
       "ipedsId": "239017",
       "slug": "lawrence-university",
+      "slugAliases": [],
       "name": "Lawrence University",
       "shortName": "Lawrence",
       "aliases": [],
@@ -52694,6 +52938,7 @@
     {
       "ipedsId": "192323",
       "slug": "le-moyne-college",
+      "slugAliases": [],
       "name": "Le Moyne College",
       "shortName": "Le Moyne",
       "aliases": [],
@@ -52912,6 +53157,7 @@
     {
       "ipedsId": "213543",
       "slug": "lehigh-university",
+      "slugAliases": [],
       "name": "Lehigh University",
       "shortName": "Lehigh",
       "aliases": [],
@@ -53130,6 +53376,7 @@
     {
       "ipedsId": "226231",
       "slug": "letourneau-university",
+      "slugAliases": [],
       "name": "LeTourneau University",
       "shortName": "LeTourneau",
       "aliases": [],
@@ -53329,6 +53576,7 @@
     {
       "ipedsId": "209056",
       "slug": "lewis-and-clark-college",
+      "slugAliases": [],
       "name": "Lewis & Clark College",
       "shortName": "Lewis & Clark",
       "aliases": [],
@@ -53547,6 +53795,7 @@
     {
       "ipedsId": "232557",
       "slug": "liberty-university",
+      "slugAliases": [],
       "name": "Liberty University",
       "shortName": "Liberty",
       "aliases": [],
@@ -53746,6 +53995,7 @@
     {
       "ipedsId": "220631",
       "slug": "lincoln-memorial-university",
+      "slugAliases": [],
       "name": "Lincoln Memorial University",
       "shortName": "Lincoln Memorial",
       "aliases": [],
@@ -53945,6 +54195,7 @@
     {
       "ipedsId": "213598",
       "slug": "lincoln-university-pennsylvania",
+      "slugAliases": [],
       "name": "Lincoln University Pennsylvania",
       "shortName": "LUP",
       "aliases": [],
@@ -54163,6 +54414,7 @@
     {
       "ipedsId": "177968",
       "slug": "lindenwood-university",
+      "slugAliases": [],
       "name": "Lindenwood University",
       "shortName": "Lindenwood",
       "aliases": [],
@@ -54381,6 +54633,7 @@
     {
       "ipedsId": "209065",
       "slug": "linfield-university",
+      "slugAliases": [],
       "name": "Linfield University",
       "shortName": "Linfield",
       "aliases": [],
@@ -54599,6 +54852,7 @@
     {
       "ipedsId": "219976",
       "slug": "lipscomb-university",
+      "slugAliases": [],
       "name": "Lipscomb University",
       "shortName": "Lipscomb",
       "aliases": [],
@@ -54798,6 +55052,7 @@
     {
       "ipedsId": "192448",
       "slug": "long-island-university-liu-post",
+      "slugAliases": [],
       "name": "Long Island University - LIU Post",
       "shortName": "LIULP",
       "aliases": [],
@@ -54996,6 +55251,7 @@
     {
       "ipedsId": "232566",
       "slug": "longwood-university",
+      "slugAliases": [],
       "name": "Longwood University",
       "shortName": "Longwood",
       "aliases": [],
@@ -55194,6 +55450,7 @@
     {
       "ipedsId": "159391",
       "slug": "louisiana-state-university",
+      "slugAliases": [],
       "name": "Louisiana State University",
       "shortName": "Louisiana State",
       "aliases": [],
@@ -55412,6 +55669,7 @@
     {
       "ipedsId": "159647",
       "slug": "louisiana-tech-university",
+      "slugAliases": [],
       "name": "Louisiana Tech University",
       "shortName": "Louisiana Tech",
       "aliases": [],
@@ -55610,6 +55868,7 @@
     {
       "ipedsId": "117946",
       "slug": "loyola-marymount-university",
+      "slugAliases": [],
       "name": "Loyola Marymount University",
       "shortName": "Loyola Marymount",
       "aliases": [],
@@ -55828,6 +56087,7 @@
     {
       "ipedsId": "146719",
       "slug": "loyola-university-chicago",
+      "slugAliases": [],
       "name": "Loyola University Chicago",
       "shortName": "LUC",
       "aliases": [],
@@ -56046,6 +56306,7 @@
     {
       "ipedsId": "163046",
       "slug": "loyola-university-maryland",
+      "slugAliases": [],
       "name": "Loyola University Maryland",
       "shortName": "LUM",
       "aliases": [],
@@ -56264,6 +56525,7 @@
     {
       "ipedsId": "159656",
       "slug": "loyola-university-new-orleans",
+      "slugAliases": [],
       "name": "Loyola University New Orleans",
       "shortName": "LUNO",
       "aliases": [],
@@ -56482,6 +56744,7 @@
     {
       "ipedsId": "153834",
       "slug": "luther-college",
+      "slugAliases": [],
       "name": "Luther College",
       "shortName": "Luther",
       "aliases": [],
@@ -56700,6 +56963,7 @@
     {
       "ipedsId": "213668",
       "slug": "lycoming-college",
+      "slugAliases": [],
       "name": "Lycoming College",
       "shortName": "Lycoming",
       "aliases": [],
@@ -56918,6 +57182,7 @@
     {
       "ipedsId": "132657",
       "slug": "lynn-university",
+      "slugAliases": [],
       "name": "Lynn University",
       "shortName": "Lynn",
       "aliases": [],
@@ -57136,6 +57401,7 @@
     {
       "ipedsId": "106342",
       "slug": "lyon-college",
+      "slugAliases": [],
       "name": "Lyon College",
       "shortName": "Lyon",
       "aliases": [],
@@ -57334,6 +57600,7 @@
     {
       "ipedsId": "173902",
       "slug": "macalester-college",
+      "slugAliases": [],
       "name": "Macalester College",
       "shortName": "Macalester",
       "aliases": [],
@@ -57552,6 +57819,7 @@
     {
       "ipedsId": "192703",
       "slug": "manhattan-college",
+      "slugAliases": [],
       "name": "Manhattan College",
       "shortName": "Manhattan",
       "aliases": [],
@@ -57770,6 +58038,7 @@
     {
       "ipedsId": "192749",
       "slug": "manhattanville-college",
+      "slugAliases": [],
       "name": "Manhattanville College",
       "shortName": "Manhattanville",
       "aliases": [],
@@ -57988,6 +58257,7 @@
     {
       "ipedsId": "192819",
       "slug": "marist-college",
+      "slugAliases": [],
       "name": "Marist College",
       "shortName": "Marist",
       "aliases": [],
@@ -58206,6 +58476,7 @@
     {
       "ipedsId": "239105",
       "slug": "marquette-university",
+      "slugAliases": [],
       "name": "Marquette University",
       "shortName": "Marquette",
       "aliases": [],
@@ -58424,6 +58695,7 @@
     {
       "ipedsId": "237525",
       "slug": "marshall-university",
+      "slugAliases": [],
       "name": "Marshall University",
       "shortName": "Marshall",
       "aliases": [],
@@ -58642,6 +58914,7 @@
     {
       "ipedsId": "232672",
       "slug": "mary-baldwin-university",
+      "slugAliases": [],
       "name": "Mary Baldwin University",
       "shortName": "Mary Baldwin",
       "aliases": [],
@@ -58860,6 +59133,7 @@
     {
       "ipedsId": "178059",
       "slug": "maryville-university-of-saint-louis",
+      "slugAliases": [],
       "name": "Maryville University of Saint Louis",
       "shortName": "MUSL",
       "aliases": [],
@@ -59078,6 +59352,7 @@
     {
       "ipedsId": "166683",
       "slug": "massachusetts-institute-of-technology-mit",
+      "slugAliases": [],
       "name": "Massachusetts Institute of Technology (MIT)",
       "shortName": "MIT",
       "aliases": [
@@ -59318,6 +59593,7 @@
     {
       "ipedsId": "164270",
       "slug": "mcdaniel-college",
+      "slugAliases": [],
       "name": "McDaniel College",
       "shortName": "McDaniel",
       "aliases": [],
@@ -59536,6 +59812,7 @@
     {
       "ipedsId": "140447",
       "slug": "mercer-university",
+      "slugAliases": [],
       "name": "Mercer University",
       "shortName": "Mercer",
       "aliases": [],
@@ -59754,6 +60031,7 @@
     {
       "ipedsId": "213987",
       "slug": "mercyhurst-university",
+      "slugAliases": [],
       "name": "Mercyhurst University",
       "shortName": "Mercyhurst",
       "aliases": [],
@@ -59953,6 +60231,7 @@
     {
       "ipedsId": "198950",
       "slug": "meredith-college",
+      "slugAliases": [],
       "name": "Meredith College",
       "shortName": "Meredith",
       "aliases": [],
@@ -60171,6 +60450,7 @@
     {
       "ipedsId": "198969",
       "slug": "methodist-university",
+      "slugAliases": [],
       "name": "Methodist University",
       "shortName": "Methodist",
       "aliases": [],
@@ -60370,6 +60650,7 @@
     {
       "ipedsId": "204024",
       "slug": "miami-university-ohio",
+      "slugAliases": [],
       "name": "Miami University-Ohio",
       "shortName": "Miami University-Ohio",
       "aliases": [],
@@ -60588,6 +60869,7 @@
     {
       "ipedsId": "171100",
       "slug": "michigan-state-university",
+      "slugAliases": [],
       "name": "Michigan State University",
       "shortName": "Michigan State",
       "aliases": [],
@@ -60816,6 +61098,7 @@
     {
       "ipedsId": "171128",
       "slug": "michigan-technological-university",
+      "slugAliases": [],
       "name": "Michigan Technological University",
       "shortName": "Michigan Technological",
       "aliases": [],
@@ -61034,6 +61317,7 @@
     {
       "ipedsId": "220978",
       "slug": "middle-tennessee-state-university",
+      "slugAliases": [],
       "name": "Middle Tennessee State University",
       "shortName": "Middle Tennessee State",
       "aliases": [],
@@ -61252,6 +61536,7 @@
     {
       "ipedsId": "230959",
       "slug": "middlebury-college",
+      "slugAliases": [],
       "name": "Middlebury College",
       "shortName": "Middlebury",
       "aliases": [],
@@ -61461,6 +61746,7 @@
     {
       "ipedsId": "157377",
       "slug": "midway-university",
+      "slugAliases": [],
       "name": "Midway University",
       "shortName": "Midway",
       "aliases": [],
@@ -61679,6 +61965,7 @@
     {
       "ipedsId": "486901",
       "slug": "milligan-university",
+      "slugAliases": [],
       "name": "Milligan University",
       "shortName": "Milligan",
       "aliases": [],
@@ -61878,6 +62165,7 @@
     {
       "ipedsId": "147244",
       "slug": "millikin-university",
+      "slugAliases": [],
       "name": "Millikin University",
       "shortName": "Millikin",
       "aliases": [],
@@ -62096,6 +62384,7 @@
     {
       "ipedsId": "175980",
       "slug": "millsaps-college",
+      "slugAliases": [],
       "name": "Millsaps College",
       "shortName": "Millsaps",
       "aliases": [],
@@ -62314,6 +62603,7 @@
     {
       "ipedsId": "239318",
       "slug": "milwaukee-school-of-engineering",
+      "slugAliases": [],
       "name": "Milwaukee School of Engineering",
       "shortName": "MSE",
       "aliases": [],
@@ -62532,6 +62822,7 @@
     {
       "ipedsId": "173920",
       "slug": "minnesota-state-university-mankato",
+      "slugAliases": [],
       "name": "Minnesota State University-Mankato",
       "shortName": "MSUM",
       "aliases": [],
@@ -62750,6 +63041,7 @@
     {
       "ipedsId": "174358",
       "slug": "minnesota-state-university-moorhead",
+      "slugAliases": [],
       "name": "Minnesota State University-Moorhead",
       "shortName": "MSUM",
       "aliases": [],
@@ -62949,6 +63241,7 @@
     {
       "ipedsId": "200253",
       "slug": "minot-state-university",
+      "slugAliases": [],
       "name": "Minot State University",
       "shortName": "Minot State",
       "aliases": [],
@@ -63167,6 +63460,7 @@
     {
       "ipedsId": "176080",
       "slug": "mississippi-state-university",
+      "slugAliases": [],
       "name": "Mississippi State University",
       "shortName": "Mississippi State",
       "aliases": [],
@@ -63385,6 +63679,7 @@
     {
       "ipedsId": "179566",
       "slug": "missouri-state-university-springfield",
+      "slugAliases": [],
       "name": "Missouri State University-Springfield",
       "shortName": "MSUS",
       "aliases": [],
@@ -63603,6 +63898,7 @@
     {
       "ipedsId": "178411",
       "slug": "missouri-university-of-science-and-technology",
+      "slugAliases": [],
       "name": "Missouri University of Science and Technology",
       "shortName": "MUST",
       "aliases": [],
@@ -63821,6 +64117,7 @@
     {
       "ipedsId": "185572",
       "slug": "monmouth-university",
+      "slugAliases": [],
       "name": "Monmouth University",
       "shortName": "Monmouth",
       "aliases": [],
@@ -64020,6 +64317,7 @@
     {
       "ipedsId": "180461",
       "slug": "montana-state-university",
+      "slugAliases": [],
       "name": "Montana State University",
       "shortName": "Montana State",
       "aliases": [],
@@ -64238,6 +64536,7 @@
     {
       "ipedsId": "185590",
       "slug": "montclair-state-university",
+      "slugAliases": [],
       "name": "Montclair State University",
       "shortName": "Montclair State",
       "aliases": [],
@@ -64456,6 +64755,7 @@
     {
       "ipedsId": "214157",
       "slug": "moravian-university",
+      "slugAliases": [],
       "name": "Moravian University",
       "shortName": "Moravian",
       "aliases": [],
@@ -64674,6 +64974,7 @@
     {
       "ipedsId": "157386",
       "slug": "morehead-state-university",
+      "slugAliases": [],
       "name": "Morehead State University",
       "shortName": "Morehead State",
       "aliases": [],
@@ -64892,6 +65193,7 @@
     {
       "ipedsId": "140553",
       "slug": "morehouse-college",
+      "slugAliases": [],
       "name": "Morehouse College",
       "shortName": "Morehouse",
       "aliases": [],
@@ -65109,6 +65411,7 @@
     {
       "ipedsId": "154004",
       "slug": "morningside-university",
+      "slugAliases": [],
       "name": "Morningside University",
       "shortName": "Morningside",
       "aliases": [],
@@ -65307,6 +65610,7 @@
     {
       "ipedsId": "166939",
       "slug": "mount-holyoke-college",
+      "slugAliases": [],
       "name": "Mount Holyoke College",
       "shortName": "Mount Holyoke",
       "aliases": [],
@@ -65525,6 +65829,7 @@
     {
       "ipedsId": "163462",
       "slug": "mount-st-mary-s-university",
+      "slugAliases": [],
       "name": "Mount St. Mary's University",
       "shortName": "Mount St. Mary's",
       "aliases": [],
@@ -65742,6 +66047,7 @@
     {
       "ipedsId": "214175",
       "slug": "muhlenberg-college",
+      "slugAliases": [],
       "name": "Muhlenberg College",
       "shortName": "Muhlenberg",
       "aliases": [],
@@ -65960,6 +66266,7 @@
     {
       "ipedsId": "157401",
       "slug": "murray-state-university",
+      "slugAliases": [],
       "name": "Murray State University",
       "shortName": "Murray State",
       "aliases": [],
@@ -66178,6 +66485,7 @@
     {
       "ipedsId": "262129",
       "slug": "new-college-of-florida",
+      "slugAliases": [],
       "name": "New College of Florida",
       "shortName": "New College of Florida",
       "aliases": [],
@@ -66396,6 +66704,7 @@
     {
       "ipedsId": "185828",
       "slug": "new-jersey-institute-of-technology-njit",
+      "slugAliases": [],
       "name": "New Jersey Institute of Technology (NJIT)",
       "shortName": "NJIT",
       "aliases": [
@@ -66616,6 +66925,7 @@
     {
       "ipedsId": "188030",
       "slug": "new-mexico-state-university",
+      "slugAliases": [],
       "name": "New Mexico State University",
       "shortName": "New Mexico State",
       "aliases": [],
@@ -66834,6 +67144,7 @@
     {
       "ipedsId": "194091",
       "slug": "new-york-institute-of-technology-nyit",
+      "slugAliases": [],
       "name": "New York Institute of Technology (NYIT)",
       "shortName": "NYIT",
       "aliases": [
@@ -67054,6 +67365,7 @@
     {
       "ipedsId": "193900",
       "slug": "new-york-university-nyu",
+      "slugAliases": [],
       "name": "New York University (NYU)",
       "shortName": "NYU",
       "aliases": [
@@ -67265,6 +67577,7 @@
     {
       "ipedsId": "218414",
       "slug": "newberry-college",
+      "slugAliases": [],
       "name": "Newberry College",
       "shortName": "Newberry",
       "aliases": [],
@@ -67464,6 +67777,7 @@
     {
       "ipedsId": "199102",
       "slug": "north-carolina-a-and-t",
+      "slugAliases": [],
       "name": "North Carolina A&T",
       "shortName": "North Carolina A&T",
       "aliases": [],
@@ -67682,6 +67996,7 @@
     {
       "ipedsId": "199193",
       "slug": "north-carolina-state-university-raleigh",
+      "slugAliases": [],
       "name": "North Carolina State University-Raleigh",
       "shortName": "NCSUR",
       "aliases": [],
@@ -67900,6 +68215,7 @@
     {
       "ipedsId": "199209",
       "slug": "north-carolina-wesleyan-university",
+      "slugAliases": [],
       "name": "North Carolina Wesleyan University",
       "shortName": "North Carolina Wesleyan",
       "aliases": [],
@@ -68099,6 +68415,7 @@
     {
       "ipedsId": "200332",
       "slug": "north-dakota-state-university",
+      "slugAliases": [],
       "name": "North Dakota State University",
       "shortName": "North Dakota State",
       "aliases": [],
@@ -68317,6 +68634,7 @@
     {
       "ipedsId": "167358",
       "slug": "northeastern-university",
+      "slugAliases": [],
       "name": "Northeastern University",
       "shortName": "Northeastern",
       "aliases": [],
@@ -68535,6 +68853,7 @@
     {
       "ipedsId": "105330",
       "slug": "northern-arizona-university",
+      "slugAliases": [],
       "name": "Northern Arizona University",
       "shortName": "Northern Arizona",
       "aliases": [],
@@ -68753,6 +69072,7 @@
     {
       "ipedsId": "147703",
       "slug": "northern-illinois-university",
+      "slugAliases": [],
       "name": "Northern Illinois University",
       "shortName": "Northern Illinois",
       "aliases": [],
@@ -68971,6 +69291,7 @@
     {
       "ipedsId": "157447",
       "slug": "northern-kentucky-university",
+      "slugAliases": [],
       "name": "Northern Kentucky University",
       "shortName": "Northern Kentucky",
       "aliases": [],
@@ -69189,6 +69510,7 @@
     {
       "ipedsId": "147767",
       "slug": "northwestern-university",
+      "slugAliases": [],
       "name": "Northwestern University",
       "shortName": "Northwestern",
       "aliases": [],
@@ -69417,6 +69739,7 @@
     {
       "ipedsId": "136215",
       "slug": "nova-southeastern-university",
+      "slugAliases": [],
       "name": "Nova Southeastern University",
       "shortName": "Nova Southeastern",
       "aliases": [],
@@ -69616,6 +69939,7 @@
     {
       "ipedsId": "152099",
       "slug": "oakland-city-university",
+      "slugAliases": [],
       "name": "Oakland City University",
       "shortName": "Oakland City",
       "aliases": [],
@@ -69814,6 +70138,7 @@
     {
       "ipedsId": "204501",
       "slug": "oberlin-college",
+      "slugAliases": [],
       "name": "Oberlin College",
       "shortName": "Oberlin",
       "aliases": [],
@@ -70032,6 +70357,7 @@
     {
       "ipedsId": "120254",
       "slug": "occidental-college",
+      "slugAliases": [],
       "name": "Occidental College",
       "shortName": "Occidental",
       "aliases": [],
@@ -70250,6 +70576,7 @@
     {
       "ipedsId": "140696",
       "slug": "oglethorpe-university",
+      "slugAliases": [],
       "name": "Oglethorpe University",
       "shortName": "Oglethorpe",
       "aliases": [],
@@ -70449,6 +70776,7 @@
     {
       "ipedsId": "204635",
       "slug": "ohio-northern-university",
+      "slugAliases": [],
       "name": "Ohio Northern University",
       "shortName": "Ohio Northern",
       "aliases": [],
@@ -70666,6 +70994,7 @@
     {
       "ipedsId": "204796",
       "slug": "ohio-state-university",
+      "slugAliases": [],
       "name": "Ohio State University",
       "shortName": "Ohio State",
       "aliases": [],
@@ -70884,6 +71213,7 @@
     {
       "ipedsId": "204857",
       "slug": "ohio-university",
+      "slugAliases": [],
       "name": "Ohio University",
       "shortName": "Ohio",
       "aliases": [],
@@ -71102,6 +71432,7 @@
     {
       "ipedsId": "204909",
       "slug": "ohio-wesleyan-university",
+      "slugAliases": [],
       "name": "Ohio Wesleyan University",
       "shortName": "Ohio Wesleyan",
       "aliases": [],
@@ -71320,6 +71651,7 @@
     {
       "ipedsId": "207403",
       "slug": "oklahoma-baptist-university",
+      "slugAliases": [],
       "name": "Oklahoma Baptist University",
       "shortName": "Oklahoma Baptist",
       "aliases": [],
@@ -71519,6 +71851,7 @@
     {
       "ipedsId": "207458",
       "slug": "oklahoma-city-university",
+      "slugAliases": [],
       "name": "Oklahoma City University",
       "shortName": "Oklahoma City",
       "aliases": [],
@@ -71737,6 +72070,7 @@
     {
       "ipedsId": "207388",
       "slug": "oklahoma-state-university",
+      "slugAliases": [],
       "name": "Oklahoma State University",
       "shortName": "Oklahoma State",
       "aliases": [],
@@ -71955,6 +72289,7 @@
     {
       "ipedsId": "232982",
       "slug": "old-dominion-university",
+      "slugAliases": [],
       "name": "Old Dominion University",
       "shortName": "Old Dominion",
       "aliases": [],
@@ -72173,6 +72508,7 @@
     {
       "ipedsId": "147828",
       "slug": "olivet-nazarene-university",
+      "slugAliases": [],
       "name": "Olivet Nazarene University",
       "shortName": "Olivet Nazarene",
       "aliases": [],
@@ -72371,6 +72707,7 @@
     {
       "ipedsId": "209542",
       "slug": "oregon-state-university",
+      "slugAliases": [],
       "name": "Oregon State University",
       "shortName": "Oregon State",
       "aliases": [],
@@ -72589,6 +72926,7 @@
     {
       "ipedsId": "204936",
       "slug": "otterbein-university",
+      "slugAliases": [],
       "name": "Otterbein University",
       "shortName": "Otterbein",
       "aliases": [],
@@ -72807,6 +73145,7 @@
     {
       "ipedsId": "194310",
       "slug": "pace-university",
+      "slugAliases": [],
       "name": "Pace University",
       "shortName": "Pace",
       "aliases": [],
@@ -73025,6 +73364,7 @@
     {
       "ipedsId": "236230",
       "slug": "pacific-lutheran-university",
+      "slugAliases": [],
       "name": "Pacific Lutheran University",
       "shortName": "Pacific Lutheran",
       "aliases": [],
@@ -73243,6 +73583,7 @@
     {
       "ipedsId": "214777",
       "slug": "pennsylvania-state-university-university-park",
+      "slugAliases": [],
       "name": "Pennsylvania State University-University Park",
       "shortName": "Penn State",
       "aliases": [
@@ -73473,6 +73814,7 @@
     {
       "ipedsId": "121150",
       "slug": "pepperdine-university",
+      "slugAliases": [],
       "name": "Pepperdine University",
       "shortName": "Pepperdine",
       "aliases": [],
@@ -73691,6 +74033,7 @@
     {
       "ipedsId": "140818",
       "slug": "piedmont-university",
+      "slugAliases": [],
       "name": "Piedmont University",
       "shortName": "Piedmont",
       "aliases": [],
@@ -73909,6 +74252,7 @@
     {
       "ipedsId": "121257",
       "slug": "pitzer-college",
+      "slugAliases": [],
       "name": "Pitzer College",
       "shortName": "Pitzer",
       "aliases": [],
@@ -74160,6 +74504,7 @@
     {
       "ipedsId": "121345",
       "slug": "pomona-college",
+      "slugAliases": [],
       "name": "Pomona College",
       "shortName": "Pomona",
       "aliases": [],
@@ -74369,6 +74714,7 @@
     {
       "ipedsId": "209807",
       "slug": "portland-state-university",
+      "slugAliases": [],
       "name": "Portland State University",
       "shortName": "Portland State",
       "aliases": [],
@@ -74587,6 +74933,7 @@
     {
       "ipedsId": "194578",
       "slug": "pratt-institute",
+      "slugAliases": [],
       "name": "Pratt Institute",
       "shortName": "Pratt Institute",
       "aliases": [],
@@ -74805,6 +75152,7 @@
     {
       "ipedsId": "186131",
       "slug": "princeton-university",
+      "slugAliases": [],
       "name": "Princeton University",
       "shortName": "Princeton",
       "aliases": [],
@@ -75044,6 +75392,7 @@
     {
       "ipedsId": "148016",
       "slug": "principia-college",
+      "slugAliases": [],
       "name": "Principia College",
       "shortName": "Principia",
       "aliases": [],
@@ -75262,6 +75611,7 @@
     {
       "ipedsId": "217402",
       "slug": "providence-college",
+      "slugAliases": [],
       "name": "Providence College",
       "shortName": "Providence",
       "aliases": [],
@@ -75480,6 +75830,7 @@
     {
       "ipedsId": "151102",
       "slug": "purdue-university-fort-wayne",
+      "slugAliases": [],
       "name": "Purdue University-Fort Wayne",
       "shortName": "PUFW",
       "aliases": [],
@@ -75698,6 +76049,7 @@
     {
       "ipedsId": "490805",
       "slug": "purdue-university-northwest",
+      "slugAliases": [],
       "name": "Purdue University-Northwest",
       "shortName": "PUN",
       "aliases": [],
@@ -75897,6 +76249,7 @@
     {
       "ipedsId": "243780",
       "slug": "purdue-university-west-lafayette",
+      "slugAliases": [],
       "name": "Purdue University-West Lafayette",
       "shortName": "PUWL",
       "aliases": [],
@@ -76125,6 +76478,7 @@
     {
       "ipedsId": "199412",
       "slug": "queens-university-of-charlotte",
+      "slugAliases": [],
       "name": "Queens University of Charlotte",
       "shortName": "QUC",
       "aliases": [],
@@ -76343,6 +76697,7 @@
     {
       "ipedsId": "130226",
       "slug": "quinnipiac-university",
+      "slugAliases": [],
       "name": "Quinnipiac University",
       "shortName": "Quinnipiac",
       "aliases": [],
@@ -76561,6 +76916,7 @@
     {
       "ipedsId": "186201",
       "slug": "ramapo-college-of-new-jersey",
+      "slugAliases": [],
       "name": "Ramapo College of New Jersey",
       "shortName": "RCNJ",
       "aliases": [],
@@ -76779,6 +77135,7 @@
     {
       "ipedsId": "233301",
       "slug": "randolph-college",
+      "slugAliases": [],
       "name": "Randolph College",
       "shortName": "Randolph",
       "aliases": [],
@@ -76997,6 +77354,7 @@
     {
       "ipedsId": "233295",
       "slug": "randolph-macon-college",
+      "slugAliases": [],
       "name": "Randolph-Macon College",
       "shortName": "Randolph-Macon",
       "aliases": [],
@@ -77215,6 +77573,7 @@
     {
       "ipedsId": "209922",
       "slug": "reed-college",
+      "slugAliases": [],
       "name": "Reed College",
       "shortName": "Reed",
       "aliases": [],
@@ -77414,6 +77773,7 @@
     {
       "ipedsId": "127918",
       "slug": "regis-university",
+      "slugAliases": [],
       "name": "Regis University",
       "shortName": "Regis",
       "aliases": [],
@@ -77632,6 +77992,7 @@
     {
       "ipedsId": "194824",
       "slug": "rensselaer-polytechnic-institute-rpi",
+      "slugAliases": [],
       "name": "Rensselaer Polytechnic Institute (RPI)",
       "shortName": "RPI",
       "aliases": [
@@ -77852,6 +78213,7 @@
     {
       "ipedsId": "217493",
       "slug": "rhode-island-school-of-design",
+      "slugAliases": [],
       "name": "Rhode Island School of Design",
       "shortName": "RISD",
       "aliases": [],
@@ -78050,6 +78412,7 @@
     {
       "ipedsId": "221351",
       "slug": "rhodes-college",
+      "slugAliases": [],
       "name": "Rhodes College",
       "shortName": "Rhodes",
       "aliases": [],
@@ -78268,6 +78631,7 @@
     {
       "ipedsId": "227757",
       "slug": "rice-university",
+      "slugAliases": [],
       "name": "Rice University",
       "shortName": "Rice",
       "aliases": [],
@@ -78496,6 +78860,7 @@
     {
       "ipedsId": "186283",
       "slug": "rider-university",
+      "slugAliases": [],
       "name": "Rider University",
       "shortName": "Rider",
       "aliases": [],
@@ -78714,6 +79079,7 @@
     {
       "ipedsId": "136774",
       "slug": "ringling-college-of-art-and-design",
+      "slugAliases": [],
       "name": "Ringling College of Art and Design",
       "shortName": "RCAD",
       "aliases": [],
@@ -78913,6 +79279,7 @@
     {
       "ipedsId": "239628",
       "slug": "ripon-college",
+      "slugAliases": [],
       "name": "Ripon College",
       "shortName": "Ripon",
       "aliases": [],
@@ -79131,6 +79498,7 @@
     {
       "ipedsId": "233426",
       "slug": "roanoke-college",
+      "slugAliases": [],
       "name": "Roanoke College",
       "shortName": "Roanoke",
       "aliases": [],
@@ -79349,6 +79717,7 @@
     {
       "ipedsId": "215655",
       "slug": "robert-morris-university",
+      "slugAliases": [],
       "name": "Robert Morris University",
       "shortName": "Robert Morris",
       "aliases": [],
@@ -79547,6 +79916,7 @@
     {
       "ipedsId": "195003",
       "slug": "rochester-institute-of-technology-rit",
+      "slugAliases": [],
       "name": "Rochester Institute of Technology (RIT)",
       "shortName": "RIT",
       "aliases": [
@@ -79767,6 +80137,7 @@
     {
       "ipedsId": "179043",
       "slug": "rockhurst-university",
+      "slugAliases": [],
       "name": "Rockhurst University",
       "shortName": "Rockhurst",
       "aliases": [],
@@ -79985,6 +80356,7 @@
     {
       "ipedsId": "180595",
       "slug": "rocky-mountain-college",
+      "slugAliases": [],
       "name": "Rocky Mountain College",
       "shortName": "Rocky Mountain",
       "aliases": [],
@@ -80203,6 +80575,7 @@
     {
       "ipedsId": "136950",
       "slug": "rollins-college",
+      "slugAliases": [],
       "name": "Rollins College",
       "shortName": "Rollins",
       "aliases": [],
@@ -80421,6 +80794,7 @@
     {
       "ipedsId": "152318",
       "slug": "rose-hulman-institute-of-technology",
+      "slugAliases": [],
       "name": "Rose-Hulman Institute of Technology",
       "shortName": "RHIT",
       "aliases": [],
@@ -80639,6 +81013,7 @@
     {
       "ipedsId": "184782",
       "slug": "rowan-university",
+      "slugAliases": [],
       "name": "Rowan University",
       "shortName": "Rowan",
       "aliases": [],
@@ -80857,6 +81232,7 @@
     {
       "ipedsId": "195128",
       "slug": "russell-sage-college",
+      "slugAliases": [],
       "name": "Russell Sage College",
       "shortName": "Russell Sage",
       "aliases": [],
@@ -81074,6 +81450,7 @@
     {
       "ipedsId": "186371",
       "slug": "rutgers-university-camden",
+      "slugAliases": [],
       "name": "Rutgers University-Camden",
       "shortName": "RUC",
       "aliases": [],
@@ -81292,6 +81669,7 @@
     {
       "ipedsId": "186380",
       "slug": "rutgers-university-new-brunswick",
+      "slugAliases": [],
       "name": "Rutgers University-New Brunswick",
       "shortName": "RUNB",
       "aliases": [],
@@ -81510,6 +81888,7 @@
     {
       "ipedsId": "186399",
       "slug": "rutgers-university-newark",
+      "slugAliases": [],
       "name": "Rutgers University-Newark",
       "shortName": "RUN",
       "aliases": [],
@@ -81728,6 +82107,7 @@
     {
       "ipedsId": "130253",
       "slug": "sacred-heart-university",
+      "slugAliases": [],
       "name": "Sacred Heart University",
       "shortName": "Sacred Heart",
       "aliases": [],
@@ -81946,6 +82326,7 @@
     {
       "ipedsId": "172051",
       "slug": "saginaw-valley-state-university",
+      "slugAliases": [],
       "name": "Saginaw Valley State University",
       "shortName": "Saginaw Valley State",
       "aliases": [],
@@ -82164,6 +82545,7 @@
     {
       "ipedsId": "183239",
       "slug": "saint-anselm-college",
+      "slugAliases": [],
       "name": "Saint Anselm College",
       "shortName": "Saint Anselm",
       "aliases": [],
@@ -82382,6 +82764,7 @@
     {
       "ipedsId": "174792",
       "slug": "saint-john-s-university-mn",
+      "slugAliases": [],
       "name": "Saint John's University MN",
       "shortName": "SJSUM",
       "aliases": [],
@@ -82600,6 +82983,7 @@
     {
       "ipedsId": "215770",
       "slug": "saint-joseph-s-university",
+      "slugAliases": [],
       "name": "Saint Joseph's University",
       "shortName": "Saint Joseph's",
       "aliases": [],
@@ -82818,6 +83202,7 @@
     {
       "ipedsId": "137032",
       "slug": "saint-leo-university",
+      "slugAliases": [],
       "name": "Saint Leo University",
       "shortName": "Saint Leo",
       "aliases": [],
@@ -83036,6 +83421,7 @@
     {
       "ipedsId": "179159",
       "slug": "saint-louis-university",
+      "slugAliases": [],
       "name": "Saint Louis University",
       "shortName": "Saint Louis",
       "aliases": [],
@@ -83254,6 +83640,7 @@
     {
       "ipedsId": "123554",
       "slug": "saint-mary-s-college-of-california",
+      "slugAliases": [],
       "name": "Saint Mary's College of California",
       "shortName": "SMSCC",
       "aliases": [],
@@ -83472,6 +83859,7 @@
     {
       "ipedsId": "231059",
       "slug": "saint-michael-s-college",
+      "slugAliases": [],
       "name": "Saint Michael's College",
       "shortName": "Saint Michael's",
       "aliases": [],
@@ -83690,6 +84078,7 @@
     {
       "ipedsId": "217536",
       "slug": "salve-regina-university",
+      "slugAliases": [],
       "name": "Salve Regina University",
       "shortName": "Salve Regina",
       "aliases": [],
@@ -83889,6 +84278,7 @@
     {
       "ipedsId": "227881",
       "slug": "sam-houston-state-university",
+      "slugAliases": [],
       "name": "Sam Houston State University",
       "shortName": "Sam Houston State",
       "aliases": [],
@@ -84107,6 +84497,7 @@
     {
       "ipedsId": "102049",
       "slug": "samford-university",
+      "slugAliases": [],
       "name": "Samford University",
       "shortName": "Samford",
       "aliases": [],
@@ -84325,6 +84716,7 @@
     {
       "ipedsId": "122409",
       "slug": "san-diego-state-university",
+      "slugAliases": [],
       "name": "San Diego State University",
       "shortName": "San Diego State",
       "aliases": [],
@@ -84543,6 +84935,7 @@
     {
       "ipedsId": "122597",
       "slug": "san-francisco-state-university",
+      "slugAliases": [],
       "name": "San Francisco State University",
       "shortName": "San Francisco State",
       "aliases": [],
@@ -84741,6 +85134,7 @@
     {
       "ipedsId": "122755",
       "slug": "san-jose-state-university",
+      "slugAliases": [],
       "name": "San Jose State University",
       "shortName": "San Jose State",
       "aliases": [],
@@ -84959,6 +85353,7 @@
     {
       "ipedsId": "122931",
       "slug": "santa-clara-university",
+      "slugAliases": [],
       "name": "Santa Clara University",
       "shortName": "Santa Clara",
       "aliases": [],
@@ -85177,6 +85572,7 @@
     {
       "ipedsId": "195304",
       "slug": "sarah-lawrence-college",
+      "slugAliases": [],
       "name": "Sarah Lawrence College",
       "shortName": "Sarah Lawrence",
       "aliases": [],
@@ -85395,6 +85791,7 @@
     {
       "ipedsId": "140951",
       "slug": "savannah-college-of-art-and-design",
+      "slugAliases": [],
       "name": "Savannah College of Art and Design",
       "shortName": "SCAD",
       "aliases": [],
@@ -85594,6 +85991,7 @@
     {
       "ipedsId": "123165",
       "slug": "scripps-college",
+      "slugAliases": [],
       "name": "Scripps College",
       "shortName": "Scripps",
       "aliases": [],
@@ -85812,6 +86210,7 @@
     {
       "ipedsId": "236595",
       "slug": "seattle-university",
+      "slugAliases": [],
       "name": "Seattle University",
       "shortName": "Seattle",
       "aliases": [],
@@ -86030,6 +86429,7 @@
     {
       "ipedsId": "186584",
       "slug": "seton-hall-university",
+      "slugAliases": [],
       "name": "Seton Hall University",
       "shortName": "Seton Hall",
       "aliases": [],
@@ -86248,6 +86648,7 @@
     {
       "ipedsId": "215947",
       "slug": "seton-hill-university",
+      "slugAliases": [],
       "name": "Seton Hill University",
       "shortName": "Seton Hill",
       "aliases": [],
@@ -86446,6 +86847,7 @@
     {
       "ipedsId": "221519",
       "slug": "sewanee-the-university-of-the-south",
+      "slugAliases": [],
       "name": "Sewanee - The University of the South",
       "shortName": "SUS",
       "aliases": [],
@@ -86664,6 +87066,7 @@
     {
       "ipedsId": "216010",
       "slug": "shippensburg-university-of-pennsylvania",
+      "slugAliases": [],
       "name": "Shippensburg University of Pennsylvania",
       "shortName": "SUP",
       "aliases": [],
@@ -86863,6 +87266,7 @@
     {
       "ipedsId": "195474",
       "slug": "siena-college",
+      "slugAliases": [],
       "name": "Siena College",
       "shortName": "Siena",
       "aliases": [],
@@ -87081,6 +87485,7 @@
     {
       "ipedsId": "167783",
       "slug": "simmons-university",
+      "slugAliases": [],
       "name": "Simmons University",
       "shortName": "Simmons",
       "aliases": [],
@@ -87299,6 +87704,7 @@
     {
       "ipedsId": "154350",
       "slug": "simpson-college",
+      "slugAliases": [],
       "name": "Simpson College",
       "shortName": "Simpson",
       "aliases": [],
@@ -87498,6 +87904,7 @@
     {
       "ipedsId": "195526",
       "slug": "skidmore-college",
+      "slugAliases": [],
       "name": "Skidmore College",
       "shortName": "Skidmore",
       "aliases": [],
@@ -87716,6 +88123,7 @@
     {
       "ipedsId": "167835",
       "slug": "smith-college",
+      "slugAliases": [],
       "name": "Smith College",
       "shortName": "Smith",
       "aliases": [],
@@ -87977,6 +88385,7 @@
     {
       "ipedsId": "399911",
       "slug": "soka-university-of-america",
+      "slugAliases": [],
       "name": "Soka University of America",
       "shortName": "SUA",
       "aliases": [],
@@ -88224,6 +88633,7 @@
     {
       "ipedsId": "219347",
       "slug": "south-dakota-school-of-mines-and-technology",
+      "slugAliases": [],
       "name": "South Dakota School of Mines & Technology",
       "shortName": "SDSMT",
       "aliases": [],
@@ -88442,6 +88852,7 @@
     {
       "ipedsId": "219356",
       "slug": "south-dakota-state-university",
+      "slugAliases": [],
       "name": "South Dakota State University",
       "shortName": "South Dakota State",
       "aliases": [],
@@ -88641,6 +89052,7 @@
     {
       "ipedsId": "179557",
       "slug": "southeast-missouri-state-university",
+      "slugAliases": [],
       "name": "Southeast Missouri State University",
       "shortName": "Southeast Missouri State",
       "aliases": [],
@@ -88859,6 +89271,7 @@
     {
       "ipedsId": "160612",
       "slug": "southeastern-louisiana-university",
+      "slugAliases": [],
       "name": "Southeastern Louisiana University",
       "shortName": "Southeastern Louisiana",
       "aliases": [],
@@ -89077,6 +89490,7 @@
     {
       "ipedsId": "107983",
       "slug": "southern-arkansas-university",
+      "slugAliases": [],
       "name": "Southern Arkansas University",
       "shortName": "Southern Arkansas",
       "aliases": [],
@@ -89295,6 +89709,7 @@
     {
       "ipedsId": "149222",
       "slug": "southern-illinois-university-carbondale",
+      "slugAliases": [],
       "name": "Southern Illinois University-Carbondale",
       "shortName": "SIUC",
       "aliases": [],
@@ -89513,6 +89928,7 @@
     {
       "ipedsId": "228246",
       "slug": "southern-methodist-university",
+      "slugAliases": [],
       "name": "Southern Methodist University",
       "shortName": "Southern Methodist",
       "aliases": [],
@@ -89731,6 +90147,7 @@
     {
       "ipedsId": "183026",
       "slug": "southern-new-hampshire-university",
+      "slugAliases": [],
       "name": "Southern New Hampshire University",
       "shortName": "Southern New Hampshire",
       "aliases": [],
@@ -89930,6 +90347,7 @@
     {
       "ipedsId": "230603",
       "slug": "southern-utah-university",
+      "slugAliases": [],
       "name": "Southern Utah University",
       "shortName": "Southern Utah",
       "aliases": [],
@@ -90148,6 +90566,7 @@
     {
       "ipedsId": "207856",
       "slug": "southwestern-christian-university",
+      "slugAliases": [],
       "name": "Southwestern Christian University",
       "shortName": "Southwestern Christian",
       "aliases": [],
@@ -90346,6 +90765,7 @@
     {
       "ipedsId": "228343",
       "slug": "southwestern-university",
+      "slugAliases": [],
       "name": "Southwestern University",
       "shortName": "Southwestern",
       "aliases": [],
@@ -90564,6 +90984,7 @@
     {
       "ipedsId": "141060",
       "slug": "spelman-college",
+      "slugAliases": [],
       "name": "Spelman College",
       "shortName": "Spelman",
       "aliases": [],
@@ -90782,6 +91203,7 @@
     {
       "ipedsId": "102234",
       "slug": "spring-hill-college",
+      "slugAliases": [],
       "name": "Spring Hill College",
       "shortName": "Spring Hill",
       "aliases": [],
@@ -91000,6 +91422,7 @@
     {
       "ipedsId": "174783",
       "slug": "st-cloud-state-university",
+      "slugAliases": [],
       "name": "St. Cloud State University",
       "shortName": "St. Cloud State",
       "aliases": [],
@@ -91218,6 +91641,7 @@
     {
       "ipedsId": "195720",
       "slug": "st-john-fisher-university",
+      "slugAliases": [],
       "name": "St. John Fisher University",
       "shortName": "St. John Fisher",
       "aliases": [],
@@ -91436,6 +91860,7 @@
     {
       "ipedsId": "163976",
       "slug": "st-john-s-college-annapolis-md",
+      "slugAliases": [],
       "name": "St. John's College-Annapolis, MD",
       "shortName": "SJSCAM",
       "aliases": [],
@@ -91654,6 +92079,7 @@
     {
       "ipedsId": "245652",
       "slug": "st-john-s-college-santa-fe-nm",
+      "slugAliases": [],
       "name": "St. John's College-Santa Fe, NM",
       "shortName": "SJSCSFN",
       "aliases": [],
@@ -91872,6 +92298,7 @@
     {
       "ipedsId": "195809",
       "slug": "st-john-s-university-new-york",
+      "slugAliases": [],
       "name": "St. John's University-New York",
       "shortName": "SJSUNY",
       "aliases": [],
@@ -92090,6 +92517,7 @@
     {
       "ipedsId": "195216",
       "slug": "st-lawrence-university",
+      "slugAliases": [],
       "name": "St. Lawrence University",
       "shortName": "St. Lawrence",
       "aliases": [],
@@ -92308,6 +92736,7 @@
     {
       "ipedsId": "152390",
       "slug": "st-mary-s-college-in",
+      "slugAliases": [],
       "name": "St. Mary's College IN",
       "shortName": "St. Mary's College IN",
       "aliases": [],
@@ -92526,6 +92955,7 @@
     {
       "ipedsId": "163912",
       "slug": "st-mary-s-college-of-maryland",
+      "slugAliases": [],
       "name": "St. Mary's College of Maryland",
       "shortName": "SMSCM",
       "aliases": [],
@@ -92742,9 +93172,12 @@
       "reviewStatus": "published"
     },
     {
-      "ipedsId": null,
-      "slug": "st-marya-tms-university-texas",
-      "name": "St. Maryâ€™s University (Texas)",
+      "ipedsId": "228149",
+      "slug": "st-mary-s-university-texas",
+      "slugAliases": [
+        "st-marya-tms-university-texas"
+      ],
+      "name": "St. Mary’s University (Texas)",
       "shortName": "Texas",
       "aliases": [
         "Texas"
@@ -92773,33 +93206,36 @@
       ],
       "budgetFit": "merit",
       "strongLowContributionResearchSignal": false,
-      "summary": "St. Maryâ€™s University (Texas) is a private institution in San Antonio, Texas. The listed annual cost before aid is about $54,328. It reports aid for 7.1% of international students.",
+      "summary": "St. Mary’s University (Texas) is a private institution in San Antonio, Texas. The listed annual cost before aid is about $54,328. It reports aid for 7.1% of international students.",
       "source": {
         "label": "U.S. Department of Education College Navigator",
-        "url": "",
+        "url": "https://nces.ed.gov/collegenavigator/?id=228149",
         "lastVerifiedAt": "2026-08-01"
       },
-      "officialLinks": {},
+      "officialLinks": {
+        "homepage": "https://www.stmarytx.edu/",
+        "admissions": "https://www.stmarytx.edu/admission/",
+        "financialAid": "https://www.stmarytx.edu/admission/financial-aid/",
+        "application": "https://www.stmarytx.edu/admission/applying/"
+      },
       "sourceScope": "Identity, overall admission counts, and available score ranges are checked against U.S. Department of Education information. Confirm changing application policies on the college's official pages.",
       "originalDescription": "St. Maryâ€™s University (Texas) is a private institution located in San Antonio, Texas. The campus setting is city: large and it is a S (1K-9K) size school. For financial aid, the total cost of attendance is approximately $54,328 per year, approximately 7% of international students receive financial aid with an average award of $31,006. Regarding admissions, its overall acceptance rate is 89%.",
       "costOfAttendance": 54328,
-      "acceptanceRate": 89,
+      "acceptanceRate": 88.949,
       "internationalAidPercent": 7.1,
       "averageInternationalAid": 31006,
       "specialNote": null,
       "admissions": {
         "overallAcceptanceRate": {
-          "value": 89,
-          "status": "reported",
-          "sourceUrl": null,
-          "sourceLabel": null,
-          "dataYear": null,
-          "cycle": null,
+          "value": 88.949,
+          "status": "calculated",
+          "applicants": 5203,
+          "admitted": 4628,
+          "sourceUrl": "https://nces.ed.gov/collegenavigator/?id=228149",
+          "dataYear": "2023-24",
           "reviewedAt": "2026-08-01",
-          "rawValue": null,
           "audience": "overall",
-          "applicants": null,
-          "admitted": null
+          "sourceLabel": "U.S. Department of Education NCES/IPEDS"
         },
         "internationalAcceptanceRate": {
           "value": null,
@@ -92858,44 +93294,42 @@
           "rawValue": null
         },
         "satMathRange": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
-          "sourceLabel": null,
-          "dataYear": null,
-          "cycle": null,
+          "value": {
+            "low": 480,
+            "high": 560
+          },
+          "status": "reported",
+          "sourceUrl": "https://nces.ed.gov/collegenavigator/?id=228149",
+          "dataYear": "2023-24",
           "reviewedAt": "2026-08-01",
-          "rawValue": null
+          "sourceLabel": "U.S. Department of Education NCES/IPEDS"
         },
         "satEbrwRange": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
-          "sourceLabel": null,
-          "dataYear": null,
-          "cycle": null,
+          "value": {
+            "low": 500,
+            "high": 590
+          },
+          "status": "reported",
+          "sourceUrl": "https://nces.ed.gov/collegenavigator/?id=228149",
+          "dataYear": "2023-24",
           "reviewedAt": "2026-08-01",
-          "rawValue": null
+          "sourceLabel": "U.S. Department of Education NCES/IPEDS"
         },
         "satSubmissionPercent": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
-          "sourceLabel": null,
-          "dataYear": null,
-          "cycle": null,
+          "value": 25,
+          "status": "reported",
+          "sourceUrl": "https://nces.ed.gov/collegenavigator/?id=228149",
+          "dataYear": "2023-24",
           "reviewedAt": "2026-08-01",
-          "rawValue": null
+          "sourceLabel": "U.S. Department of Education NCES/IPEDS"
         },
         "actSubmissionPercent": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
-          "sourceLabel": null,
-          "dataYear": null,
-          "cycle": null,
+          "value": 7,
+          "status": "reported",
+          "sourceUrl": "https://nces.ed.gov/collegenavigator/?id=228149",
+          "dataYear": "2023-24",
           "reviewedAt": "2026-08-01",
-          "rawValue": null
+          "sourceLabel": "U.S. Department of Education NCES/IPEDS"
         },
         "context": null
       },
@@ -92963,6 +93397,7 @@
     {
       "ipedsId": "174817",
       "slug": "st-mary-s-university-of-minnesota",
+      "slugAliases": [],
       "name": "St. Mary's University of Minnesota",
       "shortName": "SMSUM",
       "aliases": [],
@@ -93181,6 +93616,7 @@
     {
       "ipedsId": "239716",
       "slug": "st-norbert-college",
+      "slugAliases": [],
       "name": "St. Norbert College",
       "shortName": "St. Norbert",
       "aliases": [],
@@ -93399,6 +93835,7 @@
     {
       "ipedsId": "174844",
       "slug": "st-olaf-college",
+      "slugAliases": [],
       "name": "St. Olaf College",
       "shortName": "St. Olaf",
       "aliases": [],
@@ -93617,6 +94054,7 @@
     {
       "ipedsId": "243744",
       "slug": "stanford-university",
+      "slugAliases": [],
       "name": "Stanford University",
       "shortName": "Stanford",
       "aliases": [],
@@ -93826,6 +94264,7 @@
     {
       "ipedsId": "228431",
       "slug": "stephen-f-austin-state-university",
+      "slugAliases": [],
       "name": "Stephen F. Austin State University",
       "shortName": "Stephen F. Austin State",
       "aliases": [],
@@ -94044,6 +94483,7 @@
     {
       "ipedsId": "137546",
       "slug": "stetson-university",
+      "slugAliases": [],
       "name": "Stetson University",
       "shortName": "Stetson",
       "aliases": [],
@@ -94262,6 +94702,7 @@
     {
       "ipedsId": "186867",
       "slug": "stevens-institute-of-technology",
+      "slugAliases": [],
       "name": "Stevens Institute of Technology",
       "shortName": "SIT",
       "aliases": [],
@@ -94480,6 +94921,7 @@
     {
       "ipedsId": "186876",
       "slug": "stockton-university",
+      "slugAliases": [],
       "name": "Stockton University",
       "shortName": "Stockton",
       "aliases": [],
@@ -94698,6 +95140,7 @@
     {
       "ipedsId": "167996",
       "slug": "stonehill-college",
+      "slugAliases": [],
       "name": "Stonehill College",
       "shortName": "Stonehill",
       "aliases": [],
@@ -94916,6 +95359,7 @@
     {
       "ipedsId": "168005",
       "slug": "suffolk-university",
+      "slugAliases": [],
       "name": "Suffolk University",
       "shortName": "Suffolk",
       "aliases": [],
@@ -95134,6 +95578,7 @@
     {
       "ipedsId": "196079",
       "slug": "suny-binghamton-university",
+      "slugAliases": [],
       "name": "SUNY - Binghamton University",
       "shortName": "SUNY - Binghamton",
       "aliases": [],
@@ -95352,6 +95797,7 @@
     {
       "ipedsId": "196185",
       "slug": "suny-oneonta",
+      "slugAliases": [],
       "name": "SUNY - Oneonta",
       "shortName": "SUNY - Oneonta",
       "aliases": [],
@@ -95569,6 +96015,7 @@
     {
       "ipedsId": "196246",
       "slug": "suny-plattsburgh",
+      "slugAliases": [],
       "name": "SUNY - Plattsburgh",
       "shortName": "SUNY - Plattsburgh",
       "aliases": [],
@@ -95787,6 +96234,7 @@
     {
       "ipedsId": "196097",
       "slug": "suny-stony-brook-university",
+      "slugAliases": [],
       "name": "SUNY - Stony Brook University",
       "shortName": "SUNY - Stony Brook",
       "aliases": [],
@@ -96005,6 +96453,7 @@
     {
       "ipedsId": "196060",
       "slug": "suny-university-at-albany",
+      "slugAliases": [],
       "name": "SUNY - University at Albany",
       "shortName": "SUA",
       "aliases": [],
@@ -96223,6 +96672,7 @@
     {
       "ipedsId": "196088",
       "slug": "suny-university-at-buffalo",
+      "slugAliases": [],
       "name": "SUNY - University at Buffalo",
       "shortName": "SUB",
       "aliases": [],
@@ -96441,6 +96891,7 @@
     {
       "ipedsId": "196103",
       "slug": "suny-college-of-environmental-science-and-forestry",
+      "slugAliases": [],
       "name": "SUNY College of Environmental Science and Forestry",
       "shortName": "SCESF",
       "aliases": [],
@@ -96659,6 +97110,7 @@
     {
       "ipedsId": "216278",
       "slug": "susquehanna-university",
+      "slugAliases": [],
       "name": "Susquehanna University",
       "shortName": "Susquehanna",
       "aliases": [],
@@ -96877,6 +97329,7 @@
     {
       "ipedsId": "216287",
       "slug": "swarthmore-college",
+      "slugAliases": [],
       "name": "Swarthmore College",
       "shortName": "Swarthmore",
       "aliases": [],
@@ -97138,6 +97591,7 @@
     {
       "ipedsId": "233718",
       "slug": "sweet-briar-college",
+      "slugAliases": [],
       "name": "Sweet Briar College",
       "shortName": "Sweet Briar",
       "aliases": [],
@@ -97356,6 +97810,7 @@
     {
       "ipedsId": "196413",
       "slug": "syracuse-university",
+      "slugAliases": [],
       "name": "Syracuse University",
       "shortName": "Syracuse",
       "aliases": [],
@@ -97574,6 +98029,7 @@
     {
       "ipedsId": "228529",
       "slug": "tarleton-state-university",
+      "slugAliases": [],
       "name": "Tarleton State University",
       "shortName": "Tarleton State",
       "aliases": [],
@@ -97792,6 +98248,7 @@
     {
       "ipedsId": "152530",
       "slug": "taylor-university",
+      "slugAliases": [],
       "name": "Taylor University",
       "shortName": "Taylor",
       "aliases": [],
@@ -98010,6 +98467,7 @@
     {
       "ipedsId": "216339",
       "slug": "temple-university",
+      "slugAliases": [],
       "name": "Temple University",
       "shortName": "Temple",
       "aliases": [],
@@ -98228,6 +98686,7 @@
     {
       "ipedsId": "221847",
       "slug": "tennessee-tech-university",
+      "slugAliases": [],
       "name": "Tennessee Tech University",
       "shortName": "Tennessee Tech",
       "aliases": [],
@@ -98427,6 +98886,7 @@
     {
       "ipedsId": "221731",
       "slug": "tennessee-wesleyan-university",
+      "slugAliases": [],
       "name": "Tennessee Wesleyan University",
       "shortName": "Tennessee Wesleyan",
       "aliases": [],
@@ -98626,6 +99086,7 @@
     {
       "ipedsId": "228723",
       "slug": "texas-a-and-m-university-college-station",
+      "slugAliases": [],
       "name": "Texas A&M University-College Station",
       "shortName": "TAMU",
       "aliases": [
@@ -98856,6 +99317,7 @@
     {
       "ipedsId": "224554",
       "slug": "texas-a-and-m-university-commerce",
+      "slugAliases": [],
       "name": "Texas A&M University-Commerce",
       "shortName": "TAMUC",
       "aliases": [],
@@ -99055,6 +99517,7 @@
     {
       "ipedsId": "228875",
       "slug": "texas-christian-university",
+      "slugAliases": [],
       "name": "Texas Christian University",
       "shortName": "Texas Christian",
       "aliases": [],
@@ -99273,6 +99736,7 @@
     {
       "ipedsId": "228459",
       "slug": "texas-state-university",
+      "slugAliases": [],
       "name": "Texas State University",
       "shortName": "Texas State",
       "aliases": [],
@@ -99491,6 +99955,7 @@
     {
       "ipedsId": "229115",
       "slug": "texas-tech-university",
+      "slugAliases": [],
       "name": "Texas Tech University",
       "shortName": "Texas Tech",
       "aliases": [],
@@ -99709,6 +100174,7 @@
     {
       "ipedsId": "131283",
       "slug": "the-catholic-university-of-america",
+      "slugAliases": [],
       "name": "The Catholic University of America",
       "shortName": "CUA",
       "aliases": [],
@@ -99927,6 +100393,7 @@
     {
       "ipedsId": "142294",
       "slug": "the-college-of-idaho",
+      "slugAliases": [],
       "name": "The College of Idaho",
       "shortName": "College of Idaho",
       "aliases": [],
@@ -100126,6 +100593,7 @@
     {
       "ipedsId": "187134",
       "slug": "the-college-of-new-jersey",
+      "slugAliases": [],
       "name": "The College of New Jersey",
       "shortName": "College of New Jersey",
       "aliases": [],
@@ -100325,6 +100793,7 @@
     {
       "ipedsId": "195234",
       "slug": "the-college-of-saint-rose",
+      "slugAliases": [],
       "name": "The College of Saint Rose",
       "shortName": "College of Saint Rose",
       "aliases": [],
@@ -100523,6 +100992,7 @@
     {
       "ipedsId": "206589",
       "slug": "the-college-of-wooster",
+      "slugAliases": [],
       "name": "The College of Wooster",
       "shortName": "College of Wooster",
       "aliases": [],
@@ -100741,6 +101211,7 @@
     {
       "ipedsId": "192110",
       "slug": "the-juilliard-school",
+      "slugAliases": [],
       "name": "The Juilliard School",
       "shortName": "Juilliard School",
       "aliases": [],
@@ -100940,6 +101411,7 @@
     {
       "ipedsId": "193654",
       "slug": "the-new-school",
+      "slugAliases": [],
       "name": "The New School",
       "shortName": "New School",
       "aliases": [],
@@ -101139,6 +101611,7 @@
     {
       "ipedsId": "124292",
       "slug": "thomas-aquinas-college",
+      "slugAliases": [],
       "name": "Thomas Aquinas College",
       "shortName": "Thomas Aquinas",
       "aliases": [],
@@ -101338,6 +101811,7 @@
     {
       "ipedsId": "216366",
       "slug": "thomas-jefferson-university",
+      "slugAliases": [],
       "name": "Thomas Jefferson University",
       "shortName": "Thomas Jefferson",
       "aliases": [],
@@ -101556,6 +102030,7 @@
     {
       "ipedsId": "206048",
       "slug": "tiffin-university",
+      "slugAliases": [],
       "name": "Tiffin University",
       "shortName": "Tiffin",
       "aliases": [],
@@ -101774,6 +102249,7 @@
     {
       "ipedsId": "141185",
       "slug": "toccoa-falls-college",
+      "slugAliases": [],
       "name": "Toccoa Falls College",
       "shortName": "Toccoa Falls",
       "aliases": [],
@@ -101973,6 +102449,7 @@
     {
       "ipedsId": "196592",
       "slug": "touro-university",
+      "slugAliases": [],
       "name": "Touro University",
       "shortName": "Touro",
       "aliases": [],
@@ -102191,6 +102668,7 @@
     {
       "ipedsId": "164076",
       "slug": "towson-university",
+      "slugAliases": [],
       "name": "Towson University",
       "shortName": "Towson",
       "aliases": [],
@@ -102409,6 +102887,7 @@
     {
       "ipedsId": "157818",
       "slug": "transylvania-university",
+      "slugAliases": [],
       "name": "Transylvania University",
       "shortName": "Transylvania",
       "aliases": [],
@@ -102627,6 +103106,7 @@
     {
       "ipedsId": "149505",
       "slug": "trinity-christian-college",
+      "slugAliases": [],
       "name": "Trinity Christian College",
       "shortName": "Trinity Christian",
       "aliases": [],
@@ -102826,6 +103306,7 @@
     {
       "ipedsId": "130590",
       "slug": "trinity-college",
+      "slugAliases": [],
       "name": "Trinity College",
       "shortName": "Trinity",
       "aliases": [],
@@ -103044,6 +103525,7 @@
     {
       "ipedsId": "229267",
       "slug": "trinity-university",
+      "slugAliases": [],
       "name": "Trinity University",
       "shortName": "Trinity",
       "aliases": [],
@@ -103262,6 +103744,7 @@
     {
       "ipedsId": "178615",
       "slug": "truman-state-university",
+      "slugAliases": [],
       "name": "Truman State University",
       "shortName": "Truman State",
       "aliases": [],
@@ -103461,6 +103944,7 @@
     {
       "ipedsId": "168148",
       "slug": "tufts-university",
+      "slugAliases": [],
       "name": "Tufts University",
       "shortName": "Tufts",
       "aliases": [],
@@ -103660,6 +104144,7 @@
     {
       "ipedsId": "160755",
       "slug": "tulane-university-of-louisiana",
+      "slugAliases": [],
       "name": "Tulane University of Louisiana",
       "shortName": "TUL",
       "aliases": [],
@@ -103878,6 +104363,7 @@
     {
       "ipedsId": "196866",
       "slug": "union-college",
+      "slugAliases": [],
       "name": "Union College",
       "shortName": "Union",
       "aliases": [],
@@ -104096,6 +104582,7 @@
     {
       "ipedsId": "221971",
       "slug": "union-university",
+      "slugAliases": [],
       "name": "Union University",
       "shortName": "Union",
       "aliases": [],
@@ -104295,6 +104782,7 @@
     {
       "ipedsId": "200800",
       "slug": "university-of-akron",
+      "slugAliases": [],
       "name": "University of Akron",
       "shortName": "University of Akron",
       "aliases": [],
@@ -104513,6 +105001,7 @@
     {
       "ipedsId": "100663",
       "slug": "university-of-alabama-birmingham",
+      "slugAliases": [],
       "name": "University of Alabama-Birmingham",
       "shortName": "UAB",
       "aliases": [],
@@ -104731,6 +105220,7 @@
     {
       "ipedsId": "100706",
       "slug": "university-of-alabama-huntsville",
+      "slugAliases": [],
       "name": "University of Alabama-Huntsville",
       "shortName": "UAH",
       "aliases": [],
@@ -104949,6 +105439,7 @@
     {
       "ipedsId": "100751",
       "slug": "university-of-alabama-tuscaloosa-main-campus",
+      "slugAliases": [],
       "name": "University of Alabama-Tuscaloosa (Main Campus)",
       "shortName": "UAT",
       "aliases": [],
@@ -105167,6 +105658,7 @@
     {
       "ipedsId": "102614",
       "slug": "university-of-alaska-fairbanks",
+      "slugAliases": [],
       "name": "University of Alaska-Fairbanks",
       "shortName": "UAF",
       "aliases": [],
@@ -105385,6 +105877,7 @@
     {
       "ipedsId": "104179",
       "slug": "university-of-arizona",
+      "slugAliases": [],
       "name": "University of Arizona",
       "shortName": "University of Arizona",
       "aliases": [],
@@ -105603,6 +106096,7 @@
     {
       "ipedsId": "106397",
       "slug": "university-of-arkansas-main-cmapus",
+      "slugAliases": [],
       "name": "University of Arkansas (Main Cmapus)",
       "shortName": "University of Arkansas",
       "aliases": [],
@@ -105821,6 +106315,7 @@
     {
       "ipedsId": "106245",
       "slug": "university-of-arkansas-at-little-rock",
+      "slugAliases": [],
       "name": "University of Arkansas at Little Rock",
       "shortName": "UALR",
       "aliases": [],
@@ -106019,6 +106514,7 @@
     {
       "ipedsId": "110635",
       "slug": "university-of-california-berkeley",
+      "slugAliases": [],
       "name": "University of California-Berkeley",
       "shortName": "UC Berkeley",
       "aliases": [
@@ -106264,6 +106760,7 @@
     {
       "ipedsId": "110644",
       "slug": "university-of-california-davis",
+      "slugAliases": [],
       "name": "University of California-Davis",
       "shortName": "UCD",
       "aliases": [],
@@ -106492,6 +106989,7 @@
     {
       "ipedsId": "110653",
       "slug": "university-of-california-irvine",
+      "slugAliases": [],
       "name": "University of California-Irvine",
       "shortName": "UCI",
       "aliases": [],
@@ -106710,6 +107208,7 @@
     {
       "ipedsId": "110662",
       "slug": "university-of-california-los-angeles",
+      "slugAliases": [],
       "name": "University of California-Los Angeles",
       "shortName": "UCLA",
       "aliases": [
@@ -106921,6 +107420,7 @@
     {
       "ipedsId": "445188",
       "slug": "university-of-california-merced",
+      "slugAliases": [],
       "name": "University of California-Merced",
       "shortName": "UCM",
       "aliases": [],
@@ -107139,6 +107639,7 @@
     {
       "ipedsId": "110671",
       "slug": "university-of-california-riverside",
+      "slugAliases": [],
       "name": "University of California-Riverside",
       "shortName": "UCR",
       "aliases": [],
@@ -107357,6 +107858,7 @@
     {
       "ipedsId": "110680",
       "slug": "university-of-california-san-diego",
+      "slugAliases": [],
       "name": "University of California-San Diego",
       "shortName": "UCSD",
       "aliases": [
@@ -107587,6 +108089,7 @@
     {
       "ipedsId": "110705",
       "slug": "university-of-california-santa-barbara",
+      "slugAliases": [],
       "name": "University of California-Santa Barbara",
       "shortName": "UCSB",
       "aliases": [],
@@ -107815,6 +108318,7 @@
     {
       "ipedsId": "110714",
       "slug": "university-of-california-santa-cruz",
+      "slugAliases": [],
       "name": "University of California-Santa Cruz",
       "shortName": "UCSC",
       "aliases": [],
@@ -108033,6 +108537,7 @@
     {
       "ipedsId": "106704",
       "slug": "university-of-central-arkansas",
+      "slugAliases": [],
       "name": "University of Central Arkansas",
       "shortName": "UCA",
       "aliases": [],
@@ -108231,6 +108736,7 @@
     {
       "ipedsId": "132903",
       "slug": "university-of-central-florida",
+      "slugAliases": [],
       "name": "University of Central Florida",
       "shortName": "UCF",
       "aliases": [],
@@ -108449,6 +108955,7 @@
     {
       "ipedsId": "206941",
       "slug": "university-of-central-oklahoma",
+      "slugAliases": [],
       "name": "University of Central Oklahoma",
       "shortName": "UCO",
       "aliases": [],
@@ -108647,6 +109154,7 @@
     {
       "ipedsId": "144050",
       "slug": "university-of-chicago",
+      "slugAliases": [],
       "name": "University of Chicago",
       "shortName": "University of Chicago",
       "aliases": [],
@@ -108875,6 +109383,7 @@
     {
       "ipedsId": "201885",
       "slug": "university-of-cincinnati",
+      "slugAliases": [],
       "name": "University of Cincinnati",
       "shortName": "University of Cincinnati",
       "aliases": [],
@@ -109093,6 +109602,7 @@
     {
       "ipedsId": "126614",
       "slug": "university-of-colorado-boulder",
+      "slugAliases": [],
       "name": "University of Colorado-Boulder",
       "shortName": "UCB",
       "aliases": [],
@@ -109311,6 +109821,7 @@
     {
       "ipedsId": "126580",
       "slug": "university-of-colorado-colorado-springs",
+      "slugAliases": [],
       "name": "University of Colorado-Colorado Springs",
       "shortName": "UCCS",
       "aliases": [],
@@ -109529,6 +110040,7 @@
     {
       "ipedsId": "126562",
       "slug": "university-of-colorado-denver",
+      "slugAliases": [],
       "name": "University of Colorado-Denver",
       "shortName": "UCD",
       "aliases": [],
@@ -109747,6 +110259,7 @@
     {
       "ipedsId": "129020",
       "slug": "university-of-connecticut",
+      "slugAliases": [],
       "name": "University of Connecticut",
       "shortName": "UC",
       "aliases": [],
@@ -109965,6 +110478,7 @@
     {
       "ipedsId": "202480",
       "slug": "university-of-dayton",
+      "slugAliases": [],
       "name": "University of Dayton",
       "shortName": "University of Dayton",
       "aliases": [],
@@ -110183,6 +110697,7 @@
     {
       "ipedsId": "130943",
       "slug": "university-of-delaware",
+      "slugAliases": [],
       "name": "University of Delaware",
       "shortName": "University of Delaware",
       "aliases": [],
@@ -110401,6 +110916,7 @@
     {
       "ipedsId": "127060",
       "slug": "university-of-denver",
+      "slugAliases": [],
       "name": "University of Denver",
       "shortName": "University of Denver",
       "aliases": [],
@@ -110619,6 +111135,7 @@
     {
       "ipedsId": "169716",
       "slug": "university-of-detroit-mercy",
+      "slugAliases": [],
       "name": "University of Detroit Mercy",
       "shortName": "UDM",
       "aliases": [],
@@ -110818,6 +111335,7 @@
     {
       "ipedsId": "150534",
       "slug": "university-of-evansville",
+      "slugAliases": [],
       "name": "University of Evansville",
       "shortName": "University of Evansville",
       "aliases": [],
@@ -111036,6 +111554,7 @@
     {
       "ipedsId": "134130",
       "slug": "university-of-florida",
+      "slugAliases": [],
       "name": "University of Florida",
       "shortName": "University of Florida",
       "aliases": [],
@@ -111254,6 +111773,7 @@
     {
       "ipedsId": "139959",
       "slug": "university-of-georgia",
+      "slugAliases": [],
       "name": "University of Georgia",
       "shortName": "University of Georgia",
       "aliases": [],
@@ -111472,6 +111992,7 @@
     {
       "ipedsId": "141574",
       "slug": "university-of-hawaii-at-manoa",
+      "slugAliases": [],
       "name": "University of Hawaii at Manoa",
       "shortName": "UHM",
       "aliases": [],
@@ -111690,6 +112211,7 @@
     {
       "ipedsId": "225511",
       "slug": "university-of-houston",
+      "slugAliases": [],
       "name": "University of Houston",
       "shortName": "University of Houston",
       "aliases": [],
@@ -111908,6 +112430,7 @@
     {
       "ipedsId": "225502",
       "slug": "university-of-houston-victoria",
+      "slugAliases": [],
       "name": "University of Houston-Victoria",
       "shortName": "UHV",
       "aliases": [],
@@ -112106,6 +112629,7 @@
     {
       "ipedsId": "142285",
       "slug": "university-of-idaho",
+      "slugAliases": [],
       "name": "University of Idaho",
       "shortName": "University of Idaho",
       "aliases": [],
@@ -112324,6 +112848,7 @@
     {
       "ipedsId": "145600",
       "slug": "university-of-illinois-at-chicago",
+      "slugAliases": [],
       "name": "University of Illinois at Chicago",
       "shortName": "UIC",
       "aliases": [],
@@ -112542,6 +113067,7 @@
     {
       "ipedsId": "145637",
       "slug": "university-of-illinois-at-urbana-champaign",
+      "slugAliases": [],
       "name": "University of Illinois at Urbana-Champaign",
       "shortName": "UIUC",
       "aliases": [],
@@ -112770,6 +113296,7 @@
     {
       "ipedsId": "151263",
       "slug": "university-of-indianapolis",
+      "slugAliases": [],
       "name": "University of Indianapolis",
       "shortName": "UI",
       "aliases": [],
@@ -112969,6 +113496,7 @@
     {
       "ipedsId": "153658",
       "slug": "university-of-iowa",
+      "slugAliases": [],
       "name": "University of Iowa",
       "shortName": "University of Iowa",
       "aliases": [],
@@ -113187,6 +113715,7 @@
     {
       "ipedsId": "155317",
       "slug": "university-of-kansas",
+      "slugAliases": [],
       "name": "University of Kansas",
       "shortName": "University of Kansas",
       "aliases": [],
@@ -113405,6 +113934,7 @@
     {
       "ipedsId": "157085",
       "slug": "university-of-kentucky",
+      "slugAliases": [],
       "name": "University of Kentucky",
       "shortName": "University of Kentucky",
       "aliases": [],
@@ -113623,6 +114153,7 @@
     {
       "ipedsId": "117140",
       "slug": "university-of-la-verne",
+      "slugAliases": [],
       "name": "University of La Verne",
       "shortName": "University of La Verne",
       "aliases": [],
@@ -113841,6 +114372,7 @@
     {
       "ipedsId": "160658",
       "slug": "university-of-louisiana-at-lafayette",
+      "slugAliases": [],
       "name": "University of Louisiana at Lafayette",
       "shortName": "ULL",
       "aliases": [],
@@ -114059,6 +114591,7 @@
     {
       "ipedsId": "159993",
       "slug": "university-of-louisiana-at-monroe",
+      "slugAliases": [],
       "name": "University of Louisiana at Monroe",
       "shortName": "ULM",
       "aliases": [],
@@ -114277,6 +114810,7 @@
     {
       "ipedsId": "157289",
       "slug": "university-of-louisville",
+      "slugAliases": [],
       "name": "University of Louisville",
       "shortName": "University of Louisville",
       "aliases": [],
@@ -114476,6 +115010,7 @@
     {
       "ipedsId": "161253",
       "slug": "university-of-maine",
+      "slugAliases": [],
       "name": "University of Maine",
       "shortName": "University of Maine",
       "aliases": [],
@@ -114694,6 +115229,7 @@
     {
       "ipedsId": "161226",
       "slug": "university-of-maine-farmington",
+      "slugAliases": [],
       "name": "University of Maine-Farmington",
       "shortName": "UMF",
       "aliases": [],
@@ -114912,6 +115448,7 @@
     {
       "ipedsId": "163268",
       "slug": "university-of-maryland-baltimore-county",
+      "slugAliases": [],
       "name": "University of Maryland-Baltimore County",
       "shortName": "UMBC",
       "aliases": [],
@@ -115130,6 +115667,7 @@
     {
       "ipedsId": "163286",
       "slug": "university-of-maryland-college-park",
+      "slugAliases": [],
       "name": "University of Maryland-College Park",
       "shortName": "UMCP",
       "aliases": [],
@@ -115348,6 +115886,7 @@
     {
       "ipedsId": "166629",
       "slug": "university-of-massachusetts-amherst",
+      "slugAliases": [],
       "name": "University of Massachusetts-Amherst",
       "shortName": "UMA",
       "aliases": [],
@@ -115566,6 +116105,7 @@
     {
       "ipedsId": "166638",
       "slug": "university-of-massachusetts-boston",
+      "slugAliases": [],
       "name": "University of Massachusetts-Boston",
       "shortName": "UMB",
       "aliases": [],
@@ -115764,6 +116304,7 @@
     {
       "ipedsId": "166513",
       "slug": "university-of-massachusetts-lowell",
+      "slugAliases": [],
       "name": "University of Massachusetts-Lowell",
       "shortName": "UML",
       "aliases": [],
@@ -115982,6 +116523,7 @@
     {
       "ipedsId": "220862",
       "slug": "university-of-memphis",
+      "slugAliases": [],
       "name": "University of Memphis",
       "shortName": "University of Memphis",
       "aliases": [],
@@ -116200,6 +116742,7 @@
     {
       "ipedsId": "135726",
       "slug": "university-of-miami",
+      "slugAliases": [],
       "name": "University of Miami",
       "shortName": "University of Miami",
       "aliases": [],
@@ -116462,6 +117005,7 @@
     {
       "ipedsId": "170976",
       "slug": "university-of-michigan-ann-arbor",
+      "slugAliases": [],
       "name": "University of Michigan-Ann Arbor",
       "shortName": "UMAA",
       "aliases": [],
@@ -116671,6 +117215,7 @@
     {
       "ipedsId": "171137",
       "slug": "university-of-michigan-dearborn",
+      "slugAliases": [],
       "name": "University of Michigan-Dearborn",
       "shortName": "UMD",
       "aliases": [],
@@ -116889,6 +117434,7 @@
     {
       "ipedsId": "174233",
       "slug": "university-of-minnesota-duluth",
+      "slugAliases": [],
       "name": "University of Minnesota-Duluth",
       "shortName": "UMD",
       "aliases": [],
@@ -117107,6 +117653,7 @@
     {
       "ipedsId": "174066",
       "slug": "university-of-minnesota-twin-cities",
+      "slugAliases": [],
       "name": "University of Minnesota-Twin Cities",
       "shortName": "UMTC",
       "aliases": [],
@@ -117325,6 +117872,7 @@
     {
       "ipedsId": "176017",
       "slug": "university-of-mississippi",
+      "slugAliases": [],
       "name": "University of Mississippi",
       "shortName": "UM",
       "aliases": [],
@@ -117543,6 +118091,7 @@
     {
       "ipedsId": "178396",
       "slug": "university-of-missouri",
+      "slugAliases": [],
       "name": "University of Missouri",
       "shortName": "University of Missouri",
       "aliases": [],
@@ -117761,6 +118310,7 @@
     {
       "ipedsId": "178420",
       "slug": "university-of-missouri-st-louis",
+      "slugAliases": [],
       "name": "University of Missouri-St. Louis",
       "shortName": "UMSL",
       "aliases": [],
@@ -117979,6 +118529,7 @@
     {
       "ipedsId": "101693",
       "slug": "university-of-mobile",
+      "slugAliases": [],
       "name": "University of Mobile",
       "shortName": "University of Mobile",
       "aliases": [],
@@ -118178,6 +118729,7 @@
     {
       "ipedsId": "180489",
       "slug": "university-of-montana",
+      "slugAliases": [],
       "name": "University of Montana",
       "shortName": "University of Montana",
       "aliases": [],
@@ -118396,6 +118948,7 @@
     {
       "ipedsId": "101709",
       "slug": "university-of-montevallo",
+      "slugAliases": [],
       "name": "University of Montevallo",
       "shortName": "University of Montevallo",
       "aliases": [],
@@ -118595,6 +119148,7 @@
     {
       "ipedsId": "181215",
       "slug": "university-of-nebraska-kearney",
+      "slugAliases": [],
       "name": "University of Nebraska-Kearney",
       "shortName": "UNK",
       "aliases": [],
@@ -118812,6 +119366,7 @@
     {
       "ipedsId": "181464",
       "slug": "university-of-nebraska-lincoln",
+      "slugAliases": [],
       "name": "University of Nebraska-Lincoln",
       "shortName": "UNL",
       "aliases": [],
@@ -119030,6 +119585,7 @@
     {
       "ipedsId": "182281",
       "slug": "university-of-nevada-las-vegas",
+      "slugAliases": [],
       "name": "University of Nevada-Las Vegas",
       "shortName": "UNLV",
       "aliases": [],
@@ -119248,6 +119804,7 @@
     {
       "ipedsId": "182290",
       "slug": "university-of-nevada-reno-main-campus",
+      "slugAliases": [],
       "name": "University of Nevada-Reno (Main Campus)",
       "shortName": "UNR",
       "aliases": [],
@@ -119466,6 +120023,7 @@
     {
       "ipedsId": "161457",
       "slug": "university-of-new-england",
+      "slugAliases": [],
       "name": "University of New England",
       "shortName": "UNE",
       "aliases": [],
@@ -119684,6 +120242,7 @@
     {
       "ipedsId": "183044",
       "slug": "university-of-new-hampshire",
+      "slugAliases": [],
       "name": "University of New Hampshire",
       "shortName": "UNH",
       "aliases": [],
@@ -119902,6 +120461,7 @@
     {
       "ipedsId": "129941",
       "slug": "university-of-new-haven",
+      "slugAliases": [],
       "name": "University of New Haven",
       "shortName": "University of New Haven",
       "aliases": [],
@@ -120101,6 +120661,7 @@
     {
       "ipedsId": "187985",
       "slug": "university-of-new-mexico",
+      "slugAliases": [],
       "name": "University of New Mexico",
       "shortName": "University of New Mexico",
       "aliases": [],
@@ -120319,6 +120880,7 @@
     {
       "ipedsId": "159939",
       "slug": "university-of-new-orleans",
+      "slugAliases": [],
       "name": "University of New Orleans",
       "shortName": "UNO",
       "aliases": [],
@@ -120537,6 +121099,7 @@
     {
       "ipedsId": "101879",
       "slug": "university-of-north-alabama",
+      "slugAliases": [],
       "name": "University Of North Alabama",
       "shortName": "UNA",
       "aliases": [],
@@ -120755,6 +121318,7 @@
     {
       "ipedsId": "199120",
       "slug": "university-of-north-carolina-at-chapel-hill",
+      "slugAliases": [],
       "name": "University of North Carolina at Chapel Hill",
       "shortName": "UNCCH",
       "aliases": [],
@@ -120983,6 +121547,7 @@
     {
       "ipedsId": "199139",
       "slug": "university-of-north-carolina-at-charlotte",
+      "slugAliases": [],
       "name": "University of North Carolina at Charlotte",
       "shortName": "UNCC",
       "aliases": [],
@@ -121182,6 +121747,7 @@
     {
       "ipedsId": "199148",
       "slug": "university-of-north-carolina-at-greensboro",
+      "slugAliases": [],
       "name": "University of North Carolina at Greensboro",
       "shortName": "UNCG",
       "aliases": [],
@@ -121400,6 +121966,7 @@
     {
       "ipedsId": "199281",
       "slug": "university-of-north-carolina-at-pembroke",
+      "slugAliases": [],
       "name": "University of North Carolina at Pembroke",
       "shortName": "UNCP",
       "aliases": [],
@@ -121618,6 +122185,7 @@
     {
       "ipedsId": "199111",
       "slug": "university-of-north-carolina-asheville",
+      "slugAliases": [],
       "name": "University of North Carolina-Asheville",
       "shortName": "UNCA",
       "aliases": [],
@@ -121836,6 +122404,7 @@
     {
       "ipedsId": "200280",
       "slug": "university-of-north-dakota",
+      "slugAliases": [],
       "name": "University of North Dakota",
       "shortName": "UND",
       "aliases": [],
@@ -122054,6 +122623,7 @@
     {
       "ipedsId": "136172",
       "slug": "university-of-north-florida",
+      "slugAliases": [],
       "name": "University of North Florida",
       "shortName": "UNF",
       "aliases": [],
@@ -122272,6 +122842,7 @@
     {
       "ipedsId": "482680",
       "slug": "university-of-north-georgia",
+      "slugAliases": [],
       "name": "University of North Georgia",
       "shortName": "UNG",
       "aliases": [],
@@ -122490,6 +123061,7 @@
     {
       "ipedsId": "227216",
       "slug": "university-of-north-texas-denton",
+      "slugAliases": [],
       "name": "University of North Texas-Denton",
       "shortName": "UNTD",
       "aliases": [],
@@ -122708,6 +123280,7 @@
     {
       "ipedsId": "127741",
       "slug": "university-of-northern-colorado",
+      "slugAliases": [],
       "name": "University of Northern Colorado",
       "shortName": "UNC",
       "aliases": [],
@@ -122926,6 +123499,7 @@
     {
       "ipedsId": "154095",
       "slug": "university-of-northern-iowa",
+      "slugAliases": [],
       "name": "University of Northern Iowa",
       "shortName": "UNI",
       "aliases": [],
@@ -123144,6 +123718,7 @@
     {
       "ipedsId": "152080",
       "slug": "university-of-notre-dame",
+      "slugAliases": [],
       "name": "University of Notre Dame",
       "shortName": "University of Notre Dame",
       "aliases": [],
@@ -123392,6 +123967,7 @@
     {
       "ipedsId": "207500",
       "slug": "university-of-oklahoma-norman-campus",
+      "slugAliases": [],
       "name": "University of Oklahoma-Norman Campus",
       "shortName": "UON",
       "aliases": [],
@@ -123610,6 +124186,7 @@
     {
       "ipedsId": "209551",
       "slug": "university-of-oregon",
+      "slugAliases": [],
       "name": "University of Oregon",
       "shortName": "University of Oregon",
       "aliases": [],
@@ -123828,6 +124405,7 @@
     {
       "ipedsId": "215062",
       "slug": "university-of-pennsylvania",
+      "slugAliases": [],
       "name": "University of Pennsylvania",
       "shortName": "Penn",
       "aliases": [
@@ -124040,6 +124618,7 @@
     {
       "ipedsId": "215293",
       "slug": "university-of-pittsburgh",
+      "slugAliases": [],
       "name": "University of Pittsburgh",
       "shortName": "University of Pittsburgh",
       "aliases": [],
@@ -124258,6 +124837,7 @@
     {
       "ipedsId": "209825",
       "slug": "university-of-portland",
+      "slugAliases": [],
       "name": "University of Portland",
       "shortName": "University of Portland",
       "aliases": [],
@@ -124476,6 +125056,7 @@
     {
       "ipedsId": "236328",
       "slug": "university-of-puget-sound",
+      "slugAliases": [],
       "name": "University of Puget Sound",
       "shortName": "UPS",
       "aliases": [],
@@ -124694,6 +125275,7 @@
     {
       "ipedsId": "121691",
       "slug": "university-of-redlands",
+      "slugAliases": [],
       "name": "University of Redlands",
       "shortName": "University of Redlands",
       "aliases": [],
@@ -124912,6 +125494,7 @@
     {
       "ipedsId": "217484",
       "slug": "university-of-rhode-island",
+      "slugAliases": [],
       "name": "University of Rhode Island",
       "shortName": "URI",
       "aliases": [],
@@ -125130,6 +125713,7 @@
     {
       "ipedsId": "233374",
       "slug": "university-of-richmond",
+      "slugAliases": [],
       "name": "University of Richmond",
       "shortName": "University of Richmond",
       "aliases": [],
@@ -125348,6 +125932,7 @@
     {
       "ipedsId": "195030",
       "slug": "university-of-rochester",
+      "slugAliases": [],
       "name": "University of Rochester",
       "shortName": "University of Rochester",
       "aliases": [],
@@ -125599,6 +126184,7 @@
     {
       "ipedsId": "122436",
       "slug": "university-of-san-diego",
+      "slugAliases": [],
       "name": "University of San Diego",
       "shortName": "University of San Diego",
       "aliases": [],
@@ -125817,6 +126403,7 @@
     {
       "ipedsId": "122612",
       "slug": "university-of-san-francisco",
+      "slugAliases": [],
       "name": "University of San Francisco",
       "shortName": "USF",
       "aliases": [],
@@ -126035,6 +126622,7 @@
     {
       "ipedsId": "207722",
       "slug": "university-of-science-and-arts-of-oklahoma",
+      "slugAliases": [],
       "name": "University of Science and Arts of Oklahoma",
       "shortName": "USAO",
       "aliases": [],
@@ -126233,6 +126821,7 @@
     {
       "ipedsId": "215929",
       "slug": "university-of-scranton",
+      "slugAliases": [],
       "name": "University of Scranton",
       "shortName": "University of Scranton",
       "aliases": [],
@@ -126451,6 +127040,7 @@
     {
       "ipedsId": "219383",
       "slug": "university-of-sioux-falls",
+      "slugAliases": [],
       "name": "University of Sioux Falls",
       "shortName": "USF",
       "aliases": [],
@@ -126650,6 +127240,7 @@
     {
       "ipedsId": "102094",
       "slug": "university-of-south-alabama",
+      "slugAliases": [],
       "name": "University of South Alabama",
       "shortName": "USA",
       "aliases": [],
@@ -126868,6 +127459,7 @@
     {
       "ipedsId": "218663",
       "slug": "university-of-south-carolina-columbia",
+      "slugAliases": [],
       "name": "University of South Carolina-Columbia",
       "shortName": "USCC",
       "aliases": [],
@@ -127086,6 +127678,7 @@
     {
       "ipedsId": "219471",
       "slug": "university-of-south-dakota",
+      "slugAliases": [],
       "name": "University of South Dakota",
       "shortName": "USD",
       "aliases": [],
@@ -127304,6 +127897,7 @@
     {
       "ipedsId": "137351",
       "slug": "university-of-south-florida",
+      "slugAliases": [],
       "name": "University of South Florida",
       "shortName": "USF",
       "aliases": [],
@@ -127522,6 +128116,7 @@
     {
       "ipedsId": "123961",
       "slug": "university-of-southern-california",
+      "slugAliases": [],
       "name": "University of Southern California",
       "shortName": "USC",
       "aliases": [
@@ -127752,6 +128347,7 @@
     {
       "ipedsId": "176372",
       "slug": "university-of-southern-mississippi",
+      "slugAliases": [],
       "name": "University of Southern Mississippi",
       "shortName": "USM",
       "aliases": [],
@@ -127970,6 +128566,7 @@
     {
       "ipedsId": "148584",
       "slug": "university-of-st-francis",
+      "slugAliases": [],
       "name": "University of St. Francis",
       "shortName": "USF",
       "aliases": [],
@@ -128169,6 +128766,7 @@
     {
       "ipedsId": "174914",
       "slug": "university-of-st-thomas",
+      "slugAliases": [],
       "name": "University of St. Thomas",
       "shortName": "University of St. Thomas",
       "aliases": [],
@@ -128387,6 +128985,7 @@
     {
       "ipedsId": "137847",
       "slug": "university-of-tampa",
+      "slugAliases": [],
       "name": "University of Tampa",
       "shortName": "University of Tampa",
       "aliases": [],
@@ -128605,6 +129204,7 @@
     {
       "ipedsId": "221759",
       "slug": "university-of-tennessee-knoxville",
+      "slugAliases": [],
       "name": "University of Tennessee-Knoxville",
       "shortName": "UTK",
       "aliases": [],
@@ -128823,6 +129423,7 @@
     {
       "ipedsId": "228769",
       "slug": "university-of-texas-at-arlington",
+      "slugAliases": [],
       "name": "University of Texas at Arlington",
       "shortName": "UTA",
       "aliases": [],
@@ -129041,6 +129642,7 @@
     {
       "ipedsId": "228778",
       "slug": "university-of-texas-at-austin",
+      "slugAliases": [],
       "name": "University of Texas at Austin",
       "shortName": "UTA",
       "aliases": [],
@@ -129269,6 +129871,7 @@
     {
       "ipedsId": "228787",
       "slug": "university-of-texas-at-dallas",
+      "slugAliases": [],
       "name": "University of Texas at Dallas",
       "shortName": "UTD",
       "aliases": [],
@@ -129487,6 +130090,7 @@
     {
       "ipedsId": "228796",
       "slug": "university-of-texas-at-el-paso",
+      "slugAliases": [],
       "name": "University of Texas at El Paso",
       "shortName": "UTEP",
       "aliases": [],
@@ -129705,6 +130309,7 @@
     {
       "ipedsId": "229027",
       "slug": "university-of-texas-at-san-antonio",
+      "slugAliases": [],
       "name": "University of Texas at San Antonio",
       "shortName": "UTSA",
       "aliases": [],
@@ -129923,6 +130528,7 @@
     {
       "ipedsId": "228802",
       "slug": "university-of-texas-at-tyler",
+      "slugAliases": [],
       "name": "University of Texas at Tyler",
       "shortName": "UTT",
       "aliases": [],
@@ -130141,6 +130747,7 @@
     {
       "ipedsId": "227368",
       "slug": "university-of-texas-rio-grande-valley",
+      "slugAliases": [],
       "name": "University of Texas Rio Grande Valley",
       "shortName": "UTRGV",
       "aliases": [],
@@ -130359,6 +130966,7 @@
     {
       "ipedsId": "107558",
       "slug": "university-of-the-ozarks",
+      "slugAliases": [],
       "name": "University of the Ozarks",
       "shortName": "University of the Ozarks",
       "aliases": [],
@@ -130577,6 +131185,7 @@
     {
       "ipedsId": "120883",
       "slug": "university-of-the-pacific",
+      "slugAliases": [],
       "name": "University of the Pacific",
       "shortName": "UP",
       "aliases": [],
@@ -130795,6 +131404,7 @@
     {
       "ipedsId": "206084",
       "slug": "university-of-toledo",
+      "slugAliases": [],
       "name": "University of Toledo",
       "shortName": "University of Toledo",
       "aliases": [],
@@ -131013,6 +131623,7 @@
     {
       "ipedsId": "207971",
       "slug": "university-of-tulsa",
+      "slugAliases": [],
       "name": "University of Tulsa",
       "shortName": "University of Tulsa",
       "aliases": [],
@@ -131231,6 +131842,7 @@
     {
       "ipedsId": "230764",
       "slug": "university-of-utah",
+      "slugAliases": [],
       "name": "University of Utah",
       "shortName": "University of Utah",
       "aliases": [],
@@ -131449,6 +132061,7 @@
     {
       "ipedsId": "231174",
       "slug": "university-of-vermont",
+      "slugAliases": [],
       "name": "University of Vermont",
       "shortName": "University of Vermont",
       "aliases": [],
@@ -131667,6 +132280,7 @@
     {
       "ipedsId": "234076",
       "slug": "university-of-virginia",
+      "slugAliases": [],
       "name": "University of Virginia",
       "shortName": "University of Virginia",
       "aliases": [],
@@ -131885,6 +132499,7 @@
     {
       "ipedsId": "236948",
       "slug": "university-of-washington-seattle",
+      "slugAliases": [],
       "name": "University of Washington-Seattle",
       "shortName": "UWS",
       "aliases": [],
@@ -132094,6 +132709,7 @@
     {
       "ipedsId": "240329",
       "slug": "university-of-wisconsin-la-crosse",
+      "slugAliases": [],
       "name": "University of Wisconsin-La Crosse",
       "shortName": "UWLC",
       "aliases": [],
@@ -132312,6 +132928,7 @@
     {
       "ipedsId": "240444",
       "slug": "university-of-wisconsin-madison",
+      "slugAliases": [],
       "name": "University of Wisconsin-Madison",
       "shortName": "UWM",
       "aliases": [],
@@ -132556,6 +133173,7 @@
     {
       "ipedsId": "240453",
       "slug": "university-of-wisconsin-milwaukee",
+      "slugAliases": [],
       "name": "University of Wisconsin-Milwaukee",
       "shortName": "UWM",
       "aliases": [],
@@ -132774,6 +133392,7 @@
     {
       "ipedsId": "240417",
       "slug": "university-of-wisconsin-stout",
+      "slugAliases": [],
       "name": "University of Wisconsin-Stout",
       "shortName": "UWS",
       "aliases": [],
@@ -132992,6 +133611,7 @@
     {
       "ipedsId": "240426",
       "slug": "university-of-wisconsin-superior",
+      "slugAliases": [],
       "name": "University of Wisconsin-Superior",
       "shortName": "UWS",
       "aliases": [],
@@ -133210,6 +133830,7 @@
     {
       "ipedsId": "240727",
       "slug": "university-of-wyoming",
+      "slugAliases": [],
       "name": "University of Wyoming",
       "shortName": "University of Wyoming",
       "aliases": [],
@@ -133428,6 +134049,7 @@
     {
       "ipedsId": "216524",
       "slug": "ursinus-college",
+      "slugAliases": [],
       "name": "Ursinus College",
       "shortName": "Ursinus",
       "aliases": [],
@@ -133646,6 +134268,7 @@
     {
       "ipedsId": "230728",
       "slug": "utah-state-university",
+      "slugAliases": [],
       "name": "Utah State University",
       "shortName": "Utah State",
       "aliases": [],
@@ -133864,6 +134487,7 @@
     {
       "ipedsId": "197045",
       "slug": "utica-university",
+      "slugAliases": [],
       "name": "Utica University",
       "shortName": "Utica",
       "aliases": [],
@@ -134082,6 +134706,7 @@
     {
       "ipedsId": "141264",
       "slug": "valdosta-state-university",
+      "slugAliases": [],
       "name": "Valdosta State University",
       "shortName": "Valdosta State",
       "aliases": [],
@@ -134300,6 +134925,7 @@
     {
       "ipedsId": "152600",
       "slug": "valparaiso-university",
+      "slugAliases": [],
       "name": "Valparaiso University",
       "shortName": "Valparaiso",
       "aliases": [],
@@ -134518,6 +135144,7 @@
     {
       "ipedsId": "221999",
       "slug": "vanderbilt-university",
+      "slugAliases": [],
       "name": "Vanderbilt University",
       "shortName": "Vanderbilt",
       "aliases": [],
@@ -134769,6 +135396,7 @@
     {
       "ipedsId": "197133",
       "slug": "vassar-college",
+      "slugAliases": [],
       "name": "Vassar College",
       "shortName": "Vassar",
       "aliases": [],
@@ -134968,6 +135596,7 @@
     {
       "ipedsId": "216597",
       "slug": "villanova-university",
+      "slugAliases": [],
       "name": "Villanova University",
       "shortName": "Villanova",
       "aliases": [],
@@ -135186,6 +135815,7 @@
     {
       "ipedsId": "234030",
       "slug": "virginia-commonwealth-university",
+      "slugAliases": [],
       "name": "Virginia Commonwealth University",
       "shortName": "Virginia Commonwealth",
       "aliases": [],
@@ -135404,6 +136034,7 @@
     {
       "ipedsId": "233921",
       "slug": "virginia-tech-polytech-inst-and-state-u",
+      "slugAliases": [],
       "name": "Virginia Tech (Polytech. Inst. & State U.)",
       "shortName": "Virginia Tech",
       "aliases": [],
@@ -135622,6 +136253,7 @@
     {
       "ipedsId": "218919",
       "slug": "voorhees-university",
+      "slugAliases": [],
       "name": "Voorhees University",
       "shortName": "Voorhees",
       "aliases": [],
@@ -135821,6 +136453,7 @@
     {
       "ipedsId": "152673",
       "slug": "wabash-college",
+      "slugAliases": [],
       "name": "Wabash College",
       "shortName": "Wabash",
       "aliases": [],
@@ -136039,6 +136672,7 @@
     {
       "ipedsId": "197197",
       "slug": "wagner-college",
+      "slugAliases": [],
       "name": "Wagner College",
       "shortName": "Wagner",
       "aliases": [],
@@ -136237,6 +136871,7 @@
     {
       "ipedsId": "199847",
       "slug": "wake-forest-university",
+      "slugAliases": [],
       "name": "Wake Forest University",
       "shortName": "Wake Forest",
       "aliases": [],
@@ -136473,6 +137108,7 @@
     {
       "ipedsId": "206437",
       "slug": "walsh-university",
+      "slugAliases": [],
       "name": "Walsh University",
       "shortName": "Walsh",
       "aliases": [],
@@ -136671,6 +137307,7 @@
     {
       "ipedsId": "154527",
       "slug": "wartburg-college",
+      "slugAliases": [],
       "name": "Wartburg College",
       "shortName": "Wartburg",
       "aliases": [],
@@ -136889,6 +137526,7 @@
     {
       "ipedsId": "216667",
       "slug": "washington-and-jefferson-college",
+      "slugAliases": [],
       "name": "Washington & Jefferson College",
       "shortName": "Washington & Jefferson",
       "aliases": [],
@@ -137107,6 +137745,7 @@
     {
       "ipedsId": "234207",
       "slug": "washington-and-lee-university",
+      "slugAliases": [],
       "name": "Washington and Lee University",
       "shortName": "Washington and Lee",
       "aliases": [],
@@ -137358,6 +137997,7 @@
     {
       "ipedsId": "164216",
       "slug": "washington-college",
+      "slugAliases": [],
       "name": "Washington College",
       "shortName": "Washington",
       "aliases": [],
@@ -137576,6 +138216,7 @@
     {
       "ipedsId": "236939",
       "slug": "washington-state-university",
+      "slugAliases": [],
       "name": "Washington State University",
       "shortName": "Washington State",
       "aliases": [],
@@ -137794,6 +138435,7 @@
     {
       "ipedsId": "179867",
       "slug": "washington-university-in-st-louis",
+      "slugAliases": [],
       "name": "Washington University in St. Louis",
       "shortName": "WUSL",
       "aliases": [],
@@ -138022,6 +138664,7 @@
     {
       "ipedsId": "172644",
       "slug": "wayne-state-university",
+      "slugAliases": [],
       "name": "Wayne State University",
       "shortName": "Wayne State",
       "aliases": [],
@@ -138240,6 +138883,7 @@
     {
       "ipedsId": "168218",
       "slug": "wellesley-college",
+      "slugAliases": [],
       "name": "Wellesley College",
       "shortName": "Wellesley",
       "aliases": [],
@@ -138482,6 +139126,7 @@
     {
       "ipedsId": "168227",
       "slug": "wentworth-institute-of-technology",
+      "slugAliases": [],
       "name": "Wentworth Institute of Technology",
       "shortName": "WIT",
       "aliases": [],
@@ -138700,6 +139345,7 @@
     {
       "ipedsId": "141325",
       "slug": "wesleyan-college",
+      "slugAliases": [],
       "name": "Wesleyan College",
       "shortName": "Wesleyan",
       "aliases": [],
@@ -138918,6 +139564,7 @@
     {
       "ipedsId": "130697",
       "slug": "wesleyan-university",
+      "slugAliases": [],
       "name": "Wesleyan University",
       "shortName": "Wesleyan",
       "aliases": [],
@@ -139179,6 +139826,7 @@
     {
       "ipedsId": "216764",
       "slug": "west-chester-university-of-pennsylvania",
+      "slugAliases": [],
       "name": "West Chester University of Pennsylvania",
       "shortName": "WCUP",
       "aliases": [],
@@ -139397,6 +140045,7 @@
     {
       "ipedsId": "229814",
       "slug": "west-texas-a-and-m-university",
+      "slugAliases": [],
       "name": "West Texas A&M University",
       "shortName": "West Texas A&M",
       "aliases": [],
@@ -139614,6 +140263,7 @@
     {
       "ipedsId": "238032",
       "slug": "west-virginia-university",
+      "slugAliases": [],
       "name": "West Virginia University",
       "shortName": "West Virginia",
       "aliases": [],
@@ -139832,6 +140482,7 @@
     {
       "ipedsId": "200004",
       "slug": "western-carolina-university",
+      "slugAliases": [],
       "name": "Western Carolina University",
       "shortName": "Western Carolina",
       "aliases": [],
@@ -140050,6 +140701,7 @@
     {
       "ipedsId": "149772",
       "slug": "western-illinois-university",
+      "slugAliases": [],
       "name": "Western Illinois University",
       "shortName": "Western Illinois",
       "aliases": [],
@@ -140268,6 +140920,7 @@
     {
       "ipedsId": "157951",
       "slug": "western-kentucky-university",
+      "slugAliases": [],
       "name": "Western Kentucky University",
       "shortName": "Western Kentucky",
       "aliases": [],
@@ -140486,6 +141139,7 @@
     {
       "ipedsId": "172699",
       "slug": "western-michigan-university",
+      "slugAliases": [],
       "name": "Western Michigan University",
       "shortName": "Western Michigan",
       "aliases": [],
@@ -140704,6 +141358,7 @@
     {
       "ipedsId": "237011",
       "slug": "western-washington-university",
+      "slugAliases": [],
       "name": "Western Washington University",
       "shortName": "Western Washington",
       "aliases": [],
@@ -140922,6 +141577,7 @@
     {
       "ipedsId": "230807",
       "slug": "westminster-university",
+      "slugAliases": [],
       "name": "Westminster University",
       "shortName": "Westminster",
       "aliases": [],
@@ -141140,6 +141796,7 @@
     {
       "ipedsId": "125727",
       "slug": "westmont-college",
+      "slugAliases": [],
       "name": "Westmont College",
       "shortName": "Westmont",
       "aliases": [],
@@ -141358,6 +142015,7 @@
     {
       "ipedsId": "149781",
       "slug": "wheaton-college-illinois",
+      "slugAliases": [],
       "name": "Wheaton College Illinois",
       "shortName": "Wheaton College Illinois",
       "aliases": [],
@@ -141576,6 +142234,7 @@
     {
       "ipedsId": "168281",
       "slug": "wheaton-college-massachusetts",
+      "slugAliases": [],
       "name": "Wheaton College Massachusetts",
       "shortName": "WCM",
       "aliases": [],
@@ -141794,6 +142453,7 @@
     {
       "ipedsId": "237057",
       "slug": "whitman-college",
+      "slugAliases": [],
       "name": "Whitman College",
       "shortName": "Whitman",
       "aliases": [],
@@ -142012,6 +142672,7 @@
     {
       "ipedsId": "125763",
       "slug": "whittier-college",
+      "slugAliases": [],
       "name": "Whittier College",
       "shortName": "Whittier",
       "aliases": [],
@@ -142230,6 +142891,7 @@
     {
       "ipedsId": "237066",
       "slug": "whitworth-university",
+      "slugAliases": [],
       "name": "Whitworth University",
       "shortName": "Whitworth",
       "aliases": [],
@@ -142448,6 +143110,7 @@
     {
       "ipedsId": "156125",
       "slug": "wichita-state-university",
+      "slugAliases": [],
       "name": "Wichita State University",
       "shortName": "Wichita State",
       "aliases": [],
@@ -142666,6 +143329,7 @@
     {
       "ipedsId": "210401",
       "slug": "willamette-university",
+      "slugAliases": [],
       "name": "Willamette University",
       "shortName": "Willamette",
       "aliases": [],
@@ -142884,6 +143548,7 @@
     {
       "ipedsId": "179955",
       "slug": "william-jewell-college",
+      "slugAliases": [],
       "name": "William Jewell College",
       "shortName": "William Jewell",
       "aliases": [],
@@ -143083,6 +143748,7 @@
     {
       "ipedsId": "187444",
       "slug": "william-paterson-university-of-new-jersey",
+      "slugAliases": [],
       "name": "William Paterson University of New Jersey",
       "shortName": "WPUNJ",
       "aliases": [],
@@ -143301,6 +143967,7 @@
     {
       "ipedsId": "179964",
       "slug": "william-woods-university",
+      "slugAliases": [],
       "name": "William Woods University",
       "shortName": "William Woods",
       "aliases": [],
@@ -143499,6 +144166,7 @@
     {
       "ipedsId": "168342",
       "slug": "williams-college",
+      "slugAliases": [],
       "name": "Williams College",
       "shortName": "Williams",
       "aliases": [],
@@ -143737,6 +144405,7 @@
     {
       "ipedsId": "199962",
       "slug": "wingate-university",
+      "slugAliases": [],
       "name": "Wingate University",
       "shortName": "Wingate",
       "aliases": [],
@@ -143935,6 +144604,7 @@
     {
       "ipedsId": "175272",
       "slug": "winona-state-university",
+      "slugAliases": [],
       "name": "Winona State University",
       "shortName": "Winona State",
       "aliases": [],
@@ -144153,6 +144823,7 @@
     {
       "ipedsId": "218964",
       "slug": "winthrop-university",
+      "slugAliases": [],
       "name": "Winthrop University",
       "shortName": "Winthrop",
       "aliases": [],
@@ -144371,6 +145042,7 @@
     {
       "ipedsId": "206525",
       "slug": "wittenberg-university",
+      "slugAliases": [],
       "name": "Wittenberg University",
       "shortName": "Wittenberg",
       "aliases": [],
@@ -144589,6 +145261,7 @@
     {
       "ipedsId": "218973",
       "slug": "wofford-college",
+      "slugAliases": [],
       "name": "Wofford College",
       "shortName": "Wofford",
       "aliases": [],
@@ -144847,6 +145520,7 @@
     {
       "ipedsId": "168421",
       "slug": "worcester-polytechnic-institute",
+      "slugAliases": [],
       "name": "Worcester Polytechnic Institute",
       "shortName": "WPI",
       "aliases": [],
@@ -145065,6 +145739,7 @@
     {
       "ipedsId": "206604",
       "slug": "wright-state-university",
+      "slugAliases": [],
       "name": "Wright State University",
       "shortName": "Wright State",
       "aliases": [],
@@ -145283,6 +145958,7 @@
     {
       "ipedsId": "206622",
       "slug": "xavier-university",
+      "slugAliases": [],
       "name": "Xavier University",
       "shortName": "Xavier",
       "aliases": [],
@@ -145501,6 +146177,7 @@
     {
       "ipedsId": "130794",
       "slug": "yale-university",
+      "slugAliases": [],
       "name": "Yale University",
       "shortName": "Yale",
       "aliases": [],
@@ -145740,6 +146417,7 @@
     {
       "ipedsId": "197708",
       "slug": "yeshiva-university",
+      "slugAliases": [],
       "name": "Yeshiva University",
       "shortName": "Yeshiva",
       "aliases": [],
@@ -145958,6 +146636,7 @@
     {
       "ipedsId": "217059",
       "slug": "york-college-of-pennsylvania",
+      "slugAliases": [],
       "name": "York College of Pennsylvania",
       "shortName": "YCP",
       "aliases": [],
@@ -146176,6 +146855,7 @@
     {
       "ipedsId": "141361",
       "slug": "young-harris-college",
+      "slugAliases": [],
       "name": "Young Harris College",
       "shortName": "Young Harris",
       "aliases": [],
@@ -146374,6 +147054,7 @@
     {
       "ipedsId": "206695",
       "slug": "youngstown-state-university",
+      "slugAliases": [],
       "name": "Youngstown State University",
       "shortName": "Youngstown State",
       "aliases": [],

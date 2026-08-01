@@ -12,6 +12,8 @@
     "test": "node --test tests/*.test.mjs",
     "generate:legacy-content": "node scripts/generate-legacy-content.mjs",
     "generate:college-catalog": "node scripts/generate-college-catalog.mjs",
+    "generate:college-review-ledger": "node scripts/generate-college-review-ledger.mjs",
+    "verify:college-launch": "node scripts/verify-college-launch-gate.mjs",
     "generate:content": "npm run generate:legacy-content && npm run generate:college-catalog"
   },
   "dependencies": {

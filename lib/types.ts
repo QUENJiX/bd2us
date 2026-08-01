@@ -35,6 +35,7 @@ export type ContentSection = {
 
 export type GuideEntry = {
   slug: string;
+  slugAliases?: string[];
   order: number;
   title: string;
   eyebrow: string;

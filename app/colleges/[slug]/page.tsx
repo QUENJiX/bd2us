@@ -7,7 +7,7 @@ import { getPublishedCollege } from "@/lib/public-content";
 import type { College } from "@/lib/types";
 
 export function generateStaticParams() {
-  return colleges.map((college) => ({ slug: college.slug }));
+  return colleges.flatMap((college) => [college.slug, ...(college.slugAliases ?? [])].map((slug) => ({ slug })));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
