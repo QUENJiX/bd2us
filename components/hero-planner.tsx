@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { defaultProfile } from "@/lib/content";
+import { touchProfile } from "@/lib/local-workspace";
 import type { StudentProfile } from "@/lib/types";
 
 export function HeroPlanner() {
@@ -15,6 +16,7 @@ export function HeroPlanner() {
 
   function begin() {
     window.localStorage.setItem("bd2us-profile", JSON.stringify(profile));
+    touchProfile();
     router.push("/roadmap");
   }
 

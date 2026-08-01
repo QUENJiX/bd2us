@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { touchCollege } from "@/lib/local-workspace";
 import type { College } from "@/lib/types";
 
 const buckets = ["Researching", "Shortlisted", "Applying", "Submitted", "Decision"] as const;
@@ -26,6 +27,7 @@ export function CollegeProfileTools({ college }: { college: College }) {
   function updateBucket(value: (typeof buckets)[number]) {
     const next = { ...readRecord(bucketKey), [slug]: value };
     window.localStorage.setItem(bucketKey, JSON.stringify(next));
+    touchCollege(slug, { bucket: value, deletedAt: null });
     if (!readList(savedKey).includes(slug)) window.localStorage.setItem(savedKey, JSON.stringify([...readList(savedKey), slug]));
     setBucket(value);
     setMessage(`Moved to ${value}.`);
@@ -33,6 +35,7 @@ export function CollegeProfileTools({ college }: { college: College }) {
 
   function saveNote() {
     window.localStorage.setItem(notesKey, JSON.stringify({ ...readRecord(notesKey), [slug]: note }));
+    touchCollege(slug, { note, deletedAt: null });
     if (!readList(savedKey).includes(slug)) window.localStorage.setItem(savedKey, JSON.stringify([...readList(savedKey), slug]));
     setMessage("Research note saved on this device.");
   }
@@ -63,6 +66,7 @@ export function CollegeProfileActions({ college }: { college: College }) {
     const current = readList(savedKey);
     const next = current.includes(college.slug) ? current.filter((item) => item !== college.slug) : [...current, college.slug];
     window.localStorage.setItem(savedKey, JSON.stringify(next));
+    touchCollege(college.slug, { deletedAt: saved ? new Date().toISOString() : null });
     setSaved(next.includes(college.slug));
     setMessage(next.includes(college.slug) ? "Added to your college list." : "Removed from your college list.");
   }

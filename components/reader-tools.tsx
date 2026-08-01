@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { touchReading } from "@/lib/local-workspace";
 
 function readSet(key: string) {
   try {
@@ -37,6 +38,7 @@ export function ReaderTools({ slug }: { slug: string }) {
     if (current) values.delete(slug);
     else values.add(slug);
     window.localStorage.setItem(key, JSON.stringify([...values]));
+    touchReading("guide", slug, key === "bd2us-bookmarks" ? { bookmarked: !current } : { completed: !current });
     if (key === "bd2us-bookmarks") {
       navigator.serviceWorker?.controller?.postMessage({
         type: current ? "REMOVE_READING_PAGE" : "CACHE_READING_PAGE",

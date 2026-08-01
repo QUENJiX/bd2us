@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import { collegeFitReasons } from "@/lib/domain.mjs";
 import { searchColleges } from "@/lib/college-search.mjs";
 import { defaultProfile } from "@/lib/content";
+import { touchCollege } from "@/lib/local-workspace";
 import { compareByRanking, getCollegeRanking, getRankingGroup, rankingLabel, type RankingGroup } from "@/lib/college-rankings";
 import type { College, StudentProfile } from "@/lib/types";
 
@@ -128,6 +129,7 @@ export function CollegeExplorer({ colleges }: { colleges: College[] }) {
     const next = saved.includes(slug) ? saved.filter((item) => item !== slug) : [...saved, slug];
     setSaved(next);
     window.localStorage.setItem(savedKey, JSON.stringify(next));
+    touchCollege(slug, { deletedAt: saved.includes(slug) ? new Date().toISOString() : null });
   }
 
   function toggleCompare(slug: string) {

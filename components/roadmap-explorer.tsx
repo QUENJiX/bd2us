@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { defaultProfile, roadmapStages, roadmapTasks } from "@/lib/content";
+import { touchProgress } from "@/lib/local-workspace";
 import type { StudentProfile } from "@/lib/types";
 
 const stageDates: Record<string, { start: string; end: string; dependency: string }> = {
@@ -50,6 +51,7 @@ export function RoadmapExplorer() {
     if (next.has(taskId)) next.delete(taskId); else next.add(taskId);
     setComplete(next);
     window.localStorage.setItem("bd2us-roadmap-progress", JSON.stringify([...next]));
+    touchProgress(taskId, !complete.has(taskId));
   }
 
   return (

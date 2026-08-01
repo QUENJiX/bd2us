@@ -8,13 +8,14 @@ export function AccountPanel({ email, onSignedOut }: { email: string; onSignedOu
   const [loading, setLoading] = useState<"signout" | "delete" | null>(null);
   const [message, setMessage] = useState("");
 
-  async function signOut() {
+  async function signOut(clearDevice = false) {
     const supabase = getBrowserSupabase();
     if (!supabase) return setMessage("Sign-out is temporarily unavailable. Please try again later.");
     setLoading("signout");
     const { error } = await supabase.auth.signOut();
     setLoading(null);
     if (error) return setMessage(error.message);
+    if (clearDevice) clearLocalWorkspace();
     onSignedOut();
   }
 
@@ -37,8 +38,11 @@ export function AccountPanel({ email, onSignedOut }: { email: string; onSignedOu
       <p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-700">Your account</p>
       <p className="mt-3 break-all text-sm font-bold text-emerald-950">{email}</p>
       <p className="mt-2 text-sm leading-6 text-slate-600">Your synced planning workspace is private to this account.</p>
-      <button className="mt-4 min-h-10 rounded-full border border-emerald-900/15 px-4 text-sm font-bold text-emerald-900 hover:bg-emerald-50 disabled:opacity-50" disabled={loading !== null} onClick={signOut} type="button">
+      <button className="mt-4 min-h-10 rounded-full border border-emerald-900/15 px-4 text-sm font-bold text-emerald-900 hover:bg-emerald-50 disabled:opacity-50" disabled={loading !== null} onClick={() => signOut(false)} type="button">
         {loading === "signout" ? "Signing out..." : "Sign out"}
+      </button>
+      <button className="mt-2 block min-h-10 text-sm font-bold text-slate-600 underline decoration-slate-300 underline-offset-4 disabled:opacity-50" disabled={loading !== null} onClick={() => signOut(true)} type="button">
+        Sign out and clear this device
       </button>
       <div className="mt-5 border-t border-emerald-950/10 pt-4">
         {!confirmingDelete ? (
@@ -70,9 +74,11 @@ function clearLocalWorkspace() {
     "bd2us-roadmap-progress",
     "bd2us:saved-colleges",
     "bd2us:college-notes",
+    "bd2us:college-buckets",
     "bd2us:deadlines",
     "bd2us-bookmarks",
     "bd2us-guide-complete",
-    "bd2us-recent-guides"
+    "bd2us-recent-guides",
+    "bd2us:workspace-v2"
   ].forEach((key) => window.localStorage.removeItem(key));
 }

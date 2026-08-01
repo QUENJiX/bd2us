@@ -20,19 +20,19 @@ export type Database = {
         Relationships: [];
       };
       user_task_progress: {
-        Row: { user_id: string; task_id: string; completed: boolean; completed_at: string | null; updated_at: string };
-        Insert: Database["public"]["Tables"]["user_task_progress"]["Row"];
+        Row: { user_id: string; task_id: string; completed: boolean; completed_at: string | null; updated_at: string; deleted_at: string | null };
+        Insert: Partial<Database["public"]["Tables"]["user_task_progress"]["Row"]> & { user_id: string; task_id: string };
         Update: Partial<Database["public"]["Tables"]["user_task_progress"]["Row"]>;
         Relationships: [];
       };
       saved_colleges: {
-        Row: { user_id: string; college_id: string; bucket: string; notes: string | null; created_at: string; updated_at: string };
-        Insert: Database["public"]["Tables"]["saved_colleges"]["Row"];
+        Row: { user_id: string; college_id: string; bucket: string; notes: string | null; created_at: string; updated_at: string; deleted_at: string | null };
+        Insert: Partial<Database["public"]["Tables"]["saved_colleges"]["Row"]> & { user_id: string; college_id: string };
         Update: Partial<Database["public"]["Tables"]["saved_colleges"]["Row"]>;
         Relationships: [];
       };
       user_deadlines: {
-        Row: { id: string; user_id: string; title: string; due_at: string; source_url: string | null; completed: boolean; created_at: string };
+        Row: { id: string; user_id: string; title: string; due_at: string; source_url: string | null; completed: boolean; created_at: string; updated_at: string; deleted_at: string | null; stable_key: string | null };
         Insert: Partial<Database["public"]["Tables"]["user_deadlines"]["Row"]> & { user_id: string; title: string; due_at: string };
         Update: Partial<Database["public"]["Tables"]["user_deadlines"]["Row"]>;
         Relationships: [];
@@ -47,6 +47,18 @@ export type Database = {
         Row: { id: string; college_id: string; fact_key: string; fact_value: Json; status: string; fact_status: string; source_id: string | null; data_year: string | null; cycle: string | null; raw_value: Json | null; calculation_method: string | null; last_verified_at: string };
         Insert: Partial<Database["public"]["Tables"]["college_facts"]["Row"]> & { college_id: string; fact_key: string; fact_value: Json; last_verified_at: string };
         Update: Partial<Database["public"]["Tables"]["college_facts"]["Row"]>;
+        Relationships: [];
+      };
+      user_reading_state: {
+        Row: { user_id: string; content_type: string; content_slug: string; bookmarked: boolean; completed: boolean; updated_at: string; deleted_at: string | null };
+        Insert: Partial<Database["public"]["Tables"]["user_reading_state"]["Row"]> & { user_id: string; content_type: string; content_slug: string };
+        Update: Partial<Database["public"]["Tables"]["user_reading_state"]["Row"]>;
+        Relationships: [];
+      };
+      college_slug_aliases: {
+        Row: { alias: string; college_id: string; created_at: string };
+        Insert: Partial<Database["public"]["Tables"]["college_slug_aliases"]["Row"]> & { alias: string; college_id: string };
+        Update: Partial<Database["public"]["Tables"]["college_slug_aliases"]["Row"]>;
         Relationships: [];
       };
       college_sources: {
