@@ -39,8 +39,11 @@ test("parser extracts cost, aid, acceptance, and special scholarship notes", () 
       aidPercent: adelphi.internationalAidPercent,
       averageAid: adelphi.averageInternationalAid
     },
-    { cost: 71675, acceptance: 77.512, aidPercent: 40.9, averageAid: 25053 }
+    { cost: 71834, acceptance: 77.512, aidPercent: 40.9, averageAid: 25053 }
   );
+  assert.equal(adelphi.costOfAttendanceFact.status, "calculated");
+  assert.equal(adelphi.costOfAttendanceFact.dataYear, "2023-24");
+  assert.match(adelphi.costOfAttendanceFact.sourceUrl, /nces\.ed\.gov/);
   assert.equal(adelphi.admissions.overallAcceptanceRate.status, "calculated");
   assert.equal(adelphi.admissions.overallAcceptanceRate.applicants, 17111);
   assert.equal(adelphi.admissions.overallAcceptanceRate.admitted, 13263);

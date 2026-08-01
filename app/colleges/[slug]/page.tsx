@@ -41,7 +41,7 @@ export default async function CollegePage({ params }: { params: Promise<{ slug: 
             <section className="profile-section" aria-labelledby="numbers-title">
               <div className="section-kicker"><span>01</span><div><p className="eyebrow">At a glance</p><h2 id="numbers-title">Start with the numbers—then investigate the story.</h2></div></div>
               <div className="profile-numbers">
-                <ProfileNumber label="Annual cost of attendance" value={formatUsd(college.costOfAttendance)} note="Before grants, scholarships, travel, insurance, and personal expenses unless the source states otherwise." />
+                <ProfileNumber label="Annual cost of attendance" value={formatUsd(college.costOfAttendance)} note={factNote(college.costOfAttendanceFact, "Before grants and scholarships. A prior-cycle figure is planning context, not a Fall 2027 quote.")} />
                 <ProfileNumber label="International students receiving aid" value={formatPercent(college.internationalAidPercent)} note="This published share describes past awards; availability does not guarantee affordability." />
                 <ProfileNumber label="Average international award" value={formatUsd(college.averageInternationalAid)} note="An average is not a promise. Award amounts can differ substantially by student." />
                 <ProfileNumber label="Overall acceptance rate" value={formatPercent(college.admissions?.overallAcceptanceRate.value ?? college.acceptanceRate)} note={factNote(college.admissions?.overallAcceptanceRate, "Institution-wide context, never an estimate of your individual chance.")} />
@@ -118,7 +118,12 @@ export default async function CollegePage({ params }: { params: Promise<{ slug: 
               </ol>
               <div className="source-record">
                 <div><p className="eyebrow">Official sources</p><p>{college.sourceScope ?? "Review changing policies on the official college website."}</p></div>
-                {college.source.url ? <a href={college.source.url} rel="noreferrer" target="_blank">Open official source ↗</a> : <a href={`https://www.google.com/search?q=${encodeURIComponent(`${college.name} international undergraduate admissions financial aid`)}`} rel="noreferrer" target="_blank">Find official college pages ↗</a>}
+                <div className="official-source-links">
+                  {college.officialLinks?.admissions ? <a href={college.officialLinks.admissions} rel="noreferrer" target="_blank">Admissions ↗</a> : null}
+                  {college.officialLinks?.financialAid ? <a href={college.officialLinks.financialAid} rel="noreferrer" target="_blank">Financial aid ↗</a> : null}
+                  {college.officialLinks?.application ? <a href={college.officialLinks.application} rel="noreferrer" target="_blank">Application ↗</a> : null}
+                  {college.source.url ? <a href={college.source.url} rel="noreferrer" target="_blank">College Navigator ↗</a> : null}
+                </div>
               </div>
             </section>
 
@@ -204,5 +209,9 @@ function formatUsd(value: number | null | undefined) {
 function formatPercent(value: number | null | undefined, missing = "Not listed") { return value == null ? missing : `${value}%`; }
 function formatNumber(value: number | null | undefined) { return value == null ? "Not listed" : value.toLocaleString("en-US"); }
 function formatRange(value: { low: number | null; high: number | null } | null | undefined) { return !value || (value.low == null && value.high == null) ? "Not listed" : value.low != null && value.high != null ? `${value.low}–${value.high}` : String(value.low ?? value.high); }
-function factNote(fact: { status: string; dataYear?: string | null; sourceLabel?: string | null } | undefined, fallback: string) { return fact ? `${fact.status === "calculated" ? "BD2US calculated" : fact.status.replace("_", " ")}${fact.dataYear ? ` · data year ${fact.dataYear}` : ""}${fact.sourceLabel ? ` · ${fact.sourceLabel}` : ""}. ${fallback}` : fallback; }
+function factNote(fact: { status: string; dataYear?: string | null; sourceLabel?: string | null; note?: string | null } | undefined, fallback: string) {
+  if (!fact) return fallback;
+  const status = fact.status === "calculated" ? "Calculated from official information" : fact.status === "reported" ? "Confirmed by an official source" : fact.status === "not_published" ? "Not published by the college" : fact.status === "unreviewed" ? "Official review still needed" : fact.status === "previous_cycle" ? "Previous cycle reference" : fact.status.replaceAll("_", " ");
+  return `${status}${fact.dataYear ? ` · ${fact.dataYear}` : ""}${fact.sourceLabel ? ` · ${fact.sourceLabel}` : ""}. ${fact.note ?? fallback}`;
+}
 function formatDate(value: string) { return new Intl.DateTimeFormat("en-US", { month: "short", year: "numeric" }).format(new Date(`${value}T00:00:00`)); }

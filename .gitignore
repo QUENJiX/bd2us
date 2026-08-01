@@ -44,6 +44,12 @@ yarn-error.log*
 *.bak
 scratch/
 docs/
+!docs/
+docs/*
+!docs/data/
+docs/data/*
+!docs/data/college_rankings.official.json
+!docs/data/qs2027-us.official.json
 __pycache__/
 *.pyc
 

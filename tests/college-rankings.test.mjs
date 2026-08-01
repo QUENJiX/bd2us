@@ -12,10 +12,14 @@ function loadTypeScriptModule(relativePath) {
 }
 
 const catalog = JSON.parse(readFileSync(new URL("../lib/college-catalog.generated.json", import.meta.url), "utf8")).colleges;
+const qsSnapshot = JSON.parse(readFileSync(new URL("../docs/data/qs2027-us.official.json", import.meta.url), "utf8"));
 const { getCollegeRanking, getRankingGroup, compareByRanking } = loadTypeScriptModule("../lib/college-rankings.ts");
 const college = (name) => catalog.find((item) => item.name === name);
 
 test("QS 2027 university ranks are attached without combining them with LAC ranks", () => {
+  assert.equal(qsSnapshot.count, 184);
+  assert.equal(qsSnapshot.matchedCatalogCount, 179);
+  assert.equal(qsSnapshot.entries.filter((entry) => entry.matchStatus !== "matched").length, 5);
   const mit = getCollegeRanking(college("Massachusetts Institute of Technology (MIT)"));
   assert.equal(mit.rank, 1);
   assert.equal(mit.globalRank, 1);
@@ -24,6 +28,7 @@ test("QS 2027 university ranks are attached without combining them with LAC rank
   assert.equal(getCollegeRanking(college("Stanford University")).rank, 2);
   assert.equal(getCollegeRanking(college("Harvard University")).rank, 5);
   assert.equal(getCollegeRanking(college("Princeton University")).rank, 27);
+  assert.equal(getCollegeRanking(college("Kent State University")).rankDisplay, "1201-1400");
   assert.equal(getRankingGroup(college("Massachusetts Institute of Technology (MIT)")), "universities");
   assert.equal(getRankingGroup(college("Harvard University")), "universities");
 });

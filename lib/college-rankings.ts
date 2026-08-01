@@ -13,7 +13,7 @@ export function getCollegeRanking(college: College): CollegeRanking | null {
       : item.system === "QS World University Rankings"
   ) ?? college.rankings?.[0];
   if (!ranking) return null;
-  const rank = ranking.globalRank ?? ranking.nationalRank;
+  const rank = ranking.globalRank ?? ranking.nationalRank ?? Number(ranking.rankDisplay?.match(/^=?([0-9]+)/)?.[1]);
   return rank == null ? null : { ...ranking, rank };
 }
 
@@ -27,7 +27,8 @@ export function rankingLabel(college: College) {
   const ranking = getCollegeRanking(college);
   if (!ranking) return getRankingGroup(college) === "liberal-arts" ? "No U.S. News LAC rank attached" : getRankingGroup(college) === "universities" ? "No QS rank attached" : "No applicable rank attached";
   if (ranking.system === "QS World University Rankings") {
-    return `${ranking.tied ? "=" : "#"}${ranking.rank} global · QS ${ranking.edition}`;
+    const display = ranking.rankDisplay ?? `${ranking.tied ? "=" : ""}${ranking.rank}`;
+    return `${/^\d+$/.test(display) ? `#${display}` : display} global · QS ${ranking.edition}`;
   }
   return `${ranking.tied ? "=" : "#"}${ranking.rank} · U.S. News liberal arts ${ranking.edition}`;
 }

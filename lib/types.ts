@@ -35,7 +35,6 @@ export type ContentSection = {
 
 export type GuideEntry = {
   slug: string;
-  slugAliases?: string[];
   order: number;
   title: string;
   eyebrow: string;
@@ -103,6 +102,7 @@ export type RoadmapMilestone = {
 export type College = {
   ipedsId?: string | null;
   slug: string;
+  slugAliases?: string[];
   name: string;
   shortName: string;
   aliases?: string[];
@@ -136,6 +136,7 @@ export type College = {
   sourceScope?: string;
   originalDescription?: string;
   costOfAttendance?: number | null;
+  costOfAttendanceFact?: SourcedFact<number>;
   acceptanceRate?: number | null;
   internationalAidPercent?: number | null;
   averageInternationalAid?: number | null;
@@ -224,6 +225,7 @@ export type CollegeRanking = {
   system: "QS World University Rankings" | "U.S. News National Liberal Arts Colleges";
   edition: string;
   globalRank?: number | null;
+  rankDisplay?: string | null;
   nationalRank?: number | null;
   tied?: boolean;
   sourceUrl: string;

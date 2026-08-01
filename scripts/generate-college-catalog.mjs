@@ -381,7 +381,7 @@ function buildScholarships({ scholarshipInfo, scholarshipAmount, scholarshipMeth
 
 function buildRankingMap(data) {
   const map = new Map();
-  for (const entry of data.qs2027.entries) map.set(entry.name, { system: "QS World University Rankings", edition: data.qs2027.edition, globalRank: entry.globalRank, nationalRank: null, tied: entry.tied, sourceUrl: data.qs2027.sourceUrl, reviewedAt: data.reviewedAt });
+  for (const entry of data.qs2027.entries) map.set(entry.name, { system: "QS World University Rankings", edition: data.qs2027.edition, globalRank: entry.globalRank, rankDisplay: entry.rankDisplay ?? String(entry.globalRank), nationalRank: null, tied: entry.tied, sourceUrl: data.qs2027.sourceUrl, reviewedAt: data.reviewedAt });
   for (const entry of data.usNews2026.entries) map.set(entry.name, { system: "U.S. News National Liberal Arts Colleges", edition: data.usNews2026.edition, globalRank: null, nationalRank: entry.nationalRank, tied: entry.tied, sourceUrl: data.usNews2026.sourceUrl, reviewedAt: data.reviewedAt });
   return map;
 }
@@ -410,6 +410,8 @@ function mergeGovernmentFacts(base, record) {
   return {
     ...base,
     acceptanceRate: overall?.value ?? base.acceptanceRate,
+    costOfAttendance: record.costOfAttendance?.value ?? base.costOfAttendance,
+    costOfAttendanceFact: record.costOfAttendance ? { ...record.costOfAttendance, sourceLabel: "U.S. Department of Education NCES/IPEDS" } : undefined,
     source: { label: "U.S. Department of Education College Navigator", url: record.identity.sourceUrl, lastVerifiedAt: reviewedAt },
     officialLinks: record.officialLinks,
     admissions: {
@@ -448,8 +450,8 @@ function researchHighlightsFor(college) {
   if (college.testing?.satMathRange?.value) highlights.push(`Its listed SAT Math middle range is ${rangeLabel(college.testing.satMathRange.value)}, useful context if you plan to submit scores.`);
   if (college.rankings?.[0]) {
     const ranking = college.rankings[0];
-    const rank = ranking.globalRank ?? ranking.nationalRank;
-    highlights.push(`${ranking.tied ? "Tied at" : "Ranked"} #${rank} in the ${ranking.system} ${ranking.edition} snapshot.`);
+    const rank = ranking.rankDisplay ?? ranking.globalRank ?? ranking.nationalRank;
+    highlights.push(`${ranking.tied ? "Tied at" : "Ranked"} ${typeof rank === "number" ? `#${rank}` : rank} in the ${ranking.system} ${ranking.edition} snapshot.`);
   }
   if (!highlights.length && college.costOfAttendance != null) highlights.push(`The listed cost is ${usd(college.costOfAttendance)} before aid, so an official cost and aid-policy check should come first.`);
   if (!highlights.length && college.setting) highlights.push(`${college.setting} setting; compare transport, housing, and nearby support before shortlisting.`);

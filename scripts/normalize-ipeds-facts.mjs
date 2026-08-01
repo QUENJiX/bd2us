@@ -6,11 +6,13 @@ const root = resolve(import.meta.dirname, "..");
 const leads = JSON.parse(await readFile(resolve(root, "data/college-research-leads.json"), "utf8"));
 const directoryPath = process.argv[2] ?? "C:/tmp/HD2024/HD2024.csv";
 const admissionsPath = process.argv[3] ?? "C:/tmp/ADM2023/adm2023.csv";
+const pricingPath = process.argv[4] ?? "C:/tmp/IC2023_AY/ic2023_ay.csv";
 const outputPath = resolve(root, "data/college-government-facts.json");
 
-const [directorySheet, admissionsSheet] = await Promise.all([readCsv(directoryPath), readCsv(admissionsPath)]);
+const [directorySheet, admissionsSheet, pricingSheet] = await Promise.all([readCsv(directoryPath), readCsv(admissionsPath), readCsv(pricingPath)]);
 const directory = rowsById(directorySheet);
 const admissions = rowsById(admissionsSheet);
+const pricing = rowsById(pricingSheet);
 const records = [];
 
 for (const lead of leads.records) {
@@ -18,6 +20,7 @@ for (const lead of leads.records) {
   const directoryRow = directory.rows.get(id);
   if (!directoryRow) throw new Error(`IPEDS directory row missing for ${lead.name} (${id}).`);
   const admissionRow = admissions.rows.get(id);
+  const pricingRow = pricing.rows.get(id);
   const officialName = text(directoryRow, directory.headers, "INSTNM");
   const applicants = number(admissionRow, admissions.headers, "APPLCN");
   const admitted = number(admissionRow, admissions.headers, "ADMSSN");
@@ -40,8 +43,10 @@ for (const lead of leads.records) {
       homepage: url(directoryRow, directory.headers, "WEBADDR"),
       admissions: url(directoryRow, directory.headers, "ADMINURL"),
       financialAid: url(directoryRow, directory.headers, "FAIDURL"),
-      application: url(directoryRow, directory.headers, "APPLURL")
+      application: url(directoryRow, directory.headers, "APPLURL"),
+      campusSafety: "https://ope.ed.gov/campussafety/"
     },
+    costOfAttendance: officialCost(pricingRow, pricing.headers, ncesUrl),
     admissions: {
       overallAcceptanceRate: applicants && admitted != null ? { value: round(admitted / applicants * 100), status: "calculated", applicants, admitted, sourceUrl: ncesUrl, dataYear: "2023-24", reviewedAt: "2026-08-01" } : { value: null, status: "not_published", applicants: null, admitted: null, sourceUrl: ncesUrl, dataYear: "2023-24", reviewedAt: "2026-08-01" },
       satSubmissionPercent: sourcedNumber(admissionRow, admissions.headers, "SATPCT", ncesUrl),
@@ -71,4 +76,16 @@ function number(row, headers, field) { const value = Number(cell(row, headers, f
 function url(row, headers, field) { const value = text(row, headers, field); if (!value) return null; try { return new URL(/^https?:\/\//i.test(value) ? value : `https://${value}`).toString(); } catch { return null; } }
 function round(value) { return Math.round(value * 1000) / 1000; }
 function sourcedNumber(row, headers, field, sourceUrl) { const value = number(row, headers, field); return { value, status: value == null ? "not_published" : "reported", sourceUrl, dataYear: "2023-24", reviewedAt: "2026-08-01" }; }
-function sourcedRange(row, headers, lowField, highField, sourceUrl) { const low = number(row, headers, lowField); const high = number(row, headers, highField); return { value: low == null && high == null ? null : { low, high }, status: low == null && high == null ? "not_published" : "reported", sourceUrl, dataYear: "2023-24", reviewedAt: "2026-08-01" }; }
+function sourcedRange(row, headers, lowField, highField, sourceUrl) { const low = scoreNumber(row, headers, lowField); const high = scoreNumber(row, headers, highField); return { value: low == null && high == null ? null : { low, high }, status: low == null && high == null ? "not_published" : "reported", sourceUrl, dataYear: "2023-24", reviewedAt: "2026-08-01" }; }
+function scoreNumber(row, headers, field) { const value = number(row, headers, field); return value && value > 0 ? value : null; }
+function officialCost(row, headers, sourceUrl) {
+  const components = {
+    outOfStateTuitionAndFees: number(row, headers, "CHG3AY3"),
+    booksAndSupplies: number(row, headers, "CHG4AY3"),
+    onCampusRoomAndBoard: number(row, headers, "CHG5AY3"),
+    onCampusOtherExpenses: number(row, headers, "CHG6AY3")
+  };
+  const values = Object.values(components);
+  const value = values.every((item) => item != null) ? values.reduce((sum, item) => sum + item, 0) : null;
+  return { value, components, status: value == null ? "not_published" : "calculated", sourceUrl, dataYear: "2023-24", reviewedAt: "2026-08-01", note: "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components." };
+}

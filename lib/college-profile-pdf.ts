@@ -116,8 +116,9 @@ function drawRankingStamp(page: PDFPage, college: College, font: PDFFont, bold: 
   const x = pageWidth - margin - 104;
   const y = pageHeight - 111;
   page.drawRectangle({ x, y, width: 104, height: 55, borderColor: rgb(0.42, 0.63, 0.55), borderWidth: 0.8 });
-  const primary = ranking?.globalRank ?? ranking?.nationalRank;
-  page.drawText(primary == null ? "UNRANKED" : `${ranking?.tied ? "=" : "#"}${primary}`, { x: x + 10, y: y + 27, font: bold, size: primary == null ? 11 : 21, color: white });
+  const primary = ranking?.rankDisplay ?? ranking?.globalRank ?? ranking?.nationalRank;
+  const rankLabel = primary == null ? "UNRANKED" : typeof primary === "string" ? primary : `${ranking?.tied ? "=" : "#"}${primary}`;
+  page.drawText(rankLabel, { x: x + 10, y: y + 27, font: bold, size: primary == null ? 11 : rankLabel.length > 6 ? 13 : 21, color: white });
   page.drawText(ascii(ranking ? ranking.system.startsWith("QS") ? `QS GLOBAL ${ranking.edition}` : `U.S. NEWS LAC ${ranking.edition}` : "NO APPLICABLE SNAPSHOT"), { x: x + 10, y: y + 13, font, size: 6.5, color: rgb(0.75, 0.91, 0.84) });
 }
 

@@ -11,7 +11,7 @@ test("official review ledger contains every college and every required topic", (
   assert.deepEqual(ledger.requiredFields, [
     "identity", "overallAdmission", "scoreRanges", "cost", "internationalAid", "scholarships",
     "internationalAdmission", "applicationPlansAndDeadlines", "applicationRequirements", "testingPolicy",
-    "englishProficiency", "campusContext"
+    "englishProficiency", "campusSafety", "climate"
   ]);
   for (const record of ledger.records) {
     assert.deepEqual(Object.keys(record.fields), ledger.requiredFields);

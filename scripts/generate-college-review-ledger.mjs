@@ -26,7 +26,7 @@ const records = catalog.colleges.map((college) => {
       identity: outcome("reported", [ncesSource], "Official institutional identity and location checked."),
       overallAdmission: outcome(official.admissions.overallAcceptanceRate.status, [ncesSource], official.admissions.overallAcceptanceRate.value == null ? "No overall applicant/admit count was published in this release." : "Rate calculated from same-year official applicant and admit counts."),
       scoreRanges: outcome(hasScoreRange ? "reported" : "not_published", [ncesSource], hasScoreRange ? "Available score ranges and submission shares checked." : "No score range was published in this release."),
-      cost: pending(),
+      cost: outcome(official.costOfAttendance.status === "not_published" ? "not_published" : "previous_cycle", [ncesSource], official.costOfAttendance.note),
       internationalAid: pending(),
       scholarships: pending(),
       internationalAdmission: pending(),
@@ -34,7 +34,8 @@ const records = catalog.colleges.map((college) => {
       applicationRequirements: pending(),
       testingPolicy: pending(),
       englishProficiency: pending(),
-      campusContext: pending()
+      campusSafety: outcome("reported", [{ label: "U.S. Department of Education Campus Safety and Security", url: official.officialLinks.campusSafety, reviewedAt }], "Official campus-safety lookup is available; interpret reports in context rather than as a single safety score."),
+      climate: pending()
     }
   };
 });
