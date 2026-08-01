@@ -116,6 +116,10 @@ export default async function CollegePage({ params }: { params: Promise<{ slug: 
                 <li><strong>Academic fit:</strong> intended major, curriculum flexibility, first-year support, research access, and any portfolio or prerequisite requirements.</li>
                 <li><strong>International support:</strong> housing, health insurance, airport arrival, visa-document timeline, campus employment, and advising.</li>
               </ol>
+              {college.campusContext ? <div className="campus-context-panel">
+                <div><p className="eyebrow">Climate context</p><p>{college.campusContext.climate.value ?? "Climate information is still being checked."}</p></div>
+                <div><p className="eyebrow">Campus safety</p><p>Review the college&apos;s official annual security report and compare definitions, campus size, and reporting years.</p>{college.campusContext.safetyUrl.value ? <a href={college.campusContext.safetyUrl.value} rel="noreferrer" target="_blank">Open the federal campus-safety lookup ↗</a> : null}</div>
+              </div> : null}
               <div className="source-record">
                 <div><p className="eyebrow">Official sources</p><p>{college.sourceScope ?? "Review changing policies on the official college website."}</p></div>
                 <div className="official-source-links">

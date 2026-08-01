@@ -79,3 +79,23 @@ test("acceptance rates are described as context, not personal odds", () => {
   const withoutAidStat = catalog.colleges.find((college) => college.slug === "youngstown-state-university");
   assert.match(withoutAidStat.summary, /context rather than a personal (admission )?probability/i);
 });
+
+test("official manual review facts populate plans, deadlines, fees, and platforms", () => {
+  const albion = catalog.colleges.find((college) => college.name === "Albion College");
+  assert.equal(albion.testing.policy.value, "Test-optional");
+  assert.deepEqual(albion.applicationPlans, ["ED", "EA", "Rolling"]);
+  assert.deepEqual(albion.deadlines.map((deadline) => [deadline.plan, deadline.date.value]), [["ED", "November 1"], ["EA", "December 1"]]);
+  assert.equal(albion.applicationRequirements.plans.find((plan) => plan.code === "ED").binding, true);
+  assert.equal(albion.applicationRequirements.fee.amount.value, 25);
+  assert.deepEqual(albion.applicationRequirements.platforms.map((platform) => platform.name), ["Albion Application", "Common Application"]);
+});
+
+test("every college has sourced climate and campus-safety context", () => {
+  for (const college of catalog.colleges) {
+    assert.equal(college.campusContext.climate.status, "reported");
+    assert.match(college.campusContext.climate.sourceLabel, /NASA POWER/);
+    assert.match(college.campusContext.climate.value, /Annual average/);
+    assert.equal(college.campusContext.safetyUrl.status, "reported");
+    assert.match(college.campusContext.safetyUrl.value, /ope\.ed\.gov\/campussafety/);
+  }
+});

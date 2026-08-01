@@ -24,3 +24,12 @@ test("unreviewed college-specific policies cannot be mistaken for not published 
   assert.ok(pending.length > 0);
   assert.ok(pending.every((field) => field.reviewedAt === null && field.sources.length === 0));
 });
+
+test("manual official reviews retain current and previous-cycle status accurately", () => {
+  const albion = ledger.records.find((record) => record.name === "Albion College");
+  assert.equal(albion.fields.applicationPlansAndDeadlines.status, "reported");
+  assert.match(albion.fields.applicationPlansAndDeadlines.sources[0].url, /albion\.edu/);
+  const american = ledger.records.find((record) => record.name === "American University");
+  assert.equal(american.fields.applicationPlansAndDeadlines.status, "previous_cycle");
+  assert.match(american.fields.applicationPlansAndDeadlines.note, /prior-cycle/i);
+});

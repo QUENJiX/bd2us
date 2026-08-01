@@ -1,0 +1,458 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-08-01",
+  "records": [
+    {
+      "name": "Arcadia University",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.arcadia.edu/wp-content/uploads/2025/05/25-EM-International-Students-Guide_DB_Final-1.pdf", "note": "Arcadia's official international guide lists automatic Global Scholarships for admitted international students and additional need-based grants." }
+      },
+      "facts": {
+        "internationalAidPolicy": "Automatic Global Scholarships for admitted international students; additional need-based grants may be available"
+      }
+    },
+    {
+      "name": "Bryant University",
+      "fields": {
+        "englishProficiency": { "status": "reported", "url": "https://www.bryant.edu/undergraduate/undergraduate-admission/applying-bryant/international-students", "note": "Published minimums are TOEFL 80 on the prior scale, IELTS 6.5, Duolingo 115, PTE 53, and Oxford ELLT 7. English-curriculum and score-based waiver routes are described." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL": 80, "IELTS": 6.5, "Duolingo": 115, "PTE": 53, "Oxford ELLT": 7 }
+      }
+    },
+    {
+      "name": "Duquesne University",
+      "fields": {
+        "testingPolicy": { "status": "reported", "url": "https://www.duq.edu/admission-and-aid/how-to-apply/undergraduate/test-optional-admission.php", "note": "All undergraduate majors offer a test-optional route. SAT, ACT, CLT, AP, IB, and CLEP results may be considered when submitted; individual special programs can have additional requirements." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional for all undergraduate majors; verify special-program requirements"
+      }
+    },
+    {
+      "name": "Eastern Michigan University",
+      "fields": {
+        "englishProficiency": { "status": "reported", "url": "https://www.emich.edu/admissions/international/documents/international_undergrad_checklist.pdf", "note": "Published undergraduate minimums are TOEFL iBT 61, IELTS 6.0, MELAB 72, and PTE 44. Official scores must be sent by the testing agency; official exemption guidance is also available." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL": 61, "IELTS": 6, "MELAB": 72, "PTE": 44 }
+      }
+    },
+    {
+      "name": "North Carolina Wesleyan University",
+      "fields": {
+        "englishProficiency": { "status": "reported", "url": "https://ncwu.edu/admissions/admission-requirements/", "note": "Published minimums are TOEFL 60, IELTS 6.0, and Duolingo 90. The official international page also describes translated-record and evaluation requirements." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL": 60, "IELTS": 6, "Duolingo": 90 }
+      }
+    },
+    {
+      "name": "University of Alabama-Huntsville",
+      "fields": {
+        "englishProficiency": { "status": "reported", "url": "https://www.uah.edu/admissions/undergraduate/apply-for-admission/international", "note": "Published minimums include TOEFL iBT 72 with section minimums, IELTS 5.5 with section conditions, Duolingo 95, PTE 51, and TOEIC 600. Official waiver routes and score-validity rules are listed." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL": 72, "IELTS": 5.5, "Duolingo": 95, "PTE": 51, "TOEIC": 600 }
+      }
+    },
+    {
+      "name": "University of Colorado-Boulder",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.colorado.edu/admissions/cost/scholarships-financial-aid/international", "note": "International students are not eligible for federal aid. A few merit scholarships are available, and completed first-year applications received by January 15 are considered for specified nonresident scholarships." }
+      },
+      "facts": {
+        "internationalAidPolicy": "No federal aid for international students; a small number of competitive merit scholarships are available"
+      }
+    },
+    {
+      "name": "University of New Haven",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "previous_cycle", "url": "https://www.newhaven.edu/admissions/undergraduate/the-application-process/first-year-student-application-process/index.php", "note": "Fall 2027 dates are not published on the reviewed page. The Fall 2025 page lists binding Early Decision December 1, nonbinding Early Action I December 15, nonbinding Early Action II February 15, then rolling review with a March 1 priority date; use only as a prior-cycle reference." }
+      },
+      "facts": {
+        "planStatus": "previous_cycle",
+        "plans": [
+          { "kind": "ED", "deadline": "December 1", "binding": true },
+          { "kind": "EA", "deadline": "December 15", "binding": false },
+          { "kind": "EA2", "deadline": "February 15", "binding": false },
+          { "kind": "Rolling", "deadline": null, "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "Wabash College",
+      "fields": {
+        "englishProficiency": { "status": "reported", "url": "https://www.wabash.edu/admissions/international", "note": "Recommended minimums are TOEFL iBT 85 on the prior scale, IELTS 6.5, PTE 57, Duolingo 115, or SAT EBRW 550. Official scores are required unless a case-by-case curriculum waiver is approved." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL": 85, "IELTS": 6.5, "PTE": 57, "Duolingo": 115, "SAT EBRW": 550 }
+      }
+    },
+    {
+      "name": "Bradley University",
+      "fields": {
+        "internationalAid": { "status": "previous_cycle", "url": "https://www.bradley.edu/offices/academic/institutionaleffectiveness/assets/documents/cds_2022-2023.pdf", "note": "Fall 2027 international-aid terms are not yet confirmed. Bradley's official 2022–23 Common Data Set reports institutional aid for nonresident undergraduates; use this only as a prior-cycle research signal." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.bradley.edu/admissions/first-year/", "note": "Current first-year instructions list the application, high-school transcript, personal statement, and English proof or waiver for international applicants. Additional national-exam records may be required." }
+      },
+      "facts": {}
+    },
+    {
+      "name": "East Tennessee State University",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.etsu.edu/international/apply/undergraduate.php", "note": "The international undergraduate page lists July 1 for fall and November 1 for spring, with separate I-20 request dates of July 15 and November 15." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.etsu.edu/international/apply/undergraduate.php", "note": "Online application, $35 fee, English proof where applicable, and official secondary records with English translations are listed. External credential evaluation is optional." }
+      },
+      "facts": {
+        "applicationFee": 35,
+        "plans": [
+          { "kind": "Fall", "deadline": "July 1", "binding": false },
+          { "kind": "Spring", "deadline": "November 1", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "Elon University",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.elon.edu/u/admissions/undergraduate/international-admissions/admissions-requirements/", "note": "Elon does not offer need-based aid to non-U.S. citizens. International first-year applicants receive automatic consideration for named merit awards, with published combined scholarship ranges of $3,000–$23,500 per year; full scholarships are not offered." },
+        "englishProficiency": { "status": "reported", "url": "https://www.elon.edu/u/admissions/undergraduate/international-admissions/admissions-requirements/", "note": "Published minimums are TOEFL 80 on the prior scale, IELTS 6.5, and Duolingo 110 when the applicant's school does not use English as its primary language of instruction." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL": 80, "IELTS": 6.5, "Duolingo": 110 },
+        "internationalAidPolicy": "No need-based aid for non-U.S. citizens; automatic and application-based merit awards are available"
+      }
+    },
+    {
+      "name": "Louisiana State University",
+      "fields": {
+        "testingPolicy": { "status": "not_published", "url": "https://www.lsu.edu/admissions/apply/test-optional-faq.php", "note": "The reviewed official page publishes a test-optional policy for Summer/Fall 2026 but not Fall 2027. Applicants should plan for testing until LSU publishes the new cycle; the prior policy allowed self-reporting with enrollment verification." },
+        "englishProficiency": { "status": "reported", "url": "https://www.lsu.edu/admissions/apply/international.php", "note": "Published automatic-admission minimums are TOEFL iBT 79, IELTS 6.5, and Duolingo 100. Official exemption routes include specified U.S. study, English-official-country education, SAT EBRW 500, or ACT English 18." }
+      },
+      "facts": {
+        "testingPolicy": "Fall 2027 policy not yet published; Summer/Fall 2026 was test-optional",
+        "testingStatus": "not_published",
+        "englishMinimums": { "TOEFL": 79, "IELTS": 6.5, "Duolingo": 100 }
+      }
+    },
+    {
+      "name": "University of Dayton",
+      "fields": {
+        "testingPolicy": { "status": "reported", "url": "https://udayton.edu/apply/undergraduate/resources/test-optional.php", "note": "The University of Dayton is test-optional for first-year admission, permits applicants to choose whether scores are reviewed, and superscores SAT and ACT. English proof can still be required internationally." },
+        "englishProficiency": { "status": "reported", "url": "https://udayton.edu/apply/international/undergraduate/english-proficiency.php", "note": "Published full-admission minimums are TOEFL 70 on the prior scale, IELTS 6.0, and Duolingo 105; scores must be sent directly by the testing provider." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional; SAT and ACT are superscored when submitted",
+        "englishMinimums": { "TOEFL": 70, "IELTS": 6, "Duolingo": 105 }
+      }
+    },
+    {
+      "name": "University of Texas at Arlington",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.uta.edu/admissions/apply/international-undergraduate/international-freshmen", "note": "International first-year priority dates are February 15 for fall, October 15 for spring, and April 1 for summer. Applications may be accepted later, but priority dates protect consideration." },
+        "englishProficiency": { "status": "reported", "url": "https://www.uta.edu/admissions/apply/international-undergraduate/international-freshmen", "note": "Published minimums are TOEFL 79 on the prior scale, IELTS 6.5, and Duolingo 100; engineering applicants need Duolingo 105. Official score and waiver rules are listed." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL": 79, "IELTS": 6.5, "Duolingo": 100 },
+        "plans": [
+          { "kind": "Fall", "deadline": "February 15", "binding": false },
+          { "kind": "Spring", "deadline": "October 15", "binding": false },
+          { "kind": "Summer", "deadline": "April 1", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "Western Washington University",
+      "fields": {
+        "testingPolicy": { "status": "reported", "url": "https://admissions.wwu.edu/first-year/apply", "note": "Western is test-optional for admission and merit scholarships. Scores may be considered when submitted, and certain education programs can have separate uses." },
+        "englishProficiency": { "status": "reported", "url": "https://admissions.wwu.edu/international/apply", "note": "Published minimums are TOEFL 79 on the prior scale, IELTS 6.0, Duolingo 105, or SAT EBRW 550. Scores must be sent directly, with official curriculum and country waiver routes described." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional for admission and merit scholarships; verify program-specific rules",
+        "englishMinimums": { "TOEFL": 79, "IELTS": 6, "Duolingo": 105, "SAT EBRW": 550 }
+      }
+    },
+    {
+      "name": "North Carolina A&T",
+      "fields": {
+        "applicationRequirements": { "status": "reported", "url": "https://www.ncat.edu/admissions/undergraduate/international-admissions.php", "note": "Official international requirements include evaluated academic records, English proof, passport identification, and post-admission financial documentation." },
+        "testingPolicy": { "status": "reported", "url": "https://www.ncat.edu/admissions/undergraduate/freshman/admissions-criteria.php", "note": "SAT/ACT scores are optional for admission but the university strongly recommends them for placement and other purposes." },
+        "englishProficiency": { "status": "reported", "url": "https://www.ncat.edu/admissions/undergraduate/international-admissions.php", "note": "Published routes include TOEFL 79–80, IELTS 6.5, Duolingo 105, PTE 53, Cambridge C1, SAT Reading 400, approved U.S. English coursework, or listed language-program completion and country exemptions." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional for admission; recommended for placement and other uses",
+        "englishMinimums": { "TOEFL": 79, "IELTS": 6.5, "Duolingo": 105, "PTE": 53, "SAT Reading": 400 }
+      }
+    },
+    {
+      "name": "Savannah College of Art and Design",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.scad.edu/content/international", "note": "International students are not eligible for U.S. federal or state aid. All admitted students are automatically considered for institutional scholarships, including academic and achievement review routes." },
+        "testingPolicy": { "status": "reported", "url": "https://www.scad.edu/admission/admission-information/frequently-asked-questions", "note": "SCAD is test-optional; missing SAT/ACT scores do not affect admission review or scholarship consideration." },
+        "englishProficiency": { "status": "reported", "url": "https://www.scad.edu/sites/default/files/PDF/Admission-information-Transfer-international.pdf?2023=&layout=layout2", "note": "The current official international admission guide lists TOEFL, IELTS 6.5 with reading and writing expectations, Duolingo 120 with subscores, SAT/ACT, English-medium study, and SCAD Language Studio routes. Applicants should confirm the test-specific score table for their level." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional for admission and scholarship consideration",
+        "internationalAidPolicy": "No U.S. federal or state aid; automatic institutional scholarship consideration for admitted students"
+      }
+    },
+    {
+      "name": "University of Colorado-Denver",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "previous_cycle", "url": "https://catalog.ucdenver.edu/cu-denver/undergraduate/admissions/international-admissions/application-information-undergraduate-international-students/application-information-undergraduate-international-students.pdf", "note": "Fall 2027 deadlines are not published in the reviewed current catalog page. It lists Fall 2026, Spring 2027, and Summer 2027 document dates as prior-cycle planning references only." },
+        "applicationRequirements": { "status": "reported", "url": "https://catalog.ucdenver.edu/cu-denver/undergraduate/admissions/international-admissions/freshman-transfer-student-admission/freshman-transfer-student-admission.pdf", "note": "Current international instructions list complete secondary records, certified translations when needed, country-specific completion exams, and English proof; CU Denver evaluates credentials internally." },
+        "englishProficiency": { "status": "reported", "url": "https://catalog.ucdenver.edu/cu-denver/undergraduate/admissions/international-admissions/proof-english-language-proficiency/proof-english-language-proficiency.pdf", "note": "Published undergraduate minimums are TOEFL 79, IELTS 6.5, PTE 58, and Duolingo 105, with subscore, citizenship, curriculum, coursework, and ESL Academy routes." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL": 79, "IELTS": 6.5, "PTE": 58, "Duolingo": 105 }
+      }
+    },
+    {
+      "name": "University of Maine",
+      "fields": {
+        "internationalAid": { "status": "previous_cycle", "url": "https://umaine.edu/admissions/cost-aid/merit-scholarships/international-scholarships-26-27/", "note": "Fall 2027 awards are not yet published. For 2026–27, official international merit awards ranged from $9,000 to $25,110 with GPA, enrollment, and renewal rules; use only as a prior-cycle reference." },
+        "testingPolicy": { "status": "not_published", "url": "https://umaine.edu/admissions/cost-aid/merit-scholarships/international-scholarships-26-27/", "note": "The official 2026–27 scholarship page says SAT/ACT was optional, but the Fall 2027 admission policy has not yet been confirmed on the reviewed pages." },
+        "englishProficiency": { "status": "reported", "url": "https://umaine.edu/admissions/apply/international-undergraduate-admissions/", "note": "Published minimums are TOEFL 79 on the prior scale, TOEFL Essentials 8.5, IELTS 6.5, PTE 53, Duolingo 110, or CEFR B2, with official score and waiver routes." }
+      },
+      "facts": {
+        "testingPolicy": "Fall 2027 policy not yet published; SAT/ACT was optional for 2026–27 scholarship review",
+        "testingStatus": "not_published",
+        "englishMinimums": { "TOEFL": 79, "TOEFL Essentials": 8.5, "IELTS": 6.5, "PTE": 53, "Duolingo": 110 }
+      }
+    },
+    {
+      "name": "University of Texas at El Paso",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.utep.edu/financial-aid/how-to-apply/applying-for-financial-aid.html", "note": "International and other FAFSA-ineligible students may use TASFA when they meet Texas eligibility rules. Separate university scholarships include awards open to international applicants; eligibility varies." },
+        "applicationRequirements": { "status": "reported", "url": "https://catalog.utep.edu/admissions/undergraduate/freshman/", "note": "The current catalog lists the first-year academic record and admission requirements. International applicants should confirm credential, English, fee, and visa-document additions with admissions." }
+      },
+      "facts": {
+        "internationalAidPolicy": "TASFA-based state or institutional aid depends on Texas eligibility; separate scholarships may accept international applicants"
+      }
+    },
+    {
+      "name": "Albion College",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.albion.edu/admission/international/", "note": "The college states that international students receive scholarships and financial aid; exact awards must be confirmed in the admission offer." },
+        "scholarships": { "status": "reported", "url": "https://www.albion.edu/admission/international/scholarships-and-expenses/", "note": "Official international scholarship and expense information checked." },
+        "internationalAdmission": { "status": "reported", "url": "https://www.albion.edu/admission/international/", "note": "Official international first-year instructions checked." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.albion.edu/admission/international/", "note": "Early Decision is binding and due November 1; Early Action is due December 1; rolling admission is also offered. The international fall planning deadline shown is May 1." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.albion.edu/admission/international/", "note": "Albion or Common Application, $25 international fee, official translated academic records, essay, and recommendation are listed." },
+        "testingPolicy": { "status": "reported", "url": "https://www.albion.edu/admission/international/", "note": "The official page states that Albion is test-optional for SAT/ACT." },
+        "englishProficiency": { "status": "reported", "url": "https://www.albion.edu/admission/international/", "note": "SAT, ACT, TOEFL, or IELTS may demonstrate English proficiency; applicants should verify the current score standard." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional",
+        "applicationFee": 25,
+        "platforms": ["Albion Application", "Common Application"],
+        "plans": [
+          { "kind": "ED", "deadline": "November 1", "binding": true },
+          { "kind": "EA", "deadline": "December 1", "binding": false },
+          { "kind": "Rolling", "deadline": null, "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "American University",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.american.edu/admissions/international/instructions.cfm", "note": "International admission is need-aware. Need-based institutional aid is not offered to international applicants; competitive merit awards are available." },
+        "scholarships": { "status": "reported", "url": "https://www.american.edu/admissions/international/first-year-merit.cfm", "note": "Partial international merit awards are automatic and renewable; the separate Emerging Global Leader Scholarship has its own requirements and deadline." },
+        "internationalAdmission": { "status": "reported", "url": "https://www.american.edu/admissions/international/instructions.cfm", "note": "Official international first-year requirements checked." },
+        "applicationPlansAndDeadlines": { "status": "previous_cycle", "url": "https://www.american.edu/admissions/international/upload/2024-2025-AU-DFF-Form-and-Instructions.pdf", "note": "Fall 2027 dates are not yet published on the reviewed pages. A prior-cycle form lists EA/EDI November 1 and EDII/RD January 15 as planning references only." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.american.edu/admissions/international/instructions.cfm", "note": "Common Application, $75 fee, grades 9–12 records with translations, teacher recommendation, English proof, and financial declaration requirements checked." },
+        "testingPolicy": { "status": "reported", "url": "https://www.american.edu/admissions/international/instructions.cfm", "note": "AU does not evaluate SAT/ACT for students graduating from secondary schools outside the United States; applicants in other situations should verify their rule." },
+        "englishProficiency": { "status": "reported", "url": "https://www.american.edu/admissions/international/instructions.cfm", "note": "Minimums listed: TOEFL 85, IELTS 6.5, Cambridge 176, Duolingo 120, PTE 60; curriculum-based waivers are described." }
+      },
+      "facts": {
+        "applicationFee": 75,
+        "englishMinimums": { "TOEFL": 85, "IELTS": 6.5, "Duolingo": 120, "Cambridge": 176, "PTE": 60 },
+        "internationalAidPolicy": "Need-aware; no need-based institutional aid for international applicants; competitive merit scholarships available"
+      }
+    },
+    {
+      "name": "Auburn University at Montgomery",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.aum.edu/global-initiatives/international-scholarship/", "note": "Official tuition scholarships for international students checked." },
+        "scholarships": { "status": "reported", "url": "https://www.aum.edu/global-initiatives/international-scholarship/", "note": "International scholarships range from $2,000 to $10,000; the undergraduate Warhawk Scholarship is listed at $4,000 per year with eligibility rules." },
+        "internationalAdmission": { "status": "reported", "url": "https://www.aum.edu/global-initiatives/international-undergraduate-student-requirements/", "note": "Official international undergraduate requirements checked." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.aum.edu/global-initiatives/international-undergraduate-student-requirements/", "note": "AUM accepts applications throughout the year and lists July 15 for fall, November 15 for spring, and April 15 for summer." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.aum.edu/global-initiatives/international-undergraduate-student-requirements/", "note": "Online application with no fee, official translated secondary records, English proof, and financial evidence are listed." },
+        "testingPolicy": { "status": "reported", "url": "https://www.aum.edu/admissions/undergraduate-student-admissions/", "note": "AUM states that admission and scholarship consideration are available without an ACT or SAT score. Submitted scores may still support admission, placement, or English proof." },
+        "englishProficiency": { "status": "reported", "url": "https://www.aum.edu/global-initiatives/international-undergraduate-student-requirements/", "note": "Minimums listed: TOEFL iBT 61, IELTS 5.5, PTE 44, Duolingo 100, or TOEFL PBT 500, with exemption routes." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional; submitted scores may support admission, placement, or English proof",
+        "applicationFee": 0,
+        "englishMinimums": { "TOEFL": 61, "IELTS": 5.5, "Duolingo": 100, "PTE": 44 },
+        "plans": [{ "kind": "Rolling", "deadline": null, "binding": false }]
+      }
+    },
+    {
+      "name": "Southern Methodist University",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.smu.edu/admission/apply/international", "note": "Need-based financial aid is limited to U.S. citizens and permanent residents. International applicants are automatically considered for academic merit scholarships." },
+        "scholarships": { "status": "reported", "url": "https://www.smu.edu/admission/apply/international", "note": "All admission applicants are automatically considered for SMU academic merit scholarships; no separate application is listed." },
+        "internationalAdmission": { "status": "reported", "url": "https://www.smu.edu/admission/apply/international/application-checklist", "note": "Official international first-year checklist checked." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.smu.edu/admission/apply/international/application-checklist", "note": "Early Action and binding Early Decision are due November 1. Regular Decision and binding Early Decision II are due January 15." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.smu.edu/admission/apply/international/application-checklist", "note": "Application, personal essay, official transcript, English proof, counselor recommendation, and optional resume, teacher recommendation, and SAT/ACT are listed." },
+        "testingPolicy": { "status": "reported", "url": "https://www.smu.edu/admission/apply/undergraduate-admission/testing", "note": "SAT/ACT is optional. SMU states that merit consideration does not depend on submitting scores and describes superscoring." },
+        "englishProficiency": { "status": "reported", "url": "https://www.smu.edu/admission/apply/international/application-checklist", "note": "Duolingo, TOEFL, and IELTS are accepted. A waiver may be available when four years of high school education were in English; the reviewed page publishes averages, not minimum scores." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional",
+        "platforms": ["Common Application"],
+        "internationalAidPolicy": "No need-based aid for international applicants; automatic consideration for academic merit scholarships",
+        "plans": [
+          { "kind": "ED", "deadline": "November 1", "binding": true },
+          { "kind": "EA", "deadline": "November 1", "binding": false },
+          { "kind": "ED2", "deadline": "January 15", "binding": true },
+          { "kind": "RD", "deadline": "January 15", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "Temple University",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://admissions.temple.edu/apply/international-students/frequently-asked-questions", "note": "Need-based aid is not available to international students. Merit and dedicated international scholarships are listed." },
+        "scholarships": { "status": "reported", "url": "https://admissions.temple.edu/apply/international-students/frequently-asked-questions", "note": "Automatic merit awards and separate #YouAreWelcomeHere and #WhyUS scholarship routes, amounts, and renewal context were checked." },
+        "internationalAdmission": { "status": "reported", "url": "https://admissions.temple.edu/apply/international-students/first-year-international-students", "note": "Official international first-year admission route checked." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admissions.temple.edu/apply/international-students/first-year-international-students", "note": "Nonbinding Early Action is due November 1, Regular Decision is due February 1, and the fall enrollment deposit is due May 1." },
+        "applicationRequirements": { "status": "reported", "url": "https://admissions.temple.edu/apply/international-students/first-year-international-students", "note": "Common Application, $55 fee or waiver, official secondary records with English translations, English proof, and program-specific materials where applicable are listed. Recommendations are optional." },
+        "testingPolicy": { "status": "reported", "url": "https://admissions.temple.edu/apply/international-students/first-year-international-students", "note": "Temple is test-optional; applicants who submit SAT/ACT must send official results." },
+        "englishProficiency": { "status": "reported", "url": "https://admissions.temple.edu/apply/international-students/first-year-international-students", "note": "Published university-admission minimums include TOEFL 79 on the prior scale, IELTS 6.0, Duolingo 110, PTE 53, Cambridge 180, MET 56, ITEP 4.0, or SAT EBRW 550. English-medium curriculum exemptions are described." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional",
+        "applicationFee": 55,
+        "platforms": ["Common Application"],
+        "englishMinimums": { "TOEFL": 79, "IELTS": 6, "Duolingo": 110, "PTE": 53, "Cambridge": 180, "MET": 56, "ITEP": 4 },
+        "internationalAidPolicy": "No need-based aid for international students; merit and dedicated international scholarships available",
+        "plans": [
+          { "kind": "EA", "deadline": "November 1", "binding": false },
+          { "kind": "RD", "deadline": "February 1", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "University of Michigan-Ann Arbor",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://finaid.umich.edu/apply-aid/international-students", "note": "International students on temporary visas are not eligible for federal aid; undergraduate institutional funding is very limited." },
+        "scholarships": { "status": "reported", "url": "https://finaid.umich.edu/apply-aid/international-students", "note": "Very limited undergraduate scholarship funding is listed, with no additional application for scholarship consideration." },
+        "internationalAdmission": { "status": "reported", "url": "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines", "note": "Official international first-year requirements checked, including translated records and English proficiency." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines", "note": "Binding Early Decision and nonbinding Early Action are due November 1; Regular Decision is due February 1. Program-specific dates can differ." },
+        "applicationRequirements": { "status": "reported", "url": "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines", "note": "Common Application, $75 fee, transcript with translation, School Report, teacher evaluation, optional SAT/ACT, and English proof are listed. Counselor recommendation is encouraged but not required." },
+        "testingPolicy": { "status": "reported", "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines", "note": "SAT/ACT is optional and may be self-reported by the relevant application-plan deadline." },
+        "englishProficiency": { "status": "reported", "url": "https://admissions.umich.edu/apply/international-applicants/exams-visas", "note": "Published ranges include TOEFL iBT 100 with section expectations, IELTS 7.0 with 6.5 sections, Cambridge 185, PTE 68, and MET 64 with section expectations; official exemption routes are listed." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional",
+        "applicationFee": 75,
+        "platforms": ["Common Application"],
+        "englishMinimums": { "TOEFL": 100, "IELTS": 7, "Cambridge": 185, "PTE": 68, "MET": 64 },
+        "internationalAidPolicy": "International students on temporary visas should expect to pay full cost; scholarship funding is very limited",
+        "plans": [
+          { "kind": "ED", "deadline": "November 1", "binding": true },
+          { "kind": "EA", "deadline": "November 1", "binding": false },
+          { "kind": "RD", "deadline": "February 1", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "University of Virginia",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://admission.virginia.edu/i-am/international", "note": "UVA states that it does not have scholarship or loan funds for foreign-national undergraduates, except need-based support for admitted United World College students." },
+        "scholarships": { "status": "reported", "url": "https://admission.virginia.edu/i-am/international", "note": "The reviewed page lists the Davis Foundation route for admitted United World College students; no general institutional scholarship funding is listed for foreign nationals." },
+        "internationalAdmission": { "status": "reported", "url": "https://admission.virginia.edu/i-am/international", "note": "International applicants use the standard first-year application; English assessments and financial certification context were checked." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admission.virginia.edu/admission/deadlines-instructions", "note": "Binding Early Decision and nonbinding Early Action are due November 1; Regular Decision is due January 5. Counselor and teacher materials have separate dates." },
+        "applicationRequirements": { "status": "reported", "url": "https://admission.virginia.edu/admission/deadlines-instructions", "note": "Common Application, secondary school report, transcript and school profile, and one academic teacher evaluation are required. Counselor recommendation may accompany the school report." },
+        "testingPolicy": { "status": "reported", "url": "https://admission.virginia.edu/admission/deadlines-instructions", "note": "UVA is test-optional for Fall 2027, permits self-reporting during review, verifies scores for enrolling students, and superscores SAT and ACT." },
+        "englishProficiency": { "status": "reported", "url": "https://admission.virginia.edu/i-am/international", "note": "TOEFL, IELTS, Cambridge C1/C2, and Duolingo may be submitted. The reviewed undergraduate page encourages testing but does not publish a minimum score." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional for Fall 2027",
+        "platforms": ["Common Application"],
+        "internationalAidPolicy": "No general institutional scholarship or loan funding for foreign nationals; a Davis UWC exception is listed",
+        "plans": [
+          { "kind": "ED", "deadline": "November 1", "binding": true },
+          { "kind": "EA", "deadline": "November 1", "binding": false },
+          { "kind": "RD", "deadline": "January 5", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "University of Wisconsin-Madison",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://financialaid.wisc.edu/eligibility/", "note": "International students on visas are not eligible for financial aid through the central aid office; college and scholarship routes should be researched separately." },
+        "scholarships": { "status": "reported", "url": "https://financialaid.wisc.edu/types-of-aid/scholarships/", "note": "International students may be considered for many campus scholarships, but the university says first-year awards are very unlikely. The separate King-Morgridge route has regional, first-generation, and low-income eligibility requirements." },
+        "internationalAdmission": { "status": "reported", "url": "https://admissions.wisc.edu/apply-as-a-freshman/", "note": "The standard first-year route and international English-proof requirements were checked." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admissions.wisc.edu/apply-as-a-freshman/", "note": "Nonbinding Early Action is due November 1 and Regular Decision is due January 15; supporting materials have later separate deadlines." },
+        "applicationRequirements": { "status": "reported", "url": "https://admissions.wisc.edu/required-materials/", "note": "Common Application or Universities of Wisconsin Application, $80 fee, academic records, essays, one recommendation, and English proof where required are listed." },
+        "testingPolicy": { "status": "not_published", "url": "https://admissions.wisc.edu/act_sat_faq/", "note": "The official page says the Fall 2027 SAT/ACT policy has not yet been decided. Test-optional applies only through Spring 2027 and is shown as a prior-cycle planning reference." },
+        "englishProficiency": { "status": "reported", "url": "https://admissions.wisc.edu/apply-as-a-freshman/", "note": "TOEFL, IELTS, or Duolingo is required unless all four secondary-school years used English as the primary language of instruction. Published minimums include IELTS 6.5 and Duolingo 115." }
+      },
+      "facts": {
+        "testingPolicy": "Fall 2027 policy not yet published; test-optional only through Spring 2027",
+        "testingStatus": "not_published",
+        "applicationFee": 80,
+        "platforms": ["Common Application", "Universities of Wisconsin Application"],
+        "englishMinimums": { "IELTS": 6.5, "Duolingo": 115 },
+        "internationalAidPolicy": "No central financial aid for international students on visas; limited campus scholarships may be available",
+        "plans": [
+          { "kind": "EA", "deadline": "November 1", "binding": false },
+          { "kind": "RD", "deadline": "January 15", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "Wellesley College",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/student-financial-services/understanding-financial-aid/apply-for-aid/international-students", "note": "Wellesley is need-aware for international applicants and meets 100% of calculated need for admitted students who requested aid during admission." },
+        "scholarships": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/student-financial-services/understanding-financial-aid/apply-for-aid/international-students", "note": "International funding is need-based and limited; applicants must indicate their intent to seek aid during the admission process." },
+        "internationalAdmission": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants/international-applicants", "note": "Official international first-year instructions and aid-intent process checked." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply", "note": "Binding Early Decision I is due November 1, binding Early Decision II is due January 5, and Regular Decision is due January 8." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants", "note": "There is no application fee. Common, Coalition with Scoir, and QuestBridge applications are accepted. Official records, two teacher recommendations, a personal essay, and a Wellesley-specific essay are listed." },
+        "testingPolicy": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply", "note": "Wellesley explicitly remains test-optional for applicants entering in Fall 2027." },
+        "englishProficiency": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants", "note": "TOEFL, Duolingo, IELTS, Cambridge, InitialView, or Vericant is strongly recommended when the applicant has fewer than four years in an English-based curriculum. No minimum score is published on the reviewed page." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional for Fall 2027",
+        "applicationFee": 0,
+        "platforms": ["Common Application", "Coalition Application", "QuestBridge Application"],
+        "internationalAidPolicy": "Need-aware for international applicants; meets 100% of calculated need for admitted aid applicants",
+        "plans": [
+          { "kind": "ED", "deadline": "November 1", "binding": true },
+          { "kind": "ED2", "deadline": "January 5", "binding": true },
+          { "kind": "RD", "deadline": "January 8", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "Williams College",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.williams.edu/admission-aid/tuition-aid/requirements-and-deadlines/", "note": "Williams is need-aware for international applicants, meets 100% of demonstrated need for admitted aid applicants, and states that awards are comprehensive and guaranteed for four years." },
+        "scholarships": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "Williams offers need-based financial aid rather than merit scholarships." },
+        "internationalAdmission": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/additional-applicant-information/international/", "note": "International applicants follow the same first-year process; official English and financial-aid instructions were checked." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "Binding Early Decision is due November 15 and Regular Decision is due January 5. Admission and aid intent dates align." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "Common Application, Coalition with Scoir, and QuestBridge are accepted. Fee-waiver routes, required school materials, and optional additional materials are described." },
+        "testingPolicy": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "Williams is test-optional and superscores SAT and ACT. Language-proficiency tests are also optional." },
+        "englishProficiency": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/additional-applicant-information/international/", "note": "TOEFL, IELTS, or Duolingo is encouraged when English is neither the first language nor the school language. Typical competitive ranges are published, not minimum requirements." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional",
+        "platforms": ["Common Application", "Coalition Application", "QuestBridge Application"],
+        "internationalAidPolicy": "Need-aware for international applicants; meets 100% of demonstrated need with comprehensive four-year aid",
+        "plans": [
+          { "kind": "ED", "deadline": "November 15", "binding": true },
+          { "kind": "RD", "deadline": "January 5", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "Benedict College",
+      "fields": {
+        "internationalAdmission": { "status": "reported", "url": "https://benedict.edu/office-of-admissions-and-recruitment/", "note": "Official undergraduate enrollment and international-student routes checked." },
+        "applicationRequirements": { "status": "reported", "url": "https://benedict.edu/office-of-admissions-and-recruitment/", "note": "Application and official transcript steps checked; the listed $25 fee is currently waived on the reviewed page." },
+        "testingPolicy": { "status": "previous_cycle", "url": "https://benedict.edu/office-of-admissions-and-recruitment/", "note": "The reviewed page contains a COVID-era testing waiver alongside score-submission instructions, so applicants must confirm the current rule directly." }
+      }
+    }
+  ]
+}

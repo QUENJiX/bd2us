@@ -9,6 +9,8 @@ const enrichmentPath = resolve(root, "docs/data/college_enrichment.official.json
 const rankingsPath = resolve(root, "docs/data/college_rankings.official.json");
 const researchLeadsPath = resolve(root, "data/college-research-leads.json");
 const governmentFactsPath = resolve(root, "data/college-government-facts.json");
+const climateFactsPath = resolve(root, "data/college-climate-facts.json");
+const manualReviewPath = resolve(root, "data/college-manual-review-overrides.json");
 const outputPath = resolve(root, "lib/college-catalog.generated.json");
 const reviewedAt = "2026-08-01";
 
@@ -29,6 +31,8 @@ const enrichment = JSON.parse(readFileSync(enrichmentPath, "utf8")).records ?? {
 const rankingData = JSON.parse(readFileSync(rankingsPath, "utf8"));
 const researchLeadByName = new Map(JSON.parse(readFileSync(researchLeadsPath, "utf8")).records.map((record) => [normalizeTypography(record.name), record]));
 const governmentFactById = new Map(JSON.parse(readFileSync(governmentFactsPath, "utf8")).records.map((record) => [record.ipedsId, record]));
+const climateFactById = new Map(JSON.parse(readFileSync(climateFactsPath, "utf8")).records.map((record) => [record.ipedsId, record]));
+const manualReviewByName = new Map(JSON.parse(readFileSync(manualReviewPath, "utf8")).records.map((record) => [record.name, record]));
 const rankingByName = buildRankingMap(rankingData);
 const lacNames = new Set(rankingData.usNews2026.categoryNames);
 const seenNames = new Set();
@@ -155,6 +159,7 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
     summary: summaryFor({ name, location, control, costOfAttendance, acceptanceRate, internationalAidPercent }),
     source: { label: "U.S. Department of Education College Navigator", url: governmentFact?.identity?.sourceUrl ?? "", lastVerifiedAt: reviewedAt },
     officialLinks: governmentFact?.officialLinks ?? {},
+    campusContext: buildCampusContext(climateFactById.get(String(researchLead?.ipedsId ?? "")), governmentFact?.officialLinks?.campusSafety),
     sourceScope: "Identity, overall admission counts, and available score ranges are checked against U.S. Department of Education information. Confirm changing application policies on the college's official pages.",
     originalDescription: description,
     costOfAttendance,
@@ -200,7 +205,7 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
     reviewStatus: "published"
   };
 
-  const merged = mergeEnrichment(mergeGovernmentFacts(base, governmentFact), enrichment[slug]);
+  const merged = applyManualFacts(mergeEnrichment(mergeGovernmentFacts(base, governmentFact), enrichment[slug]), manualReviewByName.get(name));
   merged.researchHighlights = researchHighlightsFor(merged);
   colleges.push(merged);
 }
@@ -309,6 +314,85 @@ function budgetFitFor(needPolicy, scholarshipInfo, aidPercent) {
   if (aidPercent != null) return "partial-need";
   return "research";
 }
+function buildCampusContext(climate, safetyUrl) {
+  const climateValue = climate?.status === "reported"
+    ? `Annual average ${climate.annualAverageCelsius}°C; ${climate.coldestMonth} is typically the coldest month and ${climate.warmestMonth} the warmest.`
+    : null;
+  return {
+    climate: { ...sourced(climateValue, { status: climateValue ? "reported" : "unreviewed", source: climate?.sourcePage ?? null }), sourceLabel: "NASA POWER Climatology", reviewedAt: climate?.reviewedAt ?? reviewedAt },
+    safetyUrl: { ...sourced(safetyUrl ?? null, { status: safetyUrl ? "reported" : "unreviewed", source: safetyUrl ?? null }), sourceLabel: "U.S. Department of Education Campus Safety and Security" }
+  };
+}
+
+function applyManualFacts(college, review) {
+  if (!review?.facts) return college;
+  const facts = review.facts;
+  const sourceFor = (field) => review.fields?.[field]?.url ?? null;
+  const requirements = college.applicationRequirements ?? emptyApplicationRequirements();
+  if (facts.testingPolicy) {
+    college.testingPolicy = facts.testingPolicy;
+    college.testing.policy = sourced(facts.testingPolicy, { status: facts.testingStatus ?? "reported", source: sourceFor("testingPolicy") });
+  }
+  if (facts.englishMinimums) {
+    college.englishProficiency = Object.entries(facts.englishMinimums).map(([test, minimum]) => ({
+      test,
+      accepted: sourced(true, { status: "reported", source: sourceFor("englishProficiency") }),
+      minimumScore: sourced(minimum, { status: "reported", source: sourceFor("englishProficiency") }),
+      waiverNote: review.fields?.englishProficiency?.note ?? null
+    }));
+    college.englishTests = Object.keys(facts.englishMinimums);
+  }
+  if (facts.plans?.length) {
+    college.applicationPlans = [...new Set([...college.applicationPlans, ...facts.plans.map((plan) => plan.kind)])];
+    const reviewedPlans = facts.plans.map((plan) => ({
+      code: plan.kind,
+      name: plan.kind === "ED" ? "Early Decision" : plan.kind === "EA" ? "Early Action" : plan.kind === "Rolling" ? "Rolling admission" : plan.kind,
+      binding: Boolean(plan.binding),
+      restrictive: false,
+      explanation: plan.kind === "ED" ? "Binding: enroll if admitted and the aid offer is workable." : plan.kind === "Rolling" ? "Applications are reviewed as files become complete." : "Nonbinding early application.",
+      source: sourced(plan.kind, { status: facts.planStatus ?? "reported", source: sourceFor("applicationPlansAndDeadlines") })
+    }));
+    const deadlines = facts.plans.filter((plan) => plan.deadline).map((plan) => ({ id: `${college.slug}:${plan.kind.toLowerCase()}:application`, plan: plan.kind, kind: "application", label: `${plan.kind} application`, date: sourced(plan.deadline, { status: facts.planStatus ?? "reported", source: sourceFor("applicationPlansAndDeadlines") }) }));
+    college.applicationRequirements = { ...requirements, plans: reviewedPlans };
+    college.deadlines = deadlines;
+  }
+  if (facts.platforms?.length) {
+    college.applicationRequirements = {
+      ...(college.applicationRequirements ?? requirements),
+      platforms: facts.platforms.map((platform) => ({
+        name: platform,
+        source: sourced(platform, { status: "reported", source: sourceFor("applicationRequirements") })
+      }))
+    };
+  }
+  if (Number.isFinite(facts.applicationFee)) {
+    const current = college.applicationRequirements ?? requirements;
+    college.applicationRequirements = {
+      ...current,
+      fee: {
+        ...current.fee,
+        amount: sourced(facts.applicationFee, { status: "reported", source: sourceFor("applicationRequirements") })
+      }
+    };
+  }
+  if (review.fields?.applicationRequirements?.note) {
+    const current = college.applicationRequirements ?? requirements;
+    college.applicationRequirements = {
+      ...current,
+      specialRequirements: sourced(review.fields.applicationRequirements.note, { status: review.fields.applicationRequirements.status === "previous_cycle" ? "previous_cycle" : "reported", source: sourceFor("applicationRequirements") })
+    };
+  }
+  if (review.fields?.scholarships && college.scholarships?.length) {
+    college.scholarships = college.scholarships.map((scholarship) => ({ ...scholarship, source: sourced(scholarship.name, { status: "reported", source: sourceFor("scholarships") }) }));
+  }
+  return college;
+}
+
+function emptyApplicationRequirements() {
+  const missing = () => sourced(null, { status: "unreviewed" });
+  return { plans: [], platforms: [], fee: { amount: missing(), internationalFee: missing(), waiverRoute: missing() }, recommendations: missing(), schoolForms: missing(), transcripts: missing(), midyearReport: missing(), finalReport: missing(), supplements: missing(), interviews: missing(), portfolio: missing(), specialRequirements: missing() };
+}
+
 function applicationPlans(earlyPlan, ed2) {
   const text = `${clean(earlyPlan)} ${clean(ed2)}`.toUpperCase();
   return ["REA", "SCEA", "ED2", "ED", "EA"].filter((plan) => text.includes(plan));

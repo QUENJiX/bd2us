@@ -35,6 +35,8 @@ for (const lead of leads.records) {
       controlCode: number(directoryRow, directory.headers, "CONTROL"),
       localeCode: number(directoryRow, directory.headers, "LOCALE"),
       institutionSizeCode: number(directoryRow, directory.headers, "INSTSIZE"),
+      latitude: signedNumber(directoryRow, directory.headers, "LATITUDE"),
+      longitude: signedNumber(directoryRow, directory.headers, "LONGITUD"),
       status: "reported",
       sourceUrl: ncesUrl,
       dataYear: "2024-25"
@@ -73,6 +75,7 @@ function rowsById(sheet) {
 function cell(row, headers, field) { if (!row) return null; const column = headers.get(field); return column ? row.getCell(column).value : null; }
 function text(row, headers, field) { const value = String(cell(row, headers, field) ?? "").trim(); return value && value !== "." ? value : null; }
 function number(row, headers, field) { const value = Number(cell(row, headers, field)); return Number.isFinite(value) && value >= 0 ? value : null; }
+function signedNumber(row, headers, field) { const value = Number(cell(row, headers, field)); return Number.isFinite(value) ? value : null; }
 function url(row, headers, field) { const value = text(row, headers, field); if (!value) return null; try { return new URL(/^https?:\/\//i.test(value) ? value : `https://${value}`).toString(); } catch { return null; } }
 function round(value) { return Math.round(value * 1000) / 1000; }
 function sourcedNumber(row, headers, field, sourceUrl) { const value = number(row, headers, field); return { value, status: value == null ? "not_published" : "reported", sourceUrl, dataYear: "2023-24", reviewedAt: "2026-08-01" }; }

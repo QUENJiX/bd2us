@@ -147,6 +147,7 @@ export type College = {
   scholarships?: CollegeScholarship[];
   deadlines?: CollegeDeadline[];
   applicationRequirements?: ApplicationRequirements;
+  campusContext?: CampusContext;
   rankings?: CollegeRanking[];
   researchHighlights?: string[];
   researchHighlightOverride?: string | null;

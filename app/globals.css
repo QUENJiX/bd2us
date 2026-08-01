@@ -676,6 +676,10 @@ summary:focus-visible {
 .verification-list li { max-width: 72ch; margin: 0.8rem 0; padding-left: 0.4rem; color: var(--muted); line-height: 1.65; }
 .verification-list strong { color: var(--ink); }
 .source-record { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.3rem; border: 1px solid var(--line); background: var(--passport-soft); padding: 1rem; }
+.campus-context-panel { display: grid; gap: 1rem; margin-top: 1.25rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 1.1rem 0; }
+.campus-context-panel p { margin: 0.35rem 0 0; color: var(--muted); line-height: 1.6; }
+.campus-context-panel a { display: inline-block; margin-top: 0.65rem; color: var(--forest); font-weight: 700; text-decoration: underline; text-underline-offset: 0.2em; }
+@media (min-width: 720px) { .campus-context-panel { grid-template-columns: 1fr 1fr; } }
 .source-record p:not(.eyebrow) { max-width: 48rem; margin: 0.3rem 0 0; color: var(--passport); font-size: 0.82rem; line-height: 1.5; }
 .source-record a { color: var(--passport); font-weight: 700; text-decoration: underline; text-underline-offset: 0.2em; }
 .official-source-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0.75rem 1rem; }
