@@ -17,5 +17,5 @@ export function ThemeToggle() {
     setDark(next);
   }
 
-  return <button aria-label={`Switch to ${dark ? "light" : "dark"} mode`} className="flex min-h-10 min-w-10 items-center justify-center rounded-full border border-emerald-950/15 bg-white/70 text-sm font-bold text-emerald-950" onClick={toggle} type="button">{dark ? "☀" : "◐"}</button>;
+  return <button aria-label={`Switch to ${dark ? "light" : "dark"} mode`} className="flex min-h-11 min-w-11 items-center justify-center rounded-full border border-emerald-950/15 bg-white/70 text-sm font-bold text-emerald-950" onClick={toggle} type="button">{dark ? "☀" : "◐"}</button>;
 }

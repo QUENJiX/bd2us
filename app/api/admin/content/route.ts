@@ -4,7 +4,7 @@ import { getCurrentRole, getCurrentUser, getServiceSupabase } from "@/lib/supaba
 export async function POST(request: Request) {
   const role = await getCurrentRole();
   if (!role || !["admin", "editor", "reviewer"].includes(role)) return NextResponse.json({ error: "Editorial access required." }, { status: 403 });
-  const payload = (await request.json()) as { slug?: string; contentType?: string; title?: string; summary?: string; body?: string; sourceUrl?: string; status?: string };
+  const payload = (await request.json()) as { slug?: string; contentType?: string; title?: string; summary?: string; body?: string; sourceUrl?: string; sourceLabel?: string; status?: string; lastVerifiedAt?: string; nextReviewAt?: string };
   if (!payload.slug || !payload.title || !payload.summary || !payload.contentType) return NextResponse.json({ error: "Complete the required fields." }, { status: 400 });
   if (payload.status === "published" && !["admin", "editor"].includes(role)) return NextResponse.json({ error: "Reviewer accounts cannot publish entries." }, { status: 403 });
   let body: unknown = [];
@@ -19,6 +19,8 @@ export async function POST(request: Request) {
     summary: payload.summary,
     body: body as never,
     status: payload.status ?? "draft",
+    last_verified_at: payload.lastVerifiedAt || null,
+    next_review_at: payload.nextReviewAt || null,
     published_at: payload.status === "published" ? now : null,
     updated_at: now
   }, { onConflict: "slug" }).select("id").single();
@@ -26,6 +28,9 @@ export async function POST(request: Request) {
   const user = await getCurrentUser();
   await supabase.from("content_versions").insert({ content_entry_id: entry.id, editor_id: user?.id ?? null, snapshot: { ...payload, body } as never });
   await supabase.from("audit_log").insert({ actor_id: user?.id ?? null, action: "content.saved", entity_type: "content_entry", entity_id: entry.id, payload: { status: payload.status ?? "draft" } });
-  if (payload.sourceUrl) await supabase.from("content_sources").insert({ content_entry_id: entry.id, label: "Official source", url: payload.sourceUrl, last_verified_at: now.slice(0, 10) });
+  if (payload.sourceUrl) {
+    await supabase.from("content_sources").delete().eq("content_entry_id", entry.id).eq("url", payload.sourceUrl);
+    await supabase.from("content_sources").insert({ content_entry_id: entry.id, label: payload.sourceLabel || "Official source", url: payload.sourceUrl, last_verified_at: payload.lastVerifiedAt || now.slice(0, 10) });
+  }
   return NextResponse.json({ ok: true });
 }

@@ -40,7 +40,7 @@ export async function GET(request: Request) {
 
 function normalizeResultType(value: string): SearchResult["type"] | undefined {
   const normalized = String(value).trim().toLowerCase().replace(/s$/, "");
-  return ({ guide: "Guide", blog: "Blog", task: "Task", college: "College", faq: "FAQ", resource: "Resource" } as const)[normalized];
+  return ({ guide: "Guide", blog: "Blog", task: "Task", college: "College", glossary: "Glossary", faq: "FAQ", resource: "Resource" } as const)[normalized];
 }
 
 function toDatabaseType(type: SearchResult["type"]) {

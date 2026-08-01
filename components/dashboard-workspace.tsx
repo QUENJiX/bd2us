@@ -10,13 +10,16 @@ import { getBrowserSupabase } from "@/lib/supabase/browser";
 import type { StudentProfile } from "@/lib/types";
 
 type Deadline = { id: string; title: string; dueAt: string };
+type CollegeBucket = "Researching" | "Shortlisted" | "Applying" | "Submitted" | "Decision";
 
 const keys = {
   profile: "bd2us-profile",
   progress: "bd2us-roadmap-progress",
   saved: "bd2us:saved-colleges",
   notes: "bd2us:college-notes",
-  deadlines: "bd2us:deadlines"
+  deadlines: "bd2us:deadlines",
+  buckets: "bd2us:college-buckets",
+  bookmarks: "bd2us-bookmarks"
 };
 
 export function DashboardWorkspace() {
@@ -24,6 +27,8 @@ export function DashboardWorkspace() {
   const [progress, setProgress] = useState<string[]>([]);
   const [saved, setSaved] = useState<string[]>([]);
   const [deadlines, setDeadlines] = useState<Deadline[]>([]);
+  const [buckets, setBuckets] = useState<Record<string, CollegeBucket>>({});
+  const [bookmarks, setBookmarks] = useState<string[]>([]);
   const [account, setAccount] = useState<string | null>(null);
   const [syncMessage, setSyncMessage] = useState("Guest plan stored on this device.");
 
@@ -34,10 +39,14 @@ export function DashboardWorkspace() {
       const localSaved = readLocal<string[]>(keys.saved, []);
       const localNotes = readLocal<Record<string, string>>(keys.notes, {});
       const localDeadlines = readLocal<Deadline[]>(keys.deadlines, []);
+      const localBuckets = readLocal<Record<string, CollegeBucket>>(keys.buckets, {});
+      const localBookmarks = readLocal<string[]>(keys.bookmarks, []);
       setProfile(localProfile);
       setProgress(localProgress);
       setSaved(localSaved);
       setDeadlines(localDeadlines);
+      setBuckets(localBuckets);
+      setBookmarks(localBookmarks);
 
       const supabase = getBrowserSupabase();
       if (!supabase) return;
@@ -84,6 +93,10 @@ export function DashboardWorkspace() {
   const nextTasks = roadmapTasks.filter((task) => !progress.includes(task.id)).slice(0, 4);
   const savedColleges = colleges.filter((college) => saved.includes(college.slug));
   const percent = Math.round((progress.length / roadmapTasks.length) * 100);
+  const pipeline = (["Researching", "Shortlisted", "Applying", "Submitted", "Decision"] as CollegeBucket[]).map((bucket) => ({
+    bucket,
+    colleges: savedColleges.filter((college) => (buckets[college.slug] ?? "Researching") === bucket)
+  }));
 
   function updateProfile(key: Exclude<keyof StudentProfile, "interests">, value: string) {
     const next = { ...profile, [key]: value };
@@ -114,13 +127,17 @@ export function DashboardWorkspace() {
           <div className="mt-6 grid gap-3 sm:grid-cols-2">{nextTasks.map((task) => <Link className="rounded-2xl border border-emerald-900/10 bg-emerald-50/60 p-4" href={`/roadmap#${task.id}`} key={task.id}><p className="text-xs font-bold uppercase tracking-[0.12em] text-amber-700">{task.dueHint}</p><p className="mt-2 font-bold text-emerald-950">{task.title}</p></Link>)}</div>
         </Surface>
         <Surface className="p-6">
-          <h2 className="font-display text-3xl text-emerald-950">Saved colleges</h2>
-          {savedColleges.length ? <div className="mt-4 grid gap-3 sm:grid-cols-2">{savedColleges.map((college) => <Link className="rounded-2xl border border-slate-100 bg-white p-4" href={`/colleges/${college.slug}`} key={college.slug}><p className="font-bold text-emerald-950">{college.shortName}</p><p className="mt-1 text-xs text-slate-500">{college.aidPolicy} · {college.location}</p></Link>)}</div> : <p className="mt-3 text-sm text-slate-600">Save colleges from the explorer to build your research list.</p>}
+          <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="eyebrow">College-list pipeline</p><h2 className="font-display mt-2 text-3xl text-emerald-950">Move research toward a decision.</h2></div><Link className="text-sm font-bold text-emerald-800 underline underline-offset-4" href="/colleges">Open all 678 colleges</Link></div>
+          {savedColleges.length ? <div className="pipeline-board mt-5">{pipeline.map((group) => <section key={group.bucket}><header><span>{group.bucket}</span><b>{group.colleges.length}</b></header><div>{group.colleges.map((college) => <Link href={`/colleges/${college.slug}`} key={college.slug}><strong>{college.shortName}</strong><small>{college.location}</small></Link>)}{!group.colleges.length ? <p>No colleges here yet.</p> : null}</div></section>)}</div> : <p className="mt-3 text-sm text-slate-600">Save colleges from the explorer, then assign each one a research stage on its profile.</p>}
         </Surface>
         <Surface className="p-6">
           <h2 className="font-display text-3xl text-emerald-950">Deadline calendar</h2>
           <form className="mt-4 grid gap-3 sm:grid-cols-[1fr_160px_auto]" onSubmit={addDeadline}><input className="min-h-11 rounded-xl border border-slate-200 px-3 text-sm" name="title" placeholder="CSS Profile deadline" required /><input className="min-h-11 rounded-xl border border-slate-200 px-3 text-sm" name="dueAt" required type="date" /><ActionButton type="submit">Add</ActionButton></form>
           <div className="mt-4 grid gap-2">{deadlines.map((deadline) => <div className="flex justify-between gap-3 rounded-xl bg-slate-50 p-3 text-sm" key={deadline.id}><strong>{deadline.title}</strong><span className="text-slate-500">{deadline.dueAt}</span></div>)}</div>
+        </Surface>
+        <Surface className="p-6">
+          <div className="flex flex-wrap items-end justify-between gap-3"><div><p className="eyebrow">Saved reading</p><h2 className="font-display mt-2 text-3xl text-emerald-950">Return to the chapters you marked.</h2></div><Link href="/guide/orientation" className="text-sm font-bold text-emerald-800 underline underline-offset-4">Open field guide</Link></div>
+          {bookmarks.length ? <div className="mt-4 grid gap-2 sm:grid-cols-2">{bookmarks.map((slug) => <Link className="rounded-xl border border-[var(--line)] bg-[var(--paper)] p-3 text-sm font-bold text-emerald-950 capitalize" href={`/guide/${slug}`} key={slug}>{slug.replaceAll("-", " ")} →</Link>)}</div> : <p className="mt-3 text-sm text-slate-600">Use “Save for later” in any chapter to build this reading list.</p>}
         </Surface>
       </div>
       <aside className="grid content-start gap-6">

@@ -18,6 +18,7 @@ export function AppFooter() {
             <Link href="/roadmap">Roadmap</Link>
             <Link href="/colleges">Colleges</Link>
             <Link href="/resources">Resources</Link>
+            <Link href="/glossary">Glossary</Link>
             <Link href="/blog">Blog</Link>
           </div>
           <div className="grid content-start gap-3">

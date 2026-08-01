@@ -38,9 +38,21 @@ export type Database = {
         Relationships: [];
       };
       colleges: {
-        Row: { id: string; slug: string; name: string; short_name: string; location: string; institution_type: string; aid_policy: string; meets_full_need: boolean; merit_aid: boolean; summary: string; status: string; last_verified_at: string | null; next_review_at: string | null; updated_at: string };
+        Row: { id: string; slug: string; name: string; short_name: string; aliases: string[]; location: string; city: string | null; state: string | null; region: string | null; institution_type: string; ranking_category: string; institution_control: string | null; campus_setting: string | null; enrollment_band: string | null; aid_policy: string; meets_full_need: boolean | null; merit_aid: boolean | null; cost_of_attendance: number | null; acceptance_rate: number | null; international_aid_percent: number | null; average_international_aid: number | null; special_note: string | null; source_scope: string | null; original_description: string | null; dataset_reviewed_at: string | null; research_highlight_override: string | null; official_review_status: string; official_reviewed_at: string | null; summary: string; status: string; last_verified_at: string | null; next_review_at: string | null; updated_at: string };
         Insert: Partial<Database["public"]["Tables"]["colleges"]["Row"]> & { slug: string; name: string; short_name: string; location: string; institution_type: string; aid_policy: string; summary: string };
         Update: Partial<Database["public"]["Tables"]["colleges"]["Row"]>;
+        Relationships: [];
+      };
+      college_facts: {
+        Row: { id: string; college_id: string; fact_key: string; fact_value: Json; status: string; fact_status: string; source_id: string | null; data_year: string | null; cycle: string | null; raw_value: Json | null; calculation_method: string | null; last_verified_at: string };
+        Insert: Partial<Database["public"]["Tables"]["college_facts"]["Row"]> & { college_id: string; fact_key: string; fact_value: Json; last_verified_at: string };
+        Update: Partial<Database["public"]["Tables"]["college_facts"]["Row"]>;
+        Relationships: [];
+      };
+      college_sources: {
+        Row: { id: string; college_id: string; label: string; url: string; last_verified_at: string; source_scope: string; data_year: string | null; cycle: string | null };
+        Insert: Partial<Database["public"]["Tables"]["college_sources"]["Row"]> & { college_id: string; label: string; url: string; last_verified_at: string };
+        Update: Partial<Database["public"]["Tables"]["college_sources"]["Row"]>;
         Relationships: [];
       };
       content_entries: {

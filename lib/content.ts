@@ -1,6 +1,7 @@
 import type {
   College,
   GuideEntry,
+  OfficialResource,
   RoadmapStage,
   RoadmapTask,
   SearchResult,
@@ -9,10 +10,12 @@ import type {
 } from "@/lib/types";
 import { blogs } from "@/lib/blog-content";
 import { guideContent, guideSources } from "@/lib/guide-content";
+import { glossary } from "@/lib/glossary";
+import generatedCollegeCatalog from "@/lib/college-catalog.generated.json";
 
 export { blogs } from "@/lib/blog-content";
 
-export const verifiedOn = "2026-06-01";
+export const verifiedOn = "2026-08-01";
 
 const source = (label: string, url: string): Source => ({
   label,
@@ -263,7 +266,7 @@ export const roadmapStages: RoadmapStage[] = [
   taskIds: roadmapTasks.filter((task) => task.stageId === id).map((task) => task.id)
 }));
 
-export const colleges: College[] = [
+const curatedColleges: College[] = [
   {
     slug: "mit",
     name: "Massachusetts Institute of Technology",
@@ -506,6 +509,12 @@ export const colleges: College[] = [
   }
 ];
 
+const curatedByName = new Map(curatedColleges.map((college) => [college.name, college]));
+export const colleges: College[] = (generatedCollegeCatalog.colleges as College[]).map((college) => ({
+  ...college,
+  ...curatedByName.get(college.name)
+}));
+
 export const faqs = [
   {
     question: "Is BD2US an admissions predictor?",
@@ -528,7 +537,7 @@ export const faqs = [
   {
     question: "How fresh is the college information?",
     answer:
-      "Every public college record shows its official source and last verification date. If a fact becomes stale, editors can remove it from public search until it is reviewed.",
+      "Every college record shows the launch dataset review date and its source scope. Official links are added to cycle-sensitive facts as editors verify them; unavailable values stay unavailable rather than being guessed.",
     category: "Trust"
   },
   {
@@ -539,20 +548,54 @@ export const faqs = [
   }
 ];
 
-export const resources = [
-  ["EducationUSA Bangladesh", "Official advising resources and events for students in Bangladesh.", "https://educationusa.state.gov/centers/educationusa-bangladesh"],
-  ["Common Application", "Application platform used by many U.S. institutions.", "https://www.commonapp.org/"],
-  ["CSS Profile", "College Board financial-aid application used by participating institutions.", "https://cssprofile.collegeboard.org/"],
-  ["U.S. Department of State: Student Visa", "Official overview of F-1 student visa steps.", "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html"],
-  ["SEVIS I-901 Fee", "Official SEVIS fee information and payment route.", "https://www.fmjfee.com/i901fee/index.html"],
-  ["SAT", "Official SAT registration and information.", "https://satsuite.collegeboard.org/sat"],
-  ["Duolingo English Test", "Official DET information.", "https://englishtest.duolingo.com/"]
-] as const;
+export const resources: OfficialResource[] = [
+  { title: "EducationUSA Bangladesh", summary: "Official advising center, events, and local support for students in Bangladesh.", url: "https://educationusa.state.gov/centers/educationusa-bangladesh", category: "Start in Bangladesh", stage: "Orientation" },
+  { title: "EducationUSA: Five Steps to U.S. Study", summary: "The official international-student sequence from research through departure.", url: "https://educationusa.state.gov/your-5-steps-us-study", category: "Start in Bangladesh", stage: "Orientation" },
+  { title: "EducationUSA: Complete Your Application", summary: "Official overview of undergraduate application preparation for international students.", url: "https://educationusa.state.gov/your-5-steps-us-study/complete-your-application", category: "Start in Bangladesh", stage: "Applications" },
+
+  { title: "EducationUSA: Research Your Options", summary: "A primary-source starting point for institution types, fit, and U.S. study choices.", url: "https://educationusa.state.gov/your-5-steps-us-study/research-your-options", category: "College research", stage: "College research" },
+  { title: "College Navigator", summary: "U.S. Department of Education data for programs, enrollment, costs, and institutional characteristics.", url: "https://nces.ed.gov/collegenavigator/", category: "College research", stage: "College research" },
+  { title: "Common Data Set initiative", summary: "Definitions and reporting standards behind many college Common Data Set files; search each college site for its current PDF.", url: "https://commondataset.org/", category: "College research", stage: "Data verification", caution: "The initiative defines the standard but does not host every college's completed file. Verify the institution, year, and section label on the college PDF." },
+  { title: "IPEDS Data Center", summary: "U.S. Department of Education institutional data for enrollment, completions, costs, and other reported characteristics.", url: "https://nces.ed.gov/ipeds/use-the-data", category: "College research", stage: "Data verification" },
+  { title: "SEVP School Search", summary: "Check whether a school is certified to enroll F or M international students.", url: "https://studyinthestates.dhs.gov/school-search", category: "College research", stage: "College research", caution: "SEVP certification does not indicate admission quality or financial-aid generosity." },
+
+  { title: "Common App: First-year guide", summary: "Step-by-step guidance for creating, completing, and submitting a first-year application.", url: "https://www.commonapp.org/apply/first-year-students/", category: "Applications", stage: "Application platforms" },
+  { title: "Common App: First-year toolkit", summary: "Worksheets for requirements, activities, essays, fee waivers, and recommendation planning.", url: "https://www.commonapp.org/apply/fy-toolkit/", category: "Applications", stage: "Applications" },
+  { title: "Common App: Recommender guide", summary: "Official instructions for counselors and teachers submitting school forms and recommendations.", url: "https://www.commonapp.org/counselors-and-recommenders/recommender-guide/", category: "Applications", stage: "Recommendations" },
+  { title: "Common App Help", summary: "Official application-platform support for students and recommenders.", url: "https://www.commonapp.org/help/", category: "Applications", stage: "Submission" },
+
+  { title: "SAT", summary: "College Board registration, test dates, preparation, and score information.", url: "https://satsuite.collegeboard.org/sat", category: "Testing", stage: "Testing" },
+  { title: "Bluebook", summary: "The official application used for the digital SAT and official practice tests.", url: "https://bluebook.collegeboard.org/", category: "Testing", stage: "Testing" },
+  { title: "ACT", summary: "Official ACT registration, dates, preparation, and score information.", url: "https://www.act.org/content/act/en/products-and-services/the-act.html", category: "Testing", stage: "Testing" },
+  { title: "College Board score sending", summary: "Official instructions for choosing recipients, sending SAT scores, and understanding delivery timing.", url: "https://satsuite.collegeboard.org/sat/scores/send-scores-to-colleges/sending-scores", category: "Testing", stage: "SAT policy verification" },
+  { title: "ACT score reports", summary: "Official ACT guidance for sending scores and managing score recipients.", url: "https://www.act.org/content/act/en/products-and-services/the-act/scores/sending-your-scores.html", category: "Testing", stage: "ACT policy verification" },
+  { title: "TOEFL iBT", summary: "ETS information about registration, test formats, scores, and sending results.", url: "https://www.ets.org/toefl/test-takers/ibt/about.html", category: "Testing", stage: "English proficiency" },
+  { title: "IELTS", summary: "Official IELTS test information and booking routes.", url: "https://ielts.org/take-a-test", category: "Testing", stage: "English proficiency" },
+  { title: "Duolingo English Test", summary: "Official DET format, readiness, registration, and score information.", url: "https://englishtest.duolingo.com/", category: "Testing", stage: "English proficiency" },
+  { title: "PTE Academic", summary: "Pearson's official information about PTE Academic format, scores, booking, and score delivery.", url: "https://www.pearsonpte.com/pte-academic", category: "Testing", stage: "English proficiency" },
+  { title: "Cambridge English recognition", summary: "Official Cambridge tool for checking which institutions recognize Cambridge English qualifications.", url: "https://www.cambridgeenglish.org/why-choose-us/global-recognition/", category: "Testing", stage: "English proficiency" },
+
+  { title: "CSS Profile", summary: "College Board financial-aid application used by participating institutions.", url: "https://cssprofile.collegeboard.org/", category: "Financial aid", stage: "Financial aid" },
+  { title: "CSS Profile participating institutions", summary: "Check which institutions use CSS Profile and whether international applicants submit it.", url: "https://profile.collegeboard.org/profile/ppi/participatingInstitutions.aspx", category: "Financial aid", stage: "Financial aid" },
+  { title: "EducationUSA: Finance Your Studies", summary: "International-student planning guidance for costs, funding, and financial-aid research.", url: "https://educationusa.state.gov/your-5-steps-us-study/finance-your-studies", category: "Financial aid", stage: "Financial aid" },
+  { title: "College Board scholarship search", summary: "A scholarship discovery tool from College Board; confirm every award on the sponsoring organization's own page.", url: "https://bigfuture.collegeboard.org/scholarship-search", category: "Financial aid", stage: "Scholarship research", caution: "A listing is a lead, not confirmation of international eligibility, renewal, or availability." },
+  { title: "Federal Student Aid eligibility", summary: "Official federal-aid eligibility rules, useful for understanding why most international students rely on institutional or private funding.", url: "https://studentaid.gov/understand-aid/eligibility/requirements/non-us-citizens", category: "Financial aid", stage: "Eligibility", caution: "Do not complete U.S. federal-aid forms unless your citizenship or immigration category is eligible and the college instructs you to do so." },
+  { title: "Federal Student Aid dictionary", summary: "Plain definitions for U.S. financial-aid terms that may appear in offers and conversations.", url: "https://studentaid.gov/articles/financial-aid-dictionary/", category: "Financial aid", stage: "Financial aid", caution: "Most U.S. federal student aid is not available to international applicants; use this primarily for terminology." },
+
+  { title: "U.S. Department of State: Student Visa", summary: "Official overview of F-1 visa eligibility, application steps, and documentation.", url: "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html", category: "Visa and arrival", stage: "Visa" },
+  { title: "U.S. Embassy in Bangladesh: Visas", summary: "Country-specific U.S. visa information and official links for applicants in Bangladesh.", url: "https://bd.usembassy.gov/visas/", category: "Visa and arrival", stage: "Bangladesh support" },
+  { title: "Visa appointment wait times", summary: "Department of State estimates for interview appointment availability by post.", url: "https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/wait-times.html", category: "Visa and arrival", stage: "Visa planning", caution: "Wait-time estimates change and are not appointment guarantees." },
+  { title: "DS-160", summary: "Official online nonimmigrant visa application portal.", url: "https://ceac.state.gov/GenNIV/Default.aspx", category: "Visa and arrival", stage: "Visa", caution: "Use only the official .gov portal and keep the confirmation page." },
+  { title: "SEVIS I-901 Fee", summary: "Official SEVIS fee information and payment route.", url: "https://www.fmjfee.com/i901fee/index.html", category: "Visa and arrival", stage: "Visa" },
+  { title: "Study in the States: Student portal", summary: "Department of Homeland Security guidance for the F-1 student life cycle.", url: "https://studyinthestates.dhs.gov/students", category: "Visa and arrival", stage: "Visa and arrival" },
+  { title: "Study in the States: Working", summary: "Official overview of employment rules and the role of your designated school official.", url: "https://studyinthestates.dhs.gov/students/resources/working", category: "Visa and arrival", stage: "Arrival", caution: "Ask your DSO before accepting work; authorization rules depend on status and circumstances." },
+  { title: "EducationUSA: Prepare for Departure", summary: "Official pre-departure guidance for travel, orientation, and starting life in the United States.", url: "https://educationusa.state.gov/your-5-steps-us-study/prepare-your-departure", category: "Visa and arrival", stage: "Arrival" }
+];
 
 export const defaultProfile: StudentProfile = {
   curriculum: "SSC / HSC",
   currentYear: "Class 11",
-  targetIntake: "Fall 2028",
+  targetIntake: "Fall 2027",
   aidBand: "Need substantial aid",
   testingStatus: "Planning tests",
   interests: []
@@ -594,12 +637,35 @@ export const searchIndex: SearchResult[] = [
     href: `/colleges/${college.slug}`,
     keywords: [
       college.shortName,
+      ...(college.aliases ?? []),
       college.location,
+      college.city ?? "",
+      college.state ?? "",
+      college.region ?? "",
+      college.setting ?? "",
+      college.enrollmentBand ?? "",
+      college.control ?? "",
       college.aidPolicy,
       college.type,
+      college.specialNote ?? "",
+      college.costOfAttendance?.toString() ?? "",
+      college.acceptanceRate?.toString() ?? "",
+      college.internationalAidPercent?.toString() ?? "",
+      college.averageInternationalAid?.toString() ?? "",
+      college.testing?.policy.value ?? "",
+      college.testing?.satComposite?.value?.toString() ?? "",
+      ...(college.scholarships ?? []).flatMap((scholarship) => [scholarship.name, scholarship.amount ?? "", scholarship.notes ?? ""]),
+      ...(college.researchHighlights ?? []),
       ...college.themes,
       ...college.englishTests
     ]
+  })),
+  ...glossary.map((item) => ({
+    type: "Glossary" as const,
+    title: item.term,
+    summary: `${item.definition} ${item.bangla}`,
+    href: `/glossary#${item.term.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`,
+    keywords: ["glossary", item.bangla, item.relatedGuideSlug ?? "admissions"]
   })),
   ...faqs.map((faq) => ({
     type: "FAQ" as const,
@@ -608,12 +674,12 @@ export const searchIndex: SearchResult[] = [
     href: "/faq",
     keywords: [faq.category]
   })),
-  ...resources.map(([title, summary, url]) => ({
+  ...resources.map(({ title, summary, url, category, stage }) => ({
     type: "Resource" as const,
     title,
     summary,
     href: url,
-    keywords: [title, summary]
+    keywords: [title, summary, category, stage]
   }))
 ];
 

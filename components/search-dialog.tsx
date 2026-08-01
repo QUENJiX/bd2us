@@ -67,9 +67,9 @@ export function SearchDialog() {
         role="dialog"
         aria-modal="true"
         aria-label="Search BD2US"
-        className="mx-auto max-w-2xl overflow-hidden rounded-[1.5rem] border border-white/60 bg-[#fffdf8] shadow-2xl"
+        className="mx-auto max-w-2xl overflow-hidden rounded-[1.5rem] border border-[var(--line)] bg-[#fffdf8]"
       >
-        <div className="flex items-center gap-3 border-b border-emerald-950/10 px-4">
+        <div className="search-dialog-bar flex items-center gap-3 border-b border-emerald-950/10 px-4">
           <span aria-hidden="true" className="text-xl text-emerald-800">
             ⌕
           </span>

@@ -7,7 +7,7 @@ import { localSearch } from "@/lib/search";
 import type { SearchResult } from "@/lib/types";
 import { Tag } from "@/components/ui";
 
-const resultTypes = ["All", "Guide", "Blog", "Task", "College", "FAQ", "Resource"] as const;
+const resultTypes = ["All", "Guide", "Blog", "Task", "College", "Glossary", "FAQ", "Resource"] as const;
 
 export function SearchPage() {
   const params = useSearchParams();

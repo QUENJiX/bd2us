@@ -13,6 +13,7 @@ const team = [
     name: "Hasibul Islam",
     role: "Founder and lead developer",
     photo: "/assets/images/team/mentor1.png",
+    focalPosition: "50% 24%",
     text: "Product direction, platform development, and student-first editorial systems.",
     credentials: ["Lead mentor", "SAT 1480 / 1600"]
   },
@@ -20,6 +21,7 @@ const team = [
     name: "Samin Rahman",
     role: "Lead mentor",
     photo: "/assets/images/team/founder.jpg",
+    focalPosition: "50% 20%",
     text: "Application journey guidance and practical student context.",
     credentials: ["The University of Texas at Dallas", "SAT 1550 / 1600"]
   },
@@ -27,6 +29,7 @@ const team = [
     name: "Muaz Bin Anis",
     role: "Admissions and visa mentor",
     photo: "/assets/images/team/mentor4.jpg",
+    focalPosition: "50% 22%",
     text: "Post-admission preparation and visa-focused guidance.",
     credentials: ["The University of Alabama", "SAT 1460 / 1600"]
   },
@@ -34,6 +37,7 @@ const team = [
     name: "Mohtasim Hafiz",
     role: "SAT and admissions mentor",
     photo: "/assets/images/team/mentor3.jpg",
+    focalPosition: "50% 18%",
     text: "Testing strategy and application planning.",
     credentials: ["Georgetown University", "SAT 1540 / 1600"]
   }
@@ -72,7 +76,7 @@ export default function AboutPage() {
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {team.map((member) => (
             <Surface className="overflow-hidden" key={member.name}>
-              <Image className="h-52 w-full object-cover object-top" src={member.photo} alt={`${member.name} portrait`} width={640} height={520} />
+              <Image className="h-60 w-full bg-[var(--surface-inset)] object-cover" style={{ objectPosition: member.focalPosition }} src={member.photo} alt={`${member.name} portrait`} width={640} height={480} sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw" />
               <div className="p-5">
                 <h2 className="font-display text-2xl text-emerald-950">{member.name}</h2>
                 <p className="mt-1 text-xs font-bold uppercase tracking-[0.12em] text-amber-700">{member.role}</p>

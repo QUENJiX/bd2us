@@ -29,7 +29,7 @@ export default async function BlogArticlePage({ params }: { params: Promise<{ sl
     <main>
       <section className="border-b border-emerald-950/10 bg-[#f4f0e6]">
         <div className="mx-auto max-w-5xl px-5 py-12 sm:px-8 sm:py-16">
-          <nav className="text-xs font-bold uppercase tracking-[0.14em] text-slate-500"><Link href="/">Home</Link><span className="px-2">/</span><Link href="/blog">Blog</Link></nav>
+          <nav className="guide-breadcrumb"><Link href="/">Home</Link><Link href="/blog">Blog</Link><span>{blog.category}</span></nav>
           <p className="mt-7 text-xs font-bold uppercase tracking-[0.2em] text-amber-700">{blog.category}</p>
           <h1 className="font-display mt-3 max-w-4xl text-5xl leading-[.98] text-emerald-950 sm:text-7xl">{blog.title}</h1>
           <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">{blog.summary}</p>

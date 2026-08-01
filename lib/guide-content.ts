@@ -1,6 +1,6 @@
 import type { ContentBlock, Source } from "@/lib/types";
 
-const verifiedOn = "2026-06-01";
+const verifiedOn = "2026-08-01";
 const source = (label: string, url: string): Source => ({ label, url, lastVerifiedAt: verifiedOn });
 
 // Legacy chapters supply the original BD2US writing for the first nine guide routes.
@@ -30,19 +30,35 @@ export const guideContent: Record<string, ContentBlock[]> = {
 };
 
 export const guideSources: Partial<Record<string, Source[]>> = {
+  orientation: [source("EducationUSA: Your 5 Steps to U.S. Study", "https://educationusa.state.gov/your-5-steps-us-study")],
+  timeline: [source("Common App: First-year application guide", "https://www.commonapp.org/apply/first-year-students/")],
+  "college-research": [source("EducationUSA: Research Your Options", "https://educationusa.state.gov/your-5-steps-us-study/research-your-options")],
+  academics: [source("Common App: First-year application guide", "https://www.commonapp.org/apply/first-year-students/")],
   "standardized-testing": [
     source("College Board: SAT", "https://satsuite.collegeboard.org/sat"),
     source("College Board: Bluebook", "https://bluebook.collegeboard.org/"),
     source("ACT: The ACT Test", "https://www.act.org/content/act/en/products-and-services/the-act.html")
   ],
+  activities: [source("Common App: First-year toolkit", "https://www.commonapp.org/apply/fy-toolkit/")],
+  essays: [source("Common App: First-year toolkit", "https://www.commonapp.org/apply/fy-toolkit/")],
+  recommendations: [source("Common App: First-year toolkit", "https://www.commonapp.org/apply/fy-toolkit/")],
   "application-platforms": [
-    source("Common App: First-year application guide", "https://www.commonapp.org/apply/first-year-students")
+    source("Common App: First-year application guide", "https://www.commonapp.org/apply/first-year-students/")
   ],
   "financial-aid": [
-    source("College Board: CSS Profile", "https://cssprofile.collegeboard.org/")
+    source("College Board: CSS Profile", "https://cssprofile.collegeboard.org/"),
+    source("Federal Student Aid: Financial aid dictionary", "https://studentaid.gov/articles/financial-aid-dictionary/")
+  ],
+  decisions: [
+    source("Federal Student Aid: Evaluate your aid offers", "https://studentaid.gov/articles/evaluating-financial-aid-offers/")
   ],
   visa: [
     source("U.S. Department of State: Student Visa", "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html"),
-    source("ICE: I-901 SEVIS Fee", "https://www.ice.gov/sevis/i901")
+    source("ICE: I-901 SEVIS Fee", "https://www.ice.gov/sevis/i901"),
+    source("EducationUSA: Apply for Your Student Visa", "https://educationusa.state.gov/your-5-steps-us-study/apply-your-student-visa")
+  ],
+  arrival: [
+    source("EducationUSA: Prepare for Your Departure", "https://educationusa.state.gov/your-5-steps-us-study/prepare-your-departure"),
+    source("ICE: Travel guidance for F-1 students", "https://www.ice.gov/sevis/travel")
   ]
 };

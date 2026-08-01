@@ -9,6 +9,7 @@ const links = [
   ["/guide/orientation", "Guide"],
   ["/colleges", "Colleges"],
   ["/resources", "Resources"],
+  ["/glossary", "Glossary"],
   ["/blog", "Blog"],
   ["/about", "About"]
 ];

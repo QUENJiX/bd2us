@@ -1,7 +1,23 @@
 import Link from "next/link";
+import Image from "next/image";
 import { HeroPlanner } from "@/components/hero-planner";
+import { JourneyRail } from "@/components/journey-rail";
 import { ButtonLink, SectionHeading, Surface, Tag } from "@/components/ui";
-import { colleges, guides, roadmapStages } from "@/lib/content";
+import { colleges, roadmapStages } from "@/lib/content";
+
+const featuredCollegeNames = [
+  "Harvard University",
+  "Massachusetts Institute of Technology",
+  "Stanford University",
+  "Princeton University",
+  "Williams College",
+  "Amherst College"
+];
+
+const featuredColleges = featuredCollegeNames.flatMap((name) => {
+  const college = colleges.find((item) => item.name === name || item.name.startsWith(`${name} (`));
+  return college ? [college] : [];
+});
 
 export default function HomePage() {
   const structuredData = {
@@ -66,18 +82,19 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6"><JourneyRail compact /></div>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24">
         <SectionHeading
-          eyebrow="Start with confidence"
-          title="Useful by design. Honest by default."
-          description="Every important surface has a job: help you understand the process, make a decision, or complete the next practical step."
+          eyebrow="The three questions to answer first"
+          title="Know where to start this August."
+          description="Fall 2027 applicants do not need more scattered advice. They need the right sequence, a realistic funding strategy, and a next action."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {[
-            ["Interactive roadmap", `${roadmapStages.length} stages from orientation to arrival`, "/roadmap"],
-            ["Curated college explorer", `${colleges.length} reviewed launch records with official sources`, "/colleges"],
-            ["Readable guide", `${guides.length} focused chapters with takeaways and next actions`, "/guide/orientation"]
+            ["Where should I start?", `Use the ${roadmapStages.length}-stage route to find the first unfinished action for your intake.`, "/roadmap"],
+            ["What matters in August?", "Agree on a budget range, build the first college list, plan tests, and begin the school-document process.", "/guide/timeline"],
+            ["How does funding shape the list?", `Compare ${colleges.length} colleges by cost and international-aid evidence before falling for a logo.`, "/colleges"]
           ].map(([title, body, href]) => (
             <Link key={title} href={href} className="card group p-6 hover:-translate-y-1 hover:border-emerald-800/30 hover:shadow-lg">
               <p className="font-display text-3xl font-bold text-emerald-950">{title}</p>
@@ -101,11 +118,11 @@ export default function HomePage() {
               Open college explorer
             </ButtonLink>
           </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {colleges.slice(0, 4).map((college) => (
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredColleges.map((college) => (
               <Link key={college.slug} href={`/colleges/${college.slug}`} className="rounded-2xl border border-white/10 bg-white/7 p-4 hover:bg-white/12">
                 <p className="text-xs font-bold uppercase tracking-wider text-amber-300">{college.aidPolicy}</p>
-                <p className="mt-2 font-display text-2xl font-bold">{college.shortName}</p>
+                <p className="mt-2 font-display text-2xl font-bold">{featuredName(college.name)}</p>
                 <p className="mt-2 text-xs leading-5 text-emerald-100/75">{college.location}</p>
               </Link>
             ))}
@@ -113,9 +130,10 @@ export default function HomePage() {
         </div>
       </section>
 
+
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24">
-        <div className="rounded-[2rem] border border-emerald-950/10 bg-[#f4f0e6] p-6 sm:p-10">
-          <div className="max-w-2xl rounded-2xl border border-emerald-950/10 bg-white/70 p-5">
+        <div className="colapp-panel grid gap-6 overflow-hidden rounded-[2rem] border border-emerald-950/10 bg-[#f4f0e6] p-6 sm:p-8 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,24rem)] lg:items-center">
+          <div className="rounded-2xl border border-emerald-950/10 bg-white/70 p-5">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-amber-700">Need a more personal answer?</p>
             <p className="font-display mt-2 text-2xl font-bold text-emerald-950">ColApp is our companion app, not a gate.</p>
             <p className="mt-3 text-sm leading-6 text-slate-600">
@@ -125,8 +143,14 @@ export default function HomePage() {
               Visit ColApp →
             </a>
           </div>
+          <div className="colapp-media"><Image src="/assets/images/colapp-placeholder.png" alt="Abstract planning route and checklist placeholder for ColApp" width={960} height={720} sizes="(min-width: 1024px) 24rem, 90vw" priority={false} /></div>
         </div>
       </section>
     </main>
   );
+}
+
+function featuredName(name: string) {
+  if (name.startsWith("Massachusetts Institute of Technology")) return "MIT";
+  return name.replace(/ University$| College$/, "");
 }

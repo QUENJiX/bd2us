@@ -1,4 +1,7 @@
 import type { Metadata, Viewport } from "next";
+import "@fontsource/atkinson-hyperlegible/400.css";
+import "@fontsource/atkinson-hyperlegible/700.css";
+import "@fontsource-variable/literata/wght.css";
 import "./globals.css";
 import { AppFooter } from "@/components/app-footer";
 import { AppHeader } from "@/components/app-header";

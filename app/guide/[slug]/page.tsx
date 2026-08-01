@@ -2,91 +2,61 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ContentBlocks } from "@/components/content-blocks";
+import { GuideEnhancements } from "@/components/guide-enhancements";
+import { JourneyRail } from "@/components/journey-rail";
 import { ReaderTools } from "@/components/reader-tools";
-import { ButtonLink, Tag } from "@/components/ui";
-import { getGuide, guides, roadmapTasks } from "@/lib/content";
+import { ButtonLink } from "@/components/ui";
+import { guides, roadmapTasks } from "@/lib/content";
+import { getPublishedGuide } from "@/lib/public-content";
+import { guideEnhancements } from "@/lib/guide-enhancements";
 import { getLegacyGuideHtml } from "@/lib/legacy-content";
 
-export function generateStaticParams() {
-  return guides.map((guide) => ({ slug: guide.slug }));
-}
+export function generateStaticParams() { return guides.map((guide) => ({ slug: guide.slug })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const guide = getGuide((await params).slug);
+  const guide = await getPublishedGuide((await params).slug);
   if (!guide) return {};
-  return {
-    title: guide.title,
-    description: guide.summary,
-    alternates: { canonical: `/guide/${guide.slug}` },
-    openGraph: { title: guide.title, description: guide.summary }
-  };
+  return { title: guide.title, description: guide.summary, alternates: { canonical: `/guide/${guide.slug}` }, openGraph: { title: guide.title, description: guide.summary } };
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
-  const guide = getGuide((await params).slug);
+  const guide = await getPublishedGuide((await params).slug);
   if (!guide) notFound();
   const tasks = roadmapTasks.filter((task) => guide.relatedTaskIds.includes(task.id));
   const legacyHtml = getLegacyGuideHtml(guide.slug);
+  const enhancement = guideEnhancements[guide.slug];
 
   return (
-    <main id="main-content">
-      <section className="border-b border-emerald-950/10 bg-[#f4f0e6]">
-        <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-16">
-          <nav className="text-xs font-bold uppercase tracking-[0.14em] text-slate-500">
-            <Link href="/">Home</Link> <span className="px-2">/</span> <Link href="/roadmap">Guide</Link>
-          </nav>
-          <p className="mt-7 text-xs font-bold uppercase tracking-[0.2em] text-amber-700">{guide.eyebrow}</p>
-          <h1 className="font-display mt-3 max-w-4xl text-5xl leading-[.98] text-emerald-950 sm:text-7xl">{guide.title}</h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">{guide.summary}</p>
-          <div className="mt-6 flex flex-wrap items-center gap-2">
-            <Tag>{guide.readMinutes} min read</Tag>
-            <Tag tone="neutral">Reviewed {guide.lastVerifiedAt}</Tag>
+    <main id="main-content" className="guide-page">
+      <section className="guide-masthead">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
+          <nav className="guide-breadcrumb"><Link href="/">Home</Link><Link href="/roadmap">Fall 2027 field guide</Link><span>{guide.eyebrow}</span></nav>
+          <div className="guide-title-grid">
+            <div><p className="eyebrow">{guide.eyebrow} · Fall 2027</p><h1>{guide.title}</h1><p>{guide.summary}</p></div>
+            <dl><div><dt>Reading time</dt><dd>{guide.readMinutes} minutes + deep dive</dd></div><div><dt>Reviewed</dt><dd>{formatDate(guide.lastVerifiedAt)}</dd></div><div><dt>Use this chapter to</dt><dd>{tasks.map((task) => task.title).join(" and ")}</dd></div></dl>
           </div>
           <ReaderTools slug={guide.slug} />
         </div>
       </section>
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[minmax(0,1fr)_280px]">
-        <article>
-          <div className="mb-8 rounded-2xl border border-emerald-900/15 bg-emerald-50/60 p-5">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-emerald-800">Quick takeaways</p>
-            <ul className="mt-3 grid gap-2 text-sm leading-6 text-slate-700">
-              {guide.takeaways.map((takeaway) => (
-                <li key={takeaway}>✓ {takeaway}</li>
-              ))}
-            </ul>
-          </div>
-          <ContentBlocks blocks={legacyHtml ? [{ type: "html", html: legacyHtml }] : guide.blocks} />
-          {guide.sources.length ? (
-            <section className="mt-10 border-t border-emerald-950/10 pt-6">
-              <h2 className="font-display text-3xl font-bold text-emerald-950">Official sources</h2>
-              <div className="mt-4 grid gap-2">
-                {guide.sources.map((item) => (
-                  <a key={item.url} href={item.url} target="_blank" rel="noreferrer" className="text-sm font-bold text-emerald-800 underline underline-offset-4">
-                    {item.label} ↗
-                  </a>
-                ))}
-              </div>
-            </section>
-          ) : null}
-          {guide.nextSlug ? (
-            <div className="mt-12">
-              <ButtonLink href={`/guide/${guide.nextSlug}`}>Continue to the next chapter →</ButtonLink>
-            </div>
-          ) : null}
+
+      <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6"><JourneyRail compact /></div>
+
+      <div className="guide-layout mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
+        <article className="guide-article">
+          <section className="chapter-takeaways" aria-labelledby="takeaways-title"><p className="eyebrow">Three things to remember</p><h2 id="takeaways-title">The short version</h2><ul>{guide.takeaways.map((takeaway) => <li key={takeaway}>{takeaway}</li>)}</ul></section>
+          {enhancement ? <GuideEnhancements enhancement={enhancement} /> : null}
+          <section id="full-chapter" className="full-chapter"><div className="full-chapter-heading"><p className="eyebrow">Complete chapter</p><h2>Read the full field notes</h2><p>Use the sections above for orientation; use this detailed chapter when you are actively doing the work.</p></div><ContentBlocks blocks={legacyHtml ? [{ type: "html", html: legacyHtml }] : guide.blocks} /></section>
+          {guide.sources.length ? <section id="official-sources" className="official-sources"><p className="eyebrow">Dated evidence</p><h2>Official sources</h2><p>Policies can change after the review date. Open the live source before you submit or pay.</p><div>{guide.sources.map((item) => <a key={item.url} href={item.url} target="_blank" rel="noreferrer"><span>{item.label}</span><small>Reviewed {formatDate(item.lastVerifiedAt)}</small><b>↗</b></a>)}</div></section> : null}
+          {guide.nextSlug ? <div className="chapter-next"><p className="eyebrow">Continue the journey</p><ButtonLink href={`/guide/${guide.nextSlug}`}>Open the next chapter →</ButtonLink></div> : null}
         </article>
-        <aside className="lg:sticky lg:top-24 lg:self-start">
-          <div className="card p-5">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-amber-700">Related roadmap tasks</p>
-            <div className="mt-4 grid gap-3">
-              {tasks.map((task) => (
-                <Link key={task.id} href={`/roadmap#${task.id}`} className="rounded-xl border border-emerald-950/10 bg-white p-3 text-sm font-bold leading-5 text-emerald-950 hover:border-emerald-800/40">
-                  {task.title}
-                </Link>
-              ))}
-            </div>
-          </div>
+
+        <aside className="guide-sidebar">
+          <nav aria-label="On this page" className="chapter-contents"><p className="eyebrow">On this page</p><a href="#start-here">Plain-language start</a><a href="#deeper-explanation">Deeper explanation</a><a href="#bangladesh-context">Bangladesh context</a><a href="#common-mistakes">Common mistakes</a><a href="#worksheet">Practical worksheet</a><a href="#full-chapter">Complete chapter</a>{guide.sources.length ? <a href="#official-sources">Official sources</a> : null}</nav>
+          <div className="related-actions"><p className="eyebrow">Related actions</p>{tasks.map((task) => <Link key={task.id} href={`/roadmap#${task.id}`}><span>{task.priority}</span><strong>{task.title}</strong><small>{task.dueHint}</small></Link>)}</div>
         </aside>
       </div>
     </main>
   );
 }
+
+function formatDate(value: string) { return new Intl.DateTimeFormat("en-US", { month: "short", year: "numeric" }).format(new Date(`${value}T00:00:00`)); }

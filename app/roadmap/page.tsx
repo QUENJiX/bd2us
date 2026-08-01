@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { JourneyRail } from "@/components/journey-rail";
 import { RoadmapExplorer } from "@/components/roadmap-explorer";
 import { Tag } from "@/components/ui";
 
@@ -19,6 +20,7 @@ export default function RoadmapPage() {
           </p>
         </div>
       </section>
+      <div className="mx-auto max-w-7xl px-4 pt-6 sm:px-6"><JourneyRail compact /></div>
       <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
         <RoadmapExplorer />
       </section>

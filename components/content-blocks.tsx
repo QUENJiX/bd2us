@@ -19,6 +19,19 @@ export function ContentBlocks({ blocks }: { blocks: ContentBlock[] }) {
             </div>
           );
         }
+        if (block.type === "list") {
+          const Tag = block.ordered ? "ol" : "ul";
+          return (
+            <Tag className={block.marker ? `list-${block.marker}` : undefined} key={index}>
+              {block.items.map((item, itemIndex) => (
+                <li key={`${item.text}-${itemIndex}`}>
+                  {item.text}
+                  {item.children?.length ? <ContentBlocks blocks={item.children} /> : null}
+                </li>
+              ))}
+            </Tag>
+          );
+        }
         const styles = {
           note: "border-sky-700/20 bg-sky-50 text-sky-950",
           warning: "border-amber-700/20 bg-amber-50 text-amber-950",
