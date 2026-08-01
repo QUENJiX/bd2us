@@ -3830,8 +3830,13 @@
       "aidPolicy": "Not classified",
       "meetsFullNeed": false,
       "meritAid": true,
-      "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
-      "englishTests": [],
+      "testingPolicy": "Test-optional",
+      "englishTests": [
+        "TOEFL",
+        "IELTS",
+        "PTE",
+        "Duolingo"
+      ],
       "applicationPlans": [],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
@@ -3933,9 +3938,9 @@
       },
       "testing": {
         "policy": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
+          "value": "Test-optional",
+          "status": "reported",
+          "sourceUrl": "https://www.aquinas.edu/_resources/images/2024-2025%20Academic%20Catalog%20FINAL%20-%2011212024.pdf",
           "sourceLabel": null,
           "dataYear": null,
           "cycle": null,
@@ -3992,7 +3997,104 @@
         },
         "context": null
       },
-      "englishProficiency": [],
+      "englishProficiency": [
+        {
+          "test": "TOEFL",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 79,
+            "status": "reported",
+            "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL iBT 79 on the former scale, IELTS 6.5, PTE 53, Duolingo 105, EIKEN Pre-1, or ELS 112. A two-year English-medium international-secondary-school route may qualify for exemption."
+        },
+        {
+          "test": "IELTS",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 6.5,
+            "status": "reported",
+            "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL iBT 79 on the former scale, IELTS 6.5, PTE 53, Duolingo 105, EIKEN Pre-1, or ELS 112. A two-year English-medium international-secondary-school route may qualify for exemption."
+        },
+        {
+          "test": "PTE",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 53,
+            "status": "reported",
+            "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL iBT 79 on the former scale, IELTS 6.5, PTE 53, Duolingo 105, EIKEN Pre-1, or ELS 112. A two-year English-medium international-secondary-school route may qualify for exemption."
+        },
+        {
+          "test": "Duolingo",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 105,
+            "status": "reported",
+            "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL iBT 79 on the former scale, IELTS 6.5, PTE 53, Duolingo 105, EIKEN Pre-1, or ELS 112. A two-year English-medium international-secondary-school route may qualify for exemption."
+        }
+      ],
       "scholarships": [
         {
           "name": "Largest listed merit scholarship",
@@ -4066,6 +4168,159 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
+      },
+      "applicationRequirements": {
+        "plans": [],
+        "platforms": [
+          {
+            "name": "Aquinas College Application",
+            "source": {
+              "value": "Aquinas College Application",
+              "status": "reported",
+              "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          },
+          {
+            "name": "Common Application",
+            "source": {
+              "value": "Common Application",
+              "status": "reported",
+              "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "fee": {
+          "amount": {
+            "value": 0,
+            "status": "reported",
+            "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "The international checklist and separate first-year requirements are published on the official page. Aquinas charges no application fee and also accepts Common Application for first-year applicants.",
+          "status": "reported",
+          "sourceUrl": "https://www.aquinas.edu/admissions/undergraduate/requirements.html",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
       }
     },
     {
@@ -8945,7 +9200,9 @@
       "meritAid": null,
       "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
       "englishTests": [],
-      "applicationPlans": [],
+      "applicationPlans": [
+        "RD"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Private",
@@ -9159,7 +9416,169 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
-      }
+      },
+      "applicationRequirements": {
+        "plans": [
+          {
+            "code": "RD",
+            "name": "RD",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "RD",
+              "status": "previous_cycle",
+              "sourceUrl": "https://benedict.edu/wp-content/uploads/2022/07/2022-2023-Catalogue-Final-07292022.pdf",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "platforms": [],
+        "fee": {
+          "amount": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "Application and official transcript steps checked; the listed $25 fee is currently waived on the reviewed page.",
+          "status": "reported",
+          "sourceUrl": "https://benedict.edu/office-of-admissions-and-recruitment/",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
+      },
+      "deadlines": [
+        {
+          "id": "benedict-college:rd:application",
+          "plan": "RD",
+          "kind": "application",
+          "label": "RD application",
+          "date": {
+            "value": "May 1",
+            "status": "previous_cycle",
+            "sourceUrl": "https://benedict.edu/wp-content/uploads/2022/07/2022-2023-Catalogue-Final-07292022.pdf",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        }
+      ]
     },
     {
       "ipedsId": "230816",
@@ -26415,9 +26834,16 @@
       "aidPolicy": "Merit-focused",
       "meetsFullNeed": null,
       "meritAid": true,
-      "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
-      "englishTests": [],
-      "applicationPlans": [],
+      "testingPolicy": "Test-optional indefinitely",
+      "englishTests": [
+        "TOEFL",
+        "IELTS"
+      ],
+      "applicationPlans": [
+        "ED",
+        "ED2",
+        "RD"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Public",
@@ -26518,9 +26944,9 @@
       },
       "testing": {
         "policy": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
+          "value": "Test-optional indefinitely",
+          "status": "reported",
+          "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/announcements/test-optional-admission-policy.php",
           "sourceLabel": null,
           "dataYear": null,
           "cycle": null,
@@ -26577,7 +27003,56 @@
         },
         "context": null
       },
-      "englishProficiency": [],
+      "englishProficiency": [
+        {
+          "test": "TOEFL",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/standardized-testing/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 100,
+            "status": "reported",
+            "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/standardized-testing/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "TOEFL, IELTS, or Duolingo is strongly recommended when English is not native and the previous four years of schooling were not in English. The university generally looks for TOEFL 100 on the former scale or IELTS 7.0; these are not admission guarantees."
+        },
+        {
+          "test": "IELTS",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/standardized-testing/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 7,
+            "status": "reported",
+            "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/standardized-testing/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "TOEFL, IELTS, or Duolingo is strongly recommended when English is not native and the previous four years of schooling were not in English. The university generally looks for TOEFL 100 on the former scale or IELTS 7.0; these are not admission guarantees."
+        }
+      ],
       "scholarships": [
         {
           "name": "Monroe Scholars Program",
@@ -26662,7 +27137,249 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
-      }
+      },
+      "applicationRequirements": {
+        "plans": [
+          {
+            "code": "ED",
+            "name": "Early Decision",
+            "binding": true,
+            "restrictive": false,
+            "explanation": "Binding: enroll if admitted and the aid offer is workable.",
+            "source": {
+              "value": "ED",
+              "status": "reported",
+              "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          },
+          {
+            "code": "ED2",
+            "name": "ED2",
+            "binding": true,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "ED2",
+              "status": "reported",
+              "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          },
+          {
+            "code": "RD",
+            "name": "RD",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "RD",
+              "status": "reported",
+              "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "platforms": [
+          {
+            "name": "Common Application",
+            "source": {
+              "value": "Common Application",
+              "status": "reported",
+              "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "fee": {
+          "amount": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "Common Application, the Secondary School Report, complete official school records, and translated documents are required. One teacher recommendation, testing, arts work, and InitialView or Vericant are optional.",
+          "status": "reported",
+          "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
+      },
+      "deadlines": [
+        {
+          "id": "college-of-william-and-mary:ed:application",
+          "plan": "ED",
+          "kind": "application",
+          "label": "ED application",
+          "date": {
+            "value": "November 1",
+            "status": "reported",
+            "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        {
+          "id": "college-of-william-and-mary:ed2:application",
+          "plan": "ED2",
+          "kind": "application",
+          "label": "ED2 application",
+          "date": {
+            "value": "January 5",
+            "status": "reported",
+            "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        {
+          "id": "college-of-william-and-mary:rd:application",
+          "plan": "RD",
+          "kind": "application",
+          "label": "RD application",
+          "date": {
+            "value": "January 5",
+            "status": "reported",
+            "sourceUrl": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        }
+      ]
     },
     {
       "ipedsId": "126678",
@@ -35398,8 +36115,14 @@
       "aidPolicy": "Merit-focused",
       "meetsFullNeed": null,
       "meritAid": true,
-      "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
-      "englishTests": [],
+      "testingPolicy": "Fall 2027 policy not yet published; prior guidance required scores below a 2.8 weighted GPA",
+      "englishTests": [
+        "TOEFL",
+        "IELTS",
+        "Duolingo",
+        "SAT EBRW",
+        "ACT English"
+      ],
       "applicationPlans": [],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
@@ -35501,9 +36224,9 @@
       },
       "testing": {
         "policy": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
+          "value": "Fall 2027 policy not yet published; prior guidance required scores below a 2.8 weighted GPA",
+          "status": "previous_cycle",
+          "sourceUrl": "https://admissions.ecu.edu/wp-content/pv-uploads/sites/70/ECU_Counselor_Guide.pdf",
           "sourceLabel": null,
           "dataYear": null,
           "cycle": null,
@@ -35560,7 +36283,128 @@
         },
         "context": null
       },
-      "englishProficiency": [],
+      "englishProficiency": [
+        {
+          "test": "TOEFL",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 71,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published routes include Duolingo 105, IELTS 6.0, TOEFL 71 on the former scale or 4 on the new scale, SAT EBRW 450, ACT English/Writing 19, or qualifying U.S. high-school study."
+        },
+        {
+          "test": "IELTS",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 6,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published routes include Duolingo 105, IELTS 6.0, TOEFL 71 on the former scale or 4 on the new scale, SAT EBRW 450, ACT English/Writing 19, or qualifying U.S. high-school study."
+        },
+        {
+          "test": "Duolingo",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 105,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published routes include Duolingo 105, IELTS 6.0, TOEFL 71 on the former scale or 4 on the new scale, SAT EBRW 450, ACT English/Writing 19, or qualifying U.S. high-school study."
+        },
+        {
+          "test": "SAT EBRW",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 450,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published routes include Duolingo 105, IELTS 6.0, TOEFL 71 on the former scale or 4 on the new scale, SAT EBRW 450, ACT English/Writing 19, or qualifying U.S. high-school study."
+        },
+        {
+          "test": "ACT English",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 19,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published routes include Duolingo 105, IELTS 6.0, TOEFL 71 on the former scale or 4 on the new scale, SAT EBRW 450, ACT English/Writing 19, or qualifying U.S. high-school study."
+        }
+      ],
       "scholarships": [
         {
           "name": "Largest listed merit scholarship",
@@ -35634,6 +36478,132 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
+      },
+      "applicationRequirements": {
+        "plans": [],
+        "platforms": [],
+        "fee": {
+          "amount": {
+            "value": 75,
+            "status": "reported",
+            "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "International first-year requirements include the application and fee, official secondary-school records sent by an authorized school representative, English proof, translations, and later financial documentation.",
+          "status": "reported",
+          "sourceUrl": "https://global-affairs.ecu.edu/international-students/international-ug/",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
       }
     },
     {
@@ -36110,9 +37080,11 @@
       "aidPolicy": "Merit-focused",
       "meetsFullNeed": null,
       "meritAid": true,
-      "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
+      "testingPolicy": "Test-optional",
       "englishTests": [],
-      "applicationPlans": [],
+      "applicationPlans": [
+        "RD"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Public",
@@ -36213,9 +37185,9 @@
       },
       "testing": {
         "policy": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
+          "value": "Test-optional",
+          "status": "reported",
+          "sourceUrl": "https://www.eiu.edu/admissions/admissions_requirements.php",
           "sourceLabel": null,
           "dataYear": null,
           "cycle": null,
@@ -36346,7 +37318,169 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
-      }
+      },
+      "applicationRequirements": {
+        "plans": [
+          {
+            "code": "RD",
+            "name": "RD",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "RD",
+              "status": "previous_cycle",
+              "sourceUrl": "https://www.eiu.edu/international/faq.php",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "platforms": [],
+        "fee": {
+          "amount": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
+      },
+      "deadlines": [
+        {
+          "id": "eastern-illinois-university:rd:application",
+          "plan": "RD",
+          "kind": "application",
+          "label": "RD application",
+          "date": {
+            "value": "May 15",
+            "status": "previous_cycle",
+            "sourceUrl": "https://www.eiu.edu/international/faq.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        }
+      ]
     },
     {
       "ipedsId": "156620",
@@ -61078,9 +62212,16 @@
       "aidPolicy": "Not classified",
       "meetsFullNeed": null,
       "meritAid": null,
-      "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
-      "englishTests": [],
-      "applicationPlans": [],
+      "testingPolicy": "Test-optional",
+      "englishTests": [
+        "TOEFL",
+        "IELTS",
+        "PTE",
+        "Duolingo"
+      ],
+      "applicationPlans": [
+        "rolling"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Private",
@@ -61181,9 +62322,9 @@
       },
       "testing": {
         "policy": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
+          "value": "Test-optional",
+          "status": "reported",
+          "sourceUrl": "https://www.king.edu/admissions/undergraduate/admissions-process-and-requirements/",
           "sourceLabel": null,
           "dataYear": null,
           "cycle": null,
@@ -61234,7 +62375,104 @@
         },
         "context": null
       },
-      "englishProficiency": [],
+      "englishProficiency": [
+        {
+          "test": "TOEFL",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 84,
+            "status": "reported",
+            "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL 84, IELTS 6.0, PTE 56, or Duolingo 100. King lists waivers based on qualifying SAT scores or citizenship in a country where English is official."
+        },
+        {
+          "test": "IELTS",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 6,
+            "status": "reported",
+            "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL 84, IELTS 6.0, PTE 56, or Duolingo 100. King lists waivers based on qualifying SAT scores or citizenship in a country where English is official."
+        },
+        {
+          "test": "PTE",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 56,
+            "status": "reported",
+            "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL 84, IELTS 6.0, PTE 56, or Duolingo 100. King lists waivers based on qualifying SAT scores or citizenship in a country where English is official."
+        },
+        {
+          "test": "Duolingo",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 100,
+            "status": "reported",
+            "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL 84, IELTS 6.0, PTE 56, or Duolingo 100. King lists waivers based on qualifying SAT scores or citizenship in a country where English is official."
+        }
+      ],
       "scholarships": [],
       "rankings": [],
       "researchHighlights": [
@@ -61288,7 +62526,166 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
-      }
+      },
+      "applicationRequirements": {
+        "plans": [
+          {
+            "code": "rolling",
+            "name": "rolling",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "rolling",
+              "status": "reported",
+              "sourceUrl": "https://www.king.edu/admissions/undergraduate/admissions-process-and-requirements/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "platforms": [
+          {
+            "name": "King University Application",
+            "source": {
+              "value": "King University Application",
+              "status": "reported",
+              "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "fee": {
+          "amount": {
+            "value": 0,
+            "status": "reported",
+            "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "International first-year applicants submit King's application, a credential evaluation, current and final secondary-school records, and English proof. Most applicants pay no application fee.",
+          "status": "reported",
+          "sourceUrl": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
+      },
+      "deadlines": []
     },
     {
       "ipedsId": "146427",
@@ -106008,8 +107405,13 @@
       "aidPolicy": "Merit-focused",
       "meetsFullNeed": null,
       "meritAid": true,
-      "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
-      "englishTests": [],
+      "testingPolicy": "SAT/ACT math or Accuplacer Math required for international first-year applicants",
+      "englishTests": [
+        "TOEFL",
+        "IELTS",
+        "PTE",
+        "Duolingo"
+      ],
       "applicationPlans": [],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
@@ -106111,9 +107513,9 @@
       },
       "testing": {
         "policy": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
+          "value": "SAT/ACT math or Accuplacer Math required for international first-year applicants",
+          "status": "reported",
+          "sourceUrl": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html",
           "sourceLabel": null,
           "dataYear": null,
           "cycle": null,
@@ -106170,7 +107572,104 @@
         },
         "context": null
       },
-      "englishProficiency": [],
+      "englishProficiency": [
+        {
+          "test": "TOEFL",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 79,
+            "status": "reported",
+            "sourceUrl": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL iBT 79, IELTS 6.5, PTE 56, or Duolingo 105. SAT English 500, ACT English 18, and specified country routes can meet or waive the requirement."
+        },
+        {
+          "test": "IELTS",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 6.5,
+            "status": "reported",
+            "sourceUrl": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL iBT 79, IELTS 6.5, PTE 56, or Duolingo 105. SAT English 500, ACT English 18, and specified country routes can meet or waive the requirement."
+        },
+        {
+          "test": "PTE",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 56,
+            "status": "reported",
+            "sourceUrl": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL iBT 79, IELTS 6.5, PTE 56, or Duolingo 105. SAT English 500, ACT English 18, and specified country routes can meet or waive the requirement."
+        },
+        {
+          "test": "Duolingo",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 105,
+            "status": "reported",
+            "sourceUrl": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL iBT 79, IELTS 6.5, PTE 56, or Duolingo 105. SAT English 500, ACT English 18, and specified country routes can meet or waive the requirement."
+        }
+      ],
       "scholarships": [
         {
           "name": "Presidential Scholarship",
@@ -106244,6 +107743,132 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
+      },
+      "applicationRequirements": {
+        "plans": [],
+        "platforms": [],
+        "fee": {
+          "amount": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "International first-year applicants need at least a 2.75 secondary-school GPA, official academic records, English proof, and SAT, ACT, or Accuplacer Math evidence. Foreign records and financial documentation requirements are explained on the official page.",
+          "status": "reported",
+          "sourceUrl": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
       }
     },
     {
@@ -118505,7 +120130,9 @@
       "meritAid": null,
       "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
       "englishTests": [],
-      "applicationPlans": [],
+      "applicationPlans": [
+        "RD"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Public",
@@ -118720,7 +120347,169 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
-      }
+      },
+      "applicationRequirements": {
+        "plans": [
+          {
+            "code": "RD",
+            "name": "RD",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "RD",
+              "status": "reported",
+              "sourceUrl": "https://undergrad.catalog.tntech.edu/pages/ql55TJZoUbReFdismQOR",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "platforms": [],
+        "fee": {
+          "amount": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
+      },
+      "deadlines": [
+        {
+          "id": "tennessee-tech-university:rd:application",
+          "plan": "RD",
+          "kind": "application",
+          "label": "RD application",
+          "date": {
+            "value": "August 1",
+            "status": "reported",
+            "sourceUrl": "https://undergrad.catalog.tntech.edu/pages/ql55TJZoUbReFdismQOR",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        }
+      ]
     },
     {
       "ipedsId": "221731",
@@ -119250,8 +121039,17 @@
       "meetsFullNeed": null,
       "meritAid": null,
       "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
-      "englishTests": [],
-      "applicationPlans": [],
+      "englishTests": [
+        "TOEFL",
+        "IELTS",
+        "PTE",
+        "Duolingo",
+        "SAT EBRW",
+        "ACT English"
+      ],
+      "applicationPlans": [
+        "RD"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Public",
@@ -119411,7 +121209,152 @@
         },
         "context": null
       },
-      "englishProficiency": [],
+      "englishProficiency": [
+        {
+          "test": "TOEFL",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 79,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published undergraduate routes include TOEFL iBT 79, IELTS 6.0, PTE 53, Duolingo 105, SAT EBRW 560, ACT English 21, English3 67, specified English examinations, or country/education exemptions."
+        },
+        {
+          "test": "IELTS",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 6,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published undergraduate routes include TOEFL iBT 79, IELTS 6.0, PTE 53, Duolingo 105, SAT EBRW 560, ACT English 21, English3 67, specified English examinations, or country/education exemptions."
+        },
+        {
+          "test": "PTE",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 53,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published undergraduate routes include TOEFL iBT 79, IELTS 6.0, PTE 53, Duolingo 105, SAT EBRW 560, ACT English 21, English3 67, specified English examinations, or country/education exemptions."
+        },
+        {
+          "test": "Duolingo",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 105,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published undergraduate routes include TOEFL iBT 79, IELTS 6.0, PTE 53, Duolingo 105, SAT EBRW 560, ACT English 21, English3 67, specified English examinations, or country/education exemptions."
+        },
+        {
+          "test": "SAT EBRW",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 560,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published undergraduate routes include TOEFL iBT 79, IELTS 6.0, PTE 53, Duolingo 105, SAT EBRW 560, ACT English 21, English3 67, specified English examinations, or country/education exemptions."
+        },
+        {
+          "test": "ACT English",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 21,
+            "status": "reported",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published undergraduate routes include TOEFL iBT 79, IELTS 6.0, PTE 53, Duolingo 105, SAT EBRW 560, ACT English 21, English3 67, specified English examinations, or country/education exemptions."
+        }
+      ],
       "scholarships": [],
       "rankings": [],
       "researchHighlights": [
@@ -119466,7 +121409,169 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
-      }
+      },
+      "applicationRequirements": {
+        "plans": [
+          {
+            "code": "RD",
+            "name": "RD",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "RD",
+              "status": "previous_cycle",
+              "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "platforms": [],
+        "fee": {
+          "amount": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "International applicants follow the first-year academic rules, provide an independent credential evaluation, English proof, financial documents, and other visa materials. The official catalog explains high-school curriculum and score routes.",
+          "status": "reported",
+          "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
+      },
+      "deadlines": [
+        {
+          "id": "texas-a-and-m-university-commerce:rd:application",
+          "plan": "RD",
+          "kind": "application",
+          "label": "RD application",
+          "date": {
+            "value": "August 1",
+            "status": "previous_cycle",
+            "sourceUrl": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        }
+      ]
     },
     {
       "ipedsId": "228875",
@@ -133176,9 +135281,18 @@
       "aidPolicy": "Merit-focused",
       "meetsFullNeed": null,
       "meritAid": true,
-      "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
-      "englishTests": [],
-      "applicationPlans": [],
+      "testingPolicy": "SAT/ACT not required for international applicants",
+      "englishTests": [
+        "TOEFL",
+        "TOEFL Essentials",
+        "IELTS",
+        "Cambridge",
+        "Duolingo",
+        "PTE"
+      ],
+      "applicationPlans": [
+        "priority"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Public",
@@ -133279,9 +135393,9 @@
       },
       "testing": {
         "policy": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
+          "value": "SAT/ACT not required for international applicants",
+          "status": "reported",
+          "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
           "sourceLabel": null,
           "dataYear": null,
           "cycle": null,
@@ -133338,7 +135452,152 @@
         },
         "context": null
       },
-      "englishProficiency": [],
+      "englishProficiency": [
+        {
+          "test": "TOEFL",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 79,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Direct-admission minimums include TOEFL iBT 79 on the former scale, TOEFL Essentials 8, IELTS 6.5, Cambridge 171, Duolingo 110, or PTE 53. The page also publishes academic and pathway routes."
+        },
+        {
+          "test": "TOEFL Essentials",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 8,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Direct-admission minimums include TOEFL iBT 79 on the former scale, TOEFL Essentials 8, IELTS 6.5, Cambridge 171, Duolingo 110, or PTE 53. The page also publishes academic and pathway routes."
+        },
+        {
+          "test": "IELTS",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 6.5,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Direct-admission minimums include TOEFL iBT 79 on the former scale, TOEFL Essentials 8, IELTS 6.5, Cambridge 171, Duolingo 110, or PTE 53. The page also publishes academic and pathway routes."
+        },
+        {
+          "test": "Cambridge",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 171,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Direct-admission minimums include TOEFL iBT 79 on the former scale, TOEFL Essentials 8, IELTS 6.5, Cambridge 171, Duolingo 110, or PTE 53. The page also publishes academic and pathway routes."
+        },
+        {
+          "test": "Duolingo",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 110,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Direct-admission minimums include TOEFL iBT 79 on the former scale, TOEFL Essentials 8, IELTS 6.5, Cambridge 171, Duolingo 110, or PTE 53. The page also publishes academic and pathway routes."
+        },
+        {
+          "test": "PTE",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 53,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Direct-admission minimums include TOEFL iBT 79 on the former scale, TOEFL Essentials 8, IELTS 6.5, Cambridge 171, Duolingo 110, or PTE 53. The page also publishes academic and pathway routes."
+        }
+      ],
       "scholarships": [
         {
           "name": "UD Trustee Scholarship",
@@ -133423,7 +135682,183 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
-      }
+      },
+      "applicationRequirements": {
+        "plans": [
+          {
+            "code": "priority",
+            "name": "priority",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "priority",
+              "status": "previous_cycle",
+              "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "platforms": [
+          {
+            "name": "Common Application",
+            "source": {
+              "value": "Common Application",
+              "status": "reported",
+              "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "fee": {
+          "amount": {
+            "value": 75,
+            "status": "reported",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "Direct first-year applicants use Common Application and pay $75; official secondary and post-secondary records, English scores, and an IERF evaluation for international college work are listed. A separate UD application supports conditional admission.",
+          "status": "reported",
+          "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
+      },
+      "deadlines": [
+        {
+          "id": "university-of-delaware:priority:application",
+          "plan": "priority",
+          "kind": "application",
+          "label": "priority application",
+          "date": {
+            "value": "January 15",
+            "status": "previous_cycle",
+            "sourceUrl": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        }
+      ]
     },
     {
       "ipedsId": "127060",
@@ -140582,9 +143017,14 @@
       "aidPolicy": "Not classified",
       "meetsFullNeed": true,
       "meritAid": true,
-      "testingPolicy": "Test optional",
+      "testingPolicy": "Fall 2027 SAT/ACT policy not yet confirmed",
       "englishTests": [],
-      "applicationPlans": [],
+      "applicationPlans": [
+        "ED",
+        "EA",
+        "ED2",
+        "RD"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Private",
@@ -140729,14 +143169,14 @@
       },
       "testing": {
         "policy": {
-          "value": "Test optional",
-          "status": "reported",
-          "sourceUrl": null,
+          "value": "Fall 2027 SAT/ACT policy not yet confirmed",
+          "status": "not_published",
+          "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
           "sourceLabel": null,
           "dataYear": null,
           "cycle": null,
           "reviewedAt": "2026-08-01",
-          "rawValue": "Opt."
+          "rawValue": null
         },
         "satComposite": {
           "value": 1410,
@@ -140873,7 +143313,282 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
-      }
+      },
+      "applicationRequirements": {
+        "plans": [
+          {
+            "code": "ED",
+            "name": "Early Decision",
+            "binding": true,
+            "restrictive": false,
+            "explanation": "Binding: enroll if admitted and the aid offer is workable.",
+            "source": {
+              "value": "ED",
+              "status": "previous_cycle",
+              "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          },
+          {
+            "code": "EA",
+            "name": "Early Action",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "EA",
+              "status": "previous_cycle",
+              "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          },
+          {
+            "code": "ED2",
+            "name": "ED2",
+            "binding": true,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "ED2",
+              "status": "previous_cycle",
+              "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          },
+          {
+            "code": "RD",
+            "name": "RD",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "RD",
+              "status": "previous_cycle",
+              "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "platforms": [
+          {
+            "name": "Common Application",
+            "source": {
+              "value": "Common Application",
+              "status": "reported",
+              "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "fee": {
+          "amount": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "The prior-cycle official policy required Common Application, school report and transcript, two recommendations, the application fee, and program-specific portfolios or auditions where applicable. Applicants must verify current Fall 2027 requirements.",
+          "status": "previous_cycle",
+          "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
+      },
+      "deadlines": [
+        {
+          "id": "university-of-miami:ed:application",
+          "plan": "ED",
+          "kind": "application",
+          "label": "ED application",
+          "date": {
+            "value": "November 1",
+            "status": "previous_cycle",
+            "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        {
+          "id": "university-of-miami:ea:application",
+          "plan": "EA",
+          "kind": "application",
+          "label": "EA application",
+          "date": {
+            "value": "November 1",
+            "status": "previous_cycle",
+            "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        {
+          "id": "university-of-miami:ed2:application",
+          "plan": "ED2",
+          "kind": "application",
+          "label": "ED2 application",
+          "date": {
+            "value": "January 1",
+            "status": "previous_cycle",
+            "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        {
+          "id": "university-of-miami:rd:application",
+          "plan": "RD",
+          "kind": "application",
+          "label": "RD application",
+          "date": {
+            "value": "January 1",
+            "status": "previous_cycle",
+            "sourceUrl": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        }
+      ]
     },
     {
       "ipedsId": "170976",
@@ -157374,7 +160089,9 @@
       "meritAid": true,
       "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
       "englishTests": [],
-      "applicationPlans": [],
+      "applicationPlans": [
+        "priority"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Public",
@@ -157621,13 +160338,31 @@
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
       },
       "applicationRequirements": {
-        "plans": [],
+        "plans": [
+          {
+            "code": "priority",
+            "name": "priority",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "priority",
+              "status": "reported",
+              "sourceUrl": "https://catalog.utep.edu/admissions/undergraduate/application-dates-fees/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
         "platforms": [],
         "fee": {
           "amount": {
-            "value": null,
-            "status": "unreviewed",
-            "sourceUrl": null,
+            "value": 65,
+            "status": "reported",
+            "sourceUrl": "https://catalog.utep.edu/admissions/undergraduate/freshman/",
             "sourceLabel": null,
             "dataYear": null,
             "cycle": null,
@@ -157745,7 +160480,25 @@
           "reviewedAt": "2026-08-01",
           "rawValue": null
         }
-      }
+      },
+      "deadlines": [
+        {
+          "id": "university-of-texas-at-el-paso:priority:application",
+          "plan": "priority",
+          "kind": "application",
+          "label": "priority application",
+          "date": {
+            "value": "May 1",
+            "status": "reported",
+            "sourceUrl": "https://catalog.utep.edu/admissions/undergraduate/application-dates-fees/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        }
+      ]
     },
     {
       "ipedsId": "229027",
@@ -158291,8 +161044,14 @@
       "aidPolicy": "Merit-focused",
       "meetsFullNeed": null,
       "meritAid": true,
-      "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
-      "englishTests": [],
+      "testingPolicy": "Test-optional for 2026–27; Fall 2027 policy not yet published",
+      "englishTests": [
+        "TOEFL",
+        "TOEFL Essentials",
+        "IELTS",
+        "Duolingo",
+        "PTE"
+      ],
       "applicationPlans": [],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
@@ -158394,9 +161153,9 @@
       },
       "testing": {
         "policy": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
+          "value": "Test-optional for 2026–27; Fall 2027 policy not yet published",
+          "status": "previous_cycle",
+          "sourceUrl": "https://www.utrgv.edu/feature/discover-utrgv/",
           "sourceLabel": null,
           "dataYear": null,
           "cycle": null,
@@ -158453,7 +161212,128 @@
         },
         "context": null
       },
-      "englishProficiency": [],
+      "englishProficiency": [
+        {
+          "test": "TOEFL",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 61,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Undergraduate minimums are TOEFL iBT 61, TOEFL Essentials 6.5, IELTS 6.0, Duolingo 95, or PTE Academic 45. The official page also lists education- and country-based exemptions."
+        },
+        {
+          "test": "TOEFL Essentials",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 6.5,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Undergraduate minimums are TOEFL iBT 61, TOEFL Essentials 6.5, IELTS 6.0, Duolingo 95, or PTE Academic 45. The official page also lists education- and country-based exemptions."
+        },
+        {
+          "test": "IELTS",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 6,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Undergraduate minimums are TOEFL iBT 61, TOEFL Essentials 6.5, IELTS 6.0, Duolingo 95, or PTE Academic 45. The official page also lists education- and country-based exemptions."
+        },
+        {
+          "test": "Duolingo",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 95,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Undergraduate minimums are TOEFL iBT 61, TOEFL Essentials 6.5, IELTS 6.0, Duolingo 95, or PTE Academic 45. The official page also lists education- and country-based exemptions."
+        },
+        {
+          "test": "PTE",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 45,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Undergraduate minimums are TOEFL iBT 61, TOEFL Essentials 6.5, IELTS 6.0, Duolingo 95, or PTE Academic 45. The official page also lists education- and country-based exemptions."
+        }
+      ],
       "scholarships": [
         {
           "name": "Good Neighbor Scholarship",
@@ -158527,6 +161407,146 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
+      },
+      "applicationRequirements": {
+        "plans": [],
+        "platforms": [
+          {
+            "name": "ApplyTexas",
+            "source": {
+              "value": "ApplyTexas",
+              "status": "reported",
+              "sourceUrl": "https://www.utrgv.edu/feature/discover-utrgv/",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "fee": {
+          "amount": {
+            "value": 50,
+            "status": "reported",
+            "sourceUrl": "https://www.utrgv.edu/feature/discover-utrgv/",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "ApplyTexas, the secondary-school record, foreign credential evaluation where applicable, a $50 international application fee, and English proof are listed. The admission essay is optional for 2026–27; some scholarships and programs require SAT or ACT scores.",
+          "status": "reported",
+          "sourceUrl": "https://www.utrgv.edu/feature/discover-utrgv/",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
       }
     },
     {
@@ -167515,9 +170535,20 @@
       "aidPolicy": "Not classified",
       "meetsFullNeed": false,
       "meritAid": true,
-      "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
-      "englishTests": [],
-      "applicationPlans": [],
+      "testingPolicy": "Test-optional for most applicants; international routes depend on English background",
+      "englishTests": [
+        "TOEFL",
+        "IELTS",
+        "Cambridge",
+        "Duolingo",
+        "Oxford Test of English",
+        "PTE"
+      ],
+      "applicationPlans": [
+        "ED",
+        "EA",
+        "RD"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Private",
@@ -167618,9 +170649,9 @@
       },
       "testing": {
         "policy": {
-          "value": null,
-          "status": "unreviewed",
-          "sourceUrl": null,
+          "value": "Test-optional for most applicants; international routes depend on English background",
+          "status": "reported",
+          "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
           "sourceLabel": null,
           "dataYear": null,
           "cycle": null,
@@ -167677,7 +170708,152 @@
         },
         "context": null
       },
-      "englishProficiency": [],
+      "englishProficiency": [
+        {
+          "test": "TOEFL",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 90,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL 90 on the former scale, IELTS 6.5, Cambridge 176, Duolingo 115, Oxford Test of English 130, or PTE 53. SAT or ACT may also satisfy the requirement."
+        },
+        {
+          "test": "IELTS",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 6.5,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL 90 on the former scale, IELTS 6.5, Cambridge 176, Duolingo 115, Oxford Test of English 130, or PTE 53. SAT or ACT may also satisfy the requirement."
+        },
+        {
+          "test": "Cambridge",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 176,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL 90 on the former scale, IELTS 6.5, Cambridge 176, Duolingo 115, Oxford Test of English 130, or PTE 53. SAT or ACT may also satisfy the requirement."
+        },
+        {
+          "test": "Duolingo",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 115,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL 90 on the former scale, IELTS 6.5, Cambridge 176, Duolingo 115, Oxford Test of English 130, or PTE 53. SAT or ACT may also satisfy the requirement."
+        },
+        {
+          "test": "Oxford Test of English",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 130,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL 90 on the former scale, IELTS 6.5, Cambridge 176, Duolingo 115, Oxford Test of English 130, or PTE 53. SAT or ACT may also satisfy the requirement."
+        },
+        {
+          "test": "PTE",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 53,
+            "status": "reported",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/international-students/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Published minimums are TOEFL 90 on the former scale, IELTS 6.5, Cambridge 176, Duolingo 115, Oxford Test of English 130, or PTE 53. SAT or ACT may also satisfy the requirement."
+        }
+      ],
       "scholarships": [
         {
           "name": "Colin Ferguson Tuition Grant + Fellowship",
@@ -167751,7 +170927,235 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
-      }
+      },
+      "applicationRequirements": {
+        "plans": [
+          {
+            "code": "ED",
+            "name": "Early Decision",
+            "binding": true,
+            "restrictive": false,
+            "explanation": "Binding: enroll if admitted and the aid offer is workable.",
+            "source": {
+              "value": "ED",
+              "status": "previous_cycle",
+              "sourceUrl": "https://www.washcoll.edu/admissions/apply/Freshman/index.php",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          },
+          {
+            "code": "EA",
+            "name": "Early Action",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "EA",
+              "status": "previous_cycle",
+              "sourceUrl": "https://www.washcoll.edu/admissions/apply/Freshman/index.php",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          },
+          {
+            "code": "RD",
+            "name": "RD",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "RD",
+              "status": "previous_cycle",
+              "sourceUrl": "https://www.washcoll.edu/admissions/apply/Freshman/index.php",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "platforms": [],
+        "fee": {
+          "amount": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "The current first-year checklist requires an application, official secondary-school transcript, one counselor recommendation, and either test scores or an approved test-optional route. A teacher recommendation, activities list, and résumé are recommended.",
+          "status": "reported",
+          "sourceUrl": "https://www.washcoll.edu/admissions/apply/Freshman/index.php",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
+      },
+      "deadlines": [
+        {
+          "id": "washington-college:ed:application",
+          "plan": "ED",
+          "kind": "application",
+          "label": "ED application",
+          "date": {
+            "value": "November 15",
+            "status": "previous_cycle",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/Freshman/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        {
+          "id": "washington-college:ea:application",
+          "plan": "EA",
+          "kind": "application",
+          "label": "EA application",
+          "date": {
+            "value": "December 1",
+            "status": "previous_cycle",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/Freshman/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        {
+          "id": "washington-college:rd:application",
+          "plan": "RD",
+          "kind": "application",
+          "label": "RD application",
+          "date": {
+            "value": "February 15",
+            "status": "previous_cycle",
+            "sourceUrl": "https://www.washcoll.edu/admissions/apply/Freshman/index.php",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        }
+      ]
     },
     {
       "ipedsId": "236939",
@@ -172109,8 +175513,17 @@
       "meetsFullNeed": false,
       "meritAid": true,
       "testingPolicy": "The current testing policy has not been confirmed here; check the official admission site.",
-      "englishTests": [],
-      "applicationPlans": [],
+      "englishTests": [
+        "TOEFL",
+        "IELTS",
+        "PTE",
+        "Duolingo",
+        "SAT EBRW"
+      ],
+      "applicationPlans": [
+        "EA",
+        "RD"
+      ],
       "feeWaiver": "Verify the current application fee and waiver process on the official admission site.",
       "themes": [
         "Private",
@@ -172270,7 +175683,128 @@
         },
         "context": null
       },
-      "englishProficiency": [],
+      "englishProficiency": [
+        {
+          "test": "TOEFL",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 79,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Full-admission minimums include TOEFL iBT 79, IELTS 6.5, PTE 53, Duolingo 110, MET 53–63, CEFR B2, SAT EBRW 560, or ACT English and Reading 22. Education and country exemptions are published."
+        },
+        {
+          "test": "IELTS",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 6.5,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Full-admission minimums include TOEFL iBT 79, IELTS 6.5, PTE 53, Duolingo 110, MET 53–63, CEFR B2, SAT EBRW 560, or ACT English and Reading 22. Education and country exemptions are published."
+        },
+        {
+          "test": "PTE",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 53,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Full-admission minimums include TOEFL iBT 79, IELTS 6.5, PTE 53, Duolingo 110, MET 53–63, CEFR B2, SAT EBRW 560, or ACT English and Reading 22. Education and country exemptions are published."
+        },
+        {
+          "test": "Duolingo",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 110,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Full-admission minimums include TOEFL iBT 79, IELTS 6.5, PTE 53, Duolingo 110, MET 53–63, CEFR B2, SAT EBRW 560, or ACT English and Reading 22. Education and country exemptions are published."
+        },
+        {
+          "test": "SAT EBRW",
+          "accepted": {
+            "value": true,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "minimumScore": {
+            "value": 560,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverNote": "Full-admission minimums include TOEFL iBT 79, IELTS 6.5, PTE 53, Duolingo 110, MET 53–63, CEFR B2, SAT EBRW 560, or ACT English and Reading 22. Education and country exemptions are published."
+        }
+      ],
       "scholarships": [
         {
           "name": "Largest listed merit scholarship",
@@ -172344,7 +175878,229 @@
         "reviewedAt": "2026-08-01",
         "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components.",
         "sourceLabel": "U.S. Department of Education NCES/IPEDS"
-      }
+      },
+      "applicationRequirements": {
+        "plans": [
+          {
+            "code": "EA",
+            "name": "Early Action",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "EA",
+              "status": "reported",
+              "sourceUrl": "https://westminsteru.edu/admissions/international-admissions/index.html",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          },
+          {
+            "code": "RD",
+            "name": "RD",
+            "binding": false,
+            "restrictive": false,
+            "explanation": "Nonbinding early application.",
+            "source": {
+              "value": "RD",
+              "status": "reported",
+              "sourceUrl": "https://westminsteru.edu/admissions/international-admissions/index.html",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "platforms": [
+          {
+            "name": "Common Application",
+            "source": {
+              "value": "Common Application",
+              "status": "reported",
+              "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          },
+          {
+            "name": "Westminster Application",
+            "source": {
+              "value": "Westminster Application",
+              "status": "reported",
+              "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+              "sourceLabel": null,
+              "dataYear": null,
+              "cycle": null,
+              "reviewedAt": "2026-08-01",
+              "rawValue": null
+            }
+          }
+        ],
+        "fee": {
+          "amount": {
+            "value": 0,
+            "status": "reported",
+            "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "internationalFee": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          },
+          "waiverRoute": {
+            "value": null,
+            "status": "unreviewed",
+            "sourceUrl": null,
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        "recommendations": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "schoolForms": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "transcripts": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "midyearReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "finalReport": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "supplements": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "interviews": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "portfolio": {
+          "value": null,
+          "status": "unreviewed",
+          "sourceUrl": null,
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        },
+        "specialRequirements": {
+          "value": "Common Application or Westminster Application, secondary-school records, and any requested essay or school report are listed. International applicants also provide translated official records, English proof, financial-responsibility forms, and bank statements. There is no application fee.",
+          "status": "reported",
+          "sourceUrl": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html",
+          "sourceLabel": null,
+          "dataYear": null,
+          "cycle": null,
+          "reviewedAt": "2026-08-01",
+          "rawValue": null
+        }
+      },
+      "deadlines": [
+        {
+          "id": "westminster-university:ea:application",
+          "plan": "EA",
+          "kind": "application",
+          "label": "EA application",
+          "date": {
+            "value": "December 1",
+            "status": "reported",
+            "sourceUrl": "https://westminsteru.edu/admissions/international-admissions/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        },
+        {
+          "id": "westminster-university:rd:application",
+          "plan": "RD",
+          "kind": "application",
+          "label": "RD application",
+          "date": {
+            "value": "February 2",
+            "status": "reported",
+            "sourceUrl": "https://westminsteru.edu/admissions/international-admissions/index.html",
+            "sourceLabel": null,
+            "dataYear": null,
+            "cycle": null,
+            "reviewedAt": "2026-08-01",
+            "rawValue": null
+          }
+        }
+      ]
     },
     {
       "ipedsId": "125727",

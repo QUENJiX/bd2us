@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-01T16:41:29.504Z",
+  "generatedAt": "2026-08-01T17:59:58.251Z",
   "sourcePolicy": "Official college domains discovered from U.S. Department of Education links; compact excerpts retained for editorial verification.",
   "count": 678,
   "records": [
@@ -513,7 +513,7 @@
       "slug": "albion-college",
       "name": "Albion College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:38:04.947Z",
+      "reviewedAt": "2026-08-01T17:52:07.394Z",
       "officialDomains": [
         "albion.edu"
       ],
@@ -1520,7 +1520,7 @@
       "slug": "american-university",
       "name": "American University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:38:04.624Z",
+      "reviewedAt": "2026-08-01T17:52:07.311Z",
       "officialDomains": [
         "american.edu"
       ],
@@ -3304,7 +3304,7 @@
       "slug": "auburn-university-at-montgomery",
       "name": "Auburn University at Montgomery",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:38:10.216Z",
+      "reviewedAt": "2026-08-01T17:52:13.895Z",
       "officialDomains": [
         "aum.edu"
       ],
@@ -3314,8 +3314,38 @@
         "https://www.aum.edu/admissions/scholarships-and-financial-aid/financial-aid",
         "https://www.aum.edu/apply#apply-now-back-btn-row"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "scholarships",
+        "internationalAdmission",
+        "applicationPlansAndDeadlines",
+        "testingPolicy"
+      ],
+      "pages": [
+        {
+          "url": "https://catalog.aum.edu/costandaid/scholarships",
+          "title": "Scholarships | Auburn University at Montgomery Catalog",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "scholarships": [
+              "| Auburn University at Montgomery Catalog Skip to Main Content Auburn University at Montgomery AUM Website Admissions Academic Calendar Class Schedule Archived Catalogs MyAUM Directory Auburn University at Montgomery About About AUM Accreditations Administration & Leadership Board of Trustees Faculty Chancellor's Welco"
+            ],
+            "internationalAdmission": [
+              "334-244-3000 Additional Resources Advising Help Alumni Association AUM Library Campus Map Consumer Information Continuing Education Directory FERPA Institutional Effectiveness International Student Resources Orientations and Transitions Registrar's Office Student Affairs Title IX Privacy Statement Transfer Resources Ve"
+            ],
+            "applicationPlansAndDeadlines": [
+              "must reapply for consideration each year. Students can also speak to their academic department regarding department scholarship availability. For updated information and application deadlines on scholarships for continuing students, visit the website . Summer Incentive Scholarship The Summer Incentive Scholarship Progr"
+            ],
+            "testingPolicy": [
+              "Free Application for Federal Student Aid (FAFSA) annually. New AUM Students Application Procedures for New AUM Student Scholarships: Apply for admission to AUM. Request official ACT or SAT scores be mailed to the AUM Office of Admissions and Recruiting, P.O. Box 244023, Montgomery, AL, 36124. Request official high scho"
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "augustana-college",
@@ -7534,7 +7564,7 @@
       "slug": "bethel-college",
       "name": "Bethel College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:39:05.163Z",
+      "reviewedAt": "2026-08-01T17:52:52.515Z",
       "officialDomains": [
         "bethelks.edu"
       ],
@@ -14819,7 +14849,7 @@
       "slug": "campbell-university",
       "name": "Campbell University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:38:36.114Z",
+      "reviewedAt": "2026-08-01T17:52:08.736Z",
       "officialDomains": [
         "campbell.edu"
       ],
@@ -21347,7 +21377,7 @@
       "slug": "college-of-st-benedict",
       "name": "College of St. Benedict",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:39:05.475Z",
+      "reviewedAt": "2026-08-01T17:52:09.267Z",
       "officialDomains": [
         "csbsju.edu"
       ],
@@ -23025,7 +23055,7 @@
       "slug": "colorado-state-university-pueblo",
       "name": "Colorado State University-Pueblo",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:39:35.155Z",
+      "reviewedAt": "2026-08-01T17:53:01.149Z",
       "officialDomains": [
         "csupueblo.edu"
       ],
@@ -24273,7 +24303,7 @@
       "slug": "cornell-college",
       "name": "Cornell College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:39:26.077Z",
+      "reviewedAt": "2026-08-01T17:52:15.150Z",
       "officialDomains": [
         "cornellcollege.edu"
       ],
@@ -24781,7 +24811,7 @@
       "slug": "creighton-university",
       "name": "Creighton University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:39:35.282Z",
+      "reviewedAt": "2026-08-01T17:52:15.873Z",
       "officialDomains": [
         "creighton.edu"
       ],
@@ -30013,7 +30043,7 @@
       "slug": "east-carolina-university",
       "name": "East Carolina University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:39:36.752Z",
+      "reviewedAt": "2026-08-01T17:52:18.174Z",
       "officialDomains": [
         "ecu.edu"
       ],
@@ -30023,8 +30053,28 @@
         "https://admissions.ecu.edu/afford/financial-aid/",
         "https://admissions.ecu.edu/apply/freshmen/"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "scholarships",
+        "applicationPlansAndDeadlines"
+      ],
+      "pages": [
+        {
+          "url": "https://calendar.ecu.edu/event/fafsa_priority_deadline",
+          "title": "FAFSA Priority Deadline - East Carolina University",
+          "topics": [
+            "scholarships",
+            "applicationPlansAndDeadlines"
+          ],
+          "evidence": {
+            "scholarships": [
+              "iCal Save to Outlook http://www.ecu.edu/financial/ Free Event Add to calendar Save to Google Calendar Save to iCal Save to Outlook To apply for grants, loans, work-study and some scholarships you must complete the Free Application for Federal Student Aid (FAFSA) . The FAFSA is used to determine your eligibility for fed"
+            ],
+            "applicationPlansAndDeadlines": [
+              "Priority Deadline - East Carolina University --> Search Search Close Menu Search Log in Log in East Carolina University Events Past Events FAFSA Priority Deadline Clear message FAFSA Priority Deadline Wednesday, February 14, 2018 I'm Interested Share FAFSA Priority Deadline Share FAFSA Priority Deadline on Facebook Sha"
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "east-tennessee-state-university",
@@ -30155,7 +30205,7 @@
       "slug": "eastern-illinois-university",
       "name": "Eastern Illinois University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:39:38.082Z",
+      "reviewedAt": "2026-08-01T17:52:30.044Z",
       "officialDomains": [
         "eiu.edu"
       ],
@@ -30165,8 +30215,93 @@
         "https://www.eiu.edu/finaid/",
         "https://www.eiu.edu/myeiu/index.php?type=signup"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "internationalAid",
+        "scholarships",
+        "internationalAdmission",
+        "applicationRequirements",
+        "englishProficiency"
+      ],
+      "pages": [
+        {
+          "url": "https://www.eiu.edu/",
+          "title": "Eastern Illinois University | Official Website | EIU",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "give&nbsp;to&nbsp;EIU search history Recent Searches Close --> History Close --> Recent Pages Recent Searches Admissions Prospective Students MyEIU Cost to Attend Find My Major Scholarships Which Admissions is Right for Me? Parents Housing & Dining About EIU Visit EIU Virtual Tour Online Degree Programs Apply Now More "
+            ],
+            "internationalAdmission": [
+              "Apply Now More info… EIU Admitting Offices EIU offers a variety of different admissions options: Find out which one is right for you! Undergraduate Admissions Graduate Admissions International Admissions Transfer Admissions Online Admissions Other Kinds of Admissions Undocumented Students Academics & Library Academics "
+            ]
+          }
+        },
+        {
+          "url": "https://www.eiu.edu/admissions.php",
+          "title": "Admissions | Eastern Illinois University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "#nav_cont'));\" x-show=\"mobile_menu_open\" x-collapse class=\"md:hidden\" > a-z panthermail paws library d2l give ADMISSIONS MyEIU Cost to Attend Find My Major Scholarships Which Admissions is Right for Me? Parents Housing & Dining About EIU Visit EIU Virtual Tour Online Degree Programs Apply Now More Info&hellip; TEST BUT"
+            ],
+            "internationalAdmission": [
+              "Campus Life Parents Undergraduate Website Graduate Admissions Graduate Degree Programs Graduate Assistantships Graduate Website OTHER TYPES OF ADMISSIONS Transfer Admissions International Admissions Online Admissions IDS Admissions RN to BS in Nursing Admissions OPD Admissions Readmission CONTACT INFORMATION FOR ADMISS"
+            ]
+          }
+        },
+        {
+          "url": "https://www.eiu.edu/finaid/",
+          "title": "Financial Aid | Eastern Illinois University",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "a-z panthermail paws library d2l myeiu give&nbsp;to&nbsp;EIU search history Recent Searches Close --> History Close --> Recent Pages Recent Searches EIU Office of Financial Aid & Scholarships Home Cost Cost of Attendance Fees Net Price Calculator Federal Student Aid Estimator College Scorecard Applying for Aid FAFSA Aw"
+            ]
+          }
+        },
+        {
+          "url": "https://www.eiu.edu/myeiu/index.php?type=signup",
+          "title": "Login to MyEIU | Eastern Illinois University",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.eiu.edu/international/conditional_admission.php",
+          "title": "Conditional Admission for Graduate Students | International Students & Scholars | Eastern Illinois University",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission",
+            "applicationRequirements",
+            "englishProficiency"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "Change of Address Academic Advisor Program Extension Form Part-Time Enrollment Form Student Request to Transfer Out Change of Status Terra Dotta FINANCIAL Cost to Attend International Student Scholarships and Awards Graduate Assistantships Employment Scholarship Search Financial Affidavit Honors College Scholarships TR"
+            ],
+            "scholarships": [
+              "Academic Advisor Program Extension Form Part-Time Enrollment Form Student Request to Transfer Out Change of Status Terra Dotta FINANCIAL Cost to Attend International Student Scholarships and Awards Graduate Assistantships Employment Scholarship Search Financial Affidavit Honors College Scholarships TRANSPORTATION Panth"
+            ],
+            "internationalAdmission": [
+              "Admission for Graduate Students | International Students & Scholars | Eastern Illinois University Skip to main content {$refs.eiu_main_search.focus();})}}\" > APPLY VISIT MYEIU a-z panthermail paws library d2l give {if(window.innerWidth 0) $el.appendChild(document.querySelector('#eiu_main_nav_bar #nav_cont'));});\" x-on:"
+            ],
+            "applicationRequirements": [
+              "see the Graduate Checklist for application materials.&nbsp; Apply Now Conditional admission for international applicants is granted only by the Graduate School through a recommendation of the Office of International Students and Scholars. Students offered conditional admission must provide evidence of meeting English l"
+            ],
+            "englishProficiency": [
+              "Undergraduate Applicants: Conditional admission may be offered to undergraduate international applicants who meet the criteria for admission to EIU &nbsp; except for English language proficiency requirement . &nbsp;&nbsp;Please see the Undergraduate Checklist for application materials.&nbsp; Apply Now Conditional admis"
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "eastern-kentucky-university",
@@ -30856,7 +30991,7 @@
       "slug": "eckerd-college",
       "name": "Eckerd College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:09.989Z",
+      "reviewedAt": "2026-08-01T17:52:47.699Z",
       "officialDomains": [
         "eckerd.edu"
       ],
@@ -30866,8 +31001,177 @@
         "https://www.eckerd.edu/admissions/financial-aid/",
         "https://www.eckerd.edu/admissions/first-year/"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "internationalAid",
+        "scholarships",
+        "internationalAdmission",
+        "applicationPlansAndDeadlines",
+        "applicationRequirements",
+        "testingPolicy",
+        "englishProficiency"
+      ],
+      "pages": [
+        {
+          "url": "https://www.eckerd.edu/",
+          "title": "Liberal Arts College in Florida - Eckerd College",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Societies Johnston-Ford Scholars Program Peace Corps Prep Tutors, Academic Coaches & Centers GLOBAL EDUCATION Close Admission & Aid Admissions Overview Learn Financial Aid and Scholarships Meet Your Admission Counselor School Counselor Resources Sunny St. Pete Visit Plan a Visit Video Tour Virtual Tour REQUEST MORE INF"
+            ]
+          }
+        },
+        {
+          "url": "https://www.eckerd.edu/admissions/",
+          "title": "Admission & Aid - Admissions | Eckerd College",
+          "topics": [
+            "scholarships",
+            "applicationRequirements"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Societies Johnston-Ford Scholars Program Peace Corps Prep Tutors, Academic Coaches & Centers GLOBAL EDUCATION Close Admission & Aid Admissions Overview Learn Financial Aid and Scholarships Meet Your Admission Counselor School Counselor Resources Sunny St. Pete Visit Plan a Visit Video Tour Virtual Tour REQUEST MORE INF"
+            ],
+            "applicationRequirements": [
+              "A Visit Virtual Tour Video Tour Apply We look for individuals, not types Ready to begin your journey? Take the time to apply today using Eckerd’s own online application or the Common Application (we consider both application options equally). FIRST-YEAR INTERNATIONAL TRANSFER Scholarships Admissions FAQ Información de "
+            ]
+          }
+        },
+        {
+          "url": "https://www.eckerd.edu/admissions/financial-aid/",
+          "title": "Financial Aid & Scholarships - Admissions | Eckerd College",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "Aid Office directly for more information if you feel either of the above circumstances are reflective of your current situation. Admission & Aid Home Apply First-Year Applicants International Applicants Transfer Applicants FAQ Enroll Financial Aid & Scholarships Types of Aid Net Price Calculator Visit Sunny St. Pete Vi"
+            ],
+            "scholarships": [
+              "Aid & Scholarships - Admissions | Eckerd College Skip to main content Find It Fast For the Public Newsroom Menu About Overview of Eckerd Our Campus Directions & Map Sustainability Community Engagement Service Learning History & Leadership Mission & History President Traditions Facts & Figures A “College That Changes Li"
+            ],
+            "internationalAdmission": [
+              "Aid Office directly for more information if you feel either of the above circumstances are reflective of your current situation. Admission & Aid Home Apply First-Year Applicants International Applicants Transfer Applicants FAQ Enroll Financial Aid & Scholarships Types of Aid Net Price Calculator Visit Sunny St. Pete Vi"
+            ]
+          }
+        },
+        {
+          "url": "https://www.eckerd.edu/admissions/first-year/",
+          "title": "First-Year Application Requirements and Checklist - Admissions | Eckerd College",
+          "topics": [
+            "scholarships",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Societies Johnston-Ford Scholars Program Peace Corps Prep Tutors, Academic Coaches & Centers GLOBAL EDUCATION Close Admission & Aid Admissions Overview Learn Financial Aid and Scholarships Meet Your Admission Counselor School Counselor Resources Sunny St. Pete Visit Plan a Visit Video Tour Virtual Tour REQUEST MORE INF"
+            ],
+            "applicationPlansAndDeadlines": [
+              "#EckerdLife #EckerdCollege #AutumnTerm2026 708 2 Name a better spot on campus, we'll wait 😉🌴☀️ #EckerdCollege #EckerdLife #CollegeInFlorida 298 3 Application process Early Action Submit your application by November 15. You’ll receive a decision from us by December 15. Early Action at Eckerd allows students the opport"
+            ],
+            "applicationRequirements": [
+              "Application Requirements and Checklist - Admissions | Eckerd College Skip to main content Find It Fast For the Public Newsroom Menu About Overview of Eckerd Our Campus Directions & Map Sustainability Community Engagement Service Learning History & Leadership Mission & History President Traditions Facts & Figures A “Col"
+            ],
+            "testingPolicy": [
+              "$50 Application Fee (waived for applications submitted before December 1) Official High School Transcript and/or G.E.D. results Letter of Recommendation Personal Essay Official ACT or SAT Test Scores (optional) SAT code: 5223 ACT code: 0731 Advanced courses Eckerd College awards college credit for Dual Enrollment, Inte"
+            ]
+          }
+        },
+        {
+          "url": "https://www.eckerd.edu/admissions/international/",
+          "title": "International Application Requirements and Checklist - Admissions | Eckerd College",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements",
+            "testingPolicy",
+            "englishProficiency"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "Expenses $1,600 Transportation $1,500 Books $1,350 Health Insurance $1,567 Do you offer scholarships? How do I apply for scholarships? Eckerd College automatically considers international applicants for an International Student scholarship of up to $27,000 annually. All admitted students are considered for these schola"
+            ],
+            "scholarships": [
+              "Societies Johnston-Ford Scholars Program Peace Corps Prep Tutors, Academic Coaches & Centers GLOBAL EDUCATION Close Admission & Aid Admissions Overview Learn Financial Aid and Scholarships Meet Your Admission Counselor School Counselor Resources Sunny St. Pete Visit Plan a Visit Video Tour Virtual Tour REQUEST MORE INF"
+            ],
+            "internationalAdmission": [
+              "Volunteer & Work – Career Center Volunteer & Work – Emergency Response Team Volunteer & Work – Search & Rescue Volunteer & Work – Service-Learning Give & Engage Admission & Aid International applicants Application requirements The vast majority of our new students apply for fall admission, but it is also possible to st"
+            ],
+            "applicationPlansAndDeadlines": [
+              "of our new students apply for fall admission, but it is also possible to start in January (our intensive one-month mini-term). Eckerd College has two application options: Early Action or Rolling Admission . Both programs are non-binding and do not require a decision from you until May 1 . First Year College Student For"
+            ],
+            "applicationRequirements": [
+              "Application Requirements and Checklist - Admissions | Eckerd College Skip to main content Find It Fast For the Public Newsroom Menu About Overview of Eckerd Our Campus Directions & Map Sustainability Community Engagement Service Learning History & Leadership Mission & History President Traditions Facts & Figures A “Col"
+            ],
+            "testingPolicy": [
+              "countries where English is the official language AND do not fulfill any of the above requirements, please contact our office at admissions@eckerd.edu . Do I need to take the SAT or ACT? No. International student are not required to take the SAT or ACT to be reviewed for admission. However, an SAT Evidence-Based Reading"
+            ],
+            "englishProficiency": [
+              "certificates. If official records are not in English, send a certified translation in English in addition to the official records. Admission Recommendation Letter Proof of English proficiency All international applicants whose native language is not English must submit proof of English proficiency in one of the followi"
+            ]
+          }
+        },
+        {
+          "url": "https://www.eckerd.edu/admissions/financial-aid/types/",
+          "title": "Types of Aid - Admissions | Eckerd College",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "must be submitted by February 1st and only students starting in Autumn Term can be considered. View and apply for the 2026-27 First-Year Research Associateship Opportunities . International Student Scholarship & Aid Eckerd College automatically considers international first-year applicants (student who require a visa t"
+            ],
+            "scholarships": [
+              "Societies Johnston-Ford Scholars Program Peace Corps Prep Tutors, Academic Coaches & Centers GLOBAL EDUCATION Close Admission & Aid Admissions Overview Learn Financial Aid and Scholarships Meet Your Admission Counselor School Counselor Resources Sunny St. Pete Visit Plan a Visit Video Tour Virtual Tour REQUEST MORE INF"
+            ],
+            "internationalAdmission": [
+              "must be submitted by February 1st and only students starting in Autumn Term can be considered. View and apply for the 2026-27 First-Year Research Associateship Opportunities . International Student Scholarship & Aid Eckerd College automatically considers international first-year applicants (student who require a visa t"
+            ],
+            "applicationPlansAndDeadlines": [
+              "Eckerd College to students, who receive the Federal Pell Grant and demonstrate extreme financial need. These funds are limited and students are encouraged to apply prior to the priority deadline to receive full consideration. Florida Grants Review details of the Florida Effective Access to Student Education (EASE) and "
+            ],
+            "applicationRequirements": [
+              "College Presbyterian Church and Campus Need-Based Scholarships are awarded to Presbyterian Church members, based on church and community involvement as well as financial need. Recommendation by their Presbyterian pastors is required. The application must be submitted by February 1st. Apply for the 2026-27 Eckerd Colleg"
+            ]
+          }
+        },
+        {
+          "url": "https://www.eckerd.edu/about/factsheet/",
+          "title": "Fact Sheet - Eckerd College",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Societies Johnston-Ford Scholars Program Peace Corps Prep Tutors, Academic Coaches & Centers GLOBAL EDUCATION Close Admission & Aid Admissions Overview Learn Financial Aid and Scholarships Meet Your Admission Counselor School Counselor Resources Sunny St. Pete Visit Plan a Visit Video Tour Virtual Tour REQUEST MORE INF"
+            ]
+          }
+        },
+        {
+          "url": "https://www.eckerd.edu/academics/human-experience/",
+          "title": "Human Experience and First-Year Experience Seminar - Eckerd College",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Societies Johnston-Ford Scholars Program Peace Corps Prep Tutors, Academic Coaches & Centers GLOBAL EDUCATION Close Admission & Aid Admissions Overview Learn Financial Aid and Scholarships Meet Your Admission Counselor School Counselor Resources Sunny St. Pete Visit Plan a Visit Video Tour Virtual Tour REQUEST MORE INF"
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "elizabeth-city-state-university",
@@ -32677,7 +32981,7 @@
       "slug": "emmanuel-university-ga",
       "name": "Emmanuel University (GA)",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:18.380Z",
+      "reviewedAt": "2026-08-01T17:52:18.074Z",
       "officialDomains": [
         "ec.edu"
       ],
@@ -36366,7 +36670,7 @@
       "slug": "franklin-college",
       "name": "Franklin College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:45.599Z",
+      "reviewedAt": "2026-08-01T17:52:28.137Z",
       "officialDomains": [
         "franklincollege.edu"
       ],
@@ -36377,7 +36681,92 @@
         "https://www.franklincollege.edu/admissions-aid/apply/"
       ],
       "topicsFound": [],
-      "pages": []
+      "pages": [
+        {
+          "url": "https://www.franklincollege.edu/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.franklincollege.edu/admissions-aid/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.franklincollege.edu/admissions-aid/tuition-and-financial-aid/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.franklincollege.edu/admissions-aid/apply/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://franklincollege.edu/admissions-aid/apply/how-to-apply-as-an-international-student/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://franklincollege.edu/admissions-aid/international-student-admissions/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://franklincollege.edu/wp-content/uploads/2024/02/2024_International_Student_E-book_022824.pdf",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://franklincollege.edu/admissions/financial-aid/types-financial-aid/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://franklincollege.edu/admissions-aid/tuition-and-financial-aid/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://franklincollege.edu/admissions-aid/tuition-and-financial-aid/fafsa-application-process-and-forms/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://franklincollege.edu/admissions-aid/tuition-and-financial-aid/tuition-and-costs/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://franklincollege.edu/admissions/financial-aid",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://franklincollege.edu/admissions-aid/apply/how-to-apply-as-a-first-year-student/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://franklincollege.edu/admissions-aid/apply/how-to-apply-as-a-transfer-student/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        }
+      ]
     },
     {
       "slug": "franklin-w-olin-college-of-engineering",
@@ -36675,7 +37064,7 @@
       "slug": "furman-university",
       "name": "Furman University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:45.417Z",
+      "reviewedAt": "2026-08-01T17:52:25.024Z",
       "officialDomains": [
         "furman.edu"
       ],
@@ -36868,7 +37257,7 @@
       "slug": "george-mason-university",
       "name": "George Mason University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:45.802Z",
+      "reviewedAt": "2026-08-01T17:52:46.615Z",
       "officialDomains": [
         "gmu.edu"
       ],
@@ -36878,8 +37267,245 @@
         "https://www.gmu.edu/financial-aid",
         "https://www2.gmu.edu/admissions-aid/apply-now"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "internationalAid",
+        "scholarships",
+        "internationalAdmission",
+        "applicationPlansAndDeadlines",
+        "applicationRequirements",
+        "testingPolicy",
+        "englishProficiency"
+      ],
+      "pages": [
+        {
+          "url": "https://www.gmu.edu/",
+          "title": "A Top 50 Public R1 Research University | George Mason University",
+          "topics": [
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAdmission": [
+              "and Professional Education Gateway Admissions & Aid Request Information Visit and Explore Freshman Admissions Transfer Admissions Graduate Admissions Non-Degree Admissions International Admissions Pre-College Programs Financial Aid Research Institutes and Centers Grand Challenge Initiative Advancing 21st Century Educat"
+            ]
+          }
+        },
+        {
+          "url": "https://www.gmu.edu/admissions-aid",
+          "title": "Admissions and Financial Aid | George Mason University",
+          "topics": [
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAdmission": [
+              "and Professional Education Gateway Admissions & Aid Request Information Visit and Explore Freshman Admissions Transfer Admissions Graduate Admissions Non-Degree Admissions International Admissions Pre-College Programs Financial Aid Research Institutes and Centers Grand Challenge Initiative Advancing 21st Century Educat"
+            ]
+          }
+        },
+        {
+          "url": "https://www.gmu.edu/financial-aid",
+          "title": "Financial Aid | George Mason University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "in the OBBBA affect financial aid for all prospective, undergraduate, and graduate students. Many George Mason students receive some kind of financial aid, such as grants, scholarships, work-study employment, or loans. To assist you with the financial aid process, George Mason’s Office of Student Financial Aid has a te"
+            ],
+            "internationalAdmission": [
+              "and Professional Education Gateway Admissions & Aid Request Information Visit and Explore Freshman Admissions Transfer Admissions Graduate Admissions Non-Degree Admissions International Admissions Pre-College Programs Financial Aid Research Institutes and Centers Grand Challenge Initiative Advancing 21st Century Educat"
+            ]
+          }
+        },
+        {
+          "url": "https://www.gmu.edu/news/2025-04/accounting-advisory-council-scholarship-broadens-horizons-international-student",
+          "title": "Accounting Advisory Council Scholarship broadens horizons for international student | George Mason University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Advisory Council Scholarship broadens horizons for international student | George Mason University Skip to content Mason George Mason University Apply Give Canvas PatriotWeb Peoplefinder Athletics News CALENDAR Library Graduation Academics Undergraduate Programs Honors College Undergraduate Research Graduate Programs C"
+            ],
+            "internationalAdmission": [
+              "Advisory Council Scholarship broadens horizons for international student | George Mason University Skip to content Mason George Mason University Apply Give Canvas PatriotWeb Peoplefinder Athletics News CALENDAR Library Graduation Academics Undergraduate Programs Honors College Undergraduate Research Graduate Programs C"
+            ]
+          }
+        },
+        {
+          "url": "https://www.gmu.edu/international",
+          "title": "International Admissions | George Mason University",
+          "topics": [
+            "internationalAid",
+            "internationalAdmission",
+            "applicationRequirements"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "Admissions Sub Navigation International Admissions Undergraduate International Student Health Insurance Student Visas English Language Requirements Explore Mason International Financial Aid Office of International Enrollment Partnerships At George Mason, we believe in inclusivity over exclusivity.&nbsp; That’s why we’r"
+            ],
+            "internationalAdmission": [
+              "Admissions | George Mason University Skip to content Mason George Mason University Apply Give Canvas PatriotWeb Peoplefinder Athletics News CALENDAR Library Graduation Academics Undergraduate Programs Honors College Undergraduate Research Graduate Programs Colleges and Schools Study Abroad Mason Online Smithsonian-Maso"
+            ],
+            "applicationRequirements": [
+              "professional. As an international student, you'll submit the application that best fits your student type: freshman, transfer, or graduate.&nbsp; In addition to the regular application requirements, each application also has additional elements for international students. Furthermore, some international students are al"
+            ]
+          }
+        },
+        {
+          "url": "https://www.gmu.edu/financial-aid-parent/how-apply-financial-aid",
+          "title": "How to Apply for Financial Aid | George Mason University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "ID (G#) on all documents submitted to the OSFA. Keep a copy of all documents related to your financial aid, including promissory notes and loan disclosure statements. Private scholarships often require separate scholarship applications, so begin searching for scholarships early . How to Submit Requested Documents Stude"
+            ],
+            "internationalAdmission": [
+              "and Professional Education Gateway Admissions & Aid Request Information Visit and Explore Freshman Admissions Transfer Admissions Graduate Admissions Non-Degree Admissions International Admissions Pre-College Programs Financial Aid Research Institutes and Centers Grand Challenge Initiative Advancing 21st Century Educat"
+            ]
+          }
+        },
+        {
+          "url": "https://catalog.gmu.edu/admissions/international-students/",
+          "title": "Admission of International Students | George Mason University Catalog",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements",
+            "testingPolicy",
+            "englishProficiency"
+          ],
+          "evidence": {
+            "scholarships": [
+              "and living expenses. If source is a sponsor, confirmed funding must be documented for the first year of study, typically with a sponsor letter and current bank statement or a scholarship award letter or an assistantship offer. The source of funds for subsequent years must be shown, although for sponsored students a ban"
+            ],
+            "internationalAdmission": [
+              "of International Students | George Mason University Catalog Skip to Content AZ Index Catalog Home Institution Home George Mason University University Catalog 2026-2027 Menu Home Admissions Tuition & Fees Student Services Policies Archive Search Catalog Close Search Search Catalog Admission of International Students Cat"
+            ],
+            "applicationPlansAndDeadlines": [
+              "Insurance General Requirements Application for admission by international students should be made directly to the Office of Admissions via the online application . Priority application deadlines are as follows: Application Deadlines Deadline Date Freshman Fall June 1 Transfer Fall March 1 Freshman Spring October 1 Tran"
+            ],
+            "applicationRequirements": [
+              "by the nonrefundable application fee. Admission for international students is offered for fall (August) and spring (January) terms. International Requirements A complete list of application requirements at all levels can be found online . Documents required to receive the Form I-20 can be submitted with the application"
+            ],
+            "testingPolicy": [
+              "an English translation, if applicable. Official results of any leaving certificates or university entrance exams. Freshman applicants may be considered for admission without an SAT or ACT score through our score optional admission program. Qualifications for score optional consideration can be found here . Non-native E"
+            ],
+            "englishProficiency": [
+              "score optional admission program. Qualifications for score optional consideration can be found here . Non-native English-speaking applicants are required to meet the University’s English Proficiency requirement. Please visit the English Proficiency requirements page for more detailed information. Applicants with Englis"
+            ]
+          }
+        },
+        {
+          "url": "https://catalog.gmu.edu/archives/2017-2018/admissions/international-students/",
+          "title": "Admission of International Students < George Mason University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements",
+            "testingPolicy",
+            "englishProficiency"
+          ],
+          "evidence": {
+            "scholarships": [
+              "students may be considered for admission without an SAT or ACT score through our score optional admission program; however, SAT or ACT results may be required for merit-based scholarship consideration. Applicants to Mason's science and engineering programs must also submit a qualifying SAT or ACT score. Applicants must"
+            ],
+            "internationalAdmission": [
+              "of International Students < George Mason University Skip to Content AZ Index Catalog Home Institution Home George Mason University University Catalog 2017-2018 Menu Home Admissions Tuition & Fees Student Services Policies Archive Search Catalog Close Search Search Catalog Admission of International Students Catalog&nbs"
+            ],
+            "applicationPlansAndDeadlines": [
+              "Student Health Insurance General Requirements Application for admission by international students should be made directly to the Office of Admissions via the online application. Application deadlines are as follows: Application Deadlines Deadline Date Freshman Fall April 1 Transfer Fall March 1 Freshman Spring October "
+            ],
+            "applicationRequirements": [
+              "study must meet the following requirements: In order to be considered for admission, applicants must complete the online Application for U.S. Graduate Study and submit all required materials, including any supplemental documentation required by their academic program directly to the Office of Admissions. English Profic"
+            ],
+            "testingPolicy": [
+              "official transcripts from each post-secondary institution attended, sent directly to Mason from the institution. International students may be considered for admission without an SAT or ACT score through our score optional admission program; however, SAT or ACT results may be required for merit-based scholarship consid"
+            ],
+            "englishProficiency": [
+              "To access the most recent version of the catalog, please visit http://catalog.gmu.edu . On This Page General Requirements Freshman and Transfer Requirements Graduate Requirements English Proficiency Standards Students with International Degrees Special Conditions for International Applicants International Student Healt"
+            ]
+          }
+        },
+        {
+          "url": "https://www.gmu.edu/international/english-language-requirements",
+          "title": "English Language Requirements | George Mason University",
+          "topics": [
+            "internationalAid",
+            "internationalAdmission",
+            "englishProficiency"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "Requirements Sub Navigation International Admissions Undergraduate International Student Health Insurance Student Visas English Language Requirements Explore Mason International Financial Aid Office of International Enrollment Partnerships INTO Mason INTO Mason &nbsp;provides English language instruction and assessment"
+            ],
+            "internationalAdmission": [
+              "and Professional Education Gateway Admissions & Aid Request Information Visit and Explore Freshman Admissions Transfer Admissions Graduate Admissions Non-Degree Admissions International Admissions Pre-College Programs Financial Aid Research Institutes and Centers Grand Challenge Initiative Advancing 21st Century Educat"
+            ],
+            "englishProficiency": [
+              "instruction and assessment for postsecondary speakers of other languages who wish to learn English for academic, personal, or professional reasons. Explore INTO Mason Icon Icon English Language Proficiency Requirements All George Mason students must have full command of academic English to be successful in their studie"
+            ]
+          }
+        },
+        {
+          "url": "https://www.gmu.edu/international/international-student-visas",
+          "title": "International Student Visas | George Mason University",
+          "topics": [
+            "internationalAid",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "Student Visas Sub Navigation International Admissions Undergraduate International Student Health Insurance Student Visas English Language Requirements Explore Mason International Financial Aid Office of International Enrollment Partnerships Steps for Applying for Student Visas International Hub Portal This portal is us"
+            ],
+            "internationalAdmission": [
+              "Student Visas | George Mason University Skip to content Mason George Mason University Apply Give Canvas PatriotWeb Peoplefinder Athletics News CALENDAR Library Graduation Academics Undergraduate Programs Honors College Undergraduate Research Graduate Programs Colleges and Schools Study Abroad Mason Online Smithsonian-M"
+            ]
+          }
+        },
+        {
+          "url": "https://www.gmu.edu/news/2020-07/july-7-message-president-washington-supporting-our-international-students",
+          "title": "July 7: Message from President Washington Supporting Our International Students | George Mason University",
+          "topics": [
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAdmission": [
+              "7: Message from President Washington Supporting Our International Students | George Mason University Skip to content Mason George Mason University Apply Give Canvas PatriotWeb Peoplefinder Athletics News CALENDAR Library Graduation Academics Undergraduate Programs Honors College Undergraduate Research Graduate Programs"
+            ]
+          }
+        },
+        {
+          "url": "https://www.gmu.edu/news/2021-06/mason-helps-international-students-acclimate-american-academics-learn-english",
+          "title": "INTO Mason helps international students acclimate to American academics, learn English | George Mason University",
+          "topics": [
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAdmission": [
+              "Mason helps international students acclimate to American academics, learn English | George Mason University Skip to content Mason George Mason University Apply Give Canvas PatriotWeb Peoplefinder Athletics News CALENDAR Library Graduation Academics Undergraduate Programs Honors College Undergraduate Research Graduate P"
+            ]
+          }
+        },
+        {
+          "url": "https://www.gmu.edu/news/2021-08/international-student-crosses-countries-computer-science",
+          "title": "International student crosses countries for computer science | George Mason University",
+          "topics": [
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAdmission": [
+              "student crosses countries for computer science | George Mason University Skip to content Mason George Mason University Apply Give Canvas PatriotWeb Peoplefinder Athletics News CALENDAR Library Graduation Academics Undergraduate Programs Honors College Undergraduate Research Graduate Programs Colleges and Schools Study "
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "george-washington-university",
@@ -37916,7 +38542,7 @@
       "slug": "georgia-state-university",
       "name": "Georgia State University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:46.918Z",
+      "reviewedAt": "2026-08-01T17:52:31.461Z",
       "officialDomains": [
         "gsu.edu"
       ],
@@ -38976,7 +39602,7 @@
       "slug": "goshen-college",
       "name": "Goshen College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:46.444Z",
+      "reviewedAt": "2026-08-01T17:52:31.886Z",
       "officialDomains": [
         "goshen.edu"
       ],
@@ -41009,7 +41635,7 @@
       "slug": "hampton-university",
       "name": "Hampton University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:46.699Z",
+      "reviewedAt": "2026-08-01T17:53:31.918Z",
       "officialDomains": [
         "hamptonu.edu"
       ],
@@ -41553,7 +42179,7 @@
       "slug": "hartwick-college",
       "name": "Hartwick College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:46.292Z",
+      "reviewedAt": "2026-08-01T17:52:33.035Z",
       "officialDomains": [
         "hartwick.edu"
       ],
@@ -42830,7 +43456,7 @@
       "slug": "high-point-university",
       "name": "High Point University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:47.185Z",
+      "reviewedAt": "2026-08-01T17:52:35.328Z",
       "officialDomains": [
         "highpoint.edu"
       ],
@@ -42988,7 +43614,7 @@
       "slug": "hiram-college",
       "name": "Hiram College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:47.656Z",
+      "reviewedAt": "2026-08-01T17:52:39.404Z",
       "officialDomains": [
         "hiram.edu"
       ],
@@ -42999,7 +43625,32 @@
         "https://www.hiram.edu/apply/"
       ],
       "topicsFound": [],
-      "pages": []
+      "pages": [
+        {
+          "url": "https://www.hiram.edu/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.hiram.edu/admissions-aid/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.hiram.edu/admissions-aid/student-financial-services/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.hiram.edu/apply/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        }
+      ]
     },
     {
       "slug": "hobart-and-william-smith-colleges",
@@ -49120,7 +49771,7 @@
       "slug": "kalamazoo-college",
       "name": "Kalamazoo College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:48.369Z",
+      "reviewedAt": "2026-08-01T17:53:00.849Z",
       "officialDomains": [
         "kzoo.edu"
       ],
@@ -49130,8 +49781,29 @@
         "https://finaid.kzoo.edu/",
         "https://admission.kzoo.edu/how-to-apply/"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "scholarships"
+      ],
+      "pages": [
+        {
+          "url": "https://www.kzoo.edu/",
+          "title": "Kalamazoo College – Kalamazoo College",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.kzoo.edu/catalog/policies/financial-aid-programs/",
+          "title": "Financial Aid Programs | Kalamazoo College – Academic Catalog",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Directories Archives Home &raquo; Academic Catalog &raquo; Policies &raquo; Financial Aid Programs Financial Aid Programs In a sense, every Kalamazoo College student receives a scholarship. Tuition and fees at the College cover only about two-thirds of the cost of an education. The remainder is made up from funds from "
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "kansas-state-university",
@@ -57485,7 +58157,7 @@
       "slug": "lynn-university",
       "name": "Lynn University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:48.616Z",
+      "reviewedAt": "2026-08-01T17:52:51.914Z",
       "officialDomains": [
         "lynn.edu"
       ],
@@ -59219,7 +59891,7 @@
       "slug": "mary-baldwin-university",
       "name": "Mary Baldwin University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:49.049Z",
+      "reviewedAt": "2026-08-01T17:52:51.235Z",
       "officialDomains": [
         "marybaldwin.edu"
       ],
@@ -59229,8 +59901,23 @@
         "https://marybaldwin.edu/financial-aid/",
         "https://go.marybaldwin.edu/admissions/action/"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "scholarships"
+      ],
+      "pages": [
+        {
+          "url": "https://catalog.marybaldwin.edu/financial-aid",
+          "title": "Financial Aid | Mary Baldwin University",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "academic progress toward a degree at Mary Baldwin&nbsp; Applying for Aid&nbsp; There are three general types of financial aid awards that students and families receive: grants/scholarships, loans, and work-study. Grants/scholarships represent any form of financial aid that can be used to meet the cost of education with"
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "maryville-university-of-saint-louis",
@@ -62065,7 +62752,7 @@
       "slug": "midway-university",
       "name": "Midway University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:49.218Z",
+      "reviewedAt": "2026-08-01T17:52:57.710Z",
       "officialDomains": [
         "midway.edu"
       ],
@@ -62076,13 +62763,38 @@
         "https://www.midway.edu/admissions-aid/apply-to-midway/"
       ],
       "topicsFound": [],
-      "pages": []
+      "pages": [
+        {
+          "url": "https://www.midway.edu/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.midway.edu/admissions-aid/why-midway-university/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.midway.edu/admissions-aid/cost-aid/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.midway.edu/admissions-aid/apply-to-midway/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        }
+      ]
     },
     {
       "slug": "milligan-university",
       "name": "Milligan University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:49.443Z",
+      "reviewedAt": "2026-08-01T17:52:56.839Z",
       "officialDomains": [
         "milligan.edu"
       ],
@@ -62093,7 +62805,32 @@
         "https://www.milligan.edu/admissions/apply/"
       ],
       "topicsFound": [],
-      "pages": []
+      "pages": [
+        {
+          "url": "https://www.milligan.edu/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.milligan.edu/admission",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.milligan.edu/sfs/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.milligan.edu/admissions/apply/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        }
+      ]
     },
     {
       "slug": "millikin-university",
@@ -66026,7 +66763,7 @@
       "slug": "mount-st-mary-s-university",
       "name": "Mount St. Mary's University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:49.613Z",
+      "reviewedAt": "2026-08-01T17:52:57.059Z",
       "officialDomains": [
         "msmary.edu"
       ],
@@ -66037,7 +66774,32 @@
         "https://msmary.edu/applications.html"
       ],
       "topicsFound": [],
-      "pages": []
+      "pages": [
+        {
+          "url": "https://msmary.edu/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://msmary.edu/admissions/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://msmary.edu/admissions/financial-aid/",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://msmary.edu/applications.html",
+          "title": "Official college page",
+          "topics": [],
+          "evidence": {}
+        }
+      ]
     },
     {
       "slug": "muhlenberg-college",
@@ -72109,7 +72871,7 @@
       "slug": "oklahoma-city-university",
       "name": "Oklahoma City University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:50.813Z",
+      "reviewedAt": "2026-08-01T17:52:58.873Z",
       "officialDomains": [
         "okcu.edu"
       ],
@@ -78205,7 +78967,7 @@
       "slug": "randolph-college",
       "name": "Randolph College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:51.763Z",
+      "reviewedAt": "2026-08-01T17:52:58.554Z",
       "officialDomains": [
         "randolphcollege.edu"
       ],
@@ -80351,7 +81113,7 @@
       "slug": "ringling-college-of-art-and-design",
       "name": "Ringling College of Art and Design",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:51.602Z",
+      "reviewedAt": "2026-08-01T17:53:02.674Z",
       "officialDomains": [
         "ringling.edu"
       ],
@@ -80360,14 +81122,41 @@
         "https://www.ringling.edu/Apply",
         "https://www.ringling.edu/financialaid"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "scholarships"
+      ],
+      "pages": [
+        {
+          "url": "https://catalog.ringling.edu/financial-aid",
+          "title": "Financial Aid | Ringling College",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "education and help you understand your rights and responsibilities for financial aid. While some assistance is available to students regardless of their financial need (e.g. some scholarships and the tuition payment plan), the primary purpose of Ringling College’s financial aid programs is to enable students to attend "
+            ]
+          }
+        },
+        {
+          "url": "https://studenthandbook.ringling.edu/financial-aid",
+          "title": "Financial Aid | Ringling College Handbook",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "processing, so not everyone will have their funds disbursed at the same time. The billing statement will reflect actually received funds applied as a credit and pending grants, scholarships and loans applied as anticipated. If a student’s financial aid is noted as “anticipated aid” on the student statement, patience is"
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "ripon-college",
       "name": "Ripon College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:52.032Z",
+      "reviewedAt": "2026-08-01T17:53:00.354Z",
       "officialDomains": [
         "ripon.edu"
       ],
@@ -82232,7 +83021,7 @@
       "slug": "russell-sage-college",
       "name": "Russell Sage College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:52.416Z",
+      "reviewedAt": "2026-08-01T17:53:01.024Z",
       "officialDomains": [
         "sage.edu"
       ],
@@ -83582,7 +84371,7 @@
       "slug": "saint-john-s-university-mn",
       "name": "Saint John's University MN",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:52.563Z",
+      "reviewedAt": "2026-08-01T17:53:03.373Z",
       "officialDomains": [
         "csbsju.edu"
       ],
@@ -88124,7 +88913,7 @@
       "slug": "shippensburg-university-of-pennsylvania",
       "name": "Shippensburg University of Pennsylvania",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:53.048Z",
+      "reviewedAt": "2026-08-01T17:55:30.518Z",
       "officialDomains": [
         "ship.edu"
       ],
@@ -90579,7 +91368,7 @@
       "slug": "southern-arkansas-university",
       "name": "Southern Arkansas University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:53.507Z",
+      "reviewedAt": "2026-08-01T17:53:24.342Z",
       "officialDomains": [
         "saumag.edu"
       ],
@@ -90589,14 +91378,294 @@
         "https://web.saumag.edu/finaid/",
         "https://web.saumag.edu/admissions/apply/"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "internationalAid",
+        "scholarships",
+        "internationalAdmission",
+        "applicationPlansAndDeadlines",
+        "applicationRequirements",
+        "testingPolicy"
+      ],
+      "pages": [
+        {
+          "url": "https://www.saumag.edu/",
+          "title": "Southern Arkansas University | SAU | Affordable, Quality Degree Programs",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business Education & Human Performance Liberal & Performing Arts Scienc"
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/admissions/",
+          "title": "Admissions | Southern Arkansas University | Southern Arkansas University",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "Learn More Undergraduate Admission Standards Dates & Timelines Scholarships Transfer Concurrent Graduate Degrees & Programs Admissions Standards Frequently Asked Questions Financial Aid International Undergraduate Application Graduate Application Cost About SAU What would you like to study? Search More results… SAU off"
+            ],
+            "scholarships": [
+              "Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business Education & Human Performance Liberal & Performing Arts Scienc"
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/finaid/",
+          "title": "Financial Aid | Southern Arkansas University | Southern Arkansas University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business Education & Human Performance Liberal & Performing Arts Scienc"
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/admissions/apply/",
+          "title": "Applying to SAU | Admissions | Southern Arkansas University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business Education & Human Performance Liberal & Performing Arts Scienc"
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ],
+            "testingPolicy": [
+              "First-time Freshman Admission To enroll as an undergraduate student at Southern Arkansas University, an entering freshman must submit the following: Application for admission ACT/SAT scores High school transcript (showing graduation date) or GED passing scores Immunization record Other information as requested by the O"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/international/admissions/",
+          "title": "Admissions | International Student Services | Southern Arkansas University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business Education & Human Performance Liberal & Performing Arts Scienc"
+            ],
+            "internationalAdmission": [
+              "| International Student Services | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavirus ---> Give Tour Apply About Administration Accreditations Continuous Quality Improvement Consumer Information Financial Se"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/admissions/apply/scholarships/",
+          "title": "Scholarships | Admissions | Southern Arkansas University",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "that the transfer scholarships are only awarded for FALL SEMESTERS and are awarded on a competitive basis as funds are available. International There have been changes in the International Student Scholarship program. There are two main types of scholarships for international students: Initial and Retention. All schola"
+            ],
+            "scholarships": [
+              "| Admissions | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavirus ---> Give Tour Apply About Administration Accreditations Continuous Quality Improvement Consumer Information Financial Services Institutional"
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ],
+            "applicationPlansAndDeadlines": [
+              "been in the foster care system Variable by year Arkansas Academic Challenge 8 semesters Criteria determined by ADHE. Call 1-800-54-STUDY or visit www.adhe.edu Variable by year *Early decision deadline for academic scholarships effective for first-time freshmen beginning fall 2026 is January 15. Priority deadline is Mar"
+            ],
+            "applicationRequirements": [
+              "$6,600/year 8 semesters Leadership Incentive Award 3.25+ GPA, 20-22 ACT or 1030-1150 SAT and recommended as a leader – competitive and limited number available. Two letters of recommendation and resume are required. Selections made after March 1. $6,600/year 4 semesters Mulerider Scholarship – limited number, competiti"
+            ],
+            "testingPolicy": [
+              "You are here: Home / Applying to SAU / Scholarships Scholarships Effective for Fall 2026 Entrance Academic scholarships are awarded based on grade-point average, class rank, and ACT or SAT score. Performance scholarships are available in art, band, choir, and theatre. Other scholarships are available in athletics and r"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/international/scholarship/",
+          "title": "International Scholarship Program | International Student Services | Southern Arkansas University",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "Admission to SAU Planning & Arrival Undergraduate Orientation Graduate Orientation Student Services Forms International Scholarship Application Forms Facilities & Activities International Students Association The Office/ hours FAQ You are here: Home / International Scholarship Program International Scholarship Program "
+            ],
+            "scholarships": [
+              "Scholarship Program | International Student Services | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavirus ---> Give Tour Apply About Administration Accreditations Continuous Quality Improvement Consumer Info"
+            ],
+            "internationalAdmission": [
+              "Scholarship Program | International Student Services | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavirus ---> Give Tour Apply About Administration Accreditations Continuous Quality Improvement Consumer Info"
+            ],
+            "testingPolicy": [
+              "Scholarship Application. &nbsp; Initial Scholarships Retention Scholarship Initial Scholarships Recipients will be chosen by the International Office based only upon their SAT or ACT scores. Initial scholarships are limited and awarded to the students with the highest scores. These scholarships are renewable if the stu"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/international/scholarship/application/",
+          "title": "International Scholarship Application | International Student Services | Southern Arkansas University",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "Admission to SAU Planning & Arrival Undergraduate Orientation Graduate Orientation Student Services Forms International Scholarship Application Forms Facilities & Activities International Students Association The Office/ hours FAQ You are here: Home / International Scholarship Program / International Scholarship Applic"
+            ],
+            "scholarships": [
+              "Scholarship Application | International Student Services | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavirus ---> Give Tour Apply About Administration Accreditations Continuous Quality Improvement Consumer "
+            ],
+            "internationalAdmission": [
+              "Scholarship Application | International Student Services | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavirus ---> Give Tour Apply About Administration Accreditations Continuous Quality Improvement Consumer "
+            ],
+            "testingPolicy": [
+              "who have completed 15 hours at the University. If you are not a CURRENT student you need to choose the initial scholarship option above. Which Exam did you take? (Required) SAT ACT Exam Scores SAU scholarships are based on SAT or ACT scores. If you do not have either of these scores you are ineligable for an SAU schola"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/admissions/apply/scholarships/college/",
+          "title": "College Scholarships | Admissions | Southern Arkansas University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Scholarships | Admissions | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavirus ---> Give Tour Apply About Administration Accreditations Continuous Quality Improvement Consumer Information Financial Services "
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/international/",
+          "title": "International Programs | Southern Arkansas University | Southern Arkansas University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business Education & Human Performance Liberal & Performing Arts Scienc"
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/admissions/mulerider-scholarship-program/",
+          "title": "Mulerider Scholarship Program | Admissions | Southern Arkansas University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Scholarship Program | Admissions | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavirus ---> Give Tour Apply About Administration Accreditations Continuous Quality Improvement Consumer Information Financial Se"
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/mulerider-transfer-scholarship/",
+          "title": "Mulerider Transfer Scholarship | Southern Arkansas University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Transfer Scholarship | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavirus ---> Give Tour Apply About Administration Accreditations Continuous Quality Improvement Consumer Information Financial Services Insti"
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/news/2026/southern-arkansas-university-theatre-dance-students-shine-at-region-vi-american-college-theater-festival-with-scholarships-honors-and-national-recognition/",
+          "title": "Southern Arkansas University Theatre & Dance students shine at Region VI American College Theater Festival with scholarships, honors, and national recognition | News | Southern Ark",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Arkansas University Theatre & Dance students shine at Region VI American College Theater Festival with scholarships, honors, and national recognition | News | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavir"
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ]
+          }
+        },
+        {
+          "url": "https://www.saumag.edu/admissions/apply/scholarships/application/",
+          "title": "Scholarship Application | Admissions | Southern Arkansas University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "applicationRequirements",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Application | Admissions | Southern Arkansas University ---> Skip to main content Quick Links Calendar Directory mySAU Email: Student | Faculty Blackboard Course Schedule Library Coronavirus ---> Give Tour Apply About Administration Accreditations Continuous Quality Improvement Consumer Information Financial Services I"
+            ],
+            "internationalAdmission": [
+              "Center for Excellence in Teaching & Learning Online Learning Physical Plant Request Staff Email Admissions Undergraduate Admissions Concurrent Enrollment Graduate Admissions International Admissions Tuition and Fees Cost Calculator Scholarships Financial Aid Orientation (BAM) Academics Colleges & Departments Business E"
+            ],
+            "applicationRequirements": [
+              "* Accepted file types: pdf, doc, rtf, pdfa, docx, Max. file size: 12 MB. Need help creating a resume? What should go on your resume? Here's a good place to start. Letter of Recommendation #1 * Accepted file types: pdf, doc, rtf, pdfa, docx, Max. file size: 12 MB. Letter of Recommendation #2 * Accepted file types: pdf, "
+            ],
+            "testingPolicy": [
+              "Field of Study * Term you plan to enroll at SAU * Fall 2025 Spring 2026 Fall 2026 Spring 2027 Fall 2027 GPA * Below 3.0 3.0 - 3.249 3.25 - 3.49 3.50 - 3.74 3.75 - 4.0 4.0+ ACT / SAT Score * ACT: 18 or below / SAT: 980 or below ACT: 18 - 20 / SAT: 960 - 1050 ACT: 21 - 23 / SAT: 1060 - 1150 ACT: 24 - 26 / SAT: 1160 - 125"
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "southern-illinois-university-carbondale",
       "name": "Southern Illinois University-Carbondale",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:54.359Z",
+      "reviewedAt": "2026-08-01T17:53:24.223Z",
       "officialDomains": [
         "siu.edu"
       ],
@@ -90606,14 +91675,213 @@
         "https://fao.siu.edu/",
         "https://admissions.siu.edu/apply"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "internationalAid",
+        "scholarships",
+        "internationalAdmission",
+        "applicationPlansAndDeadlines",
+        "applicationRequirements",
+        "testingPolicy",
+        "englishProficiency"
+      ],
+      "pages": [
+        {
+          "url": "https://siu.edu/",
+          "title": "Southern Illinois University",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "collegiate aviation championship for the 10th time in program history. IT’S A SALUKI NATION Ways to make your education investment count No out-of-state Tuition Saluki Commitment Scholarships Financial Aid At a Glance 11:1 Student-Faculty Ratio Lower than national average ratio means small class sizes 3,000 Outdoor Edu"
+            ],
+            "internationalAdmission": [
+              "More opportunities for a tailored education 69M Grants $69 million in external grants awarded for research and service last year Be part of this I am a future: Freshman Student International student Graduate, Medical, or Law Student Transfer Student Online Student Military or Veteran Student Saluki spotlight Certified "
+            ]
+          }
+        },
+        {
+          "url": "https://siu.edu/admissions/undergraduate/",
+          "title": "Undergraduate Admissions | SIU",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://fao.siu.edu/",
+          "title": "Financial Aid Office | SIU Carbondale",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Life Research Athletics Alumni Close Menu About Academics Admissions & Aid Campus Life Research Athletics Alumni Close Menu Financial Aid Office Financial Aid Cost Calculator Scholarships /https://siu.edu/search-results.php Last Updated: May 05, 2026, 03:40 PM FAFSA Form Now Available! The 2026–27 FAFSA® form is now av"
+            ]
+          }
+        },
+        {
+          "url": "https://siu.edu/admissions/undergraduate/apply/",
+          "title": "Apply to SIU",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "scholarships": [
+              "& Aid Campus Life Research Athletics Alumni Close Menu Undergraduate Admissions Apply Apply to SIU! Your future as a Saluki starts here. On This Page Begin Your Application Scholarships and Aid Required Materials by Major Admitted Students /https://siu.edu/search-results.php Last Updated: Jun 02, 2026, 02:55 PM Say Yes"
+            ],
+            "internationalAdmission": [
+              "on. Your journey starts with one simple click: Apply Today Undergraduate Admissions Apply High School Students Transfer Students Returning Students Veteran and Military Students International Students Off-Campus Students Visiting Students Undocumented Students Additional Materials Incoming Student Checklist Undergradua"
+            ],
+            "applicationPlansAndDeadlines": [
+              "Email: admissions@siu.edu Begin Your Undergraduate Admissions Application Apply Now Already applied? Check Your Application Status Please Note: SIU Carbondale has a preferred application deadline of Dec. 1 for applicants . Any applications received after May 1 will be reviewed on a case-by-case basis. First year studen"
+            ],
+            "applicationRequirements": [
+              "Research Athletics Alumni Close Menu Undergraduate Admissions Apply Apply to SIU! Your future as a Saluki starts here. On This Page Begin Your Application Scholarships and Aid Required Materials by Major Admitted Students /https://siu.edu/search-results.php Last Updated: Jun 02, 2026, 02:55 PM Say Yes to SIU! — Free to"
+            ],
+            "testingPolicy": [
+              "February 1 is the deadline for most campus-based scholarships. Competitive and private scholarships have their own time frames. Complete Your FAFSA Campus-Based Scholarships No ACT/SAT Required! At SIU, we know that the best indicator of college success is how hard you worked in high school, not how well you scored on "
+            ]
+          }
+        },
+        {
+          "url": "https://siu.edu/international/",
+          "title": "Center for International Education | Center for International Education | SIU",
+          "topics": [
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAdmission": [
+              "initiatives. CIE plays a key role in advancing SIU’s reputation as a globally engaged institution of academic distinction. Its responsibilities include supporting prospective international students, providing comprehensive services to international students and scholars, coordinating immersive study abroad programs, an"
+            ]
+          }
+        },
+        {
+          "url": "https://siu.edu/international/admissions/",
+          "title": "International Admissions | Center for International Education | SIU",
+          "topics": [
+            "internationalAdmission",
+            "applicationRequirements",
+            "testingPolicy",
+            "englishProficiency"
+          ],
+          "evidence": {
+            "internationalAdmission": [
+              "Admissions | Center for International Education | SIU --> Southern Illinois University Close Menu Search Go A–Z Index D2L Brightspace Office 365 SalukiNet Libraries Campus Map Diversity Medicine Apply Visit Give Apply Visit Give Quicklinks & Search About Academics Admissions & Aid Campus Life Research Athletics Alumni "
+            ],
+            "applicationRequirements": [
+              "troubleshooting instructions. What is NOT required for admission? For international undergraduate admission, the following are not required: Personal essays Letters of recommendation SAT or ACT test scores* SIU only requires academic transcripts and proof of English language proficiency. In some cases, the English requ"
+            ],
+            "testingPolicy": [
+              "Countries List ). Graduated from a U.S. high school after completing the final two years in the U.S. Meet domestic freshman admission requirements through standardized tests: ACT: 23+ SAT: 1140+ Important: Official SAT and TOEFL score reports must be sent directly from the testing agency to SIU. We do not accept upload"
+            ],
+            "englishProficiency": [
+              "transcript PDFs directly to transferservices@siu.edu . International Admission Requirements & Policies English Language Requirement International applicants must demonstrate English proficiency by meeting one of the following minimum test scores: TOEFL (iBT - Internet-Based Test): 68 TOEFL (Paper-Based Test): 520 ITEP "
+            ]
+          }
+        },
+        {
+          "url": "https://fao.siu.edu/scholarships/",
+          "title": "Scholarships | Financial Aid | SIU",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "scholarship information and deadlines. Students are also eligible for donor-funded scholarships in the Saluki Scholarship Portal and should review opportunities and apply yearly. International Students: Scholarship information can be found at the Center for International Education . Students are also eligible for donor"
+            ],
+            "scholarships": [
+              "| Financial Aid | SIU Southern Illinois University Close Menu Search Go A–Z Index D2L Brightspace Office 365 SalukiNet Libraries Campus Map Diversity Medicine Apply Visit Give Apply Visit Give Quicklinks & Search About Academics Admissions & Aid Campus Life Research Athletics Alumni Quicklinks & Search Close Menu Searc"
+            ],
+            "internationalAdmission": [
+              "scholarship information and deadlines. Students are also eligible for donor-funded scholarships in the Saluki Scholarship Portal and should review opportunities and apply yearly. International Students: Scholarship information can be found at the Center for International Education . Students are also eligible for donor"
+            ]
+          }
+        },
+        {
+          "url": "https://fao.siu.edu/scholarships/acceptant.php",
+          "title": "Accepting Your Scholarship | Financial Aid | SIU",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Your Scholarship | Financial Aid | SIU Southern Illinois University Close Menu Search Go A–Z Index D2L Brightspace Office 365 SalukiNet Libraries Campus Map Diversity Medicine Apply Visit Give Apply Visit Give Quicklinks & Search About Academics Admissions & Aid Campus Life Research Athletics Alumni Quicklinks & Search"
+            ]
+          }
+        },
+        {
+          "url": "https://fao.siu.edu/scholarships/policies.php",
+          "title": "Scholarship Terms and Conditions | Financial Aid | SIU",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Terms and Conditions | Financial Aid | SIU Southern Illinois University Close Menu Search Go A–Z Index D2L Brightspace Office 365 SalukiNet Libraries Campus Map Diversity Medicine Apply Visit Give Apply Visit Give Quicklinks & Search About Academics Admissions & Aid Campus Life Research Athletics Alumni Quicklinks & Se"
+            ]
+          }
+        },
+        {
+          "url": "https://fao.siu.edu/scholarships/type/transfer-student.php",
+          "title": "Transfer Student | Financial Aid | SIU",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Academics Admissions & Aid Campus Life Research Athletics Alumni Close Menu About Academics Admissions & Aid Campus Life Research Athletics Alumni Close Menu Financial Aid Office Scholarships Types of Scholarships Transfer Student Transfer Student /https://siu.edu/search-results.php Last Updated: May 05, 2026, 03:40 PM"
+            ]
+          }
+        },
+        {
+          "url": "https://fao.siu.edu/scholarships/type/freshmen-students.php",
+          "title": "Incoming Freshmen | Financial Aid | SIU",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Academics Admissions & Aid Campus Life Research Athletics Alumni Close Menu About Academics Admissions & Aid Campus Life Research Athletics Alumni Close Menu Financial Aid Office Scholarships Types of Scholarships Incoming Freshmen Incoming Freshmen /https://siu.edu/search-results.php Last Updated: May 05, 2026, 03:40 "
+            ]
+          }
+        },
+        {
+          "url": "https://fao.siu.edu/scholarships/type/outside-scholarships.php",
+          "title": "Outside Scholarships | Financial Aid | SIU",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Scholarships | Financial Aid | SIU Southern Illinois University Close Menu Search Go A–Z Index D2L Brightspace Office 365 SalukiNet Libraries Campus Map Diversity Medicine Apply Visit Give Apply Visit Give Quicklinks & Search About Academics Admissions & Aid Campus Life Research Athletics Alumni Quicklinks & Search Clo"
+            ]
+          }
+        },
+        {
+          "url": "https://fao.siu.edu/scholarships/type/",
+          "title": "Types of Scholarships | Financial Aid | SIU",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "of Scholarships | Financial Aid | SIU Southern Illinois University Close Menu Search Go A–Z Index D2L Brightspace Office 365 SalukiNet Libraries Campus Map Diversity Medicine Apply Visit Give Apply Visit Give Quicklinks & Search About Academics Admissions & Aid Campus Life Research Athletics Alumni Quicklinks & Search "
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "southern-methodist-university",
       "name": "Southern Methodist University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:53.763Z",
+      "reviewedAt": "2026-08-01T17:54:35.237Z",
       "officialDomains": [
         "smu.edu"
       ],
@@ -91606,7 +92874,7 @@
       "slug": "spring-hill-college",
       "name": "Spring Hill College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:54.148Z",
+      "reviewedAt": "2026-08-01T17:53:05.020Z",
       "officialDomains": [
         "shc.edu"
       ],
@@ -93560,7 +94828,7 @@
       "slug": "st-mary-s-university-texas",
       "name": "St. Mary’s University (Texas)",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:54.561Z",
+      "reviewedAt": "2026-08-01T17:53:37.312Z",
       "officialDomains": [
         "stmarytx.edu"
       ],
@@ -93570,14 +94838,263 @@
         "https://www.stmarytx.edu/admission/financial-aid/",
         "https://www.stmarytx.edu/admission/applying/"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "internationalAid",
+        "scholarships",
+        "internationalAdmission",
+        "applicationPlansAndDeadlines",
+        "applicationRequirements",
+        "testingPolicy",
+        "englishProficiency"
+      ],
+      "pages": [
+        {
+          "url": "https://www.stmarytx.edu/",
+          "title": "Home | St. Mary's University | San Antonio, Texas",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Halls #1 San Antonio University for Veterans (U.S. News & World Report, 2026) Honors and Rankings Education Within Reach More than 95% of our first-year students are awarded scholarships or other financial aid upon admission. We help you plan to pay for college and make it affordable while keeping our quality top-notch"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/admission/",
+          "title": "Admission | St. Mary's University | San Antonio, Texas",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "member, dependent, spouse or veteran, we are here to help make your admission process as smooth as possible. military and veteran admission Already Applied? Explore St. Mary’s! Scholarships Special Programs Admission Events For Parents and Families Get In Touch With Our Admission Team Office of Admission Chaminade Towe"
+            ],
+            "internationalAdmission": [
+              "an impact on your community. Apply as a graduate student to earn your master’s or doctoral degree or a graduate certificate. graduate admission upcoming graduate admission events International Student Admission St. Mary’s is a community with global reach. We welcome the unique experiences, perspectives and traditions o"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/admission/cost-aid/financial-aid-resources/",
+          "title": "Financial Aid Resources | St. Mary's University | San Antonio, Texas",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Aid FAFSA® Application Federal Student Aid Updates Federal Verification Financial Aid Forms Graduate Financial Aid Maintaining Your Graduate Financial Aid Net Price Calculator Scholarships Music Scholarships and Auditions St. Louis Scholars Award Theatre Scholarships and Auditions Undergraduate Financial Aid Maintainin"
+            ],
+            "internationalAdmission": [
+              "Graduate Admission Apply to St. Mary’s Graduate Studies Graduate Admission FAQs Graduate Rattler Roadmap: Information for New Graduate Students High School Dual Credit Program International Student Admission Meet the Admission Team Military and Veterans Belisario and Adelina Flores Student Veterans Center Military and "
+            ],
+            "applicationPlansAndDeadlines": [
+              "the financial aid application process by submitting the Free Application for Federal Student Aid (FAFSA ® ) every year and list St. Mary’s University. Use school code 003623 The Priority Deadline for continuing students to complete the application for the 2026-2027 academic year is March 15, 2026. It’s essential to sub"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/admission/applying/",
+          "title": "Apply for Admission | St. Mary's University | San Antonio, Texas",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "applicationRequirements",
+            "testingPolicy",
+            "englishProficiency"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Aid FAFSA® Application Federal Student Aid Updates Federal Verification Financial Aid Forms Graduate Financial Aid Maintaining Your Graduate Financial Aid Net Price Calculator Scholarships Music Scholarships and Auditions St. Louis Scholars Award Theatre Scholarships and Auditions Undergraduate Financial Aid Maintainin"
+            ],
+            "internationalAdmission": [
+              "Graduate Admission Apply to St. Mary’s Graduate Studies Graduate Admission FAQs Graduate Rattler Roadmap: Information for New Graduate Students High School Dual Credit Program International Student Admission Meet the Admission Team Military and Veterans Belisario and Adelina Flores Student Veterans Center Military and "
+            ],
+            "applicationRequirements": [
+              "application . Non-degree seeking students Law Students St. Mary’s University School of Law offers separate applications for each program. Select a program to learn more about application requirements. J.D. PROGRAM LL.M. PROGRAM M.L.S. PROGRAM Military and Veterans St. Mary’s University has a long history with the San A"
+            ],
+            "testingPolicy": [
+              "average (GPA) of 2.5 on a 4.0 scale, in all of the academic work attempted, is a good starting point for admission. Explore admission 3.44 Average cumulative GPA 1042 Average SAT (Critical Reading and Math) 22 Average ACT score Apply as an Undergraduate Undergraduate students are pursuing bachelor’s degrees. Some under"
+            ],
+            "englishProficiency": [
+              "by choosing a program . You can learn more about the graduate application process or get started now. Apply now International students have a few additional requirements, such as English language proficiency and TOEFL exam scores. International Application Process International graduate Requirements Non-degree-seeking "
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/2009/international-student-scholarship-fund-established/",
+          "title": "International Student Scholarship Fund Established",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "Student Scholarship Fund Established St. Mary's University 1 Camino Santa Maria San Antonio , TX 78228 +1-210-436-3011 https://www.stmarytx.edu William Joseph Chaminade Skip to main content Resources For: Students Alumni Faculty & Staff --> Students Alumni Faculty & Staff Parent & Family Apply Visit Request Info Give N"
+            ],
+            "scholarships": [
+              "Student Scholarship Fund Established St. Mary's University 1 Camino Santa Maria San Antonio , TX 78228 +1-210-436-3011 https://www.stmarytx.edu William Joseph Chaminade Skip to main content Resources For: Students Alumni Faculty & Staff --> Students Alumni Faculty & Staff Parent & Family Apply Visit Request Info Give N"
+            ],
+            "internationalAdmission": [
+              "Student Scholarship Fund Established St. Mary's University 1 Camino Santa Maria San Antonio , TX 78228 +1-210-436-3011 https://www.stmarytx.edu William Joseph Chaminade Skip to main content Resources For: Students Alumni Faculty & Staff --> Students Alumni Faculty & Staff Parent & Family Apply Visit Request Info Give N"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/2018/international-students-new-home/",
+          "title": "International students discover new home at St. Mary’s",
+          "topics": [
+            "scholarships",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "scholarships": [
+              "she said. “You cannot just be American, Canadian, Mexican. You must be a global citizen.” Tell us what you think: Share this article: More from the Fall 2018 Issue Business Scholarship recipients to help at-risk children and small businesses Four St. Mary’s University students each earned $10,000 scholarships, funded b"
+            ],
+            "internationalAdmission": [
+              "students discover new home at St. Mary’s St. Mary's University 1 Camino Santa Maria San Antonio , TX 78228 +1-210-436-3011 https://www.stmarytx.edu William Joseph Chaminade Skip to main content Resources For: Students Alumni Faculty & Staff --> Students Alumni Faculty & Staff Parent & Family Apply Visit Request Info Gi"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/2024/peru-international-student/",
+          "title": "Peruvian student helps fellow international students at St. Mary’s",
+          "topics": [
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAdmission": [
+              "student helps fellow international students at St. Mary’s St. Mary's University 1 Camino Santa Maria San Antonio , TX 78228 +1-210-436-3011 https://www.stmarytx.edu William Joseph Chaminade Skip to main content Resources For: Students Alumni Faculty & Staff --> Students Alumni Faculty & Staff Parent & Family Apply Visi"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/campuslife/international/office-of-international-student-and-scholar-services/",
+          "title": "Office of International Student and Scholar Services | St. Mary's University | San Antonio, Texas",
+          "topics": [
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAdmission": [
+              "of International Student and Scholar Services | St. Mary's University | San Antonio, Texas St. Mary's University 1 Camino Santa Maria San Antonio , TX 78228 +1-210-436-3011 https://www.stmarytx.edu William Joseph Chaminade Skip to main content Resources For: Students Alumni Faculty & Staff --> Students Alumni Faculty &"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/admission/international-admission/",
+          "title": "International Student Admission | St. Mary's University | San Antonio, Texas",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements",
+            "englishProficiency"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Aid FAFSA® Application Federal Student Aid Updates Federal Verification Financial Aid Forms Graduate Financial Aid Maintaining Your Graduate Financial Aid Net Price Calculator Scholarships Music Scholarships and Auditions St. Louis Scholars Award Theatre Scholarships and Auditions Undergraduate Financial Aid Maintainin"
+            ],
+            "internationalAdmission": [
+              "Student Admission | St. Mary's University | San Antonio, Texas St. Mary's University 1 Camino Santa Maria San Antonio , TX 78228 +1-210-436-3011 https://www.stmarytx.edu William Joseph Chaminade Skip to main content Resources For: Students Alumni Faculty & Staff --> Students Alumni Faculty & Staff Parent & Family Apply"
+            ],
+            "applicationPlansAndDeadlines": [
+              "processed. If you are out of status, discuss your options with your current international student adviser or with the Center for International Programs at St. Mary’s University. Application Deadlines All items must arrive to the Office of Admission or Office of Graduate Admission by the following dates. Academic Term A"
+            ],
+            "applicationRequirements": [
+              "Requirements College of arts, humanities and social sciences ⌄ School of science, Engineering and technology ⌄ Greehey School of Business Requirements Program Letter(s) of Recommendation Statement of Purpose Resume/CV GRE/GMAT Start Term* MBA for Professionals – Online ✓ Any College of Arts, Humanities and Social Scien"
+            ],
+            "englishProficiency": [
+              "Faucett , Director of International Admission, on WhatsApp 210-801-9222 or email afaucett@stmarytx.edu . Step 2: Send transcripts or evaluation of international credential Submit English Proficiency Scores All undergraduate international applicants must demonstrate proof of English proficiency in one of the following w"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/2007/rattler-mens-soccer-keeps-rolling-wins-4-1/",
+          "title": "Rattler Men's Soccer Keeps Rolling, Wins 4-1",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.stmarytx.edu/2012/lady-rattlers-keep-rolling-with-win-over-utpb/",
+          "title": "Lady Rattlers Keep Rolling with Win Over UTPB",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.stmarytx.edu/academics/department/english-literature-language/",
+          "title": "Department of English Literature and Language | St. Mary's University | San Antonio, Texas",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "enhance competency in visual, oral and written communication, to develop respect for multiple perspectives through analysis and to explore the world through the lens of ethical scholarship, rhetorical inquiry and creativity in the pursuit of the common good. Preparation and Self-Discovery The English Literature and Lan"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/2020/act-sat-test-optional/",
+          "title": "St. Mary's makes ACT or SAT tests optional for incoming freshmen",
+          "topics": [
+            "testingPolicy"
+          ],
+          "evidence": {
+            "testingPolicy": [
+              "to support St. Mary’s University prospective students affected by the cancellation of ACT and SAT testing as a result of COVID-19, St. Mary’s is&nbsp;offering&nbsp;an alternate, test-optional pathway&nbsp;to complete applications&nbsp;to St. Mary’s&nbsp;for the Fall 2020 semester for incoming, first-time freshmen. Stud"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/campuslife/international/",
+          "title": "Center for International Programs | St. Mary's University | San Antonio, Texas",
+          "topics": [
+            "internationalAid",
+            "internationalAdmission"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "with tailored resources and services at every stage of their academic journey. This honor highlights our dedication to enriching the student experience through initiatives like International Student and Scholar Services, financial aid options, campus support and health resources, empowering students to thrive personall"
+            ],
+            "internationalAdmission": [
+              "for International Programs Empowering Futures Through Cultural Connection At the Center for International Programs (CIP) at St. Mary’s University, we are dedicated to supporting international students every step of the way. From your first steps toward obtaining a visa to navigating life on campus, we’re here to ensure"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/2002/nine-scholarship-winners/",
+          "title": "Nine Scholarship Winners",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Scholarship Winners St. Mary's University 1 Camino Santa Maria San Antonio , TX 78228 +1-210-436-3011 https://www.stmarytx.edu William Joseph Chaminade Skip to main content Resources For: Students Alumni Faculty & Staff --> Students Alumni Faculty & Staff Parent & Family Apply Visit Request Info Give Now Apply Visit Re"
+            ]
+          }
+        },
+        {
+          "url": "https://www.stmarytx.edu/2002/500000-new-scholarships/",
+          "title": "$500,000 New Scholarships",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "New Scholarships St. Mary's University 1 Camino Santa Maria San Antonio , TX 78228 +1-210-436-3011 https://www.stmarytx.edu William Joseph Chaminade Skip to main content Resources For: Students Alumni Faculty & Staff --> Students Alumni Faculty & Staff Parent & Family Apply Visit Request Info Give Now Apply Visit Reque"
+            ]
+          }
+        }
+      ]
     },
     {
       "slug": "st-mary-s-university-of-minnesota",
       "name": "St. Mary's University of Minnesota",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:54.973Z",
+      "reviewedAt": "2026-08-01T17:53:26.494Z",
       "officialDomains": [
         "smumn.edu"
       ],
@@ -94594,7 +96111,7 @@
       "slug": "stetson-university",
       "name": "Stetson University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:54.827Z",
+      "reviewedAt": "2026-08-01T17:53:26.342Z",
       "officialDomains": [
         "stetson.edu"
       ],
@@ -96427,7 +97944,7 @@
       "slug": "suny-university-at-albany",
       "name": "SUNY - University at Albany",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:55.230Z",
+      "reviewedAt": "2026-08-01T17:53:27.986Z",
       "officialDomains": [
         "albany.edu"
       ],
@@ -98479,7 +99996,7 @@
       "slug": "temple-university",
       "name": "Temple University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:55.781Z",
+      "reviewedAt": "2026-08-01T17:53:40.194Z",
       "officialDomains": [
         "temple.edu"
       ],
@@ -100171,7 +101688,7 @@
       "slug": "the-college-of-idaho",
       "name": "The College of Idaho",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:56.082Z",
+      "reviewedAt": "2026-08-01T17:53:53.629Z",
       "officialDomains": [
         "collegeofidaho.edu"
       ],
@@ -100181,14 +101698,209 @@
         "https://www.collegeofidaho.edu/financialaid",
         "https://www.collegeofidaho.edu/apply"
       ],
-      "topicsFound": [],
-      "pages": []
+      "topicsFound": [
+        "internationalAid",
+        "scholarships",
+        "internationalAdmission",
+        "applicationPlansAndDeadlines",
+        "applicationRequirements",
+        "testingPolicy",
+        "englishProficiency"
+      ],
+      "pages": [
+        {
+          "url": "https://collegeofidaho.edu/",
+          "title": "Home",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "View All News All Posts News Staff News Student Life Student Organizations &nbsp;&nbsp;Back Athletics Campus Events Humanities In the News Professional Studies Residence Life Scholarships & Giving Sports Community Academics Alumni Fine Arts Events Natural Sciences Faculty News Social Sciences & History Alumni News Coll"
+            ]
+          }
+        },
+        {
+          "url": "https://collegeofidaho.edu/apply/",
+          "title": "Apply to The College of Idaho | The College of Idaho",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Our Gipson Honors Program serves outstanding individuals who have demonstrated broad intellectual curiosity and the potential for high academic achievement. Learn More Talent Scholarships Are you an accomplished artist, debater, musician or actor? Are you committed to spiritual growth? Do you excel at theater productio"
+            ],
+            "internationalAdmission": [
+              "test, a vision to hone and a career to begin. At The College of Idaho, we know your dreams drive you forward, and we guide you to all possible opportunities. First-Year Students International Students Transfer Students Returning Students International Baccalaureate Students Home School Students Non-Degree Seeking Stude"
+            ],
+            "testingPolicy": [
+              "Admission & Aid Student Life Athletics About What can we help you find? Edit Template Apply Home / Apply Visit Us Request Information Meet Your Counselor Annual Security Report Test-Optional Alternative & Transfer Credits Design a Future That’s as Original as You Novel. Eclectic. Vibrant. A single descriptor can’t capt"
+            ]
+          }
+        },
+        {
+          "url": "https://collegeofidaho.edu/apply/international/",
+          "title": "Apply – International Students | The College of Idaho",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements",
+            "testingPolicy",
+            "englishProficiency"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "and Natural Sciences and a specialization in Pre-Law. May 2024 Graduation Speaker. Inclusion & Intercultural Engagement The College provides a variety of support services to international students, including merit scholarships, so you can make the most of your experience here. Members of the International Student Organ"
+            ],
+            "scholarships": [
+              "and the College will consider these applications as they arrive. Resources​ Meet Your Counselor Test Optional Alternative & Transfer Credit Cost of Attendance Financial Aid Scholarships Enrollment Deposit HAVE QUESTIONS? Office of Admission Hendren Hall admission@collegeofidaho.edu 208-459-5305 Davis Scholars and Inter"
+            ],
+            "internationalAdmission": [
+              "– International Students | The College of Idaho Yote Links Alumni Giving APPLY VISIT REQUEST INFORMATION Academics Admission & Aid Student Life Athletics About Academics Admission & Aid Student Life Athletics About What can we help you find? Edit Template International Students Home / Apply / International Students App"
+            ],
+            "applicationPlansAndDeadlines": [
+              "Exam Results IELTS Exam Results Application Deadlines for First-Year Students Starting Term Application Type Deadline Spring 2026 Regular Decision January 16, 2026 Fall 2026 Early Action I November 15, 2025 Fall 2026 Early Action II January 15, 2026 Fall 2026 Regular Decision February 15, 2026 * Rolling Admission begin"
+            ],
+            "applicationRequirements": [
+              "when making admissions decisions and consider your: Overall high school academic record Advanced Placement (AP) or International Baccalaureate (IB) credits Writing ability Recommendation letters Co-curricular activities Community involvement Other achievements As academic courses at The College of Idaho are taught in E"
+            ],
+            "testingPolicy": [
+              "requirements for first-year students. We review each application carefully, considering your academic work and achievements outside the classroom. Our admission process is fully test-optional — ACT or SAT scores are not required, and it’s entirely your choice whether to include them. We take a holistic view of your app"
+            ],
+            "englishProficiency": [
+              "Co-curricular activities Community involvement Other achievements As academic courses at The College of Idaho are taught in English, international students must prove their English proficiency to be considered for admission by: English-based curriculum for two or more years or English is spoken in home country ACT or S"
+            ]
+          }
+        },
+        {
+          "url": "https://collegeofidaho.edu/apply/international-baccalaureate/",
+          "title": "Apply – International Baccalaureate | The College of Idaho",
+          "topics": [
+            "internationalAid",
+            "scholarships",
+            "internationalAdmission",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "internationalAid": [
+              "and Natural Sciences and a specialization in Pre-Law. May 2024 Graduation Speaker. Inclusion & Intercultural Engagement The College provides a variety of support services to international students, including merit scholarships, so you can make the most of your experience here. Members of the International Student Organ"
+            ],
+            "scholarships": [
+              "and the College will consider these applications as they arrive. Resources Meet Your Counselor Test Optional Alternative & Transfer Credit Cost of Attendance Financial Aid Scholarships Enrollment Deposit Have QUESTIONS? Office of Admission Hendren Hall admission@collegeofidaho.edu 208-459-5305 Davis Scholars and Intern"
+            ],
+            "internationalAdmission": [
+              "Cost of Attendance Financial Aid Scholarships Enrollment Deposit Have QUESTIONS? Office of Admission Hendren Hall admission@collegeofidaho.edu 208-459-5305 Davis Scholars and International Student Organization (ISO) members share their thoughts on why they find The College of Idaho to be a welcoming and inclusive commu"
+            ],
+            "applicationPlansAndDeadlines": [
+              "at the discretion of the Registrar. Application Deadlines for First-Year Students Starting Term Application Type Deadline Spring 2026 Regular Decision January 16, 2026 Fall 2026 Early Action I November 15, 2025 Fall 2026 Early Action II January 15, 2026 Fall 2026 Regular Decision February 15, 2026 * Rolling Admission b"
+            ],
+            "applicationRequirements": [
+              "when making admissions decisions and consider your: Overall high school academic record Advanced Placement (AP) or International Baccalaureate (IB) credits Writing ability Recommendation letters Co-curricular activities Community involvement Other achievements Students who complete their IB diploma with a score of 28 o"
+            ],
+            "testingPolicy": [
+              "requirements for first-year students. We review each application carefully, considering your academic work and achievements outside the classroom. Our admission process is fully test-optional — ACT or SAT scores are not required, and it’s entirely your choice whether to include them. We take a holistic view of your app"
+            ]
+          }
+        },
+        {
+          "url": "https://collegeofidaho.edu/apply/test-optional/",
+          "title": "Apply – Test-Optional | The College of Idaho",
+          "topics": [
+            "scholarships",
+            "internationalAdmission",
+            "applicationRequirements",
+            "testingPolicy",
+            "englishProficiency"
+          ],
+          "evidence": {
+            "scholarships": [
+              "in a rigorous high school curriculum, including honors, Advanced Placement (AP) and International Baccalaureate (IB) courses, also will reflect positively on your application and scholarship decision. We will continue to carefully review the strength of your high school classes and your performance in them in the conte"
+            ],
+            "internationalAdmission": [
+              "to submit ACT or SAT scores with their application. However, athletic recruits can request that submitted scores not be used in their evaluation for admission to the College. Can international students be considered test-optional? As an international student, you have the same opportunity to apply without submitting SA"
+            ],
+            "applicationRequirements": [
+              "SAT scores and for students who do not submit scores is very similar. The factors that go into an admission decision include your overall high school academic record, letters of recommendation, co-curricular activities, community involvement, writing ability, and other significant achievements. Enrollment in a rigorous"
+            ],
+            "testingPolicy": [
+              "– Test-Optional | The College of Idaho Yote Links Alumni Giving APPLY VISIT REQUEST INFORMATION Academics Admission & Aid Student Life Athletics About Academics Admission & Aid Student Life Athletics About What can we help you find? Edit Template Test-Optional Admission Home / Apply / Test-Optional Apply Now Request In"
+            ],
+            "englishProficiency": [
+              "students be considered test-optional? As an international student, you have the same opportunity to apply without submitting SAT or ACT scores. However, you must submit a TOEFL, IELTS, or Duolingo test result if your first language is not English, or if it is otherwise requested by the College. Does this policy apply t"
+            ]
+          }
+        },
+        {
+          "url": "https://collegeofidaho.edu/admission-aid/undergrad/aid/scholarships/talent/",
+          "title": "Talent-Based Scholarships | The College of Idaho",
+          "topics": [
+            "scholarships",
+            "applicationRequirements"
+          ],
+          "evidence": {
+            "scholarships": [
+              "Scholarships | The College of Idaho Yote Links Alumni Giving APPLY VISIT REQUEST INFORMATION Academics Admission & Aid Student Life Athletics About Academics Admission & Aid Student Life Athletics About What can we help you find? Edit Template Talent-Based Scholarships Home / Admission & Aid / Undergrad Admission & Aid"
+            ],
+            "applicationRequirements": [
+              "a scholarship application, please visit our: Howling Yotes Debate Scholarship Form . If you would like to submit additional materials, such as a debate resume or letters of recommendation from coaches, teachers or camp leaders, please submit them via email to the Office of Admission at admission@collegeofidaho.edu . To"
+            ]
+          }
+        },
+        {
+          "url": "https://collegeofidaho.edu/admission-aid/undergrad/aid/",
+          "title": "Undergraduate Financial Aid | The College of Idaho",
+          "topics": [
+            "scholarships"
+          ],
+          "evidence": {
+            "scholarships": [
+              "a transformational education that inspires bold ideas, personal growth and lifelong impact. At The College of Idaho, we consider all admitted students for merit- and talent-based scholarships, and we use the Free Application for Federal Student Aid (FAFSA) to determine need-based support. Whether you’re ready to take t"
+            ]
+          }
+        },
+        {
+          "url": "https://collegeofidaho.edu/apply/first-year/",
+          "title": "Apply – First-Year Students | The College of Idaho",
+          "topics": [
+            "scholarships",
+            "applicationPlansAndDeadlines",
+            "applicationRequirements",
+            "testingPolicy"
+          ],
+          "evidence": {
+            "scholarships": [
+              "are invited to submit their application as soon as possible, and the College will consider these applications as they arrive. Resources Meet Your Counselor Cost of Attendance Scholarships Financial Aid Test Optional Alternative & Transfer Credits Next Steps Enrollment Deposit HAVE QUESTIONS? Office of Admission Hendren"
+            ],
+            "applicationPlansAndDeadlines": [
+              "involvement Other achievements Application Deadlines for First-Year Students Starting Term Application Type Deadline Spring 2026 Regular Decision January 16, 2026 Fall 2026 Early Action I November 15, 2025 Fall 2026 Early Action II January 15, 2026 Fall 2026 Regular Decision February 15, 2026 * Rolling Admission begins"
+            ],
+            "applicationRequirements": [
+              "when making admissions decisions and consider your: Overall high school academic record Advanced Placement (AP) or International Baccalaureate (IB) credits Writing ability Recommendation letters Co-curricular activities Community involvement Other achievements Application Deadlines for First-Year Students Starting Term"
+            ],
+            "testingPolicy": [
+              "requirements for first-year students. We review each application carefully, considering your academic work and achievements outside the classroom. Our admission process is fully test-optional — ACT or SAT scores are not required, and it’s entirely your choice whether to include them. We take a holistic view of your app"
+            ]
+          }
+        },
+        {
+          "url": "https://apply.collegeofidaho.edu/apply/",
+          "title": "College of Idaho Application",
+          "topics": [],
+          "evidence": {}
+        }
+      ]
     },
     {
       "slug": "the-college-of-new-jersey",
       "name": "The College of New Jersey",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:56.788Z",
+      "reviewedAt": "2026-08-01T17:53:34.024Z",
       "officialDomains": [
         "tcnj.edu"
       ],
@@ -100205,7 +101917,7 @@
       "slug": "the-college-of-saint-rose",
       "name": "The College of Saint Rose",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:56.304Z",
+      "reviewedAt": "2026-08-01T17:53:34.944Z",
       "officialDomains": [
         "strose.edu",
         "0.0"
@@ -100489,7 +102201,7 @@
       "slug": "the-new-school",
       "name": "The New School",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:57.041Z",
+      "reviewedAt": "2026-08-01T17:53:36.542Z",
       "officialDomains": [
         "newschool.edu"
       ],
@@ -101906,7 +103618,7 @@
       "slug": "trinity-christian-college",
       "name": "Trinity Christian College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:57.560Z",
+      "reviewedAt": "2026-08-01T17:57:00.680Z",
       "officialDomains": [
         "trnty.edu"
       ],
@@ -102157,7 +103869,7 @@
       "slug": "trinity-university",
       "name": "Trinity University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:40:57.856Z",
+      "reviewedAt": "2026-08-01T17:53:39.566Z",
       "officialDomains": [
         "trinity.edu"
       ],
@@ -123494,7 +125206,7 @@
       "slug": "university-of-texas-at-dallas",
       "name": "University of Texas at Dallas",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:41:22.083Z",
+      "reviewedAt": "2026-08-01T17:59:58.157Z",
       "officialDomains": [
         "utdallas.edu"
       ],
@@ -124113,7 +125825,7 @@
       "slug": "university-of-the-ozarks",
       "name": "University of the Ozarks",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:41:21.650Z",
+      "reviewedAt": "2026-08-01T17:57:30.213Z",
       "officialDomains": [
         "ozarks.edu"
       ],
@@ -125118,7 +126830,7 @@
       "slug": "university-of-virginia",
       "name": "University of Virginia",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:41:24.444Z",
+      "reviewedAt": "2026-08-01T17:57:35.577Z",
       "officialDomains": [
         "virginia.edu"
       ],
@@ -125129,7 +126841,20 @@
         "https://www.virginia.edu/apply"
       ],
       "topicsFound": [],
-      "pages": []
+      "pages": [
+        {
+          "url": "https://www.virginia.edu/",
+          "title": "The University of Virginia",
+          "topics": [],
+          "evidence": {}
+        },
+        {
+          "url": "https://www.virginia.edu/admission/",
+          "title": "Admission | The University of Virginia",
+          "topics": [],
+          "evidence": {}
+        }
+      ]
     },
     {
       "slug": "university-of-washington-seattle",
@@ -127536,7 +129261,7 @@
       "slug": "valparaiso-university",
       "name": "Valparaiso University",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:41:22.829Z",
+      "reviewedAt": "2026-08-01T17:57:30.976Z",
       "officialDomains": [
         "valpo.edu"
       ],
@@ -131008,7 +132733,7 @@
       "slug": "wellesley-college",
       "name": "Wellesley College",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:41:25.842Z",
+      "reviewedAt": "2026-08-01T17:57:30.725Z",
       "officialDomains": [
         "wellesley.edu"
       ],
@@ -133568,7 +135293,7 @@
       "slug": "wheaton-college-illinois",
       "name": "Wheaton College Illinois",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:41:28.055Z",
+      "reviewedAt": "2026-08-01T17:57:32.274Z",
       "officialDomains": [
         "wheaton.edu"
       ],
@@ -133585,7 +135310,7 @@
       "slug": "wheaton-college-massachusetts",
       "name": "Wheaton College Massachusetts",
       "reviewStatus": "pages_checked",
-      "reviewedAt": "2026-08-01T16:41:28.984Z",
+      "reviewedAt": "2026-08-01T17:57:32.445Z",
       "officialDomains": [
         "wheatoncollege.edu"
       ],

@@ -223,10 +223,15 @@
       "name": "University of Texas at El Paso",
       "fields": {
         "internationalAid": { "status": "reported", "url": "https://www.utep.edu/financial-aid/how-to-apply/applying-for-financial-aid.html", "note": "International and other FAFSA-ineligible students may use TASFA when they meet Texas eligibility rules. Separate university scholarships include awards open to international applicants; eligibility varies." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://catalog.utep.edu/admissions/undergraduate/application-dates-fees/", "note": "UTEP publishes priority dates of May 1 for fall, October 1 for spring, and March 1 for summer. International applications and all supporting documents must arrive by the priority date; the reviewed page lists a $65 international application fee. UTEP does not publish ED, EA, or REA plans on this page." },
         "applicationRequirements": { "status": "reported", "url": "https://catalog.utep.edu/admissions/undergraduate/freshman/", "note": "The current catalog lists the first-year academic record and admission requirements. International applicants should confirm credential, English, fee, and visa-document additions with admissions." }
       },
       "facts": {
-        "internationalAidPolicy": "TASFA-based state or institutional aid depends on Texas eligibility; separate scholarships may accept international applicants"
+        "applicationFee": 65,
+        "internationalAidPolicy": "TASFA-based state or institutional aid depends on Texas eligibility; separate scholarships may accept international applicants",
+        "plans": [
+          { "kind": "priority", "deadline": "May 1", "binding": false, "label": "Fall priority deadline" }
+        ]
       }
     },
     {
@@ -447,11 +452,228 @@
       }
     },
     {
+      "name": "University of Texas Rio Grande Valley",
+      "fields": {
+        "applicationRequirements": { "status": "reported", "url": "https://www.utrgv.edu/feature/discover-utrgv/", "note": "ApplyTexas, the secondary-school record, foreign credential evaluation where applicable, a $50 international application fee, and English proof are listed. The admission essay is optional for 2026–27; some scholarships and programs require SAT or ACT scores." },
+        "testingPolicy": { "status": "previous_cycle", "url": "https://www.utrgv.edu/feature/discover-utrgv/", "note": "UTRGV is test-optional for the 2026–27 admission cycle, with scores still required for Tuition Advantage, some scholarships, and selected programs. Fall 2027 policy is not yet published, so this is a planning reference only." },
+        "englishProficiency": { "status": "reported", "url": "https://www.utrgv.edu/admissions/international/undergraduate-international-admissions/index.htm", "note": "Undergraduate minimums are TOEFL iBT 61, TOEFL Essentials 6.5, IELTS 6.0, Duolingo 95, or PTE Academic 45. The official page also lists education- and country-based exemptions." }
+      },
+      "facts": {
+        "applicationFee": 50,
+        "platforms": ["ApplyTexas"],
+        "testingPolicy": "Test-optional for 2026–27; Fall 2027 policy not yet published",
+        "testingStatus": "previous_cycle",
+        "englishMinimums": { "TOEFL": 61, "TOEFL Essentials": 6.5, "IELTS": 6, "Duolingo": 95, "PTE": 45 }
+      }
+    },
+    {
+      "name": "Westminster University",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://westminsteru.edu/admissions/international-admissions/index.html", "note": "Nonbinding Early Action is due December 1 and nonbinding Regular Decision is due February 2 for fall first-year applicants. The spring priority date is November 1." },
+        "applicationRequirements": { "status": "reported", "url": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html", "note": "Common Application or Westminster Application, secondary-school records, and any requested essay or school report are listed. International applicants also provide translated official records, English proof, financial-responsibility forms, and bank statements. There is no application fee." },
+        "englishProficiency": { "status": "reported", "url": "https://catalog.westminsteru.edu/current/undergraduate/admission/index.html", "note": "Full-admission minimums include TOEFL iBT 79, IELTS 6.5, PTE 53, Duolingo 110, MET 53–63, CEFR B2, SAT EBRW 560, or ACT English and Reading 22. Education and country exemptions are published." }
+      },
+      "facts": {
+        "applicationFee": 0,
+        "platforms": ["Common Application", "Westminster Application"],
+        "englishMinimums": { "TOEFL": 79, "IELTS": 6.5, "PTE": 53, "Duolingo": 110, "SAT EBRW": 560 },
+        "plans": [
+          { "kind": "EA", "deadline": "December 1", "binding": false },
+          { "kind": "RD", "deadline": "February 2", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "King University",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.king.edu/admissions/undergraduate/admissions-process-and-requirements/", "note": "King states that there is no general undergraduate application deadline and recommends applying as early as possible. No ED, EA, or REA plan is published on the reviewed page." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/", "note": "International first-year applicants submit King's application, a credential evaluation, current and final secondary-school records, and English proof. Most applicants pay no application fee." },
+        "testingPolicy": { "status": "reported", "url": "https://www.king.edu/admissions/undergraduate/admissions-process-and-requirements/", "note": "SAT and ACT scores are optional for general undergraduate admission." },
+        "englishProficiency": { "status": "reported", "url": "https://www.king.edu/student-life/resources-for-students/international-students/application-process/", "note": "Published minimums are TOEFL 84, IELTS 6.0, PTE 56, or Duolingo 100. King lists waivers based on qualifying SAT scores or citizenship in a country where English is official." }
+      },
+      "facts": {
+        "applicationFee": 0,
+        "platforms": ["King University Application"],
+        "testingPolicy": "Test-optional",
+        "englishMinimums": { "TOEFL": 84, "IELTS": 6, "PTE": 56, "Duolingo": 100 },
+        "plans": [{ "kind": "rolling", "binding": false }]
+      }
+    },
+    {
+      "name": "South Dakota School of Mines & Technology",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "not_published", "url": "https://www.sdsmt.edu/admissions-aid/undergraduate-admissions/undergrad-requirements.html", "note": "The reviewed undergraduate and international pages do not publish ED, EA, REA, or a general first-year application deadline. Admission decisions begin September 1, and the separate scholarship priority date is December 1." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html", "note": "International first-year applicants need at least a 2.75 secondary-school GPA, official academic records, English proof, and SAT, ACT, or Accuplacer Math evidence. Foreign records and financial documentation requirements are explained on the official page." },
+        "testingPolicy": { "status": "reported", "url": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html", "note": "International first-year applicants must submit SAT or ACT math (minimum SAT Math 520 or ACT Math 20) or take the Accuplacer Math exam. Only applicants with SAT or ACT scores are eligible for merit scholarships." },
+        "englishProficiency": { "status": "reported", "url": "https://www.sdsmt.edu/admissions-aid/international-students/undergraduate-admissions.html", "note": "Published minimums are TOEFL iBT 79, IELTS 6.5, PTE 56, or Duolingo 105. SAT English 500, ACT English 18, and specified country routes can meet or waive the requirement." }
+      },
+      "facts": {
+        "testingPolicy": "SAT/ACT math or Accuplacer Math required for international first-year applicants",
+        "englishMinimums": { "TOEFL": 79, "IELTS": 6.5, "PTE": 56, "Duolingo": 105 }
+      }
+    },
+    {
+      "name": "Tennessee Tech University",
+      "fields": {
+        "internationalAid": { "status": "not_published", "url": "https://www.tntech.edu/admissions/international/freshmen/index.php", "note": "The reviewed international admission and current scholarship pages do not publish a guaranteed institutional need-aid policy for international first-year applicants. Applicants must verify eligibility for individual scholarships." },
+        "internationalAdmission": { "status": "reported", "url": "https://www.tntech.edu/admissions/international/freshmen/index.php", "note": "The official international first-year process covers the application, school records, English proof, passport, financial verification, and documents needed for Form I-20." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://undergrad.catalog.tntech.edu/pages/ql55TJZoUbReFdismQOR", "note": "Complete admission materials are due August 1 for fall, December 1 for spring, and May 1 for summer. Tennessee Tech encourages early applications and publishes no ED, EA, or REA plan on the reviewed catalog page." },
+        "englishProficiency": { "status": "reported", "url": "https://www.tntech.edu/admissions/international/freshmen/esl.php", "note": "Tennessee Tech publishes an official table of accepted English tests and education-based routes. Waivers include SAT EBRW 460, ACT English above 15, IGCSE O or A Level English grade C, IB English 5, AP English 3, or qualifying U.S. composition coursework." }
+      },
+      "facts": {
+        "plans": [{ "kind": "RD", "deadline": "August 1", "binding": false, "label": "Fall materials deadline" }]
+      }
+    },
+    {
+      "name": "Eastern Illinois University",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "previous_cycle", "url": "https://www.eiu.edu/international/faq.php", "note": "The current international FAQ lists May 15 as the fall undergraduate deadline, but does not identify it as Fall 2027. Use this only as a planning reference until the university confirms the 2027 cycle." },
+        "testingPolicy": { "status": "reported", "url": "https://www.eiu.edu/admissions/admissions_requirements.php", "note": "First-year applicants may apply without SAT or ACT scores. The official page publishes separate GPA criteria for test-optional and score-submitting applicants; international undergraduate applicants are also told that SAT or ACT is not required." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional",
+        "planStatus": "previous_cycle",
+        "plans": [{ "kind": "RD", "deadline": "May 15", "binding": false, "label": "Prior-cycle international fall deadline" }]
+      }
+    },
+    {
+      "name": "University of Delaware",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "previous_cycle", "url": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/", "note": "The reviewed international timeline lists January 15 as the direct first-year priority date, November 1 for Honors, December 1 for nursing and music priority, and June 1 for conditional admission. Fall 2027 is not named, so these are planning references until the cycle is confirmed." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/", "note": "Direct first-year applicants use Common Application and pay $75; official secondary and post-secondary records, English scores, and an IERF evaluation for international college work are listed. A separate UD application supports conditional admission." },
+        "testingPolicy": { "status": "reported", "url": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/", "note": "International first-year applicants are not required to submit SAT or ACT scores. English testing remains required for direct admission unless another official proficiency route applies." },
+        "englishProficiency": { "status": "reported", "url": "https://www.udel.edu/apply/undergraduate-admissions/apply-to-ud/international-admissions/", "note": "Direct-admission minimums include TOEFL iBT 79 on the former scale, TOEFL Essentials 8, IELTS 6.5, Cambridge 171, Duolingo 110, or PTE 53. The page also publishes academic and pathway routes." }
+      },
+      "facts": {
+        "applicationFee": 75,
+        "platforms": ["Common Application"],
+        "testingPolicy": "SAT/ACT not required for international applicants",
+        "englishMinimums": { "TOEFL": 79, "TOEFL Essentials": 8, "IELTS": 6.5, "Cambridge": 171, "Duolingo": 110, "PTE": 53 },
+        "planStatus": "previous_cycle",
+        "plans": [{ "kind": "priority", "deadline": "January 15", "binding": false, "label": "Prior-cycle direct first-year priority date" }]
+      }
+    },
+    {
+      "name": "Washington College",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "previous_cycle", "url": "https://www.washcoll.edu/admissions/apply/Freshman/index.php", "note": "The page currently labels Fall 2026: binding Early Decision November 15, nonbinding Early Action December 1, and Regular Decision February 15. Fall 2027 dates are not yet confirmed, so these are planning references." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.washcoll.edu/admissions/apply/Freshman/index.php", "note": "The current first-year checklist requires an application, official secondary-school transcript, one counselor recommendation, and either test scores or an approved test-optional route. A teacher recommendation, activities list, and résumé are recommended." },
+        "testingPolicy": { "status": "reported", "url": "https://www.washcoll.edu/admissions/apply/international-students/index.php", "note": "Most applicants may choose test-optional review, but international rules vary. International applicants must submit SAT, ACT, or an accepted English test unless an official English-country/GPA discretionary route applies." },
+        "englishProficiency": { "status": "reported", "url": "https://www.washcoll.edu/admissions/apply/international-students/index.php", "note": "Published minimums are TOEFL 90 on the former scale, IELTS 6.5, Cambridge 176, Duolingo 115, Oxford Test of English 130, or PTE 53. SAT or ACT may also satisfy the requirement." }
+      },
+      "facts": {
+        "testingPolicy": "Test-optional for most applicants; international routes depend on English background",
+        "englishMinimums": { "TOEFL": 90, "IELTS": 6.5, "Cambridge": 176, "Duolingo": 115, "Oxford Test of English": 130, "PTE": 53 },
+        "planStatus": "previous_cycle",
+        "plans": [
+          { "kind": "ED", "deadline": "November 15", "binding": true },
+          { "kind": "EA", "deadline": "December 1", "binding": false },
+          { "kind": "RD", "deadline": "February 15", "binding": false }
+        ]
+      }
+    },
+    {
       "name": "Benedict College",
       "fields": {
+        "internationalAid": { "status": "not_published", "url": "https://benedict.edu/office-of-admissions-and-recruitment/office-of-financial-aid-and-scholarships/", "note": "The current aid page explains FAFSA-based federal aid but does not publish an institutional need-aid policy for international first-year students. Applicants should ask Benedict directly about non-federal funding." },
+        "scholarships": { "status": "reported", "url": "https://benedict.edu/office-of-admissions-and-recruitment/", "note": "Benedict's enrollment guide directs admitted students to accept any scholarship through the admission portal. The current public page does not publish a complete international scholarship schedule or guaranteed award table." },
         "internationalAdmission": { "status": "reported", "url": "https://benedict.edu/office-of-admissions-and-recruitment/", "note": "Official undergraduate enrollment and international-student routes checked." },
+        "applicationPlansAndDeadlines": { "status": "previous_cycle", "url": "https://benedict.edu/wp-content/uploads/2022/07/2022-2023-Catalogue-Final-07292022.pdf", "note": "A prior official catalog listed May 1 for fall and November 1 for spring, with later applications considered when space remained. Fall 2027 dates are not published on the reviewed current pages." },
         "applicationRequirements": { "status": "reported", "url": "https://benedict.edu/office-of-admissions-and-recruitment/", "note": "Application and official transcript steps checked; the listed $25 fee is currently waived on the reviewed page." },
-        "testingPolicy": { "status": "previous_cycle", "url": "https://benedict.edu/office-of-admissions-and-recruitment/", "note": "The reviewed page contains a COVID-era testing waiver alongside score-submission instructions, so applicants must confirm the current rule directly." }
+        "testingPolicy": { "status": "previous_cycle", "url": "https://benedict.edu/office-of-admissions-and-recruitment/", "note": "The reviewed page contains a COVID-era testing waiver alongside score-submission instructions, so applicants must confirm the current rule directly." },
+        "englishProficiency": { "status": "reported", "url": "https://benedict.edu/office-of-admissions-and-recruitment/office-of-international-programs/", "note": "Applicants whose instruction was not in English must submit TOEFL, IELTS, or evidence of at least one continuous year at a reputable English-language institution. The reviewed current page does not publish minimum test scores." }
+      },
+      "facts": {
+        "planStatus": "previous_cycle",
+        "plans": [{ "kind": "RD", "deadline": "May 1", "binding": false, "label": "Prior-cycle international fall deadline" }]
+      }
+    },
+    {
+      "name": "Texas A&M University-Commerce",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "previous_cycle", "url": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/", "note": "The current catalog for the institution now called East Texas A&M lists international deadlines of August 1 for fall, October 1 for spring, and March 1 for summer, while advising completion at least 90 days before the term. Fall 2027 is not explicitly identified." },
+        "applicationRequirements": { "status": "reported", "url": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/", "note": "International applicants follow the first-year academic rules, provide an independent credential evaluation, English proof, financial documents, and other visa materials. The official catalog explains high-school curriculum and score routes." },
+        "testingPolicy": { "status": "reported", "url": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/", "note": "SAT or ACT is one route to full freshman admission, with holistic review available for applicants who do not meet automatic criteria. The catalog lists score exemptions for applicants whose secondary-school graduation was at least two years earlier." },
+        "englishProficiency": { "status": "reported", "url": "https://coursecatalog.tamuc.edu/undergrad/administrative-procedures/", "note": "Published undergraduate routes include TOEFL iBT 79, IELTS 6.0, PTE 53, Duolingo 105, SAT EBRW 560, ACT English 21, English3 67, specified English examinations, or country/education exemptions." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL": 79, "IELTS": 6, "PTE": 53, "Duolingo": 105, "SAT EBRW": 560, "ACT English": 21 },
+        "planStatus": "previous_cycle",
+        "plans": [{ "kind": "RD", "deadline": "August 1", "binding": false, "label": "Prior-cycle international fall deadline" }]
+      }
+    },
+    {
+      "name": "University of Miami",
+      "fields": {
+        "internationalAdmission": { "status": "previous_cycle", "url": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf", "note": "The latest accessible official policy reviewed is for 2024–25. It required the standard first-year materials plus the International Financial Certification Form and English proof for non-native English speakers. Current Fall 2027 instructions are not yet confirmed." },
+        "applicationPlansAndDeadlines": { "status": "previous_cycle", "url": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf", "note": "The 2024–25 policy listed binding ED I on November 1, nonbinding EA on November 1, binding ED II on January 1, and RD on January 1. These are prior-cycle references, not confirmed Fall 2027 dates." },
+        "applicationRequirements": { "status": "previous_cycle", "url": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf", "note": "The prior-cycle official policy required Common Application, school report and transcript, two recommendations, the application fee, and program-specific portfolios or auditions where applicable. Applicants must verify current Fall 2027 requirements." },
+        "testingPolicy": { "status": "not_published", "url": "https://admissions.miami.edu/_assets/pdf/apply/undergraduate-admission-policies.pdf", "note": "The latest accessible official policy is stale and contains a COVID-era test-optional rule. A reliable Fall 2027 SAT/ACT policy was not found on the reviewed official pages, so no current claim is made." }
+      },
+      "facts": {
+        "platforms": ["Common Application"],
+        "testingPolicy": "Fall 2027 SAT/ACT policy not yet confirmed",
+        "testingStatus": "not_published",
+        "planStatus": "previous_cycle",
+        "plans": [
+          { "kind": "ED", "deadline": "November 1", "binding": true },
+          { "kind": "EA", "deadline": "November 1", "binding": false },
+          { "kind": "ED2", "deadline": "January 1", "binding": true },
+          { "kind": "RD", "deadline": "January 1", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "Aquinas College",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://www.aquinas.edu/admissions/undergraduate/requirements.html", "note": "Aquinas states that it does not offer fully funded or international-specific scholarships. International applicants may be considered for merit, athletic, music, and invitation-only Spectrum awards; awards are not guaranteed." },
+        "internationalAdmission": { "status": "reported", "url": "https://www.aquinas.edu/admissions/undergraduate/requirements.html", "note": "International first-year applicants submit the no-fee application, passport copy, English proof where required, financial-support documents, official secondary-school records, and an InCred evaluation." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.aquinas.edu/admissions/undergraduate/requirements.html", "note": "The international checklist and separate first-year requirements are published on the official page. Aquinas charges no application fee and also accepts Common Application for first-year applicants." },
+        "testingPolicy": { "status": "reported", "url": "https://www.aquinas.edu/_resources/images/2024-2025%20Academic%20Catalog%20FINAL%20-%2011212024.pdf", "note": "Aquinas is test-optional and does not penalize applicants in admission or institutional-aid review for withholding SAT or ACT scores." },
+        "englishProficiency": { "status": "reported", "url": "https://www.aquinas.edu/admissions/undergraduate/requirements.html", "note": "Published minimums are TOEFL iBT 79 on the former scale, IELTS 6.5, PTE 53, Duolingo 105, EIKEN Pre-1, or ELS 112. A two-year English-medium international-secondary-school route may qualify for exemption." }
+      },
+      "facts": {
+        "applicationFee": 0,
+        "platforms": ["Aquinas College Application", "Common Application"],
+        "testingPolicy": "Test-optional",
+        "internationalAidPolicy": "No fully funded or international-specific scholarships; selected merit and talent awards may be available",
+        "englishMinimums": { "TOEFL": 79, "IELTS": 6.5, "PTE": 53, "Duolingo": 105 }
+      }
+    },
+    {
+      "name": "College of William and Mary",
+      "fields": {
+        "internationalAdmission": { "status": "reported", "url": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/", "note": "International first-year applicants use Common Application and submit official secondary-school records from grade 9 onward, with literal English translations where needed. Optional recommendations, testing, arts materials, and third-party interviews are described." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/", "note": "Binding Early Decision I is due November 1. Binding Early Decision II and Regular Decision are due January 5. Supplemental materials may arrive after the application deadline." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/applicationprocess/", "note": "Common Application, the Secondary School Report, complete official school records, and translated documents are required. One teacher recommendation, testing, arts work, and InitialView or Vericant are optional." },
+        "testingPolicy": { "status": "reported", "url": "https://www.wm.edu/admission/undergraduateadmission/announcements/test-optional-admission-policy.php", "note": "William & Mary has extended test-optional undergraduate admission indefinitely. Applicants may self-report SAT or ACT, and enrolling students verify self-reported scores." },
+        "englishProficiency": { "status": "reported", "url": "https://www.wm.edu/admission/undergraduateadmission/how-to-apply/international-applicants/standardized-testing/", "note": "TOEFL, IELTS, or Duolingo is strongly recommended when English is not native and the previous four years of schooling were not in English. The university generally looks for TOEFL 100 on the former scale or IELTS 7.0; these are not admission guarantees." }
+      },
+      "facts": {
+        "platforms": ["Common Application"],
+        "testingPolicy": "Test-optional indefinitely",
+        "englishMinimums": { "TOEFL": 100, "IELTS": 7 },
+        "plans": [
+          { "kind": "ED", "deadline": "November 1", "binding": true },
+          { "kind": "ED2", "deadline": "January 5", "binding": true },
+          { "kind": "RD", "deadline": "January 5", "binding": false }
+        ]
+      }
+    },
+    {
+      "name": "East Carolina University",
+      "fields": {
+        "internationalAid": { "status": "not_published", "url": "https://admissions.ecu.edu/afford/financial-aid/", "note": "The current aid page focuses on FAFSA-based federal, state, and institutional programs and does not publish a general institutional need-aid commitment for international first-year students. Individual scholarships require separate eligibility checks." },
+        "internationalAdmission": { "status": "reported", "url": "https://global-affairs.ecu.edu/international-students/international-ug/", "note": "The official international route requires the online application, $75 fee, official translated academic records, English proof, and financial documents after admission for immigration processing." },
+        "applicationRequirements": { "status": "reported", "url": "https://global-affairs.ecu.edu/international-students/international-ug/", "note": "International first-year requirements include the application and fee, official secondary-school records sent by an authorized school representative, English proof, translations, and later financial documentation." },
+        "testingPolicy": { "status": "previous_cycle", "url": "https://admissions.ecu.edu/wp-content/pv-uploads/sites/70/ECU_Counselor_Guide.pdf", "note": "The latest accessible official counselor guide says scores were required below a 2.8 weighted GPA. A Fall 2027 SAT/ACT rule was not found on the reviewed official pages, so this is a prior-cycle reference only." },
+        "englishProficiency": { "status": "reported", "url": "https://global-affairs.ecu.edu/international-students/international-ug/", "note": "Published routes include Duolingo 105, IELTS 6.0, TOEFL 71 on the former scale or 4 on the new scale, SAT EBRW 450, ACT English/Writing 19, or qualifying U.S. high-school study." }
+      },
+      "facts": {
+        "applicationFee": 75,
+        "testingPolicy": "Fall 2027 policy not yet published; prior guidance required scores below a 2.8 weighted GPA",
+        "testingStatus": "previous_cycle",
+        "englishMinimums": { "TOEFL": 71, "IELTS": 6, "Duolingo": 105, "SAT EBRW": 450, "ACT English": 19 }
       }
     }
   ]
