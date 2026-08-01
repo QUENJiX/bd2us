@@ -62,7 +62,7 @@ export function CollegeExplorer({ colleges }: { colleges: College[] }) {
   const [view, setView] = useState<ViewMode>("grid");
   const [group, setGroup] = useState<RankingGroup>(() => validGroup(params.get("list")));
   const [saved, setSaved] = useState<string[]>([]);
-  const [compare, setCompare] = useState<string[]>([]);
+  const [compare, setCompare] = useState<string[]>(() => params.getAll("compare").flatMap((value) => value.split(",")).filter((slug) => colleges.some((college) => college.slug === slug)).slice(0, 4));
   const [profile, setProfile] = useState<StudentProfile>(defaultProfile);
   const [visibleCount, setVisibleCount] = useState(pageSize);
 
@@ -79,20 +79,21 @@ export function CollegeExplorer({ colleges }: { colleges: College[] }) {
     const next = new URLSearchParams();
     if (query) next.set("q", query);
     if (group !== "universities") next.set("list", group);
+    compare.forEach((slug) => next.append("compare", slug));
     for (const [key, value] of Object.entries(filters)) {
       if (key === "savedOnly") {
         if (value) next.set("saved", "1");
       } else if (value !== "All") next.set(key, String(value));
     }
     router.replace(next.size ? `/colleges?${next.toString()}` : "/colleges", { scroll: false });
-  }, [filters, group, query, router]);
+  }, [compare, filters, group, query, router]);
 
   const filtered = useMemo(() => {
     const needle = query.trim();
     return searchColleges(colleges, needle, compareByRanking).filter((college: College) => {
       return (
         (needle || group === "all" || getRankingGroup(college) === group) &&
-        (filters.aid === "All" || college.aidPolicy === filters.aid || (filters.aid === "International aid reported" && college.internationalAidPercent != null)) &&
+        (filters.aid === "All" || college.aidPolicy === filters.aid || (filters.aid === "International aid reported" && college.internationalAidPercent != null) || (filters.aid === "Strong low-contribution option" && college.strongLowContributionResearchSignal)) &&
         (filters.control === "All" || college.control === filters.control) &&
         (filters.region === "All" || college.region === filters.region) &&
         costMatches(college.costOfAttendance, filters.cost) &&
@@ -162,7 +163,7 @@ export function CollegeExplorer({ colleges }: { colleges: College[] }) {
           <input id="college-search" placeholder="College, city, state, setting, or scholarship" value={query} onChange={(event) => { setQuery(event.target.value); setVisibleCount(pageSize); }} />
         </div>
         <div className="filter-grid">
-          <Filter label="Aid signal" value={filters.aid} onChange={(value) => updateFilter("aid", value)} values={["All", "International aid reported", "Need-blind", "Need-aware", "Merit-focused"]} />
+          <Filter label="Aid signal" value={filters.aid} onChange={(value) => updateFilter("aid", value)} values={["All", "Strong low-contribution option", "International aid reported", "Need-blind", "Need-aware", "Merit-focused"]} />
           <Filter label="Control" value={filters.control} onChange={(value) => updateFilter("control", value)} values={["All", "Private", "Public"]} />
           <Filter label="Region" value={filters.region} onChange={(value) => updateFilter("region", value)} values={["All", "Northeast", "Midwest", "South", "West", "Other"]} />
           <Filter label="Annual cost" value={filters.cost} onChange={(value) => updateFilter("cost", value)} values={["All", "Under $40k", "$40k–$60k", "$60k–$80k", "$80k+"]} />
@@ -314,7 +315,7 @@ function CollegeTable({ colleges, saved, toggleSaved }: { colleges: College[]; s
 
 function Comparison({ colleges, clear }: { colleges: College[]; clear: () => void }) {
   return (
-    <section className="comparison-sheet" aria-labelledby="comparison-title">
+    <section className="comparison-sheet" id="comparison" aria-labelledby="comparison-title">
       <div className="comparison-heading"><div><p className="eyebrow">Research comparison · {colleges.length}/4</p><h2 id="comparison-title">Read across, then verify.</h2></div><button onClick={clear} type="button">Clear comparison</button></div>
       <div className="data-table-wrap">
         <table>

@@ -100,6 +100,7 @@ export type RoadmapMilestone = {
 };
 
 export type College = {
+  ipedsId?: string | null;
   slug: string;
   name: string;
   shortName: string;
@@ -122,8 +123,15 @@ export type College = {
   feeWaiver: string;
   themes: string[];
   budgetFit: "full-need" | "partial-need" | "merit" | "research";
+  strongLowContributionResearchSignal?: boolean;
   summary: string;
   source: Source;
+  officialLinks?: {
+    homepage?: string | null;
+    admissions?: string | null;
+    financialAid?: string | null;
+    application?: string | null;
+  };
   sourceScope?: string;
   originalDescription?: string;
   costOfAttendance?: number | null;
@@ -135,6 +143,8 @@ export type College = {
   testing?: TestingProfile;
   englishProficiency?: EnglishTestRequirement[];
   scholarships?: CollegeScholarship[];
+  deadlines?: CollegeDeadline[];
+  applicationRequirements?: ApplicationRequirements;
   rankings?: CollegeRanking[];
   researchHighlights?: string[];
   researchHighlightOverride?: string | null;
@@ -213,12 +223,79 @@ export type CollegeRanking = {
   system: "QS World University Rankings" | "U.S. News National Liberal Arts Colleges";
   edition: string;
   globalRank?: number | null;
-  countryPosition?: number | null;
   nationalRank?: number | null;
   tied?: boolean;
   sourceUrl: string;
   reviewedAt: string;
-  countryPositionMethod?: "BD2US competition ranking";
+};
+
+export type ApplicationPlanCode = "ED" | "ED2" | "EA" | "REA" | "SCEA" | "RD" | "Priority" | "Rolling";
+
+export type ApplicationPlan = {
+  code: ApplicationPlanCode;
+  name: string;
+  binding: boolean;
+  restrictive: boolean;
+  explanation: string;
+  source: SourcedFact<string>;
+};
+
+export type DeadlineKind = "application" | "documents" | "financial_aid" | "testing" | "notification" | "enrollment";
+
+export type CollegeDeadline = {
+  id: string;
+  plan: ApplicationPlanCode;
+  kind: DeadlineKind;
+  label: string;
+  date: SourcedFact<string>;
+};
+
+export type ApplicationPlatform = {
+  name: "Common App" | "Coalition Application" | "College application" | "QuestBridge" | "Other";
+  url?: string | null;
+};
+
+export type FeePolicy = {
+  amount: SourcedFact<number>;
+  internationalFee?: SourcedFact<number>;
+  waiverRoute: SourcedFact<string>;
+};
+
+export type ApplicationRequirements = {
+  plans: ApplicationPlan[];
+  platforms: ApplicationPlatform[];
+  fee: FeePolicy;
+  recommendations: SourcedFact<string>;
+  schoolForms: SourcedFact<string>;
+  transcripts: SourcedFact<string>;
+  midyearReport: SourcedFact<string>;
+  finalReport: SourcedFact<string>;
+  supplements: SourcedFact<string>;
+  interviews: SourcedFact<string>;
+  portfolio: SourcedFact<string>;
+  specialRequirements: SourcedFact<string>;
+};
+
+export type CampusContext = {
+  climate: SourcedFact<string>;
+  safetyUrl: SourcedFact<string>;
+};
+
+export type CollegeSearchDocument = {
+  id: string;
+  type: SearchResult["type"];
+  title: string;
+  canonicalName?: string;
+  aliases: string[];
+  summary: string;
+  href: string;
+  fields: Record<string, string[]>;
+};
+
+export type SearchMatch = SearchResult & {
+  score: number;
+  matchedField?: string;
+  matchedText?: string;
 };
 
 export type CollegeEnrichmentRecord = {
@@ -243,7 +320,7 @@ export type CollegeFact = {
 };
 
 export type FactSource = Source & {
-  scope: "dataset" | "official" | "community";
+  scope: "research_baseline" | "official" | "community";
 };
 
 export type ReviewMetadata = {
@@ -278,6 +355,9 @@ export type SearchResult = {
   summary: string;
   href: string;
   keywords: string[];
+  score?: number;
+  matchedField?: string;
+  matchedContext?: string;
 };
 
 export type OfficialResource = {

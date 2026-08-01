@@ -108,7 +108,7 @@ export function SearchDialog() {
               </Link>
             ))
           ) : (
-            <p className="p-5 text-sm text-slate-500">No results yet. We log anonymous misses so the guide can improve.</p>
+            <p className="p-5 text-sm text-slate-500">No results yet. Try a complete college name, deadline term, scholarship, test, or guide topic.</p>
           )}
         </div>
       </section>

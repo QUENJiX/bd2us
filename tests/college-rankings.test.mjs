@@ -19,7 +19,7 @@ test("QS 2027 university ranks are attached without combining them with LAC rank
   const mit = getCollegeRanking(college("Massachusetts Institute of Technology (MIT)"));
   assert.equal(mit.rank, 1);
   assert.equal(mit.globalRank, 1);
-  assert.equal(mit.countryPosition, 1);
+  assert.equal(mit.countryPosition, undefined);
   assert.equal(mit.system, "QS World University Rankings");
   assert.equal(getCollegeRanking(college("Stanford University")).rank, 2);
   assert.equal(getCollegeRanking(college("Harvard University")).rank, 5);

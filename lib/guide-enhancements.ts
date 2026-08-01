@@ -68,7 +68,7 @@ export const guideEnhancements: Record<string, GuideEnhancement> = {
     communityInsight: "Admissions readers repeatedly distinguish sustained contribution from last-minute résumé padding.",
     mistakes: ["Starting a superficial organization only for applications", "Using vague verbs without responsibilities or outcomes", "Ignoring family and paid-work commitments"],
     worksheetTitle: "Activities evidence log",
-    worksheetItems: ["Role, organization, dates, and hours", "What you actually did each week", "Who benefited and how", "A specific result, artifact, or lesson", "A concise 150-character description draft"]
+    worksheetItems: ["Role, organization, dates, and hours", "What you actually did each week", "Who benefited and how", "A specific result, work sample, or lesson", "A concise 150-character description draft"]
   },
   essays: {
     beginner: "An essay helps a reader understand how you notice, think, choose, and change. It is not a formal speech or a list of achievements.",

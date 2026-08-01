@@ -617,6 +617,9 @@ summary:focus-visible {
 .college-profile-header h1 { max-width: 13ch; font-size: clamp(3rem, 7vw, 5.8rem); }
 .profile-tags { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 1.25rem; }
 .profile-tags span { border: 1px solid var(--line); border-radius: 999px; background: var(--paper); padding: 0.35rem 0.65rem; color: var(--muted); font-size: 0.72rem; font-weight: 700; }
+.college-profile-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+.college-profile-actions > * { min-height: 2.75rem; }
+.college-profile-actions .button-secondary { display: inline-flex; align-items: center; justify-content: center; }
 .profile-section { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1.5rem; }
 .section-kicker { display: grid; grid-template-columns: 2.3rem 1fr; gap: 0.8rem; align-items: start; }
 .section-kicker > span { color: var(--deadline); font-family: "Literata Variable", Georgia, serif; font-size: 0.85rem; font-variant-numeric: tabular-nums; }
@@ -628,6 +631,20 @@ summary:focus-visible {
 .profile-numbers p { margin: 0; color: var(--muted); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; }
 .profile-numbers strong { margin-top: 0.8rem; color: var(--passport); font-family: "Literata Variable", Georgia, serif; font-size: clamp(1.8rem, 4vw, 2.7rem); font-variant-numeric: tabular-nums; letter-spacing: -0.04em; }
 .profile-numbers span { margin-top: 0.7rem; color: var(--muted); font-size: 0.78rem; line-height: 1.45; }
+.application-plan-grid { display: grid; gap: 1px; margin-top: 1.3rem; border: 1px solid var(--line); background: var(--line); }
+.application-plan-grid article { min-width: 0; background: var(--paper); padding: 1rem; }
+.application-plan-grid article > div { display: flex; align-items: baseline; gap: 0.65rem; }
+.application-plan-grid strong { color: var(--forest); font-family: "Literata Variable", Georgia, serif; font-size: 1.3rem; }
+.application-plan-grid span { color: var(--passport); font-size: 0.82rem; font-weight: 700; }
+.application-plan-grid p { margin: 0.65rem 0 0; color: var(--muted); font-size: 0.82rem; line-height: 1.55; }
+.deadline-ledger { margin-top: 1rem; border-top: 3px double var(--line); }
+.deadline-ledger > div { display: grid; gap: 0.45rem; border-bottom: 1px solid var(--line); padding: 0.9rem 0; }
+.deadline-ledger > div > div { display: flex; gap: 0.65rem; align-items: baseline; }
+.deadline-ledger strong { color: var(--deadline); font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.deadline-ledger span { color: var(--ink); font-weight: 700; }
+.deadline-ledger p { margin: 0; color: var(--muted); font-size: 0.86rem; line-height: 1.55; }
+.deadline-ledger small { color: var(--deadline); font-size: 0.72rem; font-weight: 700; }
+.deadline-empty strong { color: var(--passport); font-family: "Literata Variable", Georgia, serif; font-size: 1.05rem; letter-spacing: 0; text-transform: none; }
 .profile-evidence-grid { display: grid; gap: 1rem; margin-top: 1.3rem; }
 .profile-evidence-grid > article { min-width: 0; border: 1px solid var(--line); background: var(--paper); padding: 1rem; }
 .profile-evidence-grid h3,
@@ -690,6 +707,13 @@ summary:focus-visible {
 .dark .funding-evidence > p:not(.eyebrow),
 .dark .verify-strip { color: #ead0a3; }
 
+.legal-page > h1 { max-width: 15ch; margin-top: 0.6rem; color: var(--forest-deep); font-family: "Literata Variable", Georgia, serif; font-size: clamp(2.8rem, 7vw, 5.4rem); font-weight: 620; letter-spacing: -0.055em; line-height: 0.98; }
+.legal-updated { margin-top: 1.2rem; color: var(--muted); font-size: 0.82rem; font-weight: 700; }
+.legal-page section { margin-top: 2.25rem; border-top: 1px solid var(--line); padding-top: 1.15rem; }
+.legal-page section h2 { color: var(--passport); font-family: "Literata Variable", Georgia, serif; font-size: 1.45rem; }
+.legal-page section p { max-width: 72ch; margin: 0.7rem 0 0; color: var(--muted); line-height: 1.75; }
+.legal-page section a { color: var(--forest); font-weight: 700; text-decoration: underline; text-decoration-color: var(--deadline); text-underline-offset: 0.2em; }
+
 @media (min-width: 720px) {
   .ranking-ledger-heading { grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.8fr); align-items: end; }
   .ranking-tabs { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -698,6 +722,7 @@ summary:focus-visible {
   .college-entry-footer { grid-template-columns: minmax(0, 1fr) auto; align-items: end; }
   .college-fact-strip { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .profile-evidence-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .application-plan-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (min-width: 1024px) {
@@ -715,7 +740,7 @@ summary:focus-visible {
 }
 
 @media print {
-  header, footer, .research-tools, .profile-journey, .back-link, .theme-toggle { display: none !important; }
+  header, footer, .research-tools, .profile-journey, .back-link, .theme-toggle, .college-profile-actions { display: none !important; }
   body, .college-profile-page { background: white !important; color: black !important; }
   .college-profile-grid { display: block; }
   .profile-section, .funding-evidence, .dataset-detail { break-inside: avoid; }

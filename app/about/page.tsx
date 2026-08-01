@@ -65,9 +65,9 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 sm:py-20">
           <SectionHeading eyebrow="Methodology" title="How the guide stays grounded." />
           <div className="mt-8 grid gap-5 lg:grid-cols-3">
-            <Method number="01" title="Organize" text="Turn the full journey into readable guidance, roadmap tasks, and college research records." />
+            <Method number="01" title="Organize" text="Turn the full journey into readable guidance, roadmap tasks, and useful college profiles." />
             <Method number="02" title="Source" text="Attach official links and verification dates to changing facts. Keep assumptions labeled as assumptions." />
-            <Method number="03" title="Review" text="Publish through draft, review, and verified states. Flag stale records for editorial attention." />
+            <Method number="03" title="Review" text="Check changing information regularly, show when it was reviewed, and flag pages that need another look." />
           </div>
         </div>
       </section>

@@ -18,9 +18,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Please complete every field." }, { status: 400 });
   }
   const supabase = getServiceSupabase();
-  if (supabase) {
-    const { error } = await supabase.from("feedback_messages").insert({ name, email, subject, message });
-    if (error) return NextResponse.json({ error: "Could not send message." }, { status: 500 });
-  }
-  return NextResponse.json({ ok: true, previewMode: !supabase });
+  if (!supabase) return NextResponse.json({ error: "Messages are temporarily unavailable. Please try again later." }, { status: 503 });
+  const { error } = await supabase.from("feedback_messages").insert({ name, email, subject, message });
+  if (error) return NextResponse.json({ error: "Your message was not saved. Please try again later." }, { status: 500 });
+  return NextResponse.json({ ok: true });
 }

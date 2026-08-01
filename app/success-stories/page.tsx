@@ -36,7 +36,7 @@ export default function SuccessStoriesPage() {
       </section>
       <section className="mx-auto max-w-7xl px-5 pb-16 sm:px-8">
         <div className="grid gap-5 lg:grid-cols-3">
-          <StoryPrinciple title="Real journeys only" text="Stories will be published only with student consent and a reviewable record. Until then, the page stays honest about what is still being built." />
+          <StoryPrinciple title="Real journeys only" text="Stories will be published only with student consent and evidence the team can review. Until then, the page stays honest about what is still being built." />
           <StoryPrinciple title="Useful over impressive" text="Future stories should show decisions, tradeoffs, mistakes, and practical lessons rather than flattening a student into scores and logos." />
           <StoryPrinciple title="Many valid outcomes" text="A sustainable, well-researched option matters more than prestige theater. There is no single correct shape for a successful journey." />
         </div>

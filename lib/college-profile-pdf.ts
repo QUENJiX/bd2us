@@ -66,7 +66,8 @@ export async function createCollegeProfilePdf(college: College) {
   let leftY = sectionTop - 18;
   leftY = drawKeyValue(page, "Overall", acceptanceLabel(college, "overall"), leftX, leftY, columnWidth, sans, sansBold);
   leftY = drawKeyValue(page, "International", acceptanceLabel(college, "international"), leftX, leftY, columnWidth, sans, sansBold);
-  leftY = drawKeyValue(page, "Source status", acceptanceStatus(college), leftX, leftY, columnWidth, sans, sansBold);
+  leftY = drawKeyValue(page, "Plans", applicationPlanLabel(college), leftX, leftY, columnWidth, sans, sansBold);
+  leftY = drawKeyValue(page, "Deadline", deadlineLabel(college), leftX, leftY, columnWidth, sans, sansBold);
 
   label(page, "TESTING + ENGLISH", rightX, sectionTop, sansBold);
   let rightY = sectionTop - 18;
@@ -78,11 +79,11 @@ export async function createCollegeProfilePdf(college: College) {
 
   page.drawLine({ start: { x: margin, y }, end: { x: pageWidth - margin, y }, thickness: 0.7, color: line });
   y -= 22;
-  label(page, "SCHOLARSHIP LEADS", margin, y, sansBold);
+  label(page, "SCHOLARSHIPS TO CHECK", margin, y, sansBold);
   y -= 17;
   const scholarships = college.scholarships?.slice(0, 3) ?? [];
   if (!scholarships.length) {
-    page.drawText("No named scholarship is listed in the workbook. Check the official aid and scholarship pages.", { x: margin, y, font: sans, size: 9, color: muted });
+    page.drawText("No named scholarship is confirmed here. Check the official aid and scholarship pages.", { x: margin, y, font: sans, size: 9, color: muted });
     y -= 25;
   } else {
     for (const [index, scholarship] of scholarships.entries()) {
@@ -98,10 +99,10 @@ export async function createCollegeProfilePdf(college: College) {
   const footerTop = 120;
   page.drawRectangle({ x: margin, y: footerTop, width: pageWidth - margin * 2, height: 66, color: white, borderColor: line, borderWidth: 0.8 });
   label(page, "BANGLADESH APPLICANT — NEXT STEP", margin + 14, footerTop + 48, sansBold);
-  const nextStep = college.researchHighlights?.[0] ?? "Verify the current international aid, testing, English-proficiency, and scholarship rules before shortlisting.";
+  const nextStep = "Confirm how the college wants SSC/HSC or O/A Level transcripts, predicted grades, English-test evidence, and financial-aid documents submitted.";
   drawLines(page, wrapText(nextStep, sans, 9, pageWidth - margin * 2 - 28, 2), { x: margin + 14, y: footerTop + 30, font: sans, size: 9, color: ink, lineHeight: 11 });
 
-  page.drawText(ascii(`Reviewed ${college.officialReview?.reviewedAt ?? college.datasetReviewedAt ?? college.lastVerifiedAt}  |  Workbook fact = source baseline  |  Not published = no reliable published value attached`), { x: margin, y: 82, font: sans, size: 6.8, color: muted });
+  page.drawText(ascii(`Information checked ${college.officialReview?.reviewedAt ?? college.datasetReviewedAt ?? college.lastVerifiedAt}  |  Confirmed = official source  |  Not published = the college has not published it`), { x: margin, y: 82, font: sans, size: 6.8, color: muted });
   page.drawText(ascii(`Open the live profile: https://www.bd2us.app/colleges/${college.slug}`), { x: margin, y: 66, font: sansBold, size: 7.2, color: forest });
   page.drawText("Rankings are context, never an admission recommendation or personal probability.", { x: margin, y: 50, font: sans, size: 6.8, color: muted });
   page.drawText("BD2US  |  Bangladesh to U.S. admissions field guide", { x: margin, y: 27, font: sansBold, size: 7.2, color: amber });
@@ -118,7 +119,6 @@ function drawRankingStamp(page: PDFPage, college: College, font: PDFFont, bold: 
   const primary = ranking?.globalRank ?? ranking?.nationalRank;
   page.drawText(primary == null ? "UNRANKED" : `${ranking?.tied ? "=" : "#"}${primary}`, { x: x + 10, y: y + 27, font: bold, size: primary == null ? 11 : 21, color: white });
   page.drawText(ascii(ranking ? ranking.system.startsWith("QS") ? `QS GLOBAL ${ranking.edition}` : `U.S. NEWS LAC ${ranking.edition}` : "NO APPLICABLE SNAPSHOT"), { x: x + 10, y: y + 13, font, size: 6.5, color: rgb(0.75, 0.91, 0.84) });
-  if (ranking?.countryPosition) page.drawText(`#${ranking.countryPosition} U.S. derived`, { x: x + 50, y: y + 31, font, size: 6.5, color: white });
 }
 
 function drawFactGrid(page: PDFPage, facts: string[][], top: number, font: PDFFont, bold: PDFFont) {
@@ -169,12 +169,17 @@ function wrapText(value: string, font: PDFFont, size: number, maxWidth: number, 
 function acceptanceLabel(college: College, audience: "overall" | "international") {
   const fact = audience === "overall" ? college.admissions?.overallAcceptanceRate : college.admissions?.internationalAcceptanceRate;
   if (fact?.value == null) return audience === "international" ? "Not published / not reviewed" : "Not listed";
-  return `${percent(fact.value)}${fact.dataYear ? ` | data year ${fact.dataYear}` : ""}${fact.status === "calculated" ? " | BD2US calculated" : ""}`;
+  return `${percent(fact.value)}${fact.dataYear ? ` | data year ${fact.dataYear}` : ""}${fact.status === "calculated" ? " | calculated from official counts" : ""}`;
 }
-function acceptanceStatus(college: College) {
-  const overall = college.admissions?.overallAcceptanceRate.status ?? "unreviewed";
-  const international = college.admissions?.internationalAcceptanceRate.status ?? "unreviewed";
-  return `Overall: ${overall}; international: ${international}`;
+function applicationPlanLabel(college: College) {
+  const reviewed = college.applicationRequirements?.plans.map((plan) => plan.code) ?? [];
+  return [...new Set([...reviewed, ...college.applicationPlans])].join(", ") || "Not published here";
+}
+function deadlineLabel(college: College) {
+  const deadline = college.deadlines?.find((item) => item.date.status === "reported" && item.date.value) ?? college.deadlines?.[0];
+  if (!deadline) return "Fall 2027 not yet published here";
+  if (deadline.date.status === "not_published") return "Fall 2027 not yet published";
+  return `${deadline.plan}: ${deadline.date.value ?? "Not published"}${deadline.date.cycle && deadline.date.cycle !== "Fall 2027" ? ` (${deadline.date.cycle} reference)` : ""}`;
 }
 function englishLabel(college: College) {
   if (college.englishProficiency?.length) return college.englishProficiency.map((item) => `${item.test}${item.minimumScore.value != null ? ` ${item.minimumScore.value}+` : ""}`).join(", ");

@@ -19,11 +19,11 @@ export default async function CollegesPage() {
           <div>
             <p className="eyebrow">BD2US research catalog · Fall 2027</p>
             <h1>Build the list with evidence, not brand names.</h1>
-            <p className="catalog-deck">Explore every college in the BD2US dataset. Compare cost, international-aid reach, average awards, setting, size, and overall selectivity—then verify the policies that can change.</p>
+            <p className="catalog-deck">Explore the complete BD2US college list. Compare cost, international-aid reach, average awards, setting, size, and overall selectivity—then verify the policies that can change.</p>
           </div>
           <dl className="catalog-summary">
             <div><dt>Colleges</dt><dd>{colleges.length}</dd></div>
-            <div><dt>Dataset reviewed</dt><dd>{new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric" }).format(new Date(`${verifiedOn}T00:00:00`))}</dd></div>
+            <div><dt>Information checked</dt><dd>{new Intl.DateTimeFormat("en-US", { month: "long", year: "numeric" }).format(new Date(`${verifiedOn}T00:00:00`))}</dd></div>
             <div><dt>Applicant lens</dt><dd>Bangladesh → United States</dd></div>
           </dl>
         </div>
@@ -33,7 +33,7 @@ export default async function CollegesPage() {
         <div className="section-intro">
           <p className="eyebrow">Comprehensive explorer</p>
           <h2>Filter the facts. Read the context. Keep your own notes.</h2>
-          <p>Dataset facts are useful starting points. Testing, deadlines, aid rules, and scholarship eligibility can change by cycle, so each profile ends with a verification checklist.</p>
+          <p>Published facts are useful starting points. Testing, deadlines, aid rules, and scholarship eligibility can change by cycle, so each profile ends with a verification checklist.</p>
         </div>
         <div className="mt-8">
           <Suspense fallback={<div className="empty-state">Opening the college catalog…</div>}>

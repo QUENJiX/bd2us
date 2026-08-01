@@ -43,7 +43,7 @@ export function GuideEnhancements({ enhancement }: { enhancement: GuideEnhanceme
       </section>
 
       <section id="worksheet" className="worksheet-layer">
-        <div><p className="eyebrow">Practical artifact</p><h2>{enhancement.worksheetTitle}</h2><p>Copy this into your notes, print the page, or use it as the next-action checklist.</p></div>
+        <div><p className="eyebrow">Practical worksheet</p><h2>{enhancement.worksheetTitle}</h2><p>Copy this into your notes, print the page, or use it as the next-action checklist.</p></div>
         <ol>{enhancement.worksheetItems.map((item) => <li key={item}>{item}</li>)}</ol>
       </section>
 

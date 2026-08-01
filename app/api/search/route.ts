@@ -28,13 +28,11 @@ export async function GET(request: Request) {
         keywords: []
       }));
       const results = mergeSearchResults(remoteResults, localResults, limit, query);
-      await supabase.from("search_queries").insert({ query, result_count: results.length });
       return NextResponse.json({
         results
       });
     }
   }
-  if (supabase) await supabase.from("search_queries").insert({ query, result_count: localResults.length });
   return NextResponse.json({ results: localResults });
 }
 

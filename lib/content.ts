@@ -98,7 +98,7 @@ const guideBlueprints: Array<{
   },
   {
     slug: "activities",
-    title: "Turn activities into a record of contribution",
+    title: "Turn activities into clear evidence of contribution",
     eyebrow: "06 · Activities",
     summary:
       "Focus on sustained contribution, initiative, and results rather than collecting shallow memberships.",
@@ -537,8 +537,38 @@ export const faqs = [
   {
     question: "How fresh is the college information?",
     answer:
-      "Every college record shows the launch dataset review date and its source scope. Official links are added to cycle-sensitive facts as editors verify them; unavailable values stay unavailable rather than being guessed.",
+      "College profiles show when information was checked and distinguish confirmed facts, calculations from official counts, previous-cycle references, and information the college has not published. Changing requirements should always link to the responsible official page.",
     category: "Trust"
+  },
+  {
+    question: "What if a Fall 2027 deadline is not published yet?",
+    answer: "The profile says that the Fall 2027 date is not yet published. BD2US may show the latest official prior-cycle date as a planning reference, clearly labeled with its cycle, but never estimates a current deadline.",
+    category: "Deadlines"
+  },
+  {
+    question: "What do ED, EA, REA, and RD mean?",
+    answer: "Early Decision is normally binding. Early Action is normally nonbinding. Restrictive or Single-Choice Early Action limits some other early applications. Regular Decision is the standard nonbinding round. Each college's exact rules control, so read them before submitting.",
+    category: "Applications"
+  },
+  {
+    question: "How should I use rankings?",
+    answer: "Use rankings as limited institutional context, not a measure of your fit or admission chance. Universities show the official QS global rank; liberal-arts colleges use the separate U.S. News liberal-arts list, and those numbers are never compared directly.",
+    category: "College research"
+  },
+  {
+    question: "What does strong funding for a low family contribution mean?",
+    answer: "It means a college has an aid or scholarship route worth researching for a family that can contribute very little. It is not a promise of a zero-cost offer; eligibility, admission, annual costs, and renewal rules still matter.",
+    category: "Financial aid"
+  },
+  {
+    question: "What is included in the one-page college profile?",
+    answer: "The download summarizes public college facts such as costs, aid, admission context, deadlines, testing, English requirements, scholarships, rank, and source status. It never includes your private research notes.",
+    category: "Using BD2US"
+  },
+  {
+    question: "How does guest information move into an account?",
+    answer: "After sign-in, BD2US merges the work saved on that device with the account instead of replacing newer cloud information. Accounts are optional; signing out and clearing a device are separate choices.",
+    category: "Accounts"
   },
   {
     question: "Can I use AI to write my essays?",

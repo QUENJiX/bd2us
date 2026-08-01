@@ -16,7 +16,7 @@ export default function ResourcesPage() {
         <div className="resource-use-strip">
           <div><span>01</span><strong>Learn</strong><p>Read the BD2US chapter for plain-language context.</p></div>
           <div><span>02</span><strong>Verify</strong><p>Open the official source for the current cycle and your applicant type.</p></div>
-          <div><span>03</span><strong>Record</strong><p>Save the URL, requirement, and date you checked it in your notes.</p></div>
+          <div><span>03</span><strong>Note</strong><p>Save the URL, requirement, and date you checked it in your notes.</p></div>
         </div>
 
         <nav className="resource-jump" aria-label="Resource categories">

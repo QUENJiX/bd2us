@@ -44,7 +44,7 @@ export const blogs: BlogEntry[] = [
     title: "Colleges Offering Full Scholarships & Generous Aid ($0-$5K EFC)",
     category: "Financial-aid data",
     author: "BD2US Editorial Team",
-    summary: "A detailed scholarship and financial-aid dataset for international college research.",
+    summary: "A detailed scholarship and financial-aid reference for international college research.",
     readMinutes: 14,
     publishedAt: "2024-12-12",
     updatedAt,
