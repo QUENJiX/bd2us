@@ -44,6 +44,15 @@ test("search normalization restores misspelled English proficiency phrases", () 
   assert.equal(rankSearch(index, "englsh proficency")[0].href, "/testing");
 });
 
+test("short acronyms do not fuzzy-match unrelated words", () => {
+  const index = [
+    { type: "College", title: "Massachusetts Institute of Technology (MIT)", summary: "Cambridge", href: "/mit", keywords: ["MIT"] },
+    { type: "College", title: "Millsaps College", summary: "Mississippi", href: "/millsaps", keywords: ["Millsaps"] },
+    { type: "Glossary", title: "Middle 50%", summary: "Score range", href: "/middle", keywords: ["middle"] }
+  ];
+  assert.deepEqual(rankSearch(index, "MIT").map((item) => item.href), ["/mit"]);
+});
+
 test("budget estimator is transparent and never claims to calculate aid", () => {
   const result = estimateBudget({ monthlyIncomeBdt: 100000, savingsBdt: 500000, assetsBdt: 1000000, exchangeRate: 125 });
   assert.equal(result.planningAmount, 1000);

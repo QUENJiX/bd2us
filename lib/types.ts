@@ -1,5 +1,5 @@
 export type ReviewStatus = "draft" | "in_review" | "published" | "stale";
-export type FactStatus = "reported" | "calculated" | "not_published" | "unreviewed";
+export type FactStatus = "reported" | "calculated" | "not_published" | "previous_cycle" | "unreviewed";
 export type AidPolicy = "Need-blind" | "Need-aware" | "Merit-focused" | "Not classified";
 export type InstitutionType = "University" | "Liberal arts college" | "College" | "Specialized institution" | "Institution";
 export type InstitutionControl = "Private" | "Public" | "Unknown";

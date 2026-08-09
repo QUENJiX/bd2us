@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { CollegeProfileActions, CollegeProfileTools } from "@/components/college-profile-tools";
 import { colleges } from "@/lib/content";
 import { rankingLabel } from "@/lib/college-rankings";
@@ -16,8 +16,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export default async function CollegePage({ params }: { params: Promise<{ slug: string }> }) {
-  const college = await getPublishedCollege((await params).slug);
+  const requestedSlug = (await params).slug;
+  const college = await getPublishedCollege(requestedSlug);
   if (!college) notFound();
+  if (requestedSlug !== college.slug) permanentRedirect(`/colleges/${college.slug}`);
 
   const meaning = applicantMeaning(college);
   return (
@@ -45,7 +47,7 @@ export default async function CollegePage({ params }: { params: Promise<{ slug: 
                 <ProfileNumber label="International students receiving aid" value={formatPercent(college.internationalAidPercent)} note="This published share describes past awards; availability does not guarantee affordability." />
                 <ProfileNumber label="Average international award" value={formatUsd(college.averageInternationalAid)} note="An average is not a promise. Award amounts can differ substantially by student." />
                 <ProfileNumber label="Overall acceptance rate" value={formatPercent(college.admissions?.overallAcceptanceRate.value ?? college.acceptanceRate)} note={factNote(college.admissions?.overallAcceptanceRate, "Institution-wide context, never an estimate of your individual chance.")} />
-                <ProfileNumber label="International acceptance rate" value={formatPercent(college.admissions?.internationalAcceptanceRate.value, "Not published")} note={factNote(college.admissions?.internationalAcceptanceRate, "A separate international rate is not reliably published for many colleges.")} />
+                <ProfileNumber label="International acceptance rate" value={acceptanceRateValue(college.admissions?.internationalAcceptanceRate)} note={factNote(college.admissions?.internationalAcceptanceRate, "A separate international rate is not reliably published for many colleges.")} />
                 <ProfileNumber label="Ranking context" value={rankingLabel(college)} note={college.rankingCategory === "liberal-arts-college" ? "Liberal-arts colleges use the separate U.S. News list." : "Universities show only their official QS 2027 global rank."} />
               </div>
             </section>
@@ -211,11 +213,16 @@ function formatUsd(value: number | null | undefined) {
   return value == null ? "Not listed" : new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value);
 }
 function formatPercent(value: number | null | undefined, missing = "Not listed") { return value == null ? missing : `${value}%`; }
+function acceptanceRateValue(fact: { value: number | null; status: string } | undefined) {
+  if (fact?.value != null) return formatPercent(fact.value);
+  return fact?.status === "not_published" ? "Not published by the college" : "Not yet confirmed";
+}
 function formatNumber(value: number | null | undefined) { return value == null ? "Not listed" : value.toLocaleString("en-US"); }
 function formatRange(value: { low: number | null; high: number | null } | null | undefined) { return !value || (value.low == null && value.high == null) ? "Not listed" : value.low != null && value.high != null ? `${value.low}–${value.high}` : String(value.low ?? value.high); }
 function factNote(fact: { status: string; dataYear?: string | null; sourceLabel?: string | null; note?: string | null } | undefined, fallback: string) {
   if (!fact) return fallback;
   const status = fact.status === "calculated" ? "Calculated from official information" : fact.status === "reported" ? "Confirmed by an official source" : fact.status === "not_published" ? "Not published by the college" : fact.status === "unreviewed" ? "Official review still needed" : fact.status === "previous_cycle" ? "Previous cycle reference" : fact.status.replaceAll("_", " ");
-  return `${status}${fact.dataYear ? ` · ${fact.dataYear}` : ""}${fact.sourceLabel ? ` · ${fact.sourceLabel}` : ""}. ${fact.note ?? fallback}`;
+  const showSourceDetails = fact.status !== "unreviewed";
+  return `${status}${showSourceDetails && fact.dataYear ? ` · ${fact.dataYear}` : ""}${showSourceDetails && fact.sourceLabel ? ` · ${fact.sourceLabel}` : ""}. ${fact.note ?? fallback}`;
 }
 function formatDate(value: string) { return new Intl.DateTimeFormat("en-US", { month: "short", year: "numeric" }).format(new Date(`${value}T00:00:00`)); }

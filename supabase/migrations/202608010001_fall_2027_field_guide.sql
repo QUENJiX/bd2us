@@ -26,10 +26,6 @@ create index if not exists colleges_cost_idx on public.colleges(cost_of_attendan
 create index if not exists colleges_acceptance_idx on public.colleges(acceptance_rate);
 create index if not exists colleges_international_aid_idx on public.colleges(international_aid_percent);
 
-delete from public.content_sources as newer
-using public.content_sources as keeper
-where newer.content_entry_id = keeper.content_entry_id
-  and newer.url = keeper.url and newer.id > keeper.id;
 create unique index if not exists content_sources_entry_url_idx on public.content_sources(content_entry_id, url);
 
 comment on column public.colleges.acceptance_rate is 'Overall institutional acceptance rate for context; never an individual admission probability.';

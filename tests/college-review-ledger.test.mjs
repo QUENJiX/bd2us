@@ -19,10 +19,22 @@ test("official review ledger contains every college and every required topic", (
   }
 });
 
-test("unreviewed college-specific policies cannot be mistaken for not published facts", () => {
-  const pending = ledger.records.flatMap((record) => Object.values(record.fields)).filter((field) => field.status === "unreviewed");
-  assert.ok(pending.length > 0);
-  assert.ok(pending.every((field) => field.reviewedAt === null && field.sources.length === 0));
+test("every topic-level review entry has an official-source outcome", () => {
+  const launchFields = [
+    "internationalAid", "scholarships", "internationalAdmission", "applicationPlansAndDeadlines",
+    "applicationRequirements", "testingPolicy", "englishProficiency"
+  ];
+  const allowedStatuses = new Set(["reported", "calculated", "previous_cycle", "not_published"]);
+
+  for (const record of ledger.records) {
+    for (const key of launchFields) {
+      const field = record.fields[key];
+      assert.ok(allowedStatuses.has(field.status), `${record.name}: ${key} is ${field.status}`);
+      assert.ok(field.reviewedAt, `${record.name}: ${key} has no review date`);
+      assert.ok(field.sources.length > 0, `${record.name}: ${key} has no official source`);
+      assert.ok(field.sources.every((source) => source.url.startsWith("https://")), `${record.name}: ${key} has an invalid source`);
+    }
+  }
 });
 
 test("manual official reviews retain current and previous-cycle status accurately", () => {

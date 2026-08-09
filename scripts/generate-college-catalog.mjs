@@ -60,6 +60,21 @@ const aliasOverrides = {
   "Texas A&M University-College Station": ["Texas A&M", "TAMU"]
 };
 
+const preservedPublicSlugs = {
+  "Massachusetts Institute of Technology (MIT)": "mit",
+  "Harvard University": "harvard",
+  "Yale University": "yale",
+  "Princeton University": "princeton",
+  "Dartmouth College": "dartmouth",
+  "Amherst College": "amherst",
+  "Bowdoin College": "bowdoin",
+  "Brown University": "brown",
+  "University of Notre Dame": "notre-dame",
+  "Stanford University": "stanford",
+  "University of Rochester": "rochester",
+  "University of Southern California": "usc"
+};
+
 for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
   const row = sheet.getRow(rowNumber);
   const rawName = clean(cellValue(row.getCell(2).value));
@@ -96,7 +111,8 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
   const classYear = nullableText(get("Admission rate data from class year"));
   const aliases = aliasesFor(name);
   const legacySlug = slugify(rawName);
-  const slug = uniqueSlug(slugify(name));
+  const generatedSlug = slugify(name);
+  const slug = uniqueSlug(preservedPublicSlugs[name] ?? generatedSlug);
   const ranking = rankingByName.get(name);
   const researchLead = researchLeadByName.get(name);
   const governmentFact = governmentFactById.get(String(researchLead?.ipedsId ?? ""));
@@ -133,7 +149,7 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
   const base = {
     ipedsId: researchLead?.ipedsId ?? null,
     slug,
-    slugAliases: legacySlug === slug ? [] : [legacySlug],
+    slugAliases: [...new Set([legacySlug, generatedSlug].filter((candidate) => candidate !== slug))],
     name,
     shortName: shortNameFor(name, aliases),
     aliases,
@@ -206,6 +222,14 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
   };
 
   const merged = applyManualFacts(mergeEnrichment(mergeGovernmentFacts(base, governmentFact), enrichment[slug]), manualReviewByName.get(name));
+  merged.summary = summaryFor({
+    name: merged.name,
+    location: merged.location,
+    control: merged.control,
+    costOfAttendance: merged.costOfAttendance,
+    acceptanceRate: merged.admissions?.overallAcceptanceRate?.value ?? merged.acceptanceRate,
+    internationalAidPercent: merged.internationalAidPercent
+  });
   merged.researchHighlights = researchHighlightsFor(merged);
   colleges.push(merged);
 }
@@ -216,6 +240,11 @@ const jsonOnly = [...jsonNames].filter((name) => !seenNames.has(name));
 if (workbookOnly.length || jsonOnly.length) throw new Error(`Excel/JSON name mismatch. Workbook only: ${workbookOnly.join(", ")}; JSON only: ${jsonOnly.join(", ")}`);
 if (colleges.length !== 678) throw new Error(`Expected 678 populated workbook rows, received ${colleges.length}.`);
 if (skippedBlankRows !== 5) throw new Error(`Expected five empty workbook rows, received ${skippedBlankRows}.`);
+const publicColleges = colleges.map((college) => {
+  const publishable = { ...college };
+  delete publishable.workbookFacts;
+  return publishable;
+});
 
 writeFileSync(outputPath, `${JSON.stringify({
   generatedAt: reviewedAt,
@@ -225,7 +254,7 @@ writeFileSync(outputPath, `${JSON.stringify({
   governmentSource: "data/college-government-facts.json",
   skippedBlankRows,
   count: colleges.length,
-  colleges
+  colleges: publicColleges
 }, null, 2)}\n`);
 console.log(`Generated ${colleges.length} Excel-backed college records; skipped ${skippedBlankRows} blank rows.`);
 
@@ -249,7 +278,7 @@ function clean(value) { return String(value ?? "").replace(/\s+/g, " ").trim(); 
 function normalizeTypography(value) { return value.replace(/â€™|â€˜/g, "’").replace(/â€œ|â€/g, "\"").replace(/â€“/g, "–").replace(/â€”/g, "—"); }
 function nullableText(value) {
   const result = clean(value);
-  return !result || result === "-" || /^n\/?a$/i.test(result) ? null : result;
+  return !result || result === "-" || /^n\/?a$/i.test(result) || /^\[?coming soon\]?$/i.test(result) || /premium|patreon/i.test(result) ? null : result;
 }
 function numberValue(value) {
   if (value == null || value === "") return null;
@@ -328,16 +357,33 @@ function applyManualFacts(college, review) {
   if (!review?.facts) return college;
   const facts = review.facts;
   const sourceFor = (field) => review.fields?.[field]?.url ?? null;
+  const manualReviewedAt = review.reviewedAt ?? reviewedAt;
+  const manualSource = (value, options = {}) => sourced(value, { reviewedAt: manualReviewedAt, ...options });
   const requirements = college.applicationRequirements ?? emptyApplicationRequirements();
   if (facts.testingPolicy) {
     college.testingPolicy = facts.testingPolicy;
-    college.testing.policy = sourced(facts.testingPolicy, { status: facts.testingStatus ?? "reported", source: sourceFor("testingPolicy") });
+    college.testing.policy = manualSource(facts.testingPolicy, { status: facts.testingStatus ?? "reported", source: sourceFor("testingPolicy") });
+    college.testing.context = review.fields?.testingPolicy?.note ?? college.testing.context;
+  }
+  if (facts.internationalAcceptance) {
+    const value = facts.internationalAcceptance.value ?? (facts.internationalAcceptance.applicants && facts.internationalAcceptance.admitted
+      ? Math.round((facts.internationalAcceptance.admitted / facts.internationalAcceptance.applicants) * 100000) / 1000
+      : null);
+    college.admissions.internationalAcceptanceRate = rateFact(value, "international", {
+      status: facts.internationalAcceptance.status ?? (value == null ? "not_published" : "calculated"),
+      source: facts.internationalAcceptance.source ?? sourceFor("internationalAdmission"),
+      dataYear: facts.internationalAcceptance.dataYear,
+      reviewedAt: manualReviewedAt,
+      applicants: facts.internationalAcceptance.applicants,
+      admitted: facts.internationalAcceptance.admitted,
+      note: facts.internationalAcceptance.note
+    });
   }
   if (facts.englishMinimums) {
     college.englishProficiency = Object.entries(facts.englishMinimums).map(([test, minimum]) => ({
       test,
-      accepted: sourced(true, { status: "reported", source: sourceFor("englishProficiency") }),
-      minimumScore: sourced(minimum, { status: "reported", source: sourceFor("englishProficiency") }),
+      accepted: manualSource(true, { status: "reported", source: sourceFor("englishProficiency") }),
+      minimumScore: manualSource(minimum, { status: "reported", source: sourceFor("englishProficiency") }),
       waiverNote: review.fields?.englishProficiency?.note ?? null
     }));
     college.englishTests = Object.keys(facts.englishMinimums);
@@ -346,13 +392,13 @@ function applyManualFacts(college, review) {
     college.applicationPlans = [...new Set([...college.applicationPlans, ...facts.plans.map((plan) => plan.kind)])];
     const reviewedPlans = facts.plans.map((plan) => ({
       code: plan.kind,
-      name: plan.kind === "ED" ? "Early Decision" : plan.kind === "EA" ? "Early Action" : plan.kind === "Rolling" ? "Rolling admission" : plan.kind,
+      name: plan.name ?? (plan.kind === "ED" ? "Early Decision" : plan.kind === "EA" ? "Early Action" : plan.kind === "RD" ? "Regular Decision" : plan.kind === "Rolling" ? "Rolling admission" : plan.kind),
       binding: Boolean(plan.binding),
-      restrictive: false,
-      explanation: plan.kind === "ED" ? "Binding: enroll if admitted and the aid offer is workable." : plan.kind === "Rolling" ? "Applications are reviewed as files become complete." : "Nonbinding early application.",
-      source: sourced(plan.kind, { status: facts.planStatus ?? "reported", source: sourceFor("applicationPlansAndDeadlines") })
+      restrictive: Boolean(plan.restrictive),
+      explanation: plan.explanation ?? (plan.kind === "ED" ? "Binding: enroll if admitted and the aid offer is workable." : plan.kind === "Rolling" ? "Applications are reviewed as files become complete." : "Nonbinding application plan."),
+      source: manualSource(plan.kind, { status: plan.status ?? facts.planStatus ?? "reported", source: plan.source ?? sourceFor("applicationPlansAndDeadlines"), cycle: plan.cycle })
     }));
-    const deadlines = facts.plans.filter((plan) => plan.deadline).map((plan) => ({ id: `${college.slug}:${plan.kind.toLowerCase()}:application`, plan: plan.kind, kind: "application", label: `${plan.kind} application`, date: sourced(plan.deadline, { status: facts.planStatus ?? "reported", source: sourceFor("applicationPlansAndDeadlines") }) }));
+    const deadlines = facts.plans.filter((plan) => plan.deadline).map((plan) => ({ id: `${college.slug}:${plan.kind.toLowerCase()}:application`, plan: plan.kind, kind: "application", label: `${plan.kind} application`, date: manualSource(plan.deadline, { status: plan.status ?? facts.planStatus ?? "reported", source: plan.source ?? sourceFor("applicationPlansAndDeadlines"), cycle: plan.cycle }) }));
     college.applicationRequirements = { ...requirements, plans: reviewedPlans };
     college.deadlines = deadlines;
   }
@@ -361,7 +407,7 @@ function applyManualFacts(college, review) {
       ...(college.applicationRequirements ?? requirements),
       platforms: facts.platforms.map((platform) => ({
         name: platform,
-        source: sourced(platform, { status: "reported", source: sourceFor("applicationRequirements") })
+        source: manualSource(platform, { status: "reported", source: facts.platformSource ?? sourceFor("applicationRequirements") })
       }))
     };
   }
@@ -371,19 +417,52 @@ function applyManualFacts(college, review) {
       ...current,
       fee: {
         ...current.fee,
-        amount: sourced(facts.applicationFee, { status: "reported", source: sourceFor("applicationRequirements") })
+        amount: manualSource(facts.applicationFee, { status: "reported", source: facts.applicationFeeSource ?? sourceFor("applicationRequirements") })
       }
     };
   }
-  if (review.fields?.applicationRequirements?.note) {
+  if (facts.internationalApplicationFee !== undefined || facts.feeWaiverRoute !== undefined) {
     const current = college.applicationRequirements ?? requirements;
     college.applicationRequirements = {
       ...current,
-      specialRequirements: sourced(review.fields.applicationRequirements.note, { status: review.fields.applicationRequirements.status === "previous_cycle" ? "previous_cycle" : "reported", source: sourceFor("applicationRequirements") })
+      fee: {
+        ...current.fee,
+        internationalFee: manualSource(facts.internationalApplicationFee ?? null, { status: facts.internationalApplicationFeeStatus ?? "reported", source: facts.applicationFeeSource ?? sourceFor("applicationRequirements") }),
+        waiverRoute: manualSource(facts.feeWaiverRoute ?? null, { status: facts.feeWaiverStatus ?? "reported", source: facts.feeWaiverSource ?? sourceFor("applicationRequirements") })
+      }
+    };
+  }
+  if (facts.requirements) {
+    const current = college.applicationRequirements ?? requirements;
+    college.applicationRequirements = { ...current };
+    for (const key of ["recommendations", "schoolForms", "transcripts", "midyearReport", "finalReport", "supplements", "interviews", "portfolio", "specialRequirements"]) {
+      if (!(key in facts.requirements)) continue;
+      const item = facts.requirements[key];
+      const value = item && typeof item === "object" && "value" in item ? item.value : item;
+      const status = item && typeof item === "object" && item.status ? item.status : value == null ? "not_published" : "reported";
+      college.applicationRequirements[key] = manualSource(value, { status, source: item?.source ?? sourceFor("applicationRequirements"), note: item?.note });
+    }
+  }
+  if (facts.scholarships?.length) {
+    college.scholarships = facts.scholarships.map((scholarship) => ({
+      name: scholarship.name,
+      amount: scholarship.amount ?? null,
+      applicationMethod: scholarship.applicationMethod ?? null,
+      requirements: scholarship.requirements ?? null,
+      restrictions: scholarship.restrictions ?? null,
+      notes: scholarship.notes ?? null,
+      source: manualSource(scholarship.name, { status: scholarship.status ?? "reported", source: scholarship.source ?? sourceFor("scholarships") })
+    }));
+  }
+  if (review.fields?.applicationRequirements?.note && !("specialRequirements" in (facts.requirements ?? {}))) {
+    const current = college.applicationRequirements ?? requirements;
+    college.applicationRequirements = {
+      ...current,
+      specialRequirements: manualSource(review.fields.applicationRequirements.note, { status: review.fields.applicationRequirements.status === "previous_cycle" ? "previous_cycle" : "reported", source: sourceFor("applicationRequirements") })
     };
   }
   if (review.fields?.scholarships && college.scholarships?.length) {
-    college.scholarships = college.scholarships.map((scholarship) => ({ ...scholarship, source: sourced(scholarship.name, { status: "reported", source: sourceFor("scholarships") }) }));
+    college.scholarships = college.scholarships.map((scholarship) => ({ ...scholarship, source: manualSource(scholarship.name, { status: "reported", source: sourceFor("scholarships") }) }));
   }
   return college;
 }
@@ -397,16 +476,17 @@ function applicationPlans(earlyPlan, ed2) {
   const text = `${clean(earlyPlan)} ${clean(ed2)}`.toUpperCase();
   return ["REA", "SCEA", "ED2", "ED", "EA"].filter((plan) => text.includes(plan));
 }
-function sourced(value, { source = null, dataYear = null, rawValue = null, status } = {}) {
+function sourced(value, { source = null, dataYear = null, cycle = null, rawValue = null, status, note = null, reviewedAt: factReviewedAt = reviewedAt } = {}) {
   return {
     value,
     status: status ?? (value == null ? "unreviewed" : "reported"),
     sourceUrl: /^https?:\/\//i.test(source ?? "") ? source : null,
     sourceLabel: source && !/^https?:\/\//i.test(source) ? source : null,
     dataYear,
-    cycle: null,
-    reviewedAt,
-    rawValue
+    cycle,
+    reviewedAt: factReviewedAt,
+    rawValue,
+    note
   };
 }
 function rateFact(value, audience, options = {}) { return { ...sourced(value, options), audience, applicants: options.applicants ?? null, admitted: options.admitted ?? null }; }
@@ -450,7 +530,7 @@ function buildTestingProfile(values) {
 }
 
 function buildScholarships({ scholarshipInfo, scholarshipAmount, scholarshipMethod, scholarshipNotes }) {
-  if (!scholarshipInfo && !scholarshipAmount && !scholarshipMethod && !scholarshipNotes) return [];
+  if (!scholarshipInfo && !scholarshipAmount) return [];
   const leadingName = scholarshipInfo?.split(/[:;\n]|\s[-–—]\s/)[0]?.trim();
   return [{
     name: leadingName && leadingName.length <= 100 ? leadingName : "Largest listed merit scholarship",
@@ -546,7 +626,7 @@ function summaryFor({ name, location, control, costOfAttendance, acceptanceRate,
   const facts = [];
   if (control !== "Unknown") facts.push(`${control.toLowerCase()} institution`);
   if (location !== "Location not listed") facts.push(`in ${location}`);
-  let text = `${name} is ${facts.length ? `a ${facts.join(" ")}` : "included in the BD2US research catalog"}.`;
+  let text = `${name} is ${facts.length ? `a ${facts.join(" ")}` : "included in the BD2US college list"}.`;
   if (costOfAttendance != null) text += ` The listed annual cost before aid is about ${usd(costOfAttendance)}.`;
   if (internationalAidPercent != null) text += ` It reports aid for ${formatPercent(internationalAidPercent)} of international students.`;
   else if (acceptanceRate != null) text += ` Its overall acceptance rate is ${formatPercent(acceptanceRate)}, which is context rather than a personal probability.`;

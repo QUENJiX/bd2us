@@ -3,7 +3,7 @@ import { BudgetEstimator } from "@/components/budget-estimator";
 import { CollegeExplorer } from "@/components/college-explorer";
 import { JourneyRail } from "@/components/journey-rail";
 import { colleges, verifiedOn } from "@/lib/content";
-import { getPublishedColleges } from "@/lib/public-content";
+import { getCollegeExplorerIndex } from "@/lib/public-content";
 
 export const metadata = {
   title: "College List",
@@ -11,7 +11,7 @@ export const metadata = {
 };
 
 export default async function CollegesPage() {
-  const publicColleges = await getPublishedColleges();
+  const publicColleges = await getCollegeExplorerIndex();
   return (
     <main id="main-content">
       <section className="catalog-hero">

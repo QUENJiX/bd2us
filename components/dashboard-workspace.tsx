@@ -7,6 +7,7 @@ import { AuthPanel } from "@/components/auth-panel";
 import { ActionButton, Surface, Tag } from "@/components/ui";
 import { colleges, defaultProfile, roadmapTasks } from "@/lib/content";
 import { markWorkspaceMerged, readWorkspaceMeta, touchDeadline, touchProfile } from "@/lib/local-workspace";
+import { deadlineKey, mergeDeadlineRows } from "@/lib/workspace-merge.mjs";
 import { getBrowserSupabase } from "@/lib/supabase/browser";
 import type { StudentProfile } from "@/lib/types";
 
@@ -99,10 +100,11 @@ export function DashboardWorkspace() {
 
       const deadlineResult = await supabase.from("user_deadlines").select("id,title,due_at,updated_at,deleted_at").eq("user_id", data.user.id);
       const remoteDeadlines = deadlineResult.error ? (await supabase.from("user_deadlines").select("id,title,due_at,created_at").eq("user_id", data.user.id)).data ?? [] : deadlineResult.data ?? [];
-      const mergedDeadlines = mergeDeadlines(localDeadlines, remoteDeadlines.map((item) => ({ id: item.id, title: item.title, dueAt: item.due_at.slice(0, 10), updatedAt: "updated_at" in item ? String(item.updated_at) : "created_at" in item ? String(item.created_at) : now, deletedAt: "deleted_at" in item ? item.deleted_at : null })));
-      if (mergedDeadlines.length) await supabase.from("user_deadlines").upsert(mergedDeadlines.map((item) => ({ id: item.id, user_id: data.user!.id, title: item.title, due_at: item.dueAt, stable_key: deadlineKey(item), updated_at: item.updatedAt ?? now, deleted_at: item.deletedAt ?? null })));
-      setDeadlines(mergedDeadlines);
-      writeLocal(keys.deadlines, mergedDeadlines);
+      const mergedDeadlineRows = mergeDeadlineRows(localDeadlines, meta.deadlines, remoteDeadlines.map((item) => ({ id: item.id, title: item.title, dueAt: item.due_at.slice(0, 10), updatedAt: "updated_at" in item ? String(item.updated_at) : "created_at" in item ? String(item.created_at) : now, deletedAt: "deleted_at" in item ? item.deleted_at : null })), now);
+      if (mergedDeadlineRows.length) await supabase.from("user_deadlines").upsert(mergedDeadlineRows.map((item) => ({ id: item.id, user_id: data.user!.id, title: item.title, due_at: item.dueAt, stable_key: deadlineKey(item), updated_at: item.updatedAt, deleted_at: item.deletedAt })));
+      const activeDeadlines = mergedDeadlineRows.filter((item) => !item.deletedAt);
+      setDeadlines(activeDeadlines);
+      writeLocal(keys.deadlines, activeDeadlines);
 
       const { data: remoteReading } = await supabase.from("user_reading_state").select("content_type,content_slug,bookmarked,completed,updated_at,deleted_at").eq("user_id", data.user.id);
       const reading = mergeReading(localBookmarks, localCompletedReading, meta.reading, remoteReading ?? [], now);
@@ -214,21 +216,6 @@ function readLocal<T>(key: string, fallback: T): T {
   try { return JSON.parse(window.localStorage.getItem(key) ?? JSON.stringify(fallback)); } catch { return fallback; }
 }
 function writeLocal(key: string, value: unknown) { window.localStorage.setItem(key, JSON.stringify(value)); }
-function mergeDeadlines(left: Deadline[], right: Deadline[]) {
-  const byId = new Map<string, Deadline>();
-  for (const item of [...left, ...right]) {
-    const current = byId.get(item.id);
-    if (!current || (item.updatedAt ?? "1970") >= (current.updatedAt ?? "1970")) byId.set(item.id, item);
-  }
-  const byMeaning = new Map<string, Deadline>();
-  for (const item of byId.values()) {
-    const key = deadlineKey(item);
-    const current = byMeaning.get(key);
-    if (!current || (item.updatedAt ?? "1970") >= (current.updatedAt ?? "1970")) byMeaning.set(key, item);
-  }
-  return [...byMeaning.values()].filter((item) => !item.deletedAt).sort((a, b) => a.dueAt.localeCompare(b.dueAt));
-}
-function deadlineKey(item: Pick<Deadline, "title" | "dueAt">) { return `${item.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}:${item.dueAt}`; }
 function titleBucket(value: string): CollegeBucket {
   const normalized = value.toLowerCase();
   return normalized === "shortlisted" ? "Shortlisted" : normalized === "applying" ? "Applying" : normalized === "submitted" ? "Submitted" : normalized === "decision" ? "Decision" : "Researching";

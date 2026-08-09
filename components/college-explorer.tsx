@@ -178,7 +178,7 @@ export function CollegeExplorer({ colleges }: { colleges: College[] }) {
         </div>
         <div className="filter-meta">
           <div>
-            <strong>{filtered.length.toLocaleString()}</strong> results {query ? "across the full catalog" : `in ${groupLabel(group)}`}
+            <strong>{filtered.length.toLocaleString()}</strong> {filtered.length === 1 ? "result" : "results"} {query ? "across the full catalog" : `in ${groupLabel(group)}`}
             {activeFilterCount ? <button type="button" onClick={clearFilters}>Clear {activeFilterCount} filters</button> : null}
           </div>
           <div className="view-controls" aria-label="Explorer display">

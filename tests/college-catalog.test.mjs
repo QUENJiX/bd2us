@@ -69,10 +69,43 @@ test("generated aliases are clean, unique, and never contain stale brackets", ()
   }
 });
 
+test("applicant-facing catalog contains no source placeholders or paid-sheet prompts", () => {
+  const serialized = JSON.stringify(catalog.colleges);
+  assert.doesNotMatch(serialized, /coming soon|premium|patreon/i);
+});
+
+test("established short profile slugs remain canonical and long forms remain aliases", () => {
+  const preserved = new Map([
+    ["Massachusetts Institute of Technology (MIT)", "mit"], ["Harvard University", "harvard"],
+    ["Yale University", "yale"], ["Princeton University", "princeton"],
+    ["Dartmouth College", "dartmouth"], ["Amherst College", "amherst"],
+    ["Bowdoin College", "bowdoin"], ["Brown University", "brown"],
+    ["University of Notre Dame", "notre-dame"], ["Stanford University", "stanford"],
+    ["University of Rochester", "rochester"], ["University of Southern California", "usc"]
+  ]);
+  for (const [name, slug] of preserved) {
+    const college = catalog.colleges.find((item) => item.name === name);
+    assert.equal(college?.slug, slug);
+    assert.ok(college?.slugAliases.length > 0);
+  }
+});
+
 test("international rates remain unreviewed when neither a published rate nor official source is attached", () => {
+  const adelphi = catalog.colleges.find((college) => college.name === "Adelphi University");
+  assert.equal(adelphi.admissions.internationalAcceptanceRate.value, null);
+  assert.equal(adelphi.admissions.internationalAcceptanceRate.status, "unreviewed");
+});
+
+test("calculated international rates retain official counts, year, source, and review date", () => {
   const mit = catalog.colleges.find((college) => college.name === "Massachusetts Institute of Technology (MIT)");
-  assert.equal(mit.admissions.internationalAcceptanceRate.value, null);
-  assert.equal(mit.admissions.internationalAcceptanceRate.status, "unreviewed");
+  const rate = mit.admissions.internationalAcceptanceRate;
+  assert.equal(rate.value, 1.964);
+  assert.equal(rate.status, "calculated");
+  assert.equal(rate.applicants, 6926);
+  assert.equal(rate.admitted, 136);
+  assert.equal(rate.dataYear, "Class of 2029");
+  assert.equal(rate.reviewedAt, "2026-08-09");
+  assert.match(rate.sourceUrl, /^https:\/\/mitadmissions\.org\//);
 });
 
 test("acceptance rates are described as context, not personal odds", () => {

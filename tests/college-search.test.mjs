@@ -8,7 +8,11 @@ const colleges = JSON.parse(readFileSync(new URL("../lib/college-catalog.generat
 test("exact acronyms resolve before fact text and unrelated substrings", () => {
   const results = searchColleges(colleges, "MIT");
   assert.equal(results[0].name, "Massachusetts Institute of Technology (MIT)");
-  assert.ok(results.every((college) => !college.researchHighlights.join(" ").toLowerCase().includes("submitted") || college.name.includes("MIT")));
+  assert.ok(results.length < 10, `MIT returned ${results.length} results`);
+  assert.ok(results.every((college) => {
+    const names = [college.name, college.shortName, ...(college.aliases ?? [])].join(" ").toLowerCase();
+    return names.split(/[^a-z0-9]+/).includes("mit");
+  }));
 });
 
 test("college names containing Massachusetts outrank colleges merely located there", () => {

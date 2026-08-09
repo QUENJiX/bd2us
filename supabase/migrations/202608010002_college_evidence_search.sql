@@ -23,7 +23,7 @@ alter table public.college_facts
 
 alter table public.college_facts drop constraint if exists college_facts_fact_status_check;
 alter table public.college_facts add constraint college_facts_fact_status_check
-  check (fact_status in ('reported', 'calculated', 'not_published', 'unreviewed'));
+  check (fact_status in ('reported', 'calculated', 'not_published', 'previous_cycle', 'unreviewed'));
 
 alter table public.college_sources
   add column if not exists source_scope text not null default 'official',
@@ -37,7 +37,7 @@ create unique index if not exists college_sources_college_url_idx on public.coll
 
 comment on column public.colleges.ranking_category is 'Explicit sorting group. University and liberal-arts ranks are never compared directly.';
 comment on column public.colleges.official_review_status is 'Outcome of the college-specific official-source review, including reviewed records where a fact is not published.';
-comment on column public.college_facts.fact_status is 'Evidence status: reported, BD2US calculated, not published after review, or unreviewed.';
+comment on column public.college_facts.fact_status is 'Evidence status: reported, calculated from official counts, not published after review, previous-cycle reference, or unreviewed.';
 comment on column public.college_facts.calculation_method is 'Required explanation for calculated facts, such as admitted divided by applicants.';
 
 grant select on table public.colleges, public.college_facts, public.college_sources to anon, authenticated;
@@ -64,16 +64,16 @@ as $$
           setweight(to_tsvector('english', coalesce(body::text, '')), 'C'),
           websearch_to_tsquery('english', search_query)
         ) * 4 +
-        greatest(similarity(lower(title), lower(search_query)) * 2, similarity(lower(array_to_string(aliases, ' ')), lower(search_query))) +
-        case when lower(title) = lower(search_query) then 90 when lower(title) like lower(search_query) || '%' then 52 when lower(title) like '%' || lower(search_query) || '%' then 32 else 0 end
+        case when length(i.q) >= 4 then greatest(similarity(lower(title), i.q) * 2, similarity(lower(array_to_string(aliases, ' ')), i.q)) else 0 end +
+        case when lower(title) = i.q then 90 when lower(title) like i.q || '%' then 52 when (length(i.q) >= 4 and lower(title) like '%' || i.q || '%') or (' ' || lower(regexp_replace(title, '[^[:alnum:]]+', ' ', 'g')) || ' ') like '% ' || i.q || ' %' then 32 else 0 end
       )::real as rank
-    from public.content_entries
+    from public.content_entries cross join input i
     where status = 'published' and (search_types is null or content_type = any(search_types))
   ),
   task_matches as (
     select 'tasks'::text, title, description, '/roadmap#' || id,
-      (similarity(lower(title), lower(search_query)) * 10 + case when lower(title) = lower(search_query) then 90 when lower(title) like lower(search_query) || '%' then 52 when lower(title) like '%' || lower(search_query) || '%' then 32 when lower(description) like '%' || lower(search_query) || '%' then 10 else 0 end)::real
-    from public.roadmap_tasks
+      ((case when length(i.q) >= 4 then similarity(lower(title), i.q) * 10 else 0 end) + case when lower(title) = i.q then 90 when lower(title) like i.q || '%' then 52 when (length(i.q) >= 4 and lower(title) like '%' || i.q || '%') or (' ' || lower(regexp_replace(title, '[^[:alnum:]]+', ' ', 'g')) || ' ') like '% ' || i.q || ' %' then 32 when (length(i.q) >= 4 and lower(description) like '%' || i.q || '%') or (' ' || lower(regexp_replace(description, '[^[:alnum:]]+', ' ', 'g')) || ' ') like '% ' || i.q || ' %' then 10 else 0 end)::real
+    from public.roadmap_tasks cross join input i
     where status = 'published' and (search_types is null or 'tasks' = any(search_types))
   ),
   college_matches as (
@@ -82,11 +82,11 @@ as $$
         when lower(c.name) = i.q then 1000
         when exists (select 1 from unnest(c.aliases || array[c.short_name]) alias where lower(alias) = i.q) then 950
         when lower(c.name) like i.q || '%' then 850
-        when lower(c.name) like '%' || i.q || '%' then 750
+        when (length(i.q) >= 4 and lower(c.name) like '%' || i.q || '%') or (' ' || lower(regexp_replace(c.name, '[^[:alnum:]]+', ' ', 'g')) || ' ') like '% ' || i.q || ' %' then 750
         when exists (select 1 from unnest(c.aliases || array[c.short_name]) alias where lower(alias) like i.q || '%') then 650
-        when lower(concat_ws(' ', c.city, c.state, c.location, c.region)) like '%' || i.q || '%' then 350
-        when lower(concat_ws(' ', c.summary, c.special_note, c.research_highlight_override)) like '%' || i.q || '%' then 150
-        else greatest(similarity(lower(c.name), i.q), (select coalesce(max(similarity(lower(alias), i.q)), 0) from unnest(c.aliases || array[c.short_name]) alias)) * 100
+        when (length(i.q) >= 4 and lower(concat_ws(' ', c.city, c.state, c.location, c.region)) like '%' || i.q || '%') or (' ' || lower(regexp_replace(concat_ws(' ', c.city, c.state, c.location, c.region), '[^[:alnum:]]+', ' ', 'g')) || ' ') like '% ' || i.q || ' %' then 350
+        when (length(i.q) >= 4 and lower(concat_ws(' ', c.summary, c.special_note, c.research_highlight_override)) like '%' || i.q || '%') or (' ' || lower(regexp_replace(concat_ws(' ', c.summary, c.special_note, c.research_highlight_override), '[^[:alnum:]]+', ' ', 'g')) || ' ') like '% ' || i.q || ' %' then 150
+        else case when length(i.q) >= 4 then greatest(similarity(lower(c.name), i.q), (select coalesce(max(similarity(lower(alias), i.q)), 0) from unnest(c.aliases || array[c.short_name]) alias)) * 100 else 0 end
       end)::real
     from public.colleges c cross join input i
     where c.status = 'published' and (search_types is null or 'colleges' = any(search_types))

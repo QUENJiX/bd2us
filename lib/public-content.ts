@@ -1,4 +1,4 @@
-import type { College, ContentBlock, GuideEntry, Source } from "@/lib/types";
+import type { College, ContentBlock, GuideEntry, Source, SourcedFact } from "@/lib/types";
 import { colleges, getCollege, getGuide } from "@/lib/content";
 import { getServiceSupabase } from "@/lib/supabase/server";
 
@@ -40,6 +40,69 @@ export async function getPublishedCollege(slug: string): Promise<College | undef
 export async function getPublishedColleges(): Promise<College[]> {
   const overrides = await getCollegeOverrides();
   return colleges.map((college) => mergeCollegeOverride(college, overrides.get(college.slug)));
+}
+
+export async function getCollegeExplorerIndex(): Promise<College[]> {
+  return (await getPublishedColleges()).map(toExplorerCollege);
+}
+
+function toExplorerCollege(college: College): College {
+  return {
+    slug: college.slug,
+    slugAliases: college.slugAliases,
+    name: college.name,
+    shortName: college.shortName,
+    aliases: college.aliases,
+    location: college.location,
+    city: college.city,
+    state: college.state,
+    region: college.region,
+    type: college.type,
+    rankingCategory: college.rankingCategory,
+    control: college.control,
+    setting: college.setting,
+    enrollmentBand: college.enrollmentBand,
+    aidPolicy: college.aidPolicy,
+    meetsFullNeed: college.meetsFullNeed,
+    meritAid: college.meritAid,
+    testingPolicy: college.testingPolicy,
+    englishTests: college.englishTests,
+    applicationPlans: college.applicationPlans,
+    feeWaiver: college.feeWaiver,
+    themes: college.themes,
+    budgetFit: college.budgetFit,
+    strongLowContributionResearchSignal: college.strongLowContributionResearchSignal,
+    summary: college.summary,
+    source: { label: "Official college profile", url: `/colleges/${college.slug}`, lastVerifiedAt: college.lastVerifiedAt },
+    costOfAttendance: college.costOfAttendance,
+    acceptanceRate: college.acceptanceRate,
+    internationalAidPercent: college.internationalAidPercent,
+    averageInternationalAid: college.averageInternationalAid,
+    specialNote: college.specialNote,
+    admissions: college.admissions ? {
+      overallAcceptanceRate: { ...compactFact(college.admissions.overallAcceptanceRate), audience: "overall" },
+      internationalAcceptanceRate: { ...compactFact(college.admissions.internationalAcceptanceRate), audience: "international" }
+    } : undefined,
+    testing: college.testing ? {
+      policy: compactFact(college.testing.policy),
+      satComposite: college.testing.satComposite ? compactFact(college.testing.satComposite) : undefined,
+      satMathRange: college.testing.satMathRange ? compactFact(college.testing.satMathRange) : undefined,
+      satEbrwRange: college.testing.satEbrwRange ? compactFact(college.testing.satEbrwRange) : undefined
+    } : undefined,
+    englishProficiency: college.englishProficiency?.map((item) => ({ test: item.test, minimumScore: compactFact(item.minimumScore) })),
+    scholarships: college.scholarships?.map((item) => ({
+      name: item.name,
+      amount: item.amount
+    })),
+    rankings: college.rankings,
+    researchHighlights: college.researchHighlights,
+    lastVerifiedAt: college.lastVerifiedAt,
+    reviewStatus: college.reviewStatus
+  };
+}
+
+function compactFact<T>(fact: SourcedFact<T>): SourcedFact<T> {
+  return { value: fact.value, status: fact.status };
 }
 
 async function getCollegeOverrides() {
@@ -125,7 +188,7 @@ function mergeCollegeOverride(baseline: College, override?: Partial<College>): C
 }
 
 function applyFactOverride(target: Partial<College>, factKey: string, value: unknown) {
-  const directKeys = new Set(["admissions", "testing", "englishProficiency", "scholarships", "rankings", "researchHighlights"]);
+  const directKeys = new Set(["admissions", "testing", "englishProficiency", "scholarships", "rankings", "researchHighlights", "applicationRequirements", "deadlines", "campusContext"]);
   if (directKeys.has(factKey)) {
     (target as Record<string, unknown>)[factKey] = value;
     return;

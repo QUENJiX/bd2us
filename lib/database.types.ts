@@ -97,12 +97,6 @@ export type Database = {
         Update: Partial<Database["public"]["Tables"]["feedback_messages"]["Row"]>;
         Relationships: [];
       };
-      search_queries: {
-        Row: { id: string; query: string; result_count: number; created_at: string };
-        Insert: Omit<Database["public"]["Tables"]["search_queries"]["Row"], "id" | "created_at">;
-        Update: Partial<Database["public"]["Tables"]["search_queries"]["Row"]>;
-        Relationships: [];
-      };
     };
     Views: Record<string, never>;
     Functions: {
