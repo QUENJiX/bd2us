@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 
 const catalog = JSON.parse(readFileSync(new URL("../lib/college-catalog.generated.json", import.meta.url), "utf8"));
+const launchScope = JSON.parse(readFileSync(new URL("../data/college-launch-scope.json", import.meta.url), "utf8"));
 
 test("college catalog contains 678 unique, publishable records", () => {
   assert.equal(catalog.count, 678);
@@ -49,6 +50,18 @@ test("parser extracts cost, aid, acceptance, and special scholarship notes", () 
   assert.equal(adelphi.admissions.overallAcceptanceRate.admitted, 13263);
   assert.match(adelphi.admissions.overallAcceptanceRate.sourceUrl, /nces\.ed\.gov/);
   assert.match(adelphi.specialNote, /YouAreWelcomeHere/);
+});
+
+test("detailed research is limited to the 20-university and 10-LAC launch scope", () => {
+  assert.equal(launchScope.universities.length, 20);
+  assert.equal(launchScope.liberalArtsColleges.length, 10);
+  const scopedNames = new Set([...launchScope.universities, ...launchScope.liberalArtsColleges].map((college) => college.name));
+  const detailed = catalog.colleges.filter((college) => college.profileTier === "detailed");
+  assert.ok(detailed.length >= 4);
+  assert.ok(detailed.every((college) => scopedNames.has(college.name)));
+  for (const slug of ["mit", "stanford", "harvard", "princeton"]) {
+    assert.equal(catalog.colleges.find((college) => college.slug === slug)?.profileTier, "detailed");
+  }
 });
 
 test("Excel percentage decimals and SAT ranges are converted without changing their meaning", () => {

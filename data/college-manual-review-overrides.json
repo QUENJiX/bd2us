@@ -46,6 +46,132 @@
       }
     },
     {
+      "name": "Stanford University",
+      "reviewedAt": "2026-08-09",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://admission.stanford.edu/apply/international/", "note": "Stanford meets demonstrated need for admitted international students who request aid when applying. Asking for aid is considered in international admission, and students who say they will not seek aid generally cannot apply for Stanford need-based aid later." },
+        "scholarships": { "status": "reported", "url": "https://financialaid.stanford.edu/undergrad/types/index.html", "note": "Stanford undergraduate institutional scholarships are need-based. No separate application is required for named Stanford scholarship funds; Stanford does not offer general merit scholarships outside limited athletic awards." },
+        "internationalAdmission": { "status": "not_published", "url": "https://irds.stanford.edu/data-findings/cds", "note": "Stanford publishes overall admission totals but its reviewed official Common Data Set page does not provide international applicant and admit counts needed for a reliable international admit rate." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admission.stanford.edu/apply/first-year/index.html", "note": "Stanford's current first-year page lists Restrictive Early Action on November 1 and Regular Decision on January 5. Optional arts applicants have earlier application and portfolio dates." },
+        "applicationRequirements": { "status": "reported", "url": "https://admission.stanford.edu/apply/first-year/index.html", "note": "The Common Application, $100 fee or waiver, SAT or ACT, School Report and counselor letter, official academic records, midyear transcript, and two academic teacher recommendations are required." },
+        "testingPolicy": { "status": "reported", "url": "https://admission.stanford.edu/apply/first-year/testing.html", "note": "Stanford requires SAT or ACT, accepts self-reported scores for review, verifies scores after enrollment, and superscores SAT sections and ACT results. The Class of 2029 submitted-score middle 50% was 1520–1570 SAT and 34–36 ACT." },
+        "englishProficiency": { "status": "reported", "url": "https://admission.stanford.edu/apply/international/", "note": "Stanford does not require an English-proficiency exam or publish minimum scores. Applicants may self-report an English exam; fluency in English is required." }
+      },
+      "facts": {
+        "internationalAcceptance": { "status": "not_published", "value": null, "dataYear": "2025–26 Common Data Set review", "note": "Stanford does not publish the citizenship-specific applicant and admit counts needed to calculate this rate." },
+        "testingPolicy": "SAT or ACT required; self-reporting permitted; SAT and ACT superscoring used",
+        "englishMinimums": { "English proficiency exam": "Not required" },
+        "plans": [
+          { "kind": "REA", "name": "Restrictive Early Action", "binding": false, "restrictive": true, "deadline": "November 1", "status": "reported", "cycle": "Fall 2027", "explanation": "Nonbinding, but Stanford restricts other private early applications; review the official exceptions before applying." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 5", "status": "reported", "cycle": "Fall 2027", "explanation": "The standard nonbinding application round." }
+        ],
+        "platforms": ["Common Application"],
+        "applicationFee": 100,
+        "internationalApplicationFee": 100,
+        "applicationFeeSource": "https://admission.stanford.edu/apply/first-year/fee.html",
+        "feeWaiverRoute": "Request a Common Application fee waiver or use Stanford's application fee-waiver process when the fee would cause hardship.",
+        "feeWaiverSource": "https://admission.stanford.edu/apply/first-year/fee.html",
+        "requirements": {
+          "recommendations": "Two recommendations from academic teachers.",
+          "schoolForms": "School Report and counselor letter of recommendation.",
+          "transcripts": "Official transcript or academic results sent by a school official; international predictions and external results are required when available.",
+          "midyearReport": "Midyear transcript due February 15.",
+          "finalReport": { "value": null, "status": "not_published" },
+          "supplements": "Stanford-specific questions are completed through the Common Application.",
+          "interviews": { "value": "An optional alumni interview may be offered depending on location and availability.", "source": "https://admission.stanford.edu/apply/first-year/interview.html" },
+          "portfolio": { "value": "Optional Arts Portfolio for Art Practice, Dance, Music, or Theater and Performance Studies; earlier deadlines apply.", "source": "https://admission.stanford.edu/apply/first-year/arts.html" },
+          "specialRequirements": "Applicants may apply to Stanford no more than three times across first-year and transfer admission. British-system applicants must provide GCSE results and predicted A-Level marks through a school official."
+        },
+        "scholarships": [
+          { "name": "Stanford University Scholarship", "amount": "Need-based grant up to demonstrated need", "applicationMethod": "Request financial aid when applying and complete the required international financial-aid forms", "requirements": "Demonstrated financial need; available to admitted international applicants who requested aid during admission", "notes": "No separate application for named Stanford funds; awards are need-based rather than general merit awards." }
+        ]
+      }
+    },
+    {
+      "name": "Harvard University",
+      "reviewedAt": "2026-08-09",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://college.harvard.edu/financial-aid/how-aid-works", "note": "Harvard is need-blind for international applicants, gives international students the same need-based aid consideration as U.S. students, and meets 100% of demonstrated need." },
+        "scholarships": { "status": "reported", "url": "https://college.harvard.edu/financial-aid/how-aid-works/types-aid", "note": "Harvard College scholarships are need-based grants, not merit awards, and are designed to cover demonstrated need after the family contribution and other resources are considered." },
+        "internationalAdmission": { "status": "not_published", "url": "https://oira.harvard.edu/common-data-set", "note": "Harvard's reviewed official institutional information does not publish the citizenship-specific applicant and admit counts needed for a reliable international admit rate." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://college.harvard.edu/admissions/apply/first-year-applicants", "note": "Harvard lists Restrictive Early Action on November 1 and Regular Decision on January 1, with decisions in mid-December and by the end of March respectively." },
+        "applicationRequirements": { "status": "reported", "url": "https://college.harvard.edu/admissions/apply/application-requirements", "note": "The Common Application, Harvard questions, $90 fee or waiver, testing, School Report and transcript, two teacher reports, midyear report, and final report for enrolling students are listed." },
+        "testingPolicy": { "status": "reported", "url": "https://college.harvard.edu/admissions/apply/international-applicants", "note": "Harvard requires SAT or ACT. In exceptional access cases it accepts specified AP, IB, GCSE/A-Level, or national leaving-exam results or predictions. Applicants may self-report scores." },
+        "englishProficiency": { "status": "reported", "url": "https://college.harvard.edu/admissions/apply/international-applicants", "note": "Harvard does not require an English-proficiency exam for first-year applicants and publishes no minimum. Applicants may submit one voluntarily." }
+      },
+      "facts": {
+        "internationalAcceptance": { "status": "not_published", "value": null, "dataYear": "Official institutional-data review", "note": "Harvard does not publish the same-year international application and admission counts needed for this calculation." },
+        "testingPolicy": "SAT or ACT required; approved alternatives accepted only in exceptional access cases; self-reporting permitted",
+        "englishMinimums": { "English proficiency exam": "Not required" },
+        "plans": [
+          { "kind": "REA", "name": "Restrictive Early Action", "binding": false, "restrictive": true, "deadline": "November 1", "status": "reported", "cycle": "Fall 2027", "explanation": "Nonbinding but restrictive; applicants must follow Harvard's rules on other early applications." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 1", "status": "reported", "cycle": "Fall 2027", "explanation": "The standard nonbinding application round." }
+        ],
+        "platforms": ["Common Application"],
+        "applicationFee": 90,
+        "internationalApplicationFee": 90,
+        "applicationFeeSource": "https://college.harvard.edu/admissions/apply/first-year-applicants",
+        "feeWaiverRoute": "Request a fee waiver through the Common Application; Harvard also provides a route when the standard indicators do not describe the family's hardship.",
+        "feeWaiverSource": "https://college.harvard.edu/admissions/apply/international-applicants",
+        "requirements": {
+          "recommendations": "Two teacher recommendations.",
+          "schoolForms": "School Report including counselor letter.",
+          "transcripts": "High-school transcript; translated materials must include the original and identify the translator.",
+          "midyearReport": "Midyear School Report after first-semester grades become available.",
+          "finalReport": "Final School Report for admitted students who enroll.",
+          "supplements": "Harvard College Questions include five required short responses in the Common Application.",
+          "interviews": { "value": "An alumni interview may be offered; Harvard cannot interview everyone and says the absence of an interview does not disadvantage an applicant.", "source": "https://college.harvard.edu/admissions/apply/international-applicants" },
+          "portfolio": { "value": "Optional supplementary materials may be submitted when they represent unusual talent or substantial achievement.", "source": "https://college.harvard.edu/admissions/apply/application-requirements" },
+          "specialRequirements": "SAT or ACT is expected unless an exceptional access barrier makes an approved alternative credential necessary."
+        },
+        "scholarships": [
+          { "name": "Harvard Scholarship", "amount": "Need-based grant meeting demonstrated need", "applicationMethod": "Complete Harvard's financial-aid requirements by the applicable aid deadline", "requirements": "Demonstrated financial need; international students are considered on the same basis as U.S. students", "notes": "Harvard does not award institutional merit aid; scholarship funds do not need to be repaid." }
+        ]
+      }
+    },
+    {
+      "name": "Princeton University",
+      "reviewedAt": "2026-08-09",
+      "fields": {
+        "internationalAid": { "status": "reported", "url": "https://admission.princeton.edu/apply/international-students", "note": "Princeton is need-blind for international applicants, meets full demonstrated need, and provides grant rather than required-loan aid." },
+        "scholarships": { "status": "reported", "url": "https://admission.princeton.edu/cost-aid", "note": "Princeton undergraduate aid is entirely need-based. Princeton does not offer academic or athletic merit scholarships." },
+        "internationalAdmission": { "status": "not_published", "url": "https://ir.princeton.edu/document/556", "note": "Princeton's reviewed official Common Data Set does not publish international applicant and admit counts needed for a reliable international admit rate." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admission.princeton.edu/apply/first-year-application-dates-deadlines", "note": "For Fall 2027, Princeton lists nonbinding Single-Choice Early Action on November 1 and Regular Decision on January 1. SCEA restricts other private U.S. early applications, with official exceptions." },
+        "applicationRequirements": { "status": "reported", "url": "https://admission.princeton.edu/apply/application-checklist", "note": "The Common Application, Princeton questions, graded written paper, School Report, counselor recommendation, transcript, two teacher recommendations, midyear report, and applicable English testing are required." },
+        "testingPolicy": { "status": "reported", "url": "https://admission.princeton.edu/apply/counselors", "note": "Princeton is test-optional for Fall 2027 and will require SAT or ACT again beginning with Fall 2028 entry." },
+        "englishProficiency": { "status": "reported", "url": "https://admission.princeton.edu/apply/application-checklist", "note": "Applicants whose native language is not English and whose school does not teach in English must submit TOEFL, IELTS Academic, Duolingo, or PTE Academic. Princeton does not publish a minimum on the reviewed page." }
+      },
+      "facts": {
+        "internationalAcceptance": { "status": "not_published", "value": null, "dataYear": "2025–26 Common Data Set review", "note": "Princeton does not publish the same-year international application and admission counts needed for this calculation." },
+        "testingPolicy": "Test-optional for Fall 2027; SAT or ACT required again for Fall 2028 entry",
+        "englishMinimums": { "TOEFL": "No minimum published", "IELTS Academic": "No minimum published", "Duolingo": "No minimum published", "PTE Academic": "No minimum published" },
+        "plans": [
+          { "kind": "SCEA", "name": "Single-Choice Early Action", "binding": false, "restrictive": true, "deadline": "November 1", "status": "reported", "cycle": "Fall 2027", "explanation": "Nonbinding but restrictive: no early application to another private U.S. institution, subject to Princeton's listed exceptions." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 1", "status": "reported", "cycle": "Fall 2027", "explanation": "The standard nonbinding application round." }
+        ],
+        "platforms": ["Common Application"],
+        "applicationFee": 70,
+        "internationalApplicationFee": 70,
+        "applicationFeeSource": "https://ir.princeton.edu/document/556",
+        "feeWaiverRoute": "Select the fee-waiver option in the Common Application or use Princeton's specific fee-waiver eligibility route.",
+        "feeWaiverSource": "https://admission.princeton.edu/apply/application-checklist",
+        "requirements": {
+          "recommendations": "Two teacher recommendations from higher-level courses in different core academic areas.",
+          "schoolForms": "School Report and a separate counselor recommendation.",
+          "transcripts": "Official transcript or academic record including available internal grades, external examinations, and predicted or achieved leaving-exam results.",
+          "midyearReport": "Midyear School Report when grades become available.",
+          "finalReport": { "value": "Final senior-year grades are required from admitted students through the final report.", "source": "https://admission.princeton.edu/faqs?page=1" },
+          "supplements": "Princeton-specific Questions and a graded written paper are required.",
+          "interviews": "Optional alumni interview; applicants may opt out without disadvantage, and availability varies.",
+          "portfolio": "Optional Arts Supplement with separate early deadlines.",
+          "specialRequirements": "English testing is required when English is neither the applicant's native language nor the language of instruction."
+        },
+        "scholarships": [
+          { "name": "Princeton Grant", "amount": "Need-based grant meeting demonstrated need", "applicationMethod": "Complete the free Princeton Financial Aid Application and required income documentation", "requirements": "Demonstrated financial need; same policy for international and U.S. applicants", "notes": "No academic or athletic merit scholarships; the basic aid package does not require student loans." }
+        ]
+      }
+    },
+    {
       "name": "Arcadia University",
       "fields": {
         "internationalAid": { "status": "reported", "url": "https://www.arcadia.edu/wp-content/uploads/2025/05/25-EM-International-Students-Guide_DB_Final-1.pdf", "note": "Arcadia's official international guide lists automatic Global Scholarships for admitted international students and additional need-based grants." }

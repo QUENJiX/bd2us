@@ -51,6 +51,7 @@ function toExplorerCollege(college: College): College {
     slug: college.slug,
     slugAliases: college.slugAliases,
     name: college.name,
+    profileTier: college.profileTier,
     shortName: college.shortName,
     aliases: college.aliases,
     location: college.location,
@@ -174,9 +175,14 @@ function validContentBlocks(value: unknown): value is ContentBlock[] {
 
 function mergeCollegeOverride(baseline: College, override?: Partial<College>): College {
   if (!override) return baseline;
+  // Older editorial rows can have empty scalar columns. Empty database values must
+  // never erase a newer, officially sourced local baseline fact.
+  const populatedOverride = Object.fromEntries(
+    Object.entries(override).filter(([, value]) => value !== null && value !== undefined)
+  ) as Partial<College>;
   return {
     ...baseline,
-    ...override,
+    ...populatedOverride,
     admissions: override.admissions ? { ...baseline.admissions, ...override.admissions } as College["admissions"] : baseline.admissions,
     testing: override.testing ? { ...baseline.testing, ...override.testing } as College["testing"] : baseline.testing,
     aliases: override.aliases ?? baseline.aliases,

@@ -11,6 +11,7 @@ const researchLeadsPath = resolve(root, "data/college-research-leads.json");
 const governmentFactsPath = resolve(root, "data/college-government-facts.json");
 const climateFactsPath = resolve(root, "data/college-climate-facts.json");
 const manualReviewPath = resolve(root, "data/college-manual-review-overrides.json");
+const launchScopePath = resolve(root, "data/college-launch-scope.json");
 const outputPath = resolve(root, "lib/college-catalog.generated.json");
 const reviewedAt = "2026-08-01";
 
@@ -33,6 +34,8 @@ const researchLeadByName = new Map(JSON.parse(readFileSync(researchLeadsPath, "u
 const governmentFactById = new Map(JSON.parse(readFileSync(governmentFactsPath, "utf8")).records.map((record) => [record.ipedsId, record]));
 const climateFactById = new Map(JSON.parse(readFileSync(climateFactsPath, "utf8")).records.map((record) => [record.ipedsId, record]));
 const manualReviewByName = new Map(JSON.parse(readFileSync(manualReviewPath, "utf8")).records.map((record) => [record.name, record]));
+const launchScope = JSON.parse(readFileSync(launchScopePath, "utf8"));
+const detailedProfileNames = new Set([...launchScope.universities, ...launchScope.liberalArtsColleges].map((record) => record.name));
 const rankingByName = buildRankingMap(rankingData);
 const lacNames = new Set(rankingData.usNews2026.categoryNames);
 const seenNames = new Set();
@@ -151,6 +154,7 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
     slug,
     slugAliases: [...new Set([legacySlug, generatedSlug].filter((candidate) => candidate !== slug))],
     name,
+    profileTier: "basic",
     shortName: shortNameFor(name, aliases),
     aliases,
     location,
@@ -222,6 +226,7 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
   };
 
   const merged = applyManualFacts(mergeEnrichment(mergeGovernmentFacts(base, governmentFact), enrichment[slug]), manualReviewByName.get(name));
+  merged.profileTier = detailedProfileNames.has(name) && detailedProfileComplete(merged, manualReviewByName.get(name)) ? "detailed" : "basic";
   merged.summary = summaryFor({
     name: merged.name,
     location: merged.location,
@@ -232,6 +237,31 @@ for (let rowNumber = 2; rowNumber <= sheet.rowCount; rowNumber += 1) {
   });
   merged.researchHighlights = researchHighlightsFor(merged);
   colleges.push(merged);
+}
+
+function detailedProfileComplete(college, review) {
+  const allowed = new Set(["reported", "calculated", "not_published", "previous_cycle"]);
+  const validFact = (fact) => fact && allowed.has(fact.status) && fact.reviewedAt && /^https:\/\//.test(fact.sourceUrl ?? "");
+  const collectionComplete = (field, values, factFor) => {
+    if (!values?.length) return review?.fields?.[field]?.status === "not_published";
+    return values.every((value) => validFact(factFor(value)));
+  };
+
+  if (![college.costOfAttendanceFact, college.admissions?.overallAcceptanceRate, college.admissions?.internationalAcceptanceRate, college.testing?.policy].every(validFact)) return false;
+  if (!collectionComplete("englishProficiency", college.englishProficiency, (item) => item.minimumScore)) return false;
+  if (!collectionComplete("scholarships", college.scholarships, (item) => item.source)) return false;
+  if (!collectionComplete("applicationPlansAndDeadlines", college.deadlines, (item) => item.date)) return false;
+
+  const requirements = college.applicationRequirements;
+  if (!requirements) return review?.fields?.applicationRequirements?.status === "not_published";
+  const facts = [
+    ...(requirements.plans ?? []).map((plan) => plan.source),
+    ...["recommendations", "schoolForms", "transcripts", "midyearReport", "finalReport", "supplements", "interviews", "portfolio", "specialRequirements"].map((key) => requirements[key]),
+    requirements.fee?.amount,
+    requirements.fee?.internationalFee,
+    requirements.fee?.waiverRoute
+  ];
+  return facts.every(validFact);
 }
 
 const jsonNames = new Set(descriptionByName.keys());

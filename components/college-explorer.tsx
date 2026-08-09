@@ -264,6 +264,7 @@ function CollegeCard({ college, compared, compareFull, fitReasons, index, rankin
             <p className="eyebrow">{college.location}</p>
             <h2><Link href={`/colleges/${college.slug}`}>{college.name}</Link></h2>
             <p className="college-kind">{[college.control, college.type, college.setting].filter(Boolean).join(" · ")}</p>
+            <p className="college-kind">{college.profileTier === "detailed" ? "Detailed official profile" : "Basic research profile"}</p>
             <p className={getCollegeRanking(college) ? "college-ranking is-ranked" : "college-ranking"}>{ranking}</p>
           </div>
           <button aria-label={`${saved ? "Remove" : "Save"} ${college.name}`} className={saved ? "save-control is-saved" : "save-control"} onClick={() => toggleSaved(college.slug)} type="button">

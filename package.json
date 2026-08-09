@@ -14,6 +14,7 @@
     "generate:college-catalog": "node scripts/generate-college-catalog.mjs",
     "generate:colleges": "npm run generate:college-catalog",
     "generate:college-review-ledger": "node scripts/generate-college-review-ledger.mjs",
+    "generate:college-launch-scope": "node scripts/generate-college-launch-scope.mjs",
     "generate:supabase-seed": "node scripts/generate-supabase-college-seed.mjs",
     "verify:college-launch": "node scripts/verify-college-launch-gate.mjs",
     "generate:content": "npm run generate:legacy-content && npm run generate:college-catalog"

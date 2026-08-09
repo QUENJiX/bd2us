@@ -29,9 +29,10 @@ export default async function CollegePage({ params }: { params: Promise<{ slug: 
         <div className="college-profile-grid">
           <article>
             <header className="college-profile-header">
-              <p className="eyebrow">{college.location} · Information checked {formatDate(college.officialReview?.reviewedAt ?? college.datasetReviewedAt ?? college.lastVerifiedAt)}</p>
+              <p className="eyebrow">{college.location} · {college.profileTier === "detailed" ? "Detailed official profile" : "Basic research profile"} · Information checked {formatDate(college.officialReview?.reviewedAt ?? college.datasetReviewedAt ?? college.lastVerifiedAt)}</p>
               <h1>{college.name}</h1>
               <p className="college-profile-deck">{college.summary}</p>
+              {college.profileTier === "basic" ? <p className="evidence-note">This profile contains basic institutional context. BD2US has not completed its detailed deadline, testing, English-proficiency, and scholarship review for this college.</p> : null}
               <div className="profile-tags">
                 {[college.control, college.type, college.setting, college.enrollmentBand].filter(Boolean).map((item) => <span key={item}>{item}</span>)}
                 {college.aidPolicy !== "Not classified" ? <span>{college.aidPolicy}</span> : null}
@@ -79,7 +80,10 @@ export default async function CollegePage({ params }: { params: Promise<{ slug: 
                 <article>
                   <p className="eyebrow">English proficiency</p>
                   <h3>{college.englishProficiency?.length ? "Reviewed test routes" : "Official review still needed"}</h3>
-                  {college.englishProficiency?.length ? <dl>{college.englishProficiency.map((requirement) => <EvidenceRow key={requirement.test} label={requirement.test} value={requirement.minimumScore.value == null ? "Minimum not published" : `${requirement.minimumScore.value}${requirement.waiverNote ? ` · ${requirement.waiverNote}` : ""}`} />)}</dl> : <p>English-test requirements have not been confirmed here. Check accepted exams, minimum scores, curriculum-based waivers, and whether official scores are required with the application.</p>}
+                  {college.englishProficiency?.length ? <>
+                    <dl>{college.englishProficiency.map((requirement) => <EvidenceRow key={requirement.test} label={requirement.test} value={requirement.minimumScore.value == null ? "Minimum not published" : String(requirement.minimumScore.value)} />)}</dl>
+                    {college.englishProficiency.find((requirement) => requirement.waiverNote)?.waiverNote ? <p className="evidence-note">{college.englishProficiency.find((requirement) => requirement.waiverNote)?.waiverNote}</p> : null}
+                  </> : <p>English-test requirements have not been confirmed here. Check accepted exams, minimum scores, curriculum-based waivers, and whether official scores are required with the application.</p>}
                 </article>
               </div>
               <div className="scholarship-ledger">

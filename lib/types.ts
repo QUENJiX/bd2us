@@ -104,6 +104,7 @@ export type College = {
   slug: string;
   slugAliases?: string[];
   name: string;
+  profileTier?: "detailed" | "basic";
   shortName: string;
   aliases?: string[];
   location: string;

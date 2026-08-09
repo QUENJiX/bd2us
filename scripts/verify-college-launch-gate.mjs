@@ -4,13 +4,20 @@ import { resolve } from "node:path";
 const root = resolve(import.meta.dirname, "..");
 const ledger = JSON.parse(readFileSync(resolve(root, "data/college-official-reviews.json"), "utf8"));
 const catalog = JSON.parse(readFileSync(resolve(root, "lib/college-catalog.generated.json"), "utf8"));
+const scope = JSON.parse(readFileSync(resolve(root, "data/college-launch-scope.json"), "utf8"));
 const allowedOutcomes = new Set(["reported", "calculated", "not_published", "previous_cycle"]);
 const problems = [];
+const scopedNames = new Set([...scope.universities, ...scope.liberalArtsColleges].map((college) => college.name));
+const scopedColleges = catalog.colleges.filter((college) => scopedNames.has(college.name));
+const scopedSlugs = new Set(scopedColleges.map((college) => college.slug));
+const expectedScopeCount = scope.universities.length + scope.liberalArtsColleges.length;
 
 if (ledger.count !== 678 || ledger.records.length !== 678) problems.push(`Expected 678 review entries; found ${ledger.records.length}.`);
 if (new Set(ledger.records.map((record) => record.slug)).size !== 678) problems.push("Review slugs are not unique.");
+if (scopedNames.size !== expectedScopeCount || scopedColleges.length !== expectedScopeCount) problems.push(`Expected ${expectedScopeCount} detailed-profile colleges; resolved ${scopedColleges.length}.`);
 
 for (const record of ledger.records) {
+  if (!scopedSlugs.has(record.slug)) continue;
   for (const fieldName of ledger.requiredFields) {
     const field = record.fields[fieldName];
     if (!field || !allowedOutcomes.has(field.status)) problems.push(`${record.slug}: ${fieldName} is not complete.`);
@@ -20,6 +27,7 @@ for (const record of ledger.records) {
 
 const ledgerBySlug = new Map(ledger.records.map((record) => [record.slug, record]));
 for (const college of catalog.colleges) {
+  if (!scopedSlugs.has(college.slug)) continue;
   const review = ledgerBySlug.get(college.slug);
   requireFact(college, "cost of attendance", college.costOfAttendanceFact);
   requireFact(college, "overall acceptance rate", college.admissions?.overallAcceptanceRate);
@@ -54,13 +62,14 @@ for (const college of catalog.colleges) {
 }
 
 if (problems.length) {
-  console.error(`College launch gate blocked by ${problems.length} incomplete checks.`);
+  const failedSlugs = new Set(problems.map((problem) => problem.split(":", 1)[0]).filter((slug) => scopedSlugs.has(slug)));
+  console.error(`Detailed-profile launch gate: ${expectedScopeCount - failedSlugs.size}/${expectedScopeCount} colleges complete; ${failedSlugs.size} colleges and ${problems.length} checks remain.`);
   for (const problem of problems.slice(0, 25)) console.error(`- ${problem}`);
   if (problems.length > 25) console.error(`- …and ${problems.length - 25} more.`);
   process.exit(1);
 }
 
-console.log("College launch gate passed for all 678 colleges.");
+console.log(`College launch gate passed for ${scope.universities.length} ranked universities and ${scope.liberalArtsColleges.length} ranked liberal-arts colleges; all remaining colleges retain clearly labeled basic profiles.`);
 
 function requireReviewedCollection(college, review, topic, values, inspect) {
   const topicStatus = review?.fields[topic]?.status;

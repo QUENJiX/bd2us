@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-08-09",
+  "policy": "Complete official profiles for 20 ranked universities and 10 ranked liberal-arts colleges; basic profiles remain available for the rest of the catalog.",
+  "universities": [
+    {
+      "name": "Massachusetts Institute of Technology (MIT)",
+      "globalRank": 1,
+      "rankDisplay": "1"
+    },
+    {
+      "name": "Stanford University",
+      "globalRank": 2,
+      "rankDisplay": "=2"
+    },
+    {
+      "name": "Harvard University",
+      "globalRank": 5,
+      "rankDisplay": "5"
+    },
+    {
+      "name": "California Institute of Technology (Caltech)",
+      "globalRank": 7,
+      "rankDisplay": "7"
+    },
+    {
+      "name": "University of Pennsylvania",
+      "globalRank": 15,
+      "rankDisplay": "15"
+    },
+    {
+      "name": "Cornell University",
+      "globalRank": 16,
+      "rankDisplay": "=16"
+    },
+    {
+      "name": "Yale University",
+      "globalRank": 16,
+      "rankDisplay": "=16"
+    },
+    {
+      "name": "Johns Hopkins University",
+      "globalRank": 20,
+      "rankDisplay": "=20"
+    },
+    {
+      "name": "University of California-Berkeley",
+      "globalRank": 20,
+      "rankDisplay": "=20"
+    },
+    {
+      "name": "University of Chicago",
+      "globalRank": 24,
+      "rankDisplay": "24"
+    },
+    {
+      "name": "Princeton University",
+      "globalRank": 27,
+      "rankDisplay": "27"
+    },
+    {
+      "name": "Columbia University (College and SEAS)",
+      "globalRank": 43,
+      "rankDisplay": "=43"
+    },
+    {
+      "name": "Northwestern University",
+      "globalRank": 45,
+      "rankDisplay": "=45"
+    },
+    {
+      "name": "University of California-Los Angeles",
+      "globalRank": 49,
+      "rankDisplay": "49"
+    },
+    {
+      "name": "University of Michigan-Ann Arbor",
+      "globalRank": 51,
+      "rankDisplay": "51"
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "globalRank": 55,
+      "rankDisplay": "55"
+    },
+    {
+      "name": "New York University (NYU)",
+      "globalRank": 58,
+      "rankDisplay": "58"
+    },
+    {
+      "name": "Brown University",
+      "globalRank": 66,
+      "rankDisplay": "66"
+    },
+    {
+      "name": "Duke University",
+      "globalRank": 70,
+      "rankDisplay": "70"
+    },
+    {
+      "name": "University of Texas at Austin",
+      "globalRank": 72,
+      "rankDisplay": "72"
+    }
+  ],
+  "liberalArtsColleges": [
+    {
+      "name": "Williams College",
+      "nationalRank": 1
+    },
+    {
+      "name": "Amherst College",
+      "nationalRank": 2
+    },
+    {
+      "name": "Swarthmore College",
+      "nationalRank": 4
+    },
+    {
+      "name": "Bowdoin College",
+      "nationalRank": 5
+    },
+    {
+      "name": "Claremont McKenna College",
+      "nationalRank": 7
+    },
+    {
+      "name": "Pomona College",
+      "nationalRank": 7
+    },
+    {
+      "name": "Wellesley College",
+      "nationalRank": 7
+    },
+    {
+      "name": "Carleton College",
+      "nationalRank": 10
+    },
+    {
+      "name": "Harvey Mudd College",
+      "nationalRank": 10
+    },
+    {
+      "name": "Middlebury College",
+      "nationalRank": 13
+    }
+  ]
+}
