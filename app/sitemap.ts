@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
+import { siteUrl } from "@/lib/site";
 import { blogs, colleges, guides } from "@/lib/content";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.bd2us.app";
 const staticRoutes = ["", "/ask", "/roadmap", "/colleges", "/resources", "/glossary", "/faq", "/about", "/success-stories", "/contact", "/privacy", "/terms", "/blog"];
 
 export default function sitemap(): MetadataRoute.Sitemap {

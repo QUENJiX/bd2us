@@ -4,6 +4,7 @@ import { HeroPlanner } from "@/components/hero-planner";
 import { JourneyRail } from "@/components/journey-rail";
 import { ButtonLink, SectionHeading, Surface, Tag } from "@/components/ui";
 import { colleges, roadmapStages } from "@/lib/content";
+import { siteUrl } from "@/lib/site";
 
 const featuredCollegeNames = [
   "Harvard University",
@@ -24,11 +25,11 @@ export default function HomePage() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "BD2US",
-    url: "https://www.bd2us.app",
+    url: siteUrl,
     description: "Bangladesh-specific U.S. college application guidance, roadmap planning, and reviewed college research.",
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://www.bd2us.app/search?q={search_term_string}",
+      target: `${siteUrl}/search?q={search_term_string}`,
       "query-input": "required name=search_term_string"
     }
   };
@@ -87,13 +88,13 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24">
         <SectionHeading
           eyebrow="The three questions to answer first"
-          title="Know where to start this August."
+          title="Know your next step for Fall 2027."
           description="Fall 2027 applicants do not need more scattered advice. They need the right sequence, a realistic funding strategy, and a next action."
         />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
           {[
             ["Where should I start?", `Use the ${roadmapStages.length}-stage route to find the first unfinished action for your intake.`, "/roadmap"],
-            ["What matters in August?", "Agree on a budget range, build the first college list, plan tests, and begin the school-document process.", "/guide/timeline"],
+            ["What should I work on next?", "Check your college deadlines, confirm testing and aid requirements, and prepare essays and school documents before submitting.", "/guide/timeline"],
             ["How does funding shape the list?", `Compare ${colleges.length} colleges by cost and international-aid evidence before falling for a logo.`, "/colleges"]
           ].map(([title, body, href]) => (
             <Link key={title} href={href} className="card group p-6 hover:-translate-y-1 hover:border-emerald-800/30 hover:shadow-lg">

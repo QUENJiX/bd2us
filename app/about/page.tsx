@@ -5,7 +5,7 @@ const principles = [
   ["Experience made useful", "The guide turns the team's practical knowledge, mentoring experience, and inside understanding of the process into clear action."],
   ["Sources where they matter", "Changing college facts, deadlines, and government procedures should point back to the institution or agency responsible for them."],
   ["Bangladesh-specific context", "The advice is written for the questions, constraints, curricula, and planning realities Bangladeshi students actually face."],
-  ["A complete public guide", "BD2US remains independently useful. ColApp, built by the same team, is available when a student wants a more personalized companion."]
+  ["A useful public guide", "BD2US works without an account or an AI subscription. Ask Piku, our upcoming Claude-powered companion, will add personalized guidance without replacing the public guide."]
 ];
 
 const team = [
@@ -91,8 +91,8 @@ export default function AboutPage() {
       </section>
       <section className="mx-auto max-w-7xl px-5 pb-16 sm:px-8">
         <Surface className="grid gap-5 border-emerald-900/15 bg-emerald-50 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
-          <div><p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-800">Built by the same team</p><h2 className="font-display mt-2 text-4xl text-emerald-950">BD2US stands on its own. ColApp goes deeper.</h2><p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">BD2US is the complete public guide. ColApp is our companion app for students who want a more personalized layer of support.</p></div>
-          <ButtonLink href="/contact" variant="secondary">Contact the team</ButtonLink>
+          <div><p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-800">Our next chapter</p><h2 className="font-display mt-2 text-4xl text-emerald-950">A public guide. A more personal companion.</h2><p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">We&apos;re developing Ask Piku with Claude to help students understand their options using BD2US&apos;s admissions resources. The guides and planning tools remain independently useful.</p></div>
+          <ButtonLink href="/ask" variant="secondary">Meet Piku →</ButtonLink>
         </Surface>
       </section>
     </main>

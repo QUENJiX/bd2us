@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PikuMascot } from "@/components/piku-mascot";
 import { ButtonLink } from "@/components/ui";
+import { founderEmail, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Ask Piku",
   description: "Meet Piku, BD2US’s upcoming college application companion powered by Claude.",
-  alternates: { canonical: "https://www.bd2us.app/ask" }
+  alternates: { canonical: `${siteUrl}/ask` }
 };
 
 export default function AskPage() {
@@ -18,9 +19,20 @@ export default function AskPage() {
           <p className="text-xs font-bold uppercase tracking-[.18em] text-amber-700">Your BD2US companion</p>
           <h1 className="font-display mt-3 text-5xl text-emerald-950 sm:text-6xl">Ask Piku.</h1>
           <p className="mt-5 max-w-xl text-lg leading-8 text-slate-600">Personalized U.S. college application guidance, grounded in BD2US&apos;s curated admissions resources.</p>
-          <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-emerald-950/15 px-4 py-2 text-sm text-emerald-950"><span aria-hidden="true" className="h-2 w-2 rounded-full bg-emerald-800" />Powered by Claude</p>
+          <p className="mt-5 inline-flex flex-wrap items-center gap-2 rounded-full border border-emerald-950/15 px-4 py-2 text-sm text-emerald-950">Powered by Claude <span className="text-slate-500">· In development</span></p>
         </div>
         <PikuMascot className="mx-auto w-44" />
+      </section>
+      <section aria-labelledby="piku-context" className="grid gap-6 border-t border-emerald-950/10 py-8 sm:grid-cols-2">
+        <div>
+          <h2 id="piku-context" className="font-display text-2xl text-emerald-950">Guidance with context, not guesswork.</h2>
+          <p className="mt-3 text-sm leading-7 text-slate-600">We&apos;re building Piku to pair Claude with BD2US&apos;s guides, glossary and college research. The goal: explain unfamiliar terms, help you compare options and turn a question into a practical next step—with links you can check.</p>
+        </div>
+        <div>
+          <h2 className="font-display text-2xl text-emerald-950">Building with us?</h2>
+          <p className="mt-3 text-sm leading-7 text-slate-600">For product questions, partnerships or feedback, reach the founder directly.</p>
+          <a className="mt-3 inline-flex min-h-11 items-center break-all text-sm font-bold text-emerald-900 underline underline-offset-4" href={`mailto:${founderEmail}`}>{founderEmail} →</a>
+        </div>
       </section>
       <section aria-labelledby="availability" className="py-10">
         <p className="text-xs font-bold uppercase tracking-[.18em] text-amber-700">Coming soon</p>

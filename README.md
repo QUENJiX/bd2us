@@ -2,6 +2,10 @@
 
 BD2US is a public-first planning platform for Bangladeshi students applying to U.S. colleges. It combines a readable guide, interactive roadmap, curated college explorer, search, optional private dashboard, editorial workspace, and saved offline reading.
 
+Canonical website: https://bd2us.com. Founder contact: founder@bd2us.com.
+
+Ask Piku (`/ask`) is an upcoming Claude-powered admissions companion, not a live chat service yet. Its planned role is to explain and personalize guidance using BD2US resources; it does not predict admission or guarantee funding.
+
 The original static HTML/CSS/JS site remains in this repository as migration input. The production replacement is the Next.js app under `app/`, `components/`, and `lib/`.
 
 ## Stack
@@ -26,6 +30,7 @@ The public experience works without environment variables. Add Supabase credenti
 - `/guide/[slug]`
 - `/colleges` and `/colleges/[slug]`
 - `/search`
+- `/ask`
 - `/dashboard`
 - `/resources`, `/faq`, `/about`, `/contact`
 - `/admin`

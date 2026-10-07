@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { founderEmail } from "@/lib/site";
 
 export const metadata = { title: "Privacy", description: "How BD2US handles account, planning, contact, and device data." };
 
@@ -14,7 +15,7 @@ export default function PrivacyPage() {
       <section><h2>Search privacy</h2><p>BD2US does not store the words you type into search as analytics. A search request may still pass through normal hosting and database infrastructure needed to return results.</p></section>
       <section><h2>Service providers and links</h2><p>BD2US relies on service providers including Vercel for hosting and Supabase for optional accounts and stored messages. Official-resource and college links take you to third-party websites with their own privacy practices.</p></section>
       <section><h2>Retention, deletion, and age</h2><p>Account information is kept while your account is active or as reasonably needed to provide and protect the service. You can request deletion through the account controls or <Link href="/contact">contact form</Link>. BD2US is for people aged 13 or older; applicants under the age of legal majority should involve a parent or guardian when sharing personal information or making application decisions.</p></section>
-      <section><h2>Questions and changes</h2><p>Use the <Link href="/contact">contact form</Link> for privacy requests. Material changes will be reflected on this page with a new effective date.</p></section>
+      <section><h2>Questions and changes</h2><p>Email <a href={`mailto:${founderEmail}`}>{founderEmail}</a> or use the <Link href="/contact">contact form</Link> for privacy requests. Material changes will be reflected on this page with a new effective date.</p></section>
     </main>
   );
 }

@@ -1,6 +1,5 @@
 import { blogs, guides } from "@/lib/content";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.bd2us.app";
+import { siteUrl } from "@/lib/site";
 
 export function GET() {
   const items = [...blogs.map((blog) => ({ title: blog.title, href: `/blog/${blog.slug}`, summary: blog.summary, date: blog.updatedAt })), ...guides.map((guide) => ({ title: guide.title, href: `/guide/${guide.slug}`, summary: guide.summary, date: guide.lastVerifiedAt }))].map((item) => `<item><title>${escapeXml(item.title)}</title><link>${siteUrl}${item.href}</link><description>${escapeXml(item.summary)}</description><pubDate>${new Date(item.date).toUTCString()}</pubDate><guid>${siteUrl}${item.href}</guid></item>`).join("");

@@ -10,6 +10,7 @@ function loadTypeScriptModule(relativePath) {
   const loadedModule = { exports: {} };
   new Function("exports", "module", "require", output)(loadedModule.exports, loadedModule, (name) => {
     if (name === "pdf-lib") return requirePdfLib;
+    if (name === "@/lib/site") return loadTypeScriptModule("../lib/site.ts");
     throw new Error(`Unexpected test import: ${name}`);
   });
   return loadedModule.exports;

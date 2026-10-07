@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { siteUrl } from "@/lib/site";
 import "@fontsource/atkinson-hyperlegible/400.css";
 import "@fontsource/atkinson-hyperlegible/700.css";
 import "@fontsource-variable/literata/wght.css";
@@ -7,8 +8,6 @@ import { AppFooter } from "@/components/app-footer";
 import { AppHeader } from "@/components/app-header";
 import { SearchDialog } from "@/components/search-dialog";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.bd2us.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

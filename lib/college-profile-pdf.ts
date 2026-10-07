@@ -1,5 +1,6 @@
 import { PDFDocument, StandardFonts, rgb, type PDFFont, type PDFPage } from "pdf-lib";
 import type { College } from "@/lib/types";
+import { siteUrl } from "@/lib/site";
 
 const pageWidth = 595.28;
 const pageHeight = 841.89;
@@ -103,7 +104,7 @@ export async function createCollegeProfilePdf(college: College) {
   drawLines(page, wrapText(nextStep, sans, 9, pageWidth - margin * 2 - 28, 2), { x: margin + 14, y: footerTop + 30, font: sans, size: 9, color: ink, lineHeight: 11 });
 
   page.drawText(ascii(`Information checked ${college.officialReview?.reviewedAt ?? college.datasetReviewedAt ?? college.lastVerifiedAt}  |  Confirmed = official source  |  Not published = the college has not published it`), { x: margin, y: 82, font: sans, size: 6.8, color: muted });
-  page.drawText(ascii(`Open the live profile: https://www.bd2us.app/colleges/${college.slug}`), { x: margin, y: 66, font: sansBold, size: 7.2, color: forest });
+  page.drawText(ascii(`Open the live profile: ${siteUrl}/colleges/${college.slug}`), { x: margin, y: 66, font: sansBold, size: 7.2, color: forest });
   page.drawText("Rankings are context, never an admission recommendation or personal probability.", { x: margin, y: 50, font: sans, size: 6.8, color: muted });
   page.drawText("BD2US  |  Bangladesh to U.S. admissions field guide", { x: margin, y: 27, font: sansBold, size: 7.2, color: amber });
   page.drawText("1 / 1", { x: pageWidth - margin - 18, y: 27, font: sans, size: 7.2, color: muted });

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { founderEmail } from "@/lib/site";
 
 export function AppFooter() {
   return (
@@ -11,11 +12,13 @@ export function AppFooter() {
           <p className="mt-4 max-w-sm text-sm leading-6 text-slate-600">
             Clear, Bangladesh-specific guidance for the long road from first research to your first week in the U.S.
           </p>
+          <a href={`mailto:${founderEmail}`} className="mt-3 inline-flex min-h-11 items-center text-sm font-bold text-emerald-900 underline underline-offset-4">{founderEmail}</a>
         </div>
         <div className="grid grid-cols-2 gap-6 text-sm">
           <div className="grid content-start gap-3">
             <p className="font-bold text-emerald-950">Explore</p>
             <Link href="/roadmap">Roadmap</Link>
+            <Link href="/ask">Ask Piku</Link>
             <Link href="/colleges">Colleges</Link>
             <Link href="/resources">Resources</Link>
             <Link href="/glossary">Glossary</Link>

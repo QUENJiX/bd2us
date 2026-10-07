@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { founderEmail } from "@/lib/site";
 
 export const metadata = { title: "Terms", description: "The terms for using BD2US guidance, planning tools, and college information." };
 
@@ -15,7 +16,7 @@ export default function TermsPage() {
       <section><h2>Third-party services</h2><p>Links to colleges, agencies, rankings, application platforms, and testing services are provided for convenience. BD2US does not control those services or their availability, terms, decisions, or content.</p></section>
       <section><h2>Age and family involvement</h2><p>You must be at least 13 to use BD2US. Applicants under the age of legal majority should use the service with a parent or guardian, especially for accounts, payments, financial information, and binding application choices.</p></section>
       <section><h2>Availability and responsibility</h2><p>BD2US is provided on an as-available basis. To the extent permitted by law, BD2US is not responsible for decisions or losses caused by relying on outdated, incomplete, or third-party information when official verification was available.</p></section>
-      <section><h2>Questions and updates</h2><p>Use the <Link href="/contact">contact form</Link> for legal questions. Continuing to use BD2US after updated terms take effect means you accept the revised terms.</p></section>
+      <section><h2>Questions and updates</h2><p>Email <a href={`mailto:${founderEmail}`}>{founderEmail}</a> or use the <Link href="/contact">contact form</Link> for legal questions. Continuing to use BD2US after updated terms take effect means you accept the revised terms.</p></section>
     </main>
   );
 }
