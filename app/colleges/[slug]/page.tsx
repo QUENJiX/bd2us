@@ -76,6 +76,7 @@ export default async function CollegePage({ params }: { params: Promise<{ slug: 
                     <EvidenceRow label="SAT submitted" value={formatPercent(college.testing?.satSubmissionPercent?.value)} />
                   </dl>
                   <p className="evidence-caution">{college.testing?.context ?? "The Fall 2027 testing policy has not been confirmed here. Check the official admissions page before deciding whether to submit scores."}</p>
+                  {college.testing?.policy.sourceUrl ? <p className="evidence-note"><a href={college.testing.policy.sourceUrl} target="_blank" rel="noreferrer">Official testing policy ↗</a>{college.testing.policy.reviewedAt ? ` · Checked ${formatDate(college.testing.policy.reviewedAt)}` : ""}</p> : null}
                 </article>
                 <article>
                   <p className="eyebrow">English proficiency</p>
@@ -83,6 +84,7 @@ export default async function CollegePage({ params }: { params: Promise<{ slug: 
                   {college.englishProficiency?.length ? <>
                     <dl>{college.englishProficiency.map((requirement) => <EvidenceRow key={requirement.test} label={requirement.test} value={requirement.minimumScore.value == null ? "Minimum not published" : String(requirement.minimumScore.value)} />)}</dl>
                     {college.englishProficiency.find((requirement) => requirement.waiverNote)?.waiverNote ? <p className="evidence-note">{college.englishProficiency.find((requirement) => requirement.waiverNote)?.waiverNote}</p> : null}
+                    {college.englishProficiency[0]?.minimumScore.sourceUrl ? <p className="evidence-note"><a href={college.englishProficiency[0].minimumScore.sourceUrl} target="_blank" rel="noreferrer">Official English-test guidance ↗</a>{college.englishProficiency[0].minimumScore.reviewedAt ? ` · Checked ${formatDate(college.englishProficiency[0].minimumScore.reviewedAt)}` : ""}</p> : null}
                   </> : <p>English-test requirements have not been confirmed here. Check accepted exams, minimum scores, curriculum-based waivers, and whether official scores are required with the application.</p>}
                 </article>
               </div>

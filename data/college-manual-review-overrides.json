@@ -3,6 +3,451 @@
   "reviewedAt": "2026-08-01",
   "records": [
     {
+      "name": "University of California-Berkeley",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/", "note": "UC's reviewed general first-year page gives an October 1–November 30 submission window. Entry year unspecified; confirm the active UC portal schedule before submitting." },
+        "testingPolicy": { "status": "reported", "url": "https://www.admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/first-year-policy-changes/", "note": "SAT/ACT are not considered for admission; submitted scores can be used for placement or credit after admission." },
+        "englishProficiency": { "status": "reported", "url": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/", "note": "English proficiency can be met by listed exams or curriculum routes, including three years of English-medium instruction. Satisfy it by January 31. Check the official page's score-validity rule before selecting an exam date." }
+      },
+      "facts": {
+        "testingPolicy": "SAT/ACT not considered for admission",
+        "englishMinimums": { "TOEFL": "4.5 new scale / 90 prior scale", "IELTS": 6.5, "Duolingo": 115 },
+        "plans": [{ "kind": "RD", "name": "UC fall application", "binding": false, "restrictive": false, "deadline": "November 30", "cycle": "General UC schedule; entry year unspecified", "explanation": "Use the UC application; confirm active-cycle dates in the portal." }],
+        "additionalDeadlines": [{ "plan": "RD", "kind": "testing", "label": "English proficiency satisfied", "date": "January 31", "source": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/", "cycle": "Current published schedule; entry year unspecified" }]
+      }
+    },
+    {
+      "name": "University of California-Los Angeles",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/", "note": "UC's general first-year page gives November 30 as the submission deadline. Entry year unspecified; confirm the active portal schedule." },
+        "testingPolicy": { "status": "reported", "url": "https://admission.ucla.edu/apply/international-applicants", "note": "SAT/ACT not considered for admission or scholarships." },
+        "englishProficiency": { "status": "reported", "url": "https://admission.ucla.edu/apply/international-applicants", "note": "Scores below are competitive benchmarks. Self-report accurately by January; official reports follow. IELTS and DET results must be sent separately to each campus; include the UC application ID." }
+      },
+      "facts": {
+        "testingPolicy": "SAT/ACT not considered for admission or scholarships",
+        "englishMinimums": { "TOEFL": "Competitive: 5+ overall/sections; prior scale above 100 overall/24 per section", "IELTS": "Competitive: 7.5+", "Duolingo": "Competitive: 135+" },
+        "plans": [{ "kind": "RD", "name": "UC fall application", "binding": false, "restrictive": false, "deadline": "November 30", "cycle": "General UC schedule; entry year unspecified", "explanation": "Apply through UC; some majors need separate supplements." }]
+      }
+    },
+    {
+      "name": "University of Michigan-Ann Arbor",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "internationalAid": {
+          "status": "reported",
+          "url": "https://finaid.umich.edu/apply-aid/international-students",
+          "note": "International students on temporary visas are not eligible for federal aid; undergraduate institutional funding is very limited.",
+          "reviewedAt": "2026-08-01"
+        },
+        "scholarships": {
+          "status": "reported",
+          "url": "https://finaid.umich.edu/apply-aid/international-students",
+          "note": "Very limited undergraduate scholarship funding is listed, with no additional application for scholarship consideration.",
+          "reviewedAt": "2026-08-01"
+        },
+        "internationalAdmission": {
+          "status": "reported",
+          "url": "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines",
+          "note": "Official international first-year requirements checked, including translated records and English proficiency.",
+          "reviewedAt": "2026-08-01"
+        },
+        "applicationPlansAndDeadlines": {
+          "status": "reported",
+          "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
+          "note": "Current schedule: ED/EA November 1; RD February 1. ED binding with parent and counselor signatures. Music, Theatre & Dance deadline December 1. Entry year not explicitly labeled in the reviewed schedule."
+        },
+        "applicationRequirements": {
+          "status": "reported",
+          "url": "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines",
+          "note": "Common Application, $75 fee, transcript with translation, School Report, teacher evaluation, optional SAT/ACT, and English proof are listed. Counselor recommendation is encouraged but not required.",
+          "reviewedAt": "2026-08-01"
+        },
+        "testingPolicy": {
+          "status": "reported",
+          "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
+          "note": "SAT/ACT optional; self-report by the relevant round's deadline."
+        },
+        "englishProficiency": {
+          "status": "reported",
+          "url": "https://admissions.umich.edu/apply/international-applicants/exams-visas",
+          "note": "Required for applicants with English as a second language. Waiver requires both the stated SAT/ACT threshold and four years of rigorous study in a listed English-speaking country; Bangladesh is not in that list. Check all section-score requirements."
+        }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT optional; self-report by application deadline",
+        "englishMinimums": {
+          "TOEFL": "New scale 5–6, each section 5+; prior scale around 100, R/L 23+, S/W 21+",
+          "TOEFL Essentials": "Around 10, sections 10+",
+          "IELTS": "Around 7, sections 6.5+",
+          "Cambridge C1/C2": "185, sections 180+",
+          "PTE Academic": "68, balanced sections",
+          "MET": "64, sections 59+",
+          "ECPE": "Certificate, all sections C or better"
+        },
+        "plans": [
+          {
+            "kind": "ED",
+            "name": "Early Decision",
+            "binding": true,
+            "restrictive": false,
+            "deadline": "November 1",
+            "cycle": "Current published schedule; entry year unspecified",
+            "explanation": "Binding; decision by December 24, commitment January 6."
+          },
+          {
+            "kind": "EA",
+            "name": "Early Action",
+            "binding": false,
+            "restrictive": false,
+            "deadline": "November 1",
+            "cycle": "Current published schedule; entry year unspecified",
+            "explanation": "Nonbinding; response by January 29."
+          },
+          {
+            "kind": "RD",
+            "name": "Regular Decision",
+            "binding": false,
+            "restrictive": false,
+            "deadline": "February 1",
+            "cycle": "Current published schedule; entry year unspecified",
+            "explanation": "Nonbinding; decisions by April 2."
+          }
+        ]
+      }
+    },
+    {
+      "name": "University of Texas at Austin",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admissions.utexas.edu/apply/international-students/", "note": "Fall 2027: EA October 15, supporting materials October 22; RD December 1, materials December 10. EA response/deferral January 15; final response February 15." }
+      },
+      "facts": {
+        "plans": [
+          { "kind": "EA", "name": "Early Action", "binding": false, "restrictive": false, "deadline": "October 15, 2026", "cycle": "Fall 2027", "explanation": "Early review; response or deferral by January 15." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "December 1, 2026", "cycle": "Fall 2027", "explanation": "Standard review; decisions by February 15." }
+        ],
+        "additionalDeadlines": [
+          { "plan": "EA", "kind": "documents", "label": "EA supporting materials", "date": "October 22, 2026", "cycle": "Fall 2027" },
+          { "plan": "RD", "kind": "documents", "label": "RD supporting materials", "date": "December 10, 2026", "cycle": "Fall 2027" }
+        ]
+      }
+    },
+    {
+      "name": "Harvey Mudd College",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.hmc.edu/admission/apply/", "note": "Current schedule: ED I November 15; ED II/RD January 5. CSS Profile due November 15, January 5 or February 1 respectively. Merit-scholarship deadline February 1. Entry year not explicit in this table." },
+        "testingPolicy": { "status": "reported", "url": "https://www.hmc.edu/admission/apply/", "note": "SAT/ACT optional through 2027; self-reporting allowed. Score submission deadlines: ED I November 30, ED II January 25, RD February 5." },
+        "englishProficiency": { "status": "reported", "url": "https://www.hmc.edu/admission/apply/faqs/", "note": "Required for international applicants; request a waiver by email after submitting Common App. A slightly lower score does not automatically disqualify. TOEFL cutoff is published on the prior scale; new-scale cutoff needs confirmation." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT optional through 2027; self-reporting accepted",
+        "englishMinimums": { "TOEFL": "100 prior iBT scale", "IELTS Academic": 7.5, "Duolingo": 120, "Cambridge C1 Advanced": 190, "Cambridge C2 Proficiency": 200 },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision I", "binding": true, "restrictive": false, "deadline": "November 15", "cycle": "Current published schedule; entry year unspecified", "explanation": "First binding early round; review the ED agreement." },
+          { "kind": "ED2", "name": "Early Decision II", "binding": true, "restrictive": false, "deadline": "January 5", "cycle": "Current published schedule; entry year unspecified", "explanation": "Second binding early round; review the ED agreement." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 5", "cycle": "Current published schedule; entry year unspecified", "explanation": "Nonbinding; CSS Profile due February 1." }
+        ],
+        "additionalDeadlines": [
+          { "plan": "ED", "kind": "testing", "label": "ED I test scores", "date": "November 30" },
+          { "plan": "ED2", "kind": "testing", "label": "ED II test scores", "date": "January 25" },
+          { "plan": "RD", "kind": "testing", "label": "RD test scores", "date": "February 5" }
+        ]
+      }
+    },
+    {
+      "name": "Wellesley College",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants", "note": "Current schedule: ED I November 1, ED II January 5, RD January 8. Aid deadlines align. Entry year not explicitly labeled in this table." },
+        "englishProficiency": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants", "note": "Optional, strongly recommended for non-native speakers with fewer than four years in an English-based curriculum. Accepts TOEFL iBT/Essentials, DET, IELTS, Cambridge and GTEC CBT; interview tools also available. No numerical minimum shown on the reviewed page." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL iBT/Essentials": "Optional; minimum not specified", "IELTS": "Optional; minimum not specified", "Duolingo": "Optional; minimum not specified", "Cambridge": "Optional; minimum not specified", "GTEC CBT": "Optional; minimum not specified" },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision I", "binding": true, "restrictive": false, "deadline": "November 1", "cycle": "Current published schedule; entry year unspecified", "explanation": "First early round; aid application due the same day." },
+          { "kind": "ED2", "name": "Early Decision II", "binding": true, "restrictive": false, "deadline": "January 5", "cycle": "Current published schedule; entry year unspecified", "explanation": "Second early round; aid application due the same day." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 8", "cycle": "Current published schedule; entry year unspecified", "explanation": "Nonbinding; aid application due the same day." }
+        ]
+      }
+    },
+    {
+      "name": "Brown University",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admission.brown.edu/first-year", "note": "Current published schedule: ED November 1; RD January 5. Entry year not explicit on this page." },
+        "englishProficiency": { "status": "reported", "url": "https://admission.brown.edu/international/english-proficiency", "note": "Highly recommended when English is not a first/home language or the teaching language throughout secondary school. Self-reporting allowed; official reports needed for enrollment. TOEFL MyBest not accepted. Fall 2027 enrollees must arrange official reports before expiration and by May 2027." }
+      },
+      "facts": {
+        "englishMinimums": { "TOEFL": "5.5 new scale / 105 prior scale", "IELTS": 8, "Duolingo": 130, "Cambridge C1/C2": 191 },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision", "binding": true, "restrictive": false, "deadline": "November 1", "cycle": "Current published schedule; entry year unspecified", "explanation": "For applicants committed to attending Brown if admitted; review the ED agreement." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 5", "cycle": "Current published schedule; entry year unspecified", "explanation": "Nonbinding; decisions by early April." }
+        ],
+        "platforms": ["Common Application"]
+      }
+    },
+    {
+      "name": "Duke University",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admissions.duke.edu/checklist/", "note": "2026–27 cycle: ED November 2, RD January 4. ED aid application due November 2; additional aid documents November 15. Optional Glimpse interviews November 9 or January 11." },
+        "testingPolicy": { "status": "reported", "url": "https://admissions.duke.edu/checklist/", "note": "SAT/ACT optional. Latest ED tests SAT November 7 and ACT October 17; RD SAT December 5 and ACT December 12, 2026." },
+        "englishProficiency": { "status": "reported", "url": "https://admissions.duke.edu/apply/", "note": "Recommended rather than required for non-native speakers or applicants outside English-medium curricula. Duke uses the highest result. Published expected scores below; TOEFL is stated on the prior scale and a new-scale threshold remains unconfirmed." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT optional for 2026–27 admission cycle",
+        "englishMinimums": { "TOEFL": "Expected: 100 prior iBT scale", "IELTS": "Expected: 7", "Duolingo": "Expected: 130", "Cambridge C1/C2": "Expected: 180", "PTE Academic": "Expected: 70" },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision", "binding": true, "restrictive": false, "deadline": "November 2, 2026", "cycle": "Fall 2027", "explanation": "Binding first-choice program; see Duke's application instructions.", "source": "https://admissions.duke.edu/apply/" },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 4, 2027", "cycle": "Fall 2027", "explanation": "Nonbinding application round." }
+        ]
+      }
+    },
+    {
+      "name": "Northwestern University",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admissions.northwestern.edu/apply/application-options.html", "note": "Fall 2027: ED November 1, 2026; RD January 4, 2027. Deadline time is 11:59 p.m. in the applicant's local time zone. Music applicants have additional requirements." },
+        "testingPolicy": { "status": "reported", "url": "https://admissions.northwestern.edu/apply/application-options.html", "note": "SAT/ACT optional; self-reporting accepted. Report highest SAT sections and the official ACT superscore; do not calculate your own ACT superscore. Official scores required on enrollment." },
+        "englishProficiency": { "status": "reported", "url": "https://admissions.northwestern.edu/faqs/international-applicants/", "note": "Official English scores required for applicable non-native/non-English-school applicants. No minimum cutoff. Accepts TOEFL iBT, IELTS (including Indicator) and DET; not TOEFL ITP Plus. English exams are not superscored; TOEFL MyBest not reviewed." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT optional; self-reporting accepted",
+        "englishMinimums": { "TOEFL": "No minimum required", "IELTS": "No minimum required", "Duolingo": "No minimum required" },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision", "binding": true, "restrictive": false, "deadline": "November 1, 2026", "cycle": "Fall 2027", "explanation": "Early application round; review the signed ED agreement." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 4, 2027", "cycle": "Fall 2027", "explanation": "Nonbinding; additional music-program deadlines apply." }
+        ]
+      }
+    },
+    {
+      "name": "Bowdoin College",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.bowdoin.edu/admissions/apply/dates-deadlines/index.html", "note": "Current published schedule: ED I November 15; ED II/RD January 5. International applicants except Canadians submit aid materials only after admission. Supporting school materials may follow the application deadline." },
+        "testingPolicy": { "status": "reported", "url": "https://www.bowdoin.edu/admissions/apply/test-optional-policy/index.html", "note": "SAT/ACT optional, with superscoring. ACT superscore uses English, Reading and Math; Science optional." },
+        "englishProficiency": { "status": "reported", "url": "https://www.bowdoin.edu/admissions/apply/international-students/index.html", "note": "English tests optional; TOEFL, IELTS, DET and Cambridge accepted. Self-reporting allowed. Submitted scores cannot later be deleted. No cutoff appears on this page; strong English proficiency is expected." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT optional; superscoring accepted",
+        "englishMinimums": { "TOEFL": "Optional; no cutoff specified", "IELTS": "Optional; no cutoff specified", "Duolingo": "Optional; no cutoff specified", "Cambridge": "Optional; no cutoff specified" },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision I", "binding": true, "restrictive": false, "deadline": "November 15", "cycle": "Current published schedule; entry year unspecified", "explanation": "First early round; decisions mid-December. Review the official ED agreement." },
+          { "kind": "ED2", "name": "Early Decision II", "binding": true, "restrictive": false, "deadline": "January 5", "cycle": "Current published schedule; entry year unspecified", "explanation": "Second early round; decisions early February. Review the official ED agreement." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 5", "cycle": "Current published schedule; entry year unspecified", "explanation": "Nonbinding; decisions mid-March. International aid materials generally follow admission." }
+        ]
+      }
+    },
+    {
+      "name": "Pomona College",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.pomona.edu/admissions/paths-apply", "note": "Current schedule: ED I November 8, ED II/RD January 8. ED is binding. Supporting materials can follow; midyear report due February 15. Entry year unspecified on reviewed page." },
+        "testingPolicy": { "status": "reported", "url": "https://www.pomona.edu/admissions/paths-apply", "note": "SAT/ACT optional; self-reporting accepted. ACT submissions must include Science. ACT sections may be superscored." },
+        "englishProficiency": { "status": "reported", "url": "https://www.pomona.edu/admissions/apply/international-applicants/international-applicant-faqs", "note": "Required when secondary-school instruction is not primarily English. Self-reporting accepted; official scores required on enrollment. No minimum subscores. The TOEFL threshold shown is on the prior 0–120 scale; the new-scale threshold needs confirmation." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT optional; ACT Science required if submitting ACT",
+        "englishMinimums": { "TOEFL": "100 on prior scale; new-scale threshold unconfirmed", "IELTS": 7, "Duolingo": 130 },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision I", "binding": true, "restrictive": false, "deadline": "November 8", "cycle": "Current published schedule; entry year unspecified", "explanation": "Binding; decisions by December 15." },
+          { "kind": "ED2", "name": "Early Decision II", "binding": true, "restrictive": false, "deadline": "January 8", "cycle": "Current published schedule; entry year unspecified", "explanation": "Binding; decisions by February 15." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 8", "cycle": "Current published schedule; entry year unspecified", "explanation": "Nonbinding; decisions by April 1, reply May 1." }
+        ]
+      }
+    },
+    {
+      "name": "University of Pennsylvania",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants", "note": "Fall 2027: binding ED November 1, 2026; nonbinding RD January 5, 2027. Apply to one undergraduate school or coordinated program." },
+        "testingPolicy": { "status": "reported", "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing", "note": "SAT/ACT required; hardship waiver available for applicants who have not tested. Self-reporting and superscoring accepted. Latest ED tests: SAT November 7, ACT October 17; RD: SAT December 5, ACT December 12, 2026." },
+        "englishProficiency": { "status": "reported", "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing", "note": "Required unless English is native or was the primary teaching language for at least three years by enrollment. Official scores required; TOEFL MyBest and IELTS One Skill Retake not accepted. For 2026–27, exams must date from April 1, 2025 or later. This page gives no numerical minimums." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT required; hardship waiver available; self-reporting and superscoring accepted",
+        "englishMinimums": { "TOEFL": "Minimum not specified on reviewed page", "IELTS Academic": "Minimum not specified on reviewed page", "Duolingo": "Minimum not specified on reviewed page" },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision", "binding": true, "restrictive": false, "deadline": "November 1, 2026", "cycle": "Fall 2027", "explanation": "Binding first-choice application; decisions in December." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 5, 2027", "cycle": "Fall 2027", "explanation": "Nonbinding; permits comparison of aid offers." }
+        ],
+        "platforms": ["Common Application", "Coalition Application", "QuestBridge"]
+      }
+    },
+    {
+      "name": "Cornell University",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationRequirements": { "status": "reported", "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants", "note": "Common App, school transcript/report, counselor and two teacher letters, school-specific supplement and SAT/ACT required. Midyear grades follow when available." },
+        "testingPolicy": { "status": "reported", "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants", "note": "SAT or ACT required." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admissions.cornell.edu/resources/submit-english-language-proficiency", "note": "Current schedule: ED November 1; RD January 2. Required materials follow November 13 or January 19; portfolios/design supplements share the application deadline. Entry year is not explicit on this page." },
+        "englishProficiency": { "status": "reported", "url": "https://admissions.cornell.edu/resources/submit-english-language-proficiency", "note": "Self-report for review; official scores required after admission. Exemption routes include native English and four years of English-medium schooling. Scores are labeled minimum competitive by Cornell; TOEFL new-scale 5.5 is recommended." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT required",
+        "platforms": ["Common Application"],
+        "applicationFee": 85,
+        "internationalApplicationFee": 85,
+        "feeWaiverRoute": "Request through Common App and answer Cornell's additional eligibility questions; documentation not required.",
+        "requirements": {
+          "recommendations": "Counselor or school head plus two teachers.",
+          "schoolForms": "School Report from a designated school official.",
+          "transcripts": "Official transcript covering completed and current courses.",
+          "midyearReport": "Midyear grades when available; ED first-period grades encouraged.",
+          "supplements": "Cornell school-specific essays.",
+          "specialRequirements": "Check additional requirements for the chosen undergraduate school."
+        },
+        "englishMinimums": { "TOEFL": "5.0 new scale (5.5 recommended) / 100 prior scale", "IELTS Academic": "Competitive: 7.5", "Duolingo": "Competitive: 130", "Cambridge C1/C2": "Competitive: 191" },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision", "binding": true, "restrictive": false, "deadline": "November 1", "cycle": "Current published schedule; entry year unspecified", "explanation": "Binding; required materials due November 13, portfolio by November 1." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 2", "cycle": "Current published schedule; entry year unspecified", "explanation": "Nonbinding; required materials due January 19, portfolio by January 2." }
+        ],
+        "additionalDeadlines": [
+          { "plan": "ED", "kind": "financial_aid", "label": "ED international aid", "date": "November 1", "source": "https://admissions.cornell.edu/how-to-apply/first-year-applicants", "cycle": "Current published schedule; entry year unspecified" },
+          { "plan": "RD", "kind": "financial_aid", "label": "RD international aid", "date": "January 2", "source": "https://admissions.cornell.edu/how-to-apply/first-year-applicants", "cycle": "Current published schedule; entry year unspecified" },
+          { "plan": "ED", "kind": "documents", "label": "ED required materials", "date": "November 13", "cycle": "Current published schedule; entry year unspecified" },
+          { "plan": "RD", "kind": "documents", "label": "RD required materials", "date": "January 19", "cycle": "Current published schedule; entry year unspecified" }
+        ]
+      }
+    },
+    {
+      "name": "Johns Hopkins University",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "testingPolicy": { "status": "reported", "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/", "note": "First-year SAT or ACT required. Self-reporting accepted; official scores required on enrollment. Superscores SAT and ACT core sections; optional ACT Science/Writing excluded from superscoring." },
+        "internationalAid": { "status": "reported", "url": "https://apply.jhu.edu/international-applicants/", "note": "Need-aware for international citizens; meets demonstrated need without loans. Request aid during first-year admission using CSS Profile or JHU ISFAA and Certification of Finances. Aid cannot first be requested later." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/", "note": "Fall 2027: ED I November 1, ED II and RD January 2. Aid due November 15 for ED I, January 15 for ED II/RD. Decisions December 11, February 12 and March 24 respectively." },
+        "englishProficiency": { "status": "reported", "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/", "note": "English tests recommended rather than required for non-primary English speakers or those without three years of English-medium school. DET preferred subscores: Literacy 125, Conversation 120, Comprehension 135, Production 105." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT required; self-reporting and superscoring accepted",
+        "englishMinimums": { "TOEFL": "5 total; preferred R/L 5.5, W/S 5", "IELTS": "7+ in every band", "Duolingo": "120+ overall; preferred subscores below", "Cambridge C1/C2": "185+" },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision I", "binding": true, "restrictive": false, "deadline": "November 1, 2026", "cycle": "Fall 2027", "explanation": "Binding first-choice round; decision December 11." },
+          { "kind": "ED2", "name": "Early Decision II", "binding": true, "restrictive": false, "deadline": "January 2, 2027", "cycle": "Fall 2027", "explanation": "Binding second early round; decision February 12." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 2, 2027", "cycle": "Fall 2027", "explanation": "Nonbinding; decision March 24, reply May 1." }
+        ],
+        "additionalDeadlines": [
+          { "plan": "ED", "kind": "financial_aid", "label": "ED I financial aid", "date": "November 15, 2026", "cycle": "Fall 2027" },
+          { "plan": "ED2", "kind": "financial_aid", "label": "ED II financial aid", "date": "January 15, 2027", "cycle": "Fall 2027" },
+          { "plan": "RD", "kind": "financial_aid", "label": "RD financial aid", "date": "January 15, 2027", "cycle": "Fall 2027" }
+        ],
+        "platforms": ["Common Application", "Coalition Application on Scoir"]
+      }
+    },
+    {
+      "name": "Amherst College",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.amherst.edu/admission/apply/firstyear", "note": "Fall 2027: binding ED November 9, 2026; nonbinding RD January 5, 2027. Decisions early-to-mid December or late March; RD reply May 1." },
+        "applicationRequirements": { "status": "reported", "url": "https://www.amherst.edu/admission/apply/firstyear", "note": "Application, writing supplement, counselor and two teacher letters, school records and midyear grades required. ED requires a signed agreement and first marking-period grades." },
+        "testingPolicy": { "status": "reported", "url": "https://www.amherst.edu/admission/apply/firstyear", "note": "SAT/ACT optional; self-reporting and superscoring accepted. Submit chosen scores by the application deadline; official results required on enrollment." },
+        "englishProficiency": { "status": "reported", "url": "https://www.amherst.edu/admission/apply/international", "note": "Required for non-native speakers unless the two most recent secondary-school years were taught primarily in English. Scores shown are strongly recommended. Self-reporting accepted; official scores required on enrollment." },
+        "internationalAid": { "status": "reported", "url": "https://www.amherst.edu/admission/apply/international", "note": "Need-blind for all citizenships; meets demonstrated need for admitted international students who apply for aid." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT optional; self-reporting and superscoring accepted",
+        "englishMinimums": { "TOEFL": "Recommended: 5.5 new scale / 100 prior scale", "IELTS Academic": "Recommended: 7.5", "Duolingo": "Recommended: 130+" },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision", "binding": true, "restrictive": false, "deadline": "November 9, 2026", "cycle": "Fall 2027", "explanation": "Binding; sign the ED agreement and withdraw other applications if admitted." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 5, 2027", "cycle": "Fall 2027", "explanation": "Nonbinding; reply by May 1." }
+        ],
+        "platforms": ["Common Application", "Coalition Application on Scoir", "QuestBridge"],
+        "applicationFee": 75,
+        "internationalApplicationFee": 75,
+        "feeWaiverRoute": "Request through the application platform or Amherst Quick Pass.",
+        "requirements": {
+          "recommendations": "Counselor plus two academic teachers.",
+          "schoolForms": "School Report; ED agreement for early applicants.",
+          "transcripts": "Official secondary transcript; diploma required before enrollment.",
+          "midyearReport": "Midyear report and transcript when available; ED also needs first marking-period grades.",
+          "supplements": "Amherst writing supplement.",
+          "interviews": { "value": "No college interviews; existing InitialView interviews may be submitted.", "source": "https://www.amherst.edu/admission/apply/international" },
+          "portfolio": "Optional arts supplement and research description."
+        }
+      }
+    },
+    {
+      "name": "Williams College",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "internationalAid": { "status": "reported", "reviewedAt": "2026-08-01", "url": "https://www.williams.edu/admission-aid/tuition-aid/requirements-and-deadlines/", "note": "Previous review: need-aware for international applicants and meets demonstrated need for admitted aid applicants. Recheck the current aid instructions." },
+        "scholarships": { "status": "reported", "reviewedAt": "2026-08-01", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "Previous review: institutional financial aid is need-based rather than merit-based." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "Current published schedule: ED November 15; RD January 4. Aid applications share these deadlines. ED decision by December 14, RD by April 1. Page does not explicitly identify the entry year." },
+        "testingPolicy": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "SAT/ACT optional. Applicants may change score consideration through their chosen round's deadline." },
+        "englishProficiency": { "status": "reported", "url": "https://catalog.williams.edu/admission/", "note": "Applicants whose first or instructional language is not English must demonstrate proficiency. No particular exam is mandatory; TOEFL and IELTS results are welcome." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT optional",
+        "englishMinimums": { "TOEFL": "No required exam or cutoff specified", "IELTS": "No required exam or cutoff specified" },
+        "plans": [
+          { "kind": "ED", "name": "Early Decision", "binding": true, "restrictive": false, "deadline": "November 15", "cycle": "Current published schedule; entry year unspecified", "explanation": "Binding first-choice application. Financial-aid application due the same day." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 4", "cycle": "Current published schedule; entry year unspecified", "explanation": "Nonbinding; aid due the same day, decisions by April 1, reply by May 1." }
+        ],
+        "platforms": ["Common Application", "Coalition Application on Scoir", "QuestBridge"]
+      }
+    },
+    {
+      "name": "California Institute of Technology (Caltech)",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines", "note": "Fall 2027: REA November 1, 2026; RD January 4, 2027. REA supporting materials due November 6. Decisions mid-December or mid-March; reply May 1." },
+        "testingPolicy": { "status": "reported", "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/standardized-tests", "note": "SAT or ACT required, with superscoring and self-reporting. Report all sittings; official scores required on enrollment. Fall 2027 score submission deadlines: before November 30 for REA and before December 31 for RD. Explain documented test-access obstacles in the application." },
+        "englishProficiency": { "status": "reported", "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants", "note": "Required unless English is your native language or your secondary school's primary teaching language. Strongly recommended for non-native speakers at English-medium schools. Each listed threshold applies both overall and to every section. Take the test before the application deadline. InitialView does not replace it." }
+      },
+      "facts": {
+        "testingPolicy": "SAT or ACT required; self-report all sittings; Caltech superscores",
+        "englishMinimums": { "IELTS": "7 overall and each section", "TOEFL": "5 overall/each section (new scale); 100 overall/25 each section (prior scale)", "Duolingo": "130 overall and each section" },
+        "plans": [
+          { "kind": "REA", "name": "Restrictive Early Action", "binding": false, "restrictive": true, "deadline": "November 1, 2026", "cycle": "Fall 2027", "explanation": "Nonbinding; restrictions apply to other early applications. Exceptions include non-U.S., nonbinding public/rolling, military academies and qualifying scholarship programs. ED2 permitted following deferral." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 4, 2027", "cycle": "Fall 2027", "explanation": "Nonbinding; decisions mid-March, enrollment reply May 1." }
+        ]
+      }
+    },
+    {
+      "name": "Yale University",
+      "reviewedAt": "2026-10-07",
+      "fields": {
+        "internationalAdmission": { "status": "not_published", "url": "https://oir.yale.edu/sites/default/files/yale_cds_2025-26_md_20260616.pdf", "note": "The 2025–26 CDS leaves the optional residency-based applicant/admit table empty. Enrollment totals are not an acceptance rate." },
+        "internationalAid": { "status": "reported", "url": "https://admissions.yale.edu/international", "note": "Admission is need-blind for all citizenships. Yale meets demonstrated need and includes travel allowances in international aid." },
+        "scholarships": { "status": "reported", "url": "https://finaid.yale.edu/typesofaid", "note": "Yale Scholarship is a need-based grant; institutional merit scholarships are not offered." },
+        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admissions.yale.edu/timelines", "note": "Single-Choice Early Action: November 1, decisions in mid-December. Regular Decision: January 2, decisions in late March. Reply by May 1. The current page does not explicitly name the entry year." },
+        "applicationRequirements": { "status": "reported", "url": "https://admissions.yale.edu/requirements", "note": "Apply through Common App, Coalition on Scoir, or QuestBridge. Submit two teacher letters, a counselor letter, School Report, transcript and SAT or ACT. Midyear grades follow when available. Fee waivers follow the application platform's eligibility rules." },
+        "testingPolicy": { "status": "reported", "url": "https://admissions.yale.edu/standardized-testing", "note": "SAT or ACT required. Self-reporting and superscoring permitted; official results required before enrollment. October/November exams generally reach early review; January/February exams generally reach regular review." },
+        "englishProficiency": { "status": "reported", "url": "https://admissions.yale.edu/standardized-testing", "note": "Required for non-native speakers without at least two years in an English-medium secondary school. Scores below are competitive benchmarks, not published minimum cutoffs. InitialView is accepted without a numerical score." }
+      },
+      "facts": {
+        "internationalAcceptance": { "status": "not_published", "value": null, "dataYear": "Fall 2025", "note": "No international applicant/admit counts in the optional CDS residency table." },
+        "applicationFee": 80,
+        "internationalApplicationFee": 80,
+        "applicationFeeStatus": "previous_cycle",
+        "applicationFeeDataYear": "2025–26 CDS",
+        "applicationFeeSource": "https://oir.yale.edu/sites/default/files/yale_cds_2025-26_md_20260616.pdf",
+        "testingPolicy": "SAT or ACT required; self-reporting and superscoring accepted",
+        "englishMinimums": { "TOEFL": "Competitive: 5 new scale / 100 prior scale", "IELTS": "Competitive: 7+", "Cambridge": "Competitive: 185+", "Duolingo": "Competitive: 120+", "InitialView": "Interview; no numerical score" },
+        "plans": [
+          { "kind": "REA", "name": "Single-Choice Early Action", "binding": false, "restrictive": true, "deadline": "November 1", "cycle": "Current published schedule; entry year unspecified", "explanation": "Restricts other early applications. Exceptions include nonbinding public or rolling programs, institutions outside the U.S., and early rounds notifying after January 1." },
+          { "kind": "RD", "name": "Regular Decision", "binding": false, "restrictive": false, "deadline": "January 2", "cycle": "Current published schedule; entry year unspecified", "explanation": "Nonbinding; decisions in late March and reply by May 1." }
+        ],
+        "platforms": ["Common Application", "Coalition Application on Scoir", "QuestBridge"],
+        "feeWaiverRoute": "Use the chosen application platform's fee-waiver criteria; QuestBridge applications are free.",
+        "requirements": {
+          "recommendations": "Two recent academic teachers and one counselor or school administrator.",
+          "schoolForms": "School Report submitted by a counselor or school official.",
+          "transcripts": "Official records covering completed secondary courses, including courses at other institutions.",
+          "midyearReport": "Submit senior-year interim grades when available, usually January or February.",
+          "interviews": { "value": "Optional evaluative interviews by invitation only; no disadvantage if not invited.", "source": "https://admissions.yale.edu/interviews" },
+          "portfolio": { "value": "Optional arts portfolio or STEM research supplement for substantial work.", "source": "https://admissions.yale.edu/supplementary" }
+        },
+        "scholarships": [
+          { "name": "Yale Scholarship", "amount": "Based on demonstrated financial need", "applicationMethod": "Complete Yale's international financial-aid process", "requirements": "Demonstrated financial need; international applicants eligible", "notes": "Grant aid, not a merit award. Check official aid instructions for required forms and dates." }
+        ]
+      }
+    },
+    {
       "name": "Massachusetts Institute of Technology (MIT)",
       "reviewedAt": "2026-08-09",
       "fields": {
@@ -507,30 +952,6 @@
       }
     },
     {
-      "name": "University of Michigan-Ann Arbor",
-      "fields": {
-        "internationalAid": { "status": "reported", "url": "https://finaid.umich.edu/apply-aid/international-students", "note": "International students on temporary visas are not eligible for federal aid; undergraduate institutional funding is very limited." },
-        "scholarships": { "status": "reported", "url": "https://finaid.umich.edu/apply-aid/international-students", "note": "Very limited undergraduate scholarship funding is listed, with no additional application for scholarship consideration." },
-        "internationalAdmission": { "status": "reported", "url": "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines", "note": "Official international first-year requirements checked, including translated records and English proficiency." },
-        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines", "note": "Binding Early Decision and nonbinding Early Action are due November 1; Regular Decision is due February 1. Program-specific dates can differ." },
-        "applicationRequirements": { "status": "reported", "url": "https://admissions.umich.edu/apply/international-applicants/requirements-deadlines", "note": "Common Application, $75 fee, transcript with translation, School Report, teacher evaluation, optional SAT/ACT, and English proof are listed. Counselor recommendation is encouraged but not required." },
-        "testingPolicy": { "status": "reported", "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines", "note": "SAT/ACT is optional and may be self-reported by the relevant application-plan deadline." },
-        "englishProficiency": { "status": "reported", "url": "https://admissions.umich.edu/apply/international-applicants/exams-visas", "note": "Published ranges include TOEFL iBT 100 with section expectations, IELTS 7.0 with 6.5 sections, Cambridge 185, PTE 68, and MET 64 with section expectations; official exemption routes are listed." }
-      },
-      "facts": {
-        "testingPolicy": "Test-optional",
-        "applicationFee": 75,
-        "platforms": ["Common Application"],
-        "englishMinimums": { "TOEFL": 100, "IELTS": 7, "Cambridge": 185, "PTE": 68, "MET": 64 },
-        "internationalAidPolicy": "International students on temporary visas should expect to pay full cost; scholarship funding is very limited",
-        "plans": [
-          { "kind": "ED", "deadline": "November 1", "binding": true },
-          { "kind": "EA", "deadline": "November 1", "binding": false },
-          { "kind": "RD", "deadline": "February 1", "binding": false }
-        ]
-      }
-    },
-    {
       "name": "University of Virginia",
       "fields": {
         "internationalAid": { "status": "reported", "url": "https://admission.virginia.edu/i-am/international", "note": "UVA states that it does not have scholarship or loan funds for foreign-national undergraduates, except need-based support for admitted United World College students." },
@@ -573,50 +994,6 @@
         "plans": [
           { "kind": "EA", "deadline": "November 1", "binding": false },
           { "kind": "RD", "deadline": "January 15", "binding": false }
-        ]
-      }
-    },
-    {
-      "name": "Wellesley College",
-      "fields": {
-        "internationalAid": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/student-financial-services/understanding-financial-aid/apply-for-aid/international-students", "note": "Wellesley is need-aware for international applicants and meets 100% of calculated need for admitted students who requested aid during admission." },
-        "scholarships": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/student-financial-services/understanding-financial-aid/apply-for-aid/international-students", "note": "International funding is need-based and limited; applicants must indicate their intent to seek aid during the admission process." },
-        "internationalAdmission": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants/international-applicants", "note": "Official international first-year instructions and aid-intent process checked." },
-        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply", "note": "Binding Early Decision I is due November 1, binding Early Decision II is due January 5, and Regular Decision is due January 8." },
-        "applicationRequirements": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants", "note": "There is no application fee. Common, Coalition with Scoir, and QuestBridge applications are accepted. Official records, two teacher recommendations, a personal essay, and a Wellesley-specific essay are listed." },
-        "testingPolicy": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply", "note": "Wellesley explicitly remains test-optional for applicants entering in Fall 2027." },
-        "englishProficiency": { "status": "reported", "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants", "note": "TOEFL, Duolingo, IELTS, Cambridge, InitialView, or Vericant is strongly recommended when the applicant has fewer than four years in an English-based curriculum. No minimum score is published on the reviewed page." }
-      },
-      "facts": {
-        "testingPolicy": "Test-optional for Fall 2027",
-        "applicationFee": 0,
-        "platforms": ["Common Application", "Coalition Application", "QuestBridge Application"],
-        "internationalAidPolicy": "Need-aware for international applicants; meets 100% of calculated need for admitted aid applicants",
-        "plans": [
-          { "kind": "ED", "deadline": "November 1", "binding": true },
-          { "kind": "ED2", "deadline": "January 5", "binding": true },
-          { "kind": "RD", "deadline": "January 8", "binding": false }
-        ]
-      }
-    },
-    {
-      "name": "Williams College",
-      "fields": {
-        "internationalAid": { "status": "reported", "url": "https://www.williams.edu/admission-aid/tuition-aid/requirements-and-deadlines/", "note": "Williams is need-aware for international applicants, meets 100% of demonstrated need for admitted aid applicants, and states that awards are comprehensive and guaranteed for four years." },
-        "scholarships": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "Williams offers need-based financial aid rather than merit scholarships." },
-        "internationalAdmission": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/additional-applicant-information/international/", "note": "International applicants follow the same first-year process; official English and financial-aid instructions were checked." },
-        "applicationPlansAndDeadlines": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "Binding Early Decision is due November 15 and Regular Decision is due January 5. Admission and aid intent dates align." },
-        "applicationRequirements": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "Common Application, Coalition with Scoir, and QuestBridge are accepted. Fee-waiver routes, required school materials, and optional additional materials are described." },
-        "testingPolicy": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/", "note": "Williams is test-optional and superscores SAT and ACT. Language-proficiency tests are also optional." },
-        "englishProficiency": { "status": "reported", "url": "https://www.williams.edu/admission-aid/how-to-apply/additional-applicant-information/international/", "note": "TOEFL, IELTS, or Duolingo is encouraged when English is neither the first language nor the school language. Typical competitive ranges are published, not minimum requirements." }
-      },
-      "facts": {
-        "testingPolicy": "Test-optional",
-        "platforms": ["Common Application", "Coalition Application", "QuestBridge Application"],
-        "internationalAidPolicy": "Need-aware for international applicants; meets 100% of demonstrated need with comprehensive four-year aid",
-        "plans": [
-          { "kind": "ED", "deadline": "November 15", "binding": true },
-          { "kind": "RD", "deadline": "January 5", "binding": false }
         ]
       }
     },

@@ -4,6 +4,7 @@ import test from "node:test";
 
 const catalog = JSON.parse(readFileSync(new URL("../lib/college-catalog.generated.json", import.meta.url), "utf8"));
 const launchScope = JSON.parse(readFileSync(new URL("../data/college-launch-scope.json", import.meta.url), "utf8"));
+const manualReviews = JSON.parse(readFileSync(new URL("../data/college-manual-review-overrides.json", import.meta.url), "utf8"));
 
 test("college catalog contains 678 unique, publishable records", () => {
   assert.equal(catalog.count, 678);
@@ -62,6 +63,20 @@ test("detailed research is limited to the 20-university and 10-LAC launch scope"
   for (const slug of ["mit", "stanford", "harvard", "princeton"]) {
     assert.equal(catalog.colleges.find((college) => college.slug === slug)?.profileTier, "detailed");
   }
+});
+
+test("manual reviews have unique names so older entries cannot erase current guidance", () => {
+  assert.equal(new Set(manualReviews.records.map((review) => review.name)).size, manualReviews.records.length);
+});
+
+test("current deadline guidance preserves institution-specific dates and aid deadlines", () => {
+  const amherst = catalog.colleges.find((college) => college.slug === "amherst");
+  assert.equal(amherst.deadlines.find((deadline) => deadline.plan === "ED" && deadline.kind === "application").date.value, "November 9, 2026");
+  const hopkins = catalog.colleges.find((college) => college.name === "Johns Hopkins University");
+  assert.equal(hopkins.deadlines.find((deadline) => deadline.plan === "ED2" && deadline.kind === "financial_aid").date.value, "January 15, 2027");
+  const yale = catalog.colleges.find((college) => college.slug === "yale");
+  assert.match(yale.englishProficiency.find((requirement) => requirement.test === "IELTS").minimumScore.value, /Competitive/);
+  assert.match(yale.testing.policy.value, /required/);
 });
 
 test("Excel percentage decimals and SAT ranges are converted without changing their meaning", () => {

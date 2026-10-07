@@ -41,7 +41,8 @@ const records = catalog.colleges.map((college) => {
       climate: officialClimate?.status === "reported" ? outcome("reported", [{ label: officialClimate.sourceLabel, url: officialClimate.sourcePage, reviewedAt }], officialClimate.note) : pending("Official NASA climate lookup still needs to be completed.")
     };
   for (const [field, override] of Object.entries(manualByName.get(college.name)?.fields ?? {})) {
-    fields[field] = outcome(override.status, [{ label: "Official college page", url: override.url, reviewedAt }], override.note);
+    const checkedAt = override.reviewedAt ?? manualByName.get(college.name)?.reviewedAt ?? manual.reviewedAt ?? reviewedAt;
+    fields[field] = { ...outcome(override.status, [{ label: "Official college page", url: override.url, reviewedAt: checkedAt }], override.note), reviewedAt: checkedAt };
   }
   return {
     slug: college.slug,

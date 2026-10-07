@@ -419,18 +419,27 @@ function applyManualFacts(college, review) {
     college.englishTests = Object.keys(facts.englishMinimums);
   }
   if (facts.plans?.length) {
-    college.applicationPlans = [...new Set([...college.applicationPlans, ...facts.plans.map((plan) => plan.kind)])];
+    college.applicationPlans = [...new Set(facts.plans.map((plan) => plan.kind))];
     const reviewedPlans = facts.plans.map((plan) => ({
       code: plan.kind,
       name: plan.name ?? (plan.kind === "ED" ? "Early Decision" : plan.kind === "EA" ? "Early Action" : plan.kind === "RD" ? "Regular Decision" : plan.kind === "Rolling" ? "Rolling admission" : plan.kind),
       binding: Boolean(plan.binding),
       restrictive: Boolean(plan.restrictive),
       explanation: plan.explanation ?? (plan.kind === "ED" ? "Binding: enroll if admitted and the aid offer is workable." : plan.kind === "Rolling" ? "Applications are reviewed as files become complete." : "Nonbinding application plan."),
-      source: manualSource(plan.kind, { status: plan.status ?? facts.planStatus ?? "reported", source: plan.source ?? sourceFor("applicationPlansAndDeadlines"), cycle: plan.cycle })
+      source: manualSource(plan.kind, { status: plan.status ?? facts.planStatus ?? (plan.cycle?.includes("unspecified") ? "previous_cycle" : "reported"), source: plan.source ?? sourceFor("applicationPlansAndDeadlines"), cycle: plan.cycle })
     }));
-    const deadlines = facts.plans.filter((plan) => plan.deadline).map((plan) => ({ id: `${college.slug}:${plan.kind.toLowerCase()}:application`, plan: plan.kind, kind: "application", label: `${plan.kind} application`, date: manualSource(plan.deadline, { status: plan.status ?? facts.planStatus ?? "reported", source: plan.source ?? sourceFor("applicationPlansAndDeadlines"), cycle: plan.cycle }) }));
+    const deadlines = facts.plans.filter((plan) => plan.deadline).map((plan) => ({ id: `${college.slug}:${plan.kind.toLowerCase()}:application`, plan: plan.kind, kind: "application", label: `${plan.kind} application`, date: manualSource(plan.deadline, { status: plan.status ?? facts.planStatus ?? (plan.cycle?.includes("unspecified") ? "previous_cycle" : "reported"), source: plan.source ?? sourceFor("applicationPlansAndDeadlines"), cycle: plan.cycle }) }));
     college.applicationRequirements = { ...requirements, plans: reviewedPlans };
     college.deadlines = deadlines;
+  }
+  if (facts.additionalDeadlines?.length) {
+    college.deadlines = [...(college.deadlines ?? []), ...facts.additionalDeadlines.map((item) => ({
+      id: `${college.slug}:${item.plan.toLowerCase()}:${item.kind}`,
+      plan: item.plan,
+      kind: item.kind,
+      label: item.label,
+      date: manualSource(item.date, { status: item.status ?? (item.cycle?.includes("unspecified") ? "previous_cycle" : "reported"), source: item.source ?? sourceFor("applicationPlansAndDeadlines"), cycle: item.cycle })
+    }))];
   }
   if (facts.platforms?.length) {
     college.applicationRequirements = {
@@ -447,7 +456,7 @@ function applyManualFacts(college, review) {
       ...current,
       fee: {
         ...current.fee,
-        amount: manualSource(facts.applicationFee, { status: "reported", source: facts.applicationFeeSource ?? sourceFor("applicationRequirements") })
+        amount: manualSource(facts.applicationFee, { status: facts.applicationFeeStatus ?? "reported", source: facts.applicationFeeSource ?? sourceFor("applicationRequirements"), dataYear: facts.applicationFeeDataYear })
       }
     };
   }
@@ -457,7 +466,7 @@ function applyManualFacts(college, review) {
       ...current,
       fee: {
         ...current.fee,
-        internationalFee: manualSource(facts.internationalApplicationFee ?? null, { status: facts.internationalApplicationFeeStatus ?? "reported", source: facts.applicationFeeSource ?? sourceFor("applicationRequirements") }),
+        internationalFee: manualSource(facts.internationalApplicationFee ?? null, { status: facts.internationalApplicationFeeStatus ?? facts.applicationFeeStatus ?? "reported", source: facts.applicationFeeSource ?? sourceFor("applicationRequirements"), dataYear: facts.applicationFeeDataYear }),
         waiverRoute: manualSource(facts.feeWaiverRoute ?? null, { status: facts.feeWaiverStatus ?? "reported", source: facts.feeWaiverSource ?? sourceFor("applicationRequirements") })
       }
     };

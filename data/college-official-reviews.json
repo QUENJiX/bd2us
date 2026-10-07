@@ -1835,10 +1835,10 @@
       }
     },
     {
-      "slug": "amherst-college",
+      "slug": "amherst",
       "name": "Amherst College",
       "ipedsId": "164465",
-      "reviewStatus": "reviewed",
+      "reviewStatus": "in_progress",
       "fields": {
         "identity": {
           "status": "reported",
@@ -1892,135 +1892,73 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Admission & Financial Aid | Admission & Financial Aid | Amherst College",
-              "url": "https://www.amherst.edu/admission/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid | Offices & Departments | Financial Aid | Amherst College",
-              "url": "https://www.amherst.edu/offices/financialaid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Frequently Asked Questions | Financial Aid | Frequently Asked Questions | Amherst College",
-              "url": "https://www.amherst.edu/offices/financialaid/frequently-asked-questions",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://www.amherst.edu/admission/apply/international",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Need-blind for all citizenships; meets demonstrated need for admitted international students who apply for aid."
         },
         "scholarships": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Admission & Financial Aid | Admission & Financial Aid | Amherst College",
-              "url": "https://www.amherst.edu/admission/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid | Offices & Departments | Financial Aid | Amherst College",
-              "url": "https://www.amherst.edu/offices/financialaid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Frequently Asked Questions | Financial Aid | Frequently Asked Questions | Amherst College",
-              "url": "https://www.amherst.edu/offices/financialaid/frequently-asked-questions",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "internationalAdmission": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Admission & Financial Aid | Admission & Financial Aid | Amherst College",
-              "url": "https://www.amherst.edu/admission/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid | Offices & Departments | Financial Aid | Amherst College",
-              "url": "https://www.amherst.edu/offices/financialaid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "First-Year Applicants | Applying to Amherst | First-Year Applicants | Amherst College",
-              "url": "https://www.amherst.edu/admission/apply/firstyear",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationPlansAndDeadlines": {
           "status": "reported",
           "sources": [
             {
-              "label": "Admission & Financial Aid | Admission & Financial Aid | Amherst College",
-              "url": "https://www.amherst.edu/admission/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "First-Year Applicants | Applying to Amherst | First-Year Applicants | Amherst College",
+              "label": "Official college page",
               "url": "https://www.amherst.edu/admission/apply/firstyear",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Frequently Asked Questions | Financial Aid | Frequently Asked Questions | Amherst College",
-              "url": "https://www.amherst.edu/offices/financialaid/frequently-asked-questions",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Fall 2027: binding ED November 9, 2026; nonbinding RD January 5, 2027. Decisions early-to-mid December or late March; RD reply May 1."
         },
         "applicationRequirements": {
           "status": "reported",
           "sources": [
             {
-              "label": "Admission & Financial Aid | Admission & Financial Aid | Amherst College",
-              "url": "https://www.amherst.edu/admission/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "First-Year Applicants | Applying to Amherst | First-Year Applicants | Amherst College",
+              "label": "Official college page",
               "url": "https://www.amherst.edu/admission/apply/firstyear",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Calendar and Deadlines | First-Year Applicants | Calendar and Deadlines | Amherst College",
-              "url": "https://www.amherst.edu/admission/apply/firstyear/calendar_deadlines",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Application, writing supplement, counselor and two teacher letters, school records and midyear grades required. ED requires a signed agreement and first marking-period grades."
         },
         "testingPolicy": {
           "status": "reported",
           "sources": [
             {
-              "label": "First-Year Applicants | Applying to Amherst | First-Year Applicants | Amherst College",
+              "label": "Official college page",
               "url": "https://www.amherst.edu/admission/apply/firstyear",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT optional; self-reporting and superscoring accepted. Submit chosen scores by the application deadline; official results required on enrollment."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "First-Year Applicants | Applying to Amherst | First-Year Applicants | Amherst College",
-              "url": "https://www.amherst.edu/admission/apply/firstyear",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://www.amherst.edu/admission/apply/international",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Required for non-native speakers unless the two most recent secondary-school years were taught primarily in English. Scores shown are strongly recommended. Self-reporting accepted; official scores required on enrollment."
         },
         "campusSafety": {
           "status": "reported",
@@ -8766,10 +8704,10 @@
       }
     },
     {
-      "slug": "bowdoin-college",
+      "slug": "bowdoin",
       "name": "Bowdoin College",
       "ipedsId": "161004",
-      "reviewStatus": "reviewed",
+      "reviewStatus": "in_progress",
       "fields": {
         "identity": {
           "status": "reported",
@@ -8820,153 +8758,64 @@
           "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components."
         },
         "internationalAid": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Apply | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/international-students/index.html",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students | Bowdoin College",
-              "url": "https://www.bowdoin.edu/student-aid/apply-for-aid/international-students.html",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "scholarships": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Welcome to Bowdoin College | Bowdoin College",
-              "url": "https://www.bowdoin.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Student Aid | Bowdoin College",
-              "url": "https://www.bowdoin.edu/student-aid/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "internationalAdmission": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Student Aid | Bowdoin College",
-              "url": "https://www.bowdoin.edu/student-aid/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/international-students/index.html",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationPlansAndDeadlines": {
           "status": "reported",
           "sources": [
             {
-              "label": "Apply | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/international-students/index.html",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Bowdoin College Expands Need-Blind Admissions Policy to Include International Students | Bowdoin College",
-              "url": "https://www.bowdoin.edu/news/2022/07/bowdoin-college-expands-need-blind-admissions-policy-to-include-international-students.html",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://www.bowdoin.edu/admissions/apply/dates-deadlines/index.html",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Current published schedule: ED I November 15; ED II/RD January 5. International applicants except Canadians submit aid materials only after admission. Supporting school materials may follow the application deadline."
         },
         "applicationRequirements": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Apply | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Application Dates and Deadlines | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/dates-deadlines/index.html",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Test Optional Policy | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/test-optional-policy/index.html",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "testingPolicy": {
           "status": "reported",
           "sources": [
             {
-              "label": "Apply | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/international-students/index.html",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Bowdoin College Expands Need-Blind Admissions Policy to Include International Students | Bowdoin College",
-              "url": "https://www.bowdoin.edu/news/2022/07/bowdoin-college-expands-need-blind-admissions-policy-to-include-international-students.html",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://www.bowdoin.edu/admissions/apply/test-optional-policy/index.html",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT optional, with superscoring. ACT superscore uses English, Reading and Math; Science optional."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "Apply | Bowdoin College",
-              "url": "https://www.bowdoin.edu/admissions/apply/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students | Bowdoin College",
+              "label": "Official college page",
               "url": "https://www.bowdoin.edu/admissions/apply/international-students/index.html",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "English tests optional; TOEFL, IELTS, DET and Cambridge accepted. Self-reporting allowed. Submitted scores cannot later be deleted. No cutoff appears on this page; strong English proficiency is expected."
         },
         "campusSafety": {
           "status": "reported",
@@ -10020,10 +9869,10 @@
       }
     },
     {
-      "slug": "brown-university",
+      "slug": "brown",
       "name": "Brown University",
       "ipedsId": "217156",
-      "reviewStatus": "reviewed",
+      "reviewStatus": "in_progress",
       "fields": {
         "identity": {
           "status": "reported",
@@ -10074,148 +9923,58 @@
           "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components."
         },
         "internationalAid": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "From largest pool to date, Brown admits 885 early decision applicants | Brown University",
-              "url": "https://www.brown.edu/news/2020-12-17/early-decision",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Brown admits 879 early decision students to the undergraduate Class of 2027 | Brown University",
-              "url": "https://www.brown.edu/news/2022-12-20/early-decision",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Brown admits 898 early decision students to the undergraduate Class of 2028 | Brown University",
-              "url": "https://www.brown.edu/news/2023-12-15/early-decision",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "scholarships": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Brown University",
-              "url": "https://www.brown.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid Undergradute | Brown University",
-              "url": "https://finaid.brown.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "From largest pool to date, Brown admits 885 early decision applicants | Brown University",
-              "url": "https://www.brown.edu/news/2020-12-17/early-decision",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "internationalAdmission": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Brown admits 879 early decision students to the undergraduate Class of 2027 | Brown University",
-              "url": "https://www.brown.edu/news/2022-12-20/early-decision",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Brown admits 906 early decision students to the undergraduate Class of 2029 | Brown University",
-              "url": "https://www.brown.edu/news/2024-12-13/early-decision",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Brown plans to become need-blind for international undergraduate students in next admissions cycle | Brown University",
-              "url": "https://www.brown.edu/news/2024-01-25/international-financial-aid",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationPlansAndDeadlines": {
           "status": "reported",
           "sources": [
             {
-              "label": "From largest pool to date, Brown admits 885 early decision applicants | Brown University",
-              "url": "https://www.brown.edu/news/2020-12-17/early-decision",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Brown admits 879 early decision students to the undergraduate Class of 2027 | Brown University",
-              "url": "https://www.brown.edu/news/2022-12-20/early-decision",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Brown admits 898 early decision students to the undergraduate Class of 2028 | Brown University",
-              "url": "https://www.brown.edu/news/2023-12-15/early-decision",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.brown.edu/first-year",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Current published schedule: ED November 1; RD January 5. Entry year not explicit on this page."
         },
         "applicationRequirements": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Brown students, recent alumni earn prestigious scholarships | Brown University",
-              "url": "https://www.brown.edu/news/2023-12-21/scholarships",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "testingPolicy": {
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
+        },
+        "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "Brown admits 906 early decision students to the undergraduate Class of 2029 | Brown University",
-              "url": "https://www.brown.edu/news/2024-12-13/early-decision",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Brown extends test-optional policy for 2022-23 undergraduate admission cycle | Brown University",
-              "url": "https://www.brown.edu/news/2022-01-26/test-optional",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Brown extends test-optional policy for 2023-24 undergraduate admission cycle | Brown University",
-              "url": "https://www.brown.edu/news/2023-03-10/test-optional",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.brown.edu/international/english-proficiency",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
-        },
-        "englishProficiency": {
-          "status": "not_published",
-          "sources": [
-            {
-              "label": "Brown University",
-              "url": "https://www.brown.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Admission and Aid | Brown University",
-              "url": "https://www.brown.edu/admission",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid Undergradute | Brown University",
-              "url": "https://finaid.brown.edu/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "No relevant information was found after checking the college's official admissions pages and sitemap; this can be revisited when the college updates its site."
+          "reviewedAt": "2026-10-07",
+          "note": "Highly recommended when English is not a first/home language or the teaching language throughout secondary school. Self-reporting allowed; official reports needed for enrollment. TOEFL MyBest not accepted. Fall 2027 enrollees must arrange official reports before expiration and by May 2027."
         },
         "campusSafety": {
           "status": "reported",
@@ -12308,23 +12067,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Financial Aid",
-              "url": "https://www.finaid.caltech.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "New International Applicants: Restrictive Early Action - Financial Aid",
-              "url": "https://www.finaid.caltech.edu/applying/how/newinternationalrea",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "New International Applicants: Regular Decision - Financial Aid",
-              "url": "https://www.finaid.caltech.edu/applying/how/newinternationalrd",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/deadlines",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Fall 2027: REA November 1, 2026; RD January 4, 2027. REA supporting materials due November 6. Decisions mid-December or mid-March; reply May 1."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -12352,40 +12101,25 @@
           "status": "reported",
           "sources": [
             {
-              "label": "International Applicants - Undergraduate Admissions",
-              "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Standardized Tests - Undergraduate Admissions",
+              "label": "Official college page",
               "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/standardized-tests",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Standardized Testing Buckets - Undergraduate Admissions",
-              "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/standardized-tests/standardized-testing-buckets",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT or ACT required, with superscoring and self-reporting. Report all sittings; official scores required on enrollment. Fall 2027 score submission deadlines: before November 30 for REA and before December 31 for RD. Explain documented test-access obstacles in the application."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "International Applicants - Undergraduate Admissions",
+              "label": "Official college page",
               "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/international-applicants",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "First-Year Application Requirements - Undergraduate Admissions",
-              "url": "https://www.admissions.caltech.edu/apply/first-year-applicants/application-requirements",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Required unless English is your native language or your secondary school's primary teaching language. Strongly recommended for non-native speakers at English-medium schools. Each listed threshold applies both overall and to every section. Take the test before the application deadline. InitialView does not replace it."
         },
         "campusSafety": {
           "status": "reported",
@@ -23396,89 +23130,49 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Home | Financial Aid",
-              "url": "https://finaid.cornell.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Continuing International or Undocumented Students | Financial Aid",
-              "url": "https://finaid.cornell.edu/continuing-international-or-undocumented-students",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Winter Session and Summer Semester Financial Aid | Financial Aid",
-              "url": "https://finaid.cornell.edu/winter-session-and-summer-semester-financial-aid",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.cornell.edu/resources/submit-english-language-proficiency",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Current schedule: ED November 1; RD January 2. Required materials follow November 13 or January 19; portfolios/design supplements share the application deadline. Entry year is not explicit on this page."
         },
         "applicationRequirements": {
           "status": "reported",
           "sources": [
             {
-              "label": "Home | Financial Aid",
-              "url": "https://finaid.cornell.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Federal Financial Aid Changes | Financial Aid",
-              "url": "https://finaid.cornell.edu/federal-financial-aid-changes",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Cornell Grants and Endowed Scholarships | Financial Aid",
-              "url": "https://finaid.cornell.edu/grants-and-scholarships/cornell-grants-and-endowed-scholarships",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Common App, school transcript/report, counselor and two teacher letters, school-specific supplement and SAT/ACT required. Midyear grades follow when available."
         },
         "testingPolicy": {
-          "status": "not_published",
+          "status": "reported",
           "sources": [
             {
-              "label": "Cornell University",
-              "url": "https://www.cornell.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Home | Undergraduate Admissions",
-              "url": "https://admissions.cornell.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Home | Financial Aid",
-              "url": "https://finaid.cornell.edu/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.cornell.edu/how-to-apply/first-year-applicants",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "No relevant information was found after checking the college's official admissions pages and sitemap; this can be revisited when the college updates its site."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT or ACT required."
         },
         "englishProficiency": {
-          "status": "not_published",
+          "status": "reported",
           "sources": [
             {
-              "label": "Cornell University",
-              "url": "https://www.cornell.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Home | Undergraduate Admissions",
-              "url": "https://admissions.cornell.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Home | Financial Aid",
-              "url": "https://finaid.cornell.edu/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.cornell.edu/resources/submit-english-language-proficiency",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "No relevant information was found after checking the college's official admissions pages and sitemap; this can be revisited when the college updates its site."
+          "reviewedAt": "2026-10-07",
+          "note": "Self-report for review; official scores required after admission. Exemption routes include native English and four years of English-medium schooling. Scores are labeled minimum competitive by Cornell; TOEFL new-scale 5.5 is recommended."
         },
         "campusSafety": {
           "status": "reported",
@@ -25119,10 +24813,10 @@
       }
     },
     {
-      "slug": "dartmouth-college",
+      "slug": "dartmouth",
       "name": "Dartmouth College",
       "ipedsId": "182670",
-      "reviewStatus": "reviewed",
+      "reviewStatus": "in_progress",
       "fields": {
         "identity": {
           "status": "reported",
@@ -25173,133 +24867,46 @@
           "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components."
         },
         "internationalAid": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Apply for Financial Aid | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/estimate-your-cost/apply-financial-aid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Being an International Student on Financial Aid | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/follow/blog/eda-naz-gokdemir/being-international-student-financial-aid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students and Financial Aid | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/follow/blog/adrian-chimboza/international-students-and-financial-aid",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "scholarships": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Dartmouth",
-              "url": "https://home.dartmouth.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Home | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply for Financial Aid | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/estimate-your-cost/apply-financial-aid",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "internationalAdmission": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Home | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply for Financial Aid | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/estimate-your-cost/apply-financial-aid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply to Dartmouth | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/apply-dartmouth",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationPlansAndDeadlines": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Apply for Financial Aid | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/estimate-your-cost/apply-financial-aid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply to Dartmouth | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/apply-dartmouth",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "So You Want to Join the Woods: Applying Early Decision from an International Student's Perspective (Part Six) | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/follow/blog/crystal-wang/so-you-want-join-woods-applying-early-decision-international-students",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationRequirements": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Apply to Dartmouth | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/apply-dartmouth",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "testingPolicy": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Apply to Dartmouth | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/apply-dartmouth",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "englishProficiency": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Apply to Dartmouth | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/apply-dartmouth",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Being an International Student on Financial Aid | Dartmouth Admissions",
-              "url": "https://admissions.dartmouth.edu/follow/blog/eda-naz-gokdemir/being-international-student-financial-aid",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "campusSafety": {
           "status": "reported",
@@ -27865,23 +27472,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Homepage - Duke Undergraduate Admissions",
-              "url": "https://admissions.duke.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply - Duke Undergraduate Admissions",
-              "url": "https://admissions.duke.edu/apply/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply for Aid | Karsh Office of Undergraduate Financial Support",
-              "url": "https://financialaid.duke.edu/apply-aid/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.duke.edu/checklist/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "2026–27 cycle: ED November 2, RD January 4. ED aid application due November 2; additional aid documents November 15. Optional Glimpse interviews November 9 or January 11."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -27899,25 +27496,25 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Apply - Duke Undergraduate Admissions",
-              "url": "https://admissions.duke.edu/apply/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.duke.edu/checklist/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT optional. Latest ED tests SAT November 7 and ACT October 17; RD SAT December 5 and ACT December 12, 2026."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "Apply - Duke Undergraduate Admissions",
+              "label": "Official college page",
               "url": "https://admissions.duke.edu/apply/",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Recommended rather than required for non-native speakers or applicants outside English-medium curricula. Duke uses the highest result. Published expected scores below; TOEFL is stated on the prior scale and a new-scale threshold remains unconfirmed."
         },
         "campusSafety": {
           "status": "reported",
@@ -40644,7 +40241,7 @@
       }
     },
     {
-      "slug": "harvard-university",
+      "slug": "harvard",
       "name": "Harvard University",
       "ipedsId": "166027",
       "reviewStatus": "reviewed",
@@ -40701,145 +40298,85 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Admissions | Harvard College",
-              "url": "https://college.harvard.edu/admissions",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Am I required to work if I am an international student and I qualify for financial aid? | Harvard",
-              "url": "https://college.harvard.edu/resources/faq/am-i-required-work-if-i-am-international-student-and-i-qualify-financial-aid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Will Harvard provide travel expenses for international students who receive financial aid? | Harvard",
-              "url": "https://college.harvard.edu/resources/faq/will-harvard-provide-travel-expenses-international-students-who-receive-financial-aid",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://college.harvard.edu/financial-aid/how-aid-works",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Harvard is need-blind for international applicants, gives international students the same need-based aid consideration as U.S. students, and meets 100% of demonstrated need."
         },
         "scholarships": {
           "status": "reported",
           "sources": [
             {
-              "label": "Admissions | Harvard College",
-              "url": "https://college.harvard.edu/admissions",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid | Harvard College",
-              "url": "https://college.harvard.edu/financial-aid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Application Requirements | Harvard",
-              "url": "https://college.harvard.edu/admissions/apply/application-requirements",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://college.harvard.edu/financial-aid/how-aid-works/types-aid",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Harvard College scholarships are need-based grants, not merit awards, and are designed to cover demonstrated need after the family contribution and other resources are considered."
         },
         "internationalAdmission": {
-          "status": "reported",
+          "status": "not_published",
           "sources": [
             {
-              "label": "Admissions | Harvard College",
-              "url": "https://college.harvard.edu/admissions",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid | Harvard College",
-              "url": "https://college.harvard.edu/financial-aid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Application Requirements | Harvard",
-              "url": "https://college.harvard.edu/admissions/apply/application-requirements",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://oira.harvard.edu/common-data-set",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Harvard's reviewed official institutional information does not publish the citizenship-specific applicant and admit counts needed for a reliable international admit rate."
         },
         "applicationPlansAndDeadlines": {
           "status": "reported",
           "sources": [
             {
-              "label": "Admissions | Harvard College",
-              "url": "https://college.harvard.edu/admissions",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Application Requirements | Harvard",
-              "url": "https://college.harvard.edu/admissions/apply/application-requirements",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "What is the deadline for applying for financial aid? | Harvard",
-              "url": "https://college.harvard.edu/resources/faq/what-deadline-applying-financial-aid",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://college.harvard.edu/admissions/apply/first-year-applicants",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Harvard lists Restrictive Early Action on November 1 and Regular Decision on January 1, with decisions in mid-December and by the end of March respectively."
         },
         "applicationRequirements": {
           "status": "reported",
           "sources": [
             {
-              "label": "Harvard University",
-              "url": "https://www.harvard.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Admissions | Harvard College",
-              "url": "https://college.harvard.edu/admissions",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid | Harvard College",
-              "url": "https://college.harvard.edu/financial-aid",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://college.harvard.edu/admissions/apply/application-requirements",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "The Common Application, Harvard questions, $90 fee or waiver, testing, School Report and transcript, two teacher reports, midyear report, and final report for enrolling students are listed."
         },
         "testingPolicy": {
           "status": "reported",
           "sources": [
             {
-              "label": "Admissions | Harvard College",
-              "url": "https://college.harvard.edu/admissions",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Application Requirements | Harvard",
-              "url": "https://college.harvard.edu/admissions/apply/application-requirements",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Are international transfer applicants required to take the SAT or ACT exam? | Harvard",
-              "url": "https://college.harvard.edu/resources/faq/are-international-transfer-applicants-required-take-sat-or-act-exam",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://college.harvard.edu/admissions/apply/international-applicants",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Harvard requires SAT or ACT. In exceptional access cases it accepts specified AP, IB, GCSE/A-Level, or national leaving-exam results or predictions. Applicants may self-report scores."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "Admissions | Harvard College",
-              "url": "https://college.harvard.edu/admissions",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://college.harvard.edu/admissions/apply/international-applicants",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Harvard does not require an English-proficiency exam for first-year applicants and publishes no minimum. Applicants may submit one voluntarily."
         },
         "campusSafety": {
           "status": "reported",
@@ -40991,23 +40528,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Admission and Financial Aid | Harvey Mudd College",
-              "url": "https://www.hmc.edu/admission/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply to Harvey Mudd | Admission and Financial Aid | Harvey Mudd College",
+              "label": "Official college page",
               "url": "https://www.hmc.edu/admission/apply/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Deadlines for International Applicants | Admission and Financial Aid | Harvey Mudd College",
-              "url": "https://www.hmc.edu/admission/afford/international-student-financial-aid/international-deadlines/",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Current schedule: ED I November 15; ED II/RD January 5. CSS Profile due November 15, January 5 or February 1 respectively. Merit-scholarship deadline February 1. Entry year not explicit in this table."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -41030,30 +40557,25 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Admission and Financial Aid | Harvey Mudd College",
-              "url": "https://www.hmc.edu/admission/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply to Harvey Mudd | Admission and Financial Aid | Harvey Mudd College",
+              "label": "Official college page",
               "url": "https://www.hmc.edu/admission/apply/",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT optional through 2027; self-reporting allowed. Score submission deadlines: ED I November 30, ED II January 25, RD February 5."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "Apply to Harvey Mudd | Admission and Financial Aid | Harvey Mudd College",
-              "url": "https://www.hmc.edu/admission/apply/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://www.hmc.edu/admission/apply/faqs/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Required for international applicants; request a waiver by email after submitting Common App. A slightly lower score does not automatically disqualify. TOEFL cutoff is published on the prior scale; new-scale cutoff needs confirmation."
         },
         "campusSafety": {
           "status": "reported",
@@ -47096,23 +46618,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Student Financial Support | Johns Hopkins University",
-              "url": "https://sfs.jhu.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Transfer Application Deadlines & Requirements | Johns Hopkins University Admissions",
-              "url": "https://apply.jhu.edu/how-to-apply/transfer-students/transfer-application-deadlines-requirements-old/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Application Deadlines & Requirements | Johns Hopkins University Admissions",
-              "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://apply.jhu.edu/international-applicants/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Need-aware for international citizens; meets demonstrated need without loans. Request aid during first-year admission using CSS Profile or JHU ISFAA and Certification of Finances. Aid cannot first be requested later."
         },
         "scholarships": {
           "status": "reported",
@@ -47162,23 +46674,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Undergraduate Admissions | Johns Hopkins University",
-              "url": "https://apply.jhu.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Standardized Testing | Johns Hopkins University Admissions",
-              "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Transfer Application Deadlines & Requirements | Johns Hopkins University Admissions",
-              "url": "https://apply.jhu.edu/how-to-apply/transfer-students/transfer-application-deadlines-requirements-old/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Fall 2027: ED I November 1, ED II and RD January 2. Aid due November 15 for ED I, January 15 for ED II/RD. Decisions December 11, February 12 and March 24 respectively."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -47206,30 +46708,25 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Standardized Testing | Johns Hopkins University Admissions",
+              "label": "Official college page",
               "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "First-year SAT or ACT required. Self-reporting accepted; official scores required on enrollment. Superscores SAT and ACT core sections; optional ACT Science/Writing excluded from superscoring."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "Standardized Testing | Johns Hopkins University Admissions",
+              "label": "Official college page",
               "url": "https://apply.jhu.edu/how-to-apply/application-deadlines-requirements/standardized-testing/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Applicants | Johns Hopkins University Admissions",
-              "url": "https://apply.jhu.edu/international-applicants/",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "English tests recommended rather than required for non-primary English speakers or those without three years of English-medium school. DET preferred subscores: Literacy 125, Conversation 120, Comprehension 135, Production 105."
         },
         "campusSafety": {
           "status": "reported",
@@ -57275,7 +56772,7 @@
       }
     },
     {
-      "slug": "massachusetts-institute-of-technology-mit",
+      "slug": "mit",
       "name": "Massachusetts Institute of Technology (MIT)",
       "ipedsId": "166683",
       "reviewStatus": "reviewed",
@@ -57332,120 +56829,85 @@
           "status": "reported",
           "sources": [
             {
-              "label": "All Applicants Can Now Apply For Either Early or Regular Action | MIT Admissions",
-              "url": "https://mitadmissions.org/blogs/entry/international-students-early-action/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Admissions Conference | MIT Admissions",
-              "url": "https://mitadmissions.org/blogs/entry/international_admissions_confe/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://sfs.mit.edu/undergraduate-students/apply-for-aid/international/",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "MIT says international applicants are considered for aid through the same need-based process and that it meets 100% of demonstrated financial need. International applicants submit the CSS Profile and parent income documents through IDOC."
         },
         "scholarships": {
           "status": "reported",
           "sources": [
             {
-              "label": "MIT Admissions",
-              "url": "https://mitadmissions.org/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "MIT Student Financial Services",
-              "url": "https://sfs.mit.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply | MIT Admissions",
-              "url": "https://mitadmissions.org/apply/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://sfs.mit.edu/undergraduate-students/",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "MIT Scholarship is the institution's need-based grant. MIT says it does not award institutional aid for merit, athletics, or other non-need criteria."
         },
         "internationalAdmission": {
-          "status": "reported",
+          "status": "calculated",
           "sources": [
             {
-              "label": "All Applicants Can Now Apply For Either Early or Regular Action | MIT Admissions",
-              "url": "https://mitadmissions.org/blogs/entry/international-students-early-action/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Admissions Conference | MIT Admissions",
-              "url": "https://mitadmissions.org/blogs/entry/international_admissions_confe/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International students @ MIT (+life updates) | MIT Admissions",
-              "url": "https://mitadmissions.org/blogs/entry/international-students-mit-life-updates/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://mitadmissions.org/apply/process/stats/",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "For the Class of 2029, MIT reports 6,926 international applications and 136 international admits. The displayed rate is calculated from those same-cycle official counts."
         },
         "applicationPlansAndDeadlines": {
-          "status": "reported",
+          "status": "previous_cycle",
           "sources": [
             {
-              "label": "All Applicants Can Now Apply For Either Early or Regular Action | MIT Admissions",
-              "url": "https://mitadmissions.org/blogs/entry/international-students-early-action/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Admissions Conference | MIT Admissions",
-              "url": "https://mitadmissions.org/blogs/entry/international_admissions_confe/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Reaffirming our support for international students | MIT Admissions",
-              "url": "https://mitadmissions.org/blogs/entry/reaffirming-our-support-for-international-students/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "MIT currently lists nonbinding, nonrestrictive Early Action and Regular Action. The reviewed page lists November 1 and January 4, but BD2US treats those dates as previous-cycle planning references until MIT labels the Fall 2027 cycle."
         },
         "applicationRequirements": {
           "status": "reported",
           "sources": [
             {
-              "label": "An Early History of International Students at MIT | MIT Admissions",
-              "url": "https://mitadmissions.org/blogs/entry/international-students/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://mitadmissions.org/apply/firstyear/deadlines-requirements/",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "MIT's own application requires short essays and activities, two teacher recommendations, the Secondary School Report and transcript, a midyear update, and SAT or ACT results. Creative portfolios are optional. Interviews depend on alumni availability and are waived without disadvantage when unavailable. The $75 fee has an in-application waiver route for international applicants."
         },
         "testingPolicy": {
           "status": "reported",
           "sources": [
             {
-              "label": "Apply | MIT Admissions",
-              "url": "https://mitadmissions.org/apply/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "MIT requires SAT or ACT, superscores by section, permits self-reporting during application, and verifies scores after enrollment. Tests must be taken by November 30 for Early Action and December 31 for Regular Action."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "Blogging Scholarship Conclusion | MIT Admissions",
-              "url": "https://mitadmissions.org/blogs/entry/blogging_scholarship_deadline/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://mitadmissions.org/apply/firstyear/tests-scores/",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "MIT strongly recommends an English test for non-native speakers who have used English for fewer than five years or do not speak English at home or school. Published minimums are TOEFL 5 on the new scale or 90 on the prior scale, IELTS 7, PTE 65, Cambridge 185, and Duolingo 120."
         },
         "campusSafety": {
           "status": "reported",
@@ -66971,23 +66433,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Admissions: Northwestern University",
-              "url": "https://www.northwestern.edu/admissions/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Undergraduate Financial Aid - Northwestern University",
-              "url": "https://undergradaid.northwestern.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students Application Instructions: Undergraduate Financial Aid - Northwestern University",
-              "url": "https://undergradaid.northwestern.edu/apply-for-aid/prospective-students/international-students-application-instructions.html",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.northwestern.edu/apply/application-options.html",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Fall 2027: ED November 1, 2026; RD January 4, 2027. Deadline time is 11:59 p.m. in the applicant's local time zone. Music applicants have additional requirements."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -67015,35 +66467,25 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Application Dates and Deadlines: Undergraduate Admissions - Northwestern University",
-              "url": "https://admissions.northwestern.edu/apply/application-deadlines.html",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.northwestern.edu/apply/application-options.html",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT optional; self-reporting accepted. Report highest SAT sections and the official ACT superscore; do not calculate your own ACT superscore. Official scores required on enrollment."
         },
         "englishProficiency": {
-          "status": "not_published",
+          "status": "reported",
           "sources": [
             {
-              "label": "Northwestern University",
-              "url": "https://www.northwestern.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Admissions: Northwestern University",
-              "url": "https://www.northwestern.edu/admissions/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Undergraduate Financial Aid - Northwestern University",
-              "url": "https://undergradaid.northwestern.edu/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.northwestern.edu/faqs/international-applicants/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "No relevant information was found after checking the college's official admissions pages and sitemap; this can be revisited when the college updates its site."
+          "reviewedAt": "2026-10-07",
+          "note": "Official English scores required for applicable non-native/non-English-school applicants. No minimum cutoff. Accepts TOEFL iBT, IELTS (including Indicator) and DET; not TOEFL ITP Plus. English exams are not superscored; TOEFL MyBest not reviewed."
         },
         "campusSafety": {
           "status": "reported",
@@ -71883,23 +71325,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Financial Aid | Pomona College in Claremont, California - Pomona College",
-              "url": "https://www.pomona.edu/financial-aid",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Student Applicant Checklist | Pomona College in Claremont, California - Pomona College",
-              "url": "https://www.pomona.edu/admissions-aid/financial-aid/applying-aid/applying-financial-aid/international-student-applicant-checklist",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Application Materials and Deadlines | Pomona College in Claremont, California - Pomona College",
-              "url": "https://www.pomona.edu/financial-aid/applying-aid/application-materials-and-deadlines",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://www.pomona.edu/admissions/paths-apply",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Current schedule: ED I November 8, ED II/RD January 8. ED is binding. Supporting materials can follow; midyear report due February 15. Entry year unspecified on reviewed page."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -71914,48 +71346,28 @@
           "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
         },
         "testingPolicy": {
-          "status": "not_published",
+          "status": "reported",
           "sources": [
             {
-              "label": "Home | Pomona College in Claremont, California - Pomona College",
-              "url": "https://www.pomona.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Admissions | Pomona College in Claremont, California - Pomona College",
-              "url": "https://www.pomona.edu/admissions",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid | Pomona College in Claremont, California - Pomona College",
-              "url": "https://www.pomona.edu/financial-aid",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://www.pomona.edu/admissions/paths-apply",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "No relevant information was found after checking the college's official admissions pages and sitemap; this can be revisited when the college updates its site."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT optional; self-reporting accepted. ACT submissions must include Science. ACT sections may be superscored."
         },
         "englishProficiency": {
-          "status": "not_published",
+          "status": "reported",
           "sources": [
             {
-              "label": "Home | Pomona College in Claremont, California - Pomona College",
-              "url": "https://www.pomona.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Admissions | Pomona College in Claremont, California - Pomona College",
-              "url": "https://www.pomona.edu/admissions",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid | Pomona College in Claremont, California - Pomona College",
-              "url": "https://www.pomona.edu/financial-aid",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://www.pomona.edu/admissions/apply/international-applicants/international-applicant-faqs",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "No relevant information was found after checking the college's official admissions pages and sitemap; this can be revisited when the college updates its site."
+          "reviewedAt": "2026-10-07",
+          "note": "Required when secondary-school instruction is not primarily English. Self-reporting accepted; official scores required on enrollment. No minimum subscores. The TOEFL threshold shown is on the prior 0–120 scale; the new-scale threshold needs confirmation."
         },
         "campusSafety": {
           "status": "reported",
@@ -72397,7 +71809,7 @@
       }
     },
     {
-      "slug": "princeton-university",
+      "slug": "princeton",
       "name": "Princeton University",
       "ipedsId": "186131",
       "reviewStatus": "reviewed",
@@ -72454,115 +71866,85 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Home | Princeton University",
-              "url": "https://www.princeton.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "For International Students | Princeton University",
-              "url": "https://www.princeton.edu/admission-aid/international-students",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International internships enable students to work and serve across the world",
-              "url": "https://www.princeton.edu/news/2015/07/30/international-internships-enable-students-work-and-serve-across-world",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.princeton.edu/apply/international-students",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Princeton is need-blind for international applicants, meets full demonstrated need, and provides grant rather than required-loan aid."
         },
         "scholarships": {
           "status": "reported",
           "sources": [
             {
-              "label": "Home | Princeton University",
-              "url": "https://www.princeton.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "For International Students | Princeton University",
-              "url": "https://www.princeton.edu/admission-aid/international-students",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Changes intended to enhance international student and scholar services",
-              "url": "https://www.princeton.edu/news/2010/03/30/changes-intended-enhance-international-student-and-scholar-services",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.princeton.edu/cost-aid",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Princeton undergraduate aid is entirely need-based. Princeton does not offer academic or athletic merit scholarships."
         },
         "internationalAdmission": {
-          "status": "reported",
+          "status": "not_published",
           "sources": [
             {
-              "label": "Home | Princeton University",
-              "url": "https://www.princeton.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "For International Students | Princeton University",
-              "url": "https://www.princeton.edu/admission-aid/international-students",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International internships enable students to work and serve across the world",
-              "url": "https://www.princeton.edu/news/2015/07/30/international-internships-enable-students-work-and-serve-across-world",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://ir.princeton.edu/document/556",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Princeton's reviewed official Common Data Set does not publish international applicant and admit counts needed for a reliable international admit rate."
         },
         "applicationPlansAndDeadlines": {
           "status": "reported",
           "sources": [
             {
-              "label": "Princeton offers early action admission to 770 students for Class of 2021",
-              "url": "https://www.princeton.edu/news/2016/12/15/princeton-offers-early-action-admission-770-students-class-2021",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.princeton.edu/apply/first-year-application-dates-deadlines",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "For Fall 2027, Princeton lists nonbinding Single-Choice Early Action on November 1 and Regular Decision on January 1. SCEA restricts other private U.S. early applications, with official exceptions."
         },
         "applicationRequirements": {
           "status": "reported",
           "sources": [
             {
-              "label": "Changes intended to enhance international student and scholar services",
-              "url": "https://www.princeton.edu/news/2010/03/30/changes-intended-enhance-international-student-and-scholar-services",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.princeton.edu/apply/application-checklist",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "The Common Application, Princeton questions, graded written paper, School Report, counselor recommendation, transcript, two teacher recommendations, midyear report, and applicable English testing are required."
         },
         "testingPolicy": {
           "status": "reported",
           "sources": [
             {
-              "label": "For International Students | Princeton University",
-              "url": "https://www.princeton.edu/admission-aid/international-students",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.princeton.edu/apply/counselors",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Princeton is test-optional for Fall 2027 and will require SAT or ACT again beginning with Fall 2028 entry."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "For International Students | Princeton University",
-              "url": "https://www.princeton.edu/admission-aid/international-students",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.princeton.edu/apply/application-checklist",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Applicants whose native language is not English and whose school does not teach in English must submit TOEFL, IELTS Academic, Duolingo, or PTE Academic. Princeton does not publish a minimum on the reviewed page."
         },
         "campusSafety": {
           "status": "reported",
@@ -90405,7 +89787,7 @@
       }
     },
     {
-      "slug": "stanford-university",
+      "slug": "stanford",
       "name": "Stanford University",
       "ipedsId": "243744",
       "reviewStatus": "reviewed",
@@ -90462,145 +89844,85 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Application and Essays : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/apply.html",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "First-Year Applicants : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "First-Year Applicants : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/index.html",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.stanford.edu/apply/international/",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Stanford meets demonstrated need for admitted international students who request aid when applying. Asking for aid is considered in international admission, and students who say they will not seek aid generally cannot apply for Stanford need-based aid later."
         },
         "scholarships": {
           "status": "reported",
           "sources": [
             {
-              "label": "Stanford University",
-              "url": "https://www.stanford.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Undergraduate Admission : Stanford University",
-              "url": "https://admission.stanford.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Regular Decision and Restrictive Early Action : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/decision_process.html",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://financialaid.stanford.edu/undergrad/types/index.html",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Stanford undergraduate institutional scholarships are need-based. No separate application is required for named Stanford scholarship funds; Stanford does not offer general merit scholarships outside limited athletic awards."
         },
         "internationalAdmission": {
-          "status": "reported",
+          "status": "not_published",
           "sources": [
             {
-              "label": "Application and Essays : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/apply.html",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "First-Year Applicants : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "First-Year Applicants : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/index.html",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://irds.stanford.edu/data-findings/cds",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Stanford publishes overall admission totals but its reviewed official Common Data Set page does not provide international applicant and admit counts needed for a reliable international admit rate."
         },
         "applicationPlansAndDeadlines": {
           "status": "reported",
           "sources": [
             {
-              "label": "Undergraduate Admission : Stanford University",
-              "url": "https://admission.stanford.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Application and Essays : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/apply.html",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "First-Year Applicants : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.stanford.edu/apply/first-year/index.html",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Stanford's current first-year page lists Restrictive Early Action on November 1 and Regular Decision on January 5. Optional arts applicants have earlier application and portfolio dates."
         },
         "applicationRequirements": {
           "status": "reported",
           "sources": [
             {
-              "label": "Undergraduate Admission : Stanford University",
-              "url": "https://admission.stanford.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid : Stanford University",
-              "url": "https://financialaid.stanford.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Page Not Found : Stanford University",
-              "url": "https://admission.stanford.edu/errors/404page.html",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.stanford.edu/apply/first-year/index.html",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "The Common Application, $100 fee or waiver, SAT or ACT, School Report and counselor letter, official academic records, midyear transcript, and two academic teacher recommendations are required."
         },
         "testingPolicy": {
           "status": "reported",
           "sources": [
             {
-              "label": "First-Year Applicants : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "First-Year Applicants : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/index.html",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Standardized Testing : Stanford University",
+              "label": "Official college page",
               "url": "https://admission.stanford.edu/apply/first-year/testing.html",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Stanford requires SAT or ACT, accepts self-reported scores for review, verifies scores after enrollment, and superscores SAT sections and ACT results. The Class of 2029 submitted-score middle 50% was 1520–1570 SAT and 34–36 ACT."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "Standardized Testing : Stanford University",
-              "url": "https://admission.stanford.edu/apply/first-year/testing.html",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.stanford.edu/apply/international/",
+              "reviewedAt": "2026-08-09"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-08-09",
+          "note": "Stanford does not require an English-proficiency exam or publish minimum scores. Applicants may self-report an English exam; fluency in English is required."
         },
         "campusSafety": {
           "status": "reported",
@@ -102195,13 +101517,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Dates and Deadlines - Office of Undergraduate Admissions",
-              "url": "https://admissions.berkeley.edu/apply-to-berkeley/dates-deadlines/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "UC's reviewed general first-year page gives an October 1–November 30 submission window. Entry year unspecified; confirm the active UC portal schedule before submitting."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -102221,43 +101543,28 @@
           "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
         },
         "testingPolicy": {
-          "status": "not_published",
+          "status": "reported",
           "sources": [
             {
-              "label": "University of California, Berkeley: Home",
-              "url": "https://www.berkeley.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Home - Office of Undergraduate Admissions",
-              "url": "https://admissions.berkeley.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Contact Us - Financial Aid & Scholarships",
-              "url": "https://financialaid.berkeley.edu/contact-us/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://www.admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/first-year-policy-changes/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "No relevant information was found after checking the college's official admissions pages and sitemap; this can be revisited when the college updates its site."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT are not considered for admission; submitted scores can be used for placement or credit after admission."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "International Students - Office of Undergraduate Admissions",
-              "url": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Requirements for International Students - Office of Undergraduate Admissions",
-              "url": "https://admissions.berkeley.edu/requirements-for-international-students/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.berkeley.edu/apply-to-berkeley/international-students/requirements-for-international-students/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "English proficiency can be met by listed exams or curriculum routes, including three years of English-medium instruction. Satisfy it by January 31. Check the official page's score-validity rule before selecting an exam date."
         },
         "campusSafety": {
           "status": "reported",
@@ -102802,18 +102109,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Welcome to UCLA Financial Aid & Scholarships | Financial Aid & Scholarships",
-              "url": "https://financialaid.ucla.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Scholarships | Financial Aid & Scholarships",
-              "url": "https://financialaid.ucla.edu/types-of-aid/scholarships",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.universityofcalifornia.edu/how-to-apply/applying-as-a-freshman/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "UC's general first-year page gives November 30 as the submission deadline. Entry year unspecified; confirm the active portal schedule."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -102838,38 +102140,28 @@
           "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
         },
         "testingPolicy": {
-          "status": "not_published",
+          "status": "reported",
           "sources": [
             {
-              "label": "A World Leader in Education and Research Excellence | UCLA",
-              "url": "https://www.ucla.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Welcome to UCLA Financial Aid & Scholarships | Financial Aid & Scholarships",
-              "url": "https://financialaid.ucla.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Student Application and Resources | UCLA",
-              "url": "https://www.ucla.edu/admission/international-applicants",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.ucla.edu/apply/international-applicants",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "No relevant information was found after checking the college's official admissions pages and sitemap; this can be revisited when the college updates its site."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT not considered for admission or scholarships."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "International Student Application and Resources | UCLA",
-              "url": "https://www.ucla.edu/admission/international-applicants",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admission.ucla.edu/apply/international-applicants",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Scores below are competitive benchmarks. Self-report accurately by January; official reports follow. IELTS and DET results must be sent separately to each campus; include the UC application ID."
         },
         "campusSafety": {
           "status": "reported",
@@ -111954,11 +111246,11 @@
             {
               "label": "Official college page",
               "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Binding Early Decision and nonbinding Early Action are due November 1; Regular Decision is due February 1. Program-specific dates can differ."
+          "reviewedAt": "2026-10-07",
+          "note": "Current schedule: ED/EA November 1; RD February 1. ED binding with parent and counselor signatures. Music, Theatre & Dance deadline December 1. Entry year not explicitly labeled in the reviewed schedule."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -111978,11 +111270,11 @@
             {
               "label": "Official college page",
               "url": "https://admissions.umich.edu/apply/first-year-applicants/requirements-deadlines",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "SAT/ACT is optional and may be self-reported by the relevant application-plan deadline."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT optional; self-report by the relevant round's deadline."
         },
         "englishProficiency": {
           "status": "reported",
@@ -111990,11 +111282,11 @@
             {
               "label": "Official college page",
               "url": "https://admissions.umich.edu/apply/international-applicants/exams-visas",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Published ranges include TOEFL iBT 100 with section expectations, IELTS 7.0 with 6.5 sections, Cambridge 185, PTE 68, and MET 64 with section expectations; official exemption routes are listed."
+          "reviewedAt": "2026-10-07",
+          "note": "Required for applicants with English as a second language. Waiver requires both the stated SAT/ACT threshold and four years of rigorous study in a listed English-speaking country; Bangladesh is not in that list. Check all section-score requirements."
         },
         "campusSafety": {
           "status": "reported",
@@ -118293,10 +117585,10 @@
       }
     },
     {
-      "slug": "university-of-notre-dame",
+      "slug": "notre-dame",
       "name": "University of Notre Dame",
       "ipedsId": "152080",
-      "reviewStatus": "reviewed",
+      "reviewStatus": "in_progress",
       "fields": {
         "identity": {
           "status": "reported",
@@ -118347,143 +117639,46 @@
           "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components."
         },
         "internationalAid": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "University of Notre Dame",
-              "url": "https://www.nd.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Office of Financial Aid | University of Notre Dame",
-              "url": "https://financialaid.nd.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Admissions | University of Notre Dame",
-              "url": "https://www.nd.edu/admissions/international-admissions/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "scholarships": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "University of Notre Dame",
-              "url": "https://www.nd.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Office of Financial Aid | University of Notre Dame",
-              "url": "https://financialaid.nd.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Admissions | University of Notre Dame",
-              "url": "https://www.nd.edu/admissions/international-admissions/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "internationalAdmission": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "University of Notre Dame",
-              "url": "https://www.nd.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Undergraduate Admissions | University of Notre Dame",
-              "url": "https://admissions.nd.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Admissions | University of Notre Dame",
-              "url": "https://www.nd.edu/admissions/international-admissions/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationPlansAndDeadlines": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Undergraduate Admissions | University of Notre Dame",
-              "url": "https://admissions.nd.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Office of Financial Aid | University of Notre Dame",
-              "url": "https://financialaid.nd.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Restrictive Early Action Program for First-Year Applicants | Stories & News | Visit & Engage | Undergraduate Admissions | University of Notre Dame",
-              "url": "https://admissions.nd.edu/visit-engage/stories-news/notre-dame-restrictive-early-action-program-for-first-year-applicants/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationRequirements": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Application Information | International Applicants | Resources For | Apply | Undergraduate Admissions | University of Notre Dame",
-              "url": "https://admissions.nd.edu/apply/resources-for/international-applicants/application-information/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International FAQs | International Applicants | Resources For | Apply | Undergraduate Admissions | University of Notre Dame",
-              "url": "https://admissions.nd.edu/apply/resources-for/international-applicants/international-faqs/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "testingPolicy": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Application Information | International Applicants | Resources For | Apply | Undergraduate Admissions | University of Notre Dame",
-              "url": "https://admissions.nd.edu/apply/resources-for/international-applicants/application-information/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International FAQs | International Applicants | Resources For | Apply | Undergraduate Admissions | University of Notre Dame",
-              "url": "https://admissions.nd.edu/apply/resources-for/international-applicants/international-faqs/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "englishProficiency": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Application Information | International Applicants | Resources For | Apply | Undergraduate Admissions | University of Notre Dame",
-              "url": "https://admissions.nd.edu/apply/resources-for/international-applicants/application-information/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International FAQs | International Applicants | Resources For | Apply | Undergraduate Admissions | University of Notre Dame",
-              "url": "https://admissions.nd.edu/apply/resources-for/international-applicants/international-faqs/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "campusSafety": {
           "status": "reported",
@@ -119078,23 +118273,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Early Decision Financial Aid Application Due | Penn Student Registration & Financial Services| Penn Srfs",
-              "url": "https://srfs.upenn.edu/calendar/early-decision-financial-aid-application-due",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Regular Decision Financial Aid Application Due | Penn Student Registration & Financial Services| Penn Srfs",
-              "url": "https://srfs.upenn.edu/calendar/regular-decision-financial-aid-application-due",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid Deadline - Regular Decision | Penn Student Registration & Financial Services| Penn Srfs",
-              "url": "https://srfs.upenn.edu/calendar/financial-aid-deadline-regular-decision",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.upenn.edu/how-to-apply/first-year-applicants",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Fall 2027: binding ED November 1, 2026; nonbinding RD January 5, 2027. Apply to one undergraduate school or coordinated program."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -119119,43 +118304,28 @@
           "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
         },
         "testingPolicy": {
-          "status": "not_published",
+          "status": "reported",
           "sources": [
             {
-              "label": "University of Pennsylvania",
-              "url": "https://www.upenn.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Admissions & Aid | University of Pennsylvania",
-              "url": "https://www.upenn.edu/admissions/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Home | Penn Student Registration & Financial Services",
-              "url": "https://srfs.upenn.edu/",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "No relevant information was found after checking the college's official admissions pages and sitemap; this can be revisited when the college updates its site."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT required; hardship waiver available for applicants who have not tested. Self-reporting and superscoring accepted. Latest ED tests: SAT November 7, ACT October 17; RD: SAT December 5, ACT December 12, 2026."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "International Applicants | Penn Admissions",
-              "url": "https://admissions.upenn.edu/how-to-apply/international-applicants",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Application Guidelines | Penn Admissions",
-              "url": "https://admissions.upenn.edu/how-to-apply/international-applicants/guidelines",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.upenn.edu/how-to-apply/preparing-your-application/testing",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Required unless English is native or was the primary teaching language for at least three years by enrollment. Official scores required; TOEFL MyBest and IELTS One Skill Retake not accepted. For 2026–27, exams must date from April 1, 2025 or later. This page gives no numerical minimums."
         },
         "campusSafety": {
           "status": "reported",
@@ -120503,10 +119673,10 @@
       }
     },
     {
-      "slug": "university-of-rochester",
+      "slug": "rochester",
       "name": "University of Rochester",
       "ipedsId": "195030",
-      "reviewStatus": "reviewed",
+      "reviewStatus": "in_progress",
       "fields": {
         "identity": {
           "status": "reported",
@@ -120557,138 +119727,46 @@
           "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components."
         },
         "internationalAid": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Financial Aid & Scholarships | University of Rochester",
-              "url": "https://www.rochester.edu/financial-aid/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/applying/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Dates & Deadlines - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/applying/dates-and-deadlines/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "scholarships": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Financial Aid & Scholarships | University of Rochester",
-              "url": "https://www.rochester.edu/financial-aid/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/applying/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "National and International Partners - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/national-and-international-partners/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "internationalAdmission": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Home - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/applying/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "National and International Partners - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/national-and-international-partners/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationPlansAndDeadlines": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Financial Aid & Scholarships | University of Rochester",
-              "url": "https://www.rochester.edu/financial-aid/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/applying/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "National and International Partners - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/national-and-international-partners/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationRequirements": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "International Students - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/applying/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Dates & Deadlines - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/applying/dates-and-deadlines/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "School of Nursing Students | URochester Financial Aid & Scholarships",
-              "url": "https://www.rochester.edu/financial-aid/school-of-nursing-students/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "testingPolicy": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "National and International Partners - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/national-and-international-partners/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "englishProficiency": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "International Students - Undergraduate Admissions",
-              "url": "https://admissions.rochester.edu/applying/international-students/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "campusSafety": {
           "status": "reported",
@@ -122588,10 +121666,10 @@
       }
     },
     {
-      "slug": "university-of-southern-california",
+      "slug": "usc",
       "name": "University of Southern California",
       "ipedsId": "123961",
-      "reviewStatus": "reviewed",
+      "reviewStatus": "in_progress",
       "fields": {
         "identity": {
           "status": "reported",
@@ -122642,143 +121720,46 @@
           "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components."
         },
         "internationalAid": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Undergraduate Admission - Undergraduate Admission",
-              "url": "https://admission.usc.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid Office - Financial Aid",
-              "url": "https://financialaid.usc.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students - Undergraduate Admission",
-              "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "scholarships": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Undergraduate Admission - Undergraduate Admission",
-              "url": "https://admission.usc.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid Office - Financial Aid",
-              "url": "https://financialaid.usc.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students - Undergraduate Admission",
-              "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "internationalAdmission": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Undergraduate Admission - Undergraduate Admission",
-              "url": "https://admission.usc.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid Office - Financial Aid",
-              "url": "https://financialaid.usc.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students - Undergraduate Admission",
-              "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationPlansAndDeadlines": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Financial Aid Office - Financial Aid",
-              "url": "https://financialaid.usc.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students - Undergraduate Admission",
-              "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Test Optional FAQ - Undergraduate Admission",
-              "url": "https://admission.usc.edu/test-optional-faq/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationRequirements": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "International Students - Undergraduate Admission",
-              "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Academic Expectations for International Students - Undergraduate Admission",
-              "url": "https://admission.usc.edu/academic-expectations-for-international-students/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "testingPolicy": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "International Students - Undergraduate Admission",
-              "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Test Optional FAQ - Undergraduate Admission",
-              "url": "https://admission.usc.edu/test-optional-faq/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "englishProficiency": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "International Students - Undergraduate Admission",
-              "url": "https://admission.usc.edu/prospective-students/how-to-apply/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Test Optional FAQ - Undergraduate Admission",
-              "url": "https://admission.usc.edu/test-optional-faq/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "campusSafety": {
           "status": "reported",
@@ -124119,23 +123100,13 @@
           "status": "reported",
           "sources": [
             {
-              "label": "International Students - University of Texas Admissions",
-              "url": "https://admissions.utexas.edu/info-for/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students - University of Texas Admissions",
+              "label": "Official college page",
               "url": "https://admissions.utexas.edu/apply/international-students/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Financial Aid - University of Texas Admissions",
-              "url": "https://admissions.utexas.edu/cost-aid/financial-aid/",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Fall 2027: EA October 15, supporting materials October 22; RD December 1, materials December 10. EA response/deferral January 15; final response February 15."
         },
         "applicationRequirements": {
           "status": "reported",
@@ -132562,7 +131533,7 @@
       "slug": "wellesley-college",
       "name": "Wellesley College",
       "ipedsId": "168218",
-      "reviewStatus": "reviewed",
+      "reviewStatus": "in_progress",
       "fields": {
         "identity": {
           "status": "reported",
@@ -132613,76 +131584,46 @@
           "note": "Previous-cycle on-campus estimate calculated from the official out-of-state tuition and fees, books, room and board, and other-expense components."
         },
         "internationalAid": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Official college page",
-              "url": "https://www.wellesley.edu/admission-aid/student-financial-services/understanding-financial-aid/apply-for-aid/international-students",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Wellesley is need-aware for international applicants and meets 100% of calculated need for admitted students who requested aid during admission."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "scholarships": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Official college page",
-              "url": "https://www.wellesley.edu/admission-aid/student-financial-services/understanding-financial-aid/apply-for-aid/international-students",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "International funding is need-based and limited; applicants must indicate their intent to seek aid during the admission process."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "internationalAdmission": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Official college page",
-              "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants/international-applicants",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Official international first-year instructions and aid-intent process checked."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationPlansAndDeadlines": {
           "status": "reported",
           "sources": [
             {
               "label": "Official college page",
-              "url": "https://www.wellesley.edu/admission-aid/apply",
-              "reviewedAt": "2026-08-01"
+              "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Binding Early Decision I is due November 1, binding Early Decision II is due January 5, and Regular Decision is due January 8."
+          "reviewedAt": "2026-10-07",
+          "note": "Current schedule: ED I November 1, ED II January 5, RD January 8. Aid deadlines align. Entry year not explicitly labeled in this table."
         },
         "applicationRequirements": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Official college page",
-              "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "There is no application fee. Common, Coalition with Scoir, and QuestBridge applications are accepted. Official records, two teacher recommendations, a personal essay, and a Wellesley-specific essay are listed."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "testingPolicy": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Official college page",
-              "url": "https://www.wellesley.edu/admission-aid/apply",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Wellesley explicitly remains test-optional for applicants entering in Fall 2027."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "englishProficiency": {
           "status": "reported",
@@ -132690,11 +131631,11 @@
             {
               "label": "Official college page",
               "url": "https://www.wellesley.edu/admission-aid/apply/first-year-applicants",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "TOEFL, Duolingo, IELTS, Cambridge, InitialView, or Vericant is strongly recommended when the applicant has fewer than four years in an English-based curriculum. No minimum score is published on the reviewed page."
+          "reviewedAt": "2026-10-07",
+          "note": "Optional, strongly recommended for non-native speakers with fewer than four years in an English-based curriculum. Accepts TOEFL iBT/Essentials, DET, IELTS, Cambridge and GTEC CBT; interview tools also available. No numerical minimum shown on the reviewed page."
         },
         "campusSafety": {
           "status": "reported",
@@ -137428,7 +136369,7 @@
       "slug": "williams-college",
       "name": "Williams College",
       "ipedsId": "168342",
-      "reviewStatus": "reviewed",
+      "reviewStatus": "in_progress",
       "fields": {
         "identity": {
           "status": "reported",
@@ -137488,7 +136429,7 @@
             }
           ],
           "reviewedAt": "2026-08-01",
-          "note": "Williams is need-aware for international applicants, meets 100% of demonstrated need for admitted aid applicants, and states that awards are comprehensive and guaranteed for four years."
+          "note": "Previous review: need-aware for international applicants and meets demonstrated need for admitted aid applicants. Recheck the current aid instructions."
         },
         "scholarships": {
           "status": "reported",
@@ -137500,19 +136441,13 @@
             }
           ],
           "reviewedAt": "2026-08-01",
-          "note": "Williams offers need-based financial aid rather than merit scholarships."
+          "note": "Previous review: institutional financial aid is need-based rather than merit-based."
         },
         "internationalAdmission": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Official college page",
-              "url": "https://www.williams.edu/admission-aid/how-to-apply/additional-applicant-information/international/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "International applicants follow the same first-year process; official English and financial-aid instructions were checked."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "applicationPlansAndDeadlines": {
           "status": "reported",
@@ -137520,23 +136455,17 @@
             {
               "label": "Official college page",
               "url": "https://www.williams.edu/admission-aid/how-to-apply/",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Binding Early Decision is due November 15 and Regular Decision is due January 5. Admission and aid intent dates align."
+          "reviewedAt": "2026-10-07",
+          "note": "Current published schedule: ED November 15; RD January 4. Aid applications share these deadlines. ED decision by December 14, RD by April 1. Page does not explicitly identify the entry year."
         },
         "applicationRequirements": {
-          "status": "reported",
-          "sources": [
-            {
-              "label": "Official college page",
-              "url": "https://www.williams.edu/admission-aid/how-to-apply/",
-              "reviewedAt": "2026-08-01"
-            }
-          ],
-          "reviewedAt": "2026-08-01",
-          "note": "Common Application, Coalition with Scoir, and QuestBridge are accepted. Fee-waiver routes, required school materials, and optional additional materials are described."
+          "status": "unreviewed",
+          "sources": [],
+          "reviewedAt": null,
+          "note": "The official site blocked access or did not expose enough relevant pages; a targeted review is still required."
         },
         "testingPolicy": {
           "status": "reported",
@@ -137544,23 +136473,23 @@
             {
               "label": "Official college page",
               "url": "https://www.williams.edu/admission-aid/how-to-apply/",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Williams is test-optional and superscores SAT and ACT. Language-proficiency tests are also optional."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT/ACT optional. Applicants may change score consideration through their chosen round's deadline."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
               "label": "Official college page",
-              "url": "https://www.williams.edu/admission-aid/how-to-apply/additional-applicant-information/international/",
-              "reviewedAt": "2026-08-01"
+              "url": "https://catalog.williams.edu/admission/",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "TOEFL, IELTS, or Duolingo is encouraged when English is neither the first language nor the school language. Typical competitive ranges are published, not minimum requirements."
+          "reviewedAt": "2026-10-07",
+          "note": "Applicants whose first or instructional language is not English must demonstrate proficiency. No particular exam is mandatory; TOEFL and IELTS results are welcome."
         },
         "campusSafety": {
           "status": "reported",
@@ -139276,7 +138205,7 @@
       }
     },
     {
-      "slug": "yale-university",
+      "slug": "yale",
       "name": "Yale University",
       "ipedsId": "130794",
       "reviewStatus": "reviewed",
@@ -139333,155 +138262,85 @@
           "status": "reported",
           "sources": [
             {
-              "label": "Yale University",
-              "url": "https://www.yale.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students | Undergraduate Admissions",
+              "label": "Official college page",
               "url": "https://admissions.yale.edu/international",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Episode 22: Financial Aid 101 | Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/posts/episode-22-financial-aid-101",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Admission is need-blind for all citizenships. Yale meets demonstrated need and includes travel allowances in international aid."
         },
         "scholarships": {
           "status": "reported",
           "sources": [
             {
-              "label": "Welcome to Undergraduate Financial Aid | Undergraduate Financial Aid",
-              "url": "https://finaid.yale.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Yale admits 779 early action applicants | Yale News",
-              "url": "https://news.yale.edu/2025/12/17/yale-admits-779-early-action-applicants",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Episode 22: Financial Aid 101 | Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/posts/episode-22-financial-aid-101",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://finaid.yale.edu/typesofaid",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Yale Scholarship is a need-based grant; institutional merit scholarships are not offered."
         },
         "internationalAdmission": {
-          "status": "reported",
+          "status": "not_published",
           "sources": [
             {
-              "label": "Yale University",
-              "url": "https://www.yale.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply to Yale as a First-Year Student | Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/apply",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://oir.yale.edu/sites/default/files/yale_cds_2025-26_md_20260616.pdf",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "The 2025–26 CDS leaves the optional residency-based applicant/admit table empty. Enrollment totals are not an acceptance rate."
         },
         "applicationPlansAndDeadlines": {
           "status": "reported",
           "sources": [
             {
-              "label": "Apply to Yale as a First-Year Student | Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/apply",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Requirements | Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/requirements",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Yale admits 779 early action applicants | Yale News",
-              "url": "https://news.yale.edu/2025/12/17/yale-admits-779-early-action-applicants",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.yale.edu/timelines",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Single-Choice Early Action: November 1, decisions in mid-December. Regular Decision: January 2, decisions in late March. Reply by May 1. The current page does not explicitly name the entry year."
         },
         "applicationRequirements": {
           "status": "reported",
           "sources": [
             {
-              "label": "Yale University",
-              "url": "https://www.yale.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply to Yale as a First-Year Student | Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/apply",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Requirements | Undergraduate Admissions",
+              "label": "Official college page",
               "url": "https://admissions.yale.edu/requirements",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Apply through Common App, Coalition on Scoir, or QuestBridge. Submit two teacher letters, a counselor letter, School Report, transcript and SAT or ACT. Midyear grades follow when available. Fee waivers follow the application platform's eligibility rules."
         },
         "testingPolicy": {
           "status": "reported",
           "sources": [
             {
-              "label": "Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Apply to Yale as a First-Year Student | Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/apply",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Requirements | Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/requirements",
-              "reviewedAt": "2026-08-01"
+              "label": "Official college page",
+              "url": "https://admissions.yale.edu/standardized-testing",
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "SAT or ACT required. Self-reporting and superscoring permitted; official results required before enrollment. October/November exams generally reach early review; January/February exams generally reach regular review."
         },
         "englishProficiency": {
           "status": "reported",
           "sources": [
             {
-              "label": "Requirements | Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/requirements",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "Standardized Testing | Undergraduate Admissions",
+              "label": "Official college page",
               "url": "https://admissions.yale.edu/standardized-testing",
-              "reviewedAt": "2026-08-01"
-            },
-            {
-              "label": "International Students | Undergraduate Admissions",
-              "url": "https://admissions.yale.edu/international",
-              "reviewedAt": "2026-08-01"
+              "reviewedAt": "2026-10-07"
             }
           ],
-          "reviewedAt": "2026-08-01",
-          "note": "Relevant information was located on an official college page; structured details require exact evidence before publication."
+          "reviewedAt": "2026-10-07",
+          "note": "Required for non-native speakers without at least two years in an English-medium secondary school. Scores below are competitive benchmarks, not published minimum cutoffs. InitialView is accepted without a numerical score."
         },
         "campusSafety": {
           "status": "reported",

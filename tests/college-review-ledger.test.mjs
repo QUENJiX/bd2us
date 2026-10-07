@@ -19,7 +19,7 @@ test("official review ledger contains every college and every required topic", (
   }
 });
 
-test("every topic-level review entry has an official-source outcome", () => {
+test("topic-level review entries distinguish sourced outcomes from unfinished reviews", () => {
   const launchFields = [
     "internationalAid", "scholarships", "internationalAdmission", "applicationPlansAndDeadlines",
     "applicationRequirements", "testingPolicy", "englishProficiency"
@@ -29,6 +29,12 @@ test("every topic-level review entry has an official-source outcome", () => {
   for (const record of ledger.records) {
     for (const key of launchFields) {
       const field = record.fields[key];
+      if (field.status === "unreviewed") {
+        assert.equal(field.reviewedAt, null, `${record.name}: unfinished ${key} must not claim a review date`);
+        assert.equal(field.sources.length, 0, `${record.name}: unfinished ${key} must not claim verified sources`);
+        assert.equal(record.reviewStatus, "in_progress");
+        continue;
+      }
       assert.ok(allowedStatuses.has(field.status), `${record.name}: ${key} is ${field.status}`);
       assert.ok(field.reviewedAt, `${record.name}: ${key} has no review date`);
       assert.ok(field.sources.length > 0, `${record.name}: ${key} has no official source`);
