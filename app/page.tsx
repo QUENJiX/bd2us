@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import { PikuMascot } from "@/components/piku-mascot";
 import { HeroPlanner } from "@/components/hero-planner";
 import { JourneyRail } from "@/components/journey-rail";
 import { ButtonLink, SectionHeading, Surface, Tag } from "@/components/ui";
@@ -132,18 +132,18 @@ export default function HomePage() {
 
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-24">
-        <div className="colapp-panel grid gap-6 overflow-hidden rounded-[2rem] border border-emerald-950/10 bg-[#f4f0e6] p-6 sm:p-8 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,24rem)] lg:items-center">
-          <div className="rounded-2xl border border-emerald-950/10 bg-white/70 p-5">
+        <div className="grid gap-6 rounded-[2rem] border border-emerald-950/10 bg-[#f4f0e6] p-6 sm:p-10 md:grid-cols-[minmax(0,1fr)_14rem] md:items-center">
+          <div>
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-amber-700">Need a more personal answer?</p>
-            <p className="font-display mt-2 text-2xl font-bold text-emerald-950">ColApp is our companion app, not a gate.</p>
+            <h2 className="font-display mt-2 text-3xl font-bold text-emerald-950 sm:text-4xl">Meet Ask Piku.</h2>
+            <p className="mt-4 text-lg text-emerald-950">Personalized U.S. college application guidance powered by Claude.</p>
             <p className="mt-3 text-sm leading-6 text-slate-600">
-              BD2US remains independently useful. When you need personalized AI guidance, our ColApp companion is available as an optional next step.
+              Ask questions about college selection, financial aid, essays and application strategy using BD2US&apos;s curated admissions resources as context.
             </p>
-            <a className="mt-4 inline-flex text-sm font-bold text-emerald-900 underline decoration-amber-500 underline-offset-4" href="https://www.colapp.tech" target="_blank" rel="noreferrer">
-              Visit ColApp →
-            </a>
+            <ButtonLink className="mt-6" href="/ask">Ask Piku →</ButtonLink>
+            <span className="ml-3 inline-block text-sm text-slate-600">Coming soon</span>
           </div>
-          <div className="colapp-media"><Image src="/assets/images/colapp-placeholder.png" alt="Abstract planning route and checklist placeholder for ColApp" width={960} height={720} sizes="(min-width: 1024px) 24rem, 90vw" priority={false} /></div>
+          <PikuMascot className="mx-auto w-44 md:w-56" />
         </div>
       </section>
     </main>
