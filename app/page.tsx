@@ -6,6 +6,10 @@ import { ButtonLink, SectionHeading, Surface, Tag } from "@/components/ui";
 import { colleges, roadmapStages } from "@/lib/content";
 import { siteUrl } from "@/lib/site";
 
+export const metadata = {
+  alternates: { canonical: `${siteUrl}/` }
+};
+
 const featuredCollegeNames = [
   "Harvard University",
   "Massachusetts Institute of Technology",

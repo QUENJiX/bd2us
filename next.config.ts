@@ -39,11 +39,19 @@ const nextConfig: NextConfig = {
     root: projectRoot
   },
   async redirects() {
-    return legacyRedirects.map(([source, destination]) => ({
-      source,
-      destination,
-      permanent: true
-    }));
+    return [
+      ...["bd2us.app", "www.bd2us.app"].map((host) => ({
+        source: "/:path*",
+        has: [{ type: "host" as const, value: host }],
+        destination: "https://bd2us.com/:path*",
+        permanent: true
+      })),
+      ...legacyRedirects.map(([source, destination]) => ({
+        source,
+        destination,
+        permanent: true
+      }))
+    ];
   },
   async headers() {
     return [
