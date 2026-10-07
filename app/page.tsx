@@ -137,7 +137,7 @@ export default function HomePage() {
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-amber-700">Need a more personal answer?</p>
             <h2 className="font-display mt-2 text-3xl font-bold text-emerald-950 sm:text-4xl">Meet Ask Piku.</h2>
-            <p className="mt-4 text-lg text-emerald-950">Personalized U.S. college application guidance powered by Claude.</p>
+            <p className="mt-4 text-lg text-emerald-950">Personalized U.S. college application guidance being built with Claude.</p>
             <p className="mt-3 text-sm leading-6 text-slate-600">
               Ask questions about college selection, financial aid, essays and application strategy using BD2US&apos;s curated admissions resources as context.
             </p>

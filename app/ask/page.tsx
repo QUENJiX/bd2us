@@ -6,7 +6,7 @@ import { founderEmail, siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Ask Piku",
-  description: "Meet Piku, BD2US’s upcoming college application companion powered by Claude.",
+  description: "Meet Piku, BD2US’s college application companion being built with Claude. Integration is in development.",
   alternates: { canonical: `${siteUrl}/ask` }
 };
 
@@ -19,7 +19,7 @@ export default function AskPage() {
           <p className="text-xs font-bold uppercase tracking-[.18em] text-amber-700">Your BD2US companion</p>
           <h1 className="font-display mt-3 text-5xl text-emerald-950 sm:text-6xl">Ask Piku.</h1>
           <p className="mt-5 max-w-xl text-lg leading-8 text-slate-600">Personalized U.S. college application guidance, grounded in BD2US&apos;s curated admissions resources.</p>
-          <p className="mt-5 inline-flex flex-wrap items-center gap-2 rounded-full border border-emerald-950/15 px-4 py-2 text-sm text-emerald-950">Powered by Claude <span className="text-slate-500">· In development</span></p>
+          <p className="mt-5 inline-flex flex-wrap items-center gap-2 rounded-full border border-emerald-950/15 px-4 py-2 text-sm text-emerald-950">Claude integration <span className="text-slate-500">· In development</span></p>
         </div>
         <PikuMascot className="mx-auto w-44" />
       </section>
